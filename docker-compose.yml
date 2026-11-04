@@ -1,0 +1,18 @@
+services:
+  decodegene-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: decodegene-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: ./backend/.env
+        required: false
+    environment:
+      - DATA_DIR=/app/data
+      - ZERO_RETENTION_MODE=true
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./data:/app/data:ro
+    restart: unless-stopped

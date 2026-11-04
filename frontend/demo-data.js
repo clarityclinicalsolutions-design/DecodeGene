@@ -1,0 +1,3067 @@
+window.DEMO_DATA = [
+  {
+    "association_id": "GDA_BRCA1_BREAST_CANCER",
+    "gene": {
+      "symbol": "BRCA1",
+      "name": "BRCA1 DNA repair associated",
+      "chinese_name": "乳腺癌易感基因 1 號",
+      "ensembl_id": "ENSG00000012048",
+      "entrez_id": "672",
+      "biotype": "protein_coding",
+      "chromosome": "17q21.31 (17 號染色體)",
+      "metaphor": {
+        "title": "🧬 細胞裡的【DNA 汽車維修工程師】",
+        "story": "我們的細胞每天都在高速運轉，DNA 難免會發生小故障（比如磨損破裂）。BRCA1 就像一位經驗豐富的隨車高級維修工，發現故障就會立刻修好。如果維修工突變生病了（罷工），壞掉的零件沒修好就繼續上路，日積月累，車子出重大事故（惡性腫瘤）的機率就會比常人高出很多。"
+      },
+      "plain_summary": "BRCA1 是人體內天然的防癌衛士。攜帶致病突變並不意味著必然會得癌症，而是意味著患乳癌或卵巢癌的終身風險較一般人群升高，需要從更早年齡開始進行科學篩檢與預防。",
+      "academic_summary": "BRCA1 編碼 190 kD 核磷蛋白（含 RING 指與 BRCT 結構域），主要介導 RAD51 參與同源重組 DNA 雙股斷裂 (DSB) 的無差錯修復。生殖系雜合致病變異破壞此功能，使細胞依賴易錯修復，顯著提升乳癌和卵巢癌易感性，並對 PARP 抑制劑產生合成致死敏感性。"
+    },
+    "disease": {
+      "id": "MONDO:0007254",
+      "name": "Hereditary breast and ovarian cancer syndrome",
+      "chinese_name": "乳癌 / 遺傳性乳癌-卵巢癌症候群",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (科學可防可治)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003002",
+        "name": "Breast carcinoma",
+        "chinese_name": "乳癌"
+      },
+      {
+        "hpo_id": "HP:0100615",
+        "name": "Ovarian neoplasm",
+        "chinese_name": "卵巢腫瘤"
+      },
+      {
+        "hpo_id": "HP:0010519",
+        "name": "Fallopian tube carcinoma",
+        "chinese_name": "輸卵管癌"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Olaparib",
+        "chinese_name": "奧拉帕利",
+        "mechanism": "PARP1/2 抑制劑 (合成致死機制)",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      },
+      {
+        "drug_name": "Talazoparib",
+        "chinese_name": "他拉唑帕利",
+        "mechanism": "強效 PARP1/2 抑制劑與 PARP 捕獲劑",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "生殖系致病變異 (如 c.5266dupC / rs80357906)",
+      "population_frequency": "一般人群約 1/400 ~ 1/800",
+      "traffic_light_summary": "🟢 標靶藥敏感（攜帶生殖系致病突變對奧拉帕利、他拉唑帕利等 PARP 抑制劑及鉑類化療高度敏感）",
+      "drugs_guide": [
+        {
+          "drug_name": "Olaparib / Talazoparib",
+          "chinese_name": "奧拉帕利 / 他拉唑帕利",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "基於合成致死原理，BRCA1 生殖系致病突變患者使用 PARP 抑制劑可顯著獲益。",
+          "cpic_level": "FDA Companion Diagnostic / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "嚴格限制酒精攝取",
+        "慎用長期無黃體素拮抗的外源性雌激素替代療法"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 3520,
+      "clinvar_summary_chinese": "已收錄 3500+ 個明確致病變異位點",
+      "opentargets_score": 0.94,
+      "key_pmids": [
+        "PMID:7545954",
+        "PMID:28522680"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議從 25 歲開始每 6-12 個月進行一次乳房專科檢查，30 歲起每年進行一次乳房磁振造影 (MRI) 聯合乳房攝影檢查。",
+      "lifestyle_tips": [
+        "保持健康體重，規律作息，避免長期熬夜與高脂飲食",
+        "嚴格戒菸並限制酒精攝取（酒精會增加雌激素濃度）",
+        "生育期女性在醫師指導下合理母乳哺育，有助於降低風險"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "乳房外科 / 腫瘤科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 BRCA1 突變，幾歲開始建議我做乳房磁振造影 (MRI)？",
+        "除了乳房，對於卵巢和輸卵管的健康，您建議我定期做什麼篩檢（如 CA125、經陰道超音波）？",
+        "我的直系親屬（母親、姊妹、子女）是否有必要做同位點的基因篩檢？",
+        "如果未來有生育計畫，目前是否有胚胎著床前基因診斷 (PGT) 阻斷突變遺傳的技術？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「測出 BRCA1 基因突變，是不是過幾年百分之百會得癌症？」",
+      "truth": "不是！攜帶突變只是增加了患病機率（終身風險約 60%~70%，而一般人約 12%），並非百分之百。透過規律篩檢、生活干預甚至預防性措施，絕大多數攜帶者都能健康長壽並做到早發現早治癒。"
+    }
+  },
+  {
+    "association_id": "GDA_TP53_LI_FRAUMENI",
+    "gene": {
+      "symbol": "TP53",
+      "name": "Tumor protein p53",
+      "chinese_name": "腫瘤蛋白 p53 (抑癌基因)",
+      "ensembl_id": "ENSG00000141510",
+      "entrez_id": "7157",
+      "biotype": "protein_coding",
+      "chromosome": "17p13.1 (17 號染色體)",
+      "metaphor": {
+        "title": "🛑 細胞裡的【緊急制動煞車片 / 基因組保安】",
+        "story": "如果把細胞分裂比作一輛飛馳的列車，TP53 就是車上的終極緊急制動煞車片兼基因組保安。一旦發現細胞 DNA 受到輻射或化學物質破壞，保安會立刻拉響警報並踩下煞車，讓細胞停下來修補；如果壞得太徹底修不好，保安會果斷啟動細胞的「自我銷毀程序（凋亡）」，絕不讓壞細胞變成癌細胞。如果 TP53 天生失靈，列車就徹底失去了緊急煞車，全身多處組織都很容易早早出現腫瘤。"
+      },
+      "plain_summary": "TP53 是人體最重要的「防癌總開關」。生殖系攜帶 TP53 致病突變會引起李-佛美尼症候群（Li-Fraumeni syndrome），攜帶者需要透過每年全身無輻射磁振造影（MRI）實現極早期腫瘤監測，並嚴格避免不必要的 X 光和 CT 游離輻射。",
+      "academic_summary": "TP53 編碼四聚體轉錄因子 p53，響應 DNA 損傷與致癌基因壓力，轉錄激活 CDKN1A (p21)、BAX、PUMA 及 GADD45A，介導 G1/S 細胞週期阻滯、DNA 修復或細胞凋亡。生殖系雜合致病變異導致體染色體顯性李-佛美尼症候群 (LFS)。"
+    },
+    "disease": {
+      "id": "MONDO:0018875",
+      "name": "Li-Fraumeni syndrome",
+      "chinese_name": "李-佛美尼症候群 (遺傳性多發腫瘤症候群)",
+      "categories": [
+        "遺傳性腫瘤症候群",
+        "罕見疾病"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🚨 高危遺傳症候群 (需終身無輻射 MRI 早篩)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002664",
+        "name": "Neoplasm",
+        "chinese_name": "多發性腫瘤易感"
+      },
+      {
+        "hpo_id": "HP:0002897",
+        "name": "Osteosarcoma",
+        "chinese_name": "骨肉瘤"
+      },
+      {
+        "hpo_id": "HP:0003002",
+        "name": "Breast carcinoma",
+        "chinese_name": "早發性乳癌"
+      },
+      {
+        "hpo_id": "HP:0006744",
+        "name": "Adrenocortical carcinoma",
+        "chinese_name": "腎上腺皮質癌"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Eprenetapopt",
+        "chinese_name": "Eprenetapopt (APR-246, 在研 p53 重激活劑)",
+        "mechanism": "恢復突變型 p53 蛋白野生型構象並誘導腫瘤凋亡",
+        "approval_status": "臨床試驗在研 (Phase II/III)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "生殖系致病變異 (如 p.Arg175His / p.Arg248Gln / p.Arg273His)",
+      "population_frequency": "一般人群約 1/5,000 ~ 1/20,000",
+      "traffic_light_summary": "🔴 嚴禁濫用放射線檢查與放療（DNA 損傷修復缺陷會導致放療或頻繁 CT 誘發二次原發惡性腫瘤）",
+      "drugs_guide": [
+        {
+          "drug_name": "Ionizing Radiation / Genotoxic Radiotherapy",
+          "chinese_name": "游離輻射 / 傳統放射治療",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "TP53 生殖系突變攜帶者對游離輻射極度敏感，體檢早篩必須用全身 MRI 替代 CT/乳房攝影，治療優先選擇手術或非基因毒性方案。",
+          "cpic_level": "NCCN LFS Guideline High Alert"
+        }
+      ],
+      "dietary_contraindications": [
+        "絕對戒菸戒酒，遠離黃麴毒素與亞硝胺類醃燻食品",
+        "嚴格避免非醫療必需的 CT、PET-CT、X 光胸片暴露"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.98,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 1680,
+      "clinvar_summary_chinese": "已收錄 1600+ 個明確致病/可能致病變異位點",
+      "opentargets_score": 0.95,
+      "key_pmids": [
+        "PMID:1978757",
+        "PMID:27496084"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "遵循國際 Toronto 篩檢方案：每年進行一次全身磁振造影 (Whole-Body MRI) 及腦部 MRI；女性 20 歲起每年進行乳房 MRI（避免用有輻射的乳房攝影和 CT 作為常規體檢）；每 2-5 年進行胃腸鏡檢查。",
+      "lifestyle_tips": [
+        "【核心鐵律】體檢和就診時主動告知醫師攜帶 TP53 生殖系突變，優先選擇超音波和磁振造影 (MRI)，嚴格避免游離輻射/CT濫用",
+        "日常外出做好嚴格紫外線物理防曬，預防皮膚腫瘤",
+        "保持規律作息與抗發炎飲食，一旦出現不明原因骨痛、腫塊或持續頭痛立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "遺傳性腫瘤專科門診 / 腫瘤內科 / 臨床遺傳科",
+      "questions": [
+        "醫師您好，我檢出 TP53 生殖系突變，請問醫院能否按照 Toronto 方案為我安排每年的全身磁振造影 (Whole-Body MRI) 早篩？",
+        "我在日常體檢中是否應該用乳房 MRI 和超音波完全替代有放射線的乳房攝影和胸部 CT？",
+        "我的父母、兄弟姊妹和孩子是否需要做該位點的基因檢測驗證？",
+        "如果計畫生育健康寶寶，如何透過胚胎著床前基因診斷 (PGT-M) 阻斷 TP53 突變遺傳？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「既然 TP53 突變容易長腫瘤，那我是不是應該每半年做一次全身 PET-CT 或增強 CT 來防癌？」",
+      "truth": "千萬不要！CT 和 PET-CT 含有較高劑量的游離輻射。對於缺乏 TP53「煞車保護」的人來說，頻繁照 CT 反而會破壞健康細胞的 DNA、人為誘發新的腫瘤！正確的防癌黃金標準是零輻射的全身磁振造影 (MRI) 和超音波。"
+    }
+  },
+  {
+    "association_id": "GDA_APOE_ALZHEIMER",
+    "gene": {
+      "symbol": "APOE",
+      "name": "Apolipoprotein E",
+      "chinese_name": "載脂蛋白 E",
+      "ensembl_id": "ENSG00000130203",
+      "entrez_id": "348",
+      "biotype": "protein_coding",
+      "chromosome": "19q13.32 (19 號染色體)",
+      "metaphor": {
+        "title": "🧠 大腦裡的【垃圾清運卡車（ε4 型號清運較慢）】",
+        "story": "大腦工作時會產生一些有害的代謝廢棄物（比如黏糊糊的澱粉樣蛋白）。APOE 就像是每天在大腦巡邏清運垃圾的清潔卡車。APOE 有三種主要型號（ε2、ε3、ε4）。如果你拿到的是 ε4 型號，清運效率就比較慢，垃圾容易在腦內沉澱堆積，久而久之就增加了老了以後得阿茲海默症（失智症）的風險。"
+      },
+      "plain_summary": "APOE ε4 是遲發性失智症最常見的遺傳風險標誌物。它是一個「易感基因」而非「致病決定基因」，攜帶者只要積極保護心腦血管、採用地中海飲食並經常動腦，完全有可能終身不發病。",
+      "academic_summary": "APOE ε4 等位基因（由 rs429358-C 與 rs7412-C 單倍型決定）損害星狀膠質細胞介導的 β-澱粉樣蛋白 (Aβ) 清除通路，促進 Tau 蛋白異常磷酸化，並破壞血腦障壁完整性，是散發性遲發型阿茲海默症最強遺傳風險因子。"
+    },
+    "disease": {
+      "id": "MONDO:0004975",
+      "name": "Alzheimer disease",
+      "chinese_name": "阿茲海默症 (老年失智症)",
+      "categories": [
+        "神經退化性疾病",
+        "認知障礙"
+      ],
+      "inheritance_mode": "多基因複雜易感風險 (Complex Susceptibility, ε4 呈半顯性劑量效應)",
+      "severity_badge": "💡 易感風險因子 (非決定性，可防可控)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000726",
+        "name": "Dementia",
+        "chinese_name": "失智症"
+      },
+      {
+        "hpo_id": "HP:0002354",
+        "name": "Memory impairment",
+        "chinese_name": "記憶力受損"
+      },
+      {
+        "hpo_id": "HP:0001268",
+        "name": "Mental deterioration",
+        "chinese_name": "認知功能進行性減退"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Lecanemab",
+        "chinese_name": "崙卡奈單抗 (Leqembi)",
+        "mechanism": "標靶可溶性 Aβ 原纖維的人源化 IgG1 單株抗體",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      },
+      {
+        "drug_name": "Donanemab",
+        "chinese_name": "多奈單抗 (Kisunla)",
+        "mechanism": "標靶 N3pG 修飾型澱粉樣蛋白斑塊的單株抗體",
+        "approval_status": "FDA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "APOE ε4 等位基因 (rs429358 C / rs7412 C)",
+      "population_frequency": "一般人群 ε4 攜帶率約 15%~25%",
+      "traffic_light_summary": "🟡 慎用/需嚴密監測（APOE ε4 攜帶者尤其是純合子在使用抗 Aβ 單抗 Lecanemab/Donanemab 時發生澱粉樣蛋白相關影像學異常 ARIA 腦水腫/微出血風險顯著升高，用藥前須基因分型）",
+      "drugs_guide": [
+        {
+          "drug_name": "Lecanemab / Donanemab",
+          "chinese_name": "崙卡奈單抗 / 多奈單抗",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "FDA 黑框警告提示 APOE ε4 純合子發生 ARIA-E（腦水腫）和 ARIA-H（腦微出血）的風險顯著高於非攜帶者，啟動治療前推薦完成 APOE 基因檢測並加密腦部 MRI 監測。",
+          "cpic_level": "FDA Boxed Warning Biomarker"
+        }
+      ],
+      "dietary_contraindications": [
+        "限制高飽和脂肪、反式脂肪與精緻糖攝取（APOE ε4 攜帶者對膳食膽固醇與飽和脂肪更敏感，易升 LDL-C）"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 強科學共識",
+      "clinvar_pathogenic_count": 410,
+      "clinvar_summary_chinese": "已證實 ε4 亞型顯著增加神經退化性風險",
+      "opentargets_score": 0.91,
+      "key_pmids": [
+        "PMID:8346443",
+        "PMID:36449413"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議 50 歲後每年體檢增加 MoCA 認知量表篩檢，定期監測血壓、血糖、低密度脂蛋白膽固醇 (LDL-C)。",
+      "lifestyle_tips": [
+        "地中海飲食模式：多吃深海魚（富含 Omega-3）、堅果、特級初榨橄欖油與新鮮深色蔬菜",
+        "終身學習：打橋牌、閱讀、學習新樂器或新語言，建立大腦認知儲備",
+        "保證充足深度睡眠，利於腦脊髓液（膠質淋巴系統）夜間清除腦內代謝毒素"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經內科 / 記憶門診 / 高齡醫學科",
+      "questions": [
+        "醫師，我檢查發現攜帶 APOE ε4 基因，平時需要做腦部 MRI 或認知量表評估嗎？",
+        "我該如何把我的血脂（特別是 LDL-C）和血壓控制在理想範圍內，以保護大腦血管？",
+        "如果家中長輩出現早期記憶減退，使用崙卡奈單抗等標靶新藥前需要注意 APOE ε4 相關的 ARIA 風險嗎？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「查出我有兩個 APOE ε4 基因，那我老了一定會失智嗎？」",
+      "truth": "絕對不是！基因只佔一部分原因，後天的血管健康、地中海飲食、有氧運動和心智鍛鍊起著極其關鍵的保護作用。許多攜帶兩個 ε4 的長輩依然神采奕奕、思維敏捷地安度晚年。"
+    }
+  },
+  {
+    "association_id": "GDA_EGFR_LUNG_CANCER",
+    "gene": {
+      "symbol": "EGFR",
+      "name": "Epidermal growth factor receptor",
+      "chinese_name": "表皮生長因子受體",
+      "ensembl_id": "ENSG00000146648",
+      "entrez_id": "1956",
+      "biotype": "protein_coding",
+      "chromosome": "7p11.2 (7 號染色體)",
+      "metaphor": {
+        "title": "🚦 細胞表面的【生長油門踏板（突變導致油門卡死，標靶藥是精準煞車鑰匙）】",
+        "story": "正常細胞只有在身體發出指令需要生長時，才會輕踩一下油門。如果肺部細胞的 EGFR 發生突變，就像油門踏板被生鏽卡死在「踩到底」的位置，細胞便不受控制地瘋長，最終形成肺癌。好消息是，現代醫學發明了精準的「煞車鑰匙」（標靶藥，如奧希替尼、吉非替尼），可以精確卡住這個油門，讓癌細胞停止生長。"
+      },
+      "plain_summary": "EGFR 突變是非小細胞肺癌最常見且治療效果最好的突變標靶之一。在亞洲肺腺癌患者中突變率高達 50%，可以透過每天口服標靶藥物實現長期帶瘤生存與高品質生活。",
+      "academic_summary": "EGFR 外顯子 19 缺失突變 (Ex19del) 或 L858R 點突變導致其酪胺酸激酶結構域持續自磷酸化，持續激活下游 MAPK、PI3K-Akt 促存活通路，對第 1/2/3 代 EGFR-TKI 具有高度敏感性。"
+    },
+    "disease": {
+      "id": "MONDO:0005233",
+      "name": "Non-small cell lung carcinoma",
+      "chinese_name": "非小細胞肺癌 (NSCLC)",
+      "categories": [
+        "惡性腫瘤",
+        "胸部腫瘤"
+      ],
+      "inheritance_mode": "以腫瘤體細胞獲得性突變為主 (Somatic Mutation)",
+      "severity_badge": "🎯 黃金治療標靶 (標靶藥效果顯著)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0030358",
+        "name": "Non-small cell lung carcinoma",
+        "chinese_name": "非小細胞肺癌"
+      },
+      {
+        "hpo_id": "HP:0100526",
+        "name": "Neoplasm of the lung",
+        "chinese_name": "肺部腫瘤"
+      },
+      {
+        "hpo_id": "HP:0002105",
+        "name": "Hemoptysis",
+        "chinese_name": "咳血/持續性咳嗽"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Osimertinib",
+        "chinese_name": "奧希替尼 (泰瑞沙)",
+        "mechanism": "第三代不可逆 EGFR-TKI（標靶敏感突變及 T790M 抗藥突變，強入腦活性）",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      },
+      {
+        "drug_name": "Gefitinib",
+        "chinese_name": "吉非替尼 (艾瑞莎)",
+        "mechanism": "第一代可逆性 EGFR 酪胺酸激酶抑制劑 (EGFR-TKI)",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "體細胞敏感突變 Exon 19 deletion / L858R；抗藥突變 T790M",
+      "population_frequency": "東亞肺腺癌患者體細胞突變率約 45%~55%",
+      "traffic_light_summary": "🟢 標靶藥敏感（Ex19del/L858R 優先使用奧希替尼、吉非替尼等 EGFR-TKI；🔴 服藥期間嚴禁食用西柚/葡萄柚以免抑制 CYP3A4 引起毒性蓄積）",
+      "drugs_guide": [
+        {
+          "drug_name": "Osimertinib / Gefitinib",
+          "chinese_name": "奧希替尼 / 吉非替尼",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "伴隨診斷證實 EGFR Ex19del 或 L858R 陽性患者一線使用奧希替尼或吉非替尼療效顯著優於傳統化療。",
+          "cpic_level": "FDA / NMPA Companion Diagnostic Level 1A"
+        }
+      ],
+      "dietary_contraindications": [
+        "口服奧希替尼、吉非替尼期間嚴禁食用西柚（葡萄柚）、苦橙及聖約翰草，防止干擾 CYP3A4 酶引起血藥濃度異常"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 臨床精準用藥最高指南推薦 (FDA / TFDA / NMPA 核准)",
+      "clinvar_pathogenic_count": 890,
+      "clinvar_summary_chinese": "已證實對奧希替尼、吉非替尼等標靶藥敏感",
+      "opentargets_score": 0.96,
+      "key_pmids": [
+        "PMID:15118073",
+        "PMID:29151359"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "長期吸菸者、廚房油煙接觸多或有家族肺癌史者，建議 40 歲起每年做一次胸部低劑量螺旋 CT (LDCT)。",
+      "lifestyle_tips": [
+        "絕對遠離一手菸與二手菸，烹飪時開啟強力抽油煙機",
+        "室內注意通風，空氣污染天氣佩戴防霾口罩",
+        "避免接觸氡氣、石棉等職業粉塵暴露"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胸腔外科 / 腫瘤內科 / 胸腔內科",
+      "questions": [
+        "醫師，我的穿刺組織基因檢測顯示 EGFR 突變，目前推薦一代、二代還是三代標靶藥（如奧希替尼）？",
+        "標靶藥平時需要注意哪些副作用（如皮疹、腹瀉）？該怎麼緩解？",
+        "治療期間需要多久回診追蹤一次胸部 CT 和腦部磁振造影？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「肺癌一定要做化療，化療人會掉髮、暴瘦很受罪嗎？」",
+      "truth": "不一定！如果檢測出 EGFR 等敏感基因突變，首選方案通常是口服標靶藥（就像吃降壓藥一樣方便），不掉髮、噁心反應很輕，絕大多數患者可以在家正常生活和工作。"
+    }
+  },
+  {
+    "association_id": "GDA_ALDH2_ALCOHOL_SENSITIVITY_PGX",
+    "gene": {
+      "symbol": "ALDH2",
+      "name": "Aldehyde dehydrogenase 2 family member",
+      "chinese_name": "乙醛脫氫酶 2 (解酒與硝化甘油活化基因)",
+      "ensembl_id": "ENSG00000111275",
+      "entrez_id": "217",
+      "biotype": "protein_coding",
+      "chromosome": "12q24.12 (12 號染色體)",
+      "metaphor": {
+        "title": "🍷 肝臟裡的【酒精解毒流水線二號工人（罷工導致劇毒乙醛堆積臉紅）】",
+        "story": "酒精進入肝臟後需要兩條流水線接力解毒：一號工人（ADH1B）把酒精變成劇毒的一級致癌物「乙醛」；二號工人（ALDH2）緊接著把劇毒乙醛變成無害的「乙酸（醋）」排出體外。高達 30%~40% 的東亞人攜帶 ALDH2*2 變異，相當於二號工人天生罷工！結果喝一口酒，劇毒乙醛就在全身血管裡瘋狂堆積，導致微血管擴張（滿臉通紅、心跳加速）。更要命的是，心絞痛救命藥「硝酸甘油（硝化甘油）」也需要這位二號工人幫忙才能釋放一氧化氮擴張血管，二號工人罷工會導致硝酸甘油失靈！"
+      },
+      "plain_summary": "ALDH2 決定了人體能否順利代謝酒精中的劇毒產物「乙醛」，同時也是心絞痛急救藥「硝酸甘油（硝化甘油）」在體內起效的關鍵轉化酶。攜帶 ALDH2*2 (rs671) 變異的人群不僅喝酒易臉紅、食道癌風險大幅飆升，且在突發心絞痛時舌下含服硝酸甘油可能無效！",
+      "academic_summary": "ALDH2 編碼粒線體乙醛脫氫酶，同時具備硝酸酯酶活性（催化硝酸甘油生物轉化為 NO 激活可溶性鳥苷酸環化酶）。東亞高頻錯義突變 rs671 (c.1510G>A, p.Glu504Lys, ALDH2*2) 呈顯性負效應，雜合子酶活性降至 10%~20%，純合子幾乎完全喪失活性，導致乙醛蓄積及硝酸甘油抗心絞痛藥效顯著降低。"
+    },
+    "disease": {
+      "id": "MONDO:0012454",
+      "name": "Acute alcohol sensitivity / Aldehyde dehydrogenase 2 deficiency",
+      "chinese_name": "急性酒精敏感 / 乙醛脫氫酶缺乏症 & 硝酸甘油用藥無效風險",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "代謝體質特徵",
+        "腫瘤易感風險"
+      ],
+      "inheritance_mode": "體染色體顯性負效應遺傳 (Autosomal Dominant-Negative)",
+      "severity_badge": "🔴 用藥紅燈警示 (硝酸甘油急救可能無效 & 飲酒致癌高危)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0025537",
+        "name": "Alcohol flush reaction",
+        "chinese_name": "飲酒後臉部潮紅反應"
+      },
+      {
+        "hpo_id": "HP:0001649",
+        "name": "Tachycardia",
+        "chinese_name": "飲酒後心搏過速/心悸"
+      },
+      {
+        "hpo_id": "HP:0011459",
+        "name": "Esophageal squamous cell carcinoma",
+        "chinese_name": "食道鱗狀細胞癌易感性顯著升高"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Nitroglycerin",
+        "chinese_name": "硝酸甘油 / 硝化甘油 (需 ALDH2 代謝活化)",
+        "mechanism": "經粒線體 ALDH2 硝酸酯酶活性轉化為一氧化氮 (NO) 舒張冠狀動脈血管",
+        "approval_status": "FDA / TFDA / NMPA 核准 (攜帶 ALDH2*2 者藥效顯著受阻)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "ALDH2*2 (rs671, c.1510G>A, p.Glu504Lys)",
+      "population_frequency": "東亞人群（臺灣、中國大陸、日本、韓國）攜帶率高達 30%~47%",
+      "traffic_light_summary": "🔴 紅燈警示：心絞痛急救藥「硝酸甘油（硝化甘油）」需依賴 ALDH2 轉化為一氧化氮才能起效，攜帶者舌下含服硝酸甘油可能無效甚至耽誤急救！同時嚴禁飲酒（食道癌風險升高 6~12 倍）。",
+      "drugs_guide": [
+        {
+          "drug_name": "Nitroglycerin (Sublingual)",
+          "chinese_name": "硝酸甘油舌下錠/噴霧劑",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "ALDH2*2 (rs671 A等位基因) 攜帶者粒線體硝酸酯酶活性嚴重缺失，舌下含服硝酸甘油無法有效生成 NO，抗心絞痛急救失效率極高；建議在心臟內科醫師指導下改備不完全依賴 ALDH2 的急救藥（如硝酸異山梨酯）。",
+          "cpic_level": "PharmGKB Level 1A / 臨床藥物基因組學專家共識強烈推薦"
+        },
+        {
+          "drug_name": "Ethanol (Alcohol)",
+          "chinese_name": "乙醇（各類酒類及含酒精製劑/藿香正氣水）",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "禁止飲酒，同時嚴禁將含酒精藥物（如十滴水、藿香正氣水）與頭孢菌素類抗生素同服。",
+          "cpic_level": "WHO / IARC Group 1 Carcinogen Warning"
+        }
+      ],
+      "dietary_contraindications": [
+        "終身嚴格戒酒（啤酒、烈酒、紅酒、藥酒均會造成一級致癌物乙醛蓄積）",
+        "避免過燙飲食（超過 65℃ 熱飲熱食疊加乙醛會成倍放大食道黏膜癌變風險）"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.97,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 亞洲人群最重要日常急救與防癌基因共識",
+      "clinvar_pathogenic_count": 32,
+      "clinvar_summary_chinese": "rs671 被明確認證為急性酒精敏感與硝酸甘油藥物反應核心位點",
+      "opentargets_score": 0.89,
+      "key_pmids": [
+        "PMID:16099987",
+        "PMID:19320795"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有長期飲酒史且喝酒臉紅者，建議 40 歲起定期進行高解析染色內視鏡/胃食道鏡篩檢早癌；有冠心病風險者提前在心臟內科備好替代硝酸甘油的急救預案。",
+      "lifestyle_tips": [
+        "【救命常識】若本人或家中父母喝酒臉紅，務必檢查家庭急救箱：心絞痛發作時舌下含服硝酸甘油可能無效，請提前諮詢心臟內科醫師更換急救常備藥",
+        "徹底拒絕酒桌勸酒文化，向親友科普「喝酒臉紅不是能喝，而是乙醛中毒」",
+        "注意口腔衛生（口腔細菌也會將微量酒精轉化為乙醛）"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 胃腸肝膽科 / 臨床藥學門診",
+      "questions": [
+        "醫師您好，我基因檢測提示攜帶 ALDH2*2 (rs671) 變異（平時一喝酒就臉紅），如果突發冠心病心絞痛，舌下含服硝酸甘油是不是可能無效？您建議我隨身備什麼替代急救藥？",
+        "我以前因為應酬喝過不少酒，是否需要做一次胃鏡重點排查食道和胃部黏膜病變？",
+        "日常服用感冒藥或中成藥（如藿香正氣水）時，我需要注意哪些含乙醇成分的藥物？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「喝酒上臉說明血液循環好、講義氣，而且酒量是可以靠多喝練出來的？」",
+      "truth": "大錯特錯！喝酒臉紅是身體發出的「乙醛中毒紅色警報」。ALDH2 基因缺陷是天生的，一輩子都練不出解毒酶。所謂「練出來的酒量」只是身體對頭暈麻木了，但劇毒乙醛依然在靜悄悄地腐蝕你的食道和血管！"
+    }
+  },
+  {
+    "association_id": "GDA_G6PD_FAVISM_PGX",
+    "gene": {
+      "symbol": "G6PD",
+      "name": "Glucose-6-phosphate dehydrogenase",
+      "chinese_name": "葡萄糖-6-磷酸脫氫酶 (蠶豆症基因)",
+      "ensembl_id": "ENSG00000160211",
+      "entrez_id": "2539",
+      "biotype": "protein_coding",
+      "chromosome": "Xq28 (X 染色體)",
+      "metaphor": {
+        "title": "🛡️ 紅血球的【防氧化防彈衣（缺乏時紅血球遇到蠶豆或特定藥物會像氣球一樣破裂溶血）】",
+        "story": "紅血球每天在血管裡運送氧氣，很容易受到「氧化自由基」的攻擊。G6PD 就像是給紅血球織造防氧化防彈衣（還原型穀胱甘肽 NADPH）的唯一機器。如果 G6PD 天生缺乏，紅血球平時在風平浪靜時還能正常工作；但一旦吃了新鮮蠶豆、接觸了樟腦丸，或者誤服了磺胺類消炎藥、伯氨喹等強氧化性藥物，沒有防彈衣保護的紅血球就會在短短幾小時內像被針扎破的氣球一樣成批炸裂（急性溶血），出現醬油色尿、全身黃疸甚至危及生命！"
+      },
+      "plain_summary": "G6PD 缺乏症俗稱「蠶豆症（蠶豆病）」，屬於 X 連鎖不完全顯性遺傳（男性半合子更易發病，女性雜合子表現不一），在臺灣及華南地區尤為常見。只要終身嚴格避開新鮮蠶豆及禁用藥物清單，攜帶者平時與一般人完全一樣健康！",
+      "academic_summary": "G6PD 編碼五碳糖磷酸途徑 (PPP) 限速酶，催化 6-磷酸葡萄糖生成 6-磷酸葡萄糖酸內酯並產生紅血球唯一的 NADPH 來源以維持還原型穀胱甘肽 (GSH) 穩態。X 連鎖致病變異（如常見位點 c.1376G>T, c.1388G>A）導致酶活性降低，在蠶豆嘧啶葡糖苷或氧化性藥物誘導下引發急性非免疫性溶血性貧血。"
+    },
+    "disease": {
+      "id": "MONDO:0005775",
+      "name": "Glucose-6-phosphate dehydrogenase deficiency (Favism)",
+      "chinese_name": "蠶豆症 (蠶豆病) / 葡萄糖-6-磷酸脫氫酶缺乏症",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "遺傳性血液代謝病",
+        "日常飲食與用藥禁忌"
+      ],
+      "inheritance_mode": "X 連鎖不完全顯性遺傳 (X-Linked Incomplete Dominant)",
+      "severity_badge": "🔴 終身用藥與飲食紅燈禁忌 (避開誘因即可終身健康)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001878",
+        "name": "Hemolytic anemia",
+        "chinese_name": "急性溶血性貧血"
+      },
+      {
+        "hpo_id": "HP:0000952",
+        "name": "Jaundice",
+        "chinese_name": "黃疸 / 新生兒高膽紅素血症"
+      },
+      {
+        "hpo_id": "HP:0012072",
+        "name": "Hemoglobinuria",
+        "chinese_name": "血紅素尿 (濃茶色/醬油色尿)"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Rasburicase / Primaquine / Sulfonamides (Contraindicated)",
+        "chinese_name": "拉布立酶 / 伯氨喹 / 磺胺類 (嚴禁使用之高危氧化性藥物)",
+        "mechanism": "誘發強氧化壓力導致 G6PD 缺乏紅血球發生變性珠蛋白小體 (Heinz bodies) 沉積與急性溶血",
+        "approval_status": "CPIC Level A / FDA 黑框禁用警示"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "常見致病位點 c.1376G>T (Canton), c.1388G>A (Kaiping), c.95A>G (Gaohe)",
+      "population_frequency": "全球超 4 億人攜帶；臺灣及華南地區發生率約 3%~10%",
+      "traffic_light_summary": "🔴 嚴禁食用新鮮蠶豆，禁用磺胺類抗生素、伯氨喹、拉布立酶、含樟腦/臭丸衣物及部分退燒藥（乙醯苯胺/高劑量阿斯匹靈）與部分中成藥！",
+      "drugs_guide": [
+        {
+          "drug_name": "Sulfonamides (e.g., Sulfamethoxazole)",
+          "chinese_name": "磺胺類抗生素（如復方新諾明/磺胺甲噁唑）",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "CPIC 指南明確列為高溶血風險藥物，G6PD 缺乏者嚴禁使用，可改用盤尼西林類或頭孢菌素類抗生素。",
+          "cpic_level": "CPIC Guideline Level A (Avoid Use)"
+        },
+        {
+          "drug_name": "Primaquine / Tafenoquine / Rasburicase / Methylene Blue",
+          "chinese_name": "伯氨喹 / 他非諾喹 / 拉布立酶 / 亞甲藍",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "極高急性致死性溶血風險，FDA 仿單黑框警告嚴禁用於 G6PD 缺乏症患者。",
+          "cpic_level": "CPIC Guideline Level A (Contraindicated)"
+        },
+        {
+          "drug_name": "Camphor / Naphthalene / Certain Analgesics",
+          "chinese_name": "樟腦丸（臭丸/萘丸）、乙醯苯胺、非那西丁及含金銀花/牛黃/薄荷腦的部分中藥製劑",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "嬰幼兒衣物嚴禁放置樟腦丸/臭丸；退燒優先按常規劑量選用乙醯胺酚或布洛芬（遵醫囑）。",
+          "cpic_level": "兒科醫學會蠶豆症診治共識"
+        }
+      ],
+      "dietary_contraindications": [
+        "終身嚴禁食用新鮮蠶豆、乾蠶豆及含有蠶豆成分的冬粉/零食（如蠶豆酥、注意甄別含蠶豆的豆瓣醬）",
+        "哺乳期母親若寶寶患有蠶豆症，母親同樣嚴禁食用蠶豆及上述禁用藥物"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.99,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 CPIC 與兒科新生兒篩檢最高級別指南",
+      "clinvar_pathogenic_count": 245,
+      "clinvar_summary_chinese": "已明確收錄 200+ 種 G6PD 酶活性缺乏致病位點",
+      "opentargets_score": 0.95,
+      "key_pmids": [
+        "PMID:24787449",
+        "PMID:35993450"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "臺灣及華南地區已將 G6PD 活性檢測納入新生兒腳跟血常規篩檢；未篩檢的育齡夫妻及兒童可透過基因檢測或紅血球 G6PD 酶活性定量明確狀態。",
+      "lifestyle_tips": [
+        "隨身在手機和健保卡夾裡保存一張《G6PD 蠶豆症禁用藥物紅燈卡》，每次去醫院看病、買感冒藥或打針前第一步主動出示給醫師和藥師",
+        "家裡衣櫃徹底清除所有樟腦丸（臭丸）、萘丸，改用物理除濕盒",
+        "一旦吃錯東西或服藥後出現臉色蒼白、精神萎靡、小便呈濃茶色或醬油色，必須爭分奪秒送急診搶救！"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "小兒科 / 血液內科 / 臨床藥學門診",
+      "questions": [
+        "醫師您好，我（或我家寶寶）確診有 G6PD 缺乏症（蠶豆症），今天開的處方藥和退燒藥裡有沒有任何可能誘發溶血的成分？",
+        "寶寶發燒感冒時，按標準體重劑量使用乙醯胺酚（普拿疼）或布洛芬是安全的嗎？",
+        "我是女性 G6PD 雜合攜帶者，懷孕和哺乳期間我自己的飲食和用藥需要同樣嚴格遵守蠶豆症禁忌嗎？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「蠶豆症只有小時候才會犯，長大成年以後身體強壯了就可以隨便吃蠶豆了嗎？」",
+      "truth": "絕對不能！G6PD 基因缺陷是伴隨終身的。雖然成年人紅血球總量比嬰幼兒大，但成年人一旦大量吃新鮮蠶豆或誤服磺胺類、伯氨喹等禁藥，依然會引發凶險的急性大溶血甚至急性腎衰竭，必須終身忌口和避開禁藥！"
+    }
+  },
+  {
+    "association_id": "GDA_MTHFR_HOMOCYSTEINEMIA_PGX",
+    "gene": {
+      "symbol": "MTHFR",
+      "name": "Methylenetetrahydrofolate reductase",
+      "chinese_name": "亞甲基四氫葉酸還原酶 (葉酸代謝基因)",
+      "ensembl_id": "ENSG00000177000",
+      "entrez_id": "4524",
+      "biotype": "protein_coding",
+      "chromosome": "1p36.22 (1 號染色體)",
+      "metaphor": {
+        "title": "🌿 人體葉酸加工廠的【轉化機器（效率降低導致普通葉酸難以轉化為活性葉酸，引起同半胱胺酸升高）】",
+        "story": "我們從蔬菜或普通葉酸錠裡吃進去的葉酸是「半成品原材料」，必須經過身體裡一台叫 MTHFR 的核心轉化機器加工，才能變成細胞真正能用的成品——「5-甲基四氫葉酸（活性葉酸）」，用來清理血管裡的代謝垃圾「同半胱胺酸 (Hcy)」並為胎兒神經發育提供原料。如果攜帶 MTHFR C677T (rs1801133) 突變，這台轉化機器的運轉效率就會跌到原來的 30%~65%。結果普通葉酸堆在門口進不去，血管裡的同半胱胺酸越積越高，不僅影響準媽媽備孕，還會讓中老年人更容易得 H 型高血壓和腦中風！"
+      },
+      "plain_summary": "MTHFR 是控制人體葉酸代謝與血管同半胱胺酸（Hcy）濃度的核心基因。華人族群中 C677T (rs1801133) 變異非常普遍：備孕女性攜帶該變異時建議精準補充「5-甲基四氫葉酸（活性葉酸）」或遵醫囑調整劑量；中老年人攜帶者需定期檢測血同半胱胺酸（Hcy），配合葉酸+B群維生素科學預防腦中風。",
+      "academic_summary": "MTHFR 催化 5,10-亞甲基四氫葉酸不可逆地還原為 5-甲基四氫葉酸 (5-MTHF)，作為一碳單位代謝核心供體驅動甲硫胺酸合酶將同半胱胺酸 (Hcy) 重新甲基化為甲硫胺酸。常見錯義多態性位點 C677T (rs1801133, c.665C>T, p.Ala222Val) 導致酶熱穩定性下降，TT 純合子酶活性降低約 65%~70%，引起高同半胱胺酸血症，增加胎兒神經管缺陷 (NTDs) 及 H 型高血壓併發缺血性腦中風風險，並增加高劑量甲氨蝶呤 (Methotrexate) 化療黏膜炎與骨髓抑制毒性。"
+    },
+    "disease": {
+      "id": "MONDO:0004743",
+      "name": "Homocystinuria / Hyperhomocysteinemia due to MTHFR deficiency",
+      "chinese_name": "葉酸代謝障礙與高同半胱胺酸血症 (H型高血壓與腦中風風險 / 孕期葉酸缺乏風險)",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "孕產優生營養基因",
+        "心腦血管慢病體質"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 / 共顯性酶活性劑量效應 (Autosomal Recessive / Codominant)",
+      "severity_badge": "🟡 精準營養與慢病干預標靶 (補充活性葉酸即可精準改善)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002160",
+        "name": "Hyperhomocystinemia",
+        "chinese_name": "高同半胱胺酸血症 (血 Hcy ≥ 10 μmol/L)"
+      },
+      {
+        "hpo_id": "HP:0000822",
+        "name": "Hypertension",
+        "chinese_name": "H 型高血壓 (高血壓伴高同半胱胺酸)"
+      },
+      {
+        "hpo_id": "HP:0002140",
+        "name": "Ischemic stroke",
+        "chinese_name": "缺血性腦中風易感風險"
+      },
+      {
+        "hpo_id": "HP:0002412",
+        "name": "Neural tube defect",
+        "chinese_name": "胎兒神經管缺陷風險（母體活性葉酸不足時）"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Levomefolate calcium (5-MTHF)",
+        "chinese_name": "5-甲基四氫葉酸鈣 (活性葉酸)",
+        "mechanism": "繞過 MTHFR 酶轉化瓶頸，直接提供生物活性一碳單位供體降低血 Hcy",
+        "approval_status": "臨床營養與優生指南推薦"
+      },
+      {
+        "drug_name": "Enalapril / Folic acid",
+        "chinese_name": "依那普利葉酸錠 (用於 H 型高血壓預防腦中風)",
+        "mechanism": "ACEI 降壓聯合葉酸降低同半胱胺酸協同降低首發腦中風風險 (CSPPT 研究)",
+        "approval_status": "TFDA / NMPA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "MTHFR C677T (rs1801133, c.665C>T, p.Ala222Val) 及 A1298C (rs1801131)",
+      "population_frequency": "華人族群 C677T TT 純合型佔比高達 20%~35%",
+      "traffic_light_summary": "🟡 黃燈精準指導：① 備孕女性 TT 型普通合成葉酸轉化慢，建議直接補充【5-甲基四氫葉酸（活性葉酸）】或遵醫囑增補；② 高血壓伴 Hcy 升高者需同步降壓+降 Hcy 預防腦中風；③ 腫瘤/風濕患者使用【甲氨蝶呤】時 TT 型易發生嚴重口腔潰瘍與骨髓抑制，需嚴密監測並及時用亞葉酸鈣解救。",
+      "drugs_guide": [
+        {
+          "drug_name": "Folic Acid vs. 5-Methyltetrahydrofolate (5-MTHF)",
+          "chinese_name": "普通合成葉酸 vs. 5-甲基四氫葉酸（活性葉酸）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "MTHFR 677TT 純合型孕婦對普通合成葉酸轉化效率僅約 30%，建議優先選擇無需 MTHFR 轉化的 5-甲基四氫葉酸（活性葉酸）或按周產期指南個人化調整葉酸劑量（0.8 mg/d）。",
+          "cpic_level": "臨床合理補充葉酸多學科專家共識"
+        },
+        {
+          "drug_name": "Methotrexate (MTX)",
+          "chinese_name": "甲氨蝶呤（抗腫瘤/類風濕免疫抑制劑）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "MTHFR 677TT 基因型患者接受甲氨蝶呤治療時，發生肝毒性、口腔黏膜炎和白血球減少的風險顯著增加，需密切監測血液常規、肝功能及血藥濃度。",
+          "cpic_level": "PharmGKB Level 2A Clinical Annotation"
+        }
+      ],
+      "dietary_contraindications": [
+        "避免長期只吃精製白米白麵而缺乏深綠色葉菜（天然食物葉酸及維生素 B6、B12 是同半胱胺酸代謝必需輔酶）",
+        "限制重鹽醃製飲食與吸菸（高鹽與吸菸會協同高 Hcy 加速腦血管動脈粥樣硬化）"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 腦中風預防 (CSPPT) 與周產期優生權威共識",
+      "clinvar_pathogenic_count": 115,
+      "clinvar_summary_chinese": "C677T (rs1801133) 是全球研究最透徹的葉酸代謝與藥物反應多態性位點之一",
+      "opentargets_score": 0.88,
+      "key_pmids": [
+        "PMID:7647779",
+        "PMID:25775051"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "備孕夫妻建議孕前 3 個月檢測紅血球葉酸濃度；40 歲以上中老年人（尤其是高血壓患者）每年體檢務必加查一項抽血指標：血同半胱胺酸（Hcy，理想值 < 10 μmol/L）。",
+      "lifestyle_tips": [
+        "【備孕準媽媽】若檢出 MTHFR 677TT 型，可在婦產科醫師指導下直接選用含有「5-甲基四氫葉酸（活性葉酸）」的補充劑，吸收利用率更高",
+        "【中老年父母】若患有高血壓且血 Hcy ≥ 10 μmol/L（即佔高血壓總數約 75% 的「H 型高血壓」），在降壓同時補充葉酸、維生素 B6 和維生素 B12，可顯著降低腦中風風險",
+        "日常多吃菠菜、青花菜、蘆筍、酪梨等富含天然葉酸的新鮮蔬果（急火快炒減少葉酸流失）"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "婦產科 / 優生遺傳門診 / 心臟內科 / 神經內科",
+      "questions": [
+        "醫師您好，我的葉酸基因檢測顯示 MTHFR C677T 為 TT 純合突變，備孕期間我是應該換用 5-甲基四氫葉酸（活性葉酸），還是調整葉酸補充劑量？",
+        "我父母有高血壓，去醫院抽血查「同半胱胺酸 (Hcy)」如果偏高，是否屬於 H 型高血壓？需要聯合補充葉酸預防腦中風嗎？",
+        "除了補充葉酸，我是否需要同時抽血檢查維生素 B12 和鐵蛋白濃度？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「葉酸只有懷孕的年輕女人才需要吃，中老年人特別是男性吃葉酸毫無用處？」",
+      "truth": "大錯特錯！在華人族群中，約 75% 的高血壓患者合併高同半胱胺酸（即 H 型高血壓），這正是腦中風發病率居高不下的重要元兇（尤其與 MTHFR C677T 突變率高且葉酸攝取不足有關）。著名的 CSPPT 臨床研究證實，H 型高血壓中老年人科學補充葉酸可將首發腦中風風險顯著降低 21%！"
+    }
+  },
+  {
+    "association_id": "GDA_CYP2C19_CLOPIDOGREL",
+    "gene": {
+      "symbol": "CYP2C19",
+      "name": "cytochrome P450 family 2 subfamily C member 19",
+      "chinese_name": "細胞色素 P450 2C19 (抗血小板藥物代謝基因)",
+      "ensembl_id": "ENSG00000165841",
+      "entrez_id": "1557",
+      "biotype": "protein_coding",
+      "chromosome": "10q23.33 (10 號染色體)",
+      "metaphor": {
+        "title": "🔑 肝臟裡的【抗血栓前驅藥解鎖鑰匙匠】",
+        "story": "抗血小板名藥「保栓通 (Clopidogrel / Plavix)」剛吞下肚時其實是一把還沒開鋒的「前驅藥鎖頭」，必須經過肝臟裡的 CYP2C19 鑰匙匠加工轉化，才能變成真正能防止血管栓塞的活性藥物。如果攜帶 *2 或 *3 等失去功能的等位基因，鑰匙匠停工，藥物無法順利活化，裝完心臟支架或腦中風後血管再次栓塞的風險就會明顯升高。"
+      },
+      "plain_summary": "CYP2C19 負責將前驅藥保栓通 (Clopidogrel) 轉化為具抗血小板活性的代謝物。攜帶功能缺失型等位基因（如 *2、*3）的中間代謝者或慢代謝者，服用保栓通的活化效率顯著降低，醫師通常會評估改用不依賴 CYP2C19 活化的替代抗血小板藥物。",
+      "academic_summary": "CYP2C19 編碼肝微粒體單加氧酶，催化噻吩並吡啶類前驅藥 Clopidogrel 經兩步氧化生成活性硫醇代謝物以不可逆抑制血小板 P2Y12 受體。常見無功能等位基因 CYP2C19*2 (rs4244285, c.681G>A) 與 CYP2C19*3 (rs4986893, c.636G>A) 導致酶活性缺失，使血小板抑制率下降及心血管不良事件風險上升。"
+    },
+    "disease": {
+      "id": "PHARMGKB:PA166124406",
+      "name": "platelet reactivity (Clopidogrel poor metabolism / CYP2C19 pharmacogenetic response)",
+      "chinese_name": "保栓通 (Clopidogrel) 藥物活化障礙與血栓風險",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "心腦血管用藥安全"
+      ],
+      "inheritance_mode": "體染色體共顯性代謝表型 (Autosomal Codominant Metabolic Phenotype)",
+      "severity_badge": "🔴 支架與中風用藥紅綠燈 (慢代謝者需換藥)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001658",
+        "name": "Myocardial infarction",
+        "chinese_name": "心肌梗塞 / 支架內血栓風險"
+      },
+      {
+        "hpo_id": "HP:0002140",
+        "name": "Ischemic stroke",
+        "chinese_name": "缺血性腦中風復發風險"
+      },
+      {
+        "hpo_id": "HP:0033678",
+        "name": "Acute coronary syndrome",
+        "chinese_name": "急性冠心症抗血小板反應不佳"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Prasugrel / Ticagrelor",
+        "chinese_name": "普拉格雷 / 替格瑞洛 (替代抗血小板藥)",
+        "mechanism": "不依賴 CYP2C19 兩步活化之 P2Y12 受體抑制劑，用於 CYP2C19 慢/中間代謝者",
+        "approval_status": "CPIC Level A / FDA 仿單推薦替代方案"
+      },
+      {
+        "drug_name": "Clopidogrel",
+        "chinese_name": "氯吡格雷 (保栓通 / Plavix)",
+        "mechanism": "需經 CYP2C19 生物轉化之 P2Y12 血小板抑制前驅藥",
+        "approval_status": "FDA Boxed Warning / CPIC Level A"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CYP2C19*2 (rs4244285, c.681G>A)、CYP2C19*3 (rs4986893, c.636G>A)、CYP2C19 *2/*2、CYP2C19 *2/*3、*1/*17 (rs12248560)",
+      "population_frequency": "東亞族群 *2 等位基因頻率約 29%，*3 約 4%~9%；慢代謝型 (*2/*2、*2/*3、*3/*3) 約佔 13%~15% (PMID:35034351)",
+      "traffic_light_summary": "🔴 慢代謝者 (*2/*2、*2/*3、*3/*3) 應避免使用保栓通 (Clopidogrel)，建議由醫師改用替格瑞洛 (Ticagrelor) 或普拉格雷 (Prasugrel)；🟡 中間代謝者 (*1/*2、*1/*3、*2/*17) 活性降低，建議由醫師考慮替代抗血小板藥物。",
+      "drugs_guide": [
+        {
+          "drug_name": "Clopidogrel (Plavix) - Poor Metabolizer (*2/*2, *2/*3, *3/*3)",
+          "chinese_name": "氯吡格雷（保栓通 / Plavix）- 慢代謝型",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "CYP2C19 慢代謝者幾乎無法將保栓通轉化為活性代謝物，抗血小板療效顯著下降。若無禁忌症，醫師通常會選擇普拉格雷 (Prasugrel) 或替格瑞洛 (Ticagrelor) 等替代藥物。",
+          "cpic_level": "CPIC Guideline for CYP2C19 and Clopidogrel Level A / FDA Boxed Warning"
+        },
+        {
+          "drug_name": "Clopidogrel (Plavix) - Intermediate Metabolizer (*1/*2, *1/*3, *2/*17)",
+          "chinese_name": "氯吡格雷（保栓通 / Plavix）- 中間代謝型",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2C19 中間代謝者生成活性代謝物減少，在急性冠心症、經皮冠狀動脈介入治療 (PCI) 或腦血管適應症中，建議由專科醫師評估換用其他抗血小板藥物或調整治療策略。",
+          "cpic_level": "CPIC Guideline for CYP2C19 and Clopidogrel Level A / PharmGKB Level 1A"
+        },
+        {
+          "drug_name": "Voriconazole / Proton Pump Inhibitors / SSRIs",
+          "chinese_name": "伏立康唑 / 氫離子幫浦抑制劑 (Omeprazole) / 部分抗憂鬱藥",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2C19 亦負責代謝伏立康唑、奧美拉唑與西酞普蘭等藥物；不同代謝表型患者可能需由醫師調整用藥選擇或加強臨床監測。",
+          "cpic_level": "CPIC Guideline Level A (Voriconazole / PPIs / SSRIs)"
+        }
+      ],
+      "dietary_contraindications": [
+        "服用保栓通期間應避免同時自行服用奧美拉唑 (Omeprazole) 或艾司奧美拉唑 (Esomeprazole)，因其會抑制 CYP2C19 活性",
+        "戒菸並限制飲酒，降低血管內皮損傷與消化道出血風險"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.98,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨美國 FDA 黑框警示最高實證",
+      "clinvar_pathogenic_count": 617,
+      "clinvar_summary_chinese": "ClinVar 與 PharmGKB 收錄 *2 (rs4244285)、*3 (rs4986893)、*17 (rs12248560) 等明確藥物反應位點",
+      "opentargets_score": 0.92,
+      "key_pmids": [
+        "PMID:21716271",
+        "PMID:23698643",
+        "PMID:35034351"
+      ],
+      "guideline_ids": [
+        "PHARMGKB:PA166251443"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "計畫接受冠狀動脈支架置放術 (PCI)、急性冠心症治療或缺血性腦中風次級預防使用保栓通前，建議進行 CYP2C19 基因型檢測。",
+      "lifestyle_tips": [
+        "若檢出 CYP2C19 *2 或 *3 等位基因，請務必在就診時主動告知心臟內科或神經內科醫師，切勿自行停用抗血小板藥物",
+        "購買胃藥前請先諮詢藥師，避免併用會抑制 CYP2C19 的特定胃酸抑制劑",
+        "規律控制血壓、血糖與低密度膽固醇，維持良好作息以保護心血管"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 神經內科 / 臨床藥師門診",
+      "questions": [
+        "醫師您好，我的基因報告顯示 CYP2C19 為慢代謝或中間代謝型，目前服用的保栓通 (Clopidogrel) 是否需要改用替格瑞洛或普拉格雷？",
+        "如果因為保護胃部需要搭配胃藥，哪一種胃藥不會干擾我的抗血小板藥物代謝？",
+        "除了抗血小板藥物外，我未來使用特定抗黴菌藥、胃藥或抗憂鬱藥時是否也需要出示這張 CYP2C19 基因卡？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「裝完心臟支架後只要每天乖乖按時吃保栓通，就一定能有效預防血栓？」",
+      "truth": "不一定！東亞族群中約有 13%~15% 的人屬於 CYP2C19 慢代謝型，體內缺乏將保栓通「開鎖活化」的酵素。這類患者即使每天按時吃藥，體內也幾乎沒有活性藥效，必須由醫師根據基因結果換用不需 CYP2C19 活化的替代藥物。"
+    }
+  },
+  {
+    "association_id": "GDA_CYP2C9_WARFARIN_NSAIDS",
+    "gene": {
+      "symbol": "CYP2C9",
+      "name": "cytochrome P450 family 2 subfamily C member 9",
+      "chinese_name": "細胞色素 P450 2C9 (華法林、苯妥英與消炎止痛藥代謝基因)",
+      "ensembl_id": "ENSG00000138109",
+      "entrez_id": "1559",
+      "biotype": "protein_coding",
+      "chromosome": "10q23.33 (10 號染色體)",
+      "metaphor": {
+        "title": "⏳ 肝臟裡的【藥物代謝漏斗】",
+        "story": "抗凝血藥「華法林 (Warfarin)」、抗癲癇藥「苯妥英 (Phenytoin)」以及常見的非類固醇消炎止痛藥 (NSAIDs)，在完成任務後都需要通過肝臟裡的 CYP2C9 漏斗勻速排出體外。如果攜帶 *2 或 *3 等功能減弱的等位基因，漏斗口變窄，藥物排不出去而在血液裡越積越多，若按一般常規方式服藥，就容易引發異常出血或藥物中毒反應。"
+      },
+      "plain_summary": "CYP2C9 負責清除華法林 (Warfarin)、苯妥英 (Phenytoin) 及多種消炎止痛藥（如塞來昔布、美洛昔康、吡羅昔康、布洛芬）。攜帶 *2 或 *3 等位基因者清除藥物較慢，您的醫師可能會調整劑量、加密監測或選擇其他替代藥物。",
+      "academic_summary": "CYP2C9 編碼肝微粒體細胞色素 P450 2C9，主司 S-Warfarin、Phenytoin 及多種昔康類/昔布類 NSAIDs 之羥基化清除。功能下降型等位基因 CYP2C9*2 (rs1799853, c.430C>T, p.Arg144Cys) 與 CYP2C9*3 (rs1057910, c.1075A>C, p.Ile359Leu) 顯著降低內在清除率，升高血藥濃度與出血、神經毒性或消化道潰瘍風險。"
+    },
+    "disease": {
+      "id": "MESH:D064420",
+      "name": "Drug-Related Side Effects and Adverse Reactions (CYP2C9 warfarin, phenytoin, NSAIDs)",
+      "chinese_name": "華法林 / 苯妥英 / 消炎止痛藥代謝減緩與出血敏感風險",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "抗凝血與止痛用藥安全"
+      ],
+      "inheritance_mode": "體染色體共顯性代謝表型 (Autosomal Codominant Metabolic Phenotype)",
+      "severity_badge": "🟡 劑量敏感警示 (需由醫師調整劑量或選用替代藥物)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001892",
+        "name": "Abnormal bleeding",
+        "chinese_name": "抗凝血過度相關異常出血風險"
+      },
+      {
+        "hpo_id": "HP:0002239",
+        "name": "Gastrointestinal hemorrhage",
+        "chinese_name": "消化道出血風險"
+      },
+      {
+        "hpo_id": "HP:0001251",
+        "name": "Ataxia",
+        "chinese_name": "苯妥英血藥濃度過高所致步態不穩 (共濟失調)"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Warfarin",
+        "chinese_name": "華法林 (可邁丁 / Coumadin)",
+        "mechanism": "維生素 K 環氧化物還原酶抑制劑，其高活性 S-鏡像異構物由 CYP2C9 代謝清除",
+        "approval_status": "CPIC Level A / FDA 仿單標註"
+      },
+      {
+        "drug_name": "Phenytoin / NSAIDs",
+        "chinese_name": "苯妥英 / 非類固醇消炎止痛藥 (塞來昔布、美洛昔康、布洛芬等)",
+        "mechanism": "治療窗窄之抗癲癇藥及主要經 CYP2C9 代謝之抗發炎止痛藥",
+        "approval_status": "CPIC Level A / PharmGKB Level 1A"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CYP2C9*2 (rs1799853, c.430C>T, p.Arg144Cys)、CYP2C9*3 (rs1057910, c.1075A>C, p.Ile359Leu)",
+      "population_frequency": "東亞族群 CYP2C9*3 等位基因頻率約 3%~4%；歐裔族群 *2 約 12%、*3 約 7%~8% (PMID:28198005)",
+      "traffic_light_summary": "🟡 慎用與個人化調整：攜帶 CYP2C9 *2 或 *3 者對華法林 (Warfarin)、苯妥英 (Phenytoin) 及多種消炎止痛藥 (NSAIDs) 代謝減慢，您的醫師可能會調整劑量、密切監測 INR，或選擇其他替代藥物。",
+      "drugs_guide": [
+        {
+          "drug_name": "Warfarin",
+          "chinese_name": "華法林（口服抗凝血劑）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2C9 *2 與 *3 變異會減緩 S-華法林清除並增加出血風險；您的醫師可能會結合 VKORC1 基因型調整劑量並加密 INR 監測，或評估改用其他抗凝血藥物。",
+          "cpic_level": "CPIC Guideline for CYP2C9, VKORC1, CYP4F2 and Warfarin Level A"
+        },
+        {
+          "drug_name": "Phenytoin / Fosphenytoin",
+          "chinese_name": "苯妥英 / 磷苯妥英（抗癲癇藥）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2C9 中間或慢代謝者清除苯妥英能力下降，易發生步態不穩、眼球震顫等神經毒性；在排除 HLA-B*15:02 後，您的醫師可能會調整維持劑量或選擇其他抗癲癇藥物。",
+          "cpic_level": "CPIC Guideline for CYP2C9, HLA-B and Phenytoin Level A"
+        },
+        {
+          "drug_name": "NSAIDs (Celecoxib, Flurbiprofen, Meloxicam, Piroxicam, Ibuprofen)",
+          "chinese_name": "非類固醇消炎止痛藥（塞來昔布、美洛昔康、吡羅昔康、布洛芬等）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2C9 代謝減弱者服用此類止痛藥時血藥暴露量升高，胃腸道出血與腎功能損傷風險增加；您的醫師可能會調整劑量或改用不經 CYP2C9 代謝的替代止痛藥。",
+          "cpic_level": "CPIC Guideline for CYP2C9 and NSAIDs Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "服用華法林期間應保持每日深綠色蔬菜（富含維生素 K）攝取量穩定，勿忽多忽少",
+        "避免酗酒及自行服用丹參、銀杏、當歸或聖約翰草等影響抗凝血與 CYP2C9 代謝的中草藥保健品"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨 FDA 藥物基因組學指南確證",
+      "clinvar_pathogenic_count": 36,
+      "clinvar_summary_chinese": "CYP2C9*2 (rs1799853) 與 *3 (rs1057910) 為國際公認之華法林、苯妥英與 NSAIDs 藥物敏感標誌位點",
+      "opentargets_score": 0.89,
+      "key_pmids": [
+        "PMID:21900891",
+        "PMID:28198005",
+        "PMID:32189324",
+        "PMID:32779747"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "開始使用華法林抗凝血治療、苯妥英抗癲癇治療或需長期服用消炎止痛藥前，建議檢測 CYP2C9（可聯合檢測 VKORC1 與 HLA-B）。",
+      "lifestyle_tips": [
+        "看診或拔牙手術前，主動向醫師與藥師出示 CYP2C9 基因檢測結果",
+        "服藥期間若出現刷牙異常流血、流鼻血不止、皮下大面積瘀青或黑便，應立即回診檢查",
+        "切勿自行在藥局購買長期消炎止痛藥服用，應由醫師或藥師評估不依賴 CYP2C9 代謝的品項"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 神經內科 / 風濕免疫科 / 抗凝血藥師門診",
+      "questions": [
+        "醫師您好，我攜帶 CYP2C9 代謝減慢型變異（*2 或 *3），若需使用抗凝血藥，您建議依基因型調整華法林劑量，還是考慮新型口服抗凝血藥？",
+        "如果我因為關節痛或發燒需要止痛消炎藥，有哪些不經由 CYP2C9 代謝的安全替代選擇？",
+        "開始服藥後，我應該隔多久抽血監測一次凝血指標 (INR) 或藥物濃度？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「藥局常見的消炎止痛藥（NSAIDs）每個人吃起來代謝速度都一樣，痛了就自己買來長期吃沒關係？」",
+      "truth": "錯！塞來昔布、美洛昔康、布洛芬等常見消炎止痛藥高度依賴 CYP2C9 酵素代謝。攜帶 CYP2C9 慢代謝型的人清除藥物速度明顯變慢，長期按一般方式服用容易在體內蓄積，增加胃潰瘍出血與腎臟負擔，務必由醫師指導選藥。"
+    }
+  },
+  {
+    "association_id": "GDA_VKORC1_WARFARIN",
+    "gene": {
+      "symbol": "VKORC1",
+      "name": "vitamin K epoxide reductase complex subunit 1",
+      "chinese_name": "維生素 K 環氧化物還原酶複合體亞基 1 (華法林敏感度靶點基因)",
+      "ensembl_id": "ENSG00000167397",
+      "entrez_id": "79001",
+      "biotype": "protein_coding",
+      "chromosome": "16p11.2 (16 號染色體)",
+      "metaphor": {
+        "title": "🎛️ 凝血工廠裡的【維生素 K 回收調音旋鈕】",
+        "story": "我們的肝臟製造凝血因子時需要不斷回收利用「維生素 K」，而 VKORC1 就是負責把用過的維生素 K 重新充能的機器，也是抗凝血藥「華法林 (Warfarin)」直接踩住的煞車踏板。東亞人群有高達八成以上攜帶 VKORC1 啟動子變異 (rs9923231)，這讓凝血工廠原本產出的 VKORC1 機器就比較少（高敏感型），因此只需要較少量的華法林就能踩住煞車；若誤用歐美標準高劑量，就容易凝血過度抑制而引發出血。"
+      },
+      "plain_summary": "VKORC1 是抗凝血藥華法林 (Warfarin) 的直接作用靶點。東亞族群普遍攜帶 -1639G>A (rs9923231) 啟動子變異，使肝臟 VKORC1 表現量下降、對華法林高度敏感；您的醫師可能會根據 VKORC1 與 CYP2C9 基因型調降起始與維持劑量，或選擇其他抗凝血藥物。",
+      "academic_summary": "VKORC1 編碼維生素 K 環氧化物還原酶複合體亞基 1，催化維生素 K 2,3-環氧化物還原為氫醌型維生素 K，為 γ-麩胺醯羧化酶活化凝血因子 II、VII、IX、X 之限速步驟。啟動子多態性 c.-1639G>A (rs9923231) 降低 VKORC1 轉錄活性，使 AA/GA 基因型患者對華法林敏感性顯著增加。"
+    },
+    "disease": {
+      "id": "PHARMGKB:PA166123298",
+      "name": "over-anticoagulation (Warfarin pharmacogenetic dose sensitivity / VKORC1 target sensitivity)",
+      "chinese_name": "華法林 (Warfarin) 抗凝血高度敏感體質與出血風險",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "心血管抗凝血用藥安全"
+      ],
+      "inheritance_mode": "體染色體共顯性藥效學表型 (Autosomal Codominant Pharmacodynamic Trait)",
+      "severity_badge": "🟡 華法林劑量核心指標 (東亞族群高頻高敏感)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001892",
+        "name": "Abnormal bleeding",
+        "chinese_name": "華法林敏感相關異常出血風險"
+      },
+      {
+        "hpo_id": "HP:0000978",
+        "name": "Bruising susceptibility",
+        "chinese_name": "皮下容易瘀青紫斑"
+      },
+      {
+        "hpo_id": "HP:0000421",
+        "name": "Epistaxis",
+        "chinese_name": "反覆鼻出血 / 牙齦出血"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Warfarin",
+        "chinese_name": "華法林 (可邁丁 / Coumadin)",
+        "mechanism": "直接抑制 VKORC1 以阻斷維生素 K 依賴性凝血因子活化",
+        "approval_status": "CPIC Level A / FDA 仿單標註"
+      },
+      {
+        "drug_name": "Direct Oral Anticoagulants (DOACs)",
+        "chinese_name": "新型口服抗凝血藥 (Apixaban / Rivaroxaban / Dabigatran / Edoxaban)",
+        "mechanism": "直接抑制凝血因子 Xa 或 IIa，不經由 VKORC1 靶點作用",
+        "approval_status": "FDA / TFDA 核准臨床替代方案"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "VKORC1 c.-1639G>A (rs9923231) 及 c.1173C>T (rs9934438)",
+      "population_frequency": "東亞族群 -1639A (rs9923231) 等位基因頻率高達 85%~90%（AA 純合高敏感型約佔 75%~80%），解釋了東亞人華法林需求量普遍低於歐美人群的原因 (PMID:28198005)",
+      "traffic_light_summary": "🟡 慎用與劑量調整：攜帶 VKORC1 -1639G>A (rs9923231) AA 或 GA 型者對華法林敏感度升高，您的醫師可能會結合 CYP2C9 基因型調整華法林劑量並密切監測 INR，或評估其他抗凝血藥物。",
+      "drugs_guide": [
+        {
+          "drug_name": "Warfarin",
+          "chinese_name": "華法林（口服抗凝血劑）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "攜帶 VKORC1 -1639G>A (rs9923231) A 等位基因者肝臟 VKORC1 酶表現量較低，對華法林反應敏感；您的醫師可能會依 CPIC 藥物基因組學演算法調整劑量並加強 INR 監測。",
+          "cpic_level": "CPIC Guideline for CYP2C9, VKORC1, CYP4F2 and Warfarin Level A / PharmGKB Level 1A"
+        }
+      ],
+      "dietary_contraindications": [
+        "服用華法林期間請維持每日深綠色葉菜（菠菜、芥藍、青花菜）、綠茶及內臟類之維生素 K 攝取穩定，避免突然大量進食或完全禁食",
+        "避免食用納豆（含大量納豆激酶與維生素 K2，會強烈干擾華法林抗凝血效果）及蔓越莓汁"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.97,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨 FDA 仿單標註核心抗凝血基因",
+      "clinvar_pathogenic_count": 26,
+      "clinvar_summary_chinese": "rs9923231 (-1639G>A) 是全球證據最充分的華法林敏感度決定位點",
+      "opentargets_score": 0.93,
+      "key_pmids": [
+        "PMID:21900891",
+        "PMID:28198005"
+      ],
+      "guideline_ids": [
+        "PHARMGKB:PA166251465"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "因心房顫動、人工心臟瓣膜置換或深部靜脈栓塞需啟動華法林治療前，建議同步檢測 VKORC1 與 CYP2C9 基因型。",
+      "lifestyle_tips": [
+        "隨身攜帶抗凝血用藥警示卡，接受牙科拔牙、內視鏡或任何手術前務必提前告知醫師",
+        "日常飲食講求「定量穩定」，不必完全禁吃綠色蔬菜，但每週攝取量應保持一致",
+        "依照醫囑定期回診抽血檢測國際標準化比值 (INR)，切勿自行增減藥量"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟血管外科 / 抗凝血藥師門診",
+      "questions": [
+        "醫師您好，我的基因報告顯示 VKORC1 rs9923231 為高敏感型，我的華法林劑量是否需要根據 VKORC1 與 CYP2C9 結果進行個人化調整？",
+        "我的理想 INR 控制目標範圍是多少？初期需要隔幾天回診抽血一次？",
+        "在我的臨床情況下，適合繼續使用經基因型調整的華法林，還是可以考慮新型口服抗凝血藥 (DOAC)？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「吃華法林抗凝血藥期間，是不是連一口菠菜或綠色蔬菜都絕對不能碰？」",
+      "truth": "不是！真正危險的是維生素 K 攝取量「忽高忽低」（例如平常不吃，某天突然吃一大盤菠菜或納豆）。只要每天維持穩定、均衡的蔬菜攝取量，醫師就能根據您的 VKORC1 基因型與 INR 抽血結果把藥效調校在最安全的範圍。"
+    }
+  },
+  {
+    "association_id": "GDA_SLCO1B1_STATIN_MYOPATHY",
+    "gene": {
+      "symbol": "SLCO1B1",
+      "name": "solute carrier organic anion transporter family member 1B1",
+      "chinese_name": "有機陰離子轉運多肽 1B1 (史他汀類降膽固醇藥肌肉安全基因)",
+      "ensembl_id": "ENSG00000134538",
+      "entrez_id": "10599",
+      "biotype": "protein_coding",
+      "chromosome": "12p12.1 (12 號染色體)",
+      "metaphor": {
+        "title": "🚪 肝臟大門口的【降血脂藥專屬迎賓旋轉門】",
+        "story": "史他汀類降膽固醇藥（如辛伐他汀 Simvastatin）吞下肚進入血液後，原本的目標是進入肝臟工廠抑制膽固醇合成，而 SLCO1B1 就是肝臟大門口的專屬迎賓旋轉門。如果攜帶 rs4149056 (*5 / *15) 變異，這扇旋轉門卡住了，降血脂藥進不了肝臟，只好大量滯留在外周血液裡並滲入骨骼肌，容易引發雙腿肌肉酸痛、肌炎，嚴重時甚至導致橫紋肌溶解症。"
+      },
+      "plain_summary": "SLCO1B1 負責將史他汀類 (Statins) 降血脂藥物轉運進入肝細胞。攜帶 c.521T>C (rs4149056, *5 / *15) 功能減弱變異者，服用辛伐他汀 (Simvastatin) 等藥物時血液濃度升高，發生史他汀相關肌肉症狀 (SAMS) 的風險顯著增加；您的醫師可能會調整劑量或改用受 SLCO1B1 影響較小的其他降血脂藥物。",
+      "academic_summary": "SLCO1B1 編碼肝細胞基底外側膜轉運蛋白 OATP1B1，介導羥甲基戊二酸單醯輔酶 A (HMG-CoA) 還原酶抑制劑之肝臟攝取清除。功能減弱錯義變異 c.521T>C (rs4149056, p.Val174Ala, *5/*15) 降低轉運活性，顯著提高 Simvastatin 酸與其他親脂性 Statin 全身暴露量 (AUC)，誘發劑量依賴性骨骼肌毒性。"
+    },
+    "disease": {
+      "id": "MONDO:0033170",
+      "name": "Statin toxicity / Statin-associated musculoskeletal symptoms",
+      "chinese_name": "史他汀類 (Statin) 降血脂藥相關肌肉病變與橫紋肌溶解風險",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "心血管與降血脂用藥安全"
+      ],
+      "inheritance_mode": "體染色體共顯性轉運蛋白表型 (Autosomal Codominant Transporter Phenotype)",
+      "severity_badge": "🔴 辛伐他汀高風險警示 (需調整劑量或換用其他 Statin)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003326",
+        "name": "Myalgia",
+        "chinese_name": "對稱性近端肌肉酸痛 (肌痛)"
+      },
+      {
+        "hpo_id": "HP:0003198",
+        "name": "Myopathy",
+        "chinese_name": "藥物相關骨骼肌病變"
+      },
+      {
+        "hpo_id": "HP:0003201",
+        "name": "Rhabdomyolysis",
+        "chinese_name": "橫紋肌溶解症"
+      },
+      {
+        "hpo_id": "HP:0003236",
+        "name": "Elevated circulating creatine kinase activity",
+        "chinese_name": "血中肌酸激酶 (CK) 活性升高"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Simvastatin",
+        "chinese_name": "辛伐他汀 (素果 / Zocor)",
+        "mechanism": "HMG-CoA 還原酶抑制劑，其活性酸代謝物高度依賴 OATP1B1 (SLCO1B1) 轉運入肝",
+        "approval_status": "CPIC Level A / FDA 仿單標註"
+      },
+      {
+        "drug_name": "Atorvastatin / Rosuvastatin / Pravastatin",
+        "chinese_name": "阿托伐他汀 / 瑞舒伐他汀 / 普伐他汀",
+        "mechanism": "其他 HMG-CoA 還原酶抑制劑，可依 SLCO1B1 表型由醫師選擇替代或調整",
+        "approval_status": "CPIC Level A 指南涵蓋"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "SLCO1B1 c.521T>C (rs4149056, p.Val174Ala, SLCO1B1*5 / *15)",
+      "population_frequency": "東亞族群 c.521T>C (rs4149056) 等位基因頻率約 10%~16%（攜帶率約 20%~28%）(PMID:35152405)",
+      "traffic_light_summary": "🔴 攜帶 SLCO1B1 c.521T>C (rs4149056) 功能低下者應避免常規使用高暴露風險之辛伐他汀 (Simvastatin)，您的醫師可能會改用其他史他汀類藥物或調整治療方案；🟡 對阿托伐他汀 (Atorvastatin)、瑞舒伐他汀 (Rosuvastatin) 等亦建議由醫師依表型評估劑量並監測肌肉症狀。",
+      "drugs_guide": [
+        {
+          "drug_name": "Simvastatin",
+          "chinese_name": "辛伐他汀（素果 / Zocor）",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "SLCO1B1 功能減弱或低下者（攜帶 rs4149056 C 等位基因，如 *5、*15）服用辛伐他汀時血藥濃度顯著上升，發生肌病與橫紋肌溶解風險大幅升高；您的醫師可能會選擇其他史他汀類藥物或調整劑量。",
+          "cpic_level": "CPIC Guideline for SLCO1B1, ABCG2, CYP2C9, and Statins Level A"
+        },
+        {
+          "drug_name": "Atorvastatin / Rosuvastatin / Pitavastatin",
+          "chinese_name": "阿托伐他汀（立普妥）/ 瑞舒伐他汀（冠脂妥）/ 匹伐他汀",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "SLCO1B1 功能低下者服用此類史他汀藥物時全身暴露量亦會增加；您的醫師可能會依 CPIC 指南調整起始與最大劑量，或改用替代降血脂策略並監測肌酸激酶 (CK)。",
+          "cpic_level": "CPIC Guideline for SLCO1B1, ABCG2, CYP2C9, and Statins Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "服用辛伐他汀或阿托伐他汀期間嚴禁食用葡萄柚或葡萄柚汁（會抑制腸道 CYP3A4，與 SLCO1B1 變異疊加導致血中藥物濃度暴增）",
+        "切勿自行同時服用紅麴保健食品（紅麴含天然 Monacolin K，即洛伐他汀成分，併用等同重複過量服藥）"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.97,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨 NEJM SEARCH 研究權威實證",
+      "clinvar_pathogenic_count": 46,
+      "clinvar_summary_chinese": "rs4149056 (c.521T>C) 是全球公認最強的史他汀相關肌肉毒性遺傳標誌",
+      "opentargets_score": 0.91,
+      "key_pmids": [
+        "PMID:18650507",
+        "PMID:22617227",
+        "PMID:24918167",
+        "PMID:35152405"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "高血脂、冠心病或糖尿病患者啟動史他汀類 (Statins) 降膽固醇治療前，或曾出現不明原因肌肉酸痛者，建議檢測 SLCO1B1 rs4149056。",
+      "lifestyle_tips": [
+        "服藥期間若出現非運動引起的大腿、小腿或肩背部對稱性肌肉酸痛、無力，或尿液呈深茶色/可樂色，請立即就醫抽血檢查肌酸激酶 (CK)",
+        "日常飲食減少飽和脂肪與反式脂肪攝取，增加燕麥、深海魚與水溶性膳食纖維",
+        "切勿在服用降血脂處方藥期間自行購買「紅麴納豆膠囊」併服"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 新陳代謝內分泌科 / 家醫科",
+      "questions": [
+        "醫師您好，我的基因報告顯示攜帶 SLCO1B1 rs4149056 變異，哪一種降血脂藥物對我的肌肉安全性最高？",
+        "如果我在服藥期間覺得大腿或小腿肌肉酸痛，什麼情況下需要立刻回診抽血檢測肌酸激酶 (CK)？",
+        "除了史他汀類藥物外，依折麥布 (Ezetimibe) 或 PCSK9 抑制劑是否可作為我的輔助或替代選擇？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「吃降膽固醇藥如果覺得腿酸痛，改去買天然『紅麴保健品』吃就不會傷肌肉了？」",
+      "truth": "非常危險的迷思！紅麴的核心有效成分 Monacolin K 在化學結構上就是史他汀類藥物（Lovastatin）。攜帶 SLCO1B1 變異的人若自行吃高濃度紅麴，或把紅麴跟處方降血脂藥一起吃，反而更容易引發嚴重肌肉病變甚至橫紋肌溶解！"
+    }
+  },
+  {
+    "association_id": "GDA_TPMT_THIOPURINE",
+    "gene": {
+      "symbol": "TPMT",
+      "name": "thiopurine S-methyltransferase",
+      "chinese_name": "硫嘌呤甲基轉移酶 (硫嘌呤類免疫抑制與化療藥物代謝基因)",
+      "ensembl_id": "ENSG00000137364",
+      "entrez_id": "7172",
+      "biotype": "protein_coding",
+      "chromosome": "6p22.3 (6 號染色體)",
+      "metaphor": {
+        "title": "🧯 免疫與血液工廠裡的【硫嘌呤藥物安全洩壓閥】",
+        "story": "硫唑嘌呤 (Azathioprine) 和巰嘌呤 (Mercaptopurine) 是治療發炎性腸道疾病、自體免疫疾病與白血病的重要藥物。進入人體後，TPMT 就像一座安全洩壓閥，負責把大部分藥物甲基化轉為無活性的安全形式，只留適量活性藥物發揮療效。如果攜帶 TPMT*3A 或 *3C 等無功能變異，洩壓閥卡死關閉，幾乎所有藥物都湧向活性毒性通道，會使骨髓造血工廠遭到重創（嚴重白血球減少與骨髓抑制）。"
+      },
+      "plain_summary": "TPMT 負責代謝去活化硫嘌呤類藥物（Azathioprine 硫唑嘌呤、Mercaptopurine 巰嘌呤、Thioguanine 硫鳥嘌呤）。攜帶功能缺失型等位基因（如 *2、*3A、*3B、*3C）者服用常規劑量極易發生危及生命的嚴重骨髓抑制；您的醫師可能會大幅調整劑量或改用非硫嘌呤類替代藥物。",
+      "academic_summary": "TPMT 編碼硫嘌呤 S-甲基轉移酶，催化 6-MP 及 6-TG 之 S-甲基化失活，與生成細胞毒性 6-硫鳥嘌呤核苷酸 (6-TGN) 之活化途徑相互競爭。無功能等位基因 TPMT*3A (rs1800460 c.460G>A + rs1142345 c.719A>G)、TPMT*3C (rs1142345 c.719A>G) 及 TPMT*2 (rs1800462 c.238G>C) 導致酶蛋白快速降解，造成 6-TGN 過度累積與重度造血毒性。"
+    },
+    "disease": {
+      "id": "MONDO:0012503",
+      "name": "Thiopurine S-methyltransferase deficiency",
+      "chinese_name": "硫嘌呤甲基轉移酶缺乏症 (硫嘌呤類藥物嚴重骨髓抑制高危體質)",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "血液腫瘤與自體免疫用藥安全"
+      ],
+      "inheritance_mode": "體染色體共顯性代謝表型 (Autosomal Codominant Metabolic Phenotype)",
+      "severity_badge": "🔴 硫嘌呤類藥物高風險紅燈 (用藥前必測 TPMT + NUDT15)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001882",
+        "name": "Decreased total leukocyte count",
+        "chinese_name": "白血球減少症"
+      },
+      {
+        "hpo_id": "HP:0001875",
+        "name": "Decreased total neutrophil count",
+        "chinese_name": "嗜中性白血球低下症"
+      },
+      {
+        "hpo_id": "HP:0005528",
+        "name": "Bone marrow hypocellularity",
+        "chinese_name": "嚴重骨髓造血抑制"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Azathioprine",
+        "chinese_name": "硫唑嘌呤 (移護寧 / Imuran)",
+        "mechanism": "硫嘌呤類免疫抑制前驅藥，需由 TPMT 與 NUDT15 共同調控活性代謝物濃度",
+        "approval_status": "CPIC Level A / FDA 仿單推薦檢測"
+      },
+      {
+        "drug_name": "Mercaptopurine / Thioguanine",
+        "chinese_name": "巰嘌呤 (6-MP) / 硫鳥嘌呤 (6-TG)",
+        "mechanism": "嘌呤類似物抗代謝藥物，用於急性淋巴性白血病與發炎性腸道疾病",
+        "approval_status": "CPIC Level A / FDA 仿單推薦檢測"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "TPMT*3A (rs1800460 c.460G>A + rs1142345 c.719A>G)、TPMT*3C (rs1142345, c.719A>G)、TPMT*2 (rs1800462, c.238G>C)",
+      "population_frequency": "歐裔與非裔族群無功能等位基因攜帶率約 6%~10%（歐裔以 *3A 最常見）；東亞族群以 *3C 為主，等位基因頻率約 1%~2% (PMID:30447069)",
+      "traffic_light_summary": "🔴 慢代謝者（雙無功能等位基因，如 *3A/*3A、*3C/*3C）：非惡性適應症應避免使用硫唑嘌呤/巰嘌呤/硫鳥嘌呤，改用非硫嘌呤替代療法；惡性腫瘤適應症需由專科醫師大幅調降劑量。🟡 中間代謝者（如 *1/*3A、*1/*3C）：建議由醫師調降起始劑量並密切監測全血球計數 (CBC)。",
+      "drugs_guide": [
+        {
+          "drug_name": "Azathioprine / Mercaptopurine / Thioguanine — Poor Metabolizer",
+          "chinese_name": "硫唑嘌呤 / 巰嘌呤 / 硫鳥嘌呤 — 慢代謝型",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "TPMT 慢代謝者服用常規硫嘌呤藥物會發生危及生命的全血球減少與嚴重骨髓抑制。視所治療的疾病狀況而定，您的醫師可能需要大幅調降劑量，或改選其他替代藥物。",
+          "cpic_level": "CPIC Guideline for TPMT, NUDT15 and Thiopurines Level A / FDA Testing Recommended"
+        },
+        {
+          "drug_name": "Azathioprine / Mercaptopurine / Thioguanine — Intermediate Metabolizer",
+          "chinese_name": "硫唑嘌呤 / 巰嘌呤 / 硫鳥嘌呤 — 中間代謝型",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "TPMT 中間代謝者體內毒性 6-TGN 濃度較常人升高，骨髓抑制風險增加；您的醫師可能會調降起始劑量並定期追蹤全血球計數與肝功能。",
+          "cpic_level": "CPIC Guideline for TPMT, NUDT15 and Thiopurines Level A / PharmGKB Level 1A"
+        }
+      ],
+      "dietary_contraindications": [
+        "服藥期間嚴禁自行併用降尿酸藥別嘌醇 (Allopurinol) 或非布司他 (Febuxostat)，因其會抑制黃嘌呤氧化酶 (XO)，使硫嘌呤毒性進一步倍增",
+        "避免食用未完全煮熟的生食或生乳製品，以降低白血球偏低期間的感染風險"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.99,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨全球臨床藥物基因組學經典標竿",
+      "clinvar_pathogenic_count": 27,
+      "clinvar_summary_chinese": "TPMT*2、*3A、*3B、*3C 已列入全球各大醫學中心硫嘌呤處方前標準檢測位點",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:21270794",
+        "PMID:23422873",
+        "PMID:30447069"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "因克隆氏症、潰瘍性結腸炎、紅斑性狼瘡、器官移植或急性淋巴性白血病需使用硫嘌呤類藥物前，建議同步進行 TPMT 與 NUDT15 雙基因檢測。",
+      "lifestyle_tips": [
+        "東亞患者除檢測 TPMT 外，務必同時檢測 NUDT15 基因，兩者皆正常才能安心使用常規方案",
+        "用藥初期應依醫囑高頻率抽血追蹤全血球計數 (CBC/DC) 與肝指數",
+        "若出現不明原因發燒、喉嚨劇痛、口腔潰瘍或異常瘀斑，應立即就醫檢查白血球數量"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 風濕免疫科 / 血液腫瘤科 / 小兒血液腫瘤科",
+      "questions": [
+        "醫師您好，我的報告顯示攜帶 TPMT 變異（如 TPMT*3A 或 *3C），我的免疫抑制劑是否需要改用非硫嘌呤類藥物，或由您調整劑量？",
+        "除了 TPMT 之外，我的報告是否已經同時涵蓋東亞人更常見的 NUDT15 基因位點？",
+        "開始服藥後的前兩個月，我需要每隔幾週回診抽血檢查白血球與血小板？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「我已經測過 TPMT 基因是正常型 (*1/*1)，代表我吃硫唑嘌呤 (Azathioprine) 就絕對不會發生白血球低下？」",
+      "truth": "在歐美人群或許如此，但在台灣與東亞族群卻不然！東亞人發生硫嘌呤嚴重白血球低下的主因往往不是 TPMT，而是另一個基因 NUDT15 (*3)。因此 CPIC 國際指南明確建議必須同時檢測 TPMT 與 NUDT15 雙基因！"
+    }
+  },
+  {
+    "association_id": "GDA_NUDT15_THIOPURINE",
+    "gene": {
+      "symbol": "NUDT15",
+      "name": "nudix hydrolase 15",
+      "chinese_name": "Nudix 水解酶 15 (東亞族群硫嘌呤類藥物骨髓抑制核心基因)",
+      "ensembl_id": "ENSG00000136159",
+      "entrez_id": "55270",
+      "biotype": "protein_coding",
+      "chromosome": "13q14.2 (13 號染色體)",
+      "metaphor": {
+        "title": "🧹 細胞核門口的【毒性核苷酸拆彈專家】",
+        "story": "當硫唑嘌呤 (Azathioprine) 或巰嘌呤 (6-MP) 被轉化為準備嵌入 DNA 的高毒性「三磷酸硫鳥嘌呤 (6-TGTP)」時，NUDT15 就是守在細胞核門口的拆彈專家，負責把多餘的毒性磷酸基團剪掉拆解。在台灣與東亞族群中，約每 5 到 6 人就有 1 人攜帶 NUDT15*3 變異，導致拆彈專家失靈，毒性核苷酸直接嵌入造血幹細胞 DNA，引發嚴重白血球驟降與早期異常掉髮。"
+      },
+      "plain_summary": "NUDT15 是東亞族群使用硫嘌呤類藥物（硫唑嘌呤 Azathioprine、巰嘌呤 Mercaptopurine、硫鳥嘌呤 Thioguanine）發生嚴重白血球低下與掉髮的最主要遺傳原因。攜帶 NUDT15*3 (rs116855232) 等變異者，您的醫師可能會改用非硫嘌呤替代藥物或大幅調整治療劑量。",
+      "academic_summary": "NUDT15 編碼核苷二磷酸連接部分 X 水解酶 15，催化細胞毒性活性代謝物 6-硫代-GTP (6-TGTP) 及 6-硫代-dGTP 水解為單磷酸形式，阻止其摻入 DNA 誘發細胞凋亡。東亞高頻錯義變異 NUDT15*3 (rs116855232, c.415C>T, p.Arg139Cys) 使酶熱穩定性與催化活性喪失，導致嚴重早期骨髓抑制與脫髮。"
+    },
+    "disease": {
+      "id": "MONDO:0000210",
+      "name": "Thiopurine metabolic disease / NUDT15-related thiopurine toxicity",
+      "chinese_name": "硫嘌呤代謝障礙 (東亞高頻 NUDT15 硫嘌呤骨髓抑制與掉髮風險)",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "東亞精準用藥安全",
+        "血液腫瘤與自體免疫"
+      ],
+      "inheritance_mode": "體染色體共顯性代謝表型 (Autosomal Codominant Metabolic Phenotype)",
+      "severity_badge": "🔴 東亞族群必檢紅綠燈 (攜帶率約 18%~20%)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001882",
+        "name": "Decreased total leukocyte count",
+        "chinese_name": "嚴重白血球減少症"
+      },
+      {
+        "hpo_id": "HP:0001875",
+        "name": "Decreased total neutrophil count",
+        "chinese_name": "嗜中性白血球低下伴感染風險"
+      },
+      {
+        "hpo_id": "HP:0001596",
+        "name": "Alopecia",
+        "chinese_name": "藥物誘發之早期嚴重掉髮"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Azathioprine",
+        "chinese_name": "硫唑嘌呤 (移護寧 / Imuran)",
+        "mechanism": "廣泛用於發炎性腸道疾病、風濕免疫疾病之硫嘌呤前驅藥",
+        "approval_status": "CPIC Level A / FDA 仿單推薦檢測"
+      },
+      {
+        "drug_name": "Mercaptopurine / Thioguanine",
+        "chinese_name": "巰嘌呤 (6-MP) / 硫鳥嘌呤 (6-TG)",
+        "mechanism": "急性淋巴性白血病維持期核心化療藥，受 NUDT15 直接去活化調控",
+        "approval_status": "CPIC Level A / FDA 仿單推薦檢測"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "NUDT15*3 (rs116855232, c.415C>T, p.Arg139Cys)、NUDT15*2、NUDT15*5、NUDT15*6",
+      "population_frequency": "東亞族群（含台灣、日本、韓國、華人）NUDT15*3 (rs116855232) 等位基因頻率高達 9%~11%（攜帶率約 18%~20%，純合慢代謝型約 1%），遠高於歐裔族群 (<1%) (PMID:25108385, PMID:30447069)",
+      "traffic_light_summary": "🔴 慢代謝者（如 NUDT15 *3/*3）：非惡性適應症應避免使用硫唑嘌呤/巰嘌呤/硫鳥嘌呤並改用替代藥物，白血病適應症需由專科醫師大幅調降劑量；🟡 中間代謝者（如 *1/*3）：建議由醫師調降起始劑量並密集監測全血球計數。",
+      "drugs_guide": [
+        {
+          "drug_name": "Azathioprine / Mercaptopurine / Thioguanine — Poor Metabolizer (*3/*3)",
+          "chinese_name": "硫唑嘌呤 / 巰嘌呤 / 硫鳥嘌呤 — 慢代謝型 (*3/*3)",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "NUDT15 慢代謝者對硫嘌呤極度不耐受，常規方案易引發嚴重全血球低下與大面積掉髮。視所治療的疾病狀況而定，您的醫師可能需要大幅調降劑量，或改選其他替代藥物。",
+          "cpic_level": "CPIC Guideline for TPMT, NUDT15 and Thiopurines Level A / FDA Testing Recommended"
+        },
+        {
+          "drug_name": "Azathioprine / Mercaptopurine / Thioguanine — Intermediate Metabolizer (*1/*3)",
+          "chinese_name": "硫唑嘌呤 / 巰嘌呤 / 硫鳥嘌呤 — 中間代謝型 (*1/*3)",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "NUDT15 中間代謝者發生白血球低下的風險顯著高於一般型；您的醫師可能會依 CPIC 指南調降起始劑量，並密切追蹤血液常規。",
+          "cpic_level": "CPIC Guideline for TPMT, NUDT15 and Thiopurines Level A / PharmGKB Level 1A"
+        }
+      ],
+      "dietary_contraindications": [
+        "避免同時自行服用別嘌醇 (Allopurinol) 等黃嘌呤氧化酶抑制劑，以免加重骨髓毒性",
+        "治療期間注意飲食衛生、避免生食，預防白血球低下期間之伺機性感染"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.99,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨亞洲人群精準醫療重大突破",
+      "clinvar_pathogenic_count": 69,
+      "clinvar_summary_chinese": "NUDT15*3 (rs116855232) 為解釋東亞人硫嘌呤骨髓抑制最重要的藥物基因位點",
+      "opentargets_score": 0.91,
+      "key_pmids": [
+        "PMID:25108385",
+        "PMID:26878724",
+        "PMID:30447069"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "台灣及東亞患者在啟動硫唑嘌呤 (Azathioprine) 或巰嘌呤 (6-MP) 治療前，強烈建議優先進行 NUDT15（聯合 TPMT）基因篩檢。",
+      "lifestyle_tips": [
+        "服藥前兩週至兩個月內若發現梳頭或洗頭時異常大量掉髮，往往是 NUDT15 硫嘌呤毒性的早期警訊，請立即回診抽血",
+        "按時配合醫院抽血追蹤白血球、嗜中性白血球與血小板計數",
+        "若家中有親屬曾因服用免疫抑制劑引發嚴重白血球低下，就醫時請主動告知醫師"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 風濕免疫科 / 小兒血液腫瘤科 / 皮膚科",
+      "questions": [
+        "醫師您好，我的報告檢出 NUDT15*3 (rs116855232) 變異，我的治療方案是否應該調整劑量或改用其他非硫嘌呤類的免疫調節藥物？",
+        "如果我在服藥初期出現明顯掉髮或疲倦、發燒，是否需要立即停藥並回醫院抽血檢查全血球計數？",
+        "我的子女或手足若未來也需要使用這類藥物，是否建議先做 NUDT15 基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「歐美醫學指南說硫嘌呤藥物毒性主要看 TPMT 基因，那亞洲人直接照搬歐美只測 TPMT 就夠了嗎？」",
+      "truth": "完全不夠！在歐裔人群中 NUDT15 變異不到 1%，但在台灣與東亞族群中卻高達約 18%~20%，是亞洲患者發生硫嘌呤嚴重骨髓抑制的第一大主因。這正是為什麼基因資料庫與用藥指南必須納入東亞人群數據！"
+    }
+  },
+  {
+    "association_id": "GDA_HLA_B_SCAR",
+    "gene": {
+      "symbol": "HLA-B",
+      "name": "major histocompatibility complex, class I, B",
+      "chinese_name": "人類白血球抗原 B 型 (嚴重藥物過敏史蒂芬強森症候群警訊基因)",
+      "ensembl_id": "ENSG00000234745",
+      "entrez_id": "3106",
+      "biotype": "protein_coding",
+      "chromosome": "6p21.33 (6 號染色體短臂)",
+      "metaphor": {
+        "title": "🚨 免疫系統裡的【高敏感藥物雷達哨兵】",
+        "story": "HLA-B 是細胞表面負責向免疫 T 細胞展示外來物、維持免疫巡邏的哨兵。但在攜帶特定基因型的人體內，哨兵的雷達會發生致命誤判：當攜帶 HLA-B*15:02 的人吃到抗癲癇/三叉神經痛藥「卡馬西平 (Carbamazepine)」，或攜帶 HLA-B*58:01 的人吃到降尿酸痛風藥「別嘌醇 (Allopurinol)」時，藥物會直接卡進哨兵凹槽，誤導殺手 T 細胞對全身皮膚與黏膜發動無差別轟炸，引發致死率極高的史蒂芬強森症候群 (SJS) 或毒性表皮壞死溶解症 (TEN)。"
+      },
+      "plain_summary": "HLA-B*15:02 與 HLA-B*58:01 是台灣與東亞族群最重要的藥物嚴重皮膚不良反應 (SCAR) 警訊基因。攜帶 HLA-B*15:02 者嚴禁使用卡馬西平 (Carbamazepine)、奧卡西平 (Oxcarbazepine) 與苯妥英 (Phenytoin)；攜帶 HLA-B*58:01 者嚴禁使用降尿酸藥別嘌醇 (Allopurinol)。",
+      "academic_summary": "HLA-B 編碼第一類主要組織相容性複合體 (MHC class I) 重鏈。HLA-B*15:02 可與芳香族抗癲癇藥（Carbamazepine、Oxcarbazepine、Phenytoin）直接非共價結合並活化細胞毒性 CD8+ T 細胞釋放顆粒溶解素 (Granulysin)，誘發 SJS/TEN；HLA-B*58:01 則對 Allopurinol 及其代謝物 Oxypurinol 具特異性結合親和力，誘發 SJS/TEN 與藥物反應伴嗜伊紅性白血球增加及全身症狀 (DRESS)。"
+    },
+    "disease": {
+      "id": "MONDO:0005594",
+      "name": "Severe cutaneous adverse reaction (SJS / TEN / DRESS)",
+      "chinese_name": "嚴重皮膚不良反應 (史蒂芬強森症候群 SJS / 毒性表皮壞死溶解症 TEN)",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "台灣精準醫療與用藥禁忌",
+        "嚴重藥物過敏"
+      ],
+      "inheritance_mode": "體染色體共顯性免疫易感性 (Autosomal Codominant HLA Allele Susceptibility)",
+      "severity_badge": "🔴 絕對用藥禁忌紅燈 (用藥前篩檢可預防致命藥害)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0008066",
+        "name": "Abnormal blistering of the skin",
+        "chinese_name": "全身皮膚異常水泡與表皮剝離 (SJS/TEN)"
+      },
+      {
+        "hpo_id": "HP:0200097",
+        "name": "Oral mucosal blisters",
+        "chinese_name": "口腔、眼結膜與生殖器黏膜潰爛水泡"
+      },
+      {
+        "hpo_id": "HP:0040186",
+        "name": "Maculopapular exanthema",
+        "chinese_name": "藥物誘發之廣泛性斑丘疹"
+      },
+      {
+        "hpo_id": "HP:0001945",
+        "name": "Fever",
+        "chinese_name": "用藥後突發高燒與全身不適"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Carbamazepine / Oxcarbazepine / Phenytoin (Contraindicated in HLA-B*15:02)",
+        "chinese_name": "卡馬西平 (癲通 Tegretol) / 奧卡西平 / 苯妥英",
+        "mechanism": "芳香族抗癲癇與神經痛藥物，可結合 HLA-B*15:02 誘發致命性 SJS/TEN",
+        "approval_status": "CPIC Level A / FDA 黑框警示 / 台灣健保用藥前給付篩檢 (PMID:21428768)"
+      },
+      {
+        "drug_name": "Allopurinol (Contraindicated in HLA-B*58:01)",
+        "chinese_name": "別嘌醇 (安樂普利諾 / Zyloric)",
+        "mechanism": "黃嘌呤氧化酶抑制劑降尿酸藥，可結合 HLA-B*58:01 誘發嚴重皮膚不良反應 (SCAR)",
+        "approval_status": "CPIC Level A / 台灣前瞻性篩檢實證 (PMID:26399967)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "HLA-B*15:02 (HLA-B*1502)、HLA-B*58:01 (HLA-B*5801)",
+      "population_frequency": "台灣與漢族人群 HLA-B*15:02 攜帶率約 7%~8%（東南亞部分族群達 15%+）(PMID:15057820, PMID:21428768)；台灣漢族人群 HLA-B*58:01 攜帶率約 15%~20% (PMID:15743917, PMID:26399967)",
+      "traffic_light_summary": "🔴 雙重絕對紅燈：① HLA-B*15:02 陽性者嚴禁使用卡馬西平 (Carbamazepine)、奧卡西平 (Oxcarbazepine) 及苯妥英 (Phenytoin)；② HLA-B*58:01 陽性者嚴禁使用別嘌醇 (Allopurinol)，應由醫師改用其他安全替代藥物。",
+      "drugs_guide": [
+        {
+          "drug_name": "Carbamazepine (Tegretol) / Oxcarbazepine / Phenytoin — HLA-B*15:02 Positive",
+          "chinese_name": "卡馬西平（癲通）/ 奧卡西平 / 苯妥英 — HLA-B*15:02 陽性",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "攜帶 HLA-B*15:02 對偶基因者服用卡馬西平、奧卡西平或苯妥英/磷苯妥英，發生史蒂芬強森症候群 (SJS) 與毒性表皮壞死溶解症 (TEN) 的風險極高。應避免使用上述藥物，並由醫師選擇無芳香環結構之替代抗癲癇或神經痛藥物。",
+          "cpic_level": "CPIC Guideline for HLA-B and Carbamazepine/Oxcarbazepine/Phenytoin Level A / FDA Boxed Warning"
+        },
+        {
+          "drug_name": "Allopurinol (Zyloric) — HLA-B*58:01 Positive",
+          "chinese_name": "別嘌醇（安樂普利諾 / 降尿酸痛風藥）— HLA-B*58:01 陽性",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "攜帶 HLA-B*58:01 對偶基因者服用別嘌醇發生嚴重皮膚不良反應 (SJS/TEN/DRESS) 的風險極高。嚴禁使用別嘌醇，建議由醫師改用其他非嘌呤類降尿酸替代藥物。",
+          "cpic_level": "CPIC Guideline for HLA-B and Allopurinol Level A / PharmGKB Level 1A"
+        }
+      ],
+      "dietary_contraindications": [
+        "痛風或高尿酸患者應限制高普林內臟、濃肉湯、帶殼海鮮與含果糖手搖飲，並嚴格戒酒（酒精與啤酒會阻礙尿酸排泄）",
+        "切勿服用來路不明的止痛藥粉、黑藥丸或親友轉贈之神經痛/痛風藥物"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.99,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 台灣領先全球寫入國際 FDA 與 CPIC Level A 指南之精準醫療典範",
+      "clinvar_pathogenic_count": 5,
+      "clinvar_summary_chinese": "台灣團隊於 Nature (PMID:15057820)、PNAS (PMID:15743917)、NEJM (PMID:21428768) 與 BMJ (PMID:26399967) 確證之藥物過敏基因",
+      "opentargets_score": 0.95,
+      "key_pmids": [
+        "PMID:15057820",
+        "PMID:15743917",
+        "PMID:21428768",
+        "PMID:23232549",
+        "PMID:26094938",
+        "PMID:26399967",
+        "PMID:29392710",
+        "PMID:32779747"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "在台灣及東亞地區，首次處方卡馬西平 (Carbamazepine) 前應先接受 HLA-B*15:02 基因檢測（台灣全國前瞻性研究證實可使卡馬西平 SJS/TEN 發生率降至零，PMID:21428768）；首次處方別嘌醇 (Allopurinol) 前建議接受 HLA-B*58:01 基因檢測 (PMID:26399967)。",
+      "lifestyle_tips": [
+        "若檢出 HLA-B*15:02 或 HLA-B*58:01 陽性，請要求醫院將對應禁用藥物註記於健保卡雲端藥歷過敏欄，並隨身攜帶藥物基因警示卡",
+        "開始服用任何新開立的抗癲癇藥、三叉神經痛藥或降尿酸藥後 1~8 週內，若出現發燒、喉嚨痛、眼睛紅腫刺痛、嘴破或皮膚紅疹水泡，應立即停藥並前往急診",
+        "直系親屬（父母、手足、子女）有 50% 機率攜帶相同 HLA-B 等位基因，就醫開立相關藥物前應一併告知醫師先行篩檢"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經內科 / 風濕免疫科 / 腎臟內科 / 皮膚科 / 臨床藥師門診",
+      "questions": [
+        "醫師您好，我的基因報告顯示 HLA-B*15:02 陽性，治療神經痛或癲癇時有哪些不屬於芳香族結構的安全替代藥物？",
+        "如果我檢出 HLA-B*58:01 陽性且有痛風或高尿酸血症，可以改用哪一種不具 HLA-B*58:01 過敏風險的降尿酸藥物？",
+        "請幫我在病歷與健保卡過敏紀錄中永久註記這項 HLA-B 基因型，我的家人是否也需要在用藥前做這項檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「藥物過敏全靠運氣，只有先吃吃看才知道會不會引發嚴重的史蒂芬強森症候群？」",
+      "truth": "早就不是靠運氣了！台灣醫學團隊領先全球發現 HLA-B*15:02 與卡馬西平、HLA-B*58:01 與別嘌醇的強烈關聯，並透過全國性用藥前基因篩檢證實能有效預防這兩類致命的皮膚潰爛藥害（PMID:21428768, PMID:26399967）。用藥前抽一管血或看一眼基因報告，就能把致命風險攔截在吃藥之前！"
+    }
+  }
+];
+window.EN_RECORDS = {
+  "BRCA1": {
+    "gene": {
+      "chinese_name": "BRCA1 DNA Repair Associated",
+      "chromosome": "17q21.31 (Chromosome 17)",
+      "metaphor": {
+        "title": "🧬 The Cell’s 【DNA Auto Mechanic】",
+        "story": "Our cells run at high speed every day, and minor DNA damage is inevitable. BRCA1 acts like an experienced master mechanic who spots damage and fixes it immediately. If this mechanic carries a pathogenic mutation (goes on strike), damaged parts remain unrepaired while the car keeps driving—increasing the risk of a major accident (malignant tumor) over time."
+      },
+      "plain_summary": "BRCA1 is one of the body’s natural anti-cancer guardians. Carrying a pathogenic variant does NOT mean cancer is inevitable; it increases lifetime susceptibility to breast and ovarian cancer, making earlier MRI screening and proactive prevention essential.",
+      "academic_summary": "BRCA1 encodes a 190-kDa nuclear phosphoprotein (RING finger & BRCT domains) mediating error-free homologous recombination (HR) repair of DNA double-strand breaks via RAD51. Germline heterozygous pathogenic variants impair HR, elevating breast/ovarian cancer risk and conferring synthetic lethality sensitivity to PARP inhibitors."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Breast and Ovarian Cancer Syndrome (HBOC)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Cancer Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Preventable & Treatable)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003002",
+        "name": "Breast carcinoma",
+        "chinese_name": "Breast carcinoma"
+      },
+      {
+        "hpo_id": "HP:0100615",
+        "name": "Ovarian neoplasm",
+        "chinese_name": "Ovarian neoplasm"
+      },
+      {
+        "hpo_id": "HP:0010519",
+        "name": "Fallopian tube carcinoma",
+        "chinese_name": "Fallopian tube carcinoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Olaparib",
+        "chinese_name": "Olaparib (Lynparza)",
+        "mechanism": "PARP1/2 inhibitor (synthetic lethality in HR-deficient tumors)",
+        "approval_status": "FDA / TFDA / NMPA Approved"
+      },
+      {
+        "drug_name": "Talazoparib",
+        "chinese_name": "Talazoparib (Talzenna)",
+        "mechanism": "Potent PARP1/2 inhibitor and PARP-DNA trapper",
+        "approval_status": "FDA / TFDA / NMPA Approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline pathogenic variants (e.g., c.5266dupC / rs80357906)",
+      "population_frequency": "~1 in 400 to 1 in 800 in the general population",
+      "traffic_light_summary": "🟢 Targeted Therapy Sensitive: Germline pathogenic BRCA1 carriers show high sensitivity to PARP inhibitors (Olaparib, Talazoparib) and platinum chemotherapy.",
+      "drugs_guide": [
+        {
+          "drug_name": "Olaparib / Talazoparib",
+          "chinese_name": "Olaparib / Talazoparib",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "Via synthetic lethality, patients with germline pathogenic BRCA1 variants derive significant clinical benefit from PARP inhibitor therapy.",
+          "cpic_level": "FDA Companion Diagnostic / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "Strictly limit alcohol consumption",
+        "Use long-term unopposed exogenous estrogen replacement therapy with caution"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "3,500+ curated pathogenic variants in ClinVar"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Begin clinical breast exams every 6–12 months starting at age 25; perform annual contrast-enhanced breast MRI combined with mammography starting at age 30.",
+      "lifestyle_tips": [
+        "Maintain a healthy body weight, regular sleep schedule, and low-saturated-fat diet",
+        "Avoid tobacco and strictly limit alcohol intake (alcohol elevates estrogen levels)",
+        "Consider breastfeeding when appropriate under medical guidance to help lower risk"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Breast Surgery / Medical Oncology / Clinical Genetics Clinic",
+      "questions": [
+        "Doctor, my genetic report shows a BRCA1 variant. At what age should I start annual contrast-enhanced breast MRI?",
+        "Beyond breast imaging, what regular screening do you recommend for my ovaries and fallopian tubes (CA-125, transvaginal ultrasound)?",
+        "Should my first-degree relatives (mother, sisters, children) undergo cascade genetic testing for this exact variant?",
+        "If I plan to have children in the future, is Preimplantation Genetic Testing (PGT-M) available to prevent passing on this variant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Does testing positive for a BRCA1 mutation mean I am 100% guaranteed to get cancer in a few years?”",
+      "truth": "No! Carrying a pathogenic variant increases lifetime probability (~60%–70% vs. ~12% in the general population), not a 100% certainty. With structured MRI screening and preventive options, most carriers live long, healthy lives with early detection and cure."
+    }
+  },
+  "TP53": {
+    "gene": {
+      "chinese_name": "Tumor Protein p53 (Guardian of the Genome)",
+      "chromosome": "17p13.1 (Chromosome 17)",
+      "metaphor": {
+        "title": "🛑 The Cell’s 【Emergency Brake Pad / Genome Security Guard】",
+        "story": "If cell division is a high-speed train, TP53 is the ultimate emergency brake and chief security officer. Whenever cell DNA is damaged by radiation or chemicals, TP53 hits the brakes so the cell can repair itself—or triggers self-destruction (apoptosis) if unrepairable. When germline TP53 fails, the train loses its emergency brake, making multiple tissues prone to early tumors."
+      },
+      "plain_summary": "TP53 is the body’s master tumor-suppressor switch. Germline pathogenic TP53 variants cause Li-Fraumeni syndrome (LFS). Carriers require annual radiation-free Whole-Body MRI for early detection and must strictly avoid unnecessary X-rays and CT radiation.",
+      "academic_summary": "TP53 encodes tetrameric transcription factor p53, transactivating CDKN1A (p21), BAX, PUMA, and GADD45A in response to DNA damage to enforce G1/S arrest, DNA repair, or apoptosis. Germline heterozygous pathogenic variants cause autosomal dominant Li-Fraumeni syndrome (LFS)."
+    },
+    "disease": {
+      "chinese_name": "Li-Fraumeni Syndrome (Hereditary Multi-Cancer Syndrome)",
+      "categories": [
+        "Hereditary Cancer Syndrome",
+        "Rare Disease"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🚨 High-Risk Syndrome (Lifelong Radiation-Free MRI Surveillance)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002664",
+        "name": "Neoplasm",
+        "chinese_name": "Multi-organ neoplasm susceptibility"
+      },
+      {
+        "hpo_id": "HP:0002897",
+        "name": "Osteosarcoma",
+        "chinese_name": "Osteosarcoma"
+      },
+      {
+        "hpo_id": "HP:0003002",
+        "name": "Breast carcinoma",
+        "chinese_name": "Early-onset breast carcinoma"
+      },
+      {
+        "hpo_id": "HP:0006744",
+        "name": "Adrenocortical carcinoma",
+        "chinese_name": "Adrenocortical carcinoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Eprenetapopt",
+        "chinese_name": "Eprenetapopt (APR-246, Investigational p53 Reactivator)",
+        "mechanism": "Restores wild-type conformation to mutant p53 protein and induces tumor apoptosis",
+        "approval_status": "Clinical Trials (Phase II/III)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline pathogenic variants (e.g., p.Arg175His / p.Arg248Gln / p.Arg273His)",
+      "population_frequency": "~1 in 5,000 to 1 in 20,000 in the general population",
+      "traffic_light_summary": "🔴 Avoid Unnecessary Ionizing Radiation & Genotoxic Radiotherapy: Defective DNA damage response means frequent CT scans or radiotherapy can induce secondary primary malignancies.",
+      "drugs_guide": [
+        {
+          "drug_name": "Ionizing Radiation / Genotoxic Radiotherapy",
+          "chinese_name": "Ionizing Radiation / Conventional Radiotherapy",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "Germline TP53 carriers are hypersensitive to ionizing radiation. Use Whole-Body MRI and ultrasound instead of CT/mammography for routine surveillance, and prioritize surgical or non-genotoxic therapies.",
+          "cpic_level": "NCCN LFS Guideline High Alert"
+        }
+      ],
+      "dietary_contraindications": [
+        "Strictly avoid tobacco, alcohol, aflatoxins, and nitrosamine-rich cured foods",
+        "Avoid non-essential CT, PET-CT, and chest X-ray radiation exposure"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "1,600+ curated pathogenic/likely pathogenic variants in ClinVar"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Follow the international Toronto Protocol: annual Whole-Body MRI and brain MRI; annual breast MRI for women starting at age 20 (avoid radiation-based mammography/CT for routine checkups); upper/lower endoscopy every 2–5 years.",
+      "lifestyle_tips": [
+        "[Core Rule] Always inform physicians of germline TP53 status before imaging—prioritize ultrasound and MRI, and avoid unnecessary CT/X-ray radiation",
+        "Practice strict physical UV sun protection outdoors to prevent skin neoplasms",
+        "Seek prompt medical evaluation for any unexplained bone pain, lumps, or persistent headaches"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Hereditary Cancer Clinic / Medical Oncology / Clinical Genetics",
+      "questions": [
+        "Doctor, I carry a germline TP53 variant. Can our hospital arrange annual Whole-Body MRI surveillance following the Toronto Protocol?",
+        "For routine checkups, should I completely replace mammograms and chest CT scans with breast MRI and ultrasound?",
+        "Should my parents, siblings, and children undergo targeted genetic testing for this variant?",
+        "If I plan to have children, how can Preimplantation Genetic Testing (PGT-M) help prevent passing on the TP53 variant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Since TP53 mutations increase tumor risk, should I get a full-body PET-CT or contrast CT every six months to screen for cancer?”",
+      "truth": "Never do that! CT and PET-CT deliver significant ionizing radiation. For people lacking TP53’s “emergency brake,” frequent CT scans can damage healthy cell DNA and induce new tumors. The gold standard for TP53 surveillance is zero-radiation Whole-Body MRI and ultrasound."
+    }
+  },
+  "APOE": {
+    "gene": {
+      "chinese_name": "Apolipoprotein E",
+      "chromosome": "19q13.32 (Chromosome 19)",
+      "metaphor": {
+        "title": "🧠 The Brain’s 【Waste-Clearing Truck (ε4 Model Runs Slower)】",
+        "story": "As the brain works, it produces metabolic waste products (like sticky amyloid plaques). APOE acts like a fleet of sanitation trucks patrolling the brain every night to clear out trash. APOE comes in three main models (ε2, ε3, ε4). If you inherit the ε4 model, the truck clears amyloid more slowly, allowing waste to accumulate over decades and increasing late-onset Alzheimer disease susceptibility."
+      },
+      "plain_summary": "APOE ε4 is the most common genetic susceptibility marker for late-onset Alzheimer disease. It is a “risk factor,” NOT a deterministic disease gene—carriers who protect cardiovascular health, follow a Mediterranean diet, and stay mentally active may never develop dementia.",
+      "academic_summary": "The APOE ε4 allele (defined by the rs429358-C and rs7412-C haplotype) impairs astrocyte-mediated β-amyloid (Aβ) clearance, promotes tau hyperphosphorylation, and compromises blood-brain barrier integrity, representing the strongest genetic risk factor for sporadic late-onset Alzheimer disease."
+    },
+    "disease": {
+      "chinese_name": "Alzheimer Disease (Late-Onset Dementia)",
+      "categories": [
+        "Neurodegenerative Disorder",
+        "Cognitive Impairment"
+      ],
+      "inheritance_mode": "Complex Polygenic Susceptibility (Semidominant ε4 Dose Effect)",
+      "severity_badge": "💡 Susceptibility Factor (Non-Deterministic & Modifiable)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000726",
+        "name": "Dementia",
+        "chinese_name": "Dementia"
+      },
+      {
+        "hpo_id": "HP:0002354",
+        "name": "Memory impairment",
+        "chinese_name": "Memory impairment"
+      },
+      {
+        "hpo_id": "HP:0001268",
+        "name": "Mental deterioration",
+        "chinese_name": "Progressive cognitive decline"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Lecanemab",
+        "chinese_name": "Lecanemab (Leqembi)",
+        "mechanism": "Humanized IgG1 monoclonal antibody targeting soluble Aβ protofibrils",
+        "approval_status": "FDA / TFDA / NMPA Approved"
+      },
+      {
+        "drug_name": "Donanemab",
+        "chinese_name": "Donanemab (Kisunla)",
+        "mechanism": "Monoclonal antibody targeting N3pG-modified amyloid plaques",
+        "approval_status": "FDA Approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "APOE ε4 allele (rs429358 C / rs7412 C)",
+      "population_frequency": "~15%–25% carrier frequency in the general population",
+      "traffic_light_summary": "🟡 Caution / Intensive Monitoring: APOE ε4 carriers (especially homozygotes) have a significantly higher risk of Amyloid-Related Imaging Abnormalities (ARIA cerebral edema/microhemorrhages) when treated with anti-Aβ antibodies (Lecanemab/Donanemab); APOE genotyping is recommended prior to therapy.",
+      "drugs_guide": [
+        {
+          "drug_name": "Lecanemab / Donanemab",
+          "chinese_name": "Lecanemab / Donanemab",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "FDA Boxed Warning notes that APOE ε4 homozygotes have a substantially higher incidence of ARIA-E (cerebral edema) and ARIA-H (microhemorrhages). Test APOE status before initiating therapy and intensify brain MRI monitoring.",
+          "cpic_level": "FDA Boxed Warning Biomarker"
+        }
+      ],
+      "dietary_contraindications": [
+        "Limit saturated fats, trans fats, and refined sugars (APOE ε4 carriers are more sensitive to dietary cholesterol/saturated fat, elevating LDL-C)"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Strong Scientific Consensus",
+      "clinvar_summary_chinese": "Confirmed dose-dependent neurodegenerative risk for the ε4 isoform"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "After age 50, include annual MoCA cognitive screening in checkups and regularly monitor blood pressure, blood glucose, and LDL-C cholesterol.",
+      "lifestyle_tips": [
+        "Mediterranean diet: prioritize fatty fish rich in Omega-3, nuts, extra-virgin olive oil, and dark leafy greens",
+        "Lifelong cognitive engagement: reading, strategy games, learning instruments or languages to build cognitive reserve",
+        "Ensure 7–8 hours of deep sleep nightly so the glymphatic system can clear metabolic waste from the brain"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Neurology / Memory Clinic / Geriatric Medicine",
+      "questions": [
+        "Doctor, my test shows I carry the APOE ε4 allele. Should I schedule baseline brain MRI or cognitive scale assessments?",
+        "What target levels should I aim for with my LDL-C cholesterol and blood pressure to best protect my cerebral blood vessels?",
+        "If an older family member with early memory decline considers Lecanemab, how does APOE ε4 status affect ARIA monitoring?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“If I carry two copies of APOE ε4, am I guaranteed to develop Alzheimer disease when I get old?”",
+      "truth": "Absolutely not! Genetics is only part of the picture. Vascular health, a Mediterranean diet, regular aerobic exercise, quality sleep, and cognitive training provide powerful protection. Many ε4/ε4 carriers remain sharp and independent throughout old age."
+    }
+  },
+  "EGFR": {
+    "gene": {
+      "chinese_name": "Epidermal Growth Factor Receptor",
+      "chromosome": "7p11.2 (Chromosome 7)",
+      "metaphor": {
+        "title": "🚦 The Cell Surface 【Growth Gas Pedal (Targeted Drugs Are the Precision Brake Key)】",
+        "story": "Normal cells only tap the gas pedal lightly when the body signals a need for tissue repair. When EGFR mutates in lung cells, it is as if the gas pedal is rusted and jammed all the way to the floor—causing uncontrolled cell growth and lung cancer. Fortunately, modern medicine invented a precision “brake key” (targeted drugs like Osimertinib and Gefitinib) that locks onto the jammed pedal and stops tumor growth."
+      },
+      "plain_summary": "EGFR mutations are among the most common and treatable actionable targets in non-small cell lung cancer (NSCLC), occurring in ~50% of East Asian lung adenocarcinoma patients. Daily oral targeted therapy enables long-term tumor control and high quality of life.",
+      "academic_summary": "EGFR exon 19 in-frame deletions (Ex19del) and exon 21 L858R point mutations cause ligand-independent constitutive autophosphorylation of the tyrosine kinase domain, driving downstream MAPK and PI3K-Akt survival pathways and conferring high sensitivity to 1st/2nd/3rd-generation EGFR-TKIs."
+    },
+    "disease": {
+      "chinese_name": "Non-Small Cell Lung Carcinoma (NSCLC)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Thoracic Oncology"
+      ],
+      "inheritance_mode": "Predominantly Acquired Somatic Mutation (Non-Hereditary)",
+      "severity_badge": "🎯 Actionable Target (Highly Effective Oral Targeted Therapy)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0030358",
+        "name": "Non-small cell lung carcinoma",
+        "chinese_name": "Non-small cell lung carcinoma"
+      },
+      {
+        "hpo_id": "HP:0100526",
+        "name": "Neoplasm of the lung",
+        "chinese_name": "Neoplasm of the lung"
+      },
+      {
+        "hpo_id": "HP:0002105",
+        "name": "Hemoptysis",
+        "chinese_name": "Hemoptysis / persistent cough"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Osimertinib",
+        "chinese_name": "Osimertinib (Tagrisso)",
+        "mechanism": "3rd-generation irreversible EGFR-TKI (covers sensitizing & T790M resistance mutations; high CNS penetration)",
+        "approval_status": "FDA / TFDA / NMPA Approved"
+      },
+      {
+        "drug_name": "Gefitinib",
+        "chinese_name": "Gefitinib (Iressa)",
+        "mechanism": "1st-generation reversible EGFR tyrosine kinase inhibitor (EGFR-TKI)",
+        "approval_status": "FDA / TFDA / NMPA Approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Somatic sensitizing variants Exon 19 deletion / L858R; resistance variant T790M",
+      "population_frequency": "~45%–55% somatic mutation rate in East Asian lung adenocarcinoma",
+      "traffic_light_summary": "🟢 Targeted Therapy Sensitive: Ex19del/L858R tumors respond strongly to Osimertinib/Gefitinib; 🔴 Avoid grapefruit and St. John’s Wort during therapy to prevent CYP3A4-mediated toxicity or drug failure.",
+      "drugs_guide": [
+        {
+          "drug_name": "Osimertinib / Gefitinib",
+          "chinese_name": "Osimertinib / Gefitinib",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "Companion diagnostics confirm that EGFR Ex19del or L858R-positive NSCLC patients achieve significantly superior progression-free survival with first-line Osimertinib or Gefitinib vs. chemotherapy.",
+          "cpic_level": "FDA / NMPA Companion Diagnostic Level 1A"
+        }
+      ],
+      "dietary_contraindications": [
+        "Strictly avoid grapefruit, Seville bitter oranges, and St. John’s Wort while taking Osimertinib or Gefitinib to prevent CYP3A4 interference"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Top-Tier Precision Oncology Guideline (FDA / TFDA / NMPA Approved)",
+      "clinvar_summary_chinese": "Confirmed clinical sensitivity to Osimertinib, Gefitinib, and EGFR-TKIs"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Adults aged 40+ with a smoking history, secondhand smoke/cooking fume exposure, or family history of lung cancer should undergo annual Low-Dose Chest CT (LDCT).",
+      "lifestyle_tips": [
+        "Avoid first-hand and second-hand tobacco smoke; use high-extraction range hoods when cooking",
+        "Maintain good indoor ventilation and wear particulate respirators during high air-pollution days",
+        "Avoid occupational exposure to radon, asbestos, and industrial dust"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Thoracic Surgery / Medical Oncology / Pulmonology",
+      "questions": [
+        "Doctor, my biopsy report shows an EGFR mutation. Do you recommend a 1st-, 2nd-, or 3rd-generation EGFR-TKI (such as Osimertinib) as first-line therapy?",
+        "What common side effects of EGFR targeted therapy (such as skin rash or diarrhea) should I watch for and how can I manage them?",
+        "How frequently should I schedule follow-up chest CT and brain MRI scans during treatment?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Does every lung cancer patient have to endure grueling chemotherapy with severe hair loss and weight loss?”",
+      "truth": "Not necessarily! When a sensitizing mutation like EGFR is identified, first-line treatment is often a convenient once-daily oral targeted pill—without chemotherapy hair loss and with much milder side effects, allowing most patients to live and work normally at home."
+    }
+  },
+  "ALDH2": {
+    "gene": {
+      "chinese_name": "Aldehyde Dehydrogenase 2 (Alcohol Detox & Nitroglycerin)",
+      "chromosome": "12q24.12 (Chromosome 12)",
+      "metaphor": {
+        "title": "🍷 The Liver’s 【Alcohol Detox Worker #2】",
+        "story": "Two liver enzymes detoxify alcohol in relay: Worker #1 (ADH1B) turns ethanol into toxic carcinogen acetaldehyde, and Worker #2 (ALDH2) converts acetaldehyde into harmless acetic acid (vinegar). About 30%–47% of East Asians carry ALDH2*2—meaning Worker #2 is on strike! Drinking causes toxic acetaldehyde to flood blood vessels (facial flushing and rapid pulse). Worse still, the emergency angina drug Nitroglycerin relies on Worker #2 to release nitric oxide—so sublingual nitroglycerin can fail!"
+      },
+      "plain_summary": "ALDH2 clears toxic acetaldehyde after drinking alcohol and bioactivates the emergency angina drug Nitroglycerin. Carriers of ALDH2*2 (rs671) flush when drinking, face a 6–12x higher esophageal cancer risk if they drink, and may experience failure of sublingual nitroglycerin during acute angina!",
+      "academic_summary": "ALDH2 encodes mitochondrial aldehyde dehydrogenase and bioactivates nitroglycerin into nitric oxide (NO). East Asian missense variant rs671 (c.1510G>A, p.Glu504Lys, ALDH2*2) acts dominant-negatively, reducing heterozygote activity to 10%–20% and abolishing homozygote activity."
+    },
+    "disease": {
+      "chinese_name": "Acute Alcohol Sensitivity / ALDH2 Deficiency & Nitroglycerin Failure Risk",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Metabolic Trait",
+        "Cancer Susceptibility"
+      ],
+      "inheritance_mode": "Autosomal Dominant-Negative",
+      "severity_badge": "🔴 Critical PGx Red Light (Nitroglycerin Failure & Alcohol Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0025537",
+        "name": "Alcohol flush reaction",
+        "chinese_name": "Alcohol flush reaction"
+      },
+      {
+        "hpo_id": "HP:0001649",
+        "name": "Tachycardia",
+        "chinese_name": "Post-alcohol tachycardia"
+      },
+      {
+        "hpo_id": "HP:0011459",
+        "name": "Esophageal squamous cell carcinoma",
+        "chinese_name": "Esophageal squamous cell carcinoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Nitroglycerin",
+        "chinese_name": "Nitroglycerin (Requires ALDH2)",
+        "mechanism": "Converted via mitochondrial ALDH2 into nitric oxide (NO) to dilate coronary arteries",
+        "approval_status": "FDA / TFDA / NMPA Approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "ALDH2*2 (rs671, c.1510G>A, p.Glu504Lys)",
+      "population_frequency": "30%–47% carrier frequency in East Asians",
+      "traffic_light_summary": "🔴 Red Alert: Emergency angina drug Nitroglycerin requires ALDH2 bioactivation—sublingual nitroglycerin may fail in carriers! Strictly avoid alcohol (esophageal cancer risk rises 6–12x).",
+      "drugs_guide": [
+        {
+          "drug_name": "Nitroglycerin (Sublingual)",
+          "chinese_name": "Nitroglycerin Sublingual Tablets / Spray",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "ALDH2*2 (rs671) carriers lack mitochondrial nitrate reductase activity, causing high failure rates for sublingual nitroglycerin during acute angina. Consult a cardiologist for non-ALDH2-dependent emergency alternatives.",
+          "cpic_level": "PharmGKB Level 1A / Clinical PGx Consensus"
+        },
+        {
+          "drug_name": "Ethanol (Alcohol)",
+          "chinese_name": "Ethanol (Alcohol & Ethanol Tinctures)",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "Avoid alcohol consumption and never combine ethanol-containing medications with cephalosporins.",
+          "cpic_level": "WHO / IARC Group 1 Carcinogen Warning"
+        }
+      ],
+      "dietary_contraindications": [
+        "Lifelong alcohol avoidance (beer, spirits, wine, and medicinal liquors all cause Group 1 carcinogen acetaldehyde accumulation)",
+        "Avoid scalding-hot food and drinks (>65°C thermal injury synergizes with acetaldehyde to multiply esophageal cancer risk)"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ East Asian Emergency PGx & Cancer Prevention Consensus",
+      "clinvar_summary_chinese": "rs671 is the established causal variant for alcohol flushing and nitroglycerin resistance"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Carriers with a history of drinking should undergo regular upper GI endoscopy starting at age 40; patients with coronary risk should prepare non-nitroglycerin emergency plans.",
+      "lifestyle_tips": [
+        "[Life-Saving Tip] If you or your parents flush when drinking alcohol, check the family first-aid kit: sublingual nitroglycerin may fail during angina—ask a cardiologist for an alternative emergency medication",
+        "Refuse social pressure to drink and share that “alcohol flushing is acetaldehyde poisoning, not good circulation”",
+        "Maintain good oral hygiene (oral bacteria also convert trace alcohol into acetaldehyde)"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Gastroenterology / Clinical Pharmacy",
+      "questions": [
+        "Doctor, I carry the ALDH2*2 (rs671) variant and flush when drinking. If I have acute angina, could sublingual nitroglycerin fail, and what emergency alternative should I carry?",
+        "Given my past drinking history, should I schedule an upper GI endoscopy with NBI to screen my esophagus?",
+        "Which over-the-counter cold liquids or herbal tinctures contain ethanol that I should avoid?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Does blushing after drinking mean you have great blood circulation, and can you train your alcohol tolerance by drinking more?”",
+      "truth": "Completely false! Alcohol flushing is your body’s red alert for toxic acetaldehyde poisoning. ALDH2 deficiency is genetic and cannot be trained away. Apparent tolerance only means you are numb to dizziness while acetaldehyde silently damages your esophagus and blood vessels!"
+    }
+  },
+  "G6PD": {
+    "gene": {
+      "chinese_name": "Glucose-6-Phosphate Dehydrogenase (Favism Gene)",
+      "chromosome": "Xq28 (X Chromosome)",
+      "metaphor": {
+        "title": "🛡️ Red Blood Cells’ 【Anti-Oxidation Bulletproof Vest】",
+        "story": "Red blood cells carry oxygen daily and face oxidative free radicals. G6PD weaves their “anti-oxidation bulletproof vest” (NADPH / reduced glutathione). When G6PD is deficient, red blood cells work fine on calm days—but if exposed to fava beans, mothballs (naphthalene), sulfonamides, or primaquine, unprotected red blood cells burst within hours (acute hemolysis)!"
+      },
+      "plain_summary": "G6PD deficiency (Favism) follows X-linked inheritance (males are more frequently affected) and is common in Taiwan and southern China. By avoiding fava beans and contraindicated oxidative drugs for life, carriers live completely normal, healthy lives!",
+      "academic_summary": "G6PD encodes the rate-limiting enzyme of the pentose phosphate pathway (PPP), generating erythrocyte NADPH to maintain reduced glutathione (GSH). X-linked variants (c.1376G>T, c.1388G>A) reduce enzyme activity, triggering acute non-immune hemolytic anemia upon exposure to vicine/convicine or oxidative drugs."
+    },
+    "disease": {
+      "chinese_name": "Favism / Glucose-6-Phosphate Dehydrogenase (G6PD) Deficiency",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Hematologic Disorder",
+        "Dietary & Drug Contraindication"
+      ],
+      "inheritance_mode": "X-Linked Incomplete Dominant",
+      "severity_badge": "🔴 Lifelong Drug & Fava Bean Red Light (Healthy When Avoided)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001878",
+        "name": "Hemolytic anemia",
+        "chinese_name": "Acute hemolytic anemia"
+      },
+      {
+        "hpo_id": "HP:0000952",
+        "name": "Jaundice",
+        "chinese_name": "Jaundice / hyperbilirubinemia"
+      },
+      {
+        "hpo_id": "HP:0012072",
+        "name": "Hemoglobinuria",
+        "chinese_name": "Hemoglobinuria (dark tea urine)"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Rasburicase / Primaquine / Sulfonamides (Contraindicated)",
+        "chinese_name": "Rasburicase / Primaquine / Sulfonamides (Contraindicated)",
+        "mechanism": "Induces severe oxidative stress and acute hemolysis in G6PD-deficient red blood cells",
+        "approval_status": "CPIC Level A / FDA Boxed Warning"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Common variants c.1376G>T (Canton), c.1388G>A (Kaiping), c.95A>G (Gaohe)",
+      "population_frequency": "400M+ globally; ~3%–10% prevalence in Taiwan and southern China",
+      "traffic_light_summary": "🔴 Strictly avoid fava beans, sulfonamide antibiotics, primaquine, rasburicase, methylene blue, camphor/naphthalene mothballs, and high-risk oxidative analgesics!",
+      "drugs_guide": [
+        {
+          "drug_name": "Sulfonamides (e.g., Sulfamethoxazole)",
+          "chinese_name": "Sulfonamide Antibiotics (Trimethoprim-Sulfamethoxazole)",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "CPIC high-hemolysis-risk drug. Strictly avoid in G6PD deficiency; use penicillins or cephalosporins instead.",
+          "cpic_level": "CPIC Guideline Level A (Avoid Use)"
+        },
+        {
+          "drug_name": "Primaquine / Tafenoquine / Rasburicase / Methylene Blue",
+          "chinese_name": "Primaquine / Tafenoquine / Rasburicase / Methylene Blue",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "Extreme risk of life-threatening acute hemolysis; FDA Boxed Warning contraindicates use in G6PD deficiency.",
+          "cpic_level": "CPIC Guideline Level A (Contraindicated)"
+        },
+        {
+          "drug_name": "Camphor / Naphthalene / Certain Analgesics",
+          "chinese_name": "Naphthalene Mothballs, Acetanilide, Phenacetin & Oxidative Herbs",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "Never place naphthalene/camphor mothballs in infant clothing; for fever, use standard-dose acetaminophen or ibuprofen.",
+          "cpic_level": "Pediatric Favism Clinical Consensus"
+        }
+      ],
+      "dietary_contraindications": [
+        "Lifelong strict avoidance of fresh or dried fava beans (broad beans) and snacks/sauces containing fava beans",
+        "Breastfeeding mothers of G6PD-deficient infants must also avoid fava beans and contraindicated oxidative medications"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Top-Tier International CPIC & Newborn Screening Guideline",
+      "clinvar_summary_chinese": "200+ curated pathogenic G6PD deficiency variants in ClinVar"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Newborn heel-prick G6PD enzyme screening is standard in Taiwan and southern China; unscreened individuals can confirm status via quantitative G6PD assay.",
+      "lifestyle_tips": [
+        "Keep a “G6PD Deficiency Drug Red-Light Card” in your phone and health wallet, and show it to every doctor and pharmacist before receiving prescriptions",
+        "Remove all naphthalene and camphor mothballs from closets and use physical dehumidifiers instead",
+        "Seek emergency care immediately if pallor, lethargy, jaundice, or dark tea-colored urine develops after food or drug exposure!"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Pediatrics / Hematology / Clinical Pharmacy",
+      "questions": [
+        "Doctor, I (or my child) have confirmed G6PD deficiency (Favism). Do any of today’s prescribed medications contain ingredients that could trigger hemolysis?",
+        "When my child has a fever, is standard weight-based acetaminophen or ibuprofen safe to use?",
+        "As a female heterozygous G6PD carrier, should I follow the same fava bean and medication restrictions during pregnancy and breastfeeding?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Do people outgrow Favism (G6PD deficiency) once they become strong adults and can eat fava beans freely?”",
+      "truth": "Never! G6PD deficiency is lifelong. Eating fresh fava beans or taking contraindicated drugs like sulfonamides or primaquine in adulthood can still trigger life-threatening acute hemolysis and acute kidney failure."
+    }
+  },
+  "MTHFR": {
+    "gene": {
+      "chinese_name": "Methylenetetrahydrofolate Reductase (Folate Gene)",
+      "chromosome": "1p36.22 (Chromosome 1)",
+      "metaphor": {
+        "title": "🌿 The Body’s 【Folate Conversion Machine】",
+        "story": "Folic acid from food or supplements is a “raw material” processed by the MTHFR machine into active folate (5-MTHF), which clears vascular homocysteine (Hcy) and supports fetal neural development. Carrying MTHFR C677T (rs1801133) slows this machine to 30%–65% efficiency, causing Hcy buildup and elevating H-type hypertension and stroke risk!"
+      },
+      "plain_summary": "MTHFR governs folate metabolism and blood homocysteine (Hcy). The C677T (rs1801133) variant is common: women planning pregnancy can supplement with active folate (5-MTHF), and older adults should monitor blood Hcy and supplement folate + B vitamins to prevent stroke.",
+      "academic_summary": "MTHFR catalyzes reduction of 5,10-methylenetetrahydrofolate to 5-MTHF for remethylating homocysteine to methionine. C677T (rs1801133) reduces TT homozygote activity by ~65%–70%, causing hyperhomocysteinemia, elevating neural tube defect and stroke risk, and increasing methotrexate toxicity."
+    },
+    "disease": {
+      "chinese_name": "Impaired Folate Metabolism & Hyperhomocysteinemia (H-Type Hypertension)",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Perinatal Nutrition",
+        "Cardiovascular Trait"
+      ],
+      "inheritance_mode": "Autosomal Recessive / Codominant Dosage Effect",
+      "severity_badge": "🟡 Actionable Nutrition & Stroke Prevention Target (5-MTHF)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002160",
+        "name": "Hyperhomocystinemia",
+        "chinese_name": "Hyperhomocystinemia (Hcy ≥ 10 μmol/L)"
+      },
+      {
+        "hpo_id": "HP:0000822",
+        "name": "Hypertension",
+        "chinese_name": "H-type hypertension"
+      },
+      {
+        "hpo_id": "HP:0002140",
+        "name": "Ischemic stroke",
+        "chinese_name": "Ischemic stroke susceptibility"
+      },
+      {
+        "hpo_id": "HP:0002412",
+        "name": "Neural tube defect",
+        "chinese_name": "Fetal neural tube defect risk"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Levomefolate calcium (5-MTHF)",
+        "chinese_name": "Levomefolate Calcium (5-MTHF)",
+        "mechanism": "Bypasses MTHFR bottleneck to supply active methyl donors and lower Hcy",
+        "approval_status": "Perinatal & Nutrition Guideline"
+      },
+      {
+        "drug_name": "Enalapril / Folic acid",
+        "chinese_name": "Enalapril + Folic Acid",
+        "mechanism": "ACEI + folate lowers Hcy and reduces first stroke risk by 21% (CSPPT)",
+        "approval_status": "TFDA / NMPA Approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "MTHFR C677T (rs1801133, c.665C>T, p.Ala222Val) & A1298C (rs1801131)",
+      "population_frequency": "20%–35% C677T TT homozygote frequency in East Asians",
+      "traffic_light_summary": "🟡 Precision Guidance: ① TT genotype women planning pregnancy can supplement with active folate (5-MTHF); ② Hypertensive adults with elevated Hcy should combine BP control + folate; ③ Monitor closely if treated with Methotrexate.",
+      "drugs_guide": [
+        {
+          "drug_name": "Folic Acid vs. 5-Methyltetrahydrofolate (5-MTHF)",
+          "chinese_name": "Synthetic Folic Acid vs. Active Folate (5-MTHF)",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "MTHFR 677TT homozygotes convert synthetic folic acid at ~30% efficiency; prioritize direct 5-MTHF supplementation or individualized dosing (0.8 mg/d).",
+          "cpic_level": "Perinatal Folate Consensus"
+        },
+        {
+          "drug_name": "Methotrexate (MTX)",
+          "chinese_name": "Methotrexate (Oncology / Rheumatology)",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "MTHFR 677TT patients receiving methotrexate have elevated risk of hepatotoxicity, mucositis, and leukopenia; monitor CBC, liver function, and leucovorin rescue.",
+          "cpic_level": "PharmGKB Level 2A"
+        }
+      ],
+      "dietary_contraindications": [
+        "Avoid diets of only refined grains without dark leafy greens (natural folate and vitamins B6/B12 are essential Hcy cofactors)",
+        "Limit high-sodium cured foods and smoking (synergize with elevated Hcy to accelerate vascular damage)"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive Stroke Prevention (CSPPT) & Perinatal Consensus",
+      "clinvar_summary_chinese": "C677T (rs1801133) is the most extensively validated folate & PGx polymorphism"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Couples planning pregnancy should check RBC folate 3 months prior; adults aged 40+ (especially with hypertension) should check plasma homocysteine (Hcy, target < 10 μmol/L) annually.",
+      "lifestyle_tips": [
+        "[Preconception] Women with MTHFR 677TT can choose prenatal vitamins containing 5-MTHF (active folate) under OB/GYN guidance",
+        "[Older Adults] If hypertensive with blood Hcy ≥ 10 μmol/L (“H-type hypertension”), combining antihypertensives with folate + vitamins B6/B12 reduces stroke risk",
+        "Eat plenty of spinach, broccoli, asparagus, and avocados rich in natural folate"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Obstetrics & Gynecology / Genetics / Cardiology / Neurology",
+      "questions": [
+        "Doctor, my test shows MTHFR C677T TT homozygosity. During preconception and pregnancy, should I switch to 5-MTHF (active folate) or adjust my dose?",
+        "My parents have hypertension—if their blood Hcy is ≥ 10 μmol/L, should they take combined folate therapy to prevent stroke?",
+        "Along with folate, should I also test my serum vitamin B12 and ferritin levels?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Is folic acid only for pregnant young women, and completely useless for middle-aged or older men?”",
+      "truth": "Completely wrong! About 75% of hypertensive patients in Chinese populations have elevated homocysteine (“H-type hypertension”), a major driver of stroke. The CSPPT trial proved that folate supplementation in H-type hypertension reduces first stroke risk by 21%!"
+    }
+  },
+  "CYP2C19": {
+    "gene": {
+      "chinese_name": "Cytochrome P450 2C19 (Clopidogrel Bioactivation Gene)",
+      "chromosome": "10q23.33 (Chromosome 10)",
+      "metaphor": {
+        "title": "🔑 The Liver's 【Anti-Clot Prodrug Keymaker】",
+        "story": "The antiplatelet medication Clopidogrel (Plavix) is an inactive 'locked prodrug' when swallowed. It relies on the liver's CYP2C19 keymaker enzyme to unlock and convert it into its active form that prevents blood clots. If you carry loss-of-function alleles (*2 or *3), the keymaker is off duty—leaving the drug inactive and raising the risk of stent thrombosis or recurrent stroke."
+      },
+      "plain_summary": "CYP2C19 converts the prodrug Clopidogrel (Plavix) into its active antiplatelet metabolite. Intermediate or poor metabolizers carrying *2 or *3 alleles have reduced drug activation; your doctor may choose an alternative antiplatelet drug (such as prasugrel or ticagrelor) that does not depend on CYP2C19.",
+      "academic_summary": "CYP2C19 encodes a hepatic monooxygenase catalyzing two-step bioactivation of clopidogrel into its active thiol metabolite to irreversibly inhibit platelet P2Y12 receptors. Loss-of-function alleles CYP2C19*2 (rs4244285, c.681G>A) and CYP2C19*3 (rs4986893, c.636G>A) impair enzymatic activity, reducing platelet inhibition and increasing cardiovascular and cerebrovascular risk."
+    },
+    "disease": {
+      "chinese_name": "Clopidogrel Poor Metabolism & Thrombotic Risk (CYP2C19 PGx)",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Cardiovascular & Neurovascular Safety"
+      ],
+      "inheritance_mode": "Autosomal Codominant Metabolic Phenotype",
+      "severity_badge": "🔴 Critical Stent & Stroke PGx Red Light (Alternative Drug for PMs)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001658",
+        "name": "Myocardial infarction",
+        "chinese_name": "Myocardial infarction / stent thrombosis risk"
+      },
+      {
+        "hpo_id": "HP:0002140",
+        "name": "Ischemic stroke",
+        "chinese_name": "Recurrent ischemic stroke risk"
+      },
+      {
+        "hpo_id": "HP:0033678",
+        "name": "Acute coronary syndrome",
+        "chinese_name": "Suboptimal antiplatelet response in ACS"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Prasugrel / Ticagrelor",
+        "chinese_name": "Prasugrel / Ticagrelor (Alternative P2Y12 Inhibitors)",
+        "mechanism": "P2Y12 receptor inhibitors that do not rely on CYP2C19 bioactivation",
+        "approval_status": "CPIC Level A / FDA Label Alternative"
+      },
+      {
+        "drug_name": "Clopidogrel",
+        "chinese_name": "Clopidogrel (Plavix)",
+        "mechanism": "Thienopyridine prodrug requiring two-step CYP2C19 hepatic bioactivation",
+        "approval_status": "FDA Boxed Warning / CPIC Level A"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "CYP2C19*2 (rs4244285, c.681G>A), CYP2C19*3 (rs4986893, c.636G>A), CYP2C19 *2/*2, CYP2C19 *2/*3, *1/*17 (rs12248560)",
+      "population_frequency": "In East Asians, *2 allele frequency is ~29% and *3 is ~4%–9%; ~13%–15% are Poor Metabolizers (*2/*2, *2/*3, *3/*3) (PMID:35034351)",
+      "traffic_light_summary": "🔴 Poor Metabolizers (*2/*2, *2/*3, *3/*3): Avoid Clopidogrel (Plavix); your doctor may choose Prasugrel or Ticagrelor. 🟡 Intermediate Metabolizers (*1/*2, *1/*3, *2/*17): Reduced activation; discuss alternative antiplatelet therapy with your doctor.",
+      "drugs_guide": [
+        {
+          "drug_name": "Clopidogrel (Plavix) — Poor Metabolizer (*2/*2, *2/*3, *3/*3)",
+          "chinese_name": "Clopidogrel (Plavix) — Poor Metabolizer",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "CYP2C19 poor metabolizers have markedly diminished active clopidogrel metabolite formation. Avoid standard clopidogrel; your doctor may choose prasugrel or ticagrelor if no contraindication exists.",
+          "cpic_level": "CPIC Guideline for CYP2C19 and Clopidogrel Level A / FDA Boxed Warning"
+        },
+        {
+          "drug_name": "Clopidogrel (Plavix) — Intermediate Metabolizer (*1/*2, *1/*3, *2/*17)",
+          "chinese_name": "Clopidogrel (Plavix) — Intermediate Metabolizer",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "Intermediate metabolizers have reduced active metabolite formation and increased risk of cardiovascular or cerebrovascular events; your doctor may choose an alternative antiplatelet drug.",
+          "cpic_level": "CPIC Guideline for CYP2C19 and Clopidogrel Level A / PharmGKB Level 1A"
+        },
+        {
+          "drug_name": "Voriconazole / Proton Pump Inhibitors / SSRIs",
+          "chinese_name": "Voriconazole / Proton Pump Inhibitors (Omeprazole) / Certain SSRIs",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2C19 also metabolizes voriconazole, proton pump inhibitors, and certain antidepressants; your doctor may adjust therapy or choose another drug based on metabolizer status.",
+          "cpic_level": "CPIC Guideline Level A (Voriconazole / PPIs / SSRIs)"
+        }
+      ],
+      "dietary_contraindications": [
+        "Avoid combining clopidogrel with over-the-counter omeprazole or esomeprazole without medical advice, as they inhibit CYP2C19",
+        "Avoid smoking and excessive alcohol intake to protect blood vessels and lower bleeding risk"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A & FDA Boxed Warning Consensus",
+      "clinvar_summary_chinese": "600+ curated pharmacogenetic and clinical entries in ClinVar & PharmGKB (*2 rs4244285, *3 rs4986893, *17 rs12248560)",
+      "guideline_ids": [
+        "PHARMGKB:PA166251443"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Consider CYP2C19 genotyping before initiating clopidogrel for coronary stenting (PCI), acute coronary syndrome, or secondary stroke prevention.",
+      "lifestyle_tips": [
+        "Share your CYP2C19 genotype card with your cardiologist or neurologist before starting antiplatelet therapy—never stop medication on your own",
+        "Consult your pharmacist before taking stomach acid reducers to avoid CYP2C19 drug interactions",
+        "Maintain strict blood pressure, blood glucose, and LDL cholesterol control"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Neurology / Clinical Pharmacy",
+      "questions": [
+        "Doctor, my genetic report shows I am a CYP2C19 intermediate or poor metabolizer. Should we switch from Clopidogrel (Plavix) to Ticagrelor or Prasugrel?",
+        "If I need a stomach-protecting medication alongside my antiplatelet therapy, which option will not interfere with CYP2C19?",
+        "Should I also share my CYP2C19 status if I am prescribed antifungal drugs, PPIs, or antidepressants in the future?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“As long as I take Clopidogrel (Plavix) on time every day after getting a heart stent, am I guaranteed full protection against blood clots?”",
+      "truth": "Not necessarily! About 13%–15% of East Asians are CYP2C19 poor metabolizers whose livers cannot convert clopidogrel into its active form. Even when taken daily, it may offer little protection—making a physician-guided switch to an alternative drug essential."
+    }
+  },
+  "CYP2C9": {
+    "gene": {
+      "chinese_name": "Cytochrome P450 2C9 (Warfarin, Phenytoin & NSAID Metabolism Gene)",
+      "chromosome": "10q23.33 (Chromosome 10)",
+      "metaphor": {
+        "title": "⏳ The Liver's 【Medication Clearance Hourglass】",
+        "story": "Medications such as the anticoagulant Warfarin, the antiseizure drug Phenytoin, and common NSAID pain relievers are cleared from the bloodstream at a steady pace through the liver's CYP2C9 hourglass. If you carry decreased-function alleles (*2 or *3), the neck of the hourglass narrows: drugs drain out much more slowly and accumulate in the body, raising the risk of bleeding or drug toxicity."
+      },
+      "plain_summary": "CYP2C9 clears narrow-therapeutic-index drugs including Warfarin, Phenytoin, and several NSAIDs (celecoxib, flurbiprofen, meloxicam, piroxicam, ibuprofen). Carriers of *2 or *3 alleles metabolize these drugs more slowly; your doctor may adjust the dose, intensify INR/therapeutic monitoring, or choose another drug.",
+      "academic_summary": "CYP2C9 encodes hepatic cytochrome P450 2C9, the primary enzyme clearing S-warfarin, phenytoin, and multiple oxicam/coxib NSAIDs. Decreased-function alleles CYP2C9*2 (rs1799853, c.430C>T, p.Arg144Cys) and CYP2C9*3 (rs1057910, c.1075A>C, p.Ile359Leu) reduce intrinsic clearance, elevating systemic exposure and risks of hemorrhage, neurotoxicity, or GI bleeding."
+    },
+    "disease": {
+      "chinese_name": "Warfarin / Phenytoin / NSAID Clearance Sensitivity (CYP2C9 PGx)",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Anticoagulation & Analgesic Safety"
+      ],
+      "inheritance_mode": "Autosomal Codominant Metabolic Phenotype",
+      "severity_badge": "🟡 High-Alert Dose Sensitivity (Physician Dose Adjustment & Monitoring)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001892",
+        "name": "Abnormal bleeding",
+        "chinese_name": "Abnormal bleeding (anticoagulant over-exposure)"
+      },
+      {
+        "hpo_id": "HP:0002239",
+        "name": "Gastrointestinal hemorrhage",
+        "chinese_name": "Gastrointestinal hemorrhage risk"
+      },
+      {
+        "hpo_id": "HP:0001251",
+        "name": "Ataxia",
+        "chinese_name": "Phenytoin-related ataxia / neurotoxicity"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Warfarin",
+        "chinese_name": "Warfarin (Coumadin)",
+        "mechanism": "Vitamin K epoxide reductase inhibitor whose potent S-enantiomer is cleared by CYP2C9",
+        "approval_status": "CPIC Level A / FDA Label Actionable PGx"
+      },
+      {
+        "drug_name": "Phenytoin / NSAIDs",
+        "chinese_name": "Phenytoin / NSAIDs (Celecoxib, Meloxicam, Piroxicam, Ibuprofen)",
+        "mechanism": "Anticonvulsant and anti-inflammatory drugs cleared via CYP2C9",
+        "approval_status": "CPIC Level A / PharmGKB Level 1A"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "CYP2C9*2 (rs1799853, c.430C>T, p.Arg144Cys), CYP2C9*3 (rs1057910, c.1075A>C, p.Ile359Leu)",
+      "population_frequency": "CYP2C9*3 allele frequency is ~3%–4% in East Asians; in Europeans, *2 is ~12% and *3 is ~7%–8% (PMID:28198005)",
+      "traffic_light_summary": "🟡 Caution / Dose Adjustment: CYP2C9 *2 or *3 carriers clear Warfarin, Phenytoin, and NSAIDs more slowly; your doctor may adjust the dose or select an alternative medication with close monitoring.",
+      "drugs_guide": [
+        {
+          "drug_name": "Warfarin",
+          "chinese_name": "Warfarin (Oral Anticoagulant)",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2C9 *2 and *3 variants impair S-warfarin clearance and increase bleeding risk. Your doctor may adjust the dose alongside VKORC1 genotype or consider an alternative anticoagulant.",
+          "cpic_level": "CPIC Guideline for CYP2C9, VKORC1, CYP4F2 and Warfarin Level A"
+        },
+        {
+          "drug_name": "Phenytoin / Fosphenytoin",
+          "chinese_name": "Phenytoin / Fosphenytoin (Antiseizure Medication)",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2C9 intermediate and poor metabolizers have reduced phenytoin clearance and higher risk of neurotoxicity (ataxia, nystagmus); your doctor may adjust therapy or choose another drug (after checking HLA-B*15:02).",
+          "cpic_level": "CPIC Guideline for CYP2C9, HLA-B and Phenytoin Level A"
+        },
+        {
+          "drug_name": "NSAIDs (Celecoxib, Flurbiprofen, Meloxicam, Piroxicam, Ibuprofen)",
+          "chinese_name": "NSAID Pain Relievers (Celecoxib, Meloxicam, Piroxicam, Ibuprofen)",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2C9 poor and intermediate metabolizers experience elevated plasma NSAID exposure and increased GI and renal risks; your doctor may adjust the dose or choose an alternative analgesic.",
+          "cpic_level": "CPIC Guideline for CYP2C9 and NSAIDs Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "When taking Warfarin, keep daily dietary vitamin K intake (dark leafy greens, natto) consistent",
+        "Avoid binge alcohol use and unauthorized herbal supplements (Danshen, Ginkgo, St. John's Wort) that alter CYP2C9 clearance"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A & FDA Label Pharmacogenetic Consensus",
+      "clinvar_summary_chinese": "Validated CPIC Level A guidelines for Warfarin, Phenytoin, and NSAIDs (*2 rs1799853, *3 rs1057910)"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Before starting Warfarin, Phenytoin, or chronic NSAID regimens, consider CYP2C9 (and VKORC1 / HLA-B) pharmacogenetic testing.",
+      "lifestyle_tips": [
+        "Inform every prescribing physician and dentist of your CYP2C9 status before starting anticoagulants or pain relievers",
+        "Watch for early signs of bleeding or GI irritation (gum bleeding, nosebleeds, dark tarry stools, or bruising) and seek medical evaluation",
+        "Avoid purchasing over-the-counter NSAID painkillers for long-term use without consulting your doctor"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Neurology / Rheumatology / Anticoagulation Clinic",
+      "questions": [
+        "Doctor, I carry a CYP2C9 decreased-function variant (*2 or *3). Should my Warfarin regimen be adjusted using my CYP2C9 and VKORC1 genotypes, or is another anticoagulant suitable?",
+        "For joint or muscle pain, which analgesic options do not rely on CYP2C9 metabolism?",
+        "How frequently should I check my INR or therapeutic drug levels when starting or changing medications?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Are common anti-inflammatory painkillers (NSAIDs) metabolized at the same speed by everyone?”",
+      "truth": "No! Many widely used NSAIDs (celecoxib, meloxicam, piroxicam, ibuprofen) rely on CYP2C9 for clearance. In CYP2C9 poor metabolizers, clearance slows markedly—causing drug buildup and higher risks of stomach ulcers or bleeding unless guided by a physician."
+    }
+  },
+  "VKORC1": {
+    "gene": {
+      "chinese_name": "Vitamin K Epoxide Reductase Complex Subunit 1 (Warfarin Target Gene)",
+      "chromosome": "16p11.2 (Chromosome 16)",
+      "metaphor": {
+        "title": "🎛️ The Coagulation Factory's 【Vitamin K Recycling Tuning Dial】",
+        "story": "The liver constantly recycles vitamin K to produce blood clotting factors. VKORC1 is the recycling machine that recharges used vitamin K, and it is also the exact brake pedal pressed by the anticoagulant Warfarin. Over 80% of East Asians carry a VKORC1 promoter variant (rs9923231) that naturally produces fewer VKORC1 machines (high sensitivity), meaning much less Warfarin is needed to press the brake; standard Western regimens can easily cause over-anticoagulation and bleeding."
+      },
+      "plain_summary": "VKORC1 encodes the direct molecular target of Warfarin. The common promoter variant -1639G>A (rs9923231) reduces hepatic VKORC1 expression and increases sensitivity to Warfarin; your doctor may adjust the dose alongside CYP2C9 genotype or choose an alternative anticoagulant.",
+      "academic_summary": "VKORC1 encodes vitamin K epoxide reductase complex subunit 1, which reduces vitamin K 2,3-epoxide to vitamin K hydroquinone—the rate-limiting step for gamma-carboxylation of clotting factors II, VII, IX, and X. Promoter polymorphism c.-1639G>A (rs9923231) decreases VKORC1 transcription, conferring heightened sensitivity to warfarin."
+    },
+    "disease": {
+      "chinese_name": "Warfarin Pharmacogenetic Dose Sensitivity (VKORC1 PGx)",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Cardiovascular Anticoagulation Safety"
+      ],
+      "inheritance_mode": "Autosomal Codominant Pharmacodynamic Trait",
+      "severity_badge": "🟡 Primary Warfarin Sensitivity Determinant (High Frequency in East Asians)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001892",
+        "name": "Abnormal bleeding",
+        "chinese_name": "Warfarin-sensitivity abnormal bleeding risk"
+      },
+      {
+        "hpo_id": "HP:0000978",
+        "name": "Bruising susceptibility",
+        "chinese_name": "Easy subcutaneous bruising"
+      },
+      {
+        "hpo_id": "HP:0000421",
+        "name": "Epistaxis",
+        "chinese_name": "Recurrent epistaxis / gingival bleeding"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Warfarin",
+        "chinese_name": "Warfarin (Coumadin)",
+        "mechanism": "Directly inhibits VKORC1 to block activation of vitamin K-dependent clotting factors",
+        "approval_status": "CPIC Level A / FDA Label Actionable PGx"
+      },
+      {
+        "drug_name": "Direct Oral Anticoagulants (DOACs)",
+        "chinese_name": "Direct Oral Anticoagulants (Apixaban / Rivaroxaban / Dabigatran / Edoxaban)",
+        "mechanism": "Directly inhibit factor Xa or IIa independent of VKORC1",
+        "approval_status": "FDA / TFDA Approved Alternative"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "VKORC1 c.-1639G>A (rs9923231) and c.1173C>T (rs9934438)",
+      "population_frequency": "In East Asians, the -1639A (rs9923231) allele frequency is ~85%–90% (~75%–80% AA homozygotes), explaining why East Asians generally require lower Warfarin doses than Europeans (PMID:28198005)",
+      "traffic_light_summary": "🟡 Caution / Dose Adjustment: Carriers of VKORC1 -1639G>A (rs9923231) AA or GA genotypes have increased sensitivity to Warfarin; your doctor may adjust the dose alongside CYP2C9 genotype and monitor INR closely, or consider an alternative anticoagulant.",
+      "drugs_guide": [
+        {
+          "drug_name": "Warfarin",
+          "chinese_name": "Warfarin (Oral Anticoagulant)",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "Carriers of the VKORC1 -1639G>A (rs9923231) A allele express lower hepatic VKORC1 enzyme levels and are sensitive to Warfarin; your doctor may adjust the dose using CPIC pharmacogenetic algorithms and monitor INR closely.",
+          "cpic_level": "CPIC Guideline for CYP2C9, VKORC1, CYP4F2 and Warfarin Level A / PharmGKB Level 1A"
+        }
+      ],
+      "dietary_contraindications": [
+        "While taking Warfarin, keep daily vitamin K intake (spinach, kale, broccoli, green tea) consistent rather than binging or completely avoiding greens",
+        "Avoid natto (fermented soybeans rich in vitamin K2 and nattokinase, which strongly antagonize Warfarin) and excessive cranberry juice"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A & FDA Label Core Anticoagulation Biomarker",
+      "clinvar_summary_chinese": "rs9923231 (-1639G>A) is the most extensively validated genetic determinant of Warfarin sensitivity",
+      "guideline_ids": [
+        "PHARMGKB:PA166251465"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Before starting Warfarin for atrial fibrillation, mechanical heart valves, or deep vein thrombosis, consider combined VKORC1 and CYP2C9 genotyping.",
+      "lifestyle_tips": [
+        "Carry an anticoagulation alert card and inform dentists, endoscopists, and surgeons before any procedure",
+        "Keep weekly leafy green vegetable intake steady rather than eliminating vegetables completely",
+        "Check your International Normalized Ratio (INR) on schedule and never change your dose without medical guidance"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiovascular Surgery / Anticoagulation Clinic",
+      "questions": [
+        "Doctor, my report shows a high-sensitivity VKORC1 rs9923231 genotype. Should my Warfarin regimen be adjusted based on my VKORC1 and CYP2C9 results?",
+        "What is my target INR range, and how often should I return for blood tests during initiation?",
+        "Given my clinical condition, should I use genotype-guided Warfarin or consider a direct oral anticoagulant (DOAC)?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“If I take Warfarin, am I forbidden from ever eating a single bite of spinach or green vegetables?”",
+      "truth": "No! What destabilizes Warfarin is sudden, drastic swings in vitamin K intake (such as eating none for weeks and suddenly eating a huge plate of spinach or natto). As long as your daily vegetable intake stays consistent, your physician can calibrate your regimen safely."
+    }
+  },
+  "SLCO1B1": {
+    "gene": {
+      "chinese_name": "Solute Carrier Organic Anion Transporter 1B1 (Statin Muscle Safety Gene)",
+      "chromosome": "12p12.1 (Chromosome 12)",
+      "metaphor": {
+        "title": "🚪 The Liver's 【Cholesterol Drug Revolving Entry Door】",
+        "story": "Statin cholesterol-lowering drugs (such as Simvastatin) travel through the bloodstream to enter the liver and reduce cholesterol synthesis. SLCO1B1 acts as the liver's dedicated revolving entry door for statins. If you carry the rs4149056 (*5 / *15) variant, this revolving door jams: statins cannot enter the liver efficiently, accumulate in the bloodstream, and seep into skeletal muscle—causing muscle aches, myopathy, or rhabdomyolysis."
+      },
+      "plain_summary": "SLCO1B1 transports statin lipid-lowering medications into liver cells. Carriers of the decreased-function variant c.521T>C (rs4149056, *5 / *15) experience higher blood statin levels and increased risk of statin-associated musculoskeletal symptoms (SAMS), especially with Simvastatin; your doctor may adjust the dose or choose another lipid-lowering medication.",
+      "academic_summary": "SLCO1B1 encodes the hepatocyte basolateral uptake transporter OATP1B1, mediating hepatic clearance of HMG-CoA reductase inhibitors. Missense variant c.521T>C (rs4149056, p.Val174Ala, *5/*15) impairs transport activity, markedly increasing systemic exposure (AUC) of simvastatin acid and other statins and predisposing patients to skeletal myotoxicity."
+    },
+    "disease": {
+      "chinese_name": "Statin-Associated Myopathy & Rhabdomyolysis Risk (SLCO1B1 PGx)",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Cardiovascular & Lipid-Lowering Safety"
+      ],
+      "inheritance_mode": "Autosomal Codominant Transporter Phenotype",
+      "severity_badge": "🔴 High Simvastatin Myopathy Alert (Adjust Therapy or Switch Statin)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003326",
+        "name": "Myalgia",
+        "chinese_name": "Symmetric proximal muscle aches (myalgia)"
+      },
+      {
+        "hpo_id": "HP:0003198",
+        "name": "Myopathy",
+        "chinese_name": "Drug-induced skeletal myopathy"
+      },
+      {
+        "hpo_id": "HP:0003201",
+        "name": "Rhabdomyolysis",
+        "chinese_name": "Rhabdomyolysis"
+      },
+      {
+        "hpo_id": "HP:0003236",
+        "name": "Elevated circulating creatine kinase activity",
+        "chinese_name": "Elevated serum creatine kinase (CK) activity"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Simvastatin",
+        "chinese_name": "Simvastatin (Zocor)",
+        "mechanism": "HMG-CoA reductase inhibitor whose active acid metabolite strongly depends on OATP1B1 hepatic uptake",
+        "approval_status": "CPIC Level A / FDA Label PGx"
+      },
+      {
+        "drug_name": "Atorvastatin / Rosuvastatin / Pravastatin",
+        "chinese_name": "Atorvastatin / Rosuvastatin / Pravastatin",
+        "mechanism": "Alternative HMG-CoA reductase inhibitors guided by SLCO1B1 phenotype",
+        "approval_status": "CPIC Level A Guideline"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "SLCO1B1 c.521T>C (rs4149056, p.Val174Ala, SLCO1B1*5 / *15)",
+      "population_frequency": "In East Asians, the c.521T>C (rs4149056) allele frequency is ~10%–16% (~20%–28% carrier frequency) (PMID:35152405)",
+      "traffic_light_summary": "🔴 Decreased/Poor Function (rs4149056 C allele carriers): Avoid high-exposure Simvastatin regimens; your doctor may choose an alternative statin or adjust therapy. 🟡 For Atorvastatin, Rosuvastatin, or Pitavastatin, your doctor may adjust the dose based on SLCO1B1 phenotype and monitor for muscle symptoms.",
+      "drugs_guide": [
+        {
+          "drug_name": "Simvastatin",
+          "chinese_name": "Simvastatin (Zocor)",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "Carriers of SLCO1B1 decreased-function alleles (rs4149056 C allele, *5 / *15) experience markedly elevated simvastatin acid blood levels and high risk of myopathy or rhabdomyolysis; your doctor may choose an alternative statin or adjust the dose.",
+          "cpic_level": "CPIC Guideline for SLCO1B1, ABCG2, CYP2C9, and Statins Level A"
+        },
+        {
+          "drug_name": "Atorvastatin / Rosuvastatin / Pitavastatin",
+          "chinese_name": "Atorvastatin (Lipitor) / Rosuvastatin (Crestor) / Pitavastatin",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "Decreased SLCO1B1 function also increases systemic exposure to other statins; your doctor may adjust starting and maximum doses per CPIC guidelines or select an alternative lipid-lowering strategy while monitoring creatine kinase (CK).",
+          "cpic_level": "CPIC Guideline for SLCO1B1, ABCG2, CYP2C9, and Statins Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "Strictly avoid grapefruit and grapefruit juice while taking simvastatin or atorvastatin (inhibits intestinal CYP3A4 and compounds SLCO1B1 statin accumulation)",
+        "Do not take over-the-counter red yeast rice supplements alongside prescription statins (red yeast rice contains monacolin K / lovastatin, causing duplicate toxicity)"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A & NEJM SEARCH Trial Consensus",
+      "clinvar_summary_chinese": "rs4149056 (c.521T>C) is the premier validated pharmacogenetic marker for statin-induced myopathy"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Consider SLCO1B1 rs4149056 testing before initiating statin therapy or in patients with a history of statin-associated muscle aches.",
+      "lifestyle_tips": [
+        "If you develop unexplained symmetric aching, weakness, or cramping in your thighs, calves, or shoulders—or dark tea/cola-colored urine—seek medical care immediately to check serum creatine kinase (CK)",
+        "Reduce dietary saturated and trans fats, and increase soluble fiber, oats, and omega-3-rich fish",
+        "Never combine red yeast rice supplements with prescription cholesterol medications"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Endocrinology & Metabolism / Family Medicine",
+      "questions": [
+        "Doctor, my report shows I carry the SLCO1B1 rs4149056 variant. Which statin or lipid-lowering medication offers the best muscle safety profile for me?",
+        "If I experience thigh or calf muscle soreness during therapy, when should I return to check my serum creatine kinase (CK)?",
+        "Could non-statin options such as Ezetimibe or PCSK9 inhibitors be used as an adjunct or alternative if needed?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“If prescription cholesterol pills make my legs ache, is switching to 'natural red yeast rice' supplements completely safe for my muscles?”",
+      "truth": "Dangerous myth! The active compound in red yeast rice (Monacolin K) is chemically identical to the statin drug lovastatin. For SLCO1B1 variant carriers, taking unstandardized red yeast rice—or combining it with prescription statins—can trigger severe myopathy or rhabdomyolysis!"
+    }
+  },
+  "TPMT": {
+    "gene": {
+      "chinese_name": "Thiopurine S-Methyltransferase (Thiopurine Safety Gene)",
+      "chromosome": "6p22.3 (Chromosome 6)",
+      "metaphor": {
+        "title": "🧯 The Bone Marrow's 【Thiopurine Safety Pressure-Relief Valve】",
+        "story": "Azathioprine and Mercaptopurine are key medications for inflammatory bowel disease, autoimmune conditions, and leukemia. Inside the body, TPMT acts like a safety pressure-relief valve that methylates and inactivates most of the drug, leaving just the right amount of active drug to work safely. If you carry loss-of-function alleles (*3A or *3C), the relief valve is welded shut—shunting nearly all of the drug into toxic active metabolites that overwhelm bone marrow blood production."
+      },
+      "plain_summary": "TPMT inactivates thiopurine drugs (Azathioprine, Mercaptopurine, Thioguanine). Carriers of loss-of-function alleles (*2, *3A, *3B, *3C) face life-threatening bone marrow suppression (myelosuppression) on standard regimens; your doctor may adjust the dose substantially or choose a non-thiopurine medication.",
+      "academic_summary": "TPMT encodes thiopurine S-methyltransferase, catalyzing S-methylation inactivation of 6-MP and 6-TG in competition with formation of cytotoxic 6-thioguanine nucleotides (6-TGN). No-function alleles TPMT*3A (rs1800460 c.460G>A + rs1142345 c.719A>G), TPMT*3C (rs1142345 c.719A>G), and TPMT*2 (rs1800462 c.238G>C) destabilize the enzyme, causing excessive 6-TGN accumulation and severe hematopoietic toxicity."
+    },
+    "disease": {
+      "chinese_name": "Thiopurine S-Methyltransferase Deficiency & Myelosuppression Risk",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Hematology-Oncology & Autoimmune Safety"
+      ],
+      "inheritance_mode": "Autosomal Codominant Metabolic Phenotype",
+      "severity_badge": "🔴 Critical Thiopurine Red Light (Test Both TPMT & NUDT15 Before Therapy)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001882",
+        "name": "Decreased total leukocyte count",
+        "chinese_name": "Leukopenia"
+      },
+      {
+        "hpo_id": "HP:0001875",
+        "name": "Decreased total neutrophil count",
+        "chinese_name": "Neutropenia"
+      },
+      {
+        "hpo_id": "HP:0005528",
+        "name": "Bone marrow hypocellularity",
+        "chinese_name": "Severe bone marrow myelosuppression"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Azathioprine",
+        "chinese_name": "Azathioprine (Imuran)",
+        "mechanism": "Thiopurine immunosuppressant prodrug regulated by TPMT and NUDT15",
+        "approval_status": "CPIC Level A / FDA Testing Recommended"
+      },
+      {
+        "drug_name": "Mercaptopurine / Thioguanine",
+        "chinese_name": "Mercaptopurine (6-MP) / Thioguanine (6-TG)",
+        "mechanism": "Purine antimetabolite agents used in acute lymphoblastic leukemia and IBD",
+        "approval_status": "CPIC Level A / FDA Testing Recommended"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "TPMT*3A (rs1800460 c.460G>A + rs1142345 c.719A>G), TPMT*3C (rs1142345, c.719A>G), TPMT*2 (rs1800462, c.238G>C)",
+      "population_frequency": "Carrier frequency is ~6%–10% in European and African populations (*3A most common in Europeans); in East Asians, *3C predominates with ~1%–2% allele frequency (PMID:30447069)",
+      "traffic_light_summary": "🔴 Poor Metabolizers (two no-function alleles, e.g., *3A/*3A, *3C/*3C): For non-malignant conditions, avoid Azathioprine, Mercaptopurine, and Thioguanine and choose non-thiopurine therapy; for malignancy, your oncologist will drastically reduce the dose. 🟡 Intermediate Metabolizers (*1/*3A, *1/*3C): Your doctor may reduce the starting dose and monitor CBC closely.",
+      "drugs_guide": [
+        {
+          "drug_name": "Azathioprine / Mercaptopurine / Thioguanine — Poor Metabolizer",
+          "chinese_name": "Azathioprine / Mercaptopurine / Thioguanine — Poor Metabolizer",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "TPMT poor metabolizers experience life-threatening pancytopenia and myelosuppression on standard thiopurine regimens. Depending on the condition being treated, your doctor may need to greatly reduce the dose or choose another drug.",
+          "cpic_level": "CPIC Guideline for TPMT, NUDT15 and Thiopurines Level A / FDA Testing Recommended"
+        },
+        {
+          "drug_name": "Azathioprine / Mercaptopurine / Thioguanine — Intermediate Metabolizer",
+          "chinese_name": "Azathioprine / Mercaptopurine / Thioguanine — Intermediate Metabolizer",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "TPMT intermediate metabolizers accumulate higher cytotoxic 6-TGN levels; your doctor may reduce the starting dose and closely monitor complete blood counts (CBC) and liver function.",
+          "cpic_level": "CPIC Guideline for TPMT, NUDT15 and Thiopurines Level A / PharmGKB Level 1A"
+        }
+      ],
+      "dietary_contraindications": [
+        "Never combine thiopurines with xanthine oxidase inhibitors such as Allopurinol or Febuxostat without specialist supervision, as they block thiopurine breakdown and multiply myelotoxicity",
+        "Avoid raw or unpasteurized foods to reduce infection risk during periods of low white blood cell counts"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A & Gold-Standard Clinical Pharmacogenetics Guideline",
+      "clinvar_summary_chinese": "TPMT*2, *3A, *3B, and *3C are standard pre-prescription pharmacogenetic biomarkers worldwide"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Perform combined TPMT and NUDT15 genotyping before starting Azathioprine, Mercaptopurine, or Thioguanine for IBD, lupus, transplantation, or leukemia.",
+      "lifestyle_tips": [
+        "East Asian patients must test both TPMT and NUDT15 before starting thiopurines",
+        "Complete scheduled CBC and liver function blood draws promptly during treatment initiation",
+        "Seek urgent medical care if you develop unexplained fever, severe sore throat, oral ulcers, or abnormal bruising"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Rheumatology / Hematology-Oncology / Pediatrics",
+      "questions": [
+        "Doctor, my report shows a TPMT variant (such as TPMT*3A or *3C). Should we choose a non-thiopurine immunomodulator or adjust my thiopurine regimen?",
+        "Did my genetic test also check NUDT15, which is especially common in East Asian populations?",
+        "How frequently should I have complete blood count (CBC) monitoring during the first two months of therapy?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“My TPMT gene test came back normal (*1/*1)—does that guarantee I won't develop severe low white blood cells from Azathioprine?”",
+      "truth": "Not in East Asian populations! While TPMT explains most thiopurine toxicity in Europeans, NUDT15 (*3) is far more common in Taiwan and East Asia (~18%–20% carriers). Both TPMT and NUDT15 must be tested together before starting thiopurines!"
+    }
+  },
+  "NUDT15": {
+    "gene": {
+      "chinese_name": "Nudix Hydrolase 15 (East Asian Thiopurine Myelosuppression Core Gene)",
+      "chromosome": "13q14.2 (Chromosome 13)",
+      "metaphor": {
+        "title": "🧹 The Cell Nucleus's 【Toxic Nucleotide Bomb Squad】",
+        "story": "When Azathioprine or Mercaptopurine (6-MP) is converted into highly active 6-thioguanine triphosphate (6-TGTP) ready to be inserted into DNA, NUDT15 stands guard at the cell nucleus as the bomb squad—clipping off phosphate groups to defuse excess toxic nucleotides. In Taiwan and East Asian populations, ~1 in 5 to 6 people carry a NUDT15*3 variant that disables this bomb squad, allowing toxic nucleotides to flood hematopoietic stem cell DNA and causing severe leukopenia and early hair loss."
+      },
+      "plain_summary": "NUDT15 is the primary genetic determinant of thiopurine-induced severe leukopenia and alopecia in East Asian populations. In carriers of NUDT15*3 (rs116855232) or other no-function alleles taking Azathioprine, Mercaptopurine, or Thioguanine, your doctor may choose a non-thiopurine alternative or adjust the dose.",
+      "academic_summary": "NUDT15 encodes nudix hydrolase 15, which dephosphorylates cytotoxic 6-thio-GTP (6-TGTP) and 6-thio-dGTP into inactive monophosphates, preventing DNA incorporation and apoptosis. The common East Asian missense variant NUDT15*3 (rs116855232, c.415C>T, p.Arg139Cys) abolishes enzymatic thermostability and catalytic activity, causing severe early myelosuppression and alopecia."
+    },
+    "disease": {
+      "chinese_name": "Thiopurine Metabolic Disorder (East Asian NUDT15 Myelosuppression & Alopecia Risk)",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "East Asian Precision Medicine",
+        "Hematology & Autoimmune Safety"
+      ],
+      "inheritance_mode": "Autosomal Codominant Metabolic Phenotype",
+      "severity_badge": "🔴 Essential East Asian PGx Red Light (~18%–20% Carrier Frequency)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001882",
+        "name": "Decreased total leukocyte count",
+        "chinese_name": "Severe leukopenia"
+      },
+      {
+        "hpo_id": "HP:0001875",
+        "name": "Decreased total neutrophil count",
+        "chinese_name": "Neutropenia with infection susceptibility"
+      },
+      {
+        "hpo_id": "HP:0001596",
+        "name": "Alopecia",
+        "chinese_name": "Early drug-induced severe alopecia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Azathioprine",
+        "chinese_name": "Azathioprine (Imuran)",
+        "mechanism": "Thiopurine immunosuppressant for IBD and autoimmune diseases",
+        "approval_status": "CPIC Level A / FDA Testing Recommended"
+      },
+      {
+        "drug_name": "Mercaptopurine / Thioguanine",
+        "chinese_name": "Mercaptopurine (6-MP) / Thioguanine (6-TG)",
+        "mechanism": "Backbone antimetabolite therapy for ALL maintenance regulated by NUDT15",
+        "approval_status": "CPIC Level A / FDA Testing Recommended"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "NUDT15*3 (rs116855232, c.415C>T, p.Arg139Cys), NUDT15*2, NUDT15*5, NUDT15*6",
+      "population_frequency": "In East Asians (Taiwan, Japan, Korea, Chinese populations), NUDT15*3 (rs116855232) allele frequency is ~9%–11% (~18%–20% carriers; ~1% poor metabolizers), far higher than in Europeans (<1%) (PMID:25108385, PMID:30447069)",
+      "traffic_light_summary": "🔴 Poor Metabolizers (e.g., NUDT15 *3/*3): Avoid Azathioprine, Mercaptopurine, and Thioguanine in non-malignant conditions and choose an alternative agent; in oncology, drastic specialist dose adjustment is required. 🟡 Intermediate Metabolizers (*1/*3): Your doctor may reduce the starting dose and closely monitor CBC.",
+      "drugs_guide": [
+        {
+          "drug_name": "Azathioprine / Mercaptopurine / Thioguanine — Poor Metabolizer (*3/*3)",
+          "chinese_name": "Azathioprine / Mercaptopurine / Thioguanine — Poor Metabolizer (*3/*3)",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "NUDT15 poor metabolizers experience rapid, severe panleukopenia and alopecia on standard thiopurine regimens. Depending on the condition being treated, your doctor may need to greatly reduce the dose or choose another drug.",
+          "cpic_level": "CPIC Guideline for TPMT, NUDT15 and Thiopurines Level A / FDA Testing Recommended"
+        },
+        {
+          "drug_name": "Azathioprine / Mercaptopurine / Thioguanine — Intermediate Metabolizer (*1/*3)",
+          "chinese_name": "Azathioprine / Mercaptopurine / Thioguanine — Intermediate Metabolizer (*1/*3)",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "NUDT15 intermediate metabolizers have significantly elevated risk of thiopurine-induced leukopenia; your doctor may adjust the starting dose per CPIC guidelines and monitor blood counts closely.",
+          "cpic_level": "CPIC Guideline for TPMT, NUDT15 and Thiopurines Level A / PharmGKB Level 1A"
+        }
+      ],
+      "dietary_contraindications": [
+        "Avoid combining thiopurines with xanthine oxidase inhibitors (Allopurinol, Febuxostat) without specialist guidance",
+        "Practice strict food hygiene and avoid raw foods to prevent opportunistic infections if white blood cell counts drop"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A & Landmark East Asian Precision Medicine Discovery",
+      "clinvar_summary_chinese": "NUDT15*3 (rs116855232) is the primary genetic determinant of thiopurine myelosuppression in East Asians"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Patients of East Asian ancestry should undergo NUDT15 (and TPMT) genotyping before starting Azathioprine or Mercaptopurine.",
+      "lifestyle_tips": [
+        "Sudden, heavy hair loss (alopecia) within the first few weeks of thiopurine therapy is a classic early warning sign of NUDT15 toxicity—contact your physician immediately for a CBC blood test",
+        "Adhere strictly to scheduled white blood cell, neutrophil, and platelet count monitoring",
+        "Inform your physician if any family member has experienced severe leukopenia on immunosuppressants"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Rheumatology / Pediatric Hematology-Oncology / Dermatology",
+      "questions": [
+        "Doctor, my report identified a NUDT15*3 (rs116855232) variant. Should my treatment plan switch to a non-thiopurine immunomodulator or use a genotype-adjusted regimen?",
+        "If I notice unusual hair shedding, fatigue, or fever early in treatment, should I hold the medication and get an urgent CBC test?",
+        "Should my siblings or children be tested for NUDT15 before ever taking thiopurine medications?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Western guidelines focus on TPMT for thiopurine toxicity—is testing TPMT alone enough for Asian patients?”",
+      "truth": "Not at all! While NUDT15 variants are rare (<1%) in Europeans, ~18%–20% of East Asians carry NUDT15 risk alleles, making NUDT15 the #1 cause of life-threatening thiopurine leukopenia in Asian populations."
+    }
+  },
+  "HLA-B": {
+    "gene": {
+      "chinese_name": "Major Histocompatibility Complex, Class I, B (Severe Cutaneous Adverse Reaction Gene)",
+      "chromosome": "6p21.33 (Chromosome 6p)",
+      "metaphor": {
+        "title": "🚨 The Immune System's 【Hypersensitive Drug Radar Sentinel】",
+        "story": "HLA-B is a sentinel protein on cell surfaces that presents antigens to immune T cells. However, in carriers of specific HLA-B alleles, the sentinel's radar makes a catastrophic miscalculation: when an HLA-B*15:02 carrier takes the antiseizure/neuralgia drug Carbamazepine, or an HLA-B*58:01 carrier takes the gout medication Allopurinol, the drug locks into the HLA-B groove and triggers killer T cells to attack the body's own skin and mucous membranes—causing life-threatening Stevens-Johnson syndrome (SJS) or toxic epidermal necrolysis (TEN)."
+      },
+      "plain_summary": "HLA-B*15:02 and HLA-B*58:01 are the most critical pharmacogenetic safety markers in Taiwan and East Asia for preventing fatal severe cutaneous adverse reactions (SCAR). HLA-B*15:02 carriers must avoid Carbamazepine, Oxcarbazepine, and Phenytoin; HLA-B*58:01 carriers must avoid Allopurinol.",
+      "academic_summary": "HLA-B encodes the MHC class I heavy chain. HLA-B*15:02 binds aromatic anticonvulsants (carbamazepine, oxcarbazepine, phenytoin) non-covalently to activate cytotoxic CD8+ T cells and granulysin release, triggering SJS/TEN. HLA-B*58:01 binds allopurinol and oxypurinol, inducing SJS/TEN and drug reaction with eosinophilia and systemic symptoms (DRESS)."
+    },
+    "disease": {
+      "chinese_name": "Severe Cutaneous Adverse Reactions — SJS / TEN / DRESS (HLA-B PGx)",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Taiwan Precision Medicine Contraindication",
+        "Severe Drug Hypersensitivity"
+      ],
+      "inheritance_mode": "Autosomal Codominant HLA Allele Susceptibility",
+      "severity_badge": "🔴 Absolute Drug Contraindication Red Light (Pre-Prescription Screening Saves Lives)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0008066",
+        "name": "Abnormal blistering of the skin",
+        "chinese_name": "Generalized skin blistering and epidermal detachment (SJS/TEN)"
+      },
+      {
+        "hpo_id": "HP:0200097",
+        "name": "Oral mucosal blisters",
+        "chinese_name": "Oral, ocular, and genital mucosal blistering and erosion"
+      },
+      {
+        "hpo_id": "HP:0040186",
+        "name": "Maculopapular exanthema",
+        "chinese_name": "Drug-induced maculopapular exanthema"
+      },
+      {
+        "hpo_id": "HP:0001945",
+        "name": "Fever",
+        "chinese_name": "Acute prodromal fever and malaise after drug exposure"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Carbamazepine / Oxcarbazepine / Phenytoin (Contraindicated in HLA-B*15:02)",
+        "chinese_name": "Carbamazepine (Tegretol) / Oxcarbazepine / Phenytoin",
+        "mechanism": "Aromatic anticonvulsants that bind HLA-B*15:02 and trigger cytotoxic T-cell SJS/TEN",
+        "approval_status": "CPIC Level A / FDA Boxed Warning / Taiwan NHI Pre-Test (PMID:21428768)"
+      },
+      {
+        "drug_name": "Allopurinol (Contraindicated in HLA-B*58:01)",
+        "chinese_name": "Allopurinol (Zyloric)",
+        "mechanism": "Xanthine oxidase inhibitor urate-lowering drug that binds HLA-B*58:01 to trigger SCAR",
+        "approval_status": "CPIC Level A / Taiwan National Cohort Evidence (PMID:26399967)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "HLA-B*15:02 (HLA-B*1502), HLA-B*58:01 (HLA-B*5801)",
+      "population_frequency": "In Taiwan and Han Chinese populations, HLA-B*15:02 carrier frequency is ~7%–8% (15%+ in parts of Southeast Asia) (PMID:15057820, PMID:21428768); HLA-B*58:01 carrier frequency in Taiwan Han Chinese is ~15%–20% (PMID:15743917, PMID:26399967)",
+      "traffic_light_summary": "🔴 Dual Absolute Contraindications: ① HLA-B*15:02 positive: Strictly avoid Carbamazepine, Oxcarbazepine, and Phenytoin/Fosphenytoin; ② HLA-B*58:01 positive: Strictly avoid Allopurinol; your doctor will select a safe alternative medication.",
+      "drugs_guide": [
+        {
+          "drug_name": "Carbamazepine (Tegretol) / Oxcarbazepine / Phenytoin — HLA-B*15:02 Positive",
+          "chinese_name": "Carbamazepine (Tegretol) / Oxcarbazepine / Phenytoin — HLA-B*15:02 Positive",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "HLA-B*15:02 carriers face an extremely high risk of life-threatening Stevens-Johnson syndrome (SJS) and toxic epidermal necrolysis (TEN) when exposed to carbamazepine, oxcarbazepine, or phenytoin/fosphenytoin. Avoid these drugs and select a non-aromatic alternative.",
+          "cpic_level": "CPIC Guideline for HLA-B and Carbamazepine/Oxcarbazepine/Phenytoin Level A / FDA Boxed Warning"
+        },
+        {
+          "drug_name": "Allopurinol (Zyloric) — HLA-B*58:01 Positive",
+          "chinese_name": "Allopurinol (Zyloric) — HLA-B*58:01 Positive",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "HLA-B*58:01 carriers have a very high risk of allopurinol-induced severe cutaneous adverse reactions (SJS/TEN and DRESS). Allopurinol is contraindicated; your doctor may choose an alternative urate-lowering medication.",
+          "cpic_level": "CPIC Guideline for HLA-B and Allopurinol Level A / PharmGKB Level 1A"
+        }
+      ],
+      "dietary_contraindications": [
+        "For gout or hyperuricemia, limit high-purine organ meats, rich meat broths, shellfish, fructose-sweetened drinks, and alcohol",
+        "Never take unlabelled pain powders or share someone else's neuralgia, seizure, or gout medications"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Landmark Taiwan Precision Medicine Written Into FDA & CPIC Level A Guidelines",
+      "clinvar_summary_chinese": "Validated by Taiwan teams in Nature (PMID:15057820), PNAS (PMID:15743917), NEJM (PMID:21428768), and BMJ (PMID:26399967)"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "In Taiwan and East Asia, screen for HLA-B*15:02 before first-time Carbamazepine prescription (shown in Taiwan's national prospective study to eliminate carbamazepine-induced SJS/TEN, PMID:21428768) and screen for HLA-B*58:01 before Allopurinol initiation (PMID:26399967).",
+      "lifestyle_tips": [
+        "If you test positive for HLA-B*15:02 or HLA-B*58:01, ask your hospital to record the contraindicated drugs in your national health insurance card allergy record and carry an alert card",
+        "Within 1–8 weeks of starting any new antiseizure, neuralgia, or gout drug, seek emergency care immediately if fever, sore throat, eye stinging, oral ulcers, or blistering rash appear",
+        "First-degree relatives have a 50% chance of carrying the same HLA-B allele and should be screened before taking these drugs"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Neurology / Rheumatology / Nephrology / Dermatology / Clinical Pharmacy",
+      "questions": [
+        "Doctor, my report is positive for HLA-B*15:02. Which non-aromatic antiseizure or neuralgia medications are safe alternatives for me?",
+        "If I am HLA-B*58:01 positive and need uric acid-lowering therapy for gout, which alternative medication do you recommend?",
+        "Can you permanently record my HLA-B status in my medical chart and health insurance allergy record?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Is severe drug allergy purely a matter of luck that you can only discover after taking the pill?”",
+      "truth": "No longer! Taiwan researchers discovered the link between HLA-B*15:02 and carbamazepine SJS/TEN and between HLA-B*58:01 and allopurinol SCAR, proving in national cohort studies that pre-prescription genetic screening prevents these fatal reactions (PMID:21428768, PMID:26399967)."
+    }
+  }
+};

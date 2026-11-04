@@ -1,0 +1,185 @@
+[
+  {
+    "symbol": "BRCA1",
+    "ensembl_id": "ENSG00000012048",
+    "entrez_id": "672",
+    "disease_id": "MONDO:0007254",
+    "disease_label": "breast cancer",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000012048",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/672",
+      "disease": "https://monarchinitiative.org/MONDO:0007254"
+    },
+    "verified_on": "2026-11-03"
+  },
+  {
+    "symbol": "TP53",
+    "ensembl_id": "ENSG00000141510",
+    "entrez_id": "7157",
+    "disease_id": "MONDO:0018875",
+    "disease_label": "Li-Fraumeni syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000141510",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7157",
+      "disease": "https://monarchinitiative.org/MONDO:0018875"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "APOE",
+    "ensembl_id": "ENSG00000130203",
+    "entrez_id": "348",
+    "disease_id": "MONDO:0004975",
+    "disease_label": "Alzheimer disease",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000130203",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/348",
+      "disease": "https://monarchinitiative.org/MONDO:0004975"
+    },
+    "verified_on": "2026-11-03"
+  },
+  {
+    "symbol": "EGFR",
+    "ensembl_id": "ENSG00000146648",
+    "entrez_id": "1956",
+    "disease_id": "MONDO:0005233",
+    "disease_label": "non-small cell lung carcinoma",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000146648",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1956",
+      "disease": "https://monarchinitiative.org/MONDO:0005233"
+    },
+    "verified_on": "2026-11-03"
+  },
+  {
+    "symbol": "ALDH2",
+    "ensembl_id": "ENSG00000111275",
+    "entrez_id": "217",
+    "disease_id": "MONDO:0012454",
+    "disease_label": "alcohol sensitivity, acute",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000111275",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/217",
+      "disease": "https://monarchinitiative.org/MONDO:0012454"
+    },
+    "verified_on": "2026-11-03"
+  },
+  {
+    "symbol": "G6PD",
+    "ensembl_id": "ENSG00000160211",
+    "entrez_id": "2539",
+    "disease_id": "MONDO:0005775",
+    "disease_label": "G6PD deficiency",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000160211",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/2539",
+      "disease": "https://monarchinitiative.org/MONDO:0005775"
+    },
+    "verified_on": "2026-11-03"
+  },
+  {
+    "symbol": "MTHFR",
+    "ensembl_id": "ENSG00000177000",
+    "entrez_id": "4524",
+    "disease_id": "MONDO:0004743",
+    "disease_label": "hyperhomocysteinemia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000177000",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4524",
+      "disease": "https://monarchinitiative.org/MONDO:0004743"
+    },
+    "verified_on": "2026-11-03"
+  },
+  {
+    "symbol": "CYP2C19",
+    "ensembl_id": "ENSG00000165841",
+    "entrez_id": "1557",
+    "disease_id": "PHARMGKB:PA166124406",
+    "disease_label": "platelet reactivity",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000165841",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1557",
+      "disease": "https://api.clinpgx.org/v1/data/disease/PA166124406"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "CYP2C9",
+    "ensembl_id": "ENSG00000138109",
+    "entrez_id": "1559",
+    "disease_id": "MESH:D064420",
+    "disease_label": "Drug-Related Side Effects and Adverse Reactions",
+    "mesh_tree_number": "C25.100",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000138109",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1559",
+      "disease": "https://id.nlm.nih.gov/mesh/D064420.json"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "VKORC1",
+    "ensembl_id": "ENSG00000167397",
+    "entrez_id": "79001",
+    "disease_id": "PHARMGKB:PA166123298",
+    "disease_label": "over-anticoagulation",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000167397",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/79001",
+      "disease": "https://api.clinpgx.org/v1/data/disease/PA166123298"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "SLCO1B1",
+    "ensembl_id": "ENSG00000134538",
+    "entrez_id": "10599",
+    "disease_id": "MONDO:0033170",
+    "disease_label": "statin toxicity",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000134538",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/10599",
+      "disease": "https://monarchinitiative.org/MONDO:0033170"
+    },
+    "verified_on": "2026-11-03"
+  },
+  {
+    "symbol": "TPMT",
+    "ensembl_id": "ENSG00000137364",
+    "entrez_id": "7172",
+    "disease_id": "MONDO:0012503",
+    "disease_label": "thiopurine S-methyltransferase deficiency",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000137364",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7172",
+      "disease": "https://monarchinitiative.org/MONDO:0012503"
+    },
+    "verified_on": "2026-11-03"
+  },
+  {
+    "symbol": "NUDT15",
+    "ensembl_id": "ENSG00000136159",
+    "entrez_id": "55270",
+    "disease_id": "MONDO:0000210",
+    "disease_label": "thiopurine metabolic disease",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000136159",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/55270",
+      "disease": "https://monarchinitiative.org/MONDO:0000210"
+    },
+    "verified_on": "2026-11-03"
+  },
+  {
+    "symbol": "HLA-B",
+    "ensembl_id": "ENSG00000234745",
+    "entrez_id": "3106",
+    "disease_id": "MONDO:0005594",
+    "disease_label": "severe cutaneous adverse reaction",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000234745",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/3106",
+      "disease": "https://monarchinitiative.org/MONDO:0005594"
+    },
+    "verified_on": "2026-11-03"
+  }
+]

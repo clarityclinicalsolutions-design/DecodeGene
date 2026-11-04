@@ -1,0 +1,21 @@
+{
+  "name": "decodegene-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run sync-data && vite build",
+    "build:static": "npm run sync-data && vite build --mode static",
+    "preview": "vite preview",
+    "sync-data": "python ../scripts/sync_frontend_data.py"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7"
+  }
+}
