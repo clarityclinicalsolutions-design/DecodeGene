@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "npm run sync-data && vite build",
     "build:static": "npm run sync-data && vite build --mode static",
+    "build:cf": "vite build --mode static",
     "preview": "vite preview",
     "sync-data": "python ../scripts/sync_frontend_data.py"
   },
