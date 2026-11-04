@@ -42,6 +42,7 @@ export const UI_EN = {
   pgxVariantLabel: 'Key Variant: ',
   pgxFreqLabel: 'Population Frequency: ',
   pgxDietTitle: '🥗 Dietary & Lifestyle Contraindications',
+  pgxNoGuidelineNote: 'No drug-gene (PGx) prescribing guideline is currently available for this gene, so no traffic-light list is shown.',
   lifestyleEyebrow: '🛡️ Actionable Screening & Lifestyle Guide',
   lifestyleTitle: 'Turn Genetic Risk Into Preventive Action',
   lifestyleScreeningLabel: 'Screening Advice',

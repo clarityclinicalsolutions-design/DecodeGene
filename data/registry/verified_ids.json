@@ -181,5 +181,227 @@
       "disease": "https://monarchinitiative.org/MONDO:0005594"
     },
     "verified_on": "2026-11-03"
+  },
+  {
+    "symbol": "CYP2D6",
+    "ensembl_id": "ENSG00000100197",
+    "entrez_id": "1565",
+    "disease_id": "MESH:D064420",
+    "disease_label": "Drug-Related Side Effects and Adverse Reactions",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000100197",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1565",
+      "disease": "https://meshb.nlm.nih.gov/record/ui?ui=D064420"
+    },
+    "verified_on": "2026-11-04",
+    "mesh_tree_number": "C25.100"
+  },
+  {
+    "symbol": "DPYD",
+    "ensembl_id": "ENSG00000188641",
+    "entrez_id": "1806",
+    "disease_id": "MONDO:0010130",
+    "disease_label": "dihydropyrimidine dehydrogenase deficiency",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000188641",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1806",
+      "disease": "https://monarchinitiative.org/MONDO:0010130"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "UGT1A1",
+    "ensembl_id": "ENSG00000241635",
+    "entrez_id": "54658",
+    "disease_id": "MONDO:0007745",
+    "disease_label": "Gilbert syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000241635",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/54658",
+      "disease": "https://monarchinitiative.org/MONDO:0007745"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "LCT",
+    "ensembl_id": "ENSG00000115850",
+    "entrez_id": "3938",
+    "disease_id": "MONDO:0006065",
+    "disease_label": "lactose intolerance adult type",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000115850",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/3938",
+      "disease": "https://monarchinitiative.org/MONDO:0006065"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "CYP1A2",
+    "ensembl_id": "ENSG00000140505",
+    "entrez_id": "1544",
+    "disease_id": "MONDO:0013600",
+    "disease_label": "insomnia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000140505",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1544",
+      "disease": "https://monarchinitiative.org/MONDO:0013600"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "FTO",
+    "ensembl_id": "ENSG00000140718",
+    "entrez_id": "79068",
+    "disease_id": "MONDO:0800432",
+    "disease_label": "obesity, susceptibility to",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000140718",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/79068",
+      "disease": "https://monarchinitiative.org/MONDO:0800432"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "HBB",
+    "ensembl_id": "ENSG00000244734",
+    "entrez_id": "3043",
+    "disease_id": "MONDO:0011441",
+    "disease_label": "beta-thalassemia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000244734",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/3043",
+      "disease": "https://monarchinitiative.org/MONDO:0011441"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "HBA1",
+    "ensembl_id": "ENSG00000206172",
+    "entrez_id": "3039",
+    "disease_id": "MONDO:0011399",
+    "disease_label": "alpha-thalassemia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000206172",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/3039",
+      "disease": "https://monarchinitiative.org/MONDO:0011399"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "SMN1",
+    "ensembl_id": "ENSG00000172062",
+    "entrez_id": "6606",
+    "disease_id": "MONDO:0008099",
+    "disease_label": "spinal muscular atrophy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000172062",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6606",
+      "disease": "https://monarchinitiative.org/MONDO:0008099"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "GJB2",
+    "ensembl_id": "ENSG00000165474",
+    "entrez_id": "2706",
+    "disease_id": "MONDO:0010935",
+    "disease_label": "autosomal recessive nonsyndromic deafness 1A",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000165474",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/2706",
+      "disease": "https://monarchinitiative.org/MONDO:0010935"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "LDLR",
+    "ensembl_id": "ENSG00000130164",
+    "entrez_id": "3949",
+    "disease_id": "MONDO:0007750",
+    "disease_label": "familial hypercholesterolemia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000130164",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/3949",
+      "disease": "https://monarchinitiative.org/MONDO:0007750"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "MYH7",
+    "ensembl_id": "ENSG00000092054",
+    "entrez_id": "4625",
+    "disease_id": "MONDO:0005045",
+    "disease_label": "hypertrophic cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000092054",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4625",
+      "disease": "https://monarchinitiative.org/MONDO:0005045"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "MYBPC3",
+    "ensembl_id": "ENSG00000134571",
+    "entrez_id": "4607",
+    "disease_id": "MONDO:0005045",
+    "disease_label": "hypertrophic cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000134571",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4607",
+      "disease": "https://monarchinitiative.org/MONDO:0005045"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "BRCA2",
+    "ensembl_id": "ENSG00000139618",
+    "entrez_id": "675",
+    "disease_id": "MONDO:0007254",
+    "disease_label": "hereditary breast and ovarian cancer syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000139618",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/675",
+      "disease": "https://monarchinitiative.org/MONDO:0007254"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "PALB2",
+    "ensembl_id": "ENSG00000083093",
+    "entrez_id": "79728",
+    "disease_id": "MONDO:0007254",
+    "disease_label": "hereditary breast and ovarian cancer syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000083093",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/79728",
+      "disease": "https://monarchinitiative.org/MONDO:0007254"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "MLH1",
+    "ensembl_id": "ENSG00000076242",
+    "entrez_id": "4292",
+    "disease_id": "MONDO:0005835",
+    "disease_label": "Lynch syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000076242",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4292",
+      "disease": "https://monarchinitiative.org/MONDO:0005835"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "MSH2",
+    "ensembl_id": "ENSG00000095002",
+    "entrez_id": "4436",
+    "disease_id": "MONDO:0005835",
+    "disease_label": "Lynch syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000095002",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4436",
+      "disease": "https://monarchinitiative.org/MONDO:0005835"
+    },
+    "verified_on": "2026-11-04"
   }
 ]

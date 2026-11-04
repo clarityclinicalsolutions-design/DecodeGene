@@ -1648,6 +1648,1726 @@ window.DEMO_DATA = [
       "myth": "「藥物過敏全靠運氣，只有先吃吃看才知道會不會引發嚴重的史蒂芬強森症候群？」",
       "truth": "早就不是靠運氣了！台灣醫學團隊領先全球發現 HLA-B*15:02 與卡馬西平、HLA-B*58:01 與別嘌醇的強烈關聯，並透過全國性用藥前基因篩檢證實能有效預防這兩類致命的皮膚潰爛藥害（PMID:21428768, PMID:26399967）。用藥前抽一管血或看一眼基因報告，就能把致命風險攔截在吃藥之前！"
     }
+  },
+  {
+    "association_id": "GDA_CYP2D6_OPIOIDS_TAMOXIFEN",
+    "gene": {
+      "symbol": "CYP2D6",
+      "name": "cytochrome P450 family 2 subfamily D member 6",
+      "chinese_name": "細胞色素 P450 2D6 (鴉片類與泰莫西芬代謝基因)",
+      "ensembl_id": "ENSG00000100197",
+      "entrez_id": "1565",
+      "biotype": "protein_coding",
+      "chromosome": "22q13.2 (22 號染色體)",
+      "metaphor": {
+        "title": "🔑 肝臟裡的【止痛藥與荷爾蒙藥代謝工程師】",
+        "story": "可待因 (Codeine) 與曲馬多 (Tramadol) 本身還不是完全作用的止痛藥，必須經過肝臟 CYP2D6 這位工程師加工，才能變成真正有效的活性代謝物。工程師動作太快（超快速代謝型）時，藥物可能一瞬間產生太多活性成分，帶來呼吸抑制風險；動作太慢（慢代謝型）時，止痛效果又可能不足。泰莫西芬 (Tamoxifen) 的部分活性代謝物也依賴這位工程師。"
+      },
+      "plain_summary": "CYP2D6 負責將可待因與曲馬多轉化為活性代謝物，也參與泰莫西芬的部分代謝。超快速代謝者使用可待因或曲馬多可能增加呼吸抑制風險；慢代謝者則可能止痛效果不足。醫師會依基因型與臨床情況選擇替代藥物或調整治療。",
+      "academic_summary": "CYP2D6 編碼細胞色素 P450 2D6 單加氧酶，負責鴉片類前驅藥可待因與曲馬多的 O-去甲基化活化，以及泰莫西芬轉化為 4-hydroxy-N-desmethyltamoxifen 等活性代謝物。常見等位基因包括功能降低的 *10 (rs1065852)、無功能的 *4 (rs3892097) 與 *5 (基因缺失)，以及增加活性的 *2A 與 *17。"
+    },
+    "disease": {
+      "id": "MESH:D064420",
+      "name": "Drug-Related Side Effects and Adverse Reactions",
+      "chinese_name": "可待因毒性與 CYP2D6 代謝異常",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "止痛與腫瘤用藥安全"
+      ],
+      "inheritance_mode": "體染色體共顯性代謝表型 (Autosomal Codominant Metabolic Phenotype)",
+      "severity_badge": "🔴 可待因、曲馬多與泰莫西芬用藥紅綠燈"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002791",
+        "name": "Hypoventilation",
+        "chinese_name": "呼吸抑制 / 通氣不足風險"
+      },
+      {
+        "hpo_id": "HP:0001250",
+        "name": "Seizure",
+        "chinese_name": "癲癇發作風險"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Codeine",
+        "chinese_name": "可待因 (Codeine)",
+        "mechanism": "鴉片類前驅藥，需由 CYP2D6 轉化為嗎啡",
+        "approval_status": "CPIC Level A / FDA Label"
+      },
+      {
+        "drug_name": "Tramadol",
+        "chinese_name": "曲馬多 (Tramadol)",
+        "mechanism": "鴉片類止痛藥，需 CYP2D6 活化",
+        "approval_status": "CPIC Level A / FDA Label"
+      },
+      {
+        "drug_name": "Tamoxifen",
+        "chinese_name": "泰莫西芬 (Tamoxifen)",
+        "mechanism": "選擇性雌激素受體調節劑，部分活性代謝物由 CYP2D6 生成",
+        "approval_status": "CPIC Level A"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CYP2D6 *10 (rs1065852)、*4 (rs3892097)、*5 (基因缺失)、*2A、*17；超快速、中間與慢代謝型",
+      "population_frequency": "東亞族群 *10 等位基因頻率約 40%~50%，*4 較西方族群少見；超快速代謝型比例較低 (PMID:33387367)",
+      "traffic_light_summary": "🔴 超快速代謝者使用可待因或曲馬多可能快速生成大量活性代謝物，增加呼吸抑制風險，應避免使用；🟡 慢代謝者可能療效不足，建議由醫師選擇替代止痛藥。泰莫西芬方面，慢代謝者療效可能下降，應由醫師評估替代或調整治療策略。",
+      "drugs_guide": [
+        {
+          "drug_name": "Codeine (ultrarapid metabolizer)",
+          "chinese_name": "可待因 - 超快速代謝型",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "CYP2D6 超快速代謝者可能快速將可待因轉化為嗎啡，造成呼吸抑制甚至危及生命。應避免使用可待因，由醫師選擇不依賴 CYP2D6 的替代止痛方案。",
+          "cpic_level": "CPIC 2021 CYP2D6/OPRM1/COMT 鴉片類用藥指引 Level A / FDA Label"
+        },
+        {
+          "drug_name": "Tramadol (ultrarapid metabolizer)",
+          "chinese_name": "曲馬多 - 超快速代謝型",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "CYP2D6 超快速代謝者使用曲馬多可能增加活性代謝物暴露與呼吸抑制風險。應避免使用，並由醫師評估替代止痛藥。",
+          "cpic_level": "CPIC 2021 CYP2D6/OPRM1/COMT 鴉片類用藥指引 Level A / FDA Label"
+        },
+        {
+          "drug_name": "Codeine / Tramadol (poor metabolizer)",
+          "chinese_name": "可待因 / 曲馬多 - 慢代謝型",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2D6 慢代謝者可能無法有效將可待因或曲馬多轉化為活性代謝物，止痛效果不足。建議由醫師選擇其他止痛藥物。",
+          "cpic_level": "CPIC 2021 CYP2D6/OPRM1/COMT 鴉片類用藥指引 Level A"
+        },
+        {
+          "drug_name": "Tamoxifen (poor / intermediate metabolizer)",
+          "chinese_name": "泰莫西芬 - 慢或中間代謝型",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2D6 慢或中間代謝者生成泰莫西芬活性代謝物的能力可能下降。停經前乳癌患者應由腫瘤科醫師評估是否改用其他荷爾蒙治療或調整治療策略。",
+          "cpic_level": "CPIC 2018 CYP2D6 與泰莫西芬指引 Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "使用可待因或曲馬多期間避免飲酒，以免加重中樞神經與呼吸抑制",
+        "服用泰莫西芬期間避免自行併用強效 CYP2D6 抑制劑，請先諮詢醫師或藥師"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.97,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 鴉片類與泰莫西芬用藥指引",
+      "clinvar_pathogenic_count": 320,
+      "clinvar_summary_chinese": "ClinVar 與 PharmGKB 收錄 CYP2D6 *4、*5、*10、*17 等明確藥物反應等位基因",
+      "opentargets_score": 0.88,
+      "key_pmids": [
+        "PMID:33387367"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "使用可待因、曲馬多或泰莫西芬前，若曾有不良反應或療效不佳，建議與醫師討論 CYP2D6 基因型檢測。",
+      "lifestyle_tips": [
+        "主動告知醫師與藥師自己的 CYP2D6 代謝型，避免自行重複使用含可待因的止痛藥",
+        "服用泰莫西芬期間不要自行停藥或加藥，任何不適都應回診討論",
+        "把基因檢測結果保存在手機或錢包，就醫時可快速出示"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "臨床藥學 / 疼痛科 / 腫瘤科",
+      "questions": [
+        "醫師您好，我的 CYP2D6 基因型顯示我可能是超快速或慢代謝者，我適合使用可待因或曲馬多嗎？",
+        "如果需要止痛，有沒有不依賴 CYP2D6 代謝的替代藥物？",
+        "我正在服用泰莫西芬，我的 CYP2D6 代謝型會影響療效嗎？需要調整治療嗎？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「只要醫師開的可待因或曲馬多，照著吃就一定安全？」",
+      "truth": "不一定。CYP2D6 超快速代謝者可能將可待因快速轉成嗎啡，增加呼吸抑制風險；慢代謝者則可能止痛效果不足。基因型不同，適合的止痛策略也不同，應由醫師評估。"
+    }
+  },
+  {
+    "association_id": "GDA_DPYD_FLUOROPYRIMIDINES",
+    "gene": {
+      "symbol": "DPYD",
+      "name": "dihydropyrimidine dehydrogenase",
+      "chinese_name": "二氫嘧啶脫氫酶 (氟尿嘧啶代謝基因)",
+      "ensembl_id": "ENSG00000188641",
+      "entrez_id": "1806",
+      "biotype": "protein_coding",
+      "chromosome": "1p21.3 (1 號染色體)",
+      "metaphor": {
+        "title": "🛡️ 化療藥的【解毒回收廠】",
+        "story": "5-FU 與卡培他濱是常見的氟尿嘧啶類化療藥，進入身體後需要 DPYD 這個解毒回收廠負責分解。如果回收廠產能不足，藥物與其代謝物會在體內累積，可能造成嚴重腹瀉、口腔潰瘍、白血球下降，甚至危及生命。"
+      },
+      "plain_summary": "DPYD 負責分解氟尿嘧啶類化療藥。帶有 DPYD 功能缺失變異的人，使用 5-FU 或卡培他濱時可能發生嚴重甚至致命的毒性。治療前應由腫瘤專科醫師評估基因型，必要時避免使用或大幅調整劑量。",
+      "academic_summary": "DPYD 編碼二氫嘧啶脫氫酶，是嘧啶降解途徑的起始與速率限制酶，負責將 5-fluorouracil 代謝為 inactive dihydrofluorouracil。DPYD *2A (rs3918290)、c.2846A>T (rs67376798)、*13 (rs55886062) 與 HapB3 (rs56038477) 等變異會降低酵素活性，增加氟尿嘧啶類藥物全身暴露與嚴重毒性風險。"
+    },
+    "disease": {
+      "id": "MONDO:0010130",
+      "name": "dihydropyrimidine dehydrogenase deficiency",
+      "chinese_name": "二氫嘧啶脫氫酶缺乏症",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "腫瘤化療安全"
+      ],
+      "inheritance_mode": "體染色體隱性 (Autosomal Recessive)",
+      "severity_badge": "🔴 氟尿嘧啶嚴重毒性紅燈"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002014",
+        "name": "Diarrhea",
+        "chinese_name": "嚴重腹瀉"
+      },
+      {
+        "hpo_id": "HP:0001875",
+        "name": "Decreased total neutrophil count",
+        "chinese_name": "嗜中性白血球低下"
+      },
+      {
+        "hpo_id": "HP:0001903",
+        "name": "Anemia",
+        "chinese_name": "貧血"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Fluorouracil (5-FU)",
+        "chinese_name": "氟尿嘧啶 (5-FU)",
+        "mechanism": "嘧啶類似物化療藥，由 DPYD 代謝解毒",
+        "approval_status": "CPIC Level A / FDA Label"
+      },
+      {
+        "drug_name": "Capecitabine",
+        "chinese_name": "卡培他濱 (Capecitabine)",
+        "mechanism": "口服氟尿嘧啶前驅藥，最終由 DPYD 代謝",
+        "approval_status": "CPIC Level A / FDA Label"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "DPYD *2A (rs3918290)、c.2846A>T (rs67376798)、*13 (rs55886062)、HapB3 (rs56038477)",
+      "population_frequency": "東亞族群 DPYD 功能缺失等位基因整體頻率較低（多數約 1% 以下），但仍可能發生嚴重氟尿嘧啶毒性 (PMID:29152729)",
+      "traffic_light_summary": "🔴 部分或完全 DPD 缺乏者使用 5-FU 或卡培他濱可能發生嚴重甚至致命毒性，應避免全身性氟尿嘧啶治療，或由腫瘤專科醫師大幅調整劑量；🟡 中間代謝者需降低起始劑量並密切監測。",
+      "drugs_guide": [
+        {
+          "drug_name": "Fluorouracil (5-FU) - DPD deficient",
+          "chinese_name": "氟尿嘧啶 (5-FU) - DPD 缺乏",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "DPD 缺乏者使用全身性 5-FU 可能出現嚴重骨髓抑制、黏膜炎與腹瀉，甚至致命。應避免使用；若臨床必須使用，須由腫瘤專科醫師大幅調降劑量並密切監測。",
+          "cpic_level": "CPIC 2017 DPYD 與氟尿嘧啶劑量指引 Level A / FDA Label"
+        },
+        {
+          "drug_name": "Capecitabine - DPD deficient",
+          "chinese_name": "卡培他濱 - DPD 缺乏",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "卡培他濱最終轉化為 5-FU，DPD 缺乏者同樣可能發生嚴重毒性。應避免使用或由腫瘤專科醫師大幅調降劑量。",
+          "cpic_level": "CPIC 2017 DPYD 與氟尿嘧啶劑量指引 Level A / FDA Label"
+        },
+        {
+          "drug_name": "Fluorouracil / Capecitabine - intermediate metabolizer",
+          "chinese_name": "氟尿嘧啶 / 卡培他濱 - 中間代謝型",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "DPD 活性部分降低者使用氟尿嘧啶類藥物時毒性風險升高，建議由腫瘤專科醫師降低起始劑量並密集監測血球與黏膜毒性。",
+          "cpic_level": "CPIC 2017 DPYD 與氟尿嘧啶劑量指引 Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "治療期間避免自行補充含尿嘧啶或核苷類似物的保健品，以免干擾藥物代謝",
+        "出現口腔潰瘍、嚴重腹瀉、發燒或異常疲倦時應立即聯絡醫療團隊"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.98,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 氟尿嘧啶劑量指引",
+      "clinvar_pathogenic_count": 210,
+      "clinvar_summary_chinese": "ClinVar 與 PharmGKB 收錄 DPYD *2A、c.2846A>T、*13 與 HapB3 等功能缺失變異",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:29152729"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "計畫接受 5-FU 或卡培他濱治療前，建議由腫瘤專科醫師評估是否進行 DPYD 基因型檢測。",
+      "lifestyle_tips": [
+        "化療期間保持充足水分與口腔清潔，降低黏膜炎與脫水風險",
+        "出現發燒、寒顫或嚴重腹瀉時不要自行服用成藥，應立即就醫",
+        "將 DPYD 檢測結果提供給所有參與治療的醫療團隊"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "腫瘤內科 / 臨床藥學",
+      "questions": [
+        "醫師您好，我預計使用 5-FU 或卡培他濱，我需要先做 DPYD 基因檢測嗎？",
+        "如果我的 DPYD 基因型顯示代謝能力降低，劑量需要如何調整？",
+        "治療期間出現哪些症狀時，我應該立即回診或急診？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「化療藥劑量都是醫師算好的，基因檢測應該不重要？」",
+      "truth": "不對。DPYD 功能缺失者使用標準劑量的氟尿嘧啶類藥物，可能發生嚴重甚至致命毒性。治療前評估 DPYD 基因型，可以幫助醫師選擇更安全的起始劑量或替代方案。"
+    }
+  },
+  {
+    "association_id": "GDA_UGT1A1_IRINOTECAN_GILBERT",
+    "gene": {
+      "symbol": "UGT1A1",
+      "name": "UDP glucuronosyltransferase family 1 member A1",
+      "chinese_name": "尿苷二磷酸葡萄糖醛酸轉移酶 1A1 (伊立替康與膽紅素代謝基因)",
+      "ensembl_id": "ENSG00000241635",
+      "entrez_id": "54658",
+      "biotype": "protein_coding",
+      "chromosome": "2q37.1 (2 號染色體)",
+      "metaphor": {
+        "title": "🧹 肝臟裡的【膽紅素與化療藥清運隊】",
+        "story": "UGT1A1 就像肝臟裡負責清運膽紅素與藥物的清潔隊。當清運速度較慢時，膽紅素可能間歇性升高，出現吉爾伯特症候群的黃疸；使用伊立替康 (Irinotecan) 這類化療藥時，活性代謝物也可能清得太慢，增加腹瀉與白血球下降的風險。"
+      },
+      "plain_summary": "UGT1A1 負責將膽紅素與伊立替康的活性代謝物代謝清除。帶有 *28 或東亞常見的 *6 變異者，清除速度可能較慢，使用伊立替康時腹瀉與嗜中性白血球低下的風險較高。吉爾伯特症候群通常良性，但黃疸可能反覆出現。",
+      "academic_summary": "UGT1A1 編碼尿苷二磷酸葡萄糖醛酸轉移酶 1A1，催化非結合型膽紅素與 SN-38 的葡萄糖醛酸化。UGT1A1 *28 (rs3064744, TA7) 與東亞常見的 *6 (rs4148323, c.211G>A) 會降低酵素表現或活性，導致吉爾伯特症候群與伊立替康相關毒性風險增加。"
+    },
+    "disease": {
+      "id": "MONDO:0007745",
+      "name": "Gilbert syndrome",
+      "chinese_name": "吉爾伯特症候群與 UGT1A1 代謝差異",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "肝膽與化療安全"
+      ],
+      "inheritance_mode": "體染色體隱性 (Autosomal Recessive)",
+      "severity_badge": "🟡 伊立替康劑量調整與黃疸監測"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002904",
+        "name": "Hyperbilirubinemia",
+        "chinese_name": "非結合型高膽紅素血症"
+      },
+      {
+        "hpo_id": "HP:0000952",
+        "name": "Jaundice",
+        "chinese_name": "間歇性黃疸"
+      },
+      {
+        "hpo_id": "HP:0001875",
+        "name": "Decreased total neutrophil count",
+        "chinese_name": "嗜中性白血球低下"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Irinotecan",
+        "chinese_name": "伊立替康 (Irinotecan)",
+        "mechanism": "拓撲異構酶 I 抑制劑，活性代謝物 SN-38 由 UGT1A1 代謝",
+        "approval_status": "FDA Label / DPWG Guideline"
+      },
+      {
+        "drug_name": "Atazanavir",
+        "chinese_name": "阿扎那韋 (Atazanavir)",
+        "mechanism": "抗反轉錄病毒藥物，UGT1A1 慢代謝者可能出現高膽紅素血症",
+        "approval_status": "FDA Label / CPIC Guideline"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "UGT1A1 *28 (rs3064744, TA7)、UGT1A1 *6 (rs4148323, c.211G>A，東亞常見)、*28/*28、*6/*6、*6/*28",
+      "population_frequency": "東亞族群 *6 等位基因頻率約 13%~23%，*28 約 10%~16%；吉爾伯特症候群表現為間歇性非結合型高膽紅素血症 (PMID:36443464)",
+      "traffic_light_summary": "🟡 UGT1A1 慢代謝者使用伊立替康 (Irinotecan) 時，活性代謝物 SN-38 清除減慢，腹瀉與嗜中性白血球低下風險升高，建議由腫瘤專科醫師調降起始劑量並密切監測；吉爾伯特症候群通常良性，但黃疸可能反覆出現。",
+      "drugs_guide": [
+        {
+          "drug_name": "Irinotecan - UGT1A1 poor metabolizer (*28/*28, *6/*6, *6/*28)",
+          "chinese_name": "伊立替康 - UGT1A1 慢代謝型",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "UGT1A1 慢代謝者清除 SN-38 的能力下降，使用伊立替康後腹瀉與嗜中性白血球低下風險增加。建議由腫瘤專科醫師調降起始劑量並密切監測血球與腸胃症狀。",
+          "cpic_level": "FDA Label (irinotecan) / DPWG 2022 UGT1A1-irinotecan 指引"
+        },
+        {
+          "drug_name": "Atazanavir - UGT1A1 poor metabolizer",
+          "chinese_name": "阿扎那韋 - UGT1A1 慢代謝型",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "UGT1A1 慢代謝者使用阿扎那韋可能出現非結合型高膽紅素血症與黃疸，通常無需停藥但需監測；若黃疸明顯或合併肝功能異常，應由醫師評估。",
+          "cpic_level": "CPIC UGT1A1-atazanavir 指引 Level A / FDA Label"
+        }
+      ],
+      "dietary_contraindications": [
+        "吉爾伯特症候群患者脫水、空腹或感染時黃疸可能加重，應保持充足水分與規律飲食",
+        "使用伊立替康期間出現嚴重腹瀉、發燒或異常疲倦時，應立即聯絡醫療團隊"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️ FDA 標籤與 DPWG 指引支持",
+      "clinvar_pathogenic_count": 180,
+      "clinvar_summary_chinese": "ClinVar 與 PharmGKB 收錄 UGT1A1 *28 (rs3064744) 與 *6 (rs4148323) 等膽紅素與伊立替康反應位點",
+      "opentargets_score": 0.84,
+      "key_pmids": [
+        "PMID:36443464"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "計畫使用伊立替康前，若有黃疸病史或曾發生嚴重化療毒性，建議與腫瘤專科醫師討論 UGT1A1 基因型檢測。",
+      "lifestyle_tips": [
+        "吉爾伯特症候群患者不必過度限制飲食，但應避免長時間空腹與脫水",
+        "使用伊立替康期間記錄腹瀉次數與體溫，出現異常時及早就醫",
+        "不要自行使用止瀉藥掩蓋嚴重症狀，應先諮詢醫療團隊"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "腫瘤內科 / 肝膽腸胃科 / 臨床藥學",
+      "questions": [
+        "醫師您好，我的 UGT1A1 基因型顯示我是慢代謝者，使用伊立替康需要調整劑量嗎？",
+        "我平常容易出現黃疸，這和吉爾伯特症候群有關嗎？需要進一步檢查嗎？",
+        "治療期間出現腹瀉或發燒時，我應該如何處理及何時回診？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「有吉爾伯特症候群就不能使用任何化療藥？」",
+      "truth": "不是。吉爾伯特症候群通常良性，但 UGT1A1 慢代謝會影響伊立替康的代謝與毒性風險。是否需要調整劑量，應由腫瘤專科醫師依基因型、劑量與臨床狀況共同評估。"
+    }
+  },
+  {
+    "association_id": "GDA_LCT_LACTOSE_INTOLERANCE",
+    "gene": {
+      "symbol": "LCT",
+      "name": "lactase",
+      "chinese_name": "乳糖酶 (乳糖消化性狀基因)",
+      "ensembl_id": "ENSG00000115850",
+      "entrez_id": "3938",
+      "biotype": "protein_coding",
+      "chromosome": "2q21.3 (2 號染色體)",
+      "metaphor": {
+        "title": "🥛 小腸裡的【牛奶糖剪刀】",
+        "story": "乳糖是牛奶與乳製品中的天然糖分，需要小腸的乳糖酶這把剪刀把它剪成容易吸收的小分子。許多東亞成年人隨著年齡增長，乳糖酶活性自然下降，這是常見的生理差異，不是疾病；喝牛奶後脹氣或腹瀉，通常可以透過調整攝取方式改善。"
+      },
+      "plain_summary": "LCT 基因與乳糖酶的持續表現有關。東亞成年人常見乳糖酶非持續表現，也就是乳糖不耐受的體質，這是正常生理差異。症狀通常溫和，可透過少量分次攝取、選擇低乳糖乳製品或補充乳糖酶來改善。",
+      "academic_summary": "LCT 編碼小腸刷狀緣乳糖酶，負責將乳糖水解為葡萄糖與半乳糖。乳糖酶持續表現受 MCM6 增強子區域變異（如 -13910C>T, rs4988235）調控，但東亞族群以乳糖酶非持續表現為常態，rs4988235 並非東亞族群的主要疾病變異。"
+    },
+    "disease": {
+      "id": "MONDO:0006065",
+      "name": "lactose intolerance adult type",
+      "chinese_name": "成人型乳糖不耐受（乳糖酶非持續表現）",
+      "categories": [
+        "生活型態性狀",
+        "營養與消化健康"
+      ],
+      "inheritance_mode": "複雜/多基因生活型態性狀",
+      "severity_badge": "🟡 常見且通常溫和的飲食性狀"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004789",
+        "name": "Lactose intolerance",
+        "chinese_name": "乳糖不耐受 / 乳糖消化不適"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Lactase enzyme supplement",
+        "chinese_name": "乳糖酶補充劑",
+        "mechanism": "補充乳糖酶以協助分解乳糖",
+        "approval_status": "非處方保健食品"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "LCT -13910C>T (rs4988235)；東亞成人常見乳糖酶非持續表現，rs4988235 並非東亞族群的主要疾病變異",
+      "population_frequency": "東亞成人乳糖酶非持續表現比例可高達 70%~90% 以上；乳糖不耐受多為正常生理差異 (PMID:26715078)",
+      "traffic_light_summary": "此基因為生活型態相關性狀，目前沒有藥物基因（PGx）用藥指引；乳糖不耐受的影響通常溫和，飲食調整與生活習慣的影響更大。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "可選擇低乳糖或無乳糖乳製品，或分次少量攝取乳製品",
+        "若完全避免乳製品，應注意鈣質與維生素 D 的補充"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.55,
+      "plain_rating": "⭐️⭐️⭐️ 常見生活型態性狀，證據溫和",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "乳糖酶非持續表現為常見生理性狀，並非單一高外顯率致病變異；東亞族群以非持續表現為常態",
+      "opentargets_score": 0.2,
+      "key_pmids": [
+        "PMID:26715078"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若喝牛奶後經常出現腹脹、腹痛或腹瀉，可先記錄飲食日誌，必要時與醫師或營養師討論乳糖不耐受的可能。",
+      "lifestyle_tips": [
+        "從少量乳製品開始，觀察個人可耐受的量，不必完全避免所有乳製品",
+        "可選擇優格、起司或低乳糖牛奶等乳糖較低的來源",
+        "若需限制乳製品，記得從其他食物或補充劑攝取足夠鈣質與維生素 D"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "家醫科 / 腸胃科 / 營養諮詢",
+      "questions": [
+        "醫師您好，我喝牛奶後容易腹脹或腹瀉，這可能是乳糖不耐受嗎？",
+        "我需要做乳糖呼氣試驗或其他檢查來確認嗎？",
+        "如果我減少乳製品，應該如何補充鈣質與維生素 D？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「東亞人幾乎都有乳糖不耐受，所以完全不該喝牛奶？」",
+      "truth": "不對。東亞成年人乳糖酶非持續表現很常見，但多數人仍可耐受少量乳製品。透過分次攝取、選擇低乳糖產品或補充乳糖酶，通常可以兼顧營養與舒適。"
+    }
+  },
+  {
+    "association_id": "GDA_CYP1A2_CAFFEINE_SLEEP",
+    "gene": {
+      "symbol": "CYP1A2",
+      "name": "cytochrome P450 family 1 subfamily A member 2",
+      "chinese_name": "細胞色素 P450 1A2 (咖啡因代謝性狀基因)",
+      "ensembl_id": "ENSG00000140505",
+      "entrez_id": "1544",
+      "biotype": "protein_coding",
+      "chromosome": "15q24.1 (15 號染色體)",
+      "metaphor": {
+        "title": "☕ 肝臟裡的【咖啡因計時器】",
+        "story": "咖啡、茶與能量飲料中的咖啡因，主要由肝臟 CYP1A2 這個計時器負責拆解。每個人的計時器速度不同，有人下午喝一杯咖啡晚上仍睡得著，有人中午喝就拿著手機數羊。這個差異通常溫和，但作息與攝取量往往比基因本身影響更大。"
+      },
+      "plain_summary": "CYP1A2 是咖啡因代謝的主要酵素。代謝速度的個體差異可能影響喝咖啡後的心悸、清醒程度與睡眠，但效果通常溫和。調整攝取時間與份量、維持規律作息，通常比擔心基因型更實際。",
+      "academic_summary": "CYP1A2 編碼細胞色素 P450 1A2，負責咖啡因的 N3-去甲基化，是其清除的主要途徑。CYP1A2*1F (rs762551) 等變異可能影響酵素誘導性與咖啡因代謝速度，但咖啡因敏感度同時受攝取量、吸菸、藥物與作息影響。"
+    },
+    "disease": {
+      "id": "MONDO:0013600",
+      "name": "caffeine sensitivity (insomnia susceptibility)",
+      "chinese_name": "咖啡因敏感與睡眠影響（失眠傾向）",
+      "categories": [
+        "生活型態性狀",
+        "睡眠與咖啡因代謝"
+      ],
+      "inheritance_mode": "複雜/多基因生活型態性狀",
+      "severity_badge": "🟡 常見且通常溫和的咖啡因敏感性狀"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0100785",
+        "name": "Insomnia",
+        "chinese_name": "失眠 / 睡眠困擾"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Caffeine",
+        "chinese_name": "咖啡因",
+        "mechanism": "中樞神經興奮劑，主要由 CYP1A2 代謝",
+        "approval_status": "食品與藥品成分"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CYP1A2*1F (rs762551) 與咖啡因代謝速度相關；個體差異大",
+      "population_frequency": "CYP1A2*1F 等位基因頻率因族群而異；咖啡因敏感度受攝取量、吸菸、藥物與作息共同影響 (PMID:42729697)",
+      "traffic_light_summary": "此基因為生活型態相關性狀，目前沒有藥物基因（PGx）用藥指引；咖啡因代謝速度的個體差異通常溫和，作息、攝取量與生活習慣的影響更大。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "下午或傍晚後減少咖啡、茶、能量飲料與巧克力攝取，以改善睡眠",
+        "避免與某些會抑制 CYP1A2 的藥物或大量酒精同時使用"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.5,
+      "plain_rating": "⭐️⭐️⭐️ 常見生活型態性狀，證據溫和",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "CYP1A2 變異與咖啡因代謝速度相關，但多為生活型態性狀，並非單一高外顯率致病變異",
+      "opentargets_score": 0.18,
+      "key_pmids": [
+        "PMID:16522833"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若喝咖啡後經常心悸、焦慮或失眠，可先記錄咖啡因攝取時間與份量，必要時與醫師討論。",
+      "lifestyle_tips": [
+        "把咖啡因攝取集中在上午，下午後改喝無咖啡因飲品",
+        "注意能量飲料、茶與巧克力的隱藏咖啡因",
+        "維持規律睡眠時間，睡前避免使用電子產品"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "家醫科 / 睡眠醫學 / 營養諮詢",
+      "questions": [
+        "醫師您好，我喝咖啡後容易心悸或睡不著，這和咖啡因代謝有關嗎？",
+        "我需要做 CYP1A2 基因檢測嗎？檢測結果會改變治療建議嗎？",
+        "除了減少咖啡因，我還有哪些方法可以改善睡眠？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「喝咖啡睡不著一定是因為我的基因不好？」",
+      "truth": "不一定。咖啡因代謝速度只是其中一個因素，攝取時間、份量、作息、壓力與藥物都可能影響睡眠。先調整生活習慣，通常比單看基因型更有效。"
+    }
+  },
+  {
+    "association_id": "GDA_FTO_OBESITY_SUSCEPTIBILITY",
+    "gene": {
+      "symbol": "FTO",
+      "name": "FTO alpha-ketoglutarate dependent dioxygenase",
+      "chinese_name": "FTO 基因 (肥胖易感性相關基因)",
+      "ensembl_id": "ENSG00000140718",
+      "entrez_id": "79068",
+      "biotype": "protein_coding",
+      "chromosome": "16q12.2 (16 號染色體)",
+      "metaphor": {
+        "title": "⚖️ 體重天秤上的【小小砝碼】",
+        "story": "FTO 基因的某些變異就像體重天秤上的一枚小砝碼，可能讓人稍微更容易增加體重。但這枚砝碼很輕，真正決定天秤往哪邊傾斜的，是每天的飲食、運動、睡眠與生活環境。"
+      },
+      "plain_summary": "FTO 是與肥胖易感性相關的基因之一，但單一變異的影響通常很小。體重主要由飲食、運動、睡眠與環境共同決定。了解基因結果不等於注定肥胖，也不建議只憑基因型使用減重藥物。",
+      "academic_summary": "FTO 位於 16q12.2，其 intron 1 的常見變異 rs9939609 與 BMI 及肥胖易感性相關。全基因組關聯研究顯示其效應溫和，且受身體活動、飲食與其他基因交互作用修飾；FTO 並非單一決定性肥胖基因。"
+    },
+    "disease": {
+      "id": "MONDO:0800432",
+      "name": "obesity, susceptibility to",
+      "chinese_name": "肥胖易感性（多基因生活型態性狀）",
+      "categories": [
+        "生活型態性狀",
+        "體重與代謝健康"
+      ],
+      "inheritance_mode": "複雜/多基因生活型態性狀",
+      "severity_badge": "🟡 常見且效應溫和的多基因性狀"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001513",
+        "name": "Obesity",
+        "chinese_name": "肥胖 / 體重增加傾向"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Semaglutide",
+        "chinese_name": "司美格魯肽 (Semaglutide)",
+        "mechanism": "GLP-1 受體促效劑，用於肥胖治療；非依 FTO 基因型給藥",
+        "approval_status": "FDA 核准減重藥物"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "FTO rs9939609 (intron 1)；效應溫和且受生活型態修飾",
+      "population_frequency": "FTO rs9939609 風險等位基因頻率因族群而異；單一變異對 BMI 的效應通常很小 (PMID:17496892)",
+      "traffic_light_summary": "此基因為生活型態相關性狀，目前沒有藥物基因（PGx）用藥指引；FTO 變異對體重的影響通常溫和，飲食、運動與睡眠等生活習慣的影響更大。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "以均衡飲食、規律運動與充足睡眠為主要體重管理策略",
+        "避免以單一基因結果判斷肥胖風險或自行使用減重藥物"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.5,
+      "plain_rating": "⭐️⭐️⭐️ 常見多基因性狀，單一變異效應溫和",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "FTO rs9939609 與肥胖易感性相關，但效應溫和，並非單一高外顯率致病變異",
+      "opentargets_score": 0.35,
+      "key_pmids": [
+        "PMID:17496892"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "肥胖風險應以整體健康評估，包括 BMI、腰圍、血壓、血糖與血脂；不建議僅依靠 FTO 基因型決定治療。",
+      "lifestyle_tips": [
+        "建立可長期維持的飲食與運動習慣，比短期極端節食更有效",
+        "每週累積中等強度身體活動，並減少久坐時間",
+        "確保充足睡眠與壓力管理，睡眠不足可能影響食慾與體重"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "家醫科 / 內分泌新陳代謝科 / 營養諮詢",
+      "questions": [
+        "醫師您好，我的 FTO 基因結果顯示肥胖易感性較高，這代表我一定會肥胖嗎？",
+        "除了基因，我還應該檢查哪些代謝指標來評估體重相關健康風險？",
+        "如果需要減重，適合我的飲食、運動或藥物策略有哪些？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「帶有 FTO 肥胖基因，再怎麼努力都瘦不下來？」",
+      "truth": "不對。FTO 單一變異對體重的影響通常很小，飲食、運動、睡眠與環境的影響更大。基因結果可以作為健康提醒，但不能取代實際的生活型態調整與醫療評估。"
+    }
+  },
+  {
+    "association_id": "GDA_HBB_BETA_THALASSEMIA",
+    "gene": {
+      "symbol": "HBB",
+      "name": "hemoglobin subunit beta",
+      "chinese_name": "血紅素 β 鏈基因 (HBB)",
+      "ensembl_id": "ENSG00000244734",
+      "entrez_id": "3043",
+      "biotype": "protein_coding",
+      "chromosome": "11p15.4 (11 號染色體)",
+      "metaphor": {
+        "title": "🩸 血液裡的【氧氣快遞員 β 小隊】",
+        "story": "紅血球就像全身的快遞車隊，血紅素則是車上的氧氣貨架；HBB 負責製作貨架上的 β 鏈零件。如果 β 鏈零件不足，貨架就組不起來，紅血球容易變小、變薄、提早報廢，氧氣也就送不夠，這就是乙型地中海貧血。"
+      },
+      "plain_summary": "HBB 基因負責製造血紅素的 β 鏈。若帶有一個致病變異，通常是無症狀帶因者，身體多半健康，只是可能出現輕微貧血；真正的疾病風險主要出現在父母雙方都帶有同一種乙型地中海貧血變異時，孩子才有較高機率罹病。了解帶因狀態有助於婚前與孕前遺傳諮詢。",
+      "academic_summary": "HBB 位於 11p15.4，編碼血紅素 β 鏈。HBB 致病變異（β0 或 β+）造成 β 鏈合成減少或缺失，使游離 α 鏈沉積並引發無效造血與溶血性貧血，呈體染色體隱性遺傳。臨床表現由輕型帶因到依賴輸血的重大型不等。"
+    },
+    "disease": {
+      "id": "MONDO:0011441",
+      "name": "beta-thalassemia",
+      "chinese_name": "乙型地中海貧血（β 型海洋性貧血）",
+      "categories": [
+        "血液疾病",
+        "遺傳性血紅素疾病"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟠 需定期追蹤 (可透過輸血與排鐵治療管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001903",
+        "name": "Anemia",
+        "chinese_name": "貧血"
+      },
+      {
+        "hpo_id": "HP:0004840",
+        "name": "Hypochromic microcytic anemia",
+        "chinese_name": "低色素性小球性貧血"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Deferasirox",
+        "chinese_name": "地拉羅司（排鐵劑）",
+        "mechanism": "螯合體內過多的鐵質，降低長期輸血造成的鐵沉積",
+        "approval_status": "FDA 核准處方藥"
+      },
+      {
+        "drug_name": "Blood transfusion",
+        "chinese_name": "定期輸血治療",
+        "mechanism": "補充健康紅血球以改善貧血與組織缺氧",
+        "approval_status": "標準支持性治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "HBB 致病變異（如 β0/β+ 變異）；乙型地中海貧血主要因血紅素 β 鏈合成不足所致",
+      "population_frequency": "乙型地中海貧血帶因率在地中海沿岸、中東、南亞與東南亞族群較高，台灣也可見帶因者；帶因頻率因地區而異 (PMID:20301599)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。乙型地中海貧血的標準治療以定期輸血、排鐵劑（如 deferasirox）與支持性照護為主，是否需要用藥與治療強度應由血液科醫師依臨床狀況決定。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免自行補充含鐵保健食品，以免加重鐵質沉積",
+        "接受輸血治療者應定期監測鐵蛋白與肝功能"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 300,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 HBB 致病變異，與乙型地中海貧血的關聯明確",
+      "opentargets_score": 0.72,
+      "key_pmids": [
+        "PMID:20301599"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有貧血、家族史或計畫生育，建議接受血液學檢查與血紅素電泳；必要時進行 HBB 基因檢測與遺傳諮詢。",
+      "lifestyle_tips": [
+        "保持均衡飲食，依醫師指示補充葉酸，不要自行補鐵",
+        "避免過度疲勞，出現心悸、頭暈或呼吸急促時及早就醫",
+        "計畫懷孕前與伴侶一起接受帶因篩檢與遺傳諮詢"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "血液科 / 遺傳諮詢 / 兒科",
+      "questions": [
+        "醫師您好，我的 HBB 基因檢測顯示我是帶因者，這會影響我的健康嗎？",
+        "我的伴侶也需要做乙型地中海貧血帶因篩檢嗎？",
+        "如果我們計畫生育，有哪些產前或胚胎著床前檢測的選項？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「帶有地中海貧血基因就一定不能生育？」",
+      "truth": "不對。多數帶因者健康狀況良好，仍可正常生育；關鍵在於了解伴侶是否也帶有同一種變異，並透過遺傳諮詢與產前檢查做好準備。"
+    }
+  },
+  {
+    "association_id": "GDA_HBA1_ALPHA_THALASSEMIA",
+    "gene": {
+      "symbol": "HBA1",
+      "name": "hemoglobin subunit alpha 1",
+      "chinese_name": "血紅素 α 鏈基因 1 (HBA1)",
+      "ensembl_id": "ENSG00000206172",
+      "entrez_id": "3039",
+      "biotype": "protein_coding",
+      "chromosome": "16p13.3 (16 號染色體)",
+      "metaphor": {
+        "title": "🩸 血紅素貨架上的【α 鏈雙人組】",
+        "story": "血紅素需要 α 鏈與 β 鏈一起組裝。α 鏈主要由 HBA1 與它的夥伴基因 HBA2 共同製造，就像同一條產線上的兩位師傅。如果 α 鏈產量不足，紅血球會變小、變薄，甚至提早破裂，形成甲型地中海貧血。"
+      },
+      "plain_summary": "HBA1 與夥伴基因 HBA2 一起製造血紅素的 α 鏈。若只帶有一個致病變異，通常是無症狀帶因者，身體多半健康；真正的疾病風險主要出現在父母雙方都帶有同一種甲型地中海貧血變異時，孩子才有較高機率罹病。帶因狀態可透過遺傳諮詢與孕前檢查來規劃。",
+      "academic_summary": "HBA1 與 HBA2 位於 16p13.3，共同編碼血紅素 α 鏈。α 地中海貧血多由 HBA1/HBA2 缺失或點突變造成 α 鏈合成減少，呈體染色體隱性遺傳；帶因者多無症狀或僅輕微小球性貧血，重症則依缺失數目表現為 HbH 病或胎兒水腫。"
+    },
+    "disease": {
+      "id": "MONDO:0011399",
+      "name": "alpha-thalassemia",
+      "chinese_name": "甲型地中海貧血（α 型海洋性貧血）",
+      "categories": [
+        "血液疾病",
+        "遺傳性血紅素疾病"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟠 需定期追蹤 (依缺失數目差異大)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001903",
+        "name": "Anemia",
+        "chinese_name": "貧血"
+      },
+      {
+        "hpo_id": "HP:0004840",
+        "name": "Hypochromic microcytic anemia",
+        "chinese_name": "低色素性小球性貧血"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Deferasirox",
+        "chinese_name": "地拉羅司（排鐵劑）",
+        "mechanism": "螯合體內過多的鐵質，降低長期輸血造成的鐵沉積",
+        "approval_status": "FDA 核准處方藥"
+      },
+      {
+        "drug_name": "Blood transfusion",
+        "chinese_name": "定期輸血治療",
+        "mechanism": "補充健康紅血球以改善貧血與組織缺氧",
+        "approval_status": "標準支持性治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "HBA1/HBA2 缺失或點突變；α 地中海貧血主要由 α 鏈合成不足造成，HBA2 為重要夥伴基因",
+      "population_frequency": "α 地中海貧血帶因在東南亞、華南與台灣族群相對常見；帶因頻率因地區與缺失型別而異 (PMID:20301608)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。甲型地中海貧血的標準治療以定期輸血、排鐵劑（如 deferasirox）與支持性照護為主；輕型帶因者通常不需特別用藥，是否治療應由血液科醫師評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免自行補充含鐵保健食品，以免加重鐵質沉積",
+        "接受輸血治療者應定期監測鐵蛋白與肝功能"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 250,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 HBA1/HBA2 缺失與致病變異，與甲型地中海貧血的關聯明確",
+      "opentargets_score": 0.7,
+      "key_pmids": [
+        "PMID:20301608"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有小球性貧血、家族史或計畫生育，建議接受血液學檢查與血紅素電泳，必要時進行 HBA1/HBA2 基因檢測與遺傳諮詢。",
+      "lifestyle_tips": [
+        "保持均衡飲食，依醫師指示補充葉酸，不要自行補鐵",
+        "避免過度疲勞，出現心悸、頭暈或呼吸急促時及早就醫",
+        "計畫懷孕前與伴侶一起接受帶因篩檢與遺傳諮詢"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "血液科 / 遺傳諮詢 / 兒科",
+      "questions": [
+        "醫師您好，我的 HBA1 基因檢測顯示我是帶因者，這會影響我的健康嗎？",
+        "我需要同時檢查 HBA2 嗎？伴侶也應該做甲型地中海貧血帶因篩檢嗎？",
+        "如果我們計畫生育，有哪些產前或胚胎著床前檢測的選項？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「只有乙型地中海貧血才需要擔心，甲型帶因沒關係？」",
+      "truth": "不對。甲型地中海貧血帶因者通常健康，但若父母雙方都帶有 α 鏈變異，孩子可能出現較嚴重的貧血。孕前帶因篩檢與遺傳諮詢能幫助評估風險。"
+    }
+  },
+  {
+    "association_id": "GDA_SMN1_SPINAL_MUSCULAR_ATROPHY",
+    "gene": {
+      "symbol": "SMN1",
+      "name": "survival of motor neuron 1, telomeric",
+      "chinese_name": "運動神經元存活基因 1 (SMN1)",
+      "ensembl_id": "ENSG00000172062",
+      "entrez_id": "6606",
+      "biotype": "protein_coding",
+      "chromosome": "5q13.2 (5 號染色體)",
+      "metaphor": {
+        "title": "🧠 脊髓裡的【運動神經元補給站】",
+        "story": "運動神經元就像負責傳遞「動起來」指令的電線，SMN1 則是維持這些電線健康的補給站。如果 SMN1 功能不足，運動神經元會逐漸退化，肌肉便會無力、萎縮，這就是脊髓性肌肉萎縮症（SMA）。"
+      },
+      "plain_summary": "SMN1 基因負責維持運動神經元的存活。若只帶有一個致病變異（多為 SMN1 缺失），通常是無症狀帶因者，身體多半健康，運動功能正常；真正的疾病風險主要出現在父母雙方都帶有 SMN1 變異時，孩子才有較高機率罹患脊髓性肌肉萎縮症。帶因篩檢與遺傳諮詢有助於生育規劃。",
+      "academic_summary": "SMN1 位於 5q13.2，編碼運動神經元存活蛋白。約 95% 的脊髓性肌肉萎縮症由 SMN1 雙等位基因缺失造成，呈體染色體隱性遺傳；疾病嚴重度與殘存的 SMN2 拷貝數相關，臨床分為第一至第四型。"
+    },
+    "disease": {
+      "id": "MONDO:0008099",
+      "name": "spinal muscular atrophy",
+      "chinese_name": "脊髓性肌肉萎縮症 (SMA)",
+      "categories": [
+        "神經肌肉疾病",
+        "遺傳性神經疾病"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟠 需及早診斷 (已有疾病修飾治療)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001252",
+        "name": "Hypotonia",
+        "chinese_name": "肌肉張力低下"
+      },
+      {
+        "hpo_id": "HP:0003202",
+        "name": "Skeletal muscle atrophy",
+        "chinese_name": "骨骼肌萎縮"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Nusinersen",
+        "chinese_name": "諾西那生鈉 (Nusinersen)",
+        "mechanism": "反義寡核苷酸，促進 SMN2 表現以補償 SMN 蛋白不足",
+        "approval_status": "FDA 核准治療 SMA"
+      },
+      {
+        "drug_name": "Onasemnogene abeparvovec",
+        "chinese_name": "基因治療 (Onasemnogene abeparvovec)",
+        "mechanism": "以病毒載體遞送功能性 SMN 基因",
+        "approval_status": "FDA 核准基因治療"
+      },
+      {
+        "drug_name": "Risdiplam",
+        "chinese_name": "瑞斯迪普蘭 (Risdiplam)",
+        "mechanism": "口服 SMN2 剪接修飾劑，增加功能性 SMN 蛋白",
+        "approval_status": "FDA 核准治療 SMA"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SMN1 缺失或致病變異；SMA 主要由 SMN1 雙等位基因功能喪失造成，SMN2 拷貝數影響嚴重度",
+      "population_frequency": "SMN1 帶因率約為每 40–60 人中有 1 人，因族群而異 (PMID:20301526)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。脊髓性肌肉萎縮症的標準治療包括 nusinersen、onasemnogene abeparvovec 與 risdiplam，屬於疾病修飾治療，是否使用與時機應由神經科醫師依型別與年齡評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "沒有特定飲食禁忌；應注重足夠營養並依治療需求進行復健",
+        "使用疾病修飾治療期間，依醫囑監測肝功能與相關不良反應"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 200,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 SMN1 缺失與致病變異，與脊髓性肌肉萎縮症的關聯明確",
+      "opentargets_score": 0.78,
+      "key_pmids": [
+        "PMID:20301526"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有家族史或計畫生育，建議接受 SMN1 帶因篩檢與遺傳諮詢；新生兒若出現肌肉張力低下或發展遲緩，應及早由神經科評估。",
+      "lifestyle_tips": [
+        "依專業團隊建議進行物理治療與復健，維持關節活動度",
+        "注意呼吸道照護與營養支持，預防感染",
+        "計畫懷孕前與伴侶一起接受帶因篩檢與遺傳諮詢"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經科 / 小兒神經科 / 遺傳諮詢",
+      "questions": [
+        "醫師您好，我的 SMN1 帶因篩檢結果是帶因者，這會影響我的健康嗎？",
+        "我的伴侶也需要做 SMN1 帶因篩檢嗎？",
+        "如果我們計畫生育，有哪些產前或胚胎著床前檢測的選項？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「SMA 帶因者自己也會發病？」",
+      "truth": "不會。帶因者通常只有一個 SMN1 功能拷貝，身體多半健康；疾病發生需要雙等位基因都受影響。帶因篩檢的價值在於評估生育風險，而不是用來判斷個人是否罹病。"
+    }
+  },
+  {
+    "association_id": "GDA_GJB2_DEAFNESS_1A",
+    "gene": {
+      "symbol": "GJB2",
+      "name": "gap junction protein beta 2",
+      "chinese_name": "間隙連接蛋白 β2 基因 (GJB2)",
+      "ensembl_id": "ENSG00000165474",
+      "entrez_id": "2706",
+      "biotype": "protein_coding",
+      "chromosome": "13q12.11 (13 號染色體)",
+      "metaphor": {
+        "title": "👂 內耳裡的【聲音訊號橋樑】",
+        "story": "內耳毛細胞要把聲音訊號傳出去，需要 GJB2 製造的間隙連接蛋白像橋樑一樣串起細胞。如果橋樑蓋不好，聲音訊號傳遞受阻，就可能造成先天性感音神經性聽力損失。"
+      },
+      "plain_summary": "GJB2 基因與內耳的間隙連接蛋白有關。若只帶有一個致病變異，通常是無症狀帶因者，聽力多半正常；真正的疾病風險主要出現在父母雙方都帶有 GJB2 變異時，孩子才有較高機率出現先天性聽力損失。新生兒聽力篩檢與遺傳諮詢有助於早期發現與介入。",
+      "academic_summary": "GJB2 位於 13q12.11，編碼連接蛋白 26（connexin 26）。GJB2 雙等位基因致病變異是體染色體隱性非症候群性聽力損失最常見的原因之一，呈體染色體隱性遺傳；帶因者聽力通常正常。"
+    },
+    "disease": {
+      "id": "MONDO:0010935",
+      "name": "autosomal recessive nonsyndromic deafness 1A",
+      "chinese_name": "體染色體隱性非症候群性聽力損失 1A（GJB2 相關）",
+      "categories": [
+        "聽力障礙",
+        "遺傳性感覺神經疾病"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟠 需早期介入 (可透過聽覺輔具與復健改善)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000407",
+        "name": "Sensorineural hearing impairment",
+        "chinese_name": "感音神經性聽力損失"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Cochlear implant",
+        "chinese_name": "人工耳蝸 (Cochlear Implant)",
+        "mechanism": "以電極直接刺激聽神經，協助重度聽力損失者恢復聲音感知",
+        "approval_status": "標準醫療植入裝置"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "GJB2 致病變異（如 c.235delC 等）；與體染色體隱性非症候群性聽力損失相關",
+      "population_frequency": "GJB2 相關聽力損失在東亞與多個族群中常見；帶因頻率因族群而異 (PMID:20301449)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。GJB2 相關聽力損失的主要處理是新生兒聽力篩檢、聽覺輔具、人工耳蝸與語言復健，是否植入人工耳蝸應由耳鼻喉科與聽力團隊評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "沒有特定飲食禁忌；應避免長期暴露於高噪音環境以保護殘存聽力",
+        "依聽力團隊建議定期追蹤聽力與語言發展"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.88,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 180,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 GJB2 致病變異，與體染色體隱性非症候群性聽力損失的關聯明確",
+      "opentargets_score": 0.65,
+      "key_pmids": [
+        "PMID:20301449"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "新生兒應接受聽力篩檢；若有聽力損失家族史或計畫生育，建議接受 GJB2 基因檢測與遺傳諮詢。",
+      "lifestyle_tips": [
+        "避免長期暴露於高噪音環境，保護殘存聽力",
+        "依聽力團隊建議配戴助聽器或人工耳蝸，並持續語言復健",
+        "計畫懷孕前與伴侶一起接受帶因篩檢與遺傳諮詢"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "耳鼻喉科 / 聽力學 / 遺傳諮詢",
+      "questions": [
+        "醫師您好，我的 GJB2 基因檢測顯示我是帶因者，我的聽力會受影響嗎？",
+        "我的伴侶也需要做 GJB2 帶因篩檢嗎？",
+        "如果孩子有聽力損失，助聽器或人工耳蝸的評估流程是什麼？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「GJB2 帶因者的孩子一定聽不見？」",
+      "truth": "不一定。帶因者本身聽力通常正常，孩子是否受影響取決於另一位家長是否也帶有 GJB2 變異。透過遺傳諮詢與新生兒聽力篩檢，可以及早評估與介入。"
+    }
+  },
+  {
+    "association_id": "GDA_LDLR_FAMILIAL_HYPERCHOLESTEROLEMIA",
+    "gene": {
+      "symbol": "LDLR",
+      "name": "low density lipoprotein receptor",
+      "chinese_name": "低密度脂蛋白受體基因 (LDLR)",
+      "ensembl_id": "ENSG00000130164",
+      "entrez_id": "3949",
+      "biotype": "protein_coding",
+      "chromosome": "19p13.2 (19 號染色體)",
+      "metaphor": {
+        "title": "🩺 肝臟門口的【膽固醇回收站】",
+        "story": "血液中的低密度脂蛋白（LDL，俗稱壞膽固醇）需要被肝臟門口的 LDLR 回收站收進來。如果回收站數量不足或故障，LDL 就會在血液中愈積愈多，長期增加動脈硬化與心血管疾病的風險。"
+      },
+      "plain_summary": "LDLR 基因負責製造肝臟表面的低密度脂蛋白受體，協助清除血液中的壞膽固醇。帶有致病變異可能使膽固醇偏高，且呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過血脂檢查、飲食調整與藥物治療，可以有效降低心血管風險。",
+      "academic_summary": "LDLR 位於 19p13.2，編碼 LDL 受體，介導 LDL 的肝臟清除。LDLR 功能喪失型變異造成家族性高膽固醇血症，呈體染色體顯性遺傳；血中 LDL-C 顯著升高，提早動脈粥狀硬化與心肌梗塞風險。"
+    },
+    "disease": {
+      "id": "MONDO:0007750",
+      "name": "familial hypercholesterolemia",
+      "chinese_name": "家族性高膽固醇血症",
+      "categories": [
+        "脂質代謝疾病",
+        "心血管疾病風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需長期管理 (可透過降脂藥物控制)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003124",
+        "name": "Hypercholesterolemia",
+        "chinese_name": "高膽固醇血症"
+      },
+      {
+        "hpo_id": "HP:0001658",
+        "name": "Myocardial infarction",
+        "chinese_name": "心肌梗塞"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Statins",
+        "chinese_name": "史他汀類降脂藥",
+        "mechanism": "抑制 HMG-CoA 還原酶，降低肝臟膽固醇合成並增加 LDL 受體清除",
+        "approval_status": "FDA 核准處方藥"
+      },
+      {
+        "drug_name": "PCSK9 inhibitors",
+        "chinese_name": "PCSK9 抑制劑",
+        "mechanism": "抑制 PCSK9 對 LDL 受體的降解，增加 LDL 清除",
+        "approval_status": "FDA 核准處方藥"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "LDLR 功能喪失型致病變異；家族性高膽固醇血症主要由 LDL 受體清除能力下降造成",
+      "population_frequency": "異合子家族性高膽固醇血症約每 250–300 人中有 1 人，因族群而異 (PMID:20301692)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。家族性高膽固醇血症的標準治療以史他汀類藥物、PCSK9 抑制劑、飲食與生活型態調整為主；是否需要以及如何用藥，應由心臟內科或新陳代謝科醫師依血脂與整體風險決定。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "減少飽和脂肪與反式脂肪攝取，增加蔬菜、全穀與可溶性纖維",
+        "規律運動並維持理想體重，戒菸以降低心血管風險"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 400,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 LDLR 致病變異，與家族性高膽固醇血症的關聯明確",
+      "opentargets_score": 0.8,
+      "key_pmids": [
+        "PMID:20301692"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有早發心血管疾病家族史或血脂偏高，建議接受血脂檢查；必要時進行 LDLR 基因檢測，並讓一等親一同評估。",
+      "lifestyle_tips": [
+        "採用地中海型或低飽和脂肪飲食，增加蔬果與可溶性纖維",
+        "每週規律運動，維持健康體重並戒菸",
+        "依醫囑定期追蹤血脂，不要自行停用降脂藥物"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 新陳代謝科 / 遺傳諮詢",
+      "questions": [
+        "醫師您好，我的 LDLR 基因檢測顯示有致病變異，我的膽固醇目標應該是多少？",
+        "我的父母、兄弟姊妹或子女也應該接受血脂檢查或基因檢測嗎？",
+        "除了史他汀，我是否適合使用 PCSK9 抑制劑或其他降脂治療？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「膽固醇高只是吃太油，跟基因無關？」",
+      "truth": "不一定。家族性高膽固醇血症常由 LDLR 等基因變異造成，即使飲食清淡也可能膽固醇偏高。透過基因檢測與家族篩檢，可以及早識別並開始治療。"
+    }
+  },
+  {
+    "association_id": "GDA_MYH7_HYPERTROPHIC_CARDIOMYOPATHY",
+    "gene": {
+      "symbol": "MYH7",
+      "name": "myosin heavy chain 7",
+      "chinese_name": "心肌肌凝蛋白重鏈 7 基因 (MYH7)",
+      "ensembl_id": "ENSG00000092054",
+      "entrez_id": "4625",
+      "biotype": "protein_coding",
+      "chromosome": "14q11.2 (14 號染色體)",
+      "metaphor": {
+        "title": "❤️ 心臟肌肉裡的【馬達重鏈】",
+        "story": "心肌收縮就像引擎運轉，MYH7 製造的肌凝蛋白重鏈是引擎裡的重要馬達零件。若零件設計有缺陷，心肌可能異常增厚、收縮與舒張不協調，形成肥厚型心肌病變。"
+      },
+      "plain_summary": "MYH7 基因與心肌的收縮蛋白有關。帶有致病變異可能增加肥厚型心肌病變的風險，且呈體染色體顯性遺傳，一等親也可能帶有相同變異。多數人可透過定期心臟評估、生活型態調整與藥物治療良好管理。",
+      "academic_summary": "MYH7 位於 14q11.2，編碼心肌 β 肌凝蛋白重鏈。MYH7 致病變異是肥厚型心肌病變常見原因之一，呈體染色體顯性遺傳；可造成心肌肥厚、舒張功能異常與心律不整風險。"
+    },
+    "disease": {
+      "id": "MONDO:0005045",
+      "name": "hypertrophic cardiomyopathy",
+      "chinese_name": "肥厚型心肌病變",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心肌病變"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心臟評估 (可透過藥物與監測管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚型心肌病變"
+      },
+      {
+        "hpo_id": "HP:0011675",
+        "name": "Arrhythmia",
+        "chinese_name": "心律不整"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "瑪伐凱騰 (Mavacamten)",
+        "mechanism": "心肌肌凝蛋白抑制劑，降低心肌過度收縮",
+        "approval_status": "FDA 核准處方藥"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心率與心肌收縮力，改善症狀與舒張填充",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MYH7 致病變異；肥厚型心肌病變主要由心肌收縮蛋白基因變異造成",
+      "population_frequency": "肥厚型心肌病變約每 500 人中有 1 人，MYH7 與 MYBPC3 為常見致病基因 (PMID:20301725)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。肥厚型心肌病變的標準治療包括乙型交感神經阻斷劑、mavacamten 與定期心臟監測；是否用藥與選擇應由心臟內科醫師依症狀、流出道阻塞與心律風險評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免脫水、過量酒精與劇烈脫水型運動，以免加重症狀",
+        "依醫囑定期接受心臟超音波與心律監測"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 350,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 MYH7 致病變異，與肥厚型心肌病變的關聯明確",
+      "opentargets_score": 0.78,
+      "key_pmids": [
+        "PMID:20301725"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有肥厚型心肌病變家族史、心雜音、胸悶或運動性暈厥，建議接受心臟超音波與遺傳諮詢；一等親也應評估。",
+      "lifestyle_tips": [
+        "保持適當水分，避免脫水與過量酒精",
+        "依醫師建議選擇運動強度，避免未評估的高強度競技運動",
+        "定期追蹤心臟功能與心律，出現胸痛、暈厥或心悸時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "醫師您好，我的 MYH7 基因檢測顯示有致病變異，我需要多久追蹤一次心臟？",
+        "我的父母、兄弟姊妹或子女也應該接受心臟評估或基因檢測嗎？",
+        "我適合使用乙型阻斷劑或 mavacamten 嗎？運動方面有哪些限制？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「有心臟肥厚基因就不能運動？」",
+      "truth": "不一定。多數患者可在醫師評估後從事適度運動；關鍵是避免未經評估的高強度競技運動，並定期追蹤心臟功能與心律。"
+    }
+  },
+  {
+    "association_id": "GDA_MYBPC3_HYPERTROPHIC_CARDIOMYOPATHY",
+    "gene": {
+      "symbol": "MYBPC3",
+      "name": "myosin binding protein C3",
+      "chinese_name": "心肌肌凝蛋白結合蛋白 C 基因 (MYBPC3)",
+      "ensembl_id": "ENSG00000134571",
+      "entrez_id": "4607",
+      "biotype": "protein_coding",
+      "chromosome": "11p11.2 (11 號染色體)",
+      "metaphor": {
+        "title": "❤️ 心肌引擎裡的【調速彈簧】",
+        "story": "心肌收縮需要許多蛋白質協調，MYBPC3 製造的結合蛋白就像引擎裡的調速彈簧，幫助收縮與放鬆保持節奏。若彈簧功能異常，心肌可能逐漸增厚，形成肥厚型心肌病變。"
+      },
+      "plain_summary": "MYBPC3 基因與心肌收縮蛋白的調節有關。帶有致病變異可能增加肥厚型心肌病變的風險，且呈體染色體顯性遺傳，一等親也可能帶有相同變異。多數人可透過定期心臟評估、生活型態調整與藥物治療良好管理。",
+      "academic_summary": "MYBPC3 位於 11p11.2，編碼心肌肌凝蛋白結合蛋白 C。MYBPC3 致病變異是肥厚型心肌病變最常見的原因之一，呈體染色體顯性遺傳；可造成心肌肥厚、舒張功能異常與心律不整風險。"
+    },
+    "disease": {
+      "id": "MONDO:0005045",
+      "name": "hypertrophic cardiomyopathy",
+      "chinese_name": "肥厚型心肌病變",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心肌病變"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心臟評估 (可透過藥物與監測管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚型心肌病變"
+      },
+      {
+        "hpo_id": "HP:0011675",
+        "name": "Arrhythmia",
+        "chinese_name": "心律不整"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "瑪伐凱騰 (Mavacamten)",
+        "mechanism": "心肌肌凝蛋白抑制劑，降低心肌過度收縮",
+        "approval_status": "FDA 核准處方藥"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心率與心肌收縮力，改善症狀與舒張填充",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MYBPC3 致病變異（多為截短型變異）；肥厚型心肌病變主要由心肌收縮蛋白基因變異造成",
+      "population_frequency": "肥厚型心肌病變約每 500 人中有 1 人，MYBPC3 與 MYH7 為常見致病基因 (PMID:20301725)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。肥厚型心肌病變的標準治療包括乙型交感神經阻斷劑、mavacamten 與定期心臟監測；是否用藥與選擇應由心臟內科醫師依症狀、流出道阻塞與心律風險評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免脫水、過量酒精與劇烈脫水型運動，以免加重症狀",
+        "依醫囑定期接受心臟超音波與心律監測"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 400,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 MYBPC3 致病變異，與肥厚型心肌病變的關聯明確",
+      "opentargets_score": 0.8,
+      "key_pmids": [
+        "PMID:20301725"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有肥厚型心肌病變家族史、心雜音、胸悶或運動性暈厥，建議接受心臟超音波與遺傳諮詢；一等親也應評估。",
+      "lifestyle_tips": [
+        "保持適當水分，避免脫水與過量酒精",
+        "依醫師建議選擇運動強度，避免未評估的高強度競技運動",
+        "定期追蹤心臟功能與心律，出現胸痛、暈厥或心悸時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "醫師您好，我的 MYBPC3 基因檢測顯示有致病變異，我需要多久追蹤一次心臟？",
+        "我的父母、兄弟姊妹或子女也應該接受心臟評估或基因檢測嗎？",
+        "我適合使用乙型阻斷劑或 mavacamten 嗎？運動方面有哪些限制？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「有肥厚型心肌病變基因就一定不能運動？」",
+      "truth": "不一定。多數患者可在醫師評估後從事適度運動；關鍵是避免未經評估的高強度競技運動，並定期追蹤心臟功能與心律。"
+    }
+  },
+  {
+    "association_id": "GDA_BRCA2_HEREDITARY_BREAST_OVARIAN",
+    "gene": {
+      "symbol": "BRCA2",
+      "name": "BRCA2 DNA repair associated",
+      "chinese_name": "乳腺癌易感基因 2 號 (BRCA2)",
+      "ensembl_id": "ENSG00000139618",
+      "entrez_id": "675",
+      "biotype": "protein_coding",
+      "chromosome": "13q13.1 (13 號染色體)",
+      "metaphor": {
+        "title": "🧬 DNA 修復團隊裡的【RAD51 召集人】",
+        "story": "當 DNA 發生雙股斷裂時，細胞需要一套精密的維修流程。BRCA2 就像維修現場的召集人，負責把 RAD51 這個關鍵修復工具帶到斷裂處。如果召集人罷工，維修無法完成，錯誤會不斷累積，長期下來提高乳癌、卵巢癌、前列腺癌與胰臟癌的風險。"
+      },
+      "plain_summary": "BRCA2 是人體重要的 DNA 修復基因。攜帶致病變異並不等於一定會得癌症，而是代表罹患乳癌、卵巢癌、前列腺癌與胰臟癌的終身風險較一般人升高，需要從較早年齡開始接受科學篩檢與遺傳諮詢。",
+      "academic_summary": "BRCA2 位於 13q13.1，編碼約 384 kDa 的核蛋白，透過 BRC repeats 與 RAD51 交互作用，介導同源重組 (HR) 對 DNA 雙股斷裂的無差錯修復。生殖系雜合致病變異造成同源重組缺陷，呈體染色體顯性遺傳的遺傳性乳癌-卵巢癌症候群，並使腫瘤對 PARP 抑制劑產生合成致死敏感性。"
+    },
+    "disease": {
+      "id": "MONDO:0007254",
+      "name": "hereditary breast and ovarian cancer syndrome",
+      "chinese_name": "遺傳性乳癌-卵巢癌症候群 (HBOC)",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (科學可防可治)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003002",
+        "name": "Breast carcinoma",
+        "chinese_name": "乳癌"
+      },
+      {
+        "hpo_id": "HP:0100615",
+        "name": "Ovarian neoplasm",
+        "chinese_name": "卵巢腫瘤"
+      },
+      {
+        "hpo_id": "HP:0012125",
+        "name": "Prostate cancer",
+        "chinese_name": "前列腺癌"
+      },
+      {
+        "hpo_id": "HP:0100787",
+        "name": "Pancreatic neoplasm",
+        "chinese_name": "胰臟腫瘤"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Olaparib",
+        "chinese_name": "奧拉帕利",
+        "mechanism": "PARP1/2 抑制劑 (同源重組缺陷腫瘤的合成致死機制)",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      },
+      {
+        "drug_name": "Talazoparib",
+        "chinese_name": "他拉唑帕利",
+        "mechanism": "強效 PARP1/2 抑制劑與 PARP 捕獲劑",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "生殖系致病變異 (如 c.5946delT / rs80359550 等)",
+      "population_frequency": "一般人群約 1/400 ~ 1/800，因族群而異 (PMID:20301425)",
+      "traffic_light_summary": "🟢 標靶藥敏感（攜帶生殖系致病變異的 BRCA2 相關腫瘤，對奧拉帕利、他拉唑帕利等 PARP 抑制劑具合成致死敏感性）",
+      "drugs_guide": [
+        {
+          "drug_name": "Olaparib / Talazoparib",
+          "chinese_name": "奧拉帕利 / 他拉唑帕利",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "基於合成致死原理，BRCA2 生殖系致病變異患者使用 PARP 抑制劑可顯著獲益。",
+          "cpic_level": "FDA Companion Diagnostic / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "嚴格限制酒精攝取",
+        "慎用長期無黃體素拮抗的外源性雌激素替代療法"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 3000,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 BRCA2 明確致病變異位點",
+      "opentargets_score": 0.93,
+      "key_pmids": [
+        "PMID:20301425",
+        "PMID:28522680"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依 NCCN 指引，自 25-30 歲起每年接受乳房磁振造影 (MRI) 合併乳房攝影；有胰臟癌家族史者可與醫師討論胰臟監測；男性可與醫師討論前列腺癌篩檢。",
+      "lifestyle_tips": [
+        "保持健康體重，規律作息，避免長期熬夜與高脂飲食",
+        "嚴格戒菸並限制酒精攝取",
+        "與遺傳諮詢團隊討論生育規劃與胚胎著床前基因檢測 (PGT) 的選項"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "乳房外科 / 腫瘤科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 BRCA2 突變，我應該從幾歲開始每年做乳房磁振造影 (MRI)？",
+        "我需要做胰臟癌或前列腺癌的監測嗎？建議的檢查方式與頻率是什麼？",
+        "我的直系親屬是否應該做同位點的基因篩檢？",
+        "如果未來有生育計畫，胚胎著床前基因檢測 (PGT) 是否適合我？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「測出 BRCA2 突變，是不是百分之百一定會得癌症？」",
+      "truth": "不是。攜帶突變只是提高終身風險，並非百分之百。透過規律篩檢、生活型態調整與必要的預防措施，多數攜帶者可以早期發現、早期治療。"
+    }
+  },
+  {
+    "association_id": "GDA_PALB2_HEREDITARY_BREAST_OVARIAN",
+    "gene": {
+      "symbol": "PALB2",
+      "name": "partner and localizer of BRCA2",
+      "chinese_name": "BRCA2 夥伴與定位基因 (PALB2)",
+      "ensembl_id": "ENSG00000083093",
+      "entrez_id": "79728",
+      "biotype": "protein_coding",
+      "chromosome": "16p12.2 (16 號染色體)",
+      "metaphor": {
+        "title": "🧬 DNA 維修隊的【導航兼夥伴】",
+        "story": "PALB2 這個名字本身就說明它的角色：它是 BRCA2 的夥伴，負責把 BRCA2 帶到 DNA 損傷現場。少了這位導航夥伴，BRCA2 就到不了該維修的位置。維修效率下降後，乳癌與胰臟癌的風險便會上升。"
+      },
+      "plain_summary": "PALB2 是協助 BRCA2 進行 DNA 修復的重要夥伴基因。攜帶致病變異並不等於一定會得癌症，而是代表罹患乳癌與胰臟癌的風險較一般人升高，需要與醫師討論較早開始的乳房影像篩檢、胰臟監測與遺傳諮詢。",
+      "academic_summary": "PALB2 位於 16p12.2，編碼 BRCA2 的結合蛋白，協助 BRCA2 定位至 DNA 損傷處並促進 RAD51 依賴的同源重組修復。生殖系雜合致病變異與遺傳性乳癌-卵巢癌症候群及胰臟癌易感性相關，呈體染色體顯性遺傳，腫瘤同樣具 PARP 抑制劑敏感性。"
+    },
+    "disease": {
+      "id": "MONDO:0007254",
+      "name": "hereditary breast and ovarian cancer syndrome",
+      "chinese_name": "遺傳性乳癌-卵巢癌症候群 (HBOC)",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (科學可防可治)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003002",
+        "name": "Breast carcinoma",
+        "chinese_name": "乳癌"
+      },
+      {
+        "hpo_id": "HP:0100787",
+        "name": "Pancreatic neoplasm",
+        "chinese_name": "胰臟腫瘤"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Olaparib",
+        "chinese_name": "奧拉帕利",
+        "mechanism": "PARP1/2 抑制劑 (同源重組缺陷腫瘤的合成致死機制)",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "生殖系致病變異 (如 c.3113G>A / rs118203985 等)",
+      "population_frequency": "PALB2 致病變異在一般人群相對少見，帶因頻率因族群而異 (PMID:25099575)",
+      "traffic_light_summary": "🟢 標靶藥敏感（PALB2 相關、同源重組缺陷的腫瘤對奧拉帕利等 PARP 抑制劑具敏感性，證據來自指引與臨床試驗）",
+      "drugs_guide": [
+        {
+          "drug_name": "Olaparib",
+          "chinese_name": "奧拉帕利",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "PALB2 生殖系致病變異造成同源重組缺陷，PARP 抑制劑可透過合成致死作用帶來臨床獲益。",
+          "cpic_level": "NCCN Guideline / Clinical Trial Evidence"
+        }
+      ],
+      "dietary_contraindications": [
+        "嚴格限制酒精攝取",
+        "慎用長期無黃體素拮抗的外源性雌激素替代療法"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 國際指引與臨床試驗支持",
+      "clinvar_pathogenic_count": 700,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 PALB2 致病變異，與乳癌及胰臟癌易感性相關",
+      "opentargets_score": 0.85,
+      "key_pmids": [
+        "PMID:25099575",
+        "PMID:31841383"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依 NCCN 指引與醫師討論，自較早年齡開始每年乳房磁振造影 (MRI) 合併乳房攝影；若有胰臟癌家族史，可討論胰臟監測。",
+      "lifestyle_tips": [
+        "保持健康體重，規律作息，避免長期熬夜與高脂飲食",
+        "嚴格戒菸並限制酒精攝取",
+        "與遺傳諮詢團隊討論家族篩檢與生育規劃"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "乳房外科 / 腫瘤科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 PALB2 突變，我應該從幾歲開始做乳房磁振造影 (MRI)？",
+        "我需要做胰臟癌監測嗎？建議的檢查方式與頻率是什麼？",
+        "我的直系親屬是否應該做同位點的基因篩檢？",
+        "我的腫瘤若為同源重組缺陷，是否適合使用 PARP 抑制劑？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「PALB2 不是 BRCA，所以不用在意？」",
+      "truth": "不對。PALB2 是 BRCA2 的重要夥伴，致病變異同樣會提高乳癌與胰臟癌風險。透過遺傳諮詢與適當篩檢，可以及早評估與管理。"
+    }
+  },
+  {
+    "association_id": "GDA_MLH1_LYNCH_SYNDROME",
+    "gene": {
+      "symbol": "MLH1",
+      "name": "mutL homolog 1",
+      "chinese_name": "錯配修復基因 MLH1",
+      "ensembl_id": "ENSG00000076242",
+      "entrez_id": "4292",
+      "biotype": "protein_coding",
+      "chromosome": "3p22.2 (3 號染色體)",
+      "metaphor": {
+        "title": "🧬 細胞裡的【錯字校對員】",
+        "story": "DNA 複製時偶爾會打錯字，MLH1 就像細胞裡的校對員，負責找出並修正這些錯配。如果校對員罷工，錯字會愈積愈多，細胞便容易失控生長，增加大腸癌與子宮內膜癌等風險，這與林奇症候群有關。"
+      },
+      "plain_summary": "MLH1 是 DNA 錯配修復 (MMR) 的重要基因。攜帶致病變異會提高林奇症候群相關癌症（如大腸癌、子宮內膜癌）的終身風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過較早且規律的腸鏡與婦科監測，可以及早發現與處理。",
+      "academic_summary": "MLH1 位於 3p22.2，編碼 MutL 同源蛋白，與 MSH2/MSH6/PMS2 組成錯配修復複合體，修正 DNA 複製過程中的鹼基錯配與小片段插入缺失。生殖系雜合致病變異造成錯配修復缺陷與微衛星不穩定 (MSI-H)，導致體染色體顯性遺傳的林奇症候群；dMMR/MSI-H 腫瘤對 PD-1 免疫檢查點抑制劑敏感。"
+    },
+    "disease": {
+      "id": "MONDO:0005835",
+      "name": "Lynch syndrome",
+      "chinese_name": "林奇症候群（遺傳性非息肉症大腸直腸癌）",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (可透過監測與治療管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "大腸癌"
+      },
+      {
+        "hpo_id": "HP:0012114",
+        "name": "Endometrial carcinoma",
+        "chinese_name": "子宮內膜癌"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Pembrolizumab",
+        "chinese_name": "帕博利珠單抗 (Pembrolizumab)",
+        "mechanism": "PD-1 免疫檢查點抑制劑，用於 dMMR/MSI-H 腫瘤",
+        "approval_status": "FDA 生物標記核准 / NCCN Category 1"
+      },
+      {
+        "drug_name": "Nivolumab",
+        "chinese_name": "納武利尤單抗 (Nivolumab)",
+        "mechanism": "PD-1 免疫檢查點抑制劑，用於 dMMR/MSI-H 腫瘤",
+        "approval_status": "FDA 生物標記核准 / NCCN Category 1"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "生殖系致病變異 (MLH1 錯配修復基因)；腫瘤常表現 dMMR/MSI-H",
+      "population_frequency": "林奇症候群約每 300 人中有 1 人，因族群與基因而異 (PMID:20301390)",
+      "traffic_light_summary": "🟢 免疫治療敏感（dMMR/MSI-H 腫瘤對 pembrolizumab、nivolumab 等 PD-1 免疫檢查點抑制劑有良好反應，屬 FDA 生物標記核准與 NCCN Category 1）",
+      "drugs_guide": [
+        {
+          "drug_name": "Pembrolizumab / Nivolumab",
+          "chinese_name": "帕博利珠單抗 / 納武利尤單抗",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "MLH1 缺陷造成的 dMMR/MSI-H 腫瘤對 PD-1 免疫檢查點抑制劑具良好反應，用藥前應以病理檢測確認 dMMR/MSI-H 狀態。",
+          "cpic_level": "FDA Biomarker-Approved (dMMR/MSI-H) / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "減少加工肉品與紅肉攝取，增加蔬菜、水果與全穀類",
+        "限制酒精攝取並維持健康體重"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 1200,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 MLH1 致病變異，與林奇症候群及 dMMR/MSI-H 腫瘤相關",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:20301390",
+        "PMID:26023682"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依 NCCN 指引與醫師討論，自 20-25 歲起每 1-2 年接受大腸鏡檢查；女性可討論子宮內膜癌監測；家族成員應接受遺傳諮詢與基因檢測。",
+      "lifestyle_tips": [
+        "減少加工肉品與紅肉，增加蔬菜、水果與全穀類攝取",
+        "規律運動、維持健康體重並限制酒精",
+        "出現血便、排便習慣改變或異常出血時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 腫瘤科 / 婦科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 MLH1 突變，我應該從幾歲開始做大腸鏡？多久一次？",
+        "我需要做子宮內膜癌的監測嗎？建議的檢查方式是什麼？",
+        "我的腫瘤是否應檢測 dMMR/MSI-H？這會影響免疫治療的選擇嗎？",
+        "我的直系親屬是否應該做同位點的基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「林奇症候群一定會得大腸癌？」",
+      "truth": "不是。林奇症候群會提高風險，但透過規律大腸鏡監測、生活型態調整與必要時的醫療處置，可以大幅降低風險並及早發現、及早治療。"
+    }
+  },
+  {
+    "association_id": "GDA_MSH2_LYNCH_SYNDROME",
+    "gene": {
+      "symbol": "MSH2",
+      "name": "mutS homolog 2",
+      "chinese_name": "錯配修復基因 MSH2",
+      "ensembl_id": "ENSG00000095002",
+      "entrez_id": "4436",
+      "biotype": "protein_coding",
+      "chromosome": "2p21 (2 號染色體)",
+      "metaphor": {
+        "title": "🧬 DNA 校對臺上的【錯配偵測器】",
+        "story": "DNA 複製難免出現錯配，MSH2 就像校對臺上的偵測器，先找出錯字，再交給修復團隊改正。如果偵測器失靈，錯字會不斷累積，細胞便容易走上癌變之路，這與林奇症候群有關。"
+      },
+      "plain_summary": "MSH2 是 DNA 錯配修復 (MMR) 的重要基因。攜帶致病變異會提高林奇症候群相關癌症（如大腸癌、子宮內膜癌）的終身風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過較早且規律的腸鏡與婦科監測，可以及早發現與處理。",
+      "academic_summary": "MSH2 位於 2p21，編碼 MutS 同源蛋白，與 MSH6 形成 MutSα 複合體辨識 DNA 鹼基錯配與小片段插入缺失，並招募 MLH1/PMS2 完成修復。生殖系雜合致病變異造成錯配修復缺陷與微衛星不穩定 (MSI-H)，導致體染色體顯性遺傳的林奇症候群；dMMR/MSI-H 腫瘤對 PD-1 免疫檢查點抑制劑敏感。"
+    },
+    "disease": {
+      "id": "MONDO:0005835",
+      "name": "Lynch syndrome",
+      "chinese_name": "林奇症候群（遺傳性非息肉症大腸直腸癌）",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (可透過監測與治療管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "大腸癌"
+      },
+      {
+        "hpo_id": "HP:0012114",
+        "name": "Endometrial carcinoma",
+        "chinese_name": "子宮內膜癌"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Pembrolizumab",
+        "chinese_name": "帕博利珠單抗 (Pembrolizumab)",
+        "mechanism": "PD-1 免疫檢查點抑制劑，用於 dMMR/MSI-H 腫瘤",
+        "approval_status": "FDA 生物標記核准 / NCCN Category 1"
+      },
+      {
+        "drug_name": "Nivolumab",
+        "chinese_name": "納武利尤單抗 (Nivolumab)",
+        "mechanism": "PD-1 免疫檢查點抑制劑，用於 dMMR/MSI-H 腫瘤",
+        "approval_status": "FDA 生物標記核准 / NCCN Category 1"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "生殖系致病變異 (MSH2 錯配修復基因)；腫瘤常表現 dMMR/MSI-H",
+      "population_frequency": "林奇症候群約每 300 人中有 1 人，因族群與基因而異 (PMID:20301390)",
+      "traffic_light_summary": "🟢 免疫治療敏感（dMMR/MSI-H 腫瘤對 pembrolizumab、nivolumab 等 PD-1 免疫檢查點抑制劑有良好反應，屬 FDA 生物標記核准與 NCCN Category 1）",
+      "drugs_guide": [
+        {
+          "drug_name": "Pembrolizumab / Nivolumab",
+          "chinese_name": "帕博利珠單抗 / 納武利尤單抗",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "MSH2 缺陷造成的 dMMR/MSI-H 腫瘤對 PD-1 免疫檢查點抑制劑具良好反應，用藥前應以病理檢測確認 dMMR/MSI-H 狀態。",
+          "cpic_level": "FDA Biomarker-Approved (dMMR/MSI-H) / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "減少加工肉品與紅肉攝取，增加蔬菜、水果與全穀類",
+        "限制酒精攝取並維持健康體重"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 1400,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 MSH2 致病變異，與林奇症候群及 dMMR/MSI-H 腫瘤相關",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:20301390",
+        "PMID:26023682"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依 NCCN 指引與醫師討論，自 20-25 歲起每 1-2 年接受大腸鏡檢查；女性可討論子宮內膜癌監測；家族成員應接受遺傳諮詢與基因檢測。",
+      "lifestyle_tips": [
+        "減少加工肉品與紅肉，增加蔬菜、水果與全穀類攝取",
+        "規律運動、維持健康體重並限制酒精",
+        "出現血便、排便習慣改變或異常出血時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 腫瘤科 / 婦科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 MSH2 突變，我應該從幾歲開始做大腸鏡？多久一次？",
+        "我需要做子宮內膜癌的監測嗎？建議的檢查方式是什麼？",
+        "我的腫瘤是否應檢測 dMMR/MSI-H？這會影響免疫治療的選擇嗎？",
+        "我的直系親屬是否應該做同位點的基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「林奇症候群一定會得大腸癌？」",
+      "truth": "不是。林奇症候群會提高風險，但透過規律大腸鏡監測、生活型態調整與必要時的醫療處置，可以大幅降低風險並及早發現、及早治療。"
+    }
   }
 ];
 window.EN_RECORDS = {
@@ -3062,6 +4782,1539 @@ window.EN_RECORDS = {
     "myth_buster": {
       "myth": "“Is severe drug allergy purely a matter of luck that you can only discover after taking the pill?”",
       "truth": "No longer! Taiwan researchers discovered the link between HLA-B*15:02 and carbamazepine SJS/TEN and between HLA-B*58:01 and allopurinol SCAR, proving in national cohort studies that pre-prescription genetic screening prevents these fatal reactions (PMID:21428768, PMID:26399967)."
+    }
+  },
+  "CYP2D6": {
+    "gene": {
+      "chinese_name": "Cytochrome P450 2D6 (Opioid & Tamoxifen Metabolism Gene)",
+      "chromosome": "22q13.2 (Chromosome 22)",
+      "metaphor": {
+        "title": "🔑 The Liver's 【Painkiller & Hormone Drug Engineer】",
+        "story": "Codeine and tramadol are not fully active painkillers until the liver's CYP2D6 engineer converts them into their active metabolites. If the engineer works too fast (ultrarapid metabolizer), the drug may produce too much active metabolite and increase respiratory depression risk; if too slow (poor metabolizer), pain relief may be inadequate. Tamoxifen also relies partly on this enzyme to form active metabolites."
+      },
+      "plain_summary": "CYP2D6 converts codeine and tramadol into active metabolites and contributes to tamoxifen metabolism. Ultrarapid metabolizers may have a higher risk of respiratory depression with codeine or tramadol, while poor metabolizers may get insufficient pain relief. Your doctor can choose an alternative drug or adjust therapy based on your genotype.",
+      "academic_summary": "CYP2D6 encodes cytochrome P450 2D6, which catalyzes O-demethylation of the opioid prodrugs codeine and tramadol and contributes to tamoxifen activation. Common alleles include reduced-function *10 (rs1065852), no-function *4 (rs3892097) and *5 (gene deletion), and increased-function *2A and *17."
+    },
+    "disease": {
+      "chinese_name": "Codeine Toxicity & CYP2D6 Metabolism Variation",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Pain & Oncology Drug Safety"
+      ],
+      "inheritance_mode": "Autosomal Codominant Metabolic Phenotype",
+      "severity_badge": "🔴 Codeine, Tramadol & Tamoxifen Traffic Light"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002791",
+        "name": "Hypoventilation",
+        "chinese_name": "Respiratory depression / hypoventilation risk"
+      },
+      {
+        "hpo_id": "HP:0001250",
+        "name": "Seizure",
+        "chinese_name": "Seizure risk"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Codeine",
+        "chinese_name": "Codeine",
+        "mechanism": "Opioid prodrug requiring CYP2D6 conversion to morphine",
+        "approval_status": "CPIC Level A / FDA Label"
+      },
+      {
+        "drug_name": "Tramadol",
+        "chinese_name": "Tramadol",
+        "mechanism": "Opioid analgesic requiring CYP2D6 activation",
+        "approval_status": "CPIC Level A / FDA Label"
+      },
+      {
+        "drug_name": "Tamoxifen",
+        "chinese_name": "Tamoxifen",
+        "mechanism": "Selective estrogen receptor modulator; some active metabolites depend on CYP2D6",
+        "approval_status": "CPIC Level A"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CYP2D6 *10 (rs1065852), *4 (rs3892097), *5 (gene deletion), *2A, *17; ultrarapid, intermediate and poor metabolizer phenotypes",
+      "population_frequency": "In East Asians, *10 allele frequency is about 40%–50% and *4 is less common than in Europeans; ultrarapid metabolizers are less frequent (PMID:33387367)",
+      "traffic_light_summary": "🔴 Ultrarapid metabolizers may rapidly produce large amounts of active metabolites from codeine or tramadol, increasing respiratory depression risk; avoid these drugs. 🟡 Poor metabolizers may have inadequate analgesia; your doctor should choose an alternative analgesic. For tamoxifen, poor metabolizers may have reduced efficacy; your doctor should consider an alternative or adjust strategy.",
+      "drugs_guide": [
+        {
+          "drug_name": "Codeine (ultrarapid metabolizer)",
+          "chinese_name": "Codeine — Ultrarapid Metabolizer",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "CYP2D6 ultrarapid metabolizers may rapidly convert codeine to morphine, causing respiratory depression or life-threatening toxicity. Avoid codeine and choose a CYP2D6-independent analgesic.",
+          "cpic_level": "CPIC 2021 CYP2D6/OPRM1/COMT Opioid Guideline Level A / FDA Label"
+        },
+        {
+          "drug_name": "Tramadol (ultrarapid metabolizer)",
+          "chinese_name": "Tramadol — Ultrarapid Metabolizer",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "CYP2D6 ultrarapid metabolizers may have increased active metabolite exposure and respiratory depression risk with tramadol. Avoid tramadol and ask your doctor about alternatives.",
+          "cpic_level": "CPIC 2021 CYP2D6/OPRM1/COMT Opioid Guideline Level A / FDA Label"
+        },
+        {
+          "drug_name": "Codeine / Tramadol (poor metabolizer)",
+          "chinese_name": "Codeine / Tramadol — Poor Metabolizer",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2D6 poor metabolizers may not form enough active metabolite for adequate analgesia. Your doctor should choose another analgesic.",
+          "cpic_level": "CPIC 2021 CYP2D6/OPRM1/COMT Opioid Guideline Level A"
+        },
+        {
+          "drug_name": "Tamoxifen (poor / intermediate metabolizer)",
+          "chinese_name": "Tamoxifen — Poor or Intermediate Metabolizer",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "Poor or intermediate metabolizers may form less active tamoxifen metabolite. Premenopausal breast cancer patients should be evaluated by an oncologist for alternative endocrine therapy or a modified strategy.",
+          "cpic_level": "CPIC 2018 CYP2D6 and Tamoxifen Guideline Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "Avoid alcohol while taking codeine or tramadol because it can worsen central nervous system and respiratory depression",
+        "Do not combine tamoxifen with strong CYP2D6 inhibitors without consulting your doctor or pharmacist"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A opioid and tamoxifen guidance",
+      "clinvar_summary_chinese": "ClinVar and PharmGKB contain CYP2D6 *4, *5, *10 and *17 drug-response alleles",
+      "key_pmids": [
+        "PMID:33387367"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Before using codeine, tramadol or tamoxifen, discuss CYP2D6 testing with your doctor if you have had adverse reactions or poor response.",
+      "lifestyle_tips": [
+        "Tell your doctor and pharmacist your CYP2D6 metabolizer status and avoid self-medicating with codeine-containing products",
+        "Do not stop or change tamoxifen on your own; discuss any side effects at follow-up",
+        "Keep your genetic test result on your phone or in your wallet for clinic visits"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Clinical Pharmacy / Pain Medicine / Oncology",
+      "questions": [
+        "My CYP2D6 result suggests I may be an ultrarapid or poor metabolizer. Am I a candidate for codeine or tramadol?",
+        "If I need pain relief, what alternatives do not depend on CYP2D6?",
+        "I am taking tamoxifen. Could my CYP2D6 status affect its efficacy or my treatment plan?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“If my doctor prescribes codeine or tramadol, it must be safe for me.”",
+      "truth": "Not necessarily. CYP2D6 ultrarapid metabolizers may rapidly convert codeine to morphine and face respiratory depression, while poor metabolizers may get inadequate pain relief. The right analgesic strategy depends on genotype and clinical context."
+    }
+  },
+  "DPYD": {
+    "gene": {
+      "chinese_name": "Dihydropyrimidine Dehydrogenase (Fluoropyrimidine Metabolism Gene)",
+      "chromosome": "1p21.3 (Chromosome 1)",
+      "metaphor": {
+        "title": "🛡️ The Body's 【Chemotherapy Detox Recycling Plant】",
+        "story": "5-FU and capecitabine are common fluoropyrimidine chemotherapy drugs that depend on the DPYD detox plant for breakdown. If the plant runs at low capacity, the drug and its metabolites can accumulate, causing severe diarrhea, mouth ulcers, low blood counts and even life-threatening toxicity."
+      },
+      "plain_summary": "DPYD breaks down fluoropyrimidine chemotherapy drugs. People with loss-of-function DPYD variants may develop severe or even fatal toxicity from 5-FU or capecitabine. Before treatment, an oncology specialist should assess genotype and, if needed, avoid the drug or markedly adjust the dose.",
+      "academic_summary": "DPYD encodes dihydropyrimidine dehydrogenase, the rate-limiting enzyme of pyrimidine degradation that inactivates 5-fluorouracil. DPYD *2A (rs3918290), c.2846A>T (rs67376798), *13 (rs55886062) and HapB3 (rs56038477) reduce enzyme activity and increase systemic fluoropyrimidine exposure and toxicity risk."
+    },
+    "disease": {
+      "chinese_name": "Dihydropyrimidine Dehydrogenase Deficiency",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Oncology Chemotherapy Safety"
+      ],
+      "inheritance_mode": "Autosomal Recessive",
+      "severity_badge": "🔴 Severe Fluoropyrimidine Toxicity Red Light"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002014",
+        "name": "Diarrhea",
+        "chinese_name": "Severe diarrhea"
+      },
+      {
+        "hpo_id": "HP:0001875",
+        "name": "Decreased total neutrophil count",
+        "chinese_name": "Neutropenia"
+      },
+      {
+        "hpo_id": "HP:0001903",
+        "name": "Anemia",
+        "chinese_name": "Anemia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Fluorouracil (5-FU)",
+        "chinese_name": "Fluorouracil (5-FU)",
+        "mechanism": "Pyrimidine analog chemotherapy detoxified by DPYD",
+        "approval_status": "CPIC Level A / FDA Label"
+      },
+      {
+        "drug_name": "Capecitabine",
+        "chinese_name": "Capecitabine",
+        "mechanism": "Oral fluoropyrimidine prodrug ultimately detoxified by DPYD",
+        "approval_status": "CPIC Level A / FDA Label"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "DPYD *2A (rs3918290), c.2846A>T (rs67376798), *13 (rs55886062), HapB3 (rs56038477)",
+      "population_frequency": "Loss-of-function DPYD alleles are uncommon in East Asians (generally below 1%), but severe fluoropyrimidine toxicity can still occur (PMID:29152729)",
+      "traffic_light_summary": "🔴 Partial or complete DPD deficiency may cause severe or fatal toxicity with 5-FU or capecitabine; avoid systemic fluoropyrimidines or have an oncology specialist markedly reduce the dose. 🟡 Intermediate metabolizers need a reduced starting dose and close monitoring.",
+      "drugs_guide": [
+        {
+          "drug_name": "Fluorouracil (5-FU) — DPD deficient",
+          "chinese_name": "Fluorouracil (5-FU) — DPD Deficient",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "DPD deficiency can cause severe myelosuppression, mucositis and diarrhea, and may be fatal with systemic 5-FU. Avoid use; if unavoidable, an oncology specialist must markedly reduce the dose and monitor closely.",
+          "cpic_level": "CPIC 2017 DPYD and Fluoropyrimidine Dosing Guideline Level A / FDA Label"
+        },
+        {
+          "drug_name": "Capecitabine — DPD deficient",
+          "chinese_name": "Capecitabine — DPD Deficient",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "Capecitabine is converted to 5-FU and can cause severe toxicity in DPD-deficient patients. Avoid use or markedly reduce the dose under oncology supervision.",
+          "cpic_level": "CPIC 2017 DPYD and Fluoropyrimidine Dosing Guideline Level A / FDA Label"
+        },
+        {
+          "drug_name": "Fluorouracil / Capecitabine — intermediate metabolizer",
+          "chinese_name": "Fluorouracil / Capecitabine — Intermediate Metabolizer",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "Partially reduced DPD activity increases fluoropyrimidine toxicity risk. An oncology specialist should reduce the starting dose and monitor blood counts and mucosal toxicity closely.",
+          "cpic_level": "CPIC 2017 DPYD and Fluoropyrimidine Dosing Guideline Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "Avoid self-supplementing with uracil or nucleoside-analog products during treatment because they may interfere with drug metabolism",
+        "Contact your care team promptly for mouth ulcers, severe diarrhea, fever or unusual fatigue"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A fluoropyrimidine dosing guidance",
+      "clinvar_summary_chinese": "ClinVar and PharmGKB contain DPYD *2A, c.2846A>T, *13 and HapB3 loss-of-function variants",
+      "key_pmids": [
+        "PMID:29152729"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Before starting 5-FU or capecitabine, ask your oncology team whether DPYD genotyping is appropriate.",
+      "lifestyle_tips": [
+        "Maintain hydration and oral care during chemotherapy to reduce mucositis and dehydration risk",
+        "Do not self-treat fever, chills or severe diarrhea; contact your care team promptly",
+        "Share your DPYD result with every clinician involved in your treatment"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Medical Oncology / Clinical Pharmacy",
+      "questions": [
+        "I am scheduled for 5-FU or capecitabine. Should I have DPYD genotyping first?",
+        "If my DPYD result shows reduced activity, how should the starting dose be adjusted?",
+        "Which symptoms during treatment should prompt an urgent call or emergency visit?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Chemotherapy doses are calculated by my doctor, so genetic testing is unnecessary.”",
+      "truth": "Not true. People with DPYD deficiency can develop severe or fatal toxicity at standard fluoropyrimidine doses. Pretreatment DPYD genotyping helps the oncology team choose a safer starting dose or an alternative regimen."
+    }
+  },
+  "UGT1A1": {
+    "gene": {
+      "chinese_name": "UDP Glucuronosyltransferase 1A1 (Irinotecan & Bilirubin Metabolism Gene)",
+      "chromosome": "2q37.1 (Chromosome 2)",
+      "metaphor": {
+        "title": "🧹 The Liver's 【Bilirubin & Chemotherapy Cleanup Crew】",
+        "story": "UGT1A1 is like the liver's cleanup crew for bilirubin and certain drugs. When clearance is slower, bilirubin may rise intermittently, causing jaundice in Gilbert syndrome. With irinotecan, the active metabolite may also clear too slowly, increasing diarrhea and low blood count risks."
+      },
+      "plain_summary": "UGT1A1 clears bilirubin and the active metabolite of irinotecan. People with *28 or the East Asian *6 variant may clear these substances more slowly, increasing diarrhea and neutropenia risk with irinotecan. Gilbert syndrome is usually benign, but jaundice may recur.",
+      "academic_summary": "UGT1A1 encodes UDP-glucuronosyltransferase 1A1, which glucuronidates unconjugated bilirubin and SN-38. UGT1A1 *28 (rs3064744, TA7) and the East Asian *6 variant (rs4148323, c.211G>A) reduce expression or activity, predisposing to Gilbert syndrome and irinotecan toxicity."
+    },
+    "disease": {
+      "chinese_name": "Gilbert Syndrome & UGT1A1 Metabolism Variation",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Hepatobiliary & Chemotherapy Safety"
+      ],
+      "inheritance_mode": "Autosomal Recessive",
+      "severity_badge": "🟡 Irinotecan Dose Adjustment & Jaundice Monitoring"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002904",
+        "name": "Hyperbilirubinemia",
+        "chinese_name": "Unconjugated hyperbilirubinemia"
+      },
+      {
+        "hpo_id": "HP:0000952",
+        "name": "Jaundice",
+        "chinese_name": "Intermittent jaundice"
+      },
+      {
+        "hpo_id": "HP:0001875",
+        "name": "Decreased total neutrophil count",
+        "chinese_name": "Neutropenia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Irinotecan",
+        "chinese_name": "Irinotecan",
+        "mechanism": "Topoisomerase I inhibitor; active metabolite SN-38 is metabolized by UGT1A1",
+        "approval_status": "FDA Label / DPWG Guideline"
+      },
+      {
+        "drug_name": "Atazanavir",
+        "chinese_name": "Atazanavir",
+        "mechanism": "Antiretroviral drug that can cause hyperbilirubinemia in UGT1A1 poor metabolizers",
+        "approval_status": "FDA Label / CPIC Guideline"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "UGT1A1 *28 (rs3064744, TA7), UGT1A1 *6 (rs4148323, c.211G>A, common in East Asians), *28/*28, *6/*6, *6/*28",
+      "population_frequency": "In East Asians, *6 allele frequency is about 13%–23% and *28 about 10%–16%; Gilbert syndrome presents with intermittent unconjugated hyperbilirubinemia (PMID:36443464)",
+      "traffic_light_summary": "🟡 UGT1A1 poor metabolizers clear the active irinotecan metabolite SN-38 more slowly, increasing diarrhea and neutropenia risk. An oncology specialist should reduce the starting dose and monitor closely. Gilbert syndrome is usually benign, but jaundice may recur.",
+      "drugs_guide": [
+        {
+          "drug_name": "Irinotecan — UGT1A1 poor metabolizer (*28/*28, *6/*6, *6/*28)",
+          "chinese_name": "Irinotecan — UGT1A1 Poor Metabolizer",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "UGT1A1 poor metabolizers have reduced SN-38 clearance and higher risk of diarrhea and neutropenia after irinotecan. An oncology specialist should reduce the starting dose and monitor blood counts and gastrointestinal symptoms closely.",
+          "cpic_level": "FDA Label (irinotecan) / DPWG 2022 UGT1A1-Irinotecan Guideline"
+        },
+        {
+          "drug_name": "Atazanavir — UGT1A1 poor metabolizer",
+          "chinese_name": "Atazanavir — UGT1A1 Poor Metabolizer",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "UGT1A1 poor metabolizers may develop unconjugated hyperbilirubinemia and jaundice with atazanavir, usually without requiring discontinuation. Monitor bilirubin and liver tests if jaundice is prominent.",
+          "cpic_level": "CPIC UGT1A1-Atazanavir Guideline Level A / FDA Label"
+        }
+      ],
+      "dietary_contraindications": [
+        "Dehydration, fasting or infection may worsen jaundice in Gilbert syndrome; maintain hydration and regular meals",
+        "Contact your care team promptly for severe diarrhea, fever or unusual fatigue during irinotecan treatment"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Supported by FDA labeling and DPWG guidance",
+      "clinvar_summary_chinese": "ClinVar and PharmGKB contain UGT1A1 *28 (rs3064744) and *6 (rs4148323) bilirubin and irinotecan response variants",
+      "key_pmids": [
+        "PMID:36443464"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Before irinotecan treatment, discuss UGT1A1 genotyping with your oncology team if you have a history of jaundice or severe chemotherapy toxicity.",
+      "lifestyle_tips": [
+        "People with Gilbert syndrome do not need strict dietary restrictions, but should avoid prolonged fasting and dehydration",
+        "Track diarrhea frequency and temperature during irinotecan treatment and seek care early if abnormal",
+        "Do not use anti-diarrheal medicines to mask severe symptoms without consulting your care team"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Medical Oncology / Gastroenterology / Clinical Pharmacy",
+      "questions": [
+        "My UGT1A1 result suggests I am a poor metabolizer. Does my irinotecan dose need adjustment?",
+        "I sometimes develop jaundice. Could this be Gilbert syndrome, and should I be evaluated further?",
+        "What should I do about diarrhea or fever during treatment, and when should I return?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“If I have Gilbert syndrome, I cannot receive any chemotherapy.”",
+      "truth": "Not true. Gilbert syndrome is usually benign, but UGT1A1 poor metabolism affects irinotecan clearance and toxicity risk. An oncology specialist should decide whether dose adjustment is needed based on genotype, regimen and clinical status."
+    }
+  },
+  "LCT": {
+    "gene": {
+      "chinese_name": "Lactase (Lactose Digestion Trait Gene)",
+      "chromosome": "2q21.3 (Chromosome 2)",
+      "metaphor": {
+        "title": "🥛 The Small Intestine's 【Milk Sugar Scissors】",
+        "story": "Lactose is the natural sugar in milk and dairy foods. The small intestine's lactase enzyme acts like scissors that cut lactose into smaller, absorbable sugars. Many East Asian adults naturally produce less lactase with age. This is a common physiological difference, not a disease; bloating or diarrhea after milk can often be improved by changing how dairy is consumed."
+      },
+      "plain_summary": "LCT is involved in lactase persistence. Lactase non-persistence, which causes lactose intolerance, is common in East Asian adults and is a normal physiological difference. Symptoms are usually mild and can be reduced by taking smaller portions, choosing low-lactose dairy, or using lactase supplements.",
+      "academic_summary": "LCT encodes intestinal brush-border lactase, which hydrolyzes lactose into glucose and galactose. Lactase persistence is regulated by MCM6 enhancer variants such as -13910C>T (rs4988235), but East Asian populations commonly have lactase non-persistence, and rs4988235 is not the major disease variant in East Asians."
+    },
+    "disease": {
+      "chinese_name": "Adult-Type Lactose Intolerance (Lactase Non-Persistence)",
+      "categories": [
+        "Lifestyle Trait",
+        "Nutrition & Digestive Health"
+      ],
+      "inheritance_mode": "Complex / Polygenic Lifestyle Trait",
+      "severity_badge": "🟡 Common and Usually Mild Dietary Trait"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004789",
+        "name": "Lactose intolerance",
+        "chinese_name": "Lactose intolerance / lactose digestion discomfort"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Lactase enzyme supplement",
+        "chinese_name": "Lactase Enzyme Supplement",
+        "mechanism": "Supplies lactase to help break down lactose",
+        "approval_status": "Over-the-counter supplement"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "LCT -13910C>T (rs4988235); lactase non-persistence is common in East Asian adults, and rs4988235 is not the major disease variant in East Asians",
+      "population_frequency": "Lactase non-persistence affects up to 70%–90% or more of East Asian adults; lactose intolerance is usually a normal physiological difference (PMID:26715078)",
+      "traffic_light_summary": "This is a lifestyle-related trait with no drug-gene (PGx) prescribing guideline. The effect of lactose intolerance is usually mild, and dietary adjustment and lifestyle matter more.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Choose low-lactose or lactose-free dairy, or consume dairy in smaller divided portions",
+        "If dairy is completely avoided, ensure adequate calcium and vitamin D intake"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️ Common lifestyle trait with mild evidence",
+      "clinvar_summary_chinese": "Lactase non-persistence is a common physiological trait, not a single high-penetrance pathogenic variant; it is the norm in East Asian populations",
+      "key_pmids": [
+        "PMID:26715078"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If milk repeatedly causes bloating, abdominal pain or diarrhea, keep a food diary and discuss lactose intolerance with your doctor or dietitian if needed.",
+      "lifestyle_tips": [
+        "Start with small amounts of dairy and find your personal tolerance rather than avoiding all dairy",
+        "Try yogurt, cheese or low-lactose milk as lower-lactose options",
+        "If you limit dairy, obtain enough calcium and vitamin D from other foods or supplements"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Family Medicine / Gastroenterology / Nutrition Counseling",
+      "questions": [
+        "I often feel bloated or have diarrhea after milk. Could I have lactose intolerance?",
+        "Do I need a lactose breath test or other testing to confirm it?",
+        "If I reduce dairy, how should I get enough calcium and vitamin D?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Almost all East Asians are lactose intolerant, so they should avoid milk completely.”",
+      "truth": "Not true. Lactase non-persistence is common in East Asian adults, but most people can still tolerate small amounts of dairy. Divided portions, low-lactose products or lactase supplements can help balance nutrition and comfort."
+    }
+  },
+  "CYP1A2": {
+    "gene": {
+      "chinese_name": "Cytochrome P450 1A2 (Caffeine Metabolism Trait Gene)",
+      "chromosome": "15q24.1 (Chromosome 15)",
+      "metaphor": {
+        "title": "☕ The Liver's 【Caffeine Timer】",
+        "story": "Caffeine in coffee, tea and energy drinks is mainly broken down by the liver's CYP1A2 timer. Everyone's timer runs at a different speed: some people can drink coffee in the afternoon and still sleep well, while others lie awake counting sheep after a midday cup. This difference is usually mild, and timing and amount often matter more than genotype."
+      },
+      "plain_summary": "CYP1A2 is the main enzyme that metabolizes caffeine. Individual differences in metabolism may affect palpitations, alertness and sleep after coffee, but the effect is usually mild. Adjusting timing and amount and keeping a regular sleep schedule is usually more practical than worrying about genotype.",
+      "academic_summary": "CYP1A2 encodes cytochrome P450 1A2, which catalyzes caffeine N3-demethylation, the main clearance pathway. Variants such as CYP1A2*1F (rs762551) may influence enzyme inducibility and caffeine metabolism, but caffeine sensitivity is also affected by intake, smoking, medications and sleep habits."
+    },
+    "disease": {
+      "chinese_name": "Caffeine Sensitivity & Sleep Effects (Insomnia Susceptibility)",
+      "categories": [
+        "Lifestyle Trait",
+        "Sleep & Caffeine Metabolism"
+      ],
+      "inheritance_mode": "Complex / Polygenic Lifestyle Trait",
+      "severity_badge": "🟡 Common and Usually Mild Caffeine Sensitivity Trait"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0100785",
+        "name": "Insomnia",
+        "chinese_name": "Insomnia / sleep disturbance"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Caffeine",
+        "chinese_name": "Caffeine",
+        "mechanism": "Central nervous system stimulant mainly metabolized by CYP1A2",
+        "approval_status": "Food and drug ingredient"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CYP1A2*1F (rs762551) is associated with caffeine metabolism speed; individual variation is large",
+      "population_frequency": "CYP1A2*1F allele frequency varies by population; caffeine sensitivity is also influenced by intake, smoking, medications and sleep habits (PMID:16522833)",
+      "traffic_light_summary": "This is a lifestyle-related trait with no drug-gene (PGx) prescribing guideline. Individual differences in caffeine metabolism are usually mild, and sleep habits, intake and lifestyle matter more.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Reduce coffee, tea, energy drinks and chocolate in the afternoon or evening to improve sleep",
+        "Avoid combining with drugs that inhibit CYP1A2 or with heavy alcohol use"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️ Common lifestyle trait with mild evidence",
+      "clinvar_summary_chinese": "CYP1A2 variants are associated with caffeine metabolism speed, but this is mostly a lifestyle trait rather than a single high-penetrance pathogenic variant",
+      "key_pmids": [
+        "PMID:16522833"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If coffee often causes palpitations, anxiety or insomnia, record the timing and amount of caffeine intake and discuss it with your doctor if needed.",
+      "lifestyle_tips": [
+        "Keep caffeine intake in the morning and switch to decaffeinated drinks later in the day",
+        "Watch for hidden caffeine in energy drinks, tea and chocolate",
+        "Keep a regular sleep schedule and avoid screens before bed"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Family Medicine / Sleep Medicine / Nutrition Counseling",
+      "questions": [
+        "I get palpitations or cannot sleep after coffee. Could this be related to caffeine metabolism?",
+        "Do I need CYP1A2 genetic testing, and would the result change your advice?",
+        "Besides reducing caffeine, what else can I do to improve my sleep?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“If coffee keeps me awake, my genes must be bad.”",
+      "truth": "Not necessarily. Caffeine metabolism is only one factor; timing, amount, sleep habits, stress and medications also matter. Adjusting lifestyle usually helps more than focusing on genotype alone."
+    }
+  },
+  "FTO": {
+    "gene": {
+      "chinese_name": "FTO Gene (Obesity Susceptibility Gene)",
+      "chromosome": "16q12.2 (Chromosome 16)",
+      "metaphor": {
+        "title": "⚖️ A 【Small Weight】 on the Body-Weight Scale",
+        "story": "Some FTO variants act like a small weight on the body-weight scale, making weight gain slightly more likely. But the weight is light; daily food choices, physical activity, sleep and the environment determine which way the scale tips."
+      },
+      "plain_summary": "FTO is one of many genes associated with obesity susceptibility, but any single variant usually has a small effect. Body weight is mainly shaped by diet, activity, sleep and environment. A genetic result does not mean obesity is inevitable, and weight-loss drugs should not be chosen based on genotype alone.",
+      "academic_summary": "FTO is located at 16q12.2, and the common intron 1 variant rs9939609 is associated with BMI and obesity susceptibility. Genome-wide association studies show a modest effect modified by physical activity, diet and other genes; FTO is not a single deterministic obesity gene."
+    },
+    "disease": {
+      "chinese_name": "Obesity Susceptibility (Polygenic Lifestyle Trait)",
+      "categories": [
+        "Lifestyle Trait",
+        "Weight & Metabolic Health"
+      ],
+      "inheritance_mode": "Complex / Polygenic Lifestyle Trait",
+      "severity_badge": "🟡 Common Polygenic Trait with Mild Effect"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001513",
+        "name": "Obesity",
+        "chinese_name": "Obesity / weight gain tendency"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Semaglutide",
+        "chinese_name": "Semaglutide",
+        "mechanism": "GLP-1 receptor agonist used for obesity; not dosed by FTO genotype",
+        "approval_status": "FDA-approved weight-management drug"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "FTO rs9939609 (intron 1); effect is mild and modified by lifestyle",
+      "population_frequency": "FTO rs9939609 risk allele frequency varies by population; the effect of a single variant on BMI is usually small (PMID:17496892)",
+      "traffic_light_summary": "This is a lifestyle-related trait with no drug-gene (PGx) prescribing guideline. FTO variants usually have a mild effect on body weight, and diet, exercise and sleep habits matter more.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Use balanced eating, regular physical activity and adequate sleep as the main weight-management strategy",
+        "Do not judge obesity risk or start weight-loss drugs based on a single genetic result"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️ Common polygenic trait with a mild single-variant effect",
+      "clinvar_summary_chinese": "FTO rs9939609 is associated with obesity susceptibility, but the effect is mild and it is not a single high-penetrance pathogenic variant",
+      "key_pmids": [
+        "PMID:17496892"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Assess obesity risk with overall health measures such as BMI, waist circumference, blood pressure, glucose and lipids; do not rely on FTO genotype alone to guide treatment.",
+      "lifestyle_tips": [
+        "Build eating and activity habits you can maintain long term rather than extreme short-term diets",
+        "Accumulate moderate-intensity physical activity each week and reduce sedentary time",
+        "Ensure adequate sleep and stress management, as poor sleep can affect appetite and weight"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Family Medicine / Endocrinology & Metabolism / Nutrition Counseling",
+      "questions": [
+        "My FTO result suggests higher obesity susceptibility. Does that mean I will definitely become obese?",
+        "Besides genetics, which metabolic measures should I check to assess weight-related health risk?",
+        "If I need to lose weight, what diet, exercise or medication strategies fit me?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“If I carry the FTO obesity gene, I can never lose weight no matter how hard I try.”",
+      "truth": "Not true. The effect of a single FTO variant on weight is usually small, and diet, exercise, sleep and environment matter more. Genetic results can be a health reminder but do not replace lifestyle change and medical assessment."
+    }
+  },
+  "HBB": {
+    "gene": {
+      "chinese_name": "Hemoglobin Subunit Beta (HBB)",
+      "chromosome": "11p15.4 (Chromosome 11)",
+      "metaphor": {
+        "title": "🩸 The Blood's 【Oxygen Delivery β Crew】",
+        "story": "Red blood cells are like the body's delivery fleet, and hemoglobin is the oxygen rack on each truck. HBB makes the β-chain parts of that rack. If β chains are in short supply, the rack cannot be assembled properly, red blood cells become small and fragile and are cleared early, and oxygen delivery suffers. This is beta-thalassemia."
+      },
+      "plain_summary": "The HBB gene makes the β chain of hemoglobin. Having one pathogenic variant usually means being an asymptomatic carrier: most carriers are healthy and may only have mild anemia. The real disease risk mainly arises when both parents carry the same beta-thalassemia variant, which gives their child a higher chance of being affected. Knowing carrier status helps with premarital and preconception genetic counseling.",
+      "academic_summary": "HBB is located at 11p15.4 and encodes the hemoglobin β chain. HBB pathogenic variants (β0 or β+) reduce or eliminate β-chain synthesis, causing free α-chain precipitation, ineffective erythropoiesis and hemolytic anemia in an autosomal recessive pattern. Phenotypes range from mild carrier states to transfusion-dependent major disease."
+    },
+    "disease": {
+      "chinese_name": "Beta-Thalassemia (β-Type Thalassemia)",
+      "categories": [
+        "Blood Disorder",
+        "Inherited Hemoglobin Disorder"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟠 Needs regular follow-up (manageable with transfusion and iron chelation)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001903",
+        "name": "Anemia",
+        "chinese_name": "Anemia"
+      },
+      {
+        "hpo_id": "HP:0004840",
+        "name": "Hypochromic microcytic anemia",
+        "chinese_name": "Hypochromic microcytic anemia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Deferasirox",
+        "chinese_name": "Deferasirox (Iron Chelator)",
+        "mechanism": "Chelates excess iron to reduce iron overload from long-term transfusion",
+        "approval_status": "FDA-approved prescription drug"
+      },
+      {
+        "drug_name": "Blood transfusion",
+        "chinese_name": "Regular Blood Transfusion",
+        "mechanism": "Replaces healthy red blood cells to improve anemia and tissue oxygenation",
+        "approval_status": "Standard supportive treatment"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "HBB pathogenic variants (e.g., β0/β+ variants); beta-thalassemia is mainly caused by reduced hemoglobin β-chain synthesis",
+      "population_frequency": "Beta-thalassemia carrier rates are higher in Mediterranean, Middle Eastern, South Asian and Southeast Asian populations, and carriers are also seen in Taiwan; carrier frequency varies by region (PMID:20301599)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Standard treatment for beta-thalassemia relies on regular transfusion, iron chelators such as deferasirox, and supportive care; whether and how intensively to treat should be decided by a hematologist based on the clinical picture.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid self-supplementing with iron products, which can worsen iron overload",
+        "People receiving transfusions should have ferritin and liver function monitored regularly"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple HBB pathogenic variants with a clear association with beta-thalassemia",
+      "key_pmids": [
+        "PMID:20301599"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have anemia, a family history, or are planning a pregnancy, consider hematologic testing and hemoglobin electrophoresis; HBB genetic testing and genetic counseling may be needed.",
+      "lifestyle_tips": [
+        "Eat a balanced diet and take folic acid as advised; do not self-supplement iron",
+        "Avoid excessive fatigue and seek care early for palpitations, dizziness or shortness of breath",
+        "Before pregnancy, have carrier screening and genetic counseling together with your partner"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Hematology / Genetic Counseling / Pediatrics",
+      "questions": [
+        "My HBB test shows I am a carrier. Will this affect my health?",
+        "Should my partner also have beta-thalassemia carrier screening?",
+        "If we plan a pregnancy, what prenatal or preimplantation testing options are available?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Having a thalassemia gene means you cannot have children.”",
+      "truth": "Not true. Most carriers are healthy and can have children normally. The key is knowing whether your partner also carries the same variant and preparing through genetic counseling and prenatal testing."
+    }
+  },
+  "HBA1": {
+    "gene": {
+      "chinese_name": "Hemoglobin Subunit Alpha 1 (HBA1)",
+      "chromosome": "16p13.3 (Chromosome 16)",
+      "metaphor": {
+        "title": "🩸 The 【α-Chain Duo】 on the Hemoglobin Rack",
+        "story": "Hemoglobin needs α chains and β chains assembled together. α chains are made mainly by HBA1 together with its partner gene HBA2, like two workers on the same production line. If α-chain output is low, red blood cells become small and thin and may rupture early, producing alpha-thalassemia."
+      },
+      "plain_summary": "HBA1 works with its partner gene HBA2 to make the α chain of hemoglobin. Having only one pathogenic variant usually means being an asymptomatic carrier: most carriers are healthy. The real disease risk mainly arises when both parents carry the same alpha-thalassemia variant, which gives their child a higher chance of being affected. Carrier status can be planned for through genetic counseling and preconception testing.",
+      "academic_summary": "HBA1 and HBA2 are located at 16p13.3 and together encode the hemoglobin α chain. Alpha-thalassemia is mostly caused by HBA1/HBA2 deletions or point mutations that reduce α-chain synthesis, inherited in an autosomal recessive pattern. Carriers are usually asymptomatic or have only mild microcytic anemia, while severe forms present as HbH disease or hydrops fetalis depending on the number of deleted alleles."
+    },
+    "disease": {
+      "chinese_name": "Alpha-Thalassemia (α-Type Thalassemia)",
+      "categories": [
+        "Blood Disorder",
+        "Inherited Hemoglobin Disorder"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟠 Needs regular follow-up (severity varies with the number of deletions)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001903",
+        "name": "Anemia",
+        "chinese_name": "Anemia"
+      },
+      {
+        "hpo_id": "HP:0004840",
+        "name": "Hypochromic microcytic anemia",
+        "chinese_name": "Hypochromic microcytic anemia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Deferasirox",
+        "chinese_name": "Deferasirox (Iron Chelator)",
+        "mechanism": "Chelates excess iron to reduce iron overload from long-term transfusion",
+        "approval_status": "FDA-approved prescription drug"
+      },
+      {
+        "drug_name": "Blood transfusion",
+        "chinese_name": "Regular Blood Transfusion",
+        "mechanism": "Replaces healthy red blood cells to improve anemia and tissue oxygenation",
+        "approval_status": "Standard supportive treatment"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "HBA1/HBA2 deletions or point mutations; alpha-thalassemia is mainly caused by reduced α-chain synthesis, and HBA2 is an important partner gene",
+      "population_frequency": "Alpha-thalassemia carrier status is relatively common in Southeast Asian, southern Chinese and Taiwanese populations; carrier frequency varies by region and deletion type (PMID:20301608)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Standard treatment for alpha-thalassemia relies on regular transfusion, iron chelators such as deferasirox, and supportive care; mild carriers usually need no specific medication, and treatment decisions should be made by a hematologist.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid self-supplementing with iron products, which can worsen iron overload",
+        "People receiving transfusions should have ferritin and liver function monitored regularly"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple HBA1/HBA2 deletions and pathogenic variants with a clear association with alpha-thalassemia",
+      "key_pmids": [
+        "PMID:20301608"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have microcytic anemia, a family history, or are planning a pregnancy, consider hematologic testing and hemoglobin electrophoresis; HBA1/HBA2 genetic testing and genetic counseling may be needed.",
+      "lifestyle_tips": [
+        "Eat a balanced diet and take folic acid as advised; do not self-supplement iron",
+        "Avoid excessive fatigue and seek care early for palpitations, dizziness or shortness of breath",
+        "Before pregnancy, have carrier screening and genetic counseling together with your partner"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Hematology / Genetic Counseling / Pediatrics",
+      "questions": [
+        "My HBA1 test shows I am a carrier. Will this affect my health?",
+        "Do I also need HBA2 testing, and should my partner have alpha-thalassemia carrier screening?",
+        "If we plan a pregnancy, what prenatal or preimplantation testing options are available?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Only beta-thalassemia matters; being an alpha-thalassemia carrier is not a concern.”",
+      "truth": "Not true. Alpha-thalassemia carriers are usually healthy, but if both parents carry α-chain variants, their child may have more severe anemia. Preconception carrier screening and genetic counseling help assess the risk."
+    }
+  },
+  "SMN1": {
+    "gene": {
+      "chinese_name": "Survival of Motor Neuron 1 (SMN1)",
+      "chromosome": "5q13.2 (Chromosome 5)",
+      "metaphor": {
+        "title": "🧠 The 【Motor Neuron Supply Station】 in the Spinal Cord",
+        "story": "Motor neurons are like the wires that carry “move” signals, and SMN1 is the supply station that keeps those wires healthy. If SMN1 function is insufficient, motor neurons gradually degenerate and muscles become weak and wasted. This is spinal muscular atrophy (SMA)."
+      },
+      "plain_summary": "The SMN1 gene keeps motor neurons alive. Having only one pathogenic variant (usually an SMN1 deletion) usually means being an asymptomatic carrier: most carriers are healthy with normal motor function. The real disease risk mainly arises when both parents carry an SMN1 variant, which gives their child a higher chance of spinal muscular atrophy. Carrier screening and genetic counseling help with reproductive planning.",
+      "academic_summary": "SMN1 is located at 5q13.2 and encodes the survival motor neuron protein. About 95% of spinal muscular atrophy is caused by biallelic SMN1 deletion and is inherited in an autosomal recessive pattern; disease severity correlates with the number of residual SMN2 copies, and clinical types range from type 1 to type 4."
+    },
+    "disease": {
+      "chinese_name": "Spinal Muscular Atrophy (SMA)",
+      "categories": [
+        "Neuromuscular Disorder",
+        "Inherited Neurological Disorder"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟠 Needs early diagnosis (disease-modifying treatments are available)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001252",
+        "name": "Hypotonia",
+        "chinese_name": "Low muscle tone"
+      },
+      {
+        "hpo_id": "HP:0003202",
+        "name": "Skeletal muscle atrophy",
+        "chinese_name": "Skeletal muscle atrophy"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Nusinersen",
+        "chinese_name": "Nusinersen",
+        "mechanism": "Antisense oligonucleotide that promotes SMN2 expression to compensate for SMN protein deficiency",
+        "approval_status": "FDA-approved SMA therapy"
+      },
+      {
+        "drug_name": "Onasemnogene abeparvovec",
+        "chinese_name": "Gene Therapy (Onasemnogene abeparvovec)",
+        "mechanism": "Delivers a functional SMN gene via a viral vector",
+        "approval_status": "FDA-approved gene therapy"
+      },
+      {
+        "drug_name": "Risdiplam",
+        "chinese_name": "Risdiplam",
+        "mechanism": "Oral SMN2 splicing modifier that increases functional SMN protein",
+        "approval_status": "FDA-approved SMA therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SMN1 deletion or pathogenic variant; SMA is mainly caused by biallelic loss of SMN1 function, and SMN2 copy number affects severity",
+      "population_frequency": "SMN1 carrier frequency is about 1 in 40–60 people and varies by population (PMID:20301526)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Standard treatment for spinal muscular atrophy includes nusinersen, onasemnogene abeparvovec and risdiplam, which are disease-modifying therapies; whether and when to use them should be assessed by a neurologist based on type and age.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "No specific dietary restrictions; focus on adequate nutrition and rehabilitation as needed",
+        "During disease-modifying therapy, monitor liver function and adverse effects as advised"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple SMN1 deletions and pathogenic variants with a clear association with spinal muscular atrophy",
+      "key_pmids": [
+        "PMID:20301526"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have a family history or are planning a pregnancy, consider SMN1 carrier screening and genetic counseling; newborns with low muscle tone or developmental delay should be evaluated by a neurologist early.",
+      "lifestyle_tips": [
+        "Follow the care team's advice for physical therapy and rehabilitation to maintain joint mobility",
+        "Pay attention to respiratory care and nutritional support to prevent infection",
+        "Before pregnancy, have carrier screening and genetic counseling together with your partner"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Neurology / Pediatric Neurology / Genetic Counseling",
+      "questions": [
+        "My SMN1 carrier screen shows I am a carrier. Will this affect my health?",
+        "Should my partner also have SMN1 carrier screening?",
+        "If we plan a pregnancy, what prenatal or preimplantation testing options are available?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“SMA carriers will develop the disease themselves.”",
+      "truth": "No. Carriers usually have one functional SMN1 copy and are healthy; disease requires both alleles to be affected. The value of carrier screening is to assess reproductive risk, not to judge whether an individual has the disease."
+    }
+  },
+  "GJB2": {
+    "gene": {
+      "chinese_name": "Gap Junction Protein Beta 2 (GJB2)",
+      "chromosome": "13q12.11 (Chromosome 13)",
+      "metaphor": {
+        "title": "👂 The 【Sound-Signal Bridge】 in the Inner Ear",
+        "story": "Hair cells in the inner ear must pass sound signals onward, and the gap-junction proteins made by GJB2 connect the cells like bridges. If the bridges are poorly built, sound-signal transmission is impaired and congenital sensorineural hearing loss can result."
+      },
+      "plain_summary": "The GJB2 gene is involved in gap-junction proteins of the inner ear. Having only one pathogenic variant usually means being an asymptomatic carrier with normal hearing. The real disease risk mainly arises when both parents carry a GJB2 variant, which gives their child a higher chance of congenital hearing loss. Newborn hearing screening and genetic counseling help with early detection and intervention.",
+      "academic_summary": "GJB2 is located at 13q12.11 and encodes connexin 26. Biallelic GJB2 pathogenic variants are one of the most common causes of autosomal recessive nonsyndromic hearing loss and are inherited in an autosomal recessive pattern; carriers usually have normal hearing."
+    },
+    "disease": {
+      "chinese_name": "Autosomal Recessive Nonsyndromic Deafness 1A (GJB2-Related)",
+      "categories": [
+        "Hearing Disorder",
+        "Inherited Sensory-Neural Disorder"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟠 Needs early intervention (hearing aids and rehabilitation can help)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000407",
+        "name": "Sensorineural hearing impairment",
+        "chinese_name": "Sensorineural hearing loss"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Cochlear implant",
+        "chinese_name": "Cochlear Implant",
+        "mechanism": "Electrodes directly stimulate the auditory nerve to help restore sound perception in severe hearing loss",
+        "approval_status": "Standard medical implant"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "GJB2 pathogenic variants (e.g., c.235delC); associated with autosomal recessive nonsyndromic hearing loss",
+      "population_frequency": "GJB2-related hearing loss is common in East Asian and several other populations; carrier frequency varies by population (PMID:20301449)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Management of GJB2-related hearing loss centers on newborn hearing screening, hearing aids, cochlear implants and speech rehabilitation; whether to implant a cochlear device should be assessed by an ENT and audiology team.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "No specific dietary restrictions; avoid prolonged exposure to loud noise to protect residual hearing",
+        "Follow the audiology team's advice for regular hearing and speech-language follow-up"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple GJB2 pathogenic variants with a clear association with autosomal recessive nonsyndromic hearing loss",
+      "key_pmids": [
+        "PMID:20301449"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Newborns should have hearing screening; if there is a family history of hearing loss or a planned pregnancy, consider GJB2 genetic testing and genetic counseling.",
+      "lifestyle_tips": [
+        "Avoid prolonged exposure to loud noise to protect residual hearing",
+        "Use hearing aids or a cochlear implant as advised and continue speech rehabilitation",
+        "Before pregnancy, have carrier screening and genetic counseling together with your partner"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Otolaryngology / Audiology / Genetic Counseling",
+      "questions": [
+        "My GJB2 test shows I am a carrier. Will my hearing be affected?",
+        "Should my partner also have GJB2 carrier screening?",
+        "If my child has hearing loss, what is the process for evaluating hearing aids or a cochlear implant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“A GJB2 carrier's child will definitely be unable to hear.”",
+      "truth": "Not necessarily. Carriers usually have normal hearing, and whether a child is affected depends on whether the other parent also carries a GJB2 variant. Genetic counseling and newborn hearing screening allow early assessment and intervention."
+    }
+  },
+  "LDLR": {
+    "gene": {
+      "chinese_name": "Low Density Lipoprotein Receptor (LDLR)",
+      "chromosome": "19p13.2 (Chromosome 19)",
+      "metaphor": {
+        "title": "🩺 The 【Cholesterol Recycling Station】 at the Liver's Door",
+        "story": "Low-density lipoprotein (LDL, the “bad cholesterol”) in the blood must be taken up by LDLR recycling stations at the liver's door. If there are too few stations or they are faulty, LDL keeps accumulating in the blood and long-term risk of atherosclerosis and cardiovascular disease rises."
+      },
+      "plain_summary": "The LDLR gene makes the LDL receptor on the liver surface, which helps clear bad cholesterol from the blood. A pathogenic variant can raise cholesterol, and it is inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Lipid testing, dietary changes and medication can effectively lower cardiovascular risk.",
+      "academic_summary": "LDLR is located at 19p13.2 and encodes the LDL receptor, which mediates hepatic clearance of LDL. Loss-of-function LDLR variants cause familial hypercholesterolemia in an autosomal dominant pattern; blood LDL-C rises markedly, accelerating atherosclerosis and myocardial infarction risk."
+    },
+    "disease": {
+      "chinese_name": "Familial Hypercholesterolemia",
+      "categories": [
+        "Lipid Metabolism Disorder",
+        "Cardiovascular Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs long-term management (controllable with lipid-lowering therapy)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003124",
+        "name": "Hypercholesterolemia",
+        "chinese_name": "High cholesterol"
+      },
+      {
+        "hpo_id": "HP:0001658",
+        "name": "Myocardial infarction",
+        "chinese_name": "Heart attack"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Statins",
+        "chinese_name": "Statins",
+        "mechanism": "Inhibit HMG-CoA reductase, reducing hepatic cholesterol synthesis and increasing LDL receptor clearance",
+        "approval_status": "FDA-approved prescription drug"
+      },
+      {
+        "drug_name": "PCSK9 inhibitors",
+        "chinese_name": "PCSK9 Inhibitors",
+        "mechanism": "Inhibit PCSK9-mediated degradation of the LDL receptor, increasing LDL clearance",
+        "approval_status": "FDA-approved prescription drug"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "LDLR loss-of-function pathogenic variants; familial hypercholesterolemia is mainly caused by reduced LDL receptor clearance",
+      "population_frequency": "Heterozygous familial hypercholesterolemia affects about 1 in 250–300 people and varies by population (PMID:20301692)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Standard treatment for familial hypercholesterolemia relies on statins, PCSK9 inhibitors, diet and lifestyle changes; whether and how to use medication should be decided by a cardiologist or endocrinologist based on lipids and overall risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Reduce saturated and trans fat intake and increase vegetables, whole grains and soluble fiber",
+        "Exercise regularly, maintain a healthy weight and stop smoking to lower cardiovascular risk"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature include many LDLR pathogenic variants with a clear association with familial hypercholesterolemia",
+      "key_pmids": [
+        "PMID:20301692"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have a family history of early cardiovascular disease or high lipids, consider lipid testing; LDLR genetic testing may be needed, and first-degree relatives should be evaluated too.",
+      "lifestyle_tips": [
+        "Follow a Mediterranean-style or low-saturated-fat diet with plenty of vegetables, fruit and soluble fiber",
+        "Exercise regularly, maintain a healthy weight and stop smoking",
+        "Keep regular lipid follow-up as advised and do not stop lipid-lowering medication on your own"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Endocrinology / Genetic Counseling",
+      "questions": [
+        "My LDLR test shows a pathogenic variant. What should my cholesterol target be?",
+        "Should my parents, siblings or children also have lipid testing or genetic testing?",
+        "Besides statins, am I a candidate for PCSK9 inhibitors or other lipid-lowering therapy?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“High cholesterol is only about eating too much fat and has nothing to do with genes.”",
+      "truth": "Not necessarily. Familial hypercholesterolemia is often caused by variants in LDLR and related genes, so cholesterol can be high even with a light diet. Genetic testing and family screening allow early identification and treatment."
+    }
+  },
+  "MYH7": {
+    "gene": {
+      "chinese_name": "Myosin Heavy Chain 7 (MYH7)",
+      "chromosome": "14q11.2 (Chromosome 14)",
+      "metaphor": {
+        "title": "❤️ The 【Motor Heavy Chain】 in Heart Muscle",
+        "story": "Heart muscle contraction is like an engine running, and the myosin heavy chain made by MYH7 is a key motor part. If the part is designed poorly, the heart muscle may thicken abnormally and contract and relax out of sync, producing hypertrophic cardiomyopathy."
+      },
+      "plain_summary": "The MYH7 gene is involved in heart-muscle contractile proteins. A pathogenic variant can increase the risk of hypertrophic cardiomyopathy, and it is inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Most people can manage it well with regular cardiac evaluation, lifestyle adjustments and medication.",
+      "academic_summary": "MYH7 is located at 14q11.2 and encodes the cardiac β myosin heavy chain. MYH7 pathogenic variants are a common cause of hypertrophic cardiomyopathy and are inherited in an autosomal dominant pattern; they can cause myocardial hypertrophy, diastolic dysfunction and arrhythmia risk."
+    },
+    "disease": {
+      "chinese_name": "Hypertrophic Cardiomyopathy",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiac evaluation (manageable with medication and monitoring)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0011675",
+        "name": "Arrhythmia",
+        "chinese_name": "Arrhythmia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "Mavacamten",
+        "mechanism": "Cardiac myosin inhibitor that reduces excessive myocardial contraction",
+        "approval_status": "FDA-approved prescription drug"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Lower heart rate and contractility, improving symptoms and diastolic filling",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MYH7 pathogenic variants; hypertrophic cardiomyopathy is mainly caused by variants in cardiac sarcomere genes",
+      "population_frequency": "Hypertrophic cardiomyopathy affects about 1 in 500 people, and MYH7 and MYBPC3 are common causative genes (PMID:20301725)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Standard treatment for hypertrophic cardiomyopathy includes beta-blockers, mavacamten and regular cardiac monitoring; whether and which medication to use should be assessed by a cardiologist based on symptoms, outflow tract obstruction and arrhythmia risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid dehydration, excess alcohol and dehydrating strenuous exercise, which can worsen symptoms",
+        "Attend regular echocardiography and rhythm monitoring as advised"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature include many MYH7 pathogenic variants with a clear association with hypertrophic cardiomyopathy",
+      "key_pmids": [
+        "PMID:20301725"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have a family history of hypertrophic cardiomyopathy, a heart murmur, chest tightness or exertional syncope, consider echocardiography and genetic counseling; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Stay adequately hydrated and avoid dehydration and excess alcohol",
+        "Choose exercise intensity with your doctor's advice and avoid unevaluated high-intensity competitive sports",
+        "Keep regular cardiac and rhythm follow-up and seek care early for chest pain, syncope or palpitations"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My MYH7 test shows a pathogenic variant. How often should my heart be checked?",
+        "Should my parents, siblings or children also have cardiac evaluation or genetic testing?",
+        "Am I suitable for beta-blockers or mavacamten, and what exercise limits apply to me?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“People with a heart-thickening gene cannot exercise.”",
+      "truth": "Not necessarily. Most patients can exercise moderately after medical evaluation; the key is to avoid unevaluated high-intensity competitive sports and to keep regular cardiac and rhythm follow-up."
+    }
+  },
+  "MYBPC3": {
+    "gene": {
+      "chinese_name": "Myosin Binding Protein C3 (MYBPC3)",
+      "chromosome": "11p11.2 (Chromosome 11)",
+      "metaphor": {
+        "title": "❤️ The 【Speed-Regulating Spring】 in the Heart Engine",
+        "story": "Heart muscle contraction needs many proteins working together, and the binding protein made by MYBPC3 acts like a speed-regulating spring in the engine, helping contraction and relaxation keep their rhythm. If the spring malfunctions, the heart muscle may gradually thicken, producing hypertrophic cardiomyopathy."
+      },
+      "plain_summary": "The MYBPC3 gene is involved in regulating heart-muscle contractile proteins. A pathogenic variant can increase the risk of hypertrophic cardiomyopathy, and it is inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Most people can manage it well with regular cardiac evaluation, lifestyle adjustments and medication.",
+      "academic_summary": "MYBPC3 is located at 11p11.2 and encodes cardiac myosin binding protein C. MYBPC3 pathogenic variants are one of the most common causes of hypertrophic cardiomyopathy and are inherited in an autosomal dominant pattern; they can cause myocardial hypertrophy, diastolic dysfunction and arrhythmia risk."
+    },
+    "disease": {
+      "chinese_name": "Hypertrophic Cardiomyopathy",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiac evaluation (manageable with medication and monitoring)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0011675",
+        "name": "Arrhythmia",
+        "chinese_name": "Arrhythmia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "Mavacamten",
+        "mechanism": "Cardiac myosin inhibitor that reduces excessive myocardial contraction",
+        "approval_status": "FDA-approved prescription drug"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Lower heart rate and contractility, improving symptoms and diastolic filling",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MYBPC3 pathogenic variants (often truncating); hypertrophic cardiomyopathy is mainly caused by variants in cardiac sarcomere genes",
+      "population_frequency": "Hypertrophic cardiomyopathy affects about 1 in 500 people, and MYBPC3 and MYH7 are common causative genes (PMID:20301725)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Standard treatment for hypertrophic cardiomyopathy includes beta-blockers, mavacamten and regular cardiac monitoring; whether and which medication to use should be assessed by a cardiologist based on symptoms, outflow tract obstruction and arrhythmia risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid dehydration, excess alcohol and dehydrating strenuous exercise, which can worsen symptoms",
+        "Attend regular echocardiography and rhythm monitoring as advised"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature include many MYBPC3 pathogenic variants with a clear association with hypertrophic cardiomyopathy",
+      "key_pmids": [
+        "PMID:20301725"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have a family history of hypertrophic cardiomyopathy, a heart murmur, chest tightness or exertional syncope, consider echocardiography and genetic counseling; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Stay adequately hydrated and avoid dehydration and excess alcohol",
+        "Choose exercise intensity with your doctor's advice and avoid unevaluated high-intensity competitive sports",
+        "Keep regular cardiac and rhythm follow-up and seek care early for chest pain, syncope or palpitations"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My MYBPC3 test shows a pathogenic variant. How often should my heart be checked?",
+        "Should my parents, siblings or children also have cardiac evaluation or genetic testing?",
+        "Am I suitable for beta-blockers or mavacamten, and what exercise limits apply to me?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“People with a hypertrophic cardiomyopathy gene cannot exercise.”",
+      "truth": "Not necessarily. Most patients can exercise moderately after medical evaluation; the key is to avoid unevaluated high-intensity competitive sports and to keep regular cardiac and rhythm follow-up."
+    }
+  },
+  "BRCA2": {
+    "gene": {
+      "chinese_name": "BRCA2 DNA Repair Associated",
+      "chromosome": "13q13.1 (Chromosome 13)",
+      "metaphor": {
+        "title": "🧬 The DNA Repair Team's 【RAD51 Recruiter】",
+        "story": "When DNA suffers a double-strand break, the cell needs a precise repair process. BRCA2 acts like the site coordinator who brings the key repair tool RAD51 to the break. If the coordinator walks off the job, repair cannot be completed, errors accumulate, and over time the risk of breast, ovarian, prostate and pancreatic cancer rises."
+      },
+      "plain_summary": "BRCA2 is an important DNA repair gene. Carrying a pathogenic variant does NOT mean cancer is inevitable; it means lifetime risk of breast, ovarian, prostate and pancreatic cancer is higher than average, so earlier structured screening and genetic counseling are important.",
+      "academic_summary": "BRCA2 is located at 13q13.1 and encodes a ~384-kDa nuclear protein that interacts with RAD51 through BRC repeats to mediate error-free homologous recombination (HR) repair of DNA double-strand breaks. Germline heterozygous pathogenic variants cause HR deficiency, producing autosomal dominant hereditary breast and ovarian cancer syndrome and conferring synthetic lethality sensitivity to PARP inhibitors."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Breast and Ovarian Cancer Syndrome (HBOC)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Cancer Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Preventable & Treatable)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003002",
+        "name": "Breast carcinoma",
+        "chinese_name": "Breast carcinoma"
+      },
+      {
+        "hpo_id": "HP:0100615",
+        "name": "Ovarian neoplasm",
+        "chinese_name": "Ovarian neoplasm"
+      },
+      {
+        "hpo_id": "HP:0012125",
+        "name": "Prostate cancer",
+        "chinese_name": "Prostate cancer"
+      },
+      {
+        "hpo_id": "HP:0100787",
+        "name": "Pancreatic neoplasm",
+        "chinese_name": "Pancreatic neoplasm"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Olaparib",
+        "chinese_name": "Olaparib (Lynparza)",
+        "mechanism": "PARP1/2 inhibitor (synthetic lethality in HR-deficient tumors)",
+        "approval_status": "FDA / TFDA / NMPA Approved"
+      },
+      {
+        "drug_name": "Talazoparib",
+        "chinese_name": "Talazoparib (Talzenna)",
+        "mechanism": "Potent PARP1/2 inhibitor and PARP-DNA trapper",
+        "approval_status": "FDA / TFDA / NMPA Approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "Germline pathogenic variants (e.g., c.5946delT / rs80359550)",
+      "population_frequency": "~1 in 400 to 1 in 800 in the general population, varying by ancestry (PMID:20301425)",
+      "traffic_light_summary": "🟢 Targeted Therapy Sensitive: BRCA2-related tumors with germline pathogenic variants show synthetic lethality sensitivity to PARP inhibitors such as olaparib and talazoparib.",
+      "drugs_guide": [
+        {
+          "drug_name": "Olaparib / Talazoparib",
+          "chinese_name": "Olaparib / Talazoparib",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "Via synthetic lethality, patients with germline pathogenic BRCA2 variants derive significant clinical benefit from PARP inhibitor therapy.",
+          "cpic_level": "FDA Companion Diagnostic / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "Strictly limit alcohol consumption",
+        "Use long-term unopposed exogenous estrogen replacement therapy with caution"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "Numerous clearly pathogenic BRCA2 variants curated in ClinVar and the literature",
+      "key_pmids": [
+        "PMID:20301425",
+        "PMID:28522680"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Following NCCN guidance, begin annual breast MRI plus mammography starting at age 25–30; discuss pancreatic surveillance if there is a family history of pancreatic cancer, and discuss prostate cancer screening for men.",
+      "lifestyle_tips": [
+        "Maintain a healthy body weight, regular sleep schedule, and low-saturated-fat diet",
+        "Avoid tobacco and strictly limit alcohol intake",
+        "Discuss reproductive planning and preimplantation genetic testing (PGT) with a genetic counseling team"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Breast Surgery / Medical Oncology / Clinical Genetics Clinic",
+      "questions": [
+        "My genetic report shows a BRCA2 variant. At what age should I start annual breast MRI?",
+        "Do I need pancreatic or prostate cancer surveillance, and what tests and intervals do you recommend?",
+        "Should my first-degree relatives undergo cascade genetic testing for this exact variant?",
+        "If I plan to have children, is preimplantation genetic testing (PGT) appropriate for me?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Testing positive for a BRCA2 mutation means I am 100% guaranteed to get cancer.”",
+      "truth": "No. A pathogenic variant raises lifetime risk but is not a certainty. With structured screening, lifestyle changes and appropriate preventive measures, most carriers can achieve early detection and early treatment."
+    }
+  },
+  "PALB2": {
+    "gene": {
+      "chinese_name": "Partner and Localizer of BRCA2 (PALB2)",
+      "chromosome": "16p12.2 (Chromosome 16)",
+      "metaphor": {
+        "title": "🧬 The DNA Repair Team's 【Navigator and Partner】",
+        "story": "The name PALB2 describes its role: it is BRCA2's partner and guides BRCA2 to the site of DNA damage. Without this navigator, BRCA2 cannot reach the repair site. When repair efficiency falls, the risk of breast and pancreatic cancer rises."
+      },
+      "plain_summary": "PALB2 is an important partner gene that helps BRCA2 repair DNA. Carrying a pathogenic variant does NOT mean cancer is inevitable; it means the risk of breast and pancreatic cancer is higher than average, so earlier breast imaging, pancreatic surveillance and genetic counseling should be discussed with a doctor.",
+      "academic_summary": "PALB2 is located at 16p12.2 and encodes a BRCA2-binding protein that localizes BRCA2 to DNA damage sites and promotes RAD51-dependent homologous recombination repair. Germline heterozygous pathogenic variants are associated with hereditary breast and ovarian cancer syndrome and pancreatic cancer susceptibility in an autosomal dominant pattern, and tumors are similarly sensitive to PARP inhibitors."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Breast and Ovarian Cancer Syndrome (HBOC)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Cancer Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Preventable & Treatable)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003002",
+        "name": "Breast carcinoma",
+        "chinese_name": "Breast carcinoma"
+      },
+      {
+        "hpo_id": "HP:0100787",
+        "name": "Pancreatic neoplasm",
+        "chinese_name": "Pancreatic neoplasm"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Olaparib",
+        "chinese_name": "Olaparib (Lynparza)",
+        "mechanism": "PARP1/2 inhibitor (synthetic lethality in HR-deficient tumors)",
+        "approval_status": "FDA / TFDA / NMPA Approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "Germline pathogenic variants (e.g., c.3113G>A / rs118203985)",
+      "population_frequency": "PALB2 pathogenic variants are relatively uncommon in the general population, and carrier frequency varies by ancestry (PMID:25099575)",
+      "traffic_light_summary": "🟢 Targeted Therapy Sensitive: PALB2-related homologous recombination-deficient tumors are sensitive to PARP inhibitors such as olaparib, supported by guideline and clinical trial evidence.",
+      "drugs_guide": [
+        {
+          "drug_name": "Olaparib",
+          "chinese_name": "Olaparib (Lynparza)",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "Germline pathogenic PALB2 variants cause homologous recombination deficiency, and PARP inhibitors can provide clinical benefit through synthetic lethality.",
+          "cpic_level": "NCCN Guideline / Clinical Trial Evidence"
+        }
+      ],
+      "dietary_contraindications": [
+        "Strictly limit alcohol consumption",
+        "Use long-term unopposed exogenous estrogen replacement therapy with caution"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Supported by international guidelines and clinical trials",
+      "clinvar_summary_chinese": "Multiple PALB2 pathogenic variants curated in ClinVar and the literature are associated with breast and pancreatic cancer susceptibility",
+      "key_pmids": [
+        "PMID:25099575",
+        "PMID:31841383"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Following NCCN guidance and medical advice, discuss beginning annual breast MRI plus mammography at an earlier age; if there is a family history of pancreatic cancer, discuss pancreatic surveillance.",
+      "lifestyle_tips": [
+        "Maintain a healthy body weight, regular sleep schedule, and low-saturated-fat diet",
+        "Avoid tobacco and strictly limit alcohol intake",
+        "Discuss family screening and reproductive planning with a genetic counseling team"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Breast Surgery / Medical Oncology / Clinical Genetics Clinic",
+      "questions": [
+        "My genetic report shows a PALB2 variant. At what age should I start annual breast MRI?",
+        "Do I need pancreatic cancer surveillance, and what tests and intervals do you recommend?",
+        "Should my first-degree relatives undergo cascade genetic testing for this exact variant?",
+        "If my tumor is homologous recombination deficient, am I a candidate for PARP inhibitors?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“PALB2 is not BRCA, so it does not matter.”",
+      "truth": "Not true. PALB2 is an important partner of BRCA2, and pathogenic variants also raise breast and pancreatic cancer risk. Genetic counseling and appropriate screening allow early assessment and management."
+    }
+  },
+  "MLH1": {
+    "gene": {
+      "chinese_name": "MutL Homolog 1 (MLH1)",
+      "chromosome": "3p22.2 (Chromosome 3)",
+      "metaphor": {
+        "title": "🧬 The Cell's 【Typo Proofreader】",
+        "story": "DNA replication occasionally makes a typo, and MLH1 acts like the cell's proofreader, finding and correcting mismatches. If the proofreader walks off the job, typos accumulate, cells can grow out of control, and the risk of colon and endometrial cancer rises. This is related to Lynch syndrome."
+      },
+      "plain_summary": "MLH1 is a key DNA mismatch repair (MMR) gene. A pathogenic variant raises lifetime risk of Lynch syndrome-related cancers such as colon and endometrial cancer, is inherited in an autosomal dominant pattern, and first-degree relatives may carry the same variant. Earlier, regular colonoscopy and gynecologic surveillance allow early detection and management.",
+      "academic_summary": "MLH1 is located at 3p22.2 and encodes a MutL homolog that forms mismatch repair complexes with MSH2/MSH6/PMS2 to correct base mismatches and small insertions/deletions during DNA replication. Germline heterozygous pathogenic variants cause mismatch repair deficiency and microsatellite instability-high (MSI-H) tumors, leading to autosomal dominant Lynch syndrome; dMMR/MSI-H tumors are sensitive to PD-1 immune checkpoint inhibitors."
+    },
+    "disease": {
+      "chinese_name": "Lynch Syndrome (Hereditary Non-Polyposis Colorectal Cancer)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Cancer Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Manageable with surveillance and treatment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "Colon cancer"
+      },
+      {
+        "hpo_id": "HP:0012114",
+        "name": "Endometrial carcinoma",
+        "chinese_name": "Endometrial carcinoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Pembrolizumab",
+        "chinese_name": "Pembrolizumab (Keytruda)",
+        "mechanism": "PD-1 immune checkpoint inhibitor for dMMR/MSI-H tumors",
+        "approval_status": "FDA biomarker-approved / NCCN Category 1"
+      },
+      {
+        "drug_name": "Nivolumab",
+        "chinese_name": "Nivolumab (Opdivo)",
+        "mechanism": "PD-1 immune checkpoint inhibitor for dMMR/MSI-H tumors",
+        "approval_status": "FDA biomarker-approved / NCCN Category 1"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "Germline pathogenic variants in the MLH1 mismatch repair gene; tumors often show dMMR/MSI-H",
+      "population_frequency": "Lynch syndrome affects about 1 in 300 people and varies by ancestry and gene (PMID:20301390)",
+      "traffic_light_summary": "🟢 Immunotherapy Sensitive: dMMR/MSI-H tumors respond well to PD-1 immune checkpoint inhibitors such as pembrolizumab and nivolumab, under FDA biomarker approval and NCCN Category 1.",
+      "drugs_guide": [
+        {
+          "drug_name": "Pembrolizumab / Nivolumab",
+          "chinese_name": "Pembrolizumab / Nivolumab",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "MLH1-deficient dMMR/MSI-H tumors respond well to PD-1 immune checkpoint inhibitors; dMMR/MSI-H status should be confirmed pathologically before use.",
+          "cpic_level": "FDA Biomarker-Approved (dMMR/MSI-H) / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "Reduce processed meat and red meat intake and increase vegetables, fruit and whole grains",
+        "Limit alcohol intake and maintain a healthy body weight"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "Many MLH1 pathogenic variants curated in ClinVar and the literature are associated with Lynch syndrome and dMMR/MSI-H tumors",
+      "key_pmids": [
+        "PMID:20301390",
+        "PMID:26023682"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Following NCCN guidance and medical advice, begin colonoscopy every 1–2 years starting at age 20–25; women may discuss endometrial cancer surveillance; family members should receive genetic counseling and testing.",
+      "lifestyle_tips": [
+        "Reduce processed meat and red meat and increase vegetables, fruit and whole grains",
+        "Exercise regularly, maintain a healthy weight and limit alcohol",
+        "Seek care early for blood in the stool, changes in bowel habits or abnormal bleeding"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Medical Oncology / Gynecology / Clinical Genetics Clinic",
+      "questions": [
+        "My genetic report shows an MLH1 variant. At what age should I start colonoscopy, and how often?",
+        "Do I need endometrial cancer surveillance, and what tests do you recommend?",
+        "Should my tumor be tested for dMMR/MSI-H, and would that affect the choice of immunotherapy?",
+        "Should my first-degree relatives undergo cascade genetic testing for this exact variant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Lynch syndrome means you will definitely get colon cancer.”",
+      "truth": "No. Lynch syndrome raises risk, but regular colonoscopy surveillance, lifestyle changes and appropriate medical care greatly reduce risk and enable early detection and treatment."
+    }
+  },
+  "MSH2": {
+    "gene": {
+      "chinese_name": "MutS Homolog 2 (MSH2)",
+      "chromosome": "2p21 (Chromosome 2)",
+      "metaphor": {
+        "title": "🧬 The 【Mismatch Detector】 at the DNA Proofreading Desk",
+        "story": "DNA replication inevitably produces mismatches, and MSH2 acts like a detector at the proofreading desk: it finds the typo first and hands it to the repair team. If the detector fails, typos accumulate, cells can drift toward cancer, and this is related to Lynch syndrome."
+      },
+      "plain_summary": "MSH2 is a key DNA mismatch repair (MMR) gene. A pathogenic variant raises lifetime risk of Lynch syndrome-related cancers such as colon and endometrial cancer, is inherited in an autosomal dominant pattern, and first-degree relatives may carry the same variant. Earlier, regular colonoscopy and gynecologic surveillance allow early detection and management.",
+      "academic_summary": "MSH2 is located at 2p21 and encodes a MutS homolog that forms the MutSα complex with MSH6 to recognize DNA base mismatches and small insertions/deletions and recruit MLH1/PMS2 for repair. Germline heterozygous pathogenic variants cause mismatch repair deficiency and microsatellite instability-high (MSI-H) tumors, leading to autosomal dominant Lynch syndrome; dMMR/MSI-H tumors are sensitive to PD-1 immune checkpoint inhibitors."
+    },
+    "disease": {
+      "chinese_name": "Lynch Syndrome (Hereditary Non-Polyposis Colorectal Cancer)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Cancer Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Manageable with surveillance and treatment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "Colon cancer"
+      },
+      {
+        "hpo_id": "HP:0012114",
+        "name": "Endometrial carcinoma",
+        "chinese_name": "Endometrial carcinoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Pembrolizumab",
+        "chinese_name": "Pembrolizumab (Keytruda)",
+        "mechanism": "PD-1 immune checkpoint inhibitor for dMMR/MSI-H tumors",
+        "approval_status": "FDA biomarker-approved / NCCN Category 1"
+      },
+      {
+        "drug_name": "Nivolumab",
+        "chinese_name": "Nivolumab (Opdivo)",
+        "mechanism": "PD-1 immune checkpoint inhibitor for dMMR/MSI-H tumors",
+        "approval_status": "FDA biomarker-approved / NCCN Category 1"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "Germline pathogenic variants in the MSH2 mismatch repair gene; tumors often show dMMR/MSI-H",
+      "population_frequency": "Lynch syndrome affects about 1 in 300 people and varies by ancestry and gene (PMID:20301390)",
+      "traffic_light_summary": "🟢 Immunotherapy Sensitive: dMMR/MSI-H tumors respond well to PD-1 immune checkpoint inhibitors such as pembrolizumab and nivolumab, under FDA biomarker approval and NCCN Category 1.",
+      "drugs_guide": [
+        {
+          "drug_name": "Pembrolizumab / Nivolumab",
+          "chinese_name": "Pembrolizumab / Nivolumab",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "MSH2-deficient dMMR/MSI-H tumors respond well to PD-1 immune checkpoint inhibitors; dMMR/MSI-H status should be confirmed pathologically before use.",
+          "cpic_level": "FDA Biomarker-Approved (dMMR/MSI-H) / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "Reduce processed meat and red meat intake and increase vegetables, fruit and whole grains",
+        "Limit alcohol intake and maintain a healthy body weight"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "Many MSH2 pathogenic variants curated in ClinVar and the literature are associated with Lynch syndrome and dMMR/MSI-H tumors",
+      "key_pmids": [
+        "PMID:20301390",
+        "PMID:26023682"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Following NCCN guidance and medical advice, begin colonoscopy every 1–2 years starting at age 20–25; women may discuss endometrial cancer surveillance; family members should receive genetic counseling and testing.",
+      "lifestyle_tips": [
+        "Reduce processed meat and red meat and increase vegetables, fruit and whole grains",
+        "Exercise regularly, maintain a healthy weight and limit alcohol",
+        "Seek care early for blood in the stool, changes in bowel habits or abnormal bleeding"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Medical Oncology / Gynecology / Clinical Genetics Clinic",
+      "questions": [
+        "My genetic report shows an MSH2 variant. At what age should I start colonoscopy, and how often?",
+        "Do I need endometrial cancer surveillance, and what tests do you recommend?",
+        "Should my tumor be tested for dMMR/MSI-H, and would that affect the choice of immunotherapy?",
+        "Should my first-degree relatives undergo cascade genetic testing for this exact variant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Lynch syndrome means you will definitely get colon cancer.”",
+      "truth": "No. Lynch syndrome raises risk, but regular colonoscopy surveillance, lifestyle changes and appropriate medical care greatly reduce risk and enable early detection and treatment."
     }
   }
 };

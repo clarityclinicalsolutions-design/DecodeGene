@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from enum import Enum
 from typing import Dict, List, Literal, Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 
 class TrafficLight(str, Enum):
@@ -64,8 +64,16 @@ class PharmacogenomicsGuide(BaseModel):
     key_variant: str = Field(..., min_length=2)
     population_frequency: str = Field(..., min_length=2)
     traffic_light_summary: str = Field(..., min_length=5)
-    drugs_guide: List[PGxDrugItem] = Field(..., min_length=1)
+    drugs_guide: List[PGxDrugItem] = Field(default_factory=list)
     dietary_contraindications: List[str] = Field(..., min_length=1)
+
+    @model_validator(mode="after")
+    def _validate_has_pgx(self) -> "PharmacogenomicsGuide":
+        if self.has_pgx and not self.drugs_guide:
+            raise ValueError("drugs_guide must be non-empty when has_pgx is true")
+        if not self.has_pgx and self.drugs_guide:
+            raise ValueError("drugs_guide must be empty when has_pgx is false")
+        return self
 
 
 class EvidenceSummary(BaseModel):

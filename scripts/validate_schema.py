@@ -17,6 +17,35 @@ ALLOWED_DISEASE_NAMESPACES = ("MONDO:", "PHARMGKB:", "MESH:")
 DISEASE_ID_RE = re.compile(r"^(?:MONDO:\d{7}|PHARMGKB:PA\d+|MESH:D\d{6,9})$")
 GUIDELINE_ID_RE = re.compile(r"^PHARMGKB:PA\d+$")
 ALLOWED_MESH_TREE_PREFIXES = ("C", "G")
+PGX_NO_GUIDELINE_MARKERS = ("無", "沒有", "尚无", "尚無", "暂无", "暫無")
+PGX_GENE_TERMS = ("藥物基因", "用药基因", "藥物基因組", "用药基因组")
+PGX_GUIDELINE_TERMS = ("指引", "準則", "指南", "規範", "规范", "建議", "建议")
+
+
+def _validate_pharmacogenomics(symbol: str, pgx: dict) -> None:
+    has_pgx = pgx["has_pgx"]
+    drugs_guide = pgx["drugs_guide"]
+    if has_pgx is True:
+        assert len(drugs_guide) >= 1, f"{symbol} has_pgx=true requires a non-empty drugs_guide"
+        for item in drugs_guide:
+            tl = item["traffic_light"]
+            assert tl in ALLOWED_TRAFFIC_LIGHTS, (
+                f"{symbol} invalid traffic_light '{tl}', allowed={ALLOWED_TRAFFIC_LIGHTS}"
+            )
+        return
+
+    assert has_pgx is False, f"{symbol} pharmacogenomics.has_pgx must be a boolean"
+    assert drugs_guide == [], f"{symbol} drugs_guide must be empty when has_pgx is false"
+    summary = pgx["traffic_light_summary"].strip()
+    assert any(marker in summary for marker in PGX_NO_GUIDELINE_MARKERS), (
+        f"{symbol} traffic_light_summary must state that no drug-gene guideline exists"
+    )
+    assert any(term in summary for term in PGX_GENE_TERMS), (
+        f"{symbol} traffic_light_summary must mention drug-gene (PGx) guidance"
+    )
+    assert any(term in summary for term in PGX_GUIDELINE_TERMS), (
+        f"{symbol} traffic_light_summary must mention a guideline/guidance term"
+    )
 
 
 def _validate_mesh_tree_numbers(symbol: str, disease_id: str, entry: dict) -> None:
@@ -132,13 +161,7 @@ def validate(dataset_path: Path = DATASET_PATH, registry_path: Path = REGISTRY_P
             assert re.match(r"^HP:\d{7}$", hpo["hpo_id"]), f"Invalid HPO ID: {hpo['hpo_id']}"
 
         assert len(rec["drugs_targeted"]) >= 1, f"{symbol} missing drugs_targeted"
-        pgx = rec["pharmacogenomics"]
-        assert pgx["has_pgx"] is True, f"{symbol} pharmacogenomics.has_pgx must be True"
-        for item in pgx["drugs_guide"]:
-            tl = item["traffic_light"]
-            assert tl in ALLOWED_TRAFFIC_LIGHTS, (
-                f"{symbol} invalid traffic_light '{tl}', allowed={ALLOWED_TRAFFIC_LIGHTS}"
-            )
+        _validate_pharmacogenomics(symbol, rec["pharmacogenomics"])
 
         for pmid in rec["evidence"]["key_pmids"]:
             assert re.match(r"^PMID:\d+$", pmid), f"{symbol} invalid PMID '{pmid}'"

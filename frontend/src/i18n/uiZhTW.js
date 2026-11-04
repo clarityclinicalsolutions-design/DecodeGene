@@ -42,6 +42,7 @@ export const UI_ZH_TW = {
   pgxVariantLabel: '關鍵位點：',
   pgxFreqLabel: '人群頻率：',
   pgxDietTitle: '🥗 飲食與生活禁忌',
+  pgxNoGuidelineNote: '此基因目前沒有藥物基因（PGx）用藥指引，因此不列出紅綠燈清單。',
   lifestyleEyebrow: '🛡️ 科學生活與篩檢指南 · Lifestyle & Screening',
   lifestyleTitle: '把風險變成可執行的行動',
   lifestyleScreeningLabel: '篩檢建議',

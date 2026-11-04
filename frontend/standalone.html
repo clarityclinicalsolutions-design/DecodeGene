@@ -625,11 +625,12 @@
           var record = activeRecord();
           if (!record) return;
           var gene = record.gene, pgx = record.pharmacogenomics;
-          var lights = (pgx.drugs_guide || []).map(function (item) {
+          var hasPgx = pgx.has_pgx !== false;
+          var lights = hasPgx ? (pgx.drugs_guide || []).map(function (item) {
             var meta = lightMeta(item.traffic_light);
             return '<div class="light ' + meta.cls + '"><div class="light-head"><span>' + meta.icon + '</span><div><strong>' + esc(item.chinese_name) + '</strong><small>' + esc(item.drug_name) + '</small></div><span class="pill">' + meta.label + '</span></div>' +
               '<p>' + esc(item.clinical_alert) + '</p><span class="tag">' + esc(item.cpic_level) + '</span></div>';
-          }).join('');
+          }).join('') : '';
 
           var proHtml = '';
           if (state.mode === 'pro') {
@@ -661,6 +662,7 @@
             '<span class="badge">' + esc(record.disease.inheritance_mode) + '</span></div></article>' +
             '<article class="card"><div class="eyebrow">' + (isEn ? '💊 Daily Drug & Diet Traffic Light' : '💊 日常用藥與飲食紅綠燈') + '</div><h2>' + (isEn ? 'Check the Traffic Light Before Taking Medications' : '用藥前先看一眼紅綠燈') + '</h2>' +
             '<p class="pgx-summary">' + esc(pgx.traffic_light_summary) + '</p>' +
+            (hasPgx ? '' : '<p class="pgx-summary">' + (isEn ? 'No drug-gene (PGx) prescribing guideline is currently available for this gene, so no traffic-light list is shown.' : '此基因目前沒有藥物基因（PGx）用藥指引，因此不列出紅綠燈清單。') + '</p>') +
             '<div class="badges"><span class="badge">' + (isEn ? 'Key Variant: ' : '關鍵位點：') + esc(pgx.key_variant) + '</span><span class="badge">' + (isEn ? 'Frequency: ' : '人群頻率：') + esc(pgx.population_frequency) + '</span></div>' +
             '<div style="margin-top:12px">' + lights + '</div>' +
             '<div class="divider"></div><h3 style="font-size:.9rem">' + (isEn ? '🥗 Dietary & Lifestyle Contraindications' : '🥗 飲食與生活禁忌') + '</h3><ul>' +
@@ -700,10 +702,12 @@
             return '<span class="chip2 red">' + labels[key] + ' × ' + s.counts[key] + '</span>';
           }).join('') : '<span class="chip2">' + (isEn ? 'No PII detected' : '未檢測到可識別的 PII') + '</span>';
 
-          var pgxHtml = (result.record.pharmacogenomics.drugs_guide || []).map(function (item) {
+          var pgx = result.record.pharmacogenomics;
+          var hasPgx = pgx.has_pgx !== false;
+          var pgxHtml = hasPgx ? (pgx.drugs_guide || []).map(function (item) {
             var meta = lightMeta(item.traffic_light);
             return '<div class="light ' + meta.cls + '"><div class="light-head"><span>' + meta.icon + '</span><div><strong>' + esc(item.chinese_name) + '</strong><small>' + esc(item.drug_name) + '</small></div></div><p>' + esc(item.clinical_alert) + '</p><span class="tag">' + esc(item.cpic_level) + '</span></div>';
-          }).join('');
+          }).join('') : '<p class="pgx-summary">' + esc(pgx.traffic_light_summary) + '</p>';
 
           document.getElementById('decodeOutput').innerHTML =
             '<div class="result-box">' +

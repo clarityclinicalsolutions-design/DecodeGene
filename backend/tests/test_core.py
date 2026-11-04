@@ -11,6 +11,7 @@ from pathlib import Path
 
 import pytest
 from fastapi.testclient import TestClient
+from pydantic import ValidationError
 
 import backend.app.main as main_module
 from backend.app.core.config import get_settings
@@ -70,8 +71,10 @@ def test_dataset_has_seven_strictly_validated_records() -> None:
         assert record.gene.ensembl_id.startswith("ENSG")
         assert record.gene.biotype == "protein_coding"
         assert record.gene.metaphor.title
-        assert record.pharmacogenomics.has_pgx is True
-        assert record.pharmacogenomics.drugs_guide
+        if record.pharmacogenomics.has_pgx:
+            assert record.pharmacogenomics.drugs_guide
+        else:
+            assert record.pharmacogenomics.drugs_guide == []
         assert len(record.doctor_checklist.questions) >= 3
         assert record.myth_buster.truth
 
@@ -94,6 +97,42 @@ def test_mesh_tree_number_validator() -> None:
         
     with pytest.raises(AssertionError, match="must start with"):
         _validate_mesh_tree_numbers("TEST4", "MESH:D065729", {"tree_numbers": ["C25.100", "D08.244"]})
+
+
+def test_has_pgx_false_record_allows_empty_drugs_guide() -> None:
+    from scripts.validate_schema import _validate_pharmacogenomics
+
+    pgx = {
+        "has_pgx": False,
+        "key_variant": "無常見藥物基因變異",
+        "population_frequency": "依族群而異",
+        "traffic_light_summary": "此基因目前沒有藥物基因（PGx）用藥指引，臨床用藥請依醫師評估。",
+        "drugs_guide": [],
+        "dietary_contraindications": ["依醫師與藥師指示"],
+    }
+
+    raw = json.loads(DATASET.read_text(encoding="utf-8"))
+    data = json.loads(json.dumps(raw[0]))
+    data["pharmacogenomics"] = pgx
+    record = GeneDiseaseAssociation.model_validate(data)
+    assert record.pharmacogenomics.has_pgx is False
+    assert record.pharmacogenomics.drugs_guide == []
+    _validate_pharmacogenomics("TESTGENE", pgx)
+
+    with pytest.raises(ValidationError):
+        GeneDiseaseAssociation.model_validate(
+            {**data, "pharmacogenomics": {**pgx, "has_pgx": True}}
+        )
+    with pytest.raises(ValidationError):
+        GeneDiseaseAssociation.model_validate(
+            {
+                **data,
+                "pharmacogenomics": {
+                    **pgx,
+                    "drugs_guide": [raw[0]["pharmacogenomics"]["drugs_guide"][0]],
+                },
+            }
+        )
 
 
 def test_evidence_guideline_ids_optional() -> None:
@@ -490,7 +529,7 @@ console.log('FALLBACK_OK');
 def test_all_fourteen_genes_pass_validator_and_match_registry() -> None:
     from scripts.validate_schema import validate
 
-    assert EXPECTED_COUNT == 14
+    assert EXPECTED_COUNT == len(EXPECTED_GENES)
     assert validate() == 0
 
 

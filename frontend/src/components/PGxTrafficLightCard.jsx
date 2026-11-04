@@ -45,7 +45,8 @@ const LIGHT_META_BY_LANG = {
 
 export default function PGxTrafficLightCard({ record, lang = 'zh-TW' }) {
   const pgx = record.pharmacogenomics;
-  const lights = pgx.drugs_guide || [];
+  const hasPgx = pgx.has_pgx !== false;
+  const lights = hasPgx ? pgx.drugs_guide || [] : [];
   const metaMap = LIGHT_META_BY_LANG[lang] || LIGHT_META_BY_LANG['zh-TW'];
 
   return (
@@ -66,7 +67,7 @@ export default function PGxTrafficLightCard({ record, lang = 'zh-TW' }) {
       </div>
 
       <div className="light-list">
-        {lights.map((item) => {
+        {hasPgx ? lights.map((item) => {
           const meta = metaMap[item.traffic_light] || metaMap.YELLOW_CAUTION;
           return (
             <div key={`${item.drug_name}-${item.traffic_light}`} className={`light-item ${meta.className}`}>
@@ -85,7 +86,9 @@ export default function PGxTrafficLightCard({ record, lang = 'zh-TW' }) {
               </div>
             </div>
           );
-        })}
+        }) : (
+          <p className="pgx-summary">{t(lang, 'pgxNoGuidelineNote')}</p>
+        )}
       </div>
 
       <div className="diet-block">
