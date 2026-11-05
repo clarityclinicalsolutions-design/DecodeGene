@@ -3368,6 +3368,2030 @@ window.DEMO_DATA = [
       "myth": "「林奇症候群一定會得大腸癌？」",
       "truth": "不是。林奇症候群會提高風險，但透過規律大腸鏡監測、生活型態調整與必要時的醫療處置，可以大幅降低風險並及早發現、及早治療。"
     }
+  },
+  {
+    "association_id": "GDA_MSH6_LYNCH_SYNDROME",
+    "gene": {
+      "symbol": "MSH6",
+      "name": "mutS homolog 6",
+      "chinese_name": "錯配修復基因 MSH6",
+      "ensembl_id": "ENSG00000116062",
+      "entrez_id": "2956",
+      "biotype": "protein_coding",
+      "chromosome": "2p16.3 (2 號染色體)",
+      "metaphor": {
+        "title": "🧬 DNA 校對隊裡的【單字錯配偵測器】",
+        "story": "DNA 複製時常出現單一鹼基的錯配，MSH6 與 MSH2 搭檔組成偵測器，專門找出這些小錯誤並交給修復團隊。偵測器失靈時，錯配會慢慢累積，細胞便容易走向癌變，這與林奇症候群有關。"
+      },
+      "plain_summary": "MSH6 是 DNA 錯配修復 (MMR) 的重要基因。攜帶致病變異會提高林奇症候群相關癌症（如大腸癌、子宮內膜癌）的終身風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過較早且規律的腸鏡與婦科監測，可以及早發現與處理。",
+      "academic_summary": "MSH6 位於 2p16.3，編碼 MutS 同源蛋白，與 MSH2 形成 MutSα 複合體，辨識 DNA 複製過程中的單鹼基錯配與小片段插入缺失，再招募 MLH1/PMS2 完成修復。生殖系雜合致病變異造成錯配修復缺陷與微衛星不穩定 (MSI-H)，導致體染色體顯性遺傳的林奇症候群；dMMR/MSI-H 腫瘤對 PD-1 免疫檢查點抑制劑敏感。"
+    },
+    "disease": {
+      "id": "MONDO:0005835",
+      "name": "Lynch syndrome",
+      "chinese_name": "林奇症候群（遺傳性非息肉症大腸直腸癌）",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (可透過監測與治療管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "大腸癌"
+      },
+      {
+        "hpo_id": "HP:0012114",
+        "name": "Endometrial carcinoma",
+        "chinese_name": "子宮內膜癌"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Pembrolizumab",
+        "chinese_name": "帕博利珠單抗 (Pembrolizumab)",
+        "mechanism": "PD-1 免疫檢查點抑制劑，用於 dMMR/MSI-H 腫瘤",
+        "approval_status": "FDA 生物標記核准 / NCCN Category 1"
+      },
+      {
+        "drug_name": "Nivolumab",
+        "chinese_name": "納武利尤單抗 (Nivolumab)",
+        "mechanism": "PD-1 免疫檢查點抑制劑，用於 dMMR/MSI-H 腫瘤",
+        "approval_status": "FDA 生物標記核准 / NCCN Category 1"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "生殖系致病變異 (MSH6 錯配修復基因)；腫瘤常表現 dMMR/MSI-H",
+      "population_frequency": "林奇症候群約每 300 人中有 1 人，MSH6 相關比例因族群而異 (PMID:20301390)",
+      "traffic_light_summary": "🟢 免疫治療敏感（dMMR/MSI-H 腫瘤對 pembrolizumab、nivolumab 等 PD-1 免疫檢查點抑制劑有良好反應，屬 FDA 生物標記核准與 NCCN Category 1）",
+      "drugs_guide": [
+        {
+          "drug_name": "Pembrolizumab / Nivolumab",
+          "chinese_name": "帕博利珠單抗 / 納武利尤單抗",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "MSH6 缺陷造成的 dMMR/MSI-H 腫瘤對 PD-1 免疫檢查點抑制劑具良好反應，用藥前應以病理檢測確認 dMMR/MSI-H 狀態。",
+          "cpic_level": "FDA Biomarker-Approved (dMMR/MSI-H) / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "減少加工肉品與紅肉攝取，增加蔬菜、水果與全穀類",
+        "限制酒精攝取並維持健康體重"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.94,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 900,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 MSH6 致病變異，與林奇症候群及 dMMR/MSI-H 腫瘤相關",
+      "opentargets_score": 0.88,
+      "key_pmids": [
+        "PMID:20301390",
+        "PMID:31337882"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依 NCCN 指引與醫師討論，自 20-25 歲起每 1-2 年接受大腸鏡檢查；女性可討論子宮內膜癌監測；家族成員應接受遺傳諮詢與基因檢測。",
+      "lifestyle_tips": [
+        "減少加工肉品與紅肉，增加蔬菜、水果與全穀類攝取",
+        "規律運動、維持健康體重並限制酒精",
+        "出現血便、排便習慣改變或異常出血時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 腫瘤科 / 婦科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 MSH6 突變，我應該從幾歲開始做大腸鏡？多久一次？",
+        "我需要做子宮內膜癌的監測嗎？建議的檢查方式是什麼？",
+        "我的腫瘤是否應檢測 dMMR/MSI-H？這會影響免疫治療的選擇嗎？",
+        "我的直系親屬是否應該做同位點的基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「MSH6 只是林奇症候群的次要基因，風險不高？」",
+      "truth": "不對。MSH6 致病變異同樣會提高大腸癌與子宮內膜癌風險。透過遺傳諮詢與規律監測，可以及早發現與處理。"
+    }
+  },
+  {
+    "association_id": "GDA_PMS2_LYNCH_SYNDROME",
+    "gene": {
+      "symbol": "PMS2",
+      "name": "PMS2 mismatch repair endonuclease",
+      "chinese_name": "錯配修復基因 PMS2",
+      "ensembl_id": "ENSG00000122512",
+      "entrez_id": "5395",
+      "biotype": "protein_coding",
+      "chromosome": "7p22.1 (7 號染色體)",
+      "metaphor": {
+        "title": "🧬 DNA 校對流程的【最後一剪】",
+        "story": "錯配修復像一條分工明確的產線：MSH2/MSH6 找出錯字，MLH1/PMS2 負責切除錯誤片段。PMS2 就是負責最後一剪的關鍵角色。如果這一剪失靈，錯配無法真正移除，細胞便容易累積突變，增加林奇症候群相關癌症的風險。"
+      },
+      "plain_summary": "PMS2 是 DNA 錯配修復 (MMR) 的重要基因。攜帶致病變異會提高林奇症候群相關癌症（如大腸癌、子宮內膜癌）的終身風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過較早且規律的腸鏡與婦科監測，可以及早發現與處理。",
+      "academic_summary": "PMS2 位於 7p22.1，編碼 MutL 同源蛋白，與 MLH1 形成 MutLα 複合體，在錯配辨識後執行核酸內切切除。生殖系雜合致病變異造成錯配修復缺陷與微衛星不穩定 (MSI-H)，導致體染色體顯性遺傳的林奇症候群；dMMR/MSI-H 腫瘤對 PD-1 免疫檢查點抑制劑敏感。PMS2 附近存在偽基因，基因檢測判讀需特別留意。"
+    },
+    "disease": {
+      "id": "MONDO:0005835",
+      "name": "Lynch syndrome",
+      "chinese_name": "林奇症候群（遺傳性非息肉症大腸直腸癌）",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (可透過監測與治療管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "大腸癌"
+      },
+      {
+        "hpo_id": "HP:0012114",
+        "name": "Endometrial carcinoma",
+        "chinese_name": "子宮內膜癌"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Pembrolizumab",
+        "chinese_name": "帕博利珠單抗 (Pembrolizumab)",
+        "mechanism": "PD-1 免疫檢查點抑制劑，用於 dMMR/MSI-H 腫瘤",
+        "approval_status": "FDA 生物標記核准 / NCCN Category 1"
+      },
+      {
+        "drug_name": "Nivolumab",
+        "chinese_name": "納武利尤單抗 (Nivolumab)",
+        "mechanism": "PD-1 免疫檢查點抑制劑，用於 dMMR/MSI-H 腫瘤",
+        "approval_status": "FDA 生物標記核准 / NCCN Category 1"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "生殖系致病變異 (PMS2 錯配修復基因)；腫瘤常表現 dMMR/MSI-H",
+      "population_frequency": "林奇症候群約每 300 人中有 1 人，PMS2 相關比例因族群而異 (PMID:20301390)",
+      "traffic_light_summary": "🟢 免疫治療敏感（dMMR/MSI-H 腫瘤對 pembrolizumab、nivolumab 等 PD-1 免疫檢查點抑制劑有良好反應，屬 FDA 生物標記核准與 NCCN Category 1）",
+      "drugs_guide": [
+        {
+          "drug_name": "Pembrolizumab / Nivolumab",
+          "chinese_name": "帕博利珠單抗 / 納武利尤單抗",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "PMS2 缺陷造成的 dMMR/MSI-H 腫瘤對 PD-1 免疫檢查點抑制劑具良好反應，用藥前應以病理檢測確認 dMMR/MSI-H 狀態。",
+          "cpic_level": "FDA Biomarker-Approved (dMMR/MSI-H) / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "減少加工肉品與紅肉攝取，增加蔬菜、水果與全穀類",
+        "限制酒精攝取並維持健康體重"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 600,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 PMS2 致病變異，與林奇症候群及 dMMR/MSI-H 腫瘤相關",
+      "opentargets_score": 0.86,
+      "key_pmids": [
+        "PMID:20301390",
+        "PMID:30013564"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依 NCCN 指引與醫師討論，自 20-25 歲起每 1-2 年接受大腸鏡檢查；女性可討論子宮內膜癌監測；家族成員應接受遺傳諮詢與基因檢測。",
+      "lifestyle_tips": [
+        "減少加工肉品與紅肉，增加蔬菜、水果與全穀類攝取",
+        "規律運動、維持健康體重並限制酒精",
+        "出現血便、排便習慣改變或異常出血時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 腫瘤科 / 婦科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 PMS2 突變，我應該從幾歲開始做大腸鏡？多久一次？",
+        "我需要做子宮內膜癌的監測嗎？建議的檢查方式是什麼？",
+        "我的腫瘤是否應檢測 dMMR/MSI-H？這會影響免疫治療的選擇嗎？",
+        "我的直系親屬是否應該做同位點的基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「PMS2 突變的風險比其他林奇基因低，所以不用監測？」",
+      "truth": "不對。PMS2 致病變異仍會提高大腸癌與子宮內膜癌風險，且基因檢測判讀需注意偽基因干擾。規律監測與遺傳諮詢仍然重要。"
+    }
+  },
+  {
+    "association_id": "GDA_APC_FAMILIAL_ADENOMATOUS_POLYPOSIS",
+    "gene": {
+      "symbol": "APC",
+      "name": "APC regulator of WNT signaling pathway",
+      "chinese_name": "大腸腺瘤性息肉症基因 (APC)",
+      "ensembl_id": "ENSG00000134982",
+      "entrez_id": "324",
+      "biotype": "protein_coding",
+      "chromosome": "5q22.2 (5 號染色體)",
+      "metaphor": {
+        "title": "🚧 大腸細胞生長的【煞車系統】",
+        "story": "大腸黏膜細胞需要適度更新，APC 就像控制生長的煞車，避免細胞過度增生。如果煞車失靈，大腸會長出大量腺瘤性息肉，若不及時處理，部分息肉可能演變為大腸癌，這就是家族性腺瘤性息肉症 (FAP)。"
+      },
+      "plain_summary": "APC 是控制細胞生長的重要抑癌基因。攜帶致病變異會造成家族性腺瘤性息肉症 (FAP)，大腸在年輕時就可能出現大量息肉，若未監測與處理，大腸癌風險明顯升高。此症呈體染色體顯性遺傳，一等親也可能帶有相同變異，需要及早接受腸鏡監測與遺傳諮詢。",
+      "academic_summary": "APC 位於 5q22.2，編碼 WNT 訊息路徑的負向調控蛋白，參與 β-catenin 降解複合體。生殖系雜合致病變異導致腺瘤性息肉病，呈體染色體顯性遺傳；典型 FAP 可見數百至數千顆大腸腺瘤，若未處理幾乎都會進展為大腸癌。"
+    },
+    "disease": {
+      "id": "MONDO:0021056",
+      "name": "familial adenomatous polyposis 1",
+      "chinese_name": "家族性腺瘤性息肉症 1 型 (FAP)",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (需密集監測與必要時手術)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0200063",
+        "name": "Colorectal polyposis",
+        "chinese_name": "大腸息肉症"
+      },
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "大腸癌"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Colectomy",
+        "chinese_name": "大腸切除手術",
+        "mechanism": "移除高風險息肉與大腸黏膜，以降低大腸癌風險",
+        "approval_status": "標準外科治療"
+      },
+      {
+        "drug_name": "Celecoxib",
+        "chinese_name": "塞來昔布 (Celecoxib)",
+        "mechanism": "NSAID 輔助性化學預防，可能減少息肉數量，但不能取代監測或手術",
+        "approval_status": "輔助性使用，非基因導向給藥"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "APC 生殖系致病變異；家族性腺瘤性息肉症主要由 WNT 路徑調控失常造成",
+      "population_frequency": "典型 FAP 約每 8,000-10,000 人中有 1 人，因族群而異 (PMID:20301519)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。家族性腺瘤性息肉症的標準處置以密集大腸鏡監測、必要時大腸切除手術與遺傳諮詢為主；藥物僅屬輔助性化學預防，是否使用應由胃腸科與外科團隊評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "減少加工肉品與紅肉攝取，增加蔬菜、水果與全穀類",
+        "維持健康體重、規律運動並限制酒精"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 1800,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 APC 致病變異，與家族性腺瘤性息肉症的關聯明確",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:20301519"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依 NCCN 指引與醫師討論，自青春期前後開始定期大腸鏡監測；若息肉數量多或無法以內視鏡控制，應討論大腸切除手術的時機；家族成員應接受遺傳諮詢與基因檢測。",
+      "lifestyle_tips": [
+        "減少加工肉品與紅肉，增加蔬菜、水果與全穀類攝取",
+        "規律運動、維持健康體重並限制酒精",
+        "出現血便、腹痛或排便習慣改變時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 大腸直腸外科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 APC 突變，我應該從幾歲開始做大腸鏡？多久一次？",
+        "我的息肉數量與位置，是否建議接受大腸切除手術？時機為何？",
+        "NSAID 化學預防對我有幫助嗎？會取代手術或監測嗎？",
+        "我的直系親屬是否應該做同位點的基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「FAP 只要把息肉切掉就沒事了？」",
+      "truth": "不一定。FAP 的息肉會反覆生長，需要長期密集監測，部分患者仍需接受大腸切除手術以降低癌變風險。持續追蹤與遺傳諮詢才是關鍵。"
+    }
+  },
+  {
+    "association_id": "GDA_PTEN_HAMARTOMA_TUMOR_SYNDROME",
+    "gene": {
+      "symbol": "PTEN",
+      "name": "phosphatase and tensin homolog",
+      "chinese_name": "PTEN 抑癌基因",
+      "ensembl_id": "ENSG00000171862",
+      "entrez_id": "5728",
+      "biotype": "protein_coding",
+      "chromosome": "10q23.31 (10 號染色體)",
+      "metaphor": {
+        "title": "🛑 細胞生長的【油門抑制器】",
+        "story": "細胞內有一條促進生長的 PI3K/AKT 油門，PTEN 則負責踩住抑制器，避免生長訊號過強。若 PTEN 失效，油門容易卡住，細胞可能過度增生，形成多發性良性腫瘤（錯構瘤），並提高乳癌、甲狀腺癌與子宮內膜癌等風險，這稱為 PTEN 錯構瘤腫瘤症候群（含考登症候群）。"
+      },
+      "plain_summary": "PTEN 是重要的抑癌基因。攜帶致病變異會造成 PTEN 錯構瘤腫瘤症候群（包含考登症候群），可能出現大頭症、多發性良性腫瘤，並提高乳癌、甲狀腺癌與子宮內膜癌等風險。此症呈體染色體顯性遺傳，一等親也可能帶有相同變異，需要定期多專科監測與遺傳諮詢。",
+      "academic_summary": "PTEN 位於 10q23.31，編碼脂質磷酸酶，將 PIP3 去磷酸化為 PIP2，負向調控 PI3K/AKT/mTOR 訊息路徑。生殖系雜合致病變異造成 PTEN 錯構瘤腫瘤症候群 (PHTS)，呈體染色體顯性遺傳；表現包含大頭症、皮膚黏膜錯構瘤、乳癌、甲狀腺癌、子宮內膜癌與腎細胞癌等。"
+    },
+    "disease": {
+      "id": "MONDO:0017623",
+      "name": "PTEN hamartoma tumor syndrome",
+      "chinese_name": "PTEN 錯構瘤腫瘤症候群（含考登症候群）",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (需多專科定期監測)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000256",
+        "name": "Macrocephaly",
+        "chinese_name": "大頭症"
+      },
+      {
+        "hpo_id": "HP:0003002",
+        "name": "Breast carcinoma",
+        "chinese_name": "乳癌"
+      },
+      {
+        "hpo_id": "HP:0002890",
+        "name": "Thyroid carcinoma",
+        "chinese_name": "甲狀腺癌"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Risk-reducing surgery",
+        "chinese_name": "風險降低手術",
+        "mechanism": "依腫瘤風險移除高風險組織（如甲狀腺或乳房），需個別化評估",
+        "approval_status": "標準臨床處置"
+      },
+      {
+        "drug_name": "Everolimus",
+        "chinese_name": "Everolimus (mTOR 抑制劑)",
+        "mechanism": "抑制 mTOR 訊息路徑，用於部分 PTEN 相關腫瘤的治療",
+        "approval_status": "依腫瘤類型使用，非基因導向給藥"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PTEN 生殖系致病變異；PTEN 錯構瘤腫瘤症候群主要由 PI3K/AKT/mTOR 調控失常造成",
+      "population_frequency": "PTEN 致病變異在一般人群相對少見，帶因頻率因族群而異 (PMID:20301661)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。PTEN 錯構瘤腫瘤症候群的處置以多專科定期監測（乳房、甲狀腺、子宮內膜、腎臟等）、必要時風險降低手術與遺傳諮詢為主；是否使用 mTOR 抑制劑等藥物應由腫瘤科醫師依腫瘤類型評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "維持均衡飲食與健康體重，避免吸菸與過量酒精",
+        "依醫囑定期追蹤甲狀腺、乳房與婦科檢查"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 700,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 PTEN 致病變異，與 PTEN 錯構瘤腫瘤症候群的關聯明確",
+      "opentargets_score": 0.88,
+      "key_pmids": [
+        "PMID:20301661"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依 NCCN 指引與醫師討論，定期接受乳房影像、甲狀腺超音波、婦科與腎臟相關監測；出現異常腫塊或症狀時及早就醫；家族成員應接受遺傳諮詢與基因檢測。",
+      "lifestyle_tips": [
+        "維持均衡飲食與健康體重，避免吸菸與過量酒精",
+        "依醫囑定期追蹤甲狀腺、乳房與婦科檢查",
+        "出現頸部腫塊、異常出血或乳房變化時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "腫瘤科 / 內分泌科 / 乳房外科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 PTEN 突變，我需要哪些定期監測？多久一次？",
+        "我的甲狀腺、乳房與子宮內膜風險，是否需要進一步影像或手術評估？",
+        "mTOR 抑制劑等藥物治療對我的情況適合嗎？",
+        "我的直系親屬是否應該做同位點的基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「考登症候群只有皮膚和良性腫瘤問題，不用擔心癌症？」",
+      "truth": "不對。PTEN 錯構瘤腫瘤症候群除了良性錯構瘤，也會提高乳癌、甲狀腺癌、子宮內膜癌與腎細胞癌風險。定期多專科監測是必要的。"
+    }
+  },
+  {
+    "association_id": "GDA_RET_MEN2",
+    "gene": {
+      "symbol": "RET",
+      "name": "ret proto-oncogene",
+      "chinese_name": "RET 原癌基因",
+      "ensembl_id": "ENSG00000165731",
+      "entrez_id": "5979",
+      "biotype": "protein_coding",
+      "chromosome": "10q11.21 (10 號染色體)",
+      "metaphor": {
+        "title": "📡 內分泌腺體的【生長訊號天線】",
+        "story": "RET 是細胞表面的生長訊號天線，正常情況下協助神經與腎臟發育。若天線因致病變異而持續開啟，甲狀腺 C 細胞與腎上腺髓質細胞可能過度增生，形成髓質甲狀腺癌與嗜鉻細胞瘤，這與第二型多發性內分泌腺瘤症 (MEN2) 有關。"
+      },
+      "plain_summary": "RET 是與第二型多發性內分泌腺瘤症 (MEN2) 相關的致癌基因。攜帶致病變異會提高髓質甲狀腺癌與嗜鉻細胞瘤的風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過早期基因檢測、甲狀腺與腎上腺監測，以及必要時的手術或標靶治療，可以良好管理風險。",
+      "academic_summary": "RET 位於 10q11.21，編碼受體酪胺酸激酶，參與 GDNF 家族訊息與神經、腎臟發育。生殖系活化型致病變異造成體染色體顯性遺傳的第二型多發性內分泌腺瘤症 (MEN2A/MEN2B)，表現為髓質甲狀腺癌、嗜鉻細胞瘤與副甲狀腺功能亢進；腫瘤對選擇性 RET 抑制劑敏感。"
+    },
+    "disease": {
+      "id": "MONDO:0019003",
+      "name": "multiple endocrine neoplasia type 2",
+      "chinese_name": "第二型多發性內分泌腺瘤症 (MEN2)",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性內分泌腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (可透過早期監測與標靶治療管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002865",
+        "name": "Medullary thyroid carcinoma",
+        "chinese_name": "髓質甲狀腺癌"
+      },
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "嗜鉻細胞瘤"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Selpercatinib",
+        "chinese_name": "塞爾帕替尼 (Selpercatinib)",
+        "mechanism": "選擇性 RET 抑制劑，抑制 RET 驅動的腫瘤生長",
+        "approval_status": "FDA 核准 / NCCN Category 1"
+      },
+      {
+        "drug_name": "Pralsetinib",
+        "chinese_name": "普拉替尼 (Pralsetinib)",
+        "mechanism": "選擇性 RET 抑制劑，抑制 RET 驅動的腫瘤生長",
+        "approval_status": "FDA 核准 / NCCN Category 1"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "RET 生殖系活化型致病變異 (如 M918T、C634 等)；與 MEN2 及 RET 驅動腫瘤相關",
+      "population_frequency": "MEN2 約每 30,000 人中有 1 人，因族群與變異型別而異 (PMID:20301434)",
+      "traffic_light_summary": "🟢 標靶藥敏感（RET 驅動的髓質甲狀腺癌等腫瘤對 selpercatinib、pralsetinib 等選擇性 RET 抑制劑有良好反應，屬 FDA 伴隨診斷與 NCCN Category 1）",
+      "drugs_guide": [
+        {
+          "drug_name": "Selpercatinib / Pralsetinib",
+          "chinese_name": "塞爾帕替尼 / 普拉替尼",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "RET 驅動腫瘤對選擇性 RET 抑制劑具良好反應；用藥前應確認 RET 變異狀態，並由腫瘤科醫師評估。",
+          "cpic_level": "FDA Companion Diagnostic / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "沒有特定飲食禁忌；應依醫囑定期監測血壓與甲狀腺相關指標",
+        "使用標靶治療期間，依醫囑監測肝功能與相關不良反應"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 500,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 RET 活化型致病變異，與 MEN2 及髓質甲狀腺癌的關聯明確",
+      "opentargets_score": 0.92,
+      "key_pmids": [
+        "PMID:20301434",
+        "PMID:32846060"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依 NCCN 指引與醫師討論，確診 MEN2 後應定期監測甲狀腺 (降鈣素與超音波) 與腎上腺 (嗜鉻細胞瘤篩檢)；必要時討論預防性甲狀腺切除與標靶治療；家族成員應接受 RET 基因檢測。",
+      "lifestyle_tips": [
+        "依醫囑定期監測血壓，出現陣發性頭痛、心悸或冒汗時及早就醫",
+        "避免自行停用或調整標靶藥物",
+        "家族成員應接受遺傳諮詢與 RET 基因檢測"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "內分泌科 / 腫瘤科 / 內分泌外科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 RET 突變，我需要何時與如何監測髓質甲狀腺癌？",
+        "我需要做嗜鉻細胞瘤的篩檢嗎？建議的檢查方式是什麼？",
+        "我是否適合使用 selpercatinib 或 pralsetinib 等 RET 抑制劑？",
+        "我的直系親屬是否應該做同位點的基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「MEN2 的甲狀腺腫瘤都是良性，不用早處理？」",
+      "truth": "不對。MEN2 相關的髓質甲狀腺癌具有惡性潛能，早期監測與必要時手術或標靶治療非常重要。基因檢測可協助家族成員及早發現風險。"
+    }
+  },
+  {
+    "association_id": "GDA_VHL_VON_HIPPEL_LINDAU",
+    "gene": {
+      "symbol": "VHL",
+      "name": "von Hippel-Lindau tumor suppressor",
+      "chinese_name": "VHL 抑癌基因",
+      "ensembl_id": "ENSG00000134086",
+      "entrez_id": "7428",
+      "biotype": "protein_coding",
+      "chromosome": "3p25.3 (3 號染色體)",
+      "metaphor": {
+        "title": "🧭 細胞對缺氧的【氧氣感測器】",
+        "story": "正常細胞在缺氧時會啟動一套求生訊號，VHL 就像這套訊號的煞車，避免它過度活化。若 VHL 失效，細胞會誤以為自己一直處於缺氧狀態，長出許多血管豐富的腫瘤，例如血管母細胞瘤、腎細胞癌與嗜鉻細胞瘤，這就是馮希佩爾-林道症候群。"
+      },
+      "plain_summary": "VHL 是重要的抑癌基因。攜帶致病變異會造成馮希佩爾-林道症候群，可能出現血管母細胞瘤、腎細胞癌與嗜鉻細胞瘤等多發性腫瘤，呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過定期影像監測與必要時的手術或標靶治療，可以良好管理風險。",
+      "academic_summary": "VHL 位於 3p25.3，編碼 E3 泛素連接酶複合體的受質辨識蛋白，調控 HIF-1α/HIF-2α 在常氧下的降解。生殖系雜合致病變異造成體染色體顯性遺傳的馮希佩爾-林道症候群；HIF 累積促進血管新生，導致血管母細胞瘤、透明細胞腎細胞癌與嗜鉻細胞瘤等。HIF-2α 抑制劑可用於 VHL 相關腫瘤。"
+    },
+    "disease": {
+      "id": "MONDO:0008561",
+      "name": "von Hippel-Lindau syndrome",
+      "chinese_name": "馮希佩爾-林道症候群 (VHL)",
+      "categories": [
+        "惡性腫瘤",
+        "遺傳性腫瘤症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "⚠️ 需高度關注 (需多專科定期監測)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0005562",
+        "name": "Renal cell carcinoma",
+        "chinese_name": "腎細胞癌"
+      },
+      {
+        "hpo_id": "HP:0010797",
+        "name": "Hemangioblastoma",
+        "chinese_name": "血管母細胞瘤"
+      },
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "嗜鉻細胞瘤"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Belzutifan",
+        "chinese_name": "貝組替凡 (Belzutifan)",
+        "mechanism": "HIF-2α 抑制劑，抑制 VHL 缺陷造成的缺氧訊號與腫瘤生長",
+        "approval_status": "FDA 核准用於 VHL 相關腫瘤"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "VHL 生殖系致病變異；VHL 症候群主要由 HIF-α 降解失常與缺氧訊號過度活化造成",
+      "population_frequency": "VHL 症候群約每 36,000 人中有 1 人，因族群而異 (PMID:20301636)",
+      "traffic_light_summary": "🟢 標靶藥敏感（VHL 相關腫瘤對 belzutifan 等 HIF-2α 抑制劑有良好反應，屬 FDA 核准用於 VHL 相關腫瘤）",
+      "drugs_guide": [
+        {
+          "drug_name": "Belzutifan",
+          "chinese_name": "貝組替凡 (Belzutifan)",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "Belzutifan 為 HIF-2α 抑制劑，可用於 VHL 相關腫瘤；是否使用與監測方式應由腫瘤科醫師評估。",
+          "cpic_level": "FDA Approved for VHL-Associated Tumors"
+        }
+      ],
+      "dietary_contraindications": [
+        "沒有特定飲食禁忌；應依醫囑定期監測血壓與腫瘤影像",
+        "使用標靶治療期間，依醫囑監測貧血與相關不良反應"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
+      "clinvar_pathogenic_count": 800,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 VHL 致病變異，與馮希佩爾-林道症候群的關聯明確",
+      "opentargets_score": 0.91,
+      "key_pmids": [
+        "PMID:20301636",
+        "PMID:34818489"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依 NCCN 指引與醫師討論，定期接受腦部與脊髓影像、腹部影像、腎臟與腎上腺監測及血壓量測；必要時討論手術或 belzutifan 等標靶治療；家族成員應接受遺傳諮詢與基因檢測。",
+      "lifestyle_tips": [
+        "依醫囑定期監測血壓，出現陣發性頭痛、心悸或冒汗時及早就醫",
+        "避免吸菸與過量酒精，維持健康體重",
+        "家族成員應接受遺傳諮詢與 VHL 基因檢測"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "腫瘤科 / 神經外科 / 泌尿科 / 內分泌科 / 臨床遺傳門診",
+      "questions": [
+        "醫師您好，我的基因報告提示 VHL 突變，我需要哪些定期影像監測？多久一次？",
+        "我的腎臟、腎上腺與中樞神經腫瘤風險，是否需要進一步評估？",
+        "belzutifan 等 HIF-2α 抑制劑對我的情況適合嗎？",
+        "我的直系親屬是否應該做同位點的基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「VHL 的腫瘤都是良性，不需要積極處理？」",
+      "truth": "不對。VHL 症候群除了血管母細胞瘤，也會提高腎細胞癌與嗜鉻細胞瘤風險。定期多專科監測與必要時的治療，是降低併發症與死亡風險的關鍵。"
+    }
+  },
+  {
+    "association_id": "GDA_FBN1_MARFAN_SYNDROME",
+    "gene": {
+      "symbol": "FBN1",
+      "name": "fibrillin 1",
+      "chinese_name": "微纖維蛋白 1 基因 (FBN1)",
+      "ensembl_id": "ENSG00000166147",
+      "entrez_id": "2200",
+      "biotype": "protein_coding",
+      "chromosome": "15q21.1 (15 號染色體)",
+      "metaphor": {
+        "title": "🧵 結締組織裡的【彈性鋼筋】",
+        "story": "身體的結締組織就像建築裡的鋼筋與彈簧，FBN1 製造的微纖維蛋白是維持血管、眼睛與骨骼彈性的重要材料。若材料品質不足，主動脈可能逐漸擴張，水晶體與骨骼也可能出現異常，形成馬凡氏症候群。"
+      },
+      "plain_summary": "FBN1 基因與結締組織的彈性纖維有關。帶有致病變異可能增加馬凡氏症候群的風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過定期心血管評估、影像追蹤與藥物控制，多數人可以降低主動脈併發症風險。",
+      "academic_summary": "FBN1 位於 15q21.1，編碼微纖維蛋白-1，是細胞外基質彈性纖維的重要成分。FBN1 致病變異造成馬凡氏症候群，呈體染色體顯性遺傳，主要表現為主動脈根部擴張、水晶體異位與骨骼系統異常。"
+    },
+    "disease": {
+      "id": "MONDO:0007947",
+      "name": "Marfan syndrome",
+      "chinese_name": "馬凡氏症候群",
+      "categories": [
+        "心血管疾病",
+        "遺傳性結締組織疾病"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心血管影像追蹤 (可透過監測與藥物管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002650",
+        "name": "Scoliosis",
+        "chinese_name": "脊椎側彎"
+      },
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "主動脈瘤"
+      },
+      {
+        "hpo_id": "HP:0001083",
+        "name": "Ectopia lentis",
+        "chinese_name": "水晶體異位"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低主動脈壁壓力與擴張速率",
+        "approval_status": "標準處方治療"
+      },
+      {
+        "drug_name": "Losartan",
+        "chinese_name": "洛沙坦 (Losartan)",
+        "mechanism": "血管張力素受體阻斷劑，控制血壓並延緩主動脈擴張",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "FBN1 致病變異；馬凡氏症候群主要由微纖維蛋白-1 功能異常造成",
+      "population_frequency": "馬凡氏症候群約每 5,000 人中有 1 人，FBN1 為主要致病基因 (PMID:20301510)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。馬凡氏症候群的標準治療包括乙型交感神經阻斷劑與洛沙坦（ARB）等血壓控制藥物，以延緩主動脈擴張；是否用藥與選擇應由心臟內科或遺傳專科醫師依主動脈大小與風險評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免高衝擊性運動、重量訓練與劇烈競技運動，以降低主動脈剝離風險",
+        "依醫囑定期接受心臟超音波或電腦斷層追蹤主動脈大小"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 1200,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 FBN1 致病變異，與馬凡氏症候群的關聯明確",
+      "opentargets_score": 0.8,
+      "key_pmids": [
+        "PMID:20301510"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有馬凡氏症候群家族史、主動脈擴張、水晶體異位或身材高瘦合併關節鬆弛，建議接受心血管影像與遺傳諮詢；一等親也應評估。",
+      "lifestyle_tips": [
+        "避免高衝擊運動、重量訓練與未經評估的劇烈競技運動",
+        "依醫囑定期接受心臟超音波或電腦斷層追蹤主動脈",
+        "出現突發胸背痛、呼吸困難或視力變化時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "我的 FBN1 基因檢測顯示有致病變異，主動脈需要多久追蹤一次？",
+        "我的父母、兄弟姊妹或子女也應該接受心血管評估或基因檢測嗎？",
+        "我適合使用乙型阻斷劑或洛沙坦嗎？運動與重量訓練有哪些限制？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「有馬凡氏症候群就不能運動？」",
+      "truth": "不一定。多數患者可在醫師評估後從事低衝擊運動；關鍵是避免高衝擊、重量訓練與未經評估的競技運動，並定期追蹤主動脈。"
+    }
+  },
+  {
+    "association_id": "GDA_KCNQ1_LONG_QT_SYNDROME",
+    "gene": {
+      "symbol": "KCNQ1",
+      "name": "potassium voltage-gated channel subfamily KQT member 1",
+      "chinese_name": "鉀電壓門控通道 KQT 樣亞家族成員 1 基因 (KCNQ1)",
+      "ensembl_id": "ENSG00000053918",
+      "entrez_id": "3784",
+      "biotype": "protein_coding",
+      "chromosome": "11p15.5 (11 號染色體)",
+      "metaphor": {
+        "title": "⚡ 心臟電流的【慢速剎車】",
+        "story": "心臟每次跳動都靠電流精準通過，KCNQ1 製造的鉀離子通道負責讓電流適時結束。若這個剎車失靈，心臟再極化時間延長，可能出現 QT 間期延長與心律不整。"
+      },
+      "plain_summary": "KCNQ1 基因與心臟鉀離子通道有關。帶有致病變異可能增加長 QT 症候群風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過避免誘發藥物、定期心電圖與醫師評估，多數風險可以被管理。",
+      "academic_summary": "KCNQ1 位於 11p15.5，編碼 Kv7.1 鉀離子通道 α 次單元，參與心臟動作電位再極化。KCNQ1 致病變異造成長 QT 症候群，呈體染色體顯性遺傳，可導致 QT 間期延長、暈厥與心因性猝死風險。"
+    },
+    "disease": {
+      "id": "MONDO:0002442",
+      "name": "long QT syndrome",
+      "chinese_name": "長 QT 症候群",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心律不整"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心律監測與用藥警覺 (可透過避免誘發藥物管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "QT 間期延長"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "暈厥"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "心因性猝死"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低交感神經刺激與心律不整風險",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "KCNQ1 致病變異造成 Kv7.1 鉀離子通道功能下降，QT 間期延長",
+      "population_frequency": "長 QT 症候群估計約每 2,000 人中有 1 人，KCNQ1 與 KCNH2 為常見致病基因 (PMID:20301308)",
+      "traffic_light_summary": "🔴 帶有 KCNQ1 致病變異的長 QT 症候群患者，應避免 CredibleMeds 列為 Known Risk 的延長 QT 間期藥物（如部分巨環內酯/氟喹諾酮類抗生素、部分抗心律不整藥與抗精神病藥）。若因感染或其他疾病必須用藥，請主動告知醫師與藥師並加強心電圖監測；一般治療以乙型交感神經阻斷劑與避免誘發因素為主。",
+      "drugs_guide": [
+        {
+          "drug_name": "QT-Prolonging Medications (macrolide/fluoroquinolone antibiotics, certain antiarrhythmics/antipsychotics) — CredibleMeds Known Risk",
+          "chinese_name": "延長 QT 間期藥物（巨環內酯/氟喹諾酮類抗生素、部分抗心律不整藥/抗精神病藥）— CredibleMeds Known Risk",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "KCNQ1 相關長 QT 症候群患者對延長 QT 間期藥物特別敏感，可能誘發尖端扭轉型室速。CredibleMeds 列為 Known Risk 的藥物應避免；若臨床必須使用，需由專科醫師評估並加強心電圖監測。",
+          "cpic_level": "HRS/EHRA/APHRS Expert Consensus High Alert"
+        }
+      ],
+      "dietary_contraindications": [
+        "避免脫水、電解質不平衡與過量含咖啡因或酒精飲料",
+        "主動告知醫師與藥師自己有長 QT 症候群，開立新藥前確認是否延長 QT 間期"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 600,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 KCNQ1 致病變異，與長 QT 症候群的關聯明確",
+      "opentargets_score": 0.76,
+      "key_pmids": [
+        "PMID:20301308"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有長 QT 症候群家族史、運動或情緒刺激後暈厥、心悸，建議接受心電圖與遺傳諮詢；一等親也應評估。",
+      "lifestyle_tips": [
+        "避免脫水、電解質不平衡與過量酒精或刺激性飲料",
+        "就醫或領藥時主動告知自己有長 QT 症候群，避免延長 QT 間期藥物",
+        "依醫囑定期接受心電圖追蹤，出現暈厥或心悸時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "我的 KCNQ1 基因檢測顯示有致病變異，需要多久追蹤一次心電圖？",
+        "我的父母、兄弟姊妹或子女也應該接受心電圖或基因檢測嗎？",
+        "哪些常見藥物會延長 QT 間期？我適合使用乙型阻斷劑嗎？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「長 QT 症候群只要沒有症狀就不用管？」",
+      "truth": "不對。即使沒有症狀，仍可能因特定藥物、脫水或電解質不平衡而誘發危險心律不整；需要定期心電圖與用藥評估。"
+    }
+  },
+  {
+    "association_id": "GDA_KCNH2_LONG_QT_SYNDROME",
+    "gene": {
+      "symbol": "KCNH2",
+      "name": "potassium voltage-gated channel subfamily H member 2",
+      "chinese_name": "鉀電壓門控通道 H 亞家族成員 2 基因 (KCNH2)",
+      "ensembl_id": "ENSG00000055118",
+      "entrez_id": "3757",
+      "biotype": "protein_coding",
+      "chromosome": "7q36.1 (7 號染色體)",
+      "metaphor": {
+        "title": "⚡ 心臟電流的【快速整流器】",
+        "story": "KCNH2 製造的 HERG 鉀離子通道負責心臟電流快速整流，讓每次心跳後電位迅速回復。若通道功能不足，再極化變慢，QT 間期延長，可能引發危險心律不整。"
+      },
+      "plain_summary": "KCNH2 基因與心臟鉀離子通道有關。帶有致病變異可能增加長 QT 症候群風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過避免誘發藥物、定期心電圖與醫師評估，可降低心律不整風險。",
+      "academic_summary": "KCNH2 位於 7q36.1，編碼 HERG（Kv11.1）鉀離子通道 α 次單元，參與心臟動作電位再極化。KCNH2 致病變異造成長 QT 症候群，呈體染色體顯性遺傳，可導致 QT 間期延長、暈厥與心因性猝死風險。"
+    },
+    "disease": {
+      "id": "MONDO:0002442",
+      "name": "long QT syndrome",
+      "chinese_name": "長 QT 症候群",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心律不整"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心律監測與用藥警覺 (可透過避免誘發藥物管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "QT 間期延長"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "暈厥"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "心因性猝死"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低交感神經刺激與心律不整風險",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "KCNH2 致病變異造成 HERG 鉀離子通道功能下降，QT 間期延長",
+      "population_frequency": "長 QT 症候群估計約每 2,000 人中有 1 人，KCNH2 與 KCNQ1 為常見致病基因 (PMID:20301308)",
+      "traffic_light_summary": "🔴 帶有 KCNH2 致病變異的長 QT 症候群患者，應避免 CredibleMeds 列為 Known Risk 的延長 QT 間期藥物（如部分巨環內酯/氟喹諾酮類抗生素、部分抗心律不整藥與抗精神病藥）。若因感染或其他疾病必須用藥，請主動告知醫師與藥師並加強心電圖監測；一般治療以乙型交感神經阻斷劑與避免誘發因素為主。",
+      "drugs_guide": [
+        {
+          "drug_name": "QT-Prolonging Medications (macrolide/fluoroquinolone antibiotics, certain antiarrhythmics/antipsychotics) — CredibleMeds Known Risk",
+          "chinese_name": "延長 QT 間期藥物（巨環內酯/氟喹諾酮類抗生素、部分抗心律不整藥/抗精神病藥）— CredibleMeds Known Risk",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "KCNH2 相關長 QT 症候群患者對延長 QT 間期藥物特別敏感，可能誘發尖端扭轉型室速。CredibleMeds 列為 Known Risk 的藥物應避免；若臨床必須使用，需由專科醫師評估並加強心電圖監測。",
+          "cpic_level": "HRS/EHRA/APHRS Expert Consensus High Alert"
+        }
+      ],
+      "dietary_contraindications": [
+        "避免脫水、電解質不平衡與過量含咖啡因或酒精飲料",
+        "主動告知醫師與藥師自己有長 QT 症候群，開立新藥前確認是否延長 QT 間期"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 700,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 KCNH2 致病變異，與長 QT 症候群的關聯明確",
+      "opentargets_score": 0.77,
+      "key_pmids": [
+        "PMID:20301308"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有長 QT 症候群家族史、運動或情緒刺激後暈厥、心悸，建議接受心電圖與遺傳諮詢；一等親也應評估。",
+      "lifestyle_tips": [
+        "避免脫水、電解質不平衡與過量酒精或刺激性飲料",
+        "就醫或領藥時主動告知自己有長 QT 症候群，避免延長 QT 間期藥物",
+        "依醫囑定期接受心電圖追蹤，出現暈厥或心悸時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "我的 KCNH2 基因檢測顯示有致病變異，需要多久追蹤一次心電圖？",
+        "我的父母、兄弟姊妹或子女也應該接受心電圖或基因檢測嗎？",
+        "哪些常見藥物會延長 QT 間期？我適合使用乙型阻斷劑嗎？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「長 QT 症候群只要沒有症狀就不用管？」",
+      "truth": "不對。即使沒有症狀，仍可能因特定藥物、脫水或電解質不平衡而誘發危險心律不整；需要定期心電圖與用藥評估。"
+    }
+  },
+  {
+    "association_id": "GDA_SCN5A_BRUGADA_SYNDROME",
+    "gene": {
+      "symbol": "SCN5A",
+      "name": "sodium voltage-gated channel alpha subunit 5",
+      "chinese_name": "鈉電壓門控通道 α 次單元 5 基因 (SCN5A)",
+      "ensembl_id": "ENSG00000183873",
+      "entrez_id": "6331",
+      "biotype": "protein_coding",
+      "chromosome": "3p22.2 (3 號染色體)",
+      "metaphor": {
+        "title": "⚡ 心臟電流的【鈉離子閘門】",
+        "story": "心臟電流開始時，鈉離子閘門必須迅速開啟再關閉，SCN5A 就是這個閘門的主要零件。若閘門功能異常，心臟電流可能紊亂，形成布魯格達氏症候群特有的心電圖變化與心律不整風險。"
+      },
+      "plain_summary": "SCN5A 基因與心臟鈉離子通道有關。帶有致病變異可能增加布魯格達氏症候群風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。避免特定藥物、積極處理發燒並定期心臟評估，有助於降低心律不整風險。",
+      "academic_summary": "SCN5A 位於 3p22.2，編碼心臟鈉離子通道 α 次單元 Nav1.5，負責動作電位第 0 期去極化。SCN5A 致病變異造成布魯格達氏症候群，呈體染色體顯性遺傳，可導致心律不整、暈厥與心因性猝死風險。"
+    },
+    "disease": {
+      "id": "MONDO:0015263",
+      "name": "Brugada syndrome",
+      "chinese_name": "布魯格達氏症候群",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心律不整"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心律監測與發燒處置 (可透過避免誘發藥物管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011675",
+        "name": "Arrhythmia",
+        "chinese_name": "心律不整"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "暈厥"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "心因性猝死"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Quinidine",
+        "chinese_name": "奎尼丁 (Quinidine)",
+        "mechanism": "部分患者由專科醫師使用，以減少心室心律不整",
+        "approval_status": "專科醫師處方"
+      },
+      {
+        "drug_name": "Isoproterenol",
+        "chinese_name": "異丙腎上腺素 (Isoproterenol)",
+        "mechanism": "用於醫院內心律風暴的緊急處置",
+        "approval_status": "醫院專科使用"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "SCN5A 致病變異造成心臟鈉離子通道功能下降，Brugada 型心電圖變化",
+      "population_frequency": "布魯格達氏症候群在部分東亞與東南亞族群較常見，SCN5A 為主要致病基因 (PMID:20301690)",
+      "traffic_light_summary": "🔴 布魯格達氏症候群患者應避免 Class IC 抗心律不整藥與鈉離子通道阻斷劑（如 flecainide、ajmaline、procainamide，依 Brugadadrugs.org 避免清單）。🟡 發燒可能誘發 Brugada 型心電圖變化與心律不整，出現發燒應立即就醫並積極退燒；用藥請由心臟專科醫師評估。",
+      "drugs_guide": [
+        {
+          "drug_name": "Class IC Antiarrhythmics & Sodium Channel Blockers (Flecainide / Ajmaline / Procainamide)",
+          "chinese_name": "Class IC 抗心律不整藥與鈉離子通道阻斷劑（Flecainide / Ajmaline / Procainamide）",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "這些藥物會進一步抑制心臟鈉離子通道，可能誘發 Brugada 型心電圖變化與心室心律不整；依 Brugadadrugs.org 避免清單，患者應避免使用。若臨床仍有特殊考量，必須由心臟專科醫師評估。",
+          "cpic_level": "HRS/EHRA/APHRS Brugada Syndrome Consensus"
+        },
+        {
+          "drug_name": "Fever / Febrile illness",
+          "chinese_name": "發燒 / 發熱性疾病",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "發燒可能誘發 Brugada 型心電圖變化與心律不整。出現發燒應立即就醫並積極退燒，必要時接受心電圖監測；不要自行使用未經醫師確認的退燒或感冒藥。",
+          "cpic_level": "HRS/EHRA/APHRS Brugada Syndrome Consensus"
+        }
+      ],
+      "dietary_contraindications": [
+        "發燒時應積極退燒並及早就醫，避免長時間高燒",
+        "避免過量酒精、脫水與電解質不平衡，這些都可能誘發心律不整"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 900,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 SCN5A 致病變異，與布魯格達氏症候群的關聯明確",
+      "opentargets_score": 0.78,
+      "key_pmids": [
+        "PMID:20301690"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有布魯格達氏症候群家族史、不明原因暈厥、夜間喘息或心悸，建議接受心電圖與遺傳諮詢；一等親也應評估。",
+      "lifestyle_tips": [
+        "發燒時積極退燒並及早就醫，避免長時間高燒",
+        "避免過量酒精、暴飲暴食與脫水，保持電解質平衡",
+        "就醫領藥時主動告知自己有布魯格達氏症候群，避免誘發藥物"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "我的 SCN5A 基因檢測顯示有致病變異，需要多久追蹤一次心電圖？",
+        "我的父母、兄弟姊妹或子女也應該接受心電圖或基因檢測嗎？",
+        "我應該避免哪些藥物？發燒時應該如何處理與就醫？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「布魯格達氏症候群只有男生才會得？」",
+      "truth": "不是。男性風險較高，但女性也可能帶有致病變異並出現心律不整；家族成員都應依醫師建議接受評估。"
+    }
+  },
+  {
+    "association_id": "GDA_LMNA_DILATED_CARDIOMYOPATHY",
+    "gene": {
+      "symbol": "LMNA",
+      "name": "lamin A/C",
+      "chinese_name": "核纖層蛋白 A/C 基因 (LMNA)",
+      "ensembl_id": "ENSG00000160789",
+      "entrez_id": "4000",
+      "biotype": "protein_coding",
+      "chromosome": "1q22 (1 號染色體)",
+      "metaphor": {
+        "title": "🧱 細胞核的【內襯支架】",
+        "story": "每個細胞的細胞核都需要一層穩固的內襯，LMNA 製造的核纖層蛋白 A/C 就是這個支架。若支架脆弱，心肌細胞容易受損，心臟可能擴大並出現收縮力下降與心律不整。"
+      },
+      "plain_summary": "LMNA 基因與細胞核的核纖層蛋白有關。帶有致病變異可能增加擴張型心肌病變與心律不整風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。規則心臟功能與心律追蹤、必要時使用心衰竭藥物或植入式去顫器，可協助管理風險。",
+      "academic_summary": "LMNA 位於 1q22，編碼核纖層蛋白 A/C，維持細胞核結構與基因表現調控。LMNA 致病變異造成擴張型心肌病變，呈體染色體顯性遺傳，常合併傳導異常與心律不整，心因性猝死風險需特別評估。"
+    },
+    "disease": {
+      "id": "MONDO:0005021",
+      "name": "dilated cardiomyopathy",
+      "chinese_name": "擴張型心肌病變",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心肌病變"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心臟功能與心律追蹤 (可透過藥物與裝置治療管理)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "擴張型心肌病變"
+      },
+      {
+        "hpo_id": "HP:0011675",
+        "name": "Arrhythmia",
+        "chinese_name": "心律不整"
+      },
+      {
+        "hpo_id": "HP:0001635",
+        "name": "Congestive heart failure",
+        "chinese_name": "鬱血性心衰竭"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心肌耗氧與交感神經刺激，改善心衰竭預後",
+        "approval_status": "標準處方治療"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "血管張力素轉化酶抑制劑 / 受體阻斷劑 / ARNI",
+        "mechanism": "降低心臟負荷並延緩心室重塑",
+        "approval_status": "標準處方治療"
+      },
+      {
+        "drug_name": "Mineralocorticoid receptor antagonists",
+        "chinese_name": "礦皮質素受體拮抗劑",
+        "mechanism": "降低心衰竭住院與死亡風險",
+        "approval_status": "標準處方治療"
+      },
+      {
+        "drug_name": "SGLT2 inhibitors",
+        "chinese_name": "SGLT2 抑制劑",
+        "mechanism": "改善心衰竭預後與心臟功能",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "LMNA 致病變異；擴張型心肌病變與核纖層蛋白功能異常有關",
+      "population_frequency": "LMNA 相關擴張型心肌病變約占家族性擴張型心肌病變的一部分，常合併傳導異常與心律不整 (PMID:20301717)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。擴張型心肌病變的標準治療包括心衰竭藥物（乙型阻斷劑、ACEI/ARB/ARNI、礦皮質素受體拮抗劑、SGLT2 抑制劑）與必要時植入式心律去顫器（ICD）評估；是否使用與時機應由心臟內科醫師依心功能與心律風險決定。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "採低鹽飲食並依醫囑控制水分，避免心衰竭惡化",
+        "避免過量酒精與未經評估的劇烈運動，並定期監測體重與水腫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.88,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 500,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多個 LMNA 致病變異，與擴張型心肌病變及傳導異常的關聯明確",
+      "opentargets_score": 0.74,
+      "key_pmids": [
+        "PMID:20301717"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有擴張型心肌病變、傳導阻滯或心因性猝死家族史，建議接受心臟超音波、心電圖與遺傳諮詢；一等親也應評估。",
+      "lifestyle_tips": [
+        "採低鹽飲食、控制水分並每日監測體重與水腫變化",
+        "依醫師建議運動，避免過量酒精與未經評估的劇烈運動",
+        "定期追蹤心臟功能與心律，出現胸悶、暈厥或心悸時及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "我的 LMNA 基因檢測顯示有致病變異，心臟功能與心律需要多久追蹤一次？",
+        "我的父母、兄弟姊妹或子女也應該接受心臟評估或基因檢測嗎？",
+        "我是否需要植入式心律去顫器（ICD）評估？心衰竭藥物有哪些選擇？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「擴張型心肌病變只要心臟還有一點收縮力就不用追蹤？」",
+      "truth": "不對。LMNA 相關心肌病變可能逐漸進展並伴隨傳導異常與心律不整，需要定期心臟功能與心律評估，必要時及早討論裝置治療。"
+    }
+  },
+  {
+    "association_id": "GDA_PCSK9_FAMILIAL_HYPERCHOLESTEROLEMIA",
+    "gene": {
+      "symbol": "PCSK9",
+      "name": "proprotein convertase subtilisin/kexin type 9",
+      "chinese_name": "前蛋白轉化酶枯草溶菌素 9 基因 (PCSK9)",
+      "ensembl_id": "ENSG00000169174",
+      "entrez_id": "255738",
+      "biotype": "protein_coding",
+      "chromosome": "1p32.3 (1 號染色體)",
+      "metaphor": {
+        "title": "🚦 膽固醇回收的【調節閥】",
+        "story": "肝臟表面的 LDL 受體負責把血液中的壞膽固醇回收，PCSK9 則像調節閥，會影響這些受體的數量。若 PCSK9 活性過強，受體減少，血液中的 LDL 膽固醇便容易升高。"
+      },
+      "plain_summary": "PCSK9 基因與 LDL 膽固醇代謝有關。帶有功能增強型致病變異可能增加家族性高膽固醇血症風險，呈體染色體顯性遺傳，一等親也可能帶有相同變異。透過飲食、史他汀類藥物與必要時的 PCSK9 標靶治療，多數人可以有效控制 LDL 膽固醇。",
+      "academic_summary": "PCSK9 位於 1p32.3，編碼前蛋白轉化酶枯草溶菌素 9，會促進肝細胞 LDL 受體降解。PCSK9 功能增強型變異造成家族性高膽固醇血症，呈體染色體顯性遺傳，與早發性冠心症與心肌梗塞風險相關。"
+    },
+    "disease": {
+      "id": "MONDO:0007750",
+      "name": "familial hypercholesterolemia",
+      "chinese_name": "家族性高膽固醇血症",
+      "categories": [
+        "心血管疾病",
+        "遺傳性血脂異常"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 需長期血脂管理 (可透過藥物與生活型態控制)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003124",
+        "name": "Hypercholesterolemia",
+        "chinese_name": "高膽固醇血症"
+      },
+      {
+        "hpo_id": "HP:0001658",
+        "name": "Myocardial infarction",
+        "chinese_name": "心肌梗塞"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Evolocumab",
+        "chinese_name": "依洛尤單抗 (Evolocumab)",
+        "mechanism": "PCSK9 抑制劑，增加肝臟 LDL 受體回收壞膽固醇",
+        "approval_status": "FDA 核准處方藥"
+      },
+      {
+        "drug_name": "Alirocumab",
+        "chinese_name": "阿利庫單抗 (Alirocumab)",
+        "mechanism": "PCSK9 抑制劑，降低血液中的 LDL 膽固醇",
+        "approval_status": "FDA 核准處方藥"
+      },
+      {
+        "drug_name": "Inclisiran",
+        "chinese_name": "英克司蘭 (Inclisiran)",
+        "mechanism": "小干擾 RNA，降低肝臟 PCSK9 生成",
+        "approval_status": "FDA 核准處方藥"
+      },
+      {
+        "drug_name": "Statins",
+        "chinese_name": "史他汀類藥物",
+        "mechanism": "抑制膽固醇合成並增加 LDL 受體",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PCSK9 功能增強型變異；家族性高膽固醇血症也可由 LDLR、APOB 等基因變異造成",
+      "population_frequency": "家族性高膽固醇血症約每 250 人中有 1 人，PCSK9 功能增強型變異為其中一個原因 (PMID:20301692)",
+      "traffic_light_summary": "此基因目前沒有 CPIC 藥物基因（PGx）給藥劑量指引。家族性高膽固醇血症的標準治療包括史他汀類藥物，必要時合併依洛尤單抗（Evolocumab）、阿利庫單抗（Alirocumab）或英克司蘭（Inclisiran）；是否使用與選擇應由醫師依 LDL 膽固醇目標與心血管風險評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "減少飽和脂肪與反式脂肪攝取，增加可溶性纖維",
+        "規律運動並控制體重，依醫囑定期追蹤血脂"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 300,
+      "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多個 PCSK9 功能增強型變異，與家族性高膽固醇血症的關聯明確",
+      "opentargets_score": 0.79,
+      "key_pmids": [
+        "PMID:20301692",
+        "PMID:25773607"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若有早發性心肌梗塞、家族性高膽固醇血症或血中 LDL 膽固醇明顯偏高，建議接受血脂檢測與遺傳諮詢；一等親也應評估。",
+      "lifestyle_tips": [
+        "減少飽和脂肪與反式脂肪，增加蔬菜、全穀與可溶性纖維",
+        "規律運動、控制體重並避免吸菸",
+        "依醫囑定期追蹤血脂，不要自行停用降血脂藥物"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 新陳代謝科 / 遺傳諮詢",
+      "questions": [
+        "我的 PCSK9 基因檢測顯示有致病變異，LDL 膽固醇應該控制在多少？",
+        "我的父母、兄弟姊妹或子女也應該接受血脂檢測或基因檢測嗎？",
+        "我適合史他汀類藥物還是 PCSK9 標靶治療？需要多久追蹤一次血脂？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「家族性高膽固醇血症只要少吃油就會好？」",
+      "truth": "不一定。家族性高膽固醇血症常源於基因變異，單靠飲食通常不足以達標；需要醫師評估合併史他汀類或 PCSK9 標靶治療。"
+    }
+  },
+  {
+    "association_id": "GDA_ATP7B_WILSON_DISEASE",
+    "gene": {
+      "symbol": "ATP7B",
+      "name": "ATPase copper transporting beta",
+      "chinese_name": "ATP7B 銅轉運 ATP 酶 (威爾森氏症基因)",
+      "ensembl_id": "ENSG00000123191",
+      "entrez_id": "540",
+      "biotype": "protein_coding",
+      "chromosome": "13q14.3 (13 號染色體)",
+      "metaphor": {
+        "title": "🔧 肝臟裡的【銅離子回收幫浦（故障時銅會堆積在肝臟、大腦與眼睛）】",
+        "story": "人體每天從食物吸收微量銅，肝細胞裡的 ATP7B 就像一台精密幫浦，負責把多餘的銅送進膽汁排出體外，同時把銅裝載到銅藍蛋白上。當 ATP7B 兩套基因都故障時，這台幫浦停擺，銅就像沒人清運的廢金屬一樣越積越多：先讓肝臟發炎、纖維化，再隨血液沉積到大腦基底核造成手抖、吞嚥與說話困難，也會在眼角膜形成金棕色的 Kayser-Fleischer 環。終身低銅飲食與排銅治療可以把銅重新控制住！"
+      },
+      "plain_summary": "ATP7B 缺陷造成威爾森氏症（肝豆狀核變性），屬於體染色體隱性遺傳。患者因銅無法正常排出而累積在肝臟、大腦、腎臟與眼睛，可能出現肝功能異常、手抖、構音障礙、吞嚥困難或情緒變化。終身低銅飲食、銅螯合劑或鋅劑治療，並定期監測銅代謝指標，多數人可維持良好生活品質。",
+      "academic_summary": "ATP7B 編碼肝細胞高基氏體膜上的銅轉運 P 型 ATP 酶，負責將銅離子送入膽汁以完成膽道排泄，並在銅藍蛋白合成過程中裝載銅。雙等位基因致病變異（如東亞常見的 p.Arg778Leu）導致膽汁排銅障礙與銅藍蛋白成熟受阻，銅離子沉積於肝細胞、基底核、角膜與腎小管，造成氧化壓力、粒線體損傷與組織纖維化，臨床表現為肝功能異常、神經精神症狀、Kayser-Fleischer 環與 Fanconi 症候群。"
+    },
+    "disease": {
+      "id": "MONDO:0009563",
+      "name": "Wilson disease",
+      "chinese_name": "威爾森氏症 (肝豆狀核變性) / 遺傳性銅代謝異常",
+      "categories": [
+        "遺傳性代謝疾病",
+        "肝臟與神經系統疾病",
+        "銅代謝異常"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟡 可治療的遺傳性銅代謝疾病（終身低銅飲食與排銅治療）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001392",
+        "name": "Abnormality of the liver",
+        "chinese_name": "肝臟異常 (肝功能異常、脂肪肝、肝硬化)"
+      },
+      {
+        "hpo_id": "HP:0002015",
+        "name": "Dysphagia",
+        "chinese_name": "吞嚥困難"
+      },
+      {
+        "hpo_id": "HP:0001260",
+        "name": "Dysarthria",
+        "chinese_name": "構音障礙 / 說話含糊"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Trientine",
+        "chinese_name": "三乙烯四胺 (曲恩汀)",
+        "mechanism": "銅螯合劑，與體內游離銅結合後由腎臟排出，降低肝臟與腦部銅負荷",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      },
+      {
+        "drug_name": "Zinc acetate / Zinc sulfate",
+        "chinese_name": "醋酸鋅 / 硫酸鋅",
+        "mechanism": "在腸道誘導金屬硫蛋白，阻斷食物銅吸收並促進糞便排銅",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      },
+      {
+        "drug_name": "Penicillamine",
+        "chinese_name": "青黴胺",
+        "mechanism": "傳統銅螯合劑，促進銅由尿液排出；需監測腎毒性與過敏反應",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ATP7B 雙等位基因致病變異（華人族群常見 p.Arg778Leu，歐裔常見 p.His1069Gln）",
+      "population_frequency": "全球發生率約 1/30,000；帶因率約 1/90，東亞族群 R778L 變異較常見",
+      "traffic_light_summary": "目前無特定藥物基因組學（PGx）用藥指引；治療以終身低銅飲食、銅螯合劑（Trientine、Penicillamine）與鋅劑為主，藥物選擇與療程需依肝功能、銅代謝指標與醫囑個別調整。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "終身避免高銅食物：動物肝臟、貝類、蝦蟹、堅果、巧克力、菇類、濃縮銅補充劑與部分中藥材",
+        "飲水若含銅量偏高應使用合格淨水設備；避免以銅製鍋具長時間烹調酸性食物",
+        "治療期間仍需維持均衡蛋白質與熱量，不可自行停藥或改藥"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 Wilson 疾病診療與基因檢測指引",
+      "clinvar_pathogenic_count": 900,
+      "clinvar_summary_chinese": "ClinVar 已收錄數百個 ATP7B 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.93,
+      "key_pmids": [
+        "PMID:20301685"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有不明原因肝功能異常、年輕型手抖或精神症狀、家族史者，建議檢測血清銅藍蛋白、24 小時尿銅與 ATP7B 基因；一等親應接受遺傳諮詢與篩檢。",
+      "lifestyle_tips": [
+        "與營養師共同建立低銅飲食清單，外食時主動避開內臟、貝類與堅果類醬料",
+        "按時回診追蹤肝功能、尿銅與血球數，服用青黴胺者需特別留意腎功能與過敏反應",
+        "準備懷孕或懷孕期間務必提前與肝膽腸胃科及遺傳科討論用藥調整，不可自行停藥"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "肝膽胃腸科 / 神經內科 / 遺傳代謝科",
+      "questions": [
+        "醫師，我的肝功能異常合併手抖與說話含糊，需要檢查血清銅藍蛋白、尿銅或安排 ATP7B 基因檢測嗎？",
+        "目前使用的 Trientine、青黴胺或鋅劑，對我現在的肝功能與腎功能是否安全？需要多久追蹤一次銅代謝指標？",
+        "我的兄弟姊妹與孩子是否也應該接受銅代謝篩檢或基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「威爾森氏症只是喝酒喝太多造成的肝硬化，只要戒酒就會自己好？」",
+      "truth": "不是！威爾森氏症是 ATP7B 基因缺陷造成的銅代謝障礙，與飲酒無直接關係。若只戒酒而不排銅，銅仍會持續沉積並傷害肝臟與大腦。規律使用螯合劑或鋅劑、終身低銅飲食與定期監測，才是控制疾病的關鍵。"
+    }
+  },
+  {
+    "association_id": "GDA_GLA_FABRY_DISEASE",
+    "gene": {
+      "symbol": "GLA",
+      "name": "Galactosidase alpha",
+      "chinese_name": "GLA α-半乳糖苷酶 A (法布瑞氏症基因)",
+      "ensembl_id": "ENSG00000102393",
+      "entrez_id": "2717",
+      "biotype": "protein_coding",
+      "chromosome": "Xq22.1 (X 染色體)",
+      "metaphor": {
+        "title": "♻️ 細胞回收廠裡的【油脂分解工人（罷工時脂質垃圾堆滿血管、腎臟與神經）】",
+        "story": "細胞裡的溶酶體就像一座資源回收廠，GLA 是專門拆解「球三糖神經醯胺（Gb3）」這種脂質垃圾的工人。當 GLA 產量不足或罷工時，Gb3 垃圾無法分解，便一層層堆積在血管內皮、腎臟、心肌與周邊神經。患者可能在兒童或青少年時期出現手腳灼熱劇痛、排汗減少、皮膚紅疹，成年後逐漸出現蛋白尿、腎功能下降與肥厚性心肌病變。早期診斷並接受酵素替代療法或口服藥理伴護蛋白，可以延緩器官損傷。"
+      },
+      "plain_summary": "GLA 缺陷造成法布瑞氏症，屬於 X 連鎖遺傳。脂質 Gb3 會堆積在腎臟、心臟、神經與皮膚，常見手腳灼熱疼痛、排汗異常、蛋白尿與心肌肥厚。透過基因檢測、酵素活性檢測與家族篩檢可早期確診；酵素替代療法或特定口服藥物能減緩病程，需由遺傳與腎臟、心臟團隊長期追蹤。",
+      "academic_summary": "GLA 編碼溶酶體 α-半乳糖苷酶 A，負責水解醣脂 globotriaosylceramide（Gb3）末端半乳糖。GLA 致病變異導致酵素活性下降，Gb3 與 lyso-Gb3 在血管內皮、腎臟足細胞、心肌細胞與背根神經節沉積，引發小纖維神經病變、血管角化瘤、蛋白尿、腎功能衰退、左心室肥厚與早發性腦中風。女性雜合子因 X 染色體失活偏移，仍可能出現不同程度的器官受累。"
+    },
+    "disease": {
+      "id": "MONDO:0010526",
+      "name": "Fabry disease",
+      "chinese_name": "法布瑞氏症 / α-半乳糖苷酶 A 缺乏症",
+      "categories": [
+        "X 連鎖遺傳疾病",
+        "溶酶體儲積症",
+        "腎臟與心臟疾病"
+      ],
+      "inheritance_mode": "X 連鎖遺傳 (X-Linked)",
+      "severity_badge": "🟡 X 連鎖溶酶體儲積症（早期酵素替代治療可延緩器官損傷）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      },
+      {
+        "hpo_id": "HP:0000083",
+        "name": "Renal insufficiency",
+        "chinese_name": "腎功能不全 / 蛋白尿"
+      },
+      {
+        "hpo_id": "HP:0003474",
+        "name": "Somatic sensory dysfunction",
+        "chinese_name": "體感覺功能障礙 (手腳灼熱疼痛、感覺異常)"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Agalsidase beta",
+        "chinese_name": "阿加糖酶 beta (酵素替代療法)",
+        "mechanism": "靜脈補充重組 α-半乳糖苷酶 A，協助分解溶酶體內的 Gb3 堆積",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      },
+      {
+        "drug_name": "Migalastat",
+        "chinese_name": "米加司他 (口服藥理伴護蛋白)",
+        "mechanism": "與特定可修復型 GLA 變異酵素結合，穩定其摺疊並恢復部分酵素活性",
+        "approval_status": "FDA / TFDA / NMPA 核准（限特定 GLA 變異）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "GLA 致病變異（包含錯義、無義、剪接與小片段缺失；部分變異可用 Migalastat 伴護治療）",
+      "population_frequency": "男性新生兒發生率估計約 1/40,000–1/117,000；女性帶因者可能較晚或被低估",
+      "traffic_light_summary": "目前無特定藥物基因組學（PGx）用藥指引；治療以酵素替代療法（Agalsidase beta）或口服 Migalastat 為主，是否適用 Migalastat 需依 GLA 變異型別與醫囑評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "腎功能受損者應與營養師討論適度限制鈉鹽與蛋白質攝取，避免脫水與腎毒性藥物",
+        "避免自行服用高劑量維生素或來路不明的保健食品，以免增加腎臟負擔",
+        "接受酵素替代療法者應規律回診監測輸注反應、抗體與器官功能"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際法布瑞氏症診療與新生兒篩檢指引",
+      "clinvar_pathogenic_count": 1100,
+      "clinvar_summary_chinese": "ClinVar 已收錄大量 GLA 致病與可能致病變異，基因型與酵素活性可協助確診及用藥評估",
+      "opentargets_score": 0.94,
+      "key_pmids": [
+        "PMID:20301469"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有不明原因手腳灼熱痛、排汗減少、蛋白尿、左心室肥厚或早發性腦中風者，建議檢測 GLA 酵素活性與基因；男性患者的女性家屬應接受遺傳諮詢與篩檢。",
+      "lifestyle_tips": [
+        "規律監測血壓、尿蛋白與腎功能，並由心臟科評估左心室肥厚與心律不整風險",
+        "避免長時間高溫環境、脫水與過度勞累，以減少神經痛與心臟負荷",
+        "隨身攜帶診斷與用藥資訊，接受手術或麻醉前主動告知醫療團隊"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "遺傳代謝科 / 腎臟科 / 心臟內科 / 神經內科",
+      "questions": [
+        "醫師，我長期手腳灼熱痛、排汗變少，又有蛋白尿，需要安排 GLA 酵素活性或基因檢測嗎？",
+        "我的 GLA 變異型別是否適合使用口服 Migalastat，還是需要酵素替代療法？兩種治療的監測重點有何不同？",
+        "我的女兒與其他女性家屬是否可能帶因？她們需要何時開始篩檢與追蹤？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「法布瑞氏症是男性才會得的病，女性帶因者一定完全沒有症狀？」",
+      "truth": "錯！法布瑞氏症雖為 X 連鎖遺傳，但女性帶因者因 X 染色體失活偏移，仍可能出現神經痛、蛋白尿、心肌肥厚或腦中風，且症狀常較晚出現。女性家屬同樣需要遺傳諮詢與長期器官監測。"
+    }
+  },
+  {
+    "association_id": "GDA_GAA_POMPE_DISEASE",
+    "gene": {
+      "symbol": "GAA",
+      "name": "Alpha-glucosidase",
+      "chinese_name": "GAA 酸性 α-葡萄糖苷酶 (龐貝氏症基因)",
+      "ensembl_id": "ENSG00000171298",
+      "entrez_id": "2548",
+      "biotype": "protein_coding",
+      "chromosome": "17q25.3 (17 號染色體)",
+      "metaphor": {
+        "title": "🍚 肌肉細胞裡的【肝醣回收機（故障時肝醣塞滿肌肉與心肌）】",
+        "story": "肌肉運動需要能量，細胞會把多餘的肝醣送進溶酶體回收分解。GAA 就是這台回收機的關鍵酵素，負責把肝醣拆成葡萄糖再利用。當 GAA 兩套基因都故障時，肝醣無法分解，像倉庫爆滿一樣堆積在骨骼肌、心肌與呼吸肌肉中。嬰兒型患者可能出現嚴重肌肉張力低下、心臟肥大與呼吸困難；晚發型則以近端肌無力、走路爬樓梯困難與呼吸功能下降為主。及早診斷並接受酵素替代療法，可改善存活與運動功能。"
+      },
+      "plain_summary": "GAA 缺陷造成龐貝氏症（肝醣儲積症第二型），屬於體染色體隱性遺傳。肝醣堆積在肌肉與心肌，嬰兒型可表現肌張力低下、心臟肥大與呼吸窘迫，晚發型則以近端肌無力與呼吸功能下降為主。新生兒篩檢、酵素活性與基因檢測可早期診斷；酵素替代療法與復健、呼吸照護是治療核心。",
+      "academic_summary": "GAA 編碼溶酶體酸性 α-葡萄糖苷酶，負責水解溶酶體內的 α-1,4 與 α-1,6 糖苷鍵，將肝醣分解為葡萄糖。雙等位基因致病變異造成酵素活性缺乏，肝醣在骨骼肌、心肌與呼吸肌的溶酶體及細胞質中堆積，引發肌肉纖維破壞與自噬功能異常。嬰兒型（Infantile-onset）常伴隨嚴重心肌病變與肌張力低下；晚發型（Late-onset）以近端肢帶肌無力、呼吸肌無力與運動耐力下降為主要表現。"
+    },
+    "disease": {
+      "id": "MONDO:0009290",
+      "name": "glycogen storage disease type II (Pompe disease)",
+      "chinese_name": "龐貝氏症 / 肝醣儲積症第二型",
+      "categories": [
+        "遺傳性代謝疾病",
+        "溶酶體儲積症",
+        "神經肌肉疾病"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟡 可治療的溶酶體儲積症（早期酵素替代療法可改善預後）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001252",
+        "name": "Hypotonia",
+        "chinese_name": "肌張力低下"
+      },
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      },
+      {
+        "hpo_id": "HP:0002093",
+        "name": "Respiratory insufficiency",
+        "chinese_name": "呼吸功能不全"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Alglucosidase alfa",
+        "chinese_name": "阿葡萄糖苷酶 alfa (酵素替代療法)",
+        "mechanism": "靜脈補充重組酸性 α-葡萄糖苷酶，協助分解肌肉溶酶體內的肝醣",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      },
+      {
+        "drug_name": "Avalglucosidase alfa",
+        "chinese_name": "阿伐葡萄糖苷酶 alfa (新一代酵素替代療法)",
+        "mechanism": "經修飾的重組酵素，提升肌肉細胞攝取效率與肝醣清除能力",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "GAA 雙等位基因致病變異（如常見剪接位點 c.-32-13T>G 與其他錯義、無義變異）",
+      "population_frequency": "嬰兒型發生率約 1/100,000–1/138,000；晚發型在部分族群可達 1/40,000 以上",
+      "traffic_light_summary": "目前無特定藥物基因組學（PGx）用藥指引；治療以酵素替代療法（Alglucosidase alfa 或 Avalglucosidase alfa）、復健與呼吸照護為主，療程需依疾病型別、體重、抗體與醫囑調整。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "維持均衡且足夠的蛋白質與熱量，避免長時間飢餓；可依營養師建議少量多餐",
+        "避免自行使用高劑量類固醇或來路不明增肌產品，以免影響肌肉與代謝",
+        "接受酵素替代療法者應監測輸注反應與抗體，並持續呼吸肌功能評估"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際龐貝氏症診療與新生兒篩檢指引",
+      "clinvar_pathogenic_count": 700,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 GAA 致病變異，新生兒篩檢與基因檢測可縮短診斷時程",
+      "opentargets_score": 0.93,
+      "key_pmids": [
+        "PMID:20301438"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "嬰兒出現肌張力低下、心臟肥大、餵食困難或呼吸窘迫，或成人有不明原因近端肌無力與呼吸功能下降時，建議檢測 GAA 酵素活性與基因；一等親可接受遺傳諮詢。",
+      "lifestyle_tips": [
+        "由復健科與物理治療師設計個人化肌力與心肺運動計畫，避免過度疲勞",
+        "定期評估呼吸肌功能與睡眠呼吸，必要時使用非侵襲性呼吸器輔助",
+        "按醫囑規律接受酵素替代療法，並記錄輸注後不適與運動功能變化"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "遺傳代謝科 / 小兒神經科 / 神經內科 / 復健科",
+      "questions": [
+        "醫師，我（或孩子）有近端肌無力、運動耐力下降與呼吸困難，需要檢查 GAA 酵素活性或基因嗎？",
+        "目前適合使用 Alglucosidase alfa 還是 Avalglucosidase alfa？治療後需要監測哪些抗體與器官功能？",
+        "我的呼吸肌功能與睡眠呼吸是否已受影響？需要安排肺功能與呼吸器評估嗎？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「龐貝氏症只有嬰兒才會發病，成年人肌肉無力一定只是老化或運動不足？」",
+      "truth": "錯！龐貝氏症有嬰兒型與晚發型。晚發型可能在兒童、青少年或成年才出現近端肌無力、爬樓梯困難與呼吸功能下降，常被誤認為一般肌肉或肺部問題。透過酵素活性與 GAA 基因檢測才能正確診斷。"
+    }
+  },
+  {
+    "association_id": "GDA_PKD1_ADPKD",
+    "gene": {
+      "symbol": "PKD1",
+      "name": "Polycystin 1, transient receptor potential channel interacting",
+      "chinese_name": "PKD1 多囊蛋白 1 (自體顯性多囊腎基因)",
+      "ensembl_id": "ENSG00000008710",
+      "entrez_id": "5310",
+      "biotype": "protein_coding",
+      "chromosome": "16p13.3 (16 號染色體)",
+      "metaphor": {
+        "title": "💧 腎小管上的【流量感測器（故障時水管長出一顆顆水泡囊腫）】",
+        "story": "腎臟像一座由數百萬條微小水管組成的過濾工廠，PKD1 與 PKD2 組成的多囊蛋白複合體是水管壁上的流量與壓力感測器。當 PKD1 基因缺陷時，感測器失靈，腎小管細胞誤以為自己還在發育，不斷增生並分泌液體，慢慢長成一顆顆囊腫。囊腫越長越多、越長越大，壓迫正常腎組織，最終造成高血壓、腎功能下降甚至洗腎。控制血壓、足量飲水與特定藥物治療，可以延緩囊腫生長。"
+      },
+      "plain_summary": "PKD1 缺陷造成自體顯性多囊腎病（ADPKD），是最常見的遺傳性腎臟病之一。兩側腎臟會陸續長出許多囊腫，常合併高血壓、腰痛、血尿與腎功能逐漸下降。透過影像檢查、家族史與基因檢測可診斷；控制血壓、健康飲食、足量飲水與 Tolvaptan 等治療可延緩病程。",
+      "academic_summary": "PKD1 編碼多囊蛋白 1（polycystin-1），與 PKD2 編碼的 polycystin-2 形成機械感測與鈣訊號複合體，調控腎小管上皮細胞的分化、增生與管腔直徑。PKD1 截短型或致病性錯義變異導致囊腫內襯細胞增殖、液體分泌與細胞外基質重塑，形成進行性囊腫。ADPKD 常伴隨高血壓、肝囊腫、顱內動脈瘤與腎功能衰退；PKD1 變異者通常較 PKD2 變異者更早進入末期腎病。"
+    },
+    "disease": {
+      "id": "MONDO:0004691",
+      "name": "autosomal dominant polycystic kidney disease",
+      "chinese_name": "自體顯性多囊腎病 (ADPKD)",
+      "categories": [
+        "遺傳性腎臟疾病",
+        "體染色體顯性遺傳",
+        "慢性腎臟病"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 常見遺傳性腎臟病（控制血壓與囊腫生長可延緩洗腎）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000107",
+        "name": "Renal cyst",
+        "chinese_name": "腎囊腫（雙側多發性囊腫）"
+      },
+      {
+        "hpo_id": "HP:0000822",
+        "name": "Hypertension",
+        "chinese_name": "高血壓"
+      },
+      {
+        "hpo_id": "HP:0000083",
+        "name": "Renal insufficiency",
+        "chinese_name": "腎功能不全"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Tolvaptan",
+        "chinese_name": "托伐普坦 (V2 受體拮抗劑)",
+        "mechanism": "阻斷腎臟 V2 受體，減少囊腫內液體分泌與 cAMP 訊號，延緩腎臟體積增加",
+        "approval_status": "FDA / TFDA / NMPA 核准（需監測肝功能與水分平衡）"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs",
+        "chinese_name": "血管張力素轉化酶抑制劑 / 血管張力素受體阻斷劑",
+        "mechanism": "控制血壓與減少蛋白尿，降低腎臟血流壓力與心血管風險",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PKD1 致病變異（截短型變異較常見且病程較早）；少數為 PKD2 或 GANAB 等相關基因變異",
+      "population_frequency": "全球約 1/400–1/1,000；占末期腎病病因約 5%–10%",
+      "traffic_light_summary": "目前無特定藥物基因組學（PGx）用藥指引；治療以血壓控制、足量飲水、低鈉飲食與 Tolvaptan 為主，Tolvaptan 使用前後需依醫囑監測肝功能與血鈉，不可自行調整。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "限制鈉鹽攝取並避免高加工食品，以協助控制血壓與延緩腎功能惡化",
+        "除非醫師因水分限制另有指示，否則應維持足量飲水；避免大量含咖啡因或高糖飲料",
+        "避免自行使用非類固醇消炎止痛藥（NSAIDs）、來路不明中草藥或高劑量維生素，以降低腎毒性風險"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.97,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 ADPKD 診療與基因檢測指引",
+      "clinvar_pathogenic_count": 2300,
+      "clinvar_summary_chinese": "ClinVar 已收錄大量 PKD1 致病變異，基因檢測有助於非典型個案與家族成員診斷",
+      "opentargets_score": 0.95,
+      "key_pmids": [
+        "PMID:20301424"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有家族史、雙側腎囊腫、年輕型高血壓或不明原因腎功能下降者，建議接受腎臟超音波、家族史評估與 PKD1/PKD2 基因檢測；一等親應定期追蹤血壓與腎功能。",
+      "lifestyle_tips": [
+        "每日固定測量血壓並記錄，與腎臟科討論最適合的降壓目標與用藥",
+        "維持規律運動、控制體重與戒菸，降低心血管與腎臟負擔",
+        "避免劇烈碰撞性運動（尤其腎臟體積較大者），並與醫師討論顱內動脈瘤篩檢的必要性"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "腎臟科 / 遺傳諮詢 / 心血管內科",
+      "questions": [
+        "醫師，我有雙側多發性腎囊腫與家族史，需要做 PKD1/PKD2 基因檢測來確認診斷與預後嗎？",
+        "我的血壓與尿蛋白控制是否達標？是否適合使用 Tolvaptan？使用前需要先評估哪些肝功能與水分狀態？",
+        "我的孩子與兄弟姊妹應該從幾歲開始接受腎臟超音波與血壓篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「多囊腎只是腎臟長了幾顆水泡，抽掉水泡或少吃鹽就會痊癒？」",
+      "truth": "錯！ADPKD 的囊腫會持續增生與增大，單純抽液無法阻止新囊腫形成。治療重點是長期控制血壓、維持良好生活型態、必要時使用 Tolvaptan 延緩囊腫生長，並定期監測腎功能。若出現劇烈腰痛、血尿或發燒，應立即就醫排除囊腫感染或破裂。"
+    }
+  },
+  {
+    "association_id": "GDA_RYR1_MALIGNANT_HYPERTHERMIA_PGX",
+    "gene": {
+      "symbol": "RYR1",
+      "name": "Ryanodine receptor 1",
+      "chinese_name": "RYR1 骨骼肌蘭尼鹼受體 1 (惡性高熱基因)",
+      "ensembl_id": "ENSG00000196218",
+      "entrez_id": "6261",
+      "biotype": "protein_coding",
+      "chromosome": "19q13.2 (19 號染色體)",
+      "metaphor": {
+        "title": "⚡ 骨骼肌裡的【鈣離子水庫閘門（遇到特定麻醉藥會失控洩洪）】",
+        "story": "骨骼肌收縮需要鈣離子，RYR1 就是肌肉細胞內質網上的鈣離子大水庫閘門，平常精準開關，讓肌肉該收就收、該鬆就鬆。帶有致病變異的人，一旦接觸揮發性吸入麻醉氣體或琥珀膽鹼，閘門就會卡死打開，鈣離子像洩洪一樣湧入細胞，造成肌肉持續緊繃、體溫急速飆高、心跳加快、酸中毒與橫紋肌溶解。這是一場麻醉中的急症，必須立刻停用誘發藥物並施打丹曲洛林解毒！"
+      },
+      "plain_summary": "RYR1 致病變異會造成惡性高熱易感性，屬於體染色體顯性遺傳。患者在接觸揮發性吸入麻醉氣體（如 sevoflurane、desflurane、isoflurane、halothane）或琥珀膽鹼時，可能發生致命性高體溫、肌肉僵直、橫紋肌溶解與高血鉀。麻醉前主動告知家族史與基因結果、改用全靜脈麻醉並備妥丹曲洛林，是確保手術安全的關鍵。",
+      "academic_summary": "RYR1 編碼骨骼肌蘭尼鹼受體第 1 型，位於肌漿網膜，負責將動作電位轉換為鈣離子釋放。致病變異（如 p.Arg614Cys、p.Gly2435Ala 等）使通道在揮發性麻醉劑或琥珀膽鹼刺激下過度開放，肌漿網鈣離子大量外流，引發持續肌肉收縮、有氧與無氧代謝暴增、體溫急速上升、呼吸性與代謝性酸中毒、橫紋肌溶解、高血鉀與心律不整。RYR1 與 CACNA1S 變異均可造成惡性高熱易感性。"
+    },
+    "disease": {
+      "id": "MONDO:0007783",
+      "name": "malignant hyperthermia susceptibility",
+      "chinese_name": "惡性高熱易感性 / 麻醉相關肌肉代謝危症",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "麻醉安全",
+        "神經肌肉疾病"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 麻醉安全紅燈（禁用揮發性麻醉氣體與琥珀膽鹼）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002047",
+        "name": "Malignant hyperthermia",
+        "chinese_name": "惡性高熱"
+      },
+      {
+        "hpo_id": "HP:0003201",
+        "name": "Rhabdomyolysis",
+        "chinese_name": "橫紋肌溶解症"
+      },
+      {
+        "hpo_id": "HP:0002153",
+        "name": "Hyperkalemia",
+        "chinese_name": "高血鉀"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Dantrolene",
+        "chinese_name": "丹曲洛林 (惡性高熱解毒劑)",
+        "mechanism": "抑制骨骼肌肌漿網 RYR1 鈣離子釋放，終止肌肉過度收縮與代謝風暴",
+        "approval_status": "FDA / TFDA / NMPA 核准（惡性高熱急救首選）"
+      },
+      {
+        "drug_name": "Propofol (Total Intravenous Anesthesia)",
+        "chinese_name": "丙泊酚 (全靜脈麻醉 TIVA)",
+        "mechanism": "靜脈麻醉藥，不誘發 RYR1 鈣離子釋放，可作為惡性高熱易感者的麻醉替代方案",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "RYR1 致病變異（如 c.1840C>T p.Arg614Cys、c.7300G>A p.Gly2435Ala 等）與 CACNA1S 變異",
+      "population_frequency": "估計帶因率約 1/2,000–1/3,000；實際外顯率與變異型別、環境誘因有關",
+      "traffic_light_summary": "🔴 麻醉前務必主動告知家族史與基因結果：禁用揮發性吸入麻醉氣體與琥珀膽鹼；若需手術，選擇全靜脈麻醉（TIVA）並確認醫療院所備妥丹曲洛林。",
+      "drugs_guide": [
+        {
+          "drug_name": "Volatile Inhaled Anesthetics (Sevoflurane, Desflurane, Isoflurane, Halothane)",
+          "chinese_name": "揮發性吸入麻醉氣體（七氟醚、地氟醚、異氟醚、氟烷）",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "CPIC 指引列為惡性高熱高風險誘發藥物；RYR1/CACNA1S 易感者嚴禁使用，應改採全靜脈麻醉。",
+          "cpic_level": "CPIC Guideline for RYR1/CACNA1S and Volatile Anesthetics Level A"
+        },
+        {
+          "drug_name": "Depolarizing Muscle Relaxants (Succinylcholine)",
+          "chinese_name": "去極化肌肉鬆弛劑（琥珀膽鹼）",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "琥珀膽鹼可誘發惡性高熱與嚴重高血鉀；易感者應改用非去極化肌肉鬆弛劑並由麻醉團隊評估。",
+          "cpic_level": "CPIC Guideline for RYR1/CACNA1S and Volatile Anesthetics Level A"
+        },
+        {
+          "drug_name": "Dantrolene (Antidote)",
+          "chinese_name": "丹曲洛林（惡性高熱解毒劑）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "惡性高熱發作時的救命解毒劑；易感者手術前應確認院內備有足夠丹曲洛林與急救流程。",
+          "cpic_level": "CPIC Guideline for RYR1/CACNA1S and Volatile Anesthetics Level A"
+        },
+        {
+          "drug_name": "Total Intravenous Anesthesia (Propofol)",
+          "chinese_name": "全靜脈麻醉（丙泊酚）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "全靜脈麻醉不使用揮發性氣體，為 RYR1 易感者建議的麻醉方式；仍需由麻醉團隊全程監測體溫、電解質與酸鹼狀態。",
+          "cpic_level": "CPIC Guideline for RYR1/CACNA1S and Volatile Anesthetics Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "無特殊飲食禁忌，但應避免未經醫師評估的劇烈運動、脫水、酒精與興奮劑，以降低橫紋肌溶解誘發風險",
+        "手術、牙科治療或無痛檢查前，主動出示《惡性高熱麻醉安全卡》，並確認醫療院所備有丹曲洛林"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.98,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 CPIC 麻醉藥物基因組學最高級別指引",
+      "clinvar_pathogenic_count": 900,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 RYR1 與 CACNA1S 惡性高熱相關致病變異，基因檢測可協助麻醉前風險評估",
+      "opentargets_score": 0.96,
+      "key_pmids": [
+        "PMID:20301325",
+        "PMID:30499295"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有惡性高熱家族史、曾於麻醉中出現不明原因高體溫或肌肉僵直者，建議接受 RYR1/CACNA1S 基因檢測與麻醉科評估；一等親應接受遺傳諮詢。",
+      "lifestyle_tips": [
+        "隨身攜帶「惡性高熱易感性」醫療警示卡，並在每次手術、拔牙或內視鏡檢查前主動告知麻醉團隊",
+        "避免在炎熱環境中劇烈運動、脫水或使用興奮劑；若出現肌肉劇痛、無力與深色尿液應立即就醫",
+        "與麻醉科預先討論手術麻醉計畫，確認採用全靜脈麻醉並備妥丹曲洛林"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "麻醉科 / 遺傳諮詢 / 神經肌肉疾病門診",
+      "questions": [
+        "醫師，我有惡性高熱家族史（或 RYR1 基因變異），這次手術可以完全避免揮發性吸入麻醉氣體與琥珀膽鹼嗎？",
+        "院內是否備有丹曲洛林與惡性高熱急救流程？麻醉中會如何監測體溫、血鉀與酸鹼值？",
+        "我的兄弟姊妹與孩子是否也應該接受 RYR1/CACNA1S 基因檢測與麻醉前評估？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「惡性高熱只是麻醉時體溫高一點，退燒藥吃一吃或冰敷就會好？」",
+      "truth": "非常危險！惡性高熱是麻醉中的致命急症，體溫可能急速飆升並伴隨肌肉僵直、酸中毒、橫紋肌溶解與高血鉀。必須立刻停用誘發藥物、施打丹曲洛林並進行積極降溫與電解質校正，絕不能只靠一般退燒處理。"
+    }
+  },
+  {
+    "association_id": "GDA_CFTR_CYSTIC_FIBROSIS_PGX",
+    "gene": {
+      "symbol": "CFTR",
+      "name": "CF transmembrane conductance regulator",
+      "chinese_name": "CFTR 囊腫性纖維化跨膜傳導調節蛋白",
+      "ensembl_id": "ENSG00000001626",
+      "entrez_id": "1080",
+      "biotype": "protein_coding",
+      "chromosome": "7q31.2 (7 號染色體)",
+      "metaphor": {
+        "title": "💧 呼吸道與胰管的【鹽水調節閘門（故障時黏液變得又濃又黏）】",
+        "story": "人體呼吸道、腸道與胰管表面需要一層薄薄的水分來保持潤滑。CFTR 是細胞膜上的氯離子與水分調節閘門，負責把鹽分與水送到管腔表面。當 CFTR 兩套基因都故障時，氯離子無法正常通過，水分跟著減少，分泌物變得又濃又黏，像膠水一樣堵住氣管與胰管。肺部因此反覆感染、支氣管擴張，胰臟消化酶無法順利分泌而造成營養吸收不良。CFTR 調節劑能針對特定變異修復閘門功能，為患者帶來新的治療選項。"
+      },
+      "plain_summary": "CFTR 缺陷造成囊腫性纖維化（Cystic Fibrosis），屬於體染色體隱性遺傳。濃稠黏液會阻塞呼吸道與胰管，導致反覆肺部感染、支氣管擴張、胰臟外分泌功能不全與營養不良。透過汗氯試驗、基因檢測與新生兒篩檢可確診；呼吸道清除、營養支持與 CFTR 調節劑是現代治療核心。",
+      "academic_summary": "CFTR 編碼 ATP 結合匣式氯離子通道，屬於 ABC 轉運蛋白家族，於呼吸道上皮、胰管、汗腺與腸道上皮調控氯離子與碳酸氫鹽分泌。雙等位基因致病變異導致通道摺疊、運輸或門控功能異常，管腔分泌物脫水並酸化，黏液纖毛清除功能受損，引發慢性銅綠假單胞菌感染、支氣管擴張、胰臟外分泌不足與汗氯升高。F508del 為全球最常見變異，CFTR 調節劑（potentiator/corrector）可依變異型別恢復部分功能。"
+    },
+    "disease": {
+      "id": "MONDO:0009061",
+      "name": "cystic fibrosis",
+      "chinese_name": "囊腫性纖維化 (Cystic Fibrosis, CF)",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "遺傳性呼吸系統疾病",
+        "多重器官疾病"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟡 體染色體隱性多重器官疾病（CFTR 調節劑可改善病程）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002110",
+        "name": "Bronchiectasis",
+        "chinese_name": "支氣管擴張"
+      },
+      {
+        "hpo_id": "HP:0001738",
+        "name": "Exocrine pancreatic insufficiency",
+        "chinese_name": "外分泌胰腺功能不全"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "CFTR Modulators (Ivacaftor / Elexacaftor-Tezacaftor-Ivacaftor)",
+        "chinese_name": "CFTR 調節劑（依伐卡托 / 三合一 elexacaftor-tezacaftor-ivacaftor）",
+        "mechanism": "依 CFTR 變異型別增強通道門控或改善摺疊運輸，恢復氯離子與水分分泌",
+        "approval_status": "FDA / TFDA / NMPA 核准（需基因檢測確認適用變異）"
+      },
+      {
+        "drug_name": "Dornase alfa",
+        "chinese_name": "多酶 alfa (重組 DNase)",
+        "mechanism": "分解痰液中的游離 DNA，降低痰液黏稠度並改善呼吸道清除",
+        "approval_status": "FDA / TFDA / NMPA 核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CFTR 致病變異（依藥物標籤與伴隨診斷，如 F508del、G551D 等）",
+      "population_frequency": "歐裔族群約 1/2,500–1/3,500；東亞族群較少見但仍有個案",
+      "traffic_light_summary": "🟢 CFTR 調節劑屬精準標靶治療：用藥前須以基因檢測確認具備相應 CFTR 變異，並由囊腫性纖維化中心團隊評估肝功能、藥物交互作用與感染控制。",
+      "drugs_guide": [
+        {
+          "drug_name": "CFTR Modulators (Ivacaftor / Elexacaftor-Tezacaftor-Ivacaftor)",
+          "chinese_name": "CFTR 調節劑（依伐卡托 / 三合一 elexacaftor-tezacaftor-ivacaftor）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "適用於具特定 CFTR 變異且經基因檢測確認的患者；可改善肺功能與生活品質，但需定期監測肝功能與呼吸道感染。",
+          "cpic_level": "CPIC Guideline for CFTR and Ivacaftor Level A / FDA Companion Diagnostic"
+        }
+      ],
+      "dietary_contraindications": [
+        "需高熱量、高蛋白飲食並搭配胰臟酵素補充，依營養師建議調整份量與用餐時間",
+        "炎熱或大量流汗時應適度補充鹽分與水分，避免低血鈉脫水",
+        "避免吸菸與二手菸暴露，並維持呼吸道清除與疫苗接種"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.97,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 CFTR 調節劑藥物基因組學與囊腫性纖維化診療指引",
+      "clinvar_pathogenic_count": 2000,
+      "clinvar_summary_chinese": "ClinVar 已收錄大量 CFTR 致病與可能致病變異，基因型可指導 CFTR 調節劑選擇",
+      "opentargets_score": 0.96,
+      "key_pmids": [
+        "PMID:20301428",
+        "PMID:29899194"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有新生兒胎便性腸阻塞、生長不良、反覆肺部感染或汗氯偏高者，建議接受汗氯試驗與 CFTR 基因檢測；有家族史者應接受遺傳諮詢與帶因篩檢。",
+      "lifestyle_tips": [
+        "每日執行氣道清除運動與吸入治療，並依醫囑接種流感、肺炎鏈球菌等疫苗",
+        "維持高熱量高蛋白飲食與胰臟酵素補充，定期追蹤生長曲線與脂溶性維生素",
+        "與 CF 中心團隊討論 CFTR 調節劑適用性，並定期監測肝功能與肺功能"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胸腔內科 / 小兒胸腔科 / 遺傳諮詢 / 營養師",
+      "questions": [
+        "醫師，我的汗氯試驗與 CFTR 基因檢測結果是否符合囊腫性纖維化診斷？目前是否適合使用 CFTR 調節劑？",
+        "我的肺部感染與胰臟外分泌功能需要哪些定期檢查？呼吸道清除與疫苗接種該如何安排？",
+        "我的兄弟姊妹與孩子是否需要接受 CFTR 帶因篩檢或遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「囊腫性纖維化只是小時候容易感冒咳嗽，長大後氣管發育成熟就會自然好？」",
+      "truth": "錯！囊腫性纖維化是終身性疾病，濃稠黏液會持續造成支氣管擴張、慢性感染與胰臟功能不全。症狀不會隨年齡自然消失，必須長期接受呼吸道清除、營養支持、感染控制與必要時的 CFTR 調節劑治療。"
+    }
+  },
+  {
+    "association_id": "GDA_CYP3A5_TACROLIMUS_PGX",
+    "gene": {
+      "symbol": "CYP3A5",
+      "name": "Cytochrome P450 family 3 subfamily A member 5",
+      "chinese_name": "CYP3A5 細胞色素 P450 3A5 (他克莫司代謝基因)",
+      "ensembl_id": "ENSG00000106258",
+      "entrez_id": "1577",
+      "biotype": "protein_coding",
+      "chromosome": "7q22.1 (7 號染色體)",
+      "metaphor": {
+        "title": "⚖️ 肝臟裡的【藥物代謝秤（表現者代謝快、非表現者代謝慢，劑量必須精準拿捏）】",
+        "story": "器官移植後，患者必須長期服用他克莫司（Tacrolimus）來抑制免疫排斥，但這個藥的治療窗很窄：濃度太低會排斥移植器官，太高則可能傷腎、傷神經。CYP3A5 是肝臟與腸道中負責代謝他克莫司的酵素。帶有 CYP3A5*1 的人（*1/*1 或 *1/*3）是「表現者」，代謝速度快，標準劑量常不足以達到目標濃度；*3/*3 的人則是「非表現者」，代謝較慢，相同劑量可能過高。透過基因型與血中濃度監測來個人化劑量，才能在防排斥與防毒性之間取得平衡。"
+      },
+      "plain_summary": "CYP3A5 基因型會影響他克莫司（Tacrolimus）的代謝速度，屬於體染色體共顯性遺傳。CYP3A5 表現者（*1/*1 或 *1/*3）通常需要較高劑量才能達到目標血中濃度；非表現者（*3/*3）則可能需要較低劑量。實際用藥必須搭配治療藥物濃度監測（TDM）、移植器官種類與醫囑調整，切勿自行增減藥量。",
+      "academic_summary": "CYP3A5 編碼細胞色素 P450 3A5，於肝臟與小腸上皮表現，負責他克莫司等多種藥物的氧化代謝。CYP3A5*3（rs776746）為常見剪接缺陷變異，導致酵素表現量大幅下降；帶有至少一個 CYP3A5*1 對偶基因者為表現者（expresser），其他克莫司清除率較高，需較高起始劑量才能達到目標谷濃度。CPIC 指引建議依 CYP3A5 基因型調整他克莫司起始劑量，並以治療藥物濃度監測與臨床反應持續微調，以降低急性排斥與腎毒性風險。"
+    },
+    "disease": {
+      "id": "MESH:D064420",
+      "name": "Drug-Related Side Effects and Adverse Reactions",
+      "chinese_name": "藥物相關不良反應（器官移植免疫抑制治療相關）",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "器官移植免疫抑制",
+        "治療藥物濃度監測"
+      ],
+      "inheritance_mode": "體染色體共顯性遺傳 (Autosomal Codominant)",
+      "severity_badge": "🟡 器官移植用藥黃燈（依基因型調整他克莫司劑量並監測血中濃度）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000083",
+        "name": "Renal insufficiency",
+        "chinese_name": "腎功能不全（他克莫司腎毒性風險）"
+      },
+      {
+        "hpo_id": "HP:0000822",
+        "name": "Hypertension",
+        "chinese_name": "高血壓（免疫抑制治療相關）"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Tacrolimus",
+        "chinese_name": "他克莫司 (鈣調磷酸酶抑制劑)",
+        "mechanism": "抑制鈣調磷酸酶與 T 細胞活化，預防器官移植後的急性排斥反應",
+        "approval_status": "FDA / TFDA / NMPA 核准（治療窗狹窄，需濃度監測）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CYP3A5*3 (rs776746) 主要決定表現型；*1/*1 與 *1/*3 為表現者，*3/*3 為非表現者",
+      "population_frequency": "東亞族群 *3/*3 非表現者約 50%–60%，表現者比例明顯高於歐裔族群",
+      "traffic_light_summary": "🟡 他克莫司為治療窗狹窄藥物：CYP3A5 表現者（*1/*1 或 *1/*3）通常需要較高起始劑量才能達到目標血中濃度；非表現者（*3/*3）則需較低劑量以避免毒性。實際劑量與調整必須依血中濃度監測、移植器官種類與醫囑執行。",
+      "drugs_guide": [
+        {
+          "drug_name": "Tacrolimus (CYP3A5 Expressers: *1/*1 or *1/*3)",
+          "chinese_name": "他克莫司（CYP3A5 表現者 *1/*1 或 *1/*3）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP3A5 表現者（*1/*1 或 *1/*3）相較於 *3/*3 非表現者，需要個人化目標劑量並搭配治療藥物濃度監測（TDM），以預防器官排斥；請勿自行調整藥量。",
+          "cpic_level": "CPIC Guideline for CYP3A5 and Tacrolimus Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "避免大量葡萄柚、葡萄柚汁與聖約翰草（St. John's wort），以免影響他克莫司血中濃度",
+        "固定服藥時間並避免自行停藥或併用來路不明保健品；任何新藥都應先與移植團隊確認交互作用",
+        "定期回診監測腎功能、血鉀、血糖與他克莫司谷濃度，出現手抖、尿量減少或發燒時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.97,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 CPIC 他克莫司藥物基因組學最高級別指引",
+      "clinvar_pathogenic_count": 120,
+      "clinvar_summary_chinese": "ClinVar 收錄 CYP3A5 常見星號等位基因與功能變異，基因型可協助移植用藥起始劑量規劃",
+      "opentargets_score": 0.94,
+      "key_pmids": [
+        "PMID:25801146"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "準備接受器官移植或已使用他克莫司者，可與移植團隊討論 CYP3A5 基因檢測，作為起始劑量與濃度監測頻率的參考；用藥調整仍須以血中濃度與臨床狀況為準。",
+      "lifestyle_tips": [
+        "建立服藥與回診紀錄，按時抽血監測他克莫司谷濃度，不可因自覺良好而自行減藥",
+        "注意手抖、頭痛、尿量減少、水腫、發燒或移植部位疼痛等警訊，出現時立即聯絡移植團隊",
+        "維持手部衛生、避免生食與接觸感染者，並依醫囑接種疫苗以降低感染風險"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "器官移植外科 / 腎臟科 / 臨床藥學",
+      "questions": [
+        "醫師，我的 CYP3A5 基因型是表現者還是非表現者？這會如何影響他克莫司的起始劑量與濃度目標？",
+        "目前我的他克莫司谷濃度是否在目標範圍？腎功能、血鉀與血糖需要多久監測一次？",
+        "我正在服用的其他藥物或保健食品，會不會與他克莫司產生交互作用而影響濃度？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「器官移植後只要按時吃他克莫司就好，基因檢測與抽血濃度監測只是多花錢？」",
+      "truth": "錯！他克莫司治療窗很窄，CYP3A5 基因型會明顯影響代謝速度。沒有濃度監測與基因型參考，可能因劑量不足導致排斥，或因劑量過高造成腎毒性與神經毒性。基因檢測搭配定期 TDM，才能安全有效地保護移植器官。"
+    }
   }
 ];
 window.EN_RECORDS = {
@@ -6315,6 +8339,1809 @@ window.EN_RECORDS = {
     "myth_buster": {
       "myth": "“Lynch syndrome means you will definitely get colon cancer.”",
       "truth": "No. Lynch syndrome raises risk, but regular colonoscopy surveillance, lifestyle changes and appropriate medical care greatly reduce risk and enable early detection and treatment."
+    }
+  },
+  "MSH6": {
+    "gene": {
+      "chinese_name": "MutS Homolog 6 (MSH6)",
+      "chromosome": "2p16.3 (Chromosome 2)",
+      "metaphor": {
+        "title": "🧬 The DNA Proofreading Team's 【Single-Base Mismatch Detector】",
+        "story": "DNA replication often produces single-base mismatches, and MSH6 partners with MSH2 to form a detector that finds these small errors and hands them to the repair team. When the detector fails, mismatches slowly accumulate and cells can drift toward cancer. This is related to Lynch syndrome."
+      },
+      "plain_summary": "MSH6 is a key DNA mismatch repair (MMR) gene. A pathogenic variant raises lifetime risk of Lynch syndrome-related cancers such as colon and endometrial cancer, is inherited in an autosomal dominant pattern, and first-degree relatives may carry the same variant. Earlier, regular colonoscopy and gynecologic surveillance allow early detection and management.",
+      "academic_summary": "MSH6 is located at 2p16.3 and encodes a MutS homolog that forms the MutSα complex with MSH2 to recognize single-base mismatches and small insertions/deletions during DNA replication and recruit MLH1/PMS2 for repair. Germline heterozygous pathogenic variants cause mismatch repair deficiency and microsatellite instability-high (MSI-H) tumors, leading to autosomal dominant Lynch syndrome; dMMR/MSI-H tumors are sensitive to PD-1 immune checkpoint inhibitors."
+    },
+    "disease": {
+      "chinese_name": "Lynch Syndrome (Hereditary Non-Polyposis Colorectal Cancer)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Cancer Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Manageable with surveillance and treatment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "Colon cancer"
+      },
+      {
+        "hpo_id": "HP:0012114",
+        "name": "Endometrial carcinoma",
+        "chinese_name": "Endometrial carcinoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Pembrolizumab",
+        "chinese_name": "Pembrolizumab (Keytruda)",
+        "mechanism": "PD-1 immune checkpoint inhibitor for dMMR/MSI-H tumors",
+        "approval_status": "FDA biomarker-approved / NCCN Category 1"
+      },
+      {
+        "drug_name": "Nivolumab",
+        "chinese_name": "Nivolumab (Opdivo)",
+        "mechanism": "PD-1 immune checkpoint inhibitor for dMMR/MSI-H tumors",
+        "approval_status": "FDA biomarker-approved / NCCN Category 1"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "Germline pathogenic variants in the MSH6 mismatch repair gene; tumors often show dMMR/MSI-H",
+      "population_frequency": "Lynch syndrome affects about 1 in 300 people, and the MSH6-related proportion varies by ancestry (PMID:20301390)",
+      "traffic_light_summary": "🟢 Immunotherapy Sensitive: dMMR/MSI-H tumors respond well to PD-1 immune checkpoint inhibitors such as pembrolizumab and nivolumab, under FDA biomarker approval and NCCN Category 1.",
+      "drugs_guide": [
+        {
+          "drug_name": "Pembrolizumab / Nivolumab",
+          "chinese_name": "Pembrolizumab / Nivolumab",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "MSH6-deficient dMMR/MSI-H tumors respond well to PD-1 immune checkpoint inhibitors; dMMR/MSI-H status should be confirmed pathologically before use.",
+          "cpic_level": "FDA Biomarker-Approved (dMMR/MSI-H) / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "Reduce processed meat and red meat intake and increase vegetables, fruit and whole grains",
+        "Limit alcohol intake and maintain a healthy body weight"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "Many MSH6 pathogenic variants curated in ClinVar and the literature are associated with Lynch syndrome and dMMR/MSI-H tumors",
+      "key_pmids": [
+        "PMID:20301390",
+        "PMID:31337882"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Following NCCN guidance and medical advice, begin colonoscopy every 1–2 years starting at age 20–25; women may discuss endometrial cancer surveillance; family members should receive genetic counseling and testing.",
+      "lifestyle_tips": [
+        "Reduce processed meat and red meat and increase vegetables, fruit and whole grains",
+        "Exercise regularly, maintain a healthy weight and limit alcohol",
+        "Seek care early for blood in the stool, changes in bowel habits or abnormal bleeding"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Medical Oncology / Gynecology / Clinical Genetics Clinic",
+      "questions": [
+        "My genetic report shows an MSH6 variant. At what age should I start colonoscopy, and how often?",
+        "Do I need endometrial cancer surveillance, and what tests do you recommend?",
+        "Should my tumor be tested for dMMR/MSI-H, and would that affect the choice of immunotherapy?",
+        "Should my first-degree relatives undergo cascade genetic testing for this exact variant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“MSH6 is only a secondary Lynch syndrome gene, so the risk is low.”",
+      "truth": "Not true. MSH6 pathogenic variants also raise the risk of colon and endometrial cancer. Genetic counseling and regular surveillance allow early detection and management."
+    }
+  },
+  "PMS2": {
+    "gene": {
+      "chinese_name": "PMS2 Mismatch Repair Endonuclease (PMS2)",
+      "chromosome": "7p22.1 (Chromosome 7)",
+      "metaphor": {
+        "title": "🧬 The 【Final Cut】 in the DNA Proofreading Line",
+        "story": "Mismatch repair is a well-organized production line: MSH2/MSH6 find the typo, and MLH1/PMS2 cut out the wrong segment. PMS2 is the key player making that final cut. If the cut fails, mismatches are not truly removed, cells accumulate mutations, and the risk of Lynch syndrome-related cancers rises."
+      },
+      "plain_summary": "PMS2 is a key DNA mismatch repair (MMR) gene. A pathogenic variant raises lifetime risk of Lynch syndrome-related cancers such as colon and endometrial cancer, is inherited in an autosomal dominant pattern, and first-degree relatives may carry the same variant. Earlier, regular colonoscopy and gynecologic surveillance allow early detection and management.",
+      "academic_summary": "PMS2 is located at 7p22.1 and encodes a MutL homolog that forms the MutLα complex with MLH1 to perform endonucleolytic excision after mismatch recognition. Germline heterozygous pathogenic variants cause mismatch repair deficiency and microsatellite instability-high (MSI-H) tumors, leading to autosomal dominant Lynch syndrome; dMMR/MSI-H tumors are sensitive to PD-1 immune checkpoint inhibitors. Pseudogenes near PMS2 can complicate genetic test interpretation."
+    },
+    "disease": {
+      "chinese_name": "Lynch Syndrome (Hereditary Non-Polyposis Colorectal Cancer)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Cancer Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Manageable with surveillance and treatment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "Colon cancer"
+      },
+      {
+        "hpo_id": "HP:0012114",
+        "name": "Endometrial carcinoma",
+        "chinese_name": "Endometrial carcinoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Pembrolizumab",
+        "chinese_name": "Pembrolizumab (Keytruda)",
+        "mechanism": "PD-1 immune checkpoint inhibitor for dMMR/MSI-H tumors",
+        "approval_status": "FDA biomarker-approved / NCCN Category 1"
+      },
+      {
+        "drug_name": "Nivolumab",
+        "chinese_name": "Nivolumab (Opdivo)",
+        "mechanism": "PD-1 immune checkpoint inhibitor for dMMR/MSI-H tumors",
+        "approval_status": "FDA biomarker-approved / NCCN Category 1"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "Germline pathogenic variants in the PMS2 mismatch repair gene; tumors often show dMMR/MSI-H",
+      "population_frequency": "Lynch syndrome affects about 1 in 300 people, and the PMS2-related proportion varies by ancestry (PMID:20301390)",
+      "traffic_light_summary": "🟢 Immunotherapy Sensitive: dMMR/MSI-H tumors respond well to PD-1 immune checkpoint inhibitors such as pembrolizumab and nivolumab, under FDA biomarker approval and NCCN Category 1.",
+      "drugs_guide": [
+        {
+          "drug_name": "Pembrolizumab / Nivolumab",
+          "chinese_name": "Pembrolizumab / Nivolumab",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "PMS2-deficient dMMR/MSI-H tumors respond well to PD-1 immune checkpoint inhibitors; dMMR/MSI-H status should be confirmed pathologically before use.",
+          "cpic_level": "FDA Biomarker-Approved (dMMR/MSI-H) / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "Reduce processed meat and red meat intake and increase vegetables, fruit and whole grains",
+        "Limit alcohol intake and maintain a healthy body weight"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "Multiple PMS2 pathogenic variants curated in ClinVar and the literature are associated with Lynch syndrome and dMMR/MSI-H tumors",
+      "key_pmids": [
+        "PMID:20301390",
+        "PMID:30013564"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Following NCCN guidance and medical advice, begin colonoscopy every 1–2 years starting at age 20–25; women may discuss endometrial cancer surveillance; family members should receive genetic counseling and testing.",
+      "lifestyle_tips": [
+        "Reduce processed meat and red meat and increase vegetables, fruit and whole grains",
+        "Exercise regularly, maintain a healthy weight and limit alcohol",
+        "Seek care early for blood in the stool, changes in bowel habits or abnormal bleeding"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Medical Oncology / Gynecology / Clinical Genetics Clinic",
+      "questions": [
+        "My genetic report shows a PMS2 variant. At what age should I start colonoscopy, and how often?",
+        "Do I need endometrial cancer surveillance, and what tests do you recommend?",
+        "Should my tumor be tested for dMMR/MSI-H, and would that affect the choice of immunotherapy?",
+        "Should my first-degree relatives undergo cascade genetic testing for this exact variant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“PMS2 carries a lower risk than other Lynch genes, so surveillance is unnecessary.”",
+      "truth": "Not true. PMS2 pathogenic variants still raise the risk of colon and endometrial cancer, and pseudogene interference must be considered in test interpretation. Regular surveillance and genetic counseling remain important."
+    }
+  },
+  "APC": {
+    "gene": {
+      "chinese_name": "APC Regulator of WNT Signaling Pathway (APC)",
+      "chromosome": "5q22.2 (Chromosome 5)",
+      "metaphor": {
+        "title": "🚧 The 【Brake System】 for Colon Cell Growth",
+        "story": "Colon lining cells need to renew at a healthy pace, and APC acts like the brake that prevents excessive growth. If the brake fails, the colon develops large numbers of adenomatous polyps, and some can progress to colon cancer if not managed. This is familial adenomatous polyposis (FAP)."
+      },
+      "plain_summary": "APC is an important tumor suppressor that controls cell growth. A pathogenic variant causes familial adenomatous polyposis (FAP), in which large numbers of colon polyps can appear at a young age; without surveillance and management, colon cancer risk rises markedly. It is inherited in an autosomal dominant pattern, first-degree relatives may carry the same variant, and early colonoscopy surveillance and genetic counseling are essential.",
+      "academic_summary": "APC is located at 5q22.2 and encodes a negative regulator of WNT signaling that participates in the β-catenin destruction complex. Germline heterozygous pathogenic variants cause adenomatous polyposis in an autosomal dominant pattern; classic FAP shows hundreds to thousands of colorectal adenomas and virtually always progresses to colon cancer if untreated."
+    },
+    "disease": {
+      "chinese_name": "Familial Adenomatous Polyposis 1 (FAP)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Cancer Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Requires intensive surveillance and surgery when indicated)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0200063",
+        "name": "Colorectal polyposis",
+        "chinese_name": "Colorectal polyposis"
+      },
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "Colon cancer"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Colectomy",
+        "chinese_name": "Colectomy",
+        "mechanism": "Removes high-risk polyps and colon mucosa to reduce colon cancer risk",
+        "approval_status": "Standard surgical treatment"
+      },
+      {
+        "drug_name": "Celecoxib",
+        "chinese_name": "Celecoxib",
+        "mechanism": "NSAID adjunct chemoprevention that may reduce polyp burden but does not replace surveillance or surgery",
+        "approval_status": "Adjunct use; not gene-guided dosing"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "Germline APC pathogenic variants; familial adenomatous polyposis is mainly caused by dysregulated WNT signaling",
+      "population_frequency": "Classic FAP affects about 1 in 8,000–10,000 people and varies by ancestry (PMID:20301519)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Standard management of familial adenomatous polyposis relies on intensive colonoscopy surveillance, colectomy when indicated, and genetic counseling; medications are only adjunctive chemoprevention, and whether to use them should be assessed by gastroenterology and surgical teams.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Reduce processed meat and red meat intake and increase vegetables, fruit and whole grains",
+        "Maintain a healthy weight, exercise regularly and limit alcohol"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "Many APC pathogenic variants curated in ClinVar and the literature show a clear association with familial adenomatous polyposis",
+      "key_pmids": [
+        "PMID:20301519"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Following NCCN guidance and medical advice, begin regular colonoscopy surveillance around adolescence; if polyp burden is high or cannot be controlled endoscopically, discuss the timing of colectomy; family members should receive genetic counseling and testing.",
+      "lifestyle_tips": [
+        "Reduce processed meat and red meat and increase vegetables, fruit and whole grains",
+        "Exercise regularly, maintain a healthy weight and limit alcohol",
+        "Seek care early for blood in the stool, abdominal pain or changes in bowel habits"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Colorectal Surgery / Clinical Genetics Clinic",
+      "questions": [
+        "My genetic report shows an APC variant. At what age should I start colonoscopy, and how often?",
+        "Given my polyp number and location, do you recommend colectomy, and when?",
+        "Would NSAID chemoprevention help me, and would it replace surgery or surveillance?",
+        "Should my first-degree relatives undergo cascade genetic testing for this exact variant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“With FAP, removing polyps once is enough.”",
+      "truth": "Not necessarily. FAP polyps recur, requiring long-term intensive surveillance, and some patients still need colectomy to reduce cancer risk. Ongoing follow-up and genetic counseling are essential."
+    }
+  },
+  "PTEN": {
+    "gene": {
+      "chinese_name": "Phosphatase and Tensin Homolog (PTEN)",
+      "chromosome": "10q23.31 (Chromosome 10)",
+      "metaphor": {
+        "title": "🛑 The 【Growth Throttle Limiter】 in the Cell",
+        "story": "Cells have a PI3K/AKT growth throttle, and PTEN applies the limiter that keeps the growth signal from running too strong. If PTEN fails, the throttle can stick, cells may overgrow, multiple benign hamartomas can form, and the risk of breast, thyroid and endometrial cancer rises. This is PTEN hamartoma tumor syndrome, which includes Cowden syndrome."
+      },
+      "plain_summary": "PTEN is an important tumor suppressor. A pathogenic variant causes PTEN hamartoma tumor syndrome (including Cowden syndrome), which may involve macrocephaly and multiple benign tumors and raises the risk of breast, thyroid and endometrial cancer. It is inherited in an autosomal dominant pattern, first-degree relatives may carry the same variant, and regular multidisciplinary surveillance and genetic counseling are needed.",
+      "academic_summary": "PTEN is located at 10q23.31 and encodes a lipid phosphatase that dephosphorylates PIP3 to PIP2, negatively regulating the PI3K/AKT/mTOR pathway. Germline heterozygous pathogenic variants cause PTEN hamartoma tumor syndrome (PHTS) in an autosomal dominant pattern; features include macrocephaly, mucocutaneous hamartomas, breast cancer, thyroid cancer, endometrial cancer and renal cell carcinoma."
+    },
+    "disease": {
+      "chinese_name": "PTEN Hamartoma Tumor Syndrome (Including Cowden Syndrome)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Cancer Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Requires regular multidisciplinary surveillance)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000256",
+        "name": "Macrocephaly",
+        "chinese_name": "Macrocephaly"
+      },
+      {
+        "hpo_id": "HP:0003002",
+        "name": "Breast carcinoma",
+        "chinese_name": "Breast carcinoma"
+      },
+      {
+        "hpo_id": "HP:0002890",
+        "name": "Thyroid carcinoma",
+        "chinese_name": "Thyroid carcinoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Risk-reducing surgery",
+        "chinese_name": "Risk-Reducing Surgery",
+        "mechanism": "Removes high-risk tissue such as thyroid or breast based on individualized risk assessment",
+        "approval_status": "Standard clinical management"
+      },
+      {
+        "drug_name": "Everolimus",
+        "chinese_name": "Everolimus (mTOR Inhibitor)",
+        "mechanism": "Inhibits the mTOR pathway and is used for selected PTEN-related tumors",
+        "approval_status": "Used by tumor type; not gene-guided dosing"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "Germline PTEN pathogenic variants; PTEN hamartoma tumor syndrome is mainly caused by dysregulated PI3K/AKT/mTOR signaling",
+      "population_frequency": "PTEN pathogenic variants are relatively uncommon in the general population, and carrier frequency varies by ancestry (PMID:20301661)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Management of PTEN hamartoma tumor syndrome centers on regular multidisciplinary surveillance (breast, thyroid, endometrium, kidney, and others), risk-reducing surgery when indicated, and genetic counseling; whether to use mTOR inhibitors or other drugs should be assessed by an oncologist based on tumor type.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Maintain a balanced diet and healthy weight, and avoid smoking and excess alcohol",
+        "Keep regular thyroid, breast and gynecologic follow-up as advised"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "Many PTEN pathogenic variants curated in ClinVar and the literature show a clear association with PTEN hamartoma tumor syndrome",
+      "key_pmids": [
+        "PMID:20301661"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Following NCCN guidance and medical advice, have regular breast imaging, thyroid ultrasound, gynecologic and renal surveillance; seek care early for abnormal masses or symptoms; family members should receive genetic counseling and testing.",
+      "lifestyle_tips": [
+        "Maintain a balanced diet and healthy weight, and avoid smoking and excess alcohol",
+        "Keep regular thyroid, breast and gynecologic follow-up as advised",
+        "Seek care early for a neck mass, abnormal bleeding or breast changes"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Medical Oncology / Endocrinology / Breast Surgery / Clinical Genetics Clinic",
+      "questions": [
+        "My genetic report shows a PTEN variant. What regular surveillance do I need, and how often?",
+        "Do my thyroid, breast and endometrial risks warrant further imaging or surgery evaluation?",
+        "Would mTOR inhibitor therapy be appropriate for my situation?",
+        "Should my first-degree relatives undergo cascade genetic testing for this exact variant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Cowden syndrome is only about skin and benign tumors, so cancer is not a concern.”",
+      "truth": "Not true. PTEN hamartoma tumor syndrome involves benign hamartomas but also raises the risk of breast, thyroid, endometrial and renal cell cancer. Regular multidisciplinary surveillance is essential."
+    }
+  },
+  "RET": {
+    "gene": {
+      "chinese_name": "RET Proto-Oncogene (RET)",
+      "chromosome": "10q11.21 (Chromosome 10)",
+      "metaphor": {
+        "title": "📡 The 【Growth Signal Antenna】 of Endocrine Glands",
+        "story": "RET is a growth-signal antenna on the cell surface, normally helping nerve and kidney development. If a pathogenic variant leaves the antenna permanently on, thyroid C cells and adrenal medulla cells may overgrow, producing medullary thyroid carcinoma and pheochromocytoma. This is related to multiple endocrine neoplasia type 2 (MEN2)."
+      },
+      "plain_summary": "RET is an oncogene associated with multiple endocrine neoplasia type 2 (MEN2). A pathogenic variant raises the risk of medullary thyroid carcinoma and pheochromocytoma, is inherited in an autosomal dominant pattern, and first-degree relatives may carry the same variant. Early genetic testing, thyroid and adrenal surveillance, and surgery or targeted therapy when needed allow good risk management.",
+      "academic_summary": "RET is located at 10q11.21 and encodes a receptor tyrosine kinase involved in GDNF-family signaling and nerve/kidney development. Germline activating pathogenic variants cause autosomal dominant multiple endocrine neoplasia type 2 (MEN2A/MEN2B), manifesting as medullary thyroid carcinoma, pheochromocytoma and hyperparathyroidism; tumors are sensitive to selective RET inhibitors."
+    },
+    "disease": {
+      "chinese_name": "Multiple Endocrine Neoplasia Type 2 (MEN2)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Endocrine Tumor Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Manageable with early surveillance and targeted therapy)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002865",
+        "name": "Medullary thyroid carcinoma",
+        "chinese_name": "Medullary thyroid carcinoma"
+      },
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "Pheochromocytoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Selpercatinib",
+        "chinese_name": "Selpercatinib (Retevmo)",
+        "mechanism": "Selective RET inhibitor that suppresses RET-driven tumor growth",
+        "approval_status": "FDA-approved / NCCN Category 1"
+      },
+      {
+        "drug_name": "Pralsetinib",
+        "chinese_name": "Pralsetinib (Gavreto)",
+        "mechanism": "Selective RET inhibitor that suppresses RET-driven tumor growth",
+        "approval_status": "FDA-approved / NCCN Category 1"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "Germline activating RET pathogenic variants (e.g., M918T, C634); associated with MEN2 and RET-driven tumors",
+      "population_frequency": "MEN2 affects about 1 in 30,000 people and varies by ancestry and variant type (PMID:20301434)",
+      "traffic_light_summary": "🟢 Targeted Therapy Sensitive: RET-driven tumors such as medullary thyroid carcinoma respond well to selective RET inhibitors such as selpercatinib and pralsetinib, under FDA companion diagnostics and NCCN Category 1.",
+      "drugs_guide": [
+        {
+          "drug_name": "Selpercatinib / Pralsetinib",
+          "chinese_name": "Selpercatinib / Pralsetinib",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "RET-driven tumors respond well to selective RET inhibitors; RET variant status should be confirmed before use and assessed by an oncologist.",
+          "cpic_level": "FDA Companion Diagnostic / NCCN Category 1"
+        }
+      ],
+      "dietary_contraindications": [
+        "No specific dietary restrictions; monitor blood pressure and thyroid-related markers as advised",
+        "During targeted therapy, monitor liver function and adverse effects as advised"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "Multiple activating RET pathogenic variants curated in ClinVar and the literature show a clear association with MEN2 and medullary thyroid carcinoma",
+      "key_pmids": [
+        "PMID:20301434",
+        "PMID:32846060"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Following NCCN guidance and medical advice, once MEN2 is diagnosed, monitor the thyroid (calcitonin and ultrasound) and adrenal glands (pheochromocytoma screening) regularly; discuss prophylactic thyroidectomy and targeted therapy when indicated; family members should receive RET genetic testing.",
+      "lifestyle_tips": [
+        "Monitor blood pressure as advised and seek care early for episodic headache, palpitations or sweating",
+        "Do not stop or adjust targeted therapy on your own",
+        "Family members should receive genetic counseling and RET genetic testing"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Endocrinology / Medical Oncology / Endocrine Surgery / Clinical Genetics Clinic",
+      "questions": [
+        "My genetic report shows a RET variant. When and how should my medullary thyroid carcinoma be monitored?",
+        "Do I need pheochromocytoma screening, and what tests do you recommend?",
+        "Am I a candidate for RET inhibitors such as selpercatinib or pralsetinib?",
+        "Should my first-degree relatives undergo cascade genetic testing for this exact variant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“MEN2 thyroid tumors are benign, so they do not need early management.”",
+      "truth": "Not true. MEN2-associated medullary thyroid carcinoma is malignant, and early surveillance with surgery or targeted therapy when indicated is important. Genetic testing helps family members identify risk early."
+    }
+  },
+  "VHL": {
+    "gene": {
+      "chinese_name": "Von Hippel-Lindau Tumor Suppressor (VHL)",
+      "chromosome": "3p25.3 (Chromosome 3)",
+      "metaphor": {
+        "title": "🧭 The Cell's 【Oxygen Sensor Brake】",
+        "story": "Normal cells switch on a survival program when oxygen is low, and VHL acts as the brake that keeps this program from overreacting. If VHL fails, cells behave as if they are always short of oxygen and grow many blood-rich tumors, such as hemangioblastoma, renal cell carcinoma and pheochromocytoma. This is von Hippel-Lindau syndrome."
+      },
+      "plain_summary": "VHL is an important tumor suppressor. A pathogenic variant causes von Hippel-Lindau syndrome, which can involve multiple tumors including hemangioblastoma, renal cell carcinoma and pheochromocytoma. It is inherited in an autosomal dominant pattern, first-degree relatives may carry the same variant, and regular imaging surveillance plus surgery or targeted therapy when needed allow good risk management.",
+      "academic_summary": "VHL is located at 3p25.3 and encodes the substrate-recognition protein of an E3 ubiquitin ligase complex that targets HIF-1α/HIF-2α for degradation under normoxia. Germline heterozygous pathogenic variants cause autosomal dominant von Hippel-Lindau syndrome; HIF accumulation promotes angiogenesis and leads to hemangioblastoma, clear-cell renal cell carcinoma and pheochromocytoma. HIF-2α inhibitors are used for VHL-associated tumors."
+    },
+    "disease": {
+      "chinese_name": "Von Hippel-Lindau Syndrome (VHL)",
+      "categories": [
+        "Malignant Neoplasm",
+        "Hereditary Cancer Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "⚠️ High Clinical Priority (Requires regular multidisciplinary surveillance)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0005562",
+        "name": "Renal cell carcinoma",
+        "chinese_name": "Renal cell carcinoma"
+      },
+      {
+        "hpo_id": "HP:0010797",
+        "name": "Hemangioblastoma",
+        "chinese_name": "Hemangioblastoma"
+      },
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "Pheochromocytoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Belzutifan",
+        "chinese_name": "Belzutifan (Welireg)",
+        "mechanism": "HIF-2α inhibitor that suppresses hypoxia signaling and tumor growth caused by VHL deficiency",
+        "approval_status": "FDA-approved for VHL-associated tumors"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "Germline VHL pathogenic variants; VHL syndrome is mainly caused by impaired HIF-α degradation and excessive hypoxia signaling",
+      "population_frequency": "VHL syndrome affects about 1 in 36,000 people and varies by ancestry (PMID:20301636)",
+      "traffic_light_summary": "🟢 Targeted Therapy Sensitive: VHL-associated tumors respond well to HIF-2α inhibitors such as belzutifan, which is FDA-approved for VHL-associated tumors.",
+      "drugs_guide": [
+        {
+          "drug_name": "Belzutifan",
+          "chinese_name": "Belzutifan",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "Belzutifan is a HIF-2α inhibitor available for VHL-associated tumors; whether to use it and how to monitor should be assessed by an oncologist.",
+          "cpic_level": "FDA Approved for VHL-Associated Tumors"
+        }
+      ],
+      "dietary_contraindications": [
+        "No specific dietary restrictions; monitor blood pressure and tumor imaging as advised",
+        "During targeted therapy, monitor for anemia and adverse effects as advised"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Definitive International Clinical Consensus",
+      "clinvar_summary_chinese": "Many VHL pathogenic variants curated in ClinVar and the literature show a clear association with von Hippel-Lindau syndrome",
+      "key_pmids": [
+        "PMID:20301636",
+        "PMID:34818489"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Following NCCN guidance and medical advice, have regular brain and spinal imaging, abdominal imaging, renal and adrenal surveillance, and blood pressure checks; discuss surgery or targeted therapy such as belzutifan when indicated; family members should receive genetic counseling and testing.",
+      "lifestyle_tips": [
+        "Monitor blood pressure as advised and seek care early for episodic headache, palpitations or sweating",
+        "Avoid smoking and excess alcohol and maintain a healthy weight",
+        "Family members should receive genetic counseling and VHL genetic testing"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Medical Oncology / Neurosurgery / Urology / Endocrinology / Clinical Genetics Clinic",
+      "questions": [
+        "My genetic report shows a VHL variant. What regular imaging surveillance do I need, and how often?",
+        "Do my renal, adrenal and central nervous system tumor risks need further evaluation?",
+        "Am I a candidate for HIF-2α inhibitors such as belzutifan?",
+        "Should my first-degree relatives undergo cascade genetic testing for this exact variant?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“VHL tumors are all benign, so aggressive management is unnecessary.”",
+      "truth": "Not true. VHL syndrome includes hemangioblastoma but also raises the risk of renal cell carcinoma and pheochromocytoma. Regular multidisciplinary surveillance and treatment when indicated are key to reducing complications and mortality."
+    }
+  },
+  "FBN1": {
+    "gene": {
+      "chinese_name": "Fibrillin 1 (FBN1)",
+      "chromosome": "15q21.1 (Chromosome 15)",
+      "metaphor": {
+        "title": "🧵 The Elastic Rebar of Connective Tissue",
+        "story": "Connective tissue is like the steel and springs inside a building. FBN1 makes fibrillin, the material that keeps blood vessels, eyes and bones elastic. When that material is weak, the aorta can widen and the lens and skeleton can be affected, producing Marfan syndrome."
+      },
+      "plain_summary": "The FBN1 gene is involved in the elastic fibers of connective tissue. A pathogenic variant can increase the risk of Marfan syndrome, and it is inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Regular cardiovascular evaluation, imaging surveillance and medication can lower the risk of aortic complications.",
+      "academic_summary": "FBN1 is located at 15q21.1 and encodes fibrillin-1, a major component of extracellular matrix elastic fibers. FBN1 pathogenic variants cause Marfan syndrome in an autosomal dominant pattern, typically with aortic root dilation, ectopia lentis and skeletal abnormalities."
+    },
+    "disease": {
+      "chinese_name": "Marfan Syndrome",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Connective Tissue Disease"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiovascular imaging (manageable with monitoring and medication)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002650",
+        "name": "Scoliosis",
+        "chinese_name": "Scoliosis"
+      },
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "Aortic aneurysm"
+      },
+      {
+        "hpo_id": "HP:0001083",
+        "name": "Ectopia lentis",
+        "chinese_name": "Ectopia lentis"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce aortic wall stress and the rate of aortic dilation",
+        "approval_status": "Standard prescription therapy"
+      },
+      {
+        "drug_name": "Losartan",
+        "chinese_name": "Losartan",
+        "mechanism": "Angiotensin receptor blocker that controls blood pressure and may slow aortic dilation",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "FBN1 pathogenic variants; Marfan syndrome is mainly caused by abnormal fibrillin-1 function",
+      "population_frequency": "Marfan syndrome affects about 1 in 5,000 people, and FBN1 is the main causative gene (PMID:20301510)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Standard treatment for Marfan syndrome includes beta-blockers and losartan (an ARB) for blood-pressure control to slow aortic dilation; whether and which medication to use should be assessed by a cardiologist or genetics specialist based on aortic size and risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid high-impact sports, heavy weight training and unassessed competitive sports to reduce the risk of aortic dissection",
+        "Attend scheduled echocardiography or CT surveillance of aortic size as advised"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐⭐⭐⭐ Clear genetic medicine evidence",
+      "clinvar_pathogenic_count": 1200,
+      "clinvar_summary_chinese": "ClinVar and the literature include many FBN1 pathogenic variants with a clear association with Marfan syndrome",
+      "opentargets_score": 0.8,
+      "key_pmids": [
+        "PMID:20301510"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have a family history of Marfan syndrome, aortic dilation, ectopia lentis, or a tall thin build with joint laxity, consider cardiovascular imaging and genetic counseling; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Avoid high-impact sports, weight training and unassessed competitive sports",
+        "Attend scheduled echocardiography or CT surveillance of the aorta",
+        "Seek care early for sudden chest or back pain, breathlessness or vision changes"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My FBN1 test shows a pathogenic variant. How often should my aorta be checked?",
+        "Should my parents, siblings or children also have cardiovascular evaluation or genetic testing?",
+        "Am I suitable for beta-blockers or losartan, and what exercise or weight-training limits apply to me?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "People with Marfan syndrome cannot exercise.",
+      "truth": "Not necessarily. Many patients can do low-impact exercise after medical evaluation; the key is to avoid high-impact sports, weight training and unassessed competitive sports, and to keep regular aortic surveillance."
+    }
+  },
+  "KCNQ1": {
+    "gene": {
+      "chinese_name": "Potassium Voltage-Gated Channel KQT Member 1 (KCNQ1)",
+      "chromosome": "11p15.5 (Chromosome 11)",
+      "metaphor": {
+        "title": "⚡ The Slow Brake of the Heart's Electrical Current",
+        "story": "Each heartbeat depends on precisely timed electrical currents. The potassium channel made by KCNQ1 acts like a brake that ends the current at the right moment. If the brake fails, repolarization slows, the QT interval lengthens and dangerous arrhythmias can occur."
+      },
+      "plain_summary": "The KCNQ1 gene is involved in a cardiac potassium channel. A pathogenic variant can increase the risk of long QT syndrome, and it is inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Avoiding trigger medicines, having regular ECGs and working with a cardiologist can manage most of the risk.",
+      "academic_summary": "KCNQ1 is located at 11p15.5 and encodes the Kv7.1 potassium channel alpha subunit, which contributes to cardiac action potential repolarization. KCNQ1 pathogenic variants cause long QT syndrome in an autosomal dominant pattern and can lead to QT prolongation, syncope and sudden cardiac death risk."
+    },
+    "disease": {
+      "chinese_name": "Long QT Syndrome",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Arrhythmia"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs rhythm monitoring and medication vigilance (manageable by avoiding triggers)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "Prolonged QT interval"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "Syncope"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "Sudden cardiac death"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation and arrhythmia risk",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "KCNQ1 pathogenic variants reduce Kv7.1 potassium channel function and prolong the QT interval",
+      "population_frequency": "Long QT syndrome affects about 1 in 2,000 people, and KCNQ1 and KCNH2 are common causative genes (PMID:20301308)",
+      "traffic_light_summary": "🔴 People with a KCNQ1-related long QT syndrome should avoid medicines listed as Known Risk by CredibleMeds for QT prolongation, including some macrolide/fluoroquinolone antibiotics and certain antiarrhythmics or antipsychotics. Tell every prescriber and pharmacist, and ask for ECG monitoring if such a medicine is unavoidable; standard care also includes beta-blockers and avoiding triggers.",
+      "drugs_guide": [
+        {
+          "drug_name": "QT-Prolonging Medications (macrolide/fluoroquinolone antibiotics, certain antiarrhythmics/antipsychotics) — CredibleMeds Known Risk",
+          "chinese_name": "QT-Prolonging Medications — CredibleMeds Known Risk",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "People with KCNQ1-related long QT syndrome are especially sensitive to QT-prolonging medicines, which can trigger torsades de pointes. Medicines listed as Known Risk by CredibleMeds should be avoided; if a medicine is unavoidable, a specialist should assess the risk and ECG monitoring should be strengthened.",
+          "cpic_level": "HRS/EHRA/APHRS Expert Consensus High Alert"
+        }
+      ],
+      "dietary_contraindications": [
+        "Avoid dehydration, electrolyte imbalance and excessive caffeine or alcohol",
+        "Tell every doctor and pharmacist about long QT syndrome and check whether a new medicine prolongs the QT interval"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐⭐⭐⭐ Clear genetic medicine evidence",
+      "clinvar_pathogenic_count": 600,
+      "clinvar_summary_chinese": "ClinVar and the literature include many KCNQ1 pathogenic variants with a clear association with long QT syndrome",
+      "opentargets_score": 0.76,
+      "key_pmids": [
+        "PMID:20301308"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have a family history of long QT syndrome, or syncope or palpitations after exercise or emotional stress, consider an ECG and genetic counseling; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Avoid dehydration, electrolyte imbalance and excessive alcohol or stimulant drinks",
+        "Tell clinicians and pharmacists about long QT syndrome so QT-prolonging medicines can be avoided",
+        "Attend scheduled ECG follow-up and seek care early for syncope or palpitations"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My KCNQ1 test shows a pathogenic variant. How often should I have an ECG?",
+        "Should my parents, siblings or children also have an ECG or genetic testing?",
+        "Which common medicines prolong the QT interval, and am I suitable for beta-blockers?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "Long QT syndrome only matters if I have symptoms.",
+      "truth": "No. Even without symptoms, specific medicines, dehydration or electrolyte imbalance can trigger dangerous arrhythmias; regular ECGs and medication review are needed."
+    }
+  },
+  "KCNH2": {
+    "gene": {
+      "chinese_name": "Potassium Voltage-Gated Channel H Member 2 (KCNH2)",
+      "chromosome": "7q36.1 (Chromosome 7)",
+      "metaphor": {
+        "title": "⚡ The Rapid Rectifier of the Heart's Electrical Current",
+        "story": "The HERG potassium channel made by KCNH2 rapidly rectifies the cardiac current so the voltage recovers after each beat. If the channel works poorly, repolarization slows, the QT interval lengthens and dangerous arrhythmias can occur."
+      },
+      "plain_summary": "The KCNH2 gene is involved in a cardiac potassium channel. A pathogenic variant can increase the risk of long QT syndrome, and it is inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Avoiding trigger medicines, having regular ECGs and working with a cardiologist can lower arrhythmia risk.",
+      "academic_summary": "KCNH2 is located at 7q36.1 and encodes the HERG (Kv11.1) potassium channel alpha subunit, which contributes to cardiac action potential repolarization. KCNH2 pathogenic variants cause long QT syndrome in an autosomal dominant pattern and can lead to QT prolongation, syncope and sudden cardiac death risk."
+    },
+    "disease": {
+      "chinese_name": "Long QT Syndrome",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Arrhythmia"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs rhythm monitoring and medication vigilance (manageable by avoiding triggers)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "Prolonged QT interval"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "Syncope"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "Sudden cardiac death"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation and arrhythmia risk",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "KCNH2 pathogenic variants reduce HERG potassium channel function and prolong the QT interval",
+      "population_frequency": "Long QT syndrome affects about 1 in 2,000 people, and KCNH2 and KCNQ1 are common causative genes (PMID:20301308)",
+      "traffic_light_summary": "🔴 People with a KCNH2-related long QT syndrome should avoid medicines listed as Known Risk by CredibleMeds for QT prolongation, including some macrolide/fluoroquinolone antibiotics and certain antiarrhythmics or antipsychotics. Tell every prescriber and pharmacist, and ask for ECG monitoring if such a medicine is unavoidable; standard care also includes beta-blockers and avoiding triggers.",
+      "drugs_guide": [
+        {
+          "drug_name": "QT-Prolonging Medications (macrolide/fluoroquinolone antibiotics, certain antiarrhythmics/antipsychotics) — CredibleMeds Known Risk",
+          "chinese_name": "QT-Prolonging Medications — CredibleMeds Known Risk",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "People with KCNH2-related long QT syndrome are especially sensitive to QT-prolonging medicines, which can trigger torsades de pointes. Medicines listed as Known Risk by CredibleMeds should be avoided; if a medicine is unavoidable, a specialist should assess the risk and ECG monitoring should be strengthened.",
+          "cpic_level": "HRS/EHRA/APHRS Expert Consensus High Alert"
+        }
+      ],
+      "dietary_contraindications": [
+        "Avoid dehydration, electrolyte imbalance and excessive caffeine or alcohol",
+        "Tell every doctor and pharmacist about long QT syndrome and check whether a new medicine prolongs the QT interval"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐⭐⭐⭐ Clear genetic medicine evidence",
+      "clinvar_pathogenic_count": 700,
+      "clinvar_summary_chinese": "ClinVar and the literature include many KCNH2 pathogenic variants with a clear association with long QT syndrome",
+      "opentargets_score": 0.77,
+      "key_pmids": [
+        "PMID:20301308"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have a family history of long QT syndrome, or syncope or palpitations after exercise or emotional stress, consider an ECG and genetic counseling; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Avoid dehydration, electrolyte imbalance and excessive alcohol or stimulant drinks",
+        "Tell clinicians and pharmacists about long QT syndrome so QT-prolonging medicines can be avoided",
+        "Attend scheduled ECG follow-up and seek care early for syncope or palpitations"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My KCNH2 test shows a pathogenic variant. How often should I have an ECG?",
+        "Should my parents, siblings or children also have an ECG or genetic testing?",
+        "Which common medicines prolong the QT interval, and am I suitable for beta-blockers?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "Long QT syndrome only matters if I have symptoms.",
+      "truth": "No. Even without symptoms, specific medicines, dehydration or electrolyte imbalance can trigger dangerous arrhythmias; regular ECGs and medication review are needed."
+    }
+  },
+  "SCN5A": {
+    "gene": {
+      "chinese_name": "Sodium Voltage-Gated Channel Alpha Subunit 5 (SCN5A)",
+      "chromosome": "3p22.2 (Chromosome 3)",
+      "metaphor": {
+        "title": "⚡ The Sodium Gate of the Heart's Electrical Current",
+        "story": "At the start of each heartbeat, sodium gates must open and close quickly, and SCN5A is the main component of that gate. If the gate works abnormally, the heart's electrical current can become unstable, producing the characteristic ECG pattern and arrhythmia risk of Brugada syndrome."
+      },
+      "plain_summary": "The SCN5A gene is involved in the cardiac sodium channel. A pathogenic variant can increase the risk of Brugada syndrome, and it is inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Avoiding specific medicines, treating fever promptly and regular cardiac evaluation help reduce arrhythmia risk.",
+      "academic_summary": "SCN5A is located at 3p22.2 and encodes the cardiac sodium channel alpha subunit Nav1.5, responsible for phase 0 depolarization. SCN5A pathogenic variants cause Brugada syndrome in an autosomal dominant pattern and can lead to arrhythmia, syncope and sudden cardiac death risk."
+    },
+    "disease": {
+      "chinese_name": "Brugada Syndrome",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Arrhythmia"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs rhythm monitoring and fever management (manageable by avoiding triggers)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011675",
+        "name": "Arrhythmia",
+        "chinese_name": "Arrhythmia"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "Syncope"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "Sudden cardiac death"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Quinidine",
+        "chinese_name": "Quinidine",
+        "mechanism": "Used by specialists in selected patients to reduce ventricular arrhythmia",
+        "approval_status": "Specialist prescription therapy"
+      },
+      {
+        "drug_name": "Isoproterenol",
+        "chinese_name": "Isoproterenol",
+        "mechanism": "Used in hospital settings for electrical storm",
+        "approval_status": "Hospital specialist use"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "SCN5A pathogenic variants reduce cardiac sodium channel function and produce a Brugada ECG pattern",
+      "population_frequency": "Brugada syndrome is more common in some East and Southeast Asian populations, and SCN5A is the main causative gene (PMID:20301690)",
+      "traffic_light_summary": "🔴 People with Brugada syndrome should avoid Class IC antiarrhythmics and sodium-channel blockers (flecainide, ajmaline and procainamide are on the Brugadadrugs.org avoid list). 🟡 Fever can trigger a Brugada ECG pattern and arrhythmia, so treat fever promptly and seek medical care; medication choices should be reviewed by a cardiologist.",
+      "drugs_guide": [
+        {
+          "drug_name": "Class IC Antiarrhythmics & Sodium Channel Blockers (Flecainide / Ajmaline / Procainamide)",
+          "chinese_name": "Class IC Antiarrhythmics & Sodium Channel Blockers",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "These medicines further block the cardiac sodium channel and can trigger a Brugada ECG pattern and ventricular arrhythmia. They are on the Brugadadrugs.org avoid list and should be avoided; any exceptional use must be assessed by a cardiologist.",
+          "cpic_level": "HRS/EHRA/APHRS Brugada Syndrome Consensus"
+        },
+        {
+          "drug_name": "Fever / Febrile illness",
+          "chinese_name": "Fever / Febrile Illness",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "Fever can trigger a Brugada ECG pattern and arrhythmia. Seek medical care promptly and treat fever actively, with ECG monitoring if needed; do not use unconfirmed antipyretics or cold medicines on your own.",
+          "cpic_level": "HRS/EHRA/APHRS Brugada Syndrome Consensus"
+        }
+      ],
+      "dietary_contraindications": [
+        "Treat fever promptly and seek care early; avoid prolonged high fever",
+        "Avoid excessive alcohol, dehydration and electrolyte imbalance, which can trigger arrhythmia"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐⭐⭐⭐ Clear genetic medicine evidence",
+      "clinvar_pathogenic_count": 900,
+      "clinvar_summary_chinese": "ClinVar and the literature include many SCN5A pathogenic variants with a clear association with Brugada syndrome",
+      "opentargets_score": 0.78,
+      "key_pmids": [
+        "PMID:20301690"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have a family history of Brugada syndrome, unexplained syncope, night-time breathing difficulty or palpitations, consider an ECG and genetic counseling; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Treat fever actively and seek care early; avoid prolonged high fever",
+        "Avoid excessive alcohol, heavy meals and dehydration, and keep electrolytes balanced",
+        "Tell clinicians and pharmacists about Brugada syndrome so trigger medicines can be avoided"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My SCN5A test shows a pathogenic variant. How often should I have an ECG?",
+        "Should my parents, siblings or children also have an ECG or genetic testing?",
+        "Which medicines should I avoid, and how should fever be managed?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "Brugada syndrome only affects men.",
+      "truth": "No. Men are at higher risk, but women can also carry a pathogenic variant and develop arrhythmia; family members should be evaluated as advised."
+    }
+  },
+  "LMNA": {
+    "gene": {
+      "chinese_name": "Lamin A/C (LMNA)",
+      "chromosome": "1q22 (Chromosome 1)",
+      "metaphor": {
+        "title": "🧱 The Inner Scaffold of the Cell Nucleus",
+        "story": "Every cell nucleus needs a sturdy inner lining, and the lamin A/C proteins made by LMNA form that scaffold. If the scaffold is weak, heart muscle cells are more vulnerable, and the heart can enlarge with reduced pumping strength and arrhythmia."
+      },
+      "plain_summary": "The LMNA gene is involved in the nuclear envelope protein lamin A/C. A pathogenic variant can increase the risk of dilated cardiomyopathy and arrhythmia, and it is inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Regular heart-function and rhythm follow-up, with heart-failure medication or an implantable defibrillator when needed, can help manage risk.",
+      "academic_summary": "LMNA is located at 1q22 and encodes lamin A/C, which maintains nuclear structure and gene-expression regulation. LMNA pathogenic variants cause dilated cardiomyopathy in an autosomal dominant pattern, often with conduction abnormalities and arrhythmia, and sudden cardiac death risk requires careful assessment."
+    },
+    "disease": {
+      "chinese_name": "Dilated Cardiomyopathy",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs heart-function and rhythm follow-up (manageable with medication and device therapy)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "Dilated cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0011675",
+        "name": "Arrhythmia",
+        "chinese_name": "Arrhythmia"
+      },
+      {
+        "hpo_id": "HP:0001635",
+        "name": "Congestive heart failure",
+        "chinese_name": "Congestive heart failure"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce myocardial oxygen demand and sympathetic stimulation, improving heart-failure outcomes",
+        "approval_status": "Standard prescription therapy"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "ACE Inhibitors / ARBs / ARNI",
+        "mechanism": "Reduce cardiac workload and slow ventricular remodeling",
+        "approval_status": "Standard prescription therapy"
+      },
+      {
+        "drug_name": "Mineralocorticoid receptor antagonists",
+        "chinese_name": "Mineralocorticoid Receptor Antagonists",
+        "mechanism": "Reduce heart-failure hospitalization and mortality",
+        "approval_status": "Standard prescription therapy"
+      },
+      {
+        "drug_name": "SGLT2 inhibitors",
+        "chinese_name": "SGLT2 Inhibitors",
+        "mechanism": "Improve heart-failure outcomes and cardiac function",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "LMNA pathogenic variants; dilated cardiomyopathy is linked to abnormal lamin A/C function",
+      "population_frequency": "LMNA-related dilated cardiomyopathy accounts for a subset of familial dilated cardiomyopathy and often includes conduction abnormalities and arrhythmia (PMID:20301717)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Standard treatment for dilated cardiomyopathy includes heart-failure medicines (beta-blockers, ACEI/ARB/ARNI, mineralocorticoid receptor antagonists and SGLT2 inhibitors) and assessment for an implantable cardioverter-defibrillator (ICD) when needed; whether and when to use them should be decided by a cardiologist based on heart function and arrhythmia risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Follow a low-salt diet and fluid guidance to avoid worsening heart failure",
+        "Avoid excessive alcohol and unassessed strenuous exercise, and monitor weight and swelling regularly"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.88,
+      "plain_rating": "⭐⭐⭐⭐ Clear genetic medicine evidence",
+      "clinvar_pathogenic_count": 500,
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple LMNA pathogenic variants with a clear association with dilated cardiomyopathy and conduction abnormalities",
+      "opentargets_score": 0.74,
+      "key_pmids": [
+        "PMID:20301717"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have a family history of dilated cardiomyopathy, conduction block or sudden cardiac death, consider echocardiography, ECG and genetic counseling; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Follow a low-salt diet, manage fluids and monitor weight and swelling daily",
+        "Exercise as advised and avoid excessive alcohol and unassessed strenuous activity",
+        "Keep regular heart-function and rhythm follow-up, and seek care early for chest tightness, syncope or palpitations"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My LMNA test shows a pathogenic variant. How often should my heart function and rhythm be checked?",
+        "Should my parents, siblings or children also have cardiac evaluation or genetic testing?",
+        "Do I need an implantable cardioverter-defibrillator (ICD) assessment, and which heart-failure medicines are suitable?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "Dilated cardiomyopathy does not need follow-up while the heart still pumps a little.",
+      "truth": "No. LMNA-related cardiomyopathy can progress and is associated with conduction abnormalities and arrhythmia; regular heart-function and rhythm review is needed, with early discussion of device therapy when appropriate."
+    }
+  },
+  "PCSK9": {
+    "gene": {
+      "chinese_name": "Proprotein Convertase Subtilisin/Kexin Type 9 (PCSK9)",
+      "chromosome": "1p32.3 (Chromosome 1)",
+      "metaphor": {
+        "title": "🚦 The Control Valve of Cholesterol Recycling",
+        "story": "LDL receptors on the liver surface recycle bad cholesterol from the blood, and PCSK9 acts like a control valve that affects how many of those receptors are available. If PCSK9 is overactive, receptors decrease and LDL cholesterol tends to rise."
+      },
+      "plain_summary": "The PCSK9 gene is involved in LDL cholesterol metabolism. A gain-of-function pathogenic variant can increase the risk of familial hypercholesterolemia, and it is inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Diet, statins and, when needed, PCSK9-targeted therapy can effectively control LDL cholesterol for most people.",
+      "academic_summary": "PCSK9 is located at 1p32.3 and encodes proprotein convertase subtilisin/kexin type 9, which promotes degradation of hepatic LDL receptors. PCSK9 gain-of-function variants cause familial hypercholesterolemia in an autosomal dominant pattern and are associated with premature coronary artery disease and myocardial infarction risk."
+    },
+    "disease": {
+      "chinese_name": "Familial Hypercholesterolemia",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Lipid Disorder"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Needs long-term lipid management (manageable with medication and lifestyle)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003124",
+        "name": "Hypercholesterolemia",
+        "chinese_name": "Hypercholesterolemia"
+      },
+      {
+        "hpo_id": "HP:0001658",
+        "name": "Myocardial infarction",
+        "chinese_name": "Myocardial infarction"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Evolocumab",
+        "chinese_name": "Evolocumab",
+        "mechanism": "PCSK9 inhibitor that increases hepatic LDL receptor recycling of bad cholesterol",
+        "approval_status": "FDA-approved prescription drug"
+      },
+      {
+        "drug_name": "Alirocumab",
+        "chinese_name": "Alirocumab",
+        "mechanism": "PCSK9 inhibitor that lowers LDL cholesterol",
+        "approval_status": "FDA-approved prescription drug"
+      },
+      {
+        "drug_name": "Inclisiran",
+        "chinese_name": "Inclisiran",
+        "mechanism": "Small interfering RNA that reduces hepatic PCSK9 production",
+        "approval_status": "FDA-approved prescription drug"
+      },
+      {
+        "drug_name": "Statins",
+        "chinese_name": "Statins",
+        "mechanism": "Inhibit cholesterol synthesis and increase LDL receptors",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PCSK9 gain-of-function variants; familial hypercholesterolemia can also be caused by LDLR, APOB and other gene variants",
+      "population_frequency": "Familial hypercholesterolemia affects about 1 in 250 people, and PCSK9 gain-of-function variants are one cause (PMID:20301692)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline. Standard treatment for familial hypercholesterolemia includes statins and, when needed, evolocumab, alirocumab or inclisiran; whether and which therapy to use should be assessed by a clinician based on LDL cholesterol goals and cardiovascular risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Reduce saturated and trans fat intake and increase soluble fiber",
+        "Exercise regularly, control weight and monitor lipids as advised"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐⭐⭐⭐ Clear genetic medicine evidence",
+      "clinvar_pathogenic_count": 300,
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple PCSK9 gain-of-function variants with a clear association with familial hypercholesterolemia",
+      "opentargets_score": 0.79,
+      "key_pmids": [
+        "PMID:20301692",
+        "PMID:25773607"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have premature myocardial infarction, familial hypercholesterolemia or markedly elevated LDL cholesterol, consider lipid testing and genetic counseling; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Reduce saturated and trans fat and increase vegetables, whole grains and soluble fiber",
+        "Exercise regularly, control weight and avoid smoking",
+        "Monitor lipids as advised and do not stop lipid-lowering medication on your own"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Metabolism / Genetic Counseling",
+      "questions": [
+        "My PCSK9 test shows a pathogenic variant. What LDL cholesterol target should I aim for?",
+        "Should my parents, siblings or children also have lipid testing or genetic testing?",
+        "Am I suitable for statins or PCSK9-targeted therapy, and how often should my lipids be checked?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "Familial hypercholesterolemia will improve just by eating less fat.",
+      "truth": "Not necessarily. Familial hypercholesterolemia is often caused by a gene variant, and diet alone is usually not enough; a clinician should assess whether statins or PCSK9-targeted therapy is needed."
+    }
+  },
+  "ATP7B": {
+    "gene": {
+      "chinese_name": "ATP7B Copper-Transporting ATPase (Wilson Disease Gene)",
+      "chromosome": "13q14.3 (Chromosome 13)",
+      "metaphor": {
+        "title": "🔧 The Liver’s 【Copper Recycling Pump】(When it fails, copper piles up in the liver, brain, and eyes)",
+        "story": "Every day the body absorbs a little copper from food. Inside liver cells, ATP7B works like a precision pump that sends excess copper into bile for excretion and loads copper onto ceruloplasmin. When both copies of ATP7B are broken, the pump stops: copper builds up like scrap metal with no removal service. It first inflames and scars the liver, then deposits in the brain’s basal ganglia, causing tremor, swallowing difficulty, and slurred speech, and forms golden-brown Kayser-Fleischer rings in the cornea. A lifelong low-copper diet plus copper-removal therapy can bring copper back under control!"
+      },
+      "plain_summary": "ATP7B deficiency causes Wilson disease (hepatolenticular degeneration), an autosomal recessive condition. Copper cannot be excreted normally and accumulates in the liver, brain, kidneys, and eyes, leading to abnormal liver tests, tremor, dysarthria, dysphagia, or mood changes. Lifelong low-copper eating, copper chelators or zinc, and regular monitoring of copper metabolism allow most people to maintain a good quality of life.",
+      "academic_summary": "ATP7B encodes a copper-transporting P-type ATPase on the hepatocyte Golgi membrane that pumps copper into bile for biliary excretion and loads copper during ceruloplasmin synthesis. Biallelic pathogenic variants (such as the East Asian founder p.Arg778Leu) impair biliary copper export and ceruloplasmin maturation. Copper deposits in hepatocytes, the basal ganglia, cornea, and renal tubules, causing oxidative stress, mitochondrial injury, and fibrosis, with clinical features of liver disease, neuropsychiatric symptoms, Kayser-Fleischer rings, and Fanconi syndrome."
+    },
+    "disease": {
+      "chinese_name": "Wilson Disease (Hepatolenticular Degeneration) / Inherited Copper Metabolism Disorder",
+      "categories": [
+        "Inherited Metabolic Disorder",
+        "Liver & Neurologic Disease",
+        "Copper Metabolism Disorder"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟡 Treatable Inherited Copper Disorder (Lifelong Low-Copper Diet & Chelation)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001392",
+        "name": "Abnormality of the liver",
+        "chinese_name": "Liver abnormality (abnormal liver enzymes, fatty liver, cirrhosis)"
+      },
+      {
+        "hpo_id": "HP:0002015",
+        "name": "Dysphagia",
+        "chinese_name": "Difficulty swallowing"
+      },
+      {
+        "hpo_id": "HP:0001260",
+        "name": "Dysarthria",
+        "chinese_name": "Slurred or unclear speech"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Trientine",
+        "chinese_name": "Trientine (copper chelator)",
+        "mechanism": "Chelates free copper for renal excretion, reducing copper burden in the liver and brain",
+        "approval_status": "FDA / TFDA / NMPA approved"
+      },
+      {
+        "drug_name": "Zinc acetate / Zinc sulfate",
+        "chinese_name": "Zinc acetate / Zinc sulfate",
+        "mechanism": "Induces intestinal metallothionein, blocking dietary copper absorption and promoting fecal copper loss",
+        "approval_status": "FDA / TFDA / NMPA approved"
+      },
+      {
+        "drug_name": "Penicillamine",
+        "chinese_name": "Penicillamine",
+        "mechanism": "Traditional copper chelator that increases urinary copper excretion; requires monitoring for nephrotoxicity and allergy",
+        "approval_status": "FDA / TFDA / NMPA approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Biallelic ATP7B pathogenic variants (p.Arg778Leu common in East Asians; p.His1069Gln common in Europeans)",
+      "population_frequency": "Global incidence about 1 in 30,000; carrier frequency about 1 in 90, with R778L more common in East Asia",
+      "traffic_light_summary": "No specific pharmacogenomic (PGx) drug-gene guideline currently applies; treatment relies on a lifelong low-copper diet, copper chelators (Trientine, Penicillamine), and zinc, with drug choice and course individualized by liver function, copper markers, and physician guidance.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid high-copper foods for life: organ meats, shellfish, shrimp and crab, nuts, chocolate, mushrooms, concentrated copper supplements, and some herbal preparations",
+        "If drinking water has high copper levels, use a certified filter; avoid prolonged cooking of acidic foods in copper cookware",
+        "Maintain balanced protein and calories during treatment; never stop or change medications on your own"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Wilson Disease Diagnosis and Genetic Testing Guideline",
+      "clinvar_summary_chinese": "ClinVar lists hundreds of pathogenic and likely pathogenic ATP7B variants; genetic testing supports diagnosis and family screening"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with unexplained liver disease, early-onset tremor or psychiatric symptoms, or a family history should have serum ceruloplasmin, 24-hour urinary copper, and ATP7B genetic testing; first-degree relatives should receive genetic counseling and screening.",
+      "lifestyle_tips": [
+        "Work with a dietitian to build a low-copper food list and avoid organ meats, shellfish, and nut-based sauces when eating out",
+        "Keep follow-up visits for liver function, urinary copper, and blood counts; penicillamine users need particular attention to kidney function and allergic reactions",
+        "Before pregnancy or during pregnancy, discuss medication adjustments with hepatology and genetics early; never stop treatment on your own"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Hepatology / Neurology / Inherited Metabolic Disease",
+      "questions": [
+        "Doctor, I have abnormal liver tests with tremor and slurred speech—should I be checked with serum ceruloplasmin, urinary copper, or ATP7B genetic testing?",
+        "Are my current Trientine, penicillamine, or zinc treatments safe for my liver and kidney function, and how often should copper markers be monitored?",
+        "Should my siblings and children also receive copper metabolism screening or genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Wilson disease is just cirrhosis from heavy drinking, and it will resolve once I stop alcohol?”",
+      "truth": "No! Wilson disease is a copper metabolism disorder caused by ATP7B variants, not directly by alcohol. Stopping alcohol without removing copper allows copper to keep damaging the liver and brain. Regular chelation or zinc therapy, a lifelong low-copper diet, and monitoring are the keys to control."
+    }
+  },
+  "GLA": {
+    "gene": {
+      "chinese_name": "GLA Alpha-Galactosidase A (Fabry Disease Gene)",
+      "chromosome": "Xq22.1 (X Chromosome)",
+      "metaphor": {
+        "title": "♻️ The Cell’s Recycling Plant 【Lipid-Degrading Worker】(When it stops, lipid waste fills blood vessels, kidneys, and nerves)",
+        "story": "Lysosomes are the cell’s recycling plants, and GLA is the worker that breaks down a lipid called globotriaosylceramide (Gb3). When GLA is insufficient, Gb3 waste cannot be degraded and layers up in blood vessel linings, kidneys, heart muscle, and peripheral nerves. Children or teenagers may develop burning pain in the hands and feet, reduced sweating, and skin rashes; adults may gradually develop proteinuria, declining kidney function, and hypertrophic cardiomyopathy. Early diagnosis with enzyme replacement therapy or an oral pharmacological chaperone can slow organ damage."
+      },
+      "plain_summary": "GLA deficiency causes Fabry disease, an X-linked disorder. The lipid Gb3 accumulates in the kidneys, heart, nerves, and skin, causing burning hand and foot pain, abnormal sweating, proteinuria, and myocardial hypertrophy. Genetic testing, enzyme activity testing, and family screening enable early diagnosis; enzyme replacement therapy or specific oral medication can slow progression and requires long-term follow-up by genetics, nephrology, and cardiology teams.",
+      "academic_summary": "GLA encodes lysosomal alpha-galactosidase A, which hydrolyzes the terminal galactose of globotriaosylceramide (Gb3). Pathogenic GLA variants reduce enzyme activity, causing Gb3 and lyso-Gb3 deposition in vascular endothelium, kidney podocytes, cardiomyocytes, and dorsal root ganglia. This leads to small-fiber neuropathy, angiokeratomas, proteinuria, renal decline, left ventricular hypertrophy, and premature stroke. Female heterozygotes may still have organ involvement because of skewed X-chromosome inactivation."
+    },
+    "disease": {
+      "chinese_name": "Fabry Disease / Alpha-Galactosidase A Deficiency",
+      "categories": [
+        "X-Linked Genetic Disorder",
+        "Lysosomal Storage Disorder",
+        "Kidney & Heart Disease"
+      ],
+      "inheritance_mode": "X-Linked",
+      "severity_badge": "🟡 X-Linked Lysosomal Storage Disorder (Early Enzyme Replacement Can Slow Organ Damage)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Thickened heart muscle"
+      },
+      {
+        "hpo_id": "HP:0000083",
+        "name": "Renal insufficiency",
+        "chinese_name": "Kidney impairment / proteinuria"
+      },
+      {
+        "hpo_id": "HP:0003474",
+        "name": "Somatic sensory dysfunction",
+        "chinese_name": "Burning hand and foot pain / sensory abnormalities"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Agalsidase beta",
+        "chinese_name": "Agalsidase beta (enzyme replacement therapy)",
+        "mechanism": "Intravenous recombinant alpha-galactosidase A that helps clear lysosomal Gb3 accumulation",
+        "approval_status": "FDA / TFDA / NMPA approved"
+      },
+      {
+        "drug_name": "Migalastat",
+        "chinese_name": "Migalastat (oral pharmacological chaperone)",
+        "mechanism": "Binds specific amenable GLA variants, stabilizing folding and restoring partial enzyme activity",
+        "approval_status": "FDA / TFDA / NMPA approved (specific GLA variants only)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "GLA pathogenic variants (missense, nonsense, splice-site, and small deletions; some variants are amenable to migalastat)",
+      "population_frequency": "Estimated male newborn incidence about 1 in 40,000 to 1 in 117,000; female carriers may be underdiagnosed or diagnosed later",
+      "traffic_light_summary": "No specific pharmacogenomic (PGx) drug-gene guideline currently applies; treatment relies on enzyme replacement therapy (agalsidase beta) or oral migalastat, and migalastat eligibility depends on the GLA variant type and physician assessment.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "People with kidney impairment should discuss moderate sodium and protein restriction with a dietitian and avoid dehydration and nephrotoxic drugs",
+        "Avoid self-prescribed high-dose vitamins or unregulated supplements that may increase kidney burden",
+        "Those receiving enzyme replacement therapy need regular monitoring of infusion reactions, antibodies, and organ function"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Fabry Disease Diagnosis and Newborn Screening Guideline",
+      "clinvar_summary_chinese": "ClinVar lists many pathogenic and likely pathogenic GLA variants; genotype and enzyme activity support diagnosis and treatment selection"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with unexplained burning hand and foot pain, reduced sweating, proteinuria, left ventricular hypertrophy, or premature stroke should have GLA enzyme activity and genetic testing; female relatives of affected males should receive genetic counseling and screening.",
+      "lifestyle_tips": [
+        "Monitor blood pressure, urine protein, and kidney function regularly, and have cardiology assess left ventricular hypertrophy and arrhythmia risk",
+        "Avoid prolonged heat exposure, dehydration, and overexertion to reduce neuropathic pain and cardiac stress",
+        "Carry diagnosis and medication information and tell the medical team before surgery or anesthesia"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Inherited Metabolic Disease / Nephrology / Cardiology / Neurology",
+      "questions": [
+        "Doctor, I have long-standing burning hand and foot pain, reduced sweating, and proteinuria—should I have GLA enzyme activity or genetic testing?",
+        "Is my GLA variant amenable to oral migalastat, or do I need enzyme replacement therapy? What monitoring does each option require?",
+        "Could my daughter and other female relatives be carriers? When should they begin screening and follow-up?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Fabry disease only affects men, so female carriers must be completely symptom-free?”",
+      "truth": "Wrong! Although Fabry disease is X-linked, female carriers can still develop neuropathic pain, proteinuria, myocardial hypertrophy, or stroke because of skewed X-chromosome inactivation, and symptoms often appear later. Female relatives also need genetic counseling and long-term organ monitoring."
+    }
+  },
+  "GAA": {
+    "gene": {
+      "chinese_name": "GAA Acid Alpha-Glucosidase (Pompe Disease Gene)",
+      "chromosome": "17q25.3 (Chromosome 17)",
+      "metaphor": {
+        "title": "🍚 The Muscle Cell’s 【Glycogen Recycling Machine】(When it fails, glycogen fills muscle and heart)",
+        "story": "Muscles need energy, so cells send excess glycogen into lysosomes for recycling. GAA is the key enzyme of this recycling machine, breaking glycogen into glucose for reuse. When both copies of GAA are broken, glycogen cannot be degraded and piles up like an overflowing warehouse in skeletal muscle, heart muscle, and respiratory muscles. Infantile-onset patients may have severe hypotonia, an enlarged heart, and breathing difficulty; late-onset patients typically develop proximal muscle weakness, difficulty walking or climbing stairs, and declining respiratory function. Early diagnosis and enzyme replacement therapy can improve survival and motor function."
+      },
+      "plain_summary": "GAA deficiency causes Pompe disease (glycogen storage disease type II), an autosomal recessive condition. Glycogen accumulates in muscle and heart, causing hypotonia, cardiac enlargement, and respiratory distress in infants, and proximal weakness with respiratory decline in late-onset forms. Newborn screening, enzyme activity testing, and genetic testing enable early diagnosis; enzyme replacement therapy, rehabilitation, and respiratory care are the cornerstones of treatment.",
+      "academic_summary": "GAA encodes lysosomal acid alpha-glucosidase, which hydrolyzes alpha-1,4 and alpha-1,6 glycosidic bonds to break glycogen into glucose. Biallelic pathogenic variants cause enzyme deficiency, and glycogen accumulates in lysosomes and cytoplasm of skeletal, cardiac, and respiratory muscle, leading to fiber damage and autophagic dysfunction. Infantile-onset disease presents with severe cardiomyopathy and hypotonia; late-onset disease presents with proximal limb-girdle weakness, respiratory muscle weakness, and reduced exercise tolerance."
+    },
+    "disease": {
+      "chinese_name": "Pompe Disease / Glycogen Storage Disease Type II",
+      "categories": [
+        "Inherited Metabolic Disorder",
+        "Lysosomal Storage Disorder",
+        "Neuromuscular Disease"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟡 Treatable Lysosomal Storage Disorder (Early Enzyme Replacement Improves Outcomes)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001252",
+        "name": "Hypotonia",
+        "chinese_name": "Low muscle tone"
+      },
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Thickened heart muscle"
+      },
+      {
+        "hpo_id": "HP:0002093",
+        "name": "Respiratory insufficiency",
+        "chinese_name": "Impaired breathing"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Alglucosidase alfa",
+        "chinese_name": "Alglucosidase alfa (enzyme replacement therapy)",
+        "mechanism": "Intravenous recombinant acid alpha-glucosidase that helps degrade lysosomal glycogen in muscle",
+        "approval_status": "FDA / TFDA / NMPA approved"
+      },
+      {
+        "drug_name": "Avalglucosidase alfa",
+        "chinese_name": "Avalglucosidase alfa (next-generation enzyme replacement therapy)",
+        "mechanism": "Modified recombinant enzyme with enhanced muscle cell uptake and glycogen clearance",
+        "approval_status": "FDA / TFDA / NMPA approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Biallelic GAA pathogenic variants (including the common splice variant c.-32-13T>G and other missense or nonsense variants)",
+      "population_frequency": "Infantile-onset incidence about 1 in 100,000 to 1 in 138,000; late-onset forms may reach 1 in 40,000 in some populations",
+      "traffic_light_summary": "No specific pharmacogenomic (PGx) drug-gene guideline currently applies; treatment centers on enzyme replacement therapy (alglucosidase alfa or avalglucosidase alfa), rehabilitation, and respiratory care, with the regimen individualized by disease type, weight, antibodies, and physician guidance.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Maintain balanced, adequate protein and calories and avoid prolonged fasting; small frequent meals may be advised by a dietitian",
+        "Avoid self-prescribed high-dose steroids or unregulated muscle-building products that may affect muscle and metabolism",
+        "Those receiving enzyme replacement therapy should be monitored for infusion reactions and antibodies, with ongoing respiratory muscle assessment"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Pompe Disease Diagnosis and Newborn Screening Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic GAA variants; newborn screening and genetic testing shorten the time to diagnosis"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Infants with hypotonia, cardiac enlargement, feeding difficulty, or respiratory distress, or adults with unexplained proximal weakness and declining respiratory function, should have GAA enzyme activity and genetic testing; first-degree relatives may receive genetic counseling.",
+      "lifestyle_tips": [
+        "Have rehabilitation and physical therapy design a personalized strength and cardiopulmonary exercise plan, avoiding excessive fatigue",
+        "Regularly assess respiratory muscle function and sleep breathing, using non-invasive ventilation when needed",
+        "Follow the prescribed enzyme replacement schedule and record post-infusion discomfort and changes in motor function"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Inherited Metabolic Disease / Pediatric Neurology / Neurology / Rehabilitation",
+      "questions": [
+        "Doctor, I (or my child) have proximal weakness, reduced exercise tolerance, and breathing difficulty—should we check GAA enzyme activity or genetic testing?",
+        "Is alglucosidase alfa or avalglucosidase alfa more appropriate now, and what antibodies and organ functions should be monitored during treatment?",
+        "Are my respiratory muscles and sleep breathing affected? Should I have pulmonary function and ventilation assessment?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Pompe disease only affects infants; adult muscle weakness must just be aging or lack of exercise?”",
+      "truth": "Wrong! Pompe disease has infantile and late-onset forms. Late-onset disease may appear in childhood, adolescence, or adulthood with proximal weakness, difficulty climbing stairs, and declining respiratory function, and is often mistaken for ordinary muscle or lung problems. Enzyme activity and GAA genetic testing are needed for an accurate diagnosis."
+    }
+  },
+  "PKD1": {
+    "gene": {
+      "chinese_name": "PKD1 Polycystin 1 (Autosomal Dominant Polycystic Kidney Disease Gene)",
+      "chromosome": "16p13.3 (Chromosome 16)",
+      "metaphor": {
+        "title": "💧 The Kidney Tubule’s 【Flow Sensor】(When it fails, tiny water balloons grow into cysts)",
+        "story": "The kidneys are a filtration factory made of millions of microscopic tubes. PKD1 and PKD2 form a polycystin complex that acts as a flow and pressure sensor on the tubule wall. When PKD1 is defective, the sensor fails, and tubule cells behave as if they are still developing—proliferating and secreting fluid until small cysts form. Cysts grow in number and size, compress normal kidney tissue, and eventually cause high blood pressure, declining kidney function, and even dialysis. Blood pressure control, adequate hydration, and specific medication can slow cyst growth."
+      },
+      "plain_summary": "PKD1 deficiency causes autosomal dominant polycystic kidney disease (ADPKD), one of the most common inherited kidney diseases. Both kidneys gradually develop many cysts, often with hypertension, flank pain, blood in the urine, and progressive kidney decline. Imaging, family history, and genetic testing support diagnosis; blood pressure control, healthy eating, adequate hydration, and treatments such as tolvaptan can slow progression.",
+      "academic_summary": "PKD1 encodes polycystin-1, which forms a mechanosensory and calcium-signaling complex with polycystin-2 (PKD2) to regulate tubular epithelial differentiation, proliferation, and lumen diameter. Truncating or pathogenic missense PKD1 variants drive cyst-lining cell proliferation, fluid secretion, and extracellular matrix remodeling, producing progressive cysts. ADPKD is associated with hypertension, liver cysts, intracranial aneurysms, and kidney failure; PKD1 variants generally lead to earlier end-stage kidney disease than PKD2 variants."
+    },
+    "disease": {
+      "chinese_name": "Autosomal Dominant Polycystic Kidney Disease (ADPKD)",
+      "categories": [
+        "Inherited Kidney Disease",
+        "Autosomal Dominant Disorder",
+        "Chronic Kidney Disease"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Common Inherited Kidney Disease (Blood Pressure and Cyst Control Can Delay Dialysis)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000107",
+        "name": "Renal cyst",
+        "chinese_name": "Bilateral multiple kidney cysts"
+      },
+      {
+        "hpo_id": "HP:0000822",
+        "name": "Hypertension",
+        "chinese_name": "High blood pressure"
+      },
+      {
+        "hpo_id": "HP:0000083",
+        "name": "Renal insufficiency",
+        "chinese_name": "Declining kidney function"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Tolvaptan",
+        "chinese_name": "Tolvaptan (V2 receptor antagonist)",
+        "mechanism": "Blocks renal V2 receptors, reducing cyst fluid secretion and cAMP signaling to slow kidney volume growth",
+        "approval_status": "FDA / TFDA / NMPA approved (requires liver and fluid-balance monitoring)"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs",
+        "chinese_name": "ACE inhibitors / Angiotensin receptor blockers",
+        "mechanism": "Controls blood pressure and reduces proteinuria, lowering renal perfusion pressure and cardiovascular risk",
+        "approval_status": "FDA / TFDA / NMPA approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "PKD1 pathogenic variants (truncating variants are common and associated with earlier disease); a minority involve PKD2 or other related genes such as GANAB",
+      "population_frequency": "About 1 in 400 to 1 in 1,000 globally; causes about 5% to 10% of end-stage kidney disease",
+      "traffic_light_summary": "No specific pharmacogenomic (PGx) drug-gene guideline currently applies; treatment focuses on blood pressure control, adequate hydration, a low-sodium diet, and tolvaptan, with liver function and sodium monitoring before and during tolvaptan use per physician guidance—never self-adjust.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Limit sodium and avoid highly processed foods to help control blood pressure and slow kidney decline",
+        "Maintain adequate hydration unless a physician has advised fluid restriction; avoid large amounts of caffeinated or sugary drinks",
+        "Avoid self-use of nonsteroidal anti-inflammatory drugs (NSAIDs), unregulated herbal medicines, or high-dose vitamins to reduce nephrotoxic risk"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International ADPKD Diagnosis and Genetic Testing Guideline",
+      "clinvar_summary_chinese": "ClinVar lists many pathogenic PKD1 variants; genetic testing helps diagnose atypical cases and family members"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with a family history, bilateral kidney cysts, early-onset hypertension, or unexplained kidney decline should have kidney ultrasound, family history assessment, and PKD1/PKD2 genetic testing; first-degree relatives should have regular blood pressure and kidney function follow-up.",
+      "lifestyle_tips": [
+        "Measure and record blood pressure daily, and discuss the most appropriate blood pressure target and medications with nephrology",
+        "Maintain regular exercise, healthy weight, and smoking cessation to reduce cardiovascular and kidney burden",
+        "Avoid high-impact contact sports, especially with enlarged kidneys, and discuss the need for intracranial aneurysm screening with your physician"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Nephrology / Genetic Counseling / Cardiology",
+      "questions": [
+        "Doctor, I have bilateral multiple kidney cysts and a family history—should I have PKD1/PKD2 genetic testing to confirm the diagnosis and prognosis?",
+        "Are my blood pressure and urine protein adequately controlled? Am I a candidate for tolvaptan, and what liver function and fluid status assessments are needed first?",
+        "At what age should my children and siblings begin kidney ultrasound and blood pressure screening?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Polycystic kidney disease is just a few water bubbles in the kidneys; draining them or eating less salt will cure it?”",
+      "truth": "Wrong! ADPKD cysts continue to proliferate and enlarge, and simple drainage cannot stop new cysts from forming. Treatment focuses on long-term blood pressure control, a healthy lifestyle, tolvaptan when appropriate to slow cyst growth, and regular kidney function monitoring. Seek urgent care for severe flank pain, blood in the urine, or fever to rule out cyst infection or rupture."
+    }
+  },
+  "RYR1": {
+    "gene": {
+      "chinese_name": "RYR1 Skeletal Muscle Ryanodine Receptor 1 (Malignant Hyperthermia Gene)",
+      "chromosome": "19q13.2 (Chromosome 19)",
+      "metaphor": {
+        "title": "⚡ The Skeletal Muscle 【Calcium Reservoir Gate】(Certain anesthetics make it dump calcium uncontrollably)",
+        "story": "Muscle contraction requires calcium, and RYR1 is the gate of the calcium reservoir on the muscle cell’s sarcoplasmic reticulum. Normally it opens and closes precisely so muscles contract and relax on command. In people with pathogenic variants, exposure to volatile inhaled anesthetics or succinylcholine can jam the gate open, flooding cells with calcium. Muscles contract continuously, body temperature rises rapidly, and heart rate, acidosis, and rhabdomyolysis follow. This is an anesthetic emergency: the trigger drugs must be stopped immediately and dantrolene given as the antidote."
+      },
+      "plain_summary": "RYR1 pathogenic variants cause malignant hyperthermia susceptibility, an autosomal dominant condition. When exposed to volatile inhaled anesthetics (such as sevoflurane, desflurane, isoflurane, or halothane) or succinylcholine, patients may develop life-threatening hyperthermia, muscle rigidity, rhabdomyolysis, and hyperkalemia. Telling the anesthesia team about family history and genetic results, using total intravenous anesthesia, and having dantrolene available are essential for surgical safety.",
+      "academic_summary": "RYR1 encodes the skeletal muscle ryanodine receptor type 1 on the sarcoplasmic reticulum, which converts action potentials into calcium release. Pathogenic variants (such as p.Arg614Cys and p.Gly2435Ala) cause the channel to open excessively when triggered by volatile anesthetics or succinylcholine, producing massive sarcoplasmic calcium efflux, sustained muscle contraction, explosive aerobic and anaerobic metabolism, rapid hyperthermia, respiratory and metabolic acidosis, rhabdomyolysis, hyperkalemia, and arrhythmia. Variants in RYR1 and CACNA1S can both cause malignant hyperthermia susceptibility."
+    },
+    "disease": {
+      "chinese_name": "Malignant Hyperthermia Susceptibility / Anesthesia-Related Muscle Metabolic Crisis",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Anesthesia Safety",
+        "Neuromuscular Disorder"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 Anesthesia Safety Red Light (Avoid Volatile Anesthetics and Succinylcholine)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002047",
+        "name": "Malignant hyperthermia",
+        "chinese_name": "Dangerously high body temperature during anesthesia"
+      },
+      {
+        "hpo_id": "HP:0003201",
+        "name": "Rhabdomyolysis",
+        "chinese_name": "Muscle breakdown"
+      },
+      {
+        "hpo_id": "HP:0002153",
+        "name": "Hyperkalemia",
+        "chinese_name": "High blood potassium"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Dantrolene",
+        "chinese_name": "Dantrolene (malignant hyperthermia antidote)",
+        "mechanism": "Inhibits ryanodine receptor calcium release from skeletal muscle sarcoplasmic reticulum, stopping excessive contraction and the metabolic storm",
+        "approval_status": "FDA / TFDA / NMPA approved (first-line emergency treatment)"
+      },
+      {
+        "drug_name": "Propofol (Total Intravenous Anesthesia)",
+        "chinese_name": "Propofol (total intravenous anesthesia, TIVA)",
+        "mechanism": "Intravenous anesthetic that does not trigger RYR1 calcium release, providing an alternative for susceptible patients",
+        "approval_status": "FDA / TFDA / NMPA approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "RYR1 pathogenic variants (such as c.1840C>T p.Arg614Cys and c.7300G>A p.Gly2435Ala) and CACNA1S variants",
+      "population_frequency": "Estimated carrier frequency about 1 in 2,000 to 1 in 3,000; penetrance varies with variant and environmental triggers",
+      "traffic_light_summary": "🔴 Before any anesthesia, tell the team about family history and genetic results: avoid volatile inhaled anesthetics and succinylcholine. If surgery is needed, choose total intravenous anesthesia (TIVA) and confirm that dantrolene is available.",
+      "drugs_guide": [
+        {
+          "drug_name": "Volatile Inhaled Anesthetics (Sevoflurane, Desflurane, Isoflurane, Halothane)",
+          "chinese_name": "Volatile inhaled anesthetics (sevoflurane, desflurane, isoflurane, halothane)",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "CPIC lists these as high-risk malignant hyperthermia triggers; people susceptible through RYR1/CACNA1S must avoid them and use total intravenous anesthesia instead.",
+          "cpic_level": "CPIC Guideline for RYR1/CACNA1S and Volatile Anesthetics Level A"
+        },
+        {
+          "drug_name": "Depolarizing Muscle Relaxants (Succinylcholine)",
+          "chinese_name": "Depolarizing muscle relaxant (succinylcholine)",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "Succinylcholine can trigger malignant hyperthermia and severe hyperkalemia; susceptible patients should receive a nondepolarizing relaxant after anesthesia team assessment.",
+          "cpic_level": "CPIC Guideline for RYR1/CACNA1S and Volatile Anesthetics Level A"
+        },
+        {
+          "drug_name": "Dantrolene (Antidote)",
+          "chinese_name": "Dantrolene (malignant hyperthermia antidote)",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "The life-saving antidote for a malignant hyperthermia crisis; before surgery in susceptible patients, confirm that dantrolene and an emergency protocol are available.",
+          "cpic_level": "CPIC Guideline for RYR1/CACNA1S and Volatile Anesthetics Level A"
+        },
+        {
+          "drug_name": "Total Intravenous Anesthesia (Propofol)",
+          "chinese_name": "Total intravenous anesthesia (propofol)",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "TIVA avoids volatile gases and is the recommended anesthetic approach for RYR1-susceptible patients; the anesthesia team must still monitor temperature, electrolytes, and acid-base status throughout.",
+          "cpic_level": "CPIC Guideline for RYR1/CACNA1S and Volatile Anesthetics Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "No specific dietary restrictions, but avoid unassessed strenuous exercise, dehydration, alcohol, and stimulants to reduce rhabdomyolysis triggers",
+        "Before surgery, dental treatment, or sedated procedures, show the Malignant Hyperthermia Anesthesia Safety Card and confirm that dantrolene is available"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International CPIC Top-Tier Anesthesia Pharmacogenomics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple RYR1 and CACNA1S malignant hyperthermia variants; genetic testing supports pre-anesthesia risk assessment"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with a family history of malignant hyperthermia or unexplained high temperature or muscle rigidity during anesthesia should have RYR1/CACNA1S genetic testing and anesthesia evaluation; first-degree relatives should receive genetic counseling.",
+      "lifestyle_tips": [
+        "Carry a malignant hyperthermia susceptibility medical alert card and tell the anesthesia team before every surgery, dental extraction, or endoscopy",
+        "Avoid strenuous exercise in hot environments, dehydration, and stimulants; seek urgent care for severe muscle pain, weakness, or dark urine",
+        "Plan anesthesia in advance with the anesthesia team, confirming total intravenous anesthesia and available dantrolene"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Anesthesiology / Genetic Counseling / Neuromuscular Clinic",
+      "questions": [
+        "Doctor, I have a family history of malignant hyperthermia (or an RYR1 variant)—can this surgery completely avoid volatile inhaled anesthetics and succinylcholine?",
+        "Does the hospital have dantrolene and a malignant hyperthermia emergency protocol? How will temperature, potassium, and acid-base status be monitored during anesthesia?",
+        "Should my siblings and children also have RYR1/CACNA1S genetic testing and pre-anesthesia evaluation?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Malignant hyperthermia is just a little high temperature during anesthesia; a fever pill or ice pack will fix it?”",
+      "truth": "That is extremely dangerous! Malignant hyperthermia is a life-threatening anesthetic emergency with rapidly rising temperature, muscle rigidity, acidosis, rhabdomyolysis, and hyperkalemia. It requires immediate discontinuation of trigger drugs, dantrolene, aggressive cooling, and electrolyte correction—not ordinary fever treatment."
+    }
+  },
+  "CFTR": {
+    "gene": {
+      "chinese_name": "CFTR Cystic Fibrosis Transmembrane Conductance Regulator",
+      "chromosome": "7q31.2 (Chromosome 7)",
+      "metaphor": {
+        "title": "💧 The Airway and Pancreatic Duct 【Salt-Water Gate】(When it fails, mucus becomes thick and sticky)",
+        "story": "The airways, intestines, and pancreatic ducts need a thin layer of water to stay lubricated. CFTR is the chloride and water gate on the cell membrane that delivers salt and water to the duct surface. When both copies of CFTR are broken, chloride cannot pass normally and water follows less, so secretions become thick and sticky like glue, blocking airways and pancreatic ducts. The lungs suffer repeated infections and bronchiectasis, and the pancreas cannot deliver digestive enzymes, causing malnutrition. CFTR modulators can repair the gate for specific variants and offer new treatment options."
+      },
+      "plain_summary": "CFTR deficiency causes cystic fibrosis, an autosomal recessive condition. Thick mucus obstructs the airways and pancreatic ducts, leading to recurrent lung infections, bronchiectasis, exocrine pancreatic insufficiency, and malnutrition. Sweat chloride testing, genetic testing, and newborn screening enable diagnosis; airway clearance, nutritional support, and CFTR modulators are the core of modern care.",
+      "academic_summary": "CFTR encodes an ATP-binding cassette chloride channel that regulates chloride and bicarbonate secretion in airway epithelium, pancreatic ducts, sweat glands, and intestinal epithelium. Biallelic pathogenic variants impair channel folding, trafficking, or gating, dehydrating and acidifying luminal secretions. Impaired mucociliary clearance leads to chronic Pseudomonas aeruginosa infection, bronchiectasis, exocrine pancreatic insufficiency, and elevated sweat chloride. F508del is the most common variant worldwide, and CFTR modulators (potentiators and correctors) can restore partial function depending on variant type."
+    },
+    "disease": {
+      "chinese_name": "Cystic Fibrosis (CF)",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Inherited Respiratory Disease",
+        "Multiorgan Disease"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟡 Autosomal Recessive Multiorgan Disease (CFTR Modulators Can Improve Course)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002110",
+        "name": "Bronchiectasis",
+        "chinese_name": "Damaged, widened airways"
+      },
+      {
+        "hpo_id": "HP:0001738",
+        "name": "Exocrine pancreatic insufficiency",
+        "chinese_name": "Poor digestion from pancreatic enzyme deficiency"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "CFTR Modulators (Ivacaftor / Elexacaftor-Tezacaftor-Ivacaftor)",
+        "chinese_name": "CFTR modulators (ivacaftor / elexacaftor-tezacaftor-ivacaftor)",
+        "mechanism": "Enhances channel gating or improves folding and trafficking depending on the CFTR variant, restoring chloride and water secretion",
+        "approval_status": "FDA / TFDA / NMPA approved (requires genetic confirmation of responsive variants)"
+      },
+      {
+        "drug_name": "Dornase alfa",
+        "chinese_name": "Dornase alfa (recombinant DNase)",
+        "mechanism": "Breaks down free DNA in sputum, reducing mucus viscosity and improving airway clearance",
+        "approval_status": "FDA / TFDA / NMPA approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "CFTR pathogenic variants per drug label and companion diagnostic (such as F508del and G551D)",
+      "population_frequency": "About 1 in 2,500 to 1 in 3,500 in people of European ancestry; less common in East Asians but cases do occur",
+      "traffic_light_summary": "🟢 CFTR modulators are precision targeted therapy: genetic testing must confirm a responsive CFTR variant before use, and a cystic fibrosis center team should assess liver function, drug interactions, and infection control.",
+      "drugs_guide": [
+        {
+          "drug_name": "CFTR Modulators (Ivacaftor / Elexacaftor-Tezacaftor-Ivacaftor)",
+          "chinese_name": "CFTR modulators (ivacaftor / elexacaftor-tezacaftor-ivacaftor)",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "Indicated for patients with specific CFTR variants confirmed by genetic testing; can improve lung function and quality of life but requires regular monitoring of liver function and respiratory infections.",
+          "cpic_level": "CPIC Guideline for CFTR and Ivacaftor Level A / FDA Companion Diagnostic"
+        }
+      ],
+      "dietary_contraindications": [
+        "Follow a high-calorie, high-protein diet with pancreatic enzyme replacement, adjusting portions and timing with a dietitian",
+        "Replace salt and fluids appropriately during heat or heavy sweating to avoid hyponatremic dehydration",
+        "Avoid smoking and secondhand smoke, and maintain airway clearance and vaccinations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International CFTR Modulator Pharmacogenomics and Cystic Fibrosis Care Guideline",
+      "clinvar_summary_chinese": "ClinVar lists many pathogenic and likely pathogenic CFTR variants; genotype guides CFTR modulator selection"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with meconium ileus, poor growth, recurrent lung infections, or elevated sweat chloride should have sweat chloride testing and CFTR genetic testing; those with a family history should receive genetic counseling and carrier screening.",
+      "lifestyle_tips": [
+        "Perform daily airway clearance and inhaled therapies, and receive influenza and pneumococcal vaccines as advised",
+        "Maintain a high-calorie, high-protein diet with pancreatic enzymes, and track growth and fat-soluble vitamin levels",
+        "Discuss CFTR modulator eligibility with the CF center team and monitor liver and lung function regularly"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Pulmonology / Pediatric Pulmonology / Genetic Counseling / Nutrition",
+      "questions": [
+        "Doctor, do my sweat chloride and CFTR genetic test results confirm cystic fibrosis, and am I a candidate for CFTR modulators?",
+        "What regular tests do my lung infections and pancreatic function need? How should airway clearance and vaccinations be scheduled?",
+        "Should my siblings and children have CFTR carrier screening or genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Cystic fibrosis is just frequent colds and coughs in childhood; the airways mature and it resolves on its own?”",
+      "truth": "Wrong! Cystic fibrosis is a lifelong disease. Thick mucus causes ongoing bronchiectasis, chronic infection, and pancreatic insufficiency. Symptoms do not disappear with age; long-term airway clearance, nutritional support, infection control, and CFTR modulators when appropriate are required."
+    }
+  },
+  "CYP3A5": {
+    "gene": {
+      "chinese_name": "CYP3A5 Cytochrome P450 3A5 (Tacrolimus Metabolism Gene)",
+      "chromosome": "7q22.1 (Chromosome 7)",
+      "metaphor": {
+        "title": "⚖️ The Liver’s 【Drug Metabolism Scale】(Expressers clear drugs fast, non-expressers clear them slowly—dosing must be precise)",
+        "story": "After organ transplantation, patients must take tacrolimus long term to prevent immune rejection, but the drug has a narrow therapeutic window: too low, the organ may be rejected; too high, it may harm the kidneys and nerves. CYP3A5 is the enzyme in the liver and intestine that metabolizes tacrolimus. People carrying CYP3A5*1 (*1/*1 or *1/*3) are “expressers” who clear the drug quickly, so standard doses often fail to reach target levels. People with *3/*3 are “non-expressers” who clear it more slowly, so the same dose may be too high. Genotype-guided dosing plus blood level monitoring balances rejection prevention against toxicity."
+      },
+      "plain_summary": "CYP3A5 genotype affects how quickly tacrolimus is metabolized, with autosomal codominant inheritance. CYP3A5 expressers (*1/*1 or *1/*3) usually need higher doses to reach target blood levels, while non-expressers (*3/*3) may need lower doses. Actual dosing must be guided by therapeutic drug monitoring (TDM), transplant organ type, and physician instruction—never self-adjust the dose.",
+      "academic_summary": "CYP3A5 encodes cytochrome P450 3A5, expressed in liver and small intestine, which oxidizes tacrolimus and many other drugs. CYP3A5*3 (rs776746) is a common splice defect that markedly reduces enzyme expression; carriers of at least one CYP3A5*1 allele are expressers with higher tacrolimus clearance and require higher starting doses to reach target trough concentrations. CPIC recommends genotype-guided tacrolimus starting doses with ongoing therapeutic drug monitoring and clinical adjustment to reduce acute rejection and nephrotoxicity."
+    },
+    "disease": {
+      "chinese_name": "Drug-Related Side Effects and Adverse Reactions (Transplant Immunosuppression)",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Transplant Immunosuppression",
+        "Therapeutic Drug Monitoring"
+      ],
+      "inheritance_mode": "Autosomal Codominant",
+      "severity_badge": "🟡 Transplant Medication Yellow Light (Genotype-Guided Tacrolimus Dosing and Blood Level Monitoring)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000083",
+        "name": "Renal insufficiency",
+        "chinese_name": "Kidney impairment (tacrolimus nephrotoxicity risk)"
+      },
+      {
+        "hpo_id": "HP:0000822",
+        "name": "Hypertension",
+        "chinese_name": "High blood pressure (immunosuppression-related)"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Tacrolimus",
+        "chinese_name": "Tacrolimus (calcineurin inhibitor)",
+        "mechanism": "Inhibits calcineurin and T-cell activation to prevent acute rejection after organ transplantation",
+        "approval_status": "FDA / TFDA / NMPA approved (narrow therapeutic index; requires level monitoring)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "CYP3A5*3 (rs776746) primarily determines phenotype; *1/*1 and *1/*3 are expressers, *3/*3 are non-expressers",
+      "population_frequency": "In East Asians, *3/*3 non-expressers account for about 50% to 60%, and expressers are more common than in people of European ancestry",
+      "traffic_light_summary": "🟡 Tacrolimus has a narrow therapeutic window: CYP3A5 expressers (*1/*1 or *1/*3) usually need higher starting doses to reach target blood levels, while non-expressers (*3/*3) may need lower doses to avoid toxicity. Actual dosing and adjustments must follow blood level monitoring, transplant organ type, and physician guidance.",
+      "drugs_guide": [
+        {
+          "drug_name": "Tacrolimus (CYP3A5 Expressers: *1/*1 or *1/*3)",
+          "chinese_name": "Tacrolimus (CYP3A5 expressers *1/*1 or *1/*3)",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "Compared with *3/*3 non-expressers, CYP3A5 expressers (*1/*1 or *1/*3) require customized target dosing and therapeutic drug monitoring (TDM) to prevent organ rejection; do not self-adjust the dose.",
+          "cpic_level": "CPIC Guideline for CYP3A5 and Tacrolimus Level A"
+        }
+      ],
+      "dietary_contraindications": [
+        "Avoid large amounts of grapefruit, grapefruit juice, and St. John’s wort, which can alter tacrolimus blood levels",
+        "Take the medication at consistent times and never stop it or add unregulated supplements on your own; check every new drug with the transplant team for interactions",
+        "Keep follow-up visits for kidney function, potassium, glucose, and tacrolimus trough levels, and seek care promptly for tremor, reduced urine output, or fever"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International CPIC Top-Tier Tacrolimus Pharmacogenomics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists common CYP3A5 star alleles and functional variants; genotype supports transplant starting-dose planning"
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People preparing for organ transplantation or already taking tacrolimus may discuss CYP3A5 genetic testing with the transplant team as a reference for starting dose and monitoring frequency; adjustments must still be based on blood levels and clinical status.",
+      "lifestyle_tips": [
+        "Keep a medication and follow-up log, attend scheduled tacrolimus trough blood tests, and never reduce the dose because you feel well",
+        "Watch for tremor, headache, reduced urine output, swelling, fever, or pain at the transplant site, and contact the transplant team immediately if they occur",
+        "Maintain hand hygiene, avoid raw foods and contact with infected people, and receive vaccinations as advised to reduce infection risk"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Transplant Surgery / Nephrology / Clinical Pharmacy",
+      "questions": [
+        "Doctor, is my CYP3A5 genotype an expresser or non-expresser, and how does that affect my tacrolimus starting dose and target level?",
+        "Is my current tacrolimus trough level within target? How often should kidney function, potassium, and glucose be monitored?",
+        "Could any of my other medications or supplements interact with tacrolimus and affect its level?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“After a transplant, I just need to take tacrolimus on time; genetic testing and blood level monitoring are unnecessary expenses?”",
+      "truth": "Wrong! Tacrolimus has a narrow therapeutic window, and CYP3A5 genotype significantly affects metabolism. Without genotype information and level monitoring, underdosing can cause rejection, while overdosing can cause kidney and nerve toxicity. Genetic testing combined with regular TDM is the safe way to protect the transplanted organ."
     }
   }
 };

@@ -403,5 +403,253 @@
       "disease": "https://monarchinitiative.org/MONDO:0005835"
     },
     "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "MSH6",
+    "ensembl_id": "ENSG00000116062",
+    "entrez_id": "2956",
+    "disease_id": "MONDO:0005835",
+    "disease_label": "Lynch syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000116062",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/2956",
+      "disease": "https://monarchinitiative.org/MONDO:0005835"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "PMS2",
+    "ensembl_id": "ENSG00000122512",
+    "entrez_id": "5395",
+    "disease_id": "MONDO:0005835",
+    "disease_label": "Lynch syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000122512",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/5395",
+      "disease": "https://monarchinitiative.org/MONDO:0005835"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "APC",
+    "ensembl_id": "ENSG00000134982",
+    "entrez_id": "324",
+    "disease_id": "MONDO:0021056",
+    "disease_label": "familial adenomatous polyposis 1",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000134982",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/324",
+      "disease": "https://monarchinitiative.org/MONDO:0021056"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "PTEN",
+    "ensembl_id": "ENSG00000171862",
+    "entrez_id": "5728",
+    "disease_id": "MONDO:0017623",
+    "disease_label": "PTEN hamartoma tumor syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000171862",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/5728",
+      "disease": "https://monarchinitiative.org/MONDO:0017623"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "RET",
+    "ensembl_id": "ENSG00000165731",
+    "entrez_id": "5979",
+    "disease_id": "MONDO:0019003",
+    "disease_label": "multiple endocrine neoplasia type 2",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000165731",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/5979",
+      "disease": "https://monarchinitiative.org/MONDO:0019003"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "VHL",
+    "ensembl_id": "ENSG00000134086",
+    "entrez_id": "7428",
+    "disease_id": "MONDO:0008561",
+    "disease_label": "von Hippel-Lindau syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000134086",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7428",
+      "disease": "https://monarchinitiative.org/MONDO:0008561"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "FBN1",
+    "ensembl_id": "ENSG00000166147",
+    "entrez_id": "2200",
+    "disease_id": "MONDO:0007947",
+    "disease_label": "Marfan syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000166147",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/2200",
+      "disease": "https://monarchinitiative.org/MONDO:0007947"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "KCNQ1",
+    "ensembl_id": "ENSG00000053918",
+    "entrez_id": "3784",
+    "disease_id": "MONDO:0002442",
+    "disease_label": "long QT syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000053918",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/3784",
+      "disease": "https://monarchinitiative.org/MONDO:0002442"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "KCNH2",
+    "ensembl_id": "ENSG00000055118",
+    "entrez_id": "3757",
+    "disease_id": "MONDO:0002442",
+    "disease_label": "long QT syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000055118",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/3757",
+      "disease": "https://monarchinitiative.org/MONDO:0002442"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "SCN5A",
+    "ensembl_id": "ENSG00000183873",
+    "entrez_id": "6331",
+    "disease_id": "MONDO:0015263",
+    "disease_label": "Brugada syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000183873",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6331",
+      "disease": "https://monarchinitiative.org/MONDO:0015263"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "LMNA",
+    "ensembl_id": "ENSG00000160789",
+    "entrez_id": "4000",
+    "disease_id": "MONDO:0005021",
+    "disease_label": "dilated cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000160789",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4000",
+      "disease": "https://monarchinitiative.org/MONDO:0005021"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "PCSK9",
+    "ensembl_id": "ENSG00000169174",
+    "entrez_id": "255738",
+    "disease_id": "MONDO:0007750",
+    "disease_label": "familial hypercholesterolemia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000169174",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/255738",
+      "disease": "https://monarchinitiative.org/MONDO:0007750"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "ATP7B",
+    "ensembl_id": "ENSG00000123191",
+    "entrez_id": "540",
+    "disease_id": "MONDO:0009563",
+    "disease_label": "Wilson disease",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000123191",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/540",
+      "disease": "https://monarchinitiative.org/MONDO:0009563"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "GLA",
+    "ensembl_id": "ENSG00000102393",
+    "entrez_id": "2717",
+    "disease_id": "MONDO:0010526",
+    "disease_label": "Fabry disease",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000102393",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/2717",
+      "disease": "https://monarchinitiative.org/MONDO:0010526"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "GAA",
+    "ensembl_id": "ENSG00000171298",
+    "entrez_id": "2548",
+    "disease_id": "MONDO:0009290",
+    "disease_label": "glycogen storage disease type II (Pompe disease)",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000171298",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/2548",
+      "disease": "https://monarchinitiative.org/MONDO:0009290"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "PKD1",
+    "ensembl_id": "ENSG00000008710",
+    "entrez_id": "5310",
+    "disease_id": "MONDO:0004691",
+    "disease_label": "autosomal dominant polycystic kidney disease",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000008710",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/5310",
+      "disease": "https://monarchinitiative.org/MONDO:0004691"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "RYR1",
+    "ensembl_id": "ENSG00000196218",
+    "entrez_id": "6261",
+    "disease_id": "MONDO:0007783",
+    "disease_label": "malignant hyperthermia susceptibility",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000196218",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6261",
+      "disease": "https://monarchinitiative.org/MONDO:0007783"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "CFTR",
+    "ensembl_id": "ENSG00000001626",
+    "entrez_id": "1080",
+    "disease_id": "MONDO:0009061",
+    "disease_label": "cystic fibrosis",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000001626",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1080",
+      "disease": "https://monarchinitiative.org/MONDO:0009061"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "CYP3A5",
+    "ensembl_id": "ENSG00000106258",
+    "entrez_id": "1577",
+    "disease_id": "MESH:D064420",
+    "disease_label": "Drug-Related Side Effects and Adverse Reactions",
+    "mesh_tree_number": "C25.100",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000106258",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1577",
+      "disease": "https://meshb.nlm.nih.gov/record/ui?ui=D064420"
+    },
+    "verified_on": "2026-11-04"
   }
 ]
