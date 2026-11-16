@@ -80,7 +80,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 3520,
+      "clinvar_pathogenic_count": 4752,
       "clinvar_summary_chinese": "已收錄 3500+ 個明確致病變異位點",
       "opentargets_score": 0.94,
       "key_pmids": [
@@ -190,7 +190,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.98,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 1680,
+      "clinvar_pathogenic_count": 1241,
       "clinvar_summary_chinese": "已收錄 1600+ 個明確致病/可能致病變異位點",
       "opentargets_score": 0.95,
       "key_pmids": [
@@ -300,7 +300,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 強科學共識",
-      "clinvar_pathogenic_count": 410,
+      "clinvar_pathogenic_count": 33,
       "clinvar_summary_chinese": "已證實 ε4 亞型顯著增加神經退化性風險",
       "opentargets_score": 0.91,
       "key_pmids": [
@@ -409,7 +409,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 臨床精準用藥最高指南推薦 (FDA / TFDA / NMPA 核准)",
-      "clinvar_pathogenic_count": 890,
+      "clinvar_pathogenic_count": 120,
       "clinvar_summary_chinese": "已證實對奧希替尼、吉非替尼等標靶藥敏感",
       "opentargets_score": 0.96,
       "key_pmids": [
@@ -521,7 +521,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.97,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 亞洲人群最重要日常急救與防癌基因共識",
-      "clinvar_pathogenic_count": 32,
+      "clinvar_pathogenic_count": 8,
       "clinvar_summary_chinese": "rs671 被明確認證為急性酒精敏感與硝酸甘油藥物反應核心位點",
       "opentargets_score": 0.89,
       "key_pmids": [
@@ -640,7 +640,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.99,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 CPIC 與兒科新生兒篩檢最高級別指南",
-      "clinvar_pathogenic_count": 245,
+      "clinvar_pathogenic_count": 469,
       "clinvar_summary_chinese": "已明確收錄 200+ 種 G6PD 酶活性缺乏致病位點",
       "opentargets_score": 0.95,
       "key_pmids": [
@@ -763,7 +763,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 腦中風預防 (CSPPT) 與周產期優生權威共識",
-      "clinvar_pathogenic_count": 115,
+      "clinvar_pathogenic_count": 252,
       "clinvar_summary_chinese": "C677T (rs1801133) 是全球研究最透徹的葉酸代謝與藥物反應多態性位點之一",
       "opentargets_score": 0.88,
       "key_pmids": [
@@ -887,7 +887,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.98,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨美國 FDA 黑框警示最高實證",
-      "clinvar_pathogenic_count": 617,
+      "clinvar_pathogenic_count": 20,
       "clinvar_summary_chinese": "ClinVar 與 PharmGKB 收錄 *2 (rs4244285)、*3 (rs4986893)、*17 (rs12248560) 等明確藥物反應位點",
       "opentargets_score": 0.92,
       "key_pmids": [
@@ -1015,7 +1015,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨 FDA 藥物基因組學指南確證",
-      "clinvar_pathogenic_count": 36,
+      "clinvar_pathogenic_count": 21,
       "clinvar_summary_chinese": "CYP2C9*2 (rs1799853) 與 *3 (rs1057910) 為國際公認之華法林、苯妥英與 NSAIDs 藥物敏感標誌位點",
       "opentargets_score": 0.89,
       "key_pmids": [
@@ -1127,7 +1127,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.97,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨 FDA 仿單標註核心抗凝血基因",
-      "clinvar_pathogenic_count": 26,
+      "clinvar_pathogenic_count": 19,
       "clinvar_summary_chinese": "rs9923231 (-1639G>A) 是全球證據最充分的華法林敏感度決定位點",
       "opentargets_score": 0.93,
       "key_pmids": [
@@ -1252,7 +1252,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.97,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨 NEJM SEARCH 研究權威實證",
-      "clinvar_pathogenic_count": 46,
+      "clinvar_pathogenic_count": 53,
       "clinvar_summary_chinese": "rs4149056 (c.521T>C) 是全球公認最強的史他汀相關肌肉毒性遺傳標誌",
       "opentargets_score": 0.91,
       "key_pmids": [
@@ -1371,7 +1371,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.99,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨全球臨床藥物基因組學經典標竿",
-      "clinvar_pathogenic_count": 27,
+      "clinvar_pathogenic_count": 15,
       "clinvar_summary_chinese": "TPMT*2、*3A、*3B、*3C 已列入全球各大醫學中心硫嘌呤處方前標準檢測位點",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -1490,7 +1490,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.99,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 暨亞洲人群精準醫療重大突破",
-      "clinvar_pathogenic_count": 69,
+      "clinvar_pathogenic_count": 67,
       "clinvar_summary_chinese": "NUDT15*3 (rs116855232) 為解釋東亞人硫嘌呤骨髓抑制最重要的藥物基因位點",
       "opentargets_score": 0.91,
       "key_pmids": [
@@ -1614,7 +1614,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.99,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 台灣領先全球寫入國際 FDA 與 CPIC Level A 指南之精準醫療典範",
-      "clinvar_pathogenic_count": 5,
+      "clinvar_pathogenic_count": 8,
       "clinvar_summary_chinese": "台灣團隊於 Nature (PMID:15057820)、PNAS (PMID:15743917)、NEJM (PMID:21428768) 與 BMJ (PMID:26399967) 確證之藥物過敏基因",
       "opentargets_score": 0.95,
       "key_pmids": [
@@ -1752,7 +1752,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.97,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 鴉片類與泰莫西芬用藥指引",
-      "clinvar_pathogenic_count": 320,
+      "clinvar_pathogenic_count": 28,
       "clinvar_summary_chinese": "ClinVar 與 PharmGKB 收錄 CYP2D6 *4、*5、*10、*17 等明確藥物反應等位基因",
       "opentargets_score": 0.88,
       "key_pmids": [
@@ -1875,7 +1875,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.98,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC Level A 氟尿嘧啶劑量指引",
-      "clinvar_pathogenic_count": 210,
+      "clinvar_pathogenic_count": 182,
       "clinvar_summary_chinese": "ClinVar 與 PharmGKB 收錄 DPYD *2A、c.2846A>T、*13 與 HapB3 等功能缺失變異",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -1991,7 +1991,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️ FDA 標籤與 DPWG 指引支持",
-      "clinvar_pathogenic_count": 180,
+      "clinvar_pathogenic_count": 127,
       "clinvar_summary_chinese": "ClinVar 與 PharmGKB 收錄 UGT1A1 *28 (rs3064744) 與 *6 (rs4148323) 等膽紅素與伊立替康反應位點",
       "opentargets_score": 0.84,
       "key_pmids": [
@@ -2076,7 +2076,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.55,
       "plain_rating": "⭐️⭐️⭐️ 常見生活型態性狀，證據溫和",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 65,
       "clinvar_summary_chinese": "乳糖酶非持續表現為常見生理性狀，並非單一高外顯率致病變異；東亞族群以非持續表現為常態",
       "opentargets_score": 0.2,
       "key_pmids": [
@@ -2161,7 +2161,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.5,
       "plain_rating": "⭐️⭐️⭐️ 常見生活型態性狀，證據溫和",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 35,
       "clinvar_summary_chinese": "CYP1A2 變異與咖啡因代謝速度相關，但多為生活型態性狀，並非單一高外顯率致病變異",
       "opentargets_score": 0.18,
       "key_pmids": [
@@ -2246,7 +2246,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.5,
       "plain_rating": "⭐️⭐️⭐️ 常見多基因性狀，單一變異效應溫和",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 20,
       "clinvar_summary_chinese": "FTO rs9939609 與肥胖易感性相關，但效應溫和，並非單一高外顯率致病變異",
       "opentargets_score": 0.35,
       "key_pmids": [
@@ -2342,7 +2342,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 300,
+      "clinvar_pathogenic_count": 502,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 HBB 致病變異，與乙型地中海貧血的關聯明確",
       "opentargets_score": 0.72,
       "key_pmids": [
@@ -2438,7 +2438,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 250,
+      "clinvar_pathogenic_count": 219,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 HBA1/HBA2 缺失與致病變異，與甲型地中海貧血的關聯明確",
       "opentargets_score": 0.7,
       "key_pmids": [
@@ -2540,7 +2540,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 200,
+      "clinvar_pathogenic_count": 102,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 SMN1 缺失與致病變異，與脊髓性肌肉萎縮症的關聯明確",
       "opentargets_score": 0.78,
       "key_pmids": [
@@ -2625,7 +2625,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.88,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 180,
+      "clinvar_pathogenic_count": 311,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 GJB2 致病變異，與體染色體隱性非症候群性聽力損失的關聯明確",
       "opentargets_score": 0.65,
       "key_pmids": [
@@ -2721,7 +2721,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 400,
+      "clinvar_pathogenic_count": 2342,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 LDLR 致病變異，與家族性高膽固醇血症的關聯明確",
       "opentargets_score": 0.8,
       "key_pmids": [
@@ -2817,7 +2817,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 350,
+      "clinvar_pathogenic_count": 467,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 MYH7 致病變異，與肥厚型心肌病變的關聯明確",
       "opentargets_score": 0.78,
       "key_pmids": [
@@ -2913,7 +2913,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 400,
+      "clinvar_pathogenic_count": 1151,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 MYBPC3 致病變異，與肥厚型心肌病變的關聯明確",
       "opentargets_score": 0.8,
       "key_pmids": [
@@ -3027,7 +3027,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 3000,
+      "clinvar_pathogenic_count": 6074,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 BRCA2 明確致病變異位點",
       "opentargets_score": 0.93,
       "key_pmids": [
@@ -3127,7 +3127,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 國際指引與臨床試驗支持",
-      "clinvar_pathogenic_count": 700,
+      "clinvar_pathogenic_count": 1632,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 PALB2 致病變異，與乳癌及胰臟癌易感性相關",
       "opentargets_score": 0.85,
       "key_pmids": [
@@ -3233,7 +3233,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 1200,
+      "clinvar_pathogenic_count": 2125,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 MLH1 致病變異，與林奇症候群及 dMMR/MSI-H 腫瘤相關",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -3339,7 +3339,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 1400,
+      "clinvar_pathogenic_count": 2502,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 MSH2 致病變異，與林奇症候群及 dMMR/MSI-H 腫瘤相關",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -3445,7 +3445,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.94,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 900,
+      "clinvar_pathogenic_count": 2427,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 MSH6 致病變異，與林奇症候群及 dMMR/MSI-H 腫瘤相關",
       "opentargets_score": 0.88,
       "key_pmids": [
@@ -3551,7 +3551,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 600,
+      "clinvar_pathogenic_count": 1163,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 PMS2 致病變異，與林奇症候群及 dMMR/MSI-H 腫瘤相關",
       "opentargets_score": 0.86,
       "key_pmids": [
@@ -3649,7 +3649,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 1800,
+      "clinvar_pathogenic_count": 2784,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 APC 致病變異，與家族性腺瘤性息肉症的關聯明確",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -3751,7 +3751,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 700,
+      "clinvar_pathogenic_count": 1426,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 PTEN 致病變異，與 PTEN 錯構瘤腫瘤症候群的關聯明確",
       "opentargets_score": 0.88,
       "key_pmids": [
@@ -3856,7 +3856,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 500,
+      "clinvar_pathogenic_count": 227,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多種 RET 活化型致病變異，與 MEN2 及髓質甲狀腺癌的關聯明確",
       "opentargets_score": 0.92,
       "key_pmids": [
@@ -3961,7 +3961,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際醫學界最高級別確證 (Definitive)",
-      "clinvar_pathogenic_count": 800,
+      "clinvar_pathogenic_count": 537,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 VHL 致病變異，與馮希佩爾-林道症候群的關聯明確",
       "opentargets_score": 0.91,
       "key_pmids": [
@@ -4064,7 +4064,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 1200,
+      "clinvar_pathogenic_count": 3881,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 FBN1 致病變異，與馬凡氏症候群的關聯明確",
       "opentargets_score": 0.8,
       "key_pmids": [
@@ -4167,7 +4167,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 600,
+      "clinvar_pathogenic_count": 638,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 KCNQ1 致病變異，與長 QT 症候群的關聯明確",
       "opentargets_score": 0.76,
       "key_pmids": [
@@ -4270,7 +4270,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 700,
+      "clinvar_pathogenic_count": 873,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 KCNH2 致病變異，與長 QT 症候群的關聯明確",
       "opentargets_score": 0.77,
       "key_pmids": [
@@ -4386,7 +4386,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 900,
+      "clinvar_pathogenic_count": 602,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄大量 SCN5A 致病變異，與布魯格達氏症候群的關聯明確",
       "opentargets_score": 0.78,
       "key_pmids": [
@@ -4499,7 +4499,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.88,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 500,
+      "clinvar_pathogenic_count": 609,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多個 LMNA 致病變異，與擴張型心肌病變及傳導異常的關聯明確",
       "opentargets_score": 0.74,
       "key_pmids": [
@@ -4607,7 +4607,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 300,
+      "clinvar_pathogenic_count": 31,
       "clinvar_summary_chinese": "ClinVar 與既有文獻收錄多個 PCSK9 功能增強型變異，與家族性高膽固醇血症的關聯明確",
       "opentargets_score": 0.79,
       "key_pmids": [
@@ -4717,7 +4717,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 Wilson 疾病診療與基因檢測指引",
-      "clinvar_pathogenic_count": 900,
+      "clinvar_pathogenic_count": 985,
       "clinvar_summary_chinese": "ClinVar 已收錄數百個 ATP7B 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.93,
       "key_pmids": [
@@ -4820,7 +4820,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際法布瑞氏症診療與新生兒篩檢指引",
-      "clinvar_pathogenic_count": 1100,
+      "clinvar_pathogenic_count": 1357,
       "clinvar_summary_chinese": "ClinVar 已收錄大量 GLA 致病與可能致病變異，基因型與酵素活性可協助確診及用藥評估",
       "opentargets_score": 0.94,
       "key_pmids": [
@@ -4923,7 +4923,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際龐貝氏症診療與新生兒篩檢指引",
-      "clinvar_pathogenic_count": 700,
+      "clinvar_pathogenic_count": 932,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 GAA 致病變異，新生兒篩檢與基因檢測可縮短診斷時程",
       "opentargets_score": 0.93,
       "key_pmids": [
@@ -5026,7 +5026,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.97,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 ADPKD 診療與基因檢測指引",
-      "clinvar_pathogenic_count": 2300,
+      "clinvar_pathogenic_count": 2696,
       "clinvar_summary_chinese": "ClinVar 已收錄大量 PKD1 致病變異，基因檢測有助於非典型個案與家族成員診斷",
       "opentargets_score": 0.95,
       "key_pmids": [
@@ -5157,7 +5157,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.98,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 CPIC 麻醉藥物基因組學最高級別指引",
-      "clinvar_pathogenic_count": 900,
+      "clinvar_pathogenic_count": 863,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 RYR1 與 CACNA1S 惡性高熱相關致病變異，基因檢測可協助麻醉前風險評估",
       "opentargets_score": 0.96,
       "key_pmids": [
@@ -5264,7 +5264,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.97,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 CFTR 調節劑藥物基因組學與囊腫性纖維化診療指引",
-      "clinvar_pathogenic_count": 2000,
+      "clinvar_pathogenic_count": 1726,
       "clinvar_summary_chinese": "ClinVar 已收錄大量 CFTR 致病與可能致病變異，基因型可指導 CFTR 調節劑選擇",
       "opentargets_score": 0.96,
       "key_pmids": [
@@ -5365,7 +5365,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.97,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 CPIC 他克莫司藥物基因組學最高級別指引",
-      "clinvar_pathogenic_count": 120,
+      "clinvar_pathogenic_count": 22,
       "clinvar_summary_chinese": "ClinVar 收錄 CYP3A5 常見星號等位基因與功能變異，基因型可協助移植用藥起始劑量規劃",
       "opentargets_score": 0.94,
       "key_pmids": [
@@ -5458,7 +5458,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性胃腸道癌症診療指引",
-      "clinvar_pathogenic_count": 500,
+      "clinvar_pathogenic_count": 491,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 STK11 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.92,
       "key_pmids": [
@@ -5552,7 +5552,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.94,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際幼年型息肉症診療與遺傳指引",
-      "clinvar_pathogenic_count": 400,
+      "clinvar_pathogenic_count": 388,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 BMPR1A 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.91,
       "key_pmids": [
@@ -5652,7 +5652,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際幼年型息肉症與遺傳性出血性血管擴張症指引",
-      "clinvar_pathogenic_count": 600,
+      "clinvar_pathogenic_count": 374,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 SMAD4 致病與可能致病變異，基因檢測可協助區分息肉症與血管異常風險",
       "opentargets_score": 0.93,
       "key_pmids": [
@@ -5746,7 +5746,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 MUTYH 相關息肉症診療與遺傳指引",
-      "clinvar_pathogenic_count": 350,
+      "clinvar_pathogenic_count": 456,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 MUTYH 致病與可能致病變異，雙等位基因檢測可協助確診 MAP",
       "opentargets_score": 0.91,
       "key_pmids": [
@@ -5846,7 +5846,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 MEN1 診療與遺傳監測指引",
-      "clinvar_pathogenic_count": 700,
+      "clinvar_pathogenic_count": 719,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 MEN1 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.94,
       "key_pmids": [
@@ -5940,7 +5940,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.97,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際視網膜母細胞瘤診療與遺傳指引",
-      "clinvar_pathogenic_count": 800,
+      "clinvar_pathogenic_count": 1121,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 RB1 致病與可能致病變異，基因檢測可協助區分遺傳性與非遺傳性腫瘤",
       "opentargets_score": 0.95,
       "key_pmids": [
@@ -6034,7 +6034,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際第二型神經纖維瘤病診療與遺傳指引",
-      "clinvar_pathogenic_count": 650,
+      "clinvar_pathogenic_count": 364,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 NF2 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.93,
       "key_pmids": [
@@ -6128,7 +6128,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際威爾姆斯瘤診療與遺傳指引",
-      "clinvar_pathogenic_count": 600,
+      "clinvar_pathogenic_count": 225,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 WT1 致病與可能致病變異，基因檢測可協助區分遺傳性與偶發性腫瘤",
       "opentargets_score": 0.94,
       "key_pmids": [
@@ -6222,7 +6222,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際結節性硬化症診療與監測指引",
-      "clinvar_pathogenic_count": 800,
+      "clinvar_pathogenic_count": 860,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 TSC1 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.95,
       "key_pmids": [
@@ -6316,7 +6316,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際結節性硬化症診療與監測指引",
-      "clinvar_pathogenic_count": 1800,
+      "clinvar_pathogenic_count": 1686,
       "clinvar_summary_chinese": "ClinVar 已收錄大量 TSC2 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.96,
       "key_pmids": [
@@ -6410,7 +6410,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性副神經節瘤與嗜鉻細胞瘤指引",
-      "clinvar_pathogenic_count": 400,
+      "clinvar_pathogenic_count": 362,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 SDHB 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.93,
       "key_pmids": [
@@ -6504,7 +6504,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性副神經節瘤與嗜鉻細胞瘤指引",
-      "clinvar_pathogenic_count": 350,
+      "clinvar_pathogenic_count": 194,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 SDHD 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.92,
       "key_pmids": [
@@ -6598,7 +6598,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 Birt-Hogg-Dubé 症候群診療與監測指引",
-      "clinvar_pathogenic_count": 500,
+      "clinvar_pathogenic_count": 604,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 FLCN 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.93,
       "key_pmids": [
@@ -6692,7 +6692,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.94,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性嗜鉻細胞瘤與副神經節瘤指引",
-      "clinvar_pathogenic_count": 150,
+      "clinvar_pathogenic_count": 73,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 MAX 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.91,
       "key_pmids": [
@@ -6793,7 +6793,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際血管型 Ehlers-Danlos 症候群診療指引",
-      "clinvar_pathogenic_count": 700,
+      "clinvar_pathogenic_count": 1016,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 COL3A1 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.94,
       "key_pmids": [
@@ -6894,7 +6894,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 Loeys-Dietz 症候群診療指引",
-      "clinvar_pathogenic_count": 500,
+      "clinvar_pathogenic_count": 157,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 TGFBR1 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.94,
       "key_pmids": [
@@ -6995,7 +6995,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 Loeys-Dietz 症候群診療指引",
-      "clinvar_pathogenic_count": 600,
+      "clinvar_pathogenic_count": 143,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 TGFBR2 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.94,
       "key_pmids": [
@@ -7096,7 +7096,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 Loeys-Dietz 症候群與主動脈疾病指引",
-      "clinvar_pathogenic_count": 450,
+      "clinvar_pathogenic_count": 247,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 SMAD3 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.93,
       "key_pmids": [
@@ -7197,7 +7197,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.96,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際家族性胸主動脈瘤與剝離指引",
-      "clinvar_pathogenic_count": 550,
+      "clinvar_pathogenic_count": 69,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 ACTA2 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.94,
       "key_pmids": [
@@ -7298,7 +7298,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際家族性胸主動脈瘤與剝離指引",
-      "clinvar_pathogenic_count": 300,
+      "clinvar_pathogenic_count": 315,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 MYH11 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.92,
       "key_pmids": [
@@ -7421,7 +7421,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.97,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際家族性高膽固醇血症診療與基因指引",
-      "clinvar_pathogenic_count": 400,
+      "clinvar_pathogenic_count": 293,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 APOB 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.95,
       "key_pmids": [
@@ -7526,7 +7526,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際類澱粉沉著症診療與基因指引",
-      "clinvar_pathogenic_count": 300,
+      "clinvar_pathogenic_count": 170,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 TTR 致病與可能致病變異，基因檢測可協助確診 hATTR 並進行家族篩檢",
       "opentargets_score": 0.92,
       "key_pmids": [
@@ -7625,7 +7625,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際血色素沉著症診療與基因指引",
-      "clinvar_pathogenic_count": 200,
+      "clinvar_pathogenic_count": 57,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 HFE 致病與可能致病變異，基因檢測可協助確診並指導家族鐵質篩檢",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -7754,7 +7754,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.94,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際單基因糖尿病診療與藥物基因指引",
-      "clinvar_pathogenic_count": 250,
+      "clinvar_pathogenic_count": 425,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 HNF1A 致病與可能致病變異，基因檢測可協助區分 MODY3 與其他糖尿病型別",
       "opentargets_score": 0.91,
       "key_pmids": [
@@ -7877,7 +7877,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.95,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 CPIC 麻醉藥物基因指引",
-      "clinvar_pathogenic_count": 180,
+      "clinvar_pathogenic_count": 155,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 CACNA1S 惡性高熱與低鉀週期性麻痺相關變異，基因檢測可協助術前風險評估",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -7970,7 +7970,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際新生兒篩檢與代謝疾病診療指引",
-      "clinvar_pathogenic_count": 150,
+      "clinvar_pathogenic_count": 295,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 BTD 致病與可能致病變異，基因檢測可協助確診與家族遺傳諮詢",
       "opentargets_score": 0.88,
       "key_pmids": [
@@ -8093,7 +8093,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.94,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際尿素循環障礙診療與用藥安全指引",
-      "clinvar_pathogenic_count": 220,
+      "clinvar_pathogenic_count": 599,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 OTC 致病與可能致病變異，基因檢測可協助確診並指導家族篩檢",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -8181,7 +8181,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際視網膜失養症基因治療與診療指引",
-      "clinvar_pathogenic_count": 260,
+      "clinvar_pathogenic_count": 425,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 RPE65 致病與可能致病變異，基因檢測可協助確診並評估基因治療適用性",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -8286,7 +8286,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 HHT 診療與基因指引",
-      "clinvar_pathogenic_count": 280,
+      "clinvar_pathogenic_count": 733,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 ENG 致病與可能致病變異，基因檢測可協助確診 HHT1 並進行家族篩檢",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -8391,7 +8391,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 HHT 診療與基因指引",
-      "clinvar_pathogenic_count": 260,
+      "clinvar_pathogenic_count": 606,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 ACVRL1 致病與可能致病變異，基因檢測可協助確診 HHT2 並進行家族篩檢",
       "opentargets_score": 0.89,
       "key_pmids": [
@@ -8490,7 +8490,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性副神經節瘤與嗜鉻細胞瘤指引",
-      "clinvar_pathogenic_count": 180,
+      "clinvar_pathogenic_count": 141,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 SDHC 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.88,
       "key_pmids": [
@@ -8584,7 +8584,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性副神經節瘤診療指引",
-      "clinvar_pathogenic_count": 60,
+      "clinvar_pathogenic_count": 67,
       "clinvar_summary_chinese": "ClinVar 已收錄 SDHAF2 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.85,
       "key_pmids": [
@@ -8683,7 +8683,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性嗜鉻細胞瘤與副神經節瘤指引",
-      "clinvar_pathogenic_count": 90,
+      "clinvar_pathogenic_count": 172,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 TMEM127 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.86,
       "key_pmids": [
@@ -8794,7 +8794,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
-      "clinvar_pathogenic_count": 520,
+      "clinvar_pathogenic_count": 6209,
       "clinvar_summary_chinese": "ClinVar 已收錄大量 TTN 截斷型致病與可能致病變異，基因檢測可協助確診家族性擴張型心肌病變",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -8905,7 +8905,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.91,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
-      "clinvar_pathogenic_count": 120,
+      "clinvar_pathogenic_count": 201,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 BAG3 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
       "opentargets_score": 0.87,
       "key_pmids": [
@@ -9004,7 +9004,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
-      "clinvar_pathogenic_count": 210,
+      "clinvar_pathogenic_count": 82,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 TNNT2 致病與可能致病變異，與肥厚型心肌病變及心因性猝死風險相關",
       "opentargets_score": 0.88,
       "key_pmids": [
@@ -9103,7 +9103,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
-      "clinvar_pathogenic_count": 180,
+      "clinvar_pathogenic_count": 101,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 TNNI3 致病與可能致病變異，與肥厚型心肌病變及暈厥風險相關",
       "opentargets_score": 0.86,
       "key_pmids": [
@@ -9202,7 +9202,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.91,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
-      "clinvar_pathogenic_count": 130,
+      "clinvar_pathogenic_count": 66,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 TPM1 致病與可能致病變異，與肥厚型心肌病變及心房顫動相關",
       "opentargets_score": 0.84,
       "key_pmids": [
@@ -9301,7 +9301,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 90,
+      "clinvar_pathogenic_count": 28,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 MYL2 致病與可能致病變異，與肥厚型心肌病變相關",
       "opentargets_score": 0.82,
       "key_pmids": [
@@ -9400,7 +9400,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.89,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 80,
+      "clinvar_pathogenic_count": 14,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 MYL3 致病與可能致病變異，與肥厚型心肌病變相關",
       "opentargets_score": 0.81,
       "key_pmids": [
@@ -9499,7 +9499,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.91,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
-      "clinvar_pathogenic_count": 120,
+      "clinvar_pathogenic_count": 51,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 ACTC1 致病與可能致病變異，與肥厚型心肌病變及心房顫動相關",
       "opentargets_score": 0.85,
       "key_pmids": [
@@ -9604,7 +9604,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學與心律指引證據明確",
-      "clinvar_pathogenic_count": 70,
+      "clinvar_pathogenic_count": 107,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 PRKAG2 致病與可能致病變異，與肥厚型心肌病變、預激症候群及心律不整相關",
       "opentargets_score": 0.83,
       "key_pmids": [
@@ -9709,7 +9709,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.89,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 45,
+      "clinvar_pathogenic_count": 21,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 TNNC1 致病與可能致病變異，與肥厚型及擴張型心肌病變相關",
       "opentargets_score": 0.8,
       "key_pmids": [
@@ -9820,7 +9820,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.91,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變與神經肌肉疾病指引",
-      "clinvar_pathogenic_count": 110,
+      "clinvar_pathogenic_count": 163,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 DES 致病與可能致病變異，與擴張型心肌病變及肌原纖維肌病相關",
       "opentargets_score": 0.86,
       "key_pmids": [
@@ -9925,7 +9925,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變與心律基因指引",
-      "clinvar_pathogenic_count": 160,
+      "clinvar_pathogenic_count": 702,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 FLNC 致病與可能致病變異，與擴張型心肌病變及心室心律不整相關",
       "opentargets_score": 0.88,
       "key_pmids": [
@@ -10030,7 +10030,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.91,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
-      "clinvar_pathogenic_count": 70,
+      "clinvar_pathogenic_count": 135,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 RBM20 致病與可能致病變異，與早發性擴張型心肌病變及心室心律不整相關",
       "opentargets_score": 0.85,
       "key_pmids": [
@@ -10135,7 +10135,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 ARVC 診療與基因指引",
-      "clinvar_pathogenic_count": 300,
+      "clinvar_pathogenic_count": 456,
       "clinvar_summary_chinese": "ClinVar 已收錄大量 PKP2 致病與可能致病變異，與致心律失常性右心室心肌病變及心室心律不整相關",
       "opentargets_score": 0.9,
       "key_pmids": [
@@ -10240,7 +10240,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 ARVC 診療與基因指引",
-      "clinvar_pathogenic_count": 220,
+      "clinvar_pathogenic_count": 908,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 DSP 致病與可能致病變異，與致心律失常性心肌病變及心室心律不整相關",
       "opentargets_score": 0.88,
       "key_pmids": [
@@ -10345,7 +10345,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ 國際 ARVC 診療與基因指引",
-      "clinvar_pathogenic_count": 90,
+      "clinvar_pathogenic_count": 154,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 DSC2 致病與可能致病變異，與致心律失常性右心室心肌病變相關",
       "opentargets_score": 0.84,
       "key_pmids": [
@@ -10450,7 +10450,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.91,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 ARVC 診療與基因指引",
-      "clinvar_pathogenic_count": 180,
+      "clinvar_pathogenic_count": 186,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 DSG2 致病與可能致病變異，與致心律失常性右心室心肌病變及心室心律不整相關",
       "opentargets_score": 0.87,
       "key_pmids": [
@@ -10555,7 +10555,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.87,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 60,
+      "clinvar_pathogenic_count": 28,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 TMEM43 致病與可能致病變異，與致心律失常性右心室心肌病變相關",
       "opentargets_score": 0.66,
       "key_pmids": [
@@ -10660,7 +10660,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.93,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 750,
+      "clinvar_pathogenic_count": 334,
       "clinvar_summary_chinese": "ClinVar 已收錄大量 RYR2 致病與可能致病變異，與兒茶酚胺敏感性多形性室性心搏過速密切相關",
       "opentargets_score": 0.81,
       "key_pmids": [
@@ -10765,7 +10765,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.89,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 120,
+      "clinvar_pathogenic_count": 92,
       "clinvar_summary_chinese": "ClinVar 已收錄多個 CASQ2 致病與可能致病變異，與兒茶酚胺敏感性多形性室性心搏過速相關",
       "opentargets_score": 0.72,
       "key_pmids": [
@@ -10870,7 +10870,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.86,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 45,
+      "clinvar_pathogenic_count": 85,
       "clinvar_summary_chinese": "ClinVar 與文獻已收錄多個 TRDN 致病變異，與三聯蛋白缺乏相關的嚴重遺傳性心律不整有關",
       "opentargets_score": 0.68,
       "key_pmids": [
@@ -10976,7 +10976,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.84,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 30,
+      "clinvar_pathogenic_count": 41,
       "clinvar_summary_chinese": "ClinVar 與文獻已收錄多個 CALM1 致病變異，與早發性長 QT 症候群及兒茶酚胺敏感性多形性室性心搏過速相關",
       "opentargets_score": 0.64,
       "key_pmids": [
@@ -11082,7 +11082,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.84,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 25,
+      "clinvar_pathogenic_count": 34,
       "clinvar_summary_chinese": "ClinVar 與文獻已收錄多個 CALM2 致病變異，與早發性長 QT 症候群及兒茶酚胺敏感性多形性室性心搏過速相關",
       "opentargets_score": 0.63,
       "key_pmids": [
@@ -11188,7 +11188,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.84,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 20,
+      "clinvar_pathogenic_count": 21,
       "clinvar_summary_chinese": "ClinVar 與文獻已收錄多個 CALM3 致病變異，與早發性長 QT 症候群、兒茶酚胺敏感性多形性室性心搏過速及心因性猝死風險相關",
       "opentargets_score": 0.62,
       "key_pmids": [
@@ -11315,7 +11315,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.91,
       "plain_rating": "⭐️⭐️⭐️⭐️ CPIC 與 PharmGKB 藥物基因證據明確",
-      "clinvar_pathogenic_count": 80,
+      "clinvar_pathogenic_count": 27,
       "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 ABCG2 c.421C>A 等低功能變異，與瑞舒伐他汀暴露及痛風易感性相關",
       "opentargets_score": 0.72,
       "key_pmids": [
@@ -11440,7 +11440,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️ CPIC Level A 藥物基因證據明確",
-      "clinvar_pathogenic_count": 40,
+      "clinvar_pathogenic_count": 8,
       "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 CYP2B6*6 與 *18 等功能降低變異，與 efavirenz 中樞神經毒性及 methadone、bupropion 暴露相關",
       "opentargets_score": 0.7,
       "key_pmids": [
@@ -11547,7 +11547,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.88,
       "plain_rating": "⭐️⭐️⭐️⭐️ CPIC 多基因抗凝證據明確",
-      "clinvar_pathogenic_count": 25,
+      "clinvar_pathogenic_count": 12,
       "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 CYP4F2*3 (rs2108622) 變異，與華法林維持劑量及抗凝出血風險相關",
       "opentargets_score": 0.68,
       "key_pmids": [
@@ -11673,7 +11673,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC 與 FDA 嚴重皮膚不良反應基因證據",
-      "clinvar_pathogenic_count": 20,
+      "clinvar_pathogenic_count": 7,
       "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 HLA-A*31:01 與卡馬西平誘發 SJS/TEN、DRESS 之藥物基因關聯",
       "opentargets_score": 0.74,
       "key_pmids": [
@@ -11786,7 +11786,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.89,
       "plain_rating": "⭐️⭐️⭐️⭐️ PharmGKB 與臨床試驗證據明確",
-      "clinvar_pathogenic_count": 10,
+      "clinvar_pathogenic_count": 9,
       "clinvar_summary_chinese": "PharmGKB 與文獻已確立 IFNL3/IL28B rs12979860、rs8099917 與 C 型肝炎干擾素療程反應之關聯",
       "opentargets_score": 0.71,
       "key_pmids": [
@@ -11912,7 +11912,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.88,
       "plain_rating": "⭐️⭐️⭐️⭐️ CPIC 抗結核藥物基因證據明確",
-      "clinvar_pathogenic_count": 30,
+      "clinvar_pathogenic_count": 78,
       "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 NAT2 慢乙醯化等位基因，與異煙肼誘發肝毒性及多種藥物不良反應相關",
       "opentargets_score": 0.66,
       "key_pmids": [
@@ -12025,7 +12025,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.87,
       "plain_rating": "⭐️⭐️⭐️⭐️ CPIC 與 PharmGKB 藥物基因證據明確",
-      "clinvar_pathogenic_count": 35,
+      "clinvar_pathogenic_count": 21,
       "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 CYP2C8*3、*4 等降低功能變異，與 paclitaxel、pioglitazone 及 NSAIDs 暴露與副作用相關",
       "opentargets_score": 0.68,
       "key_pmids": [
@@ -12115,7 +12115,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.45,
       "plain_rating": "⭐️⭐️⭐️ 常見體質差異，證據溫和",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 24,
       "clinvar_summary_chinese": "SOD2 rs4880 為常見抗氧化效率多型性，並非單一高外顯率致病變異",
       "opentargets_score": 0.3,
       "key_pmids": [
@@ -12205,7 +12205,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.5,
       "plain_rating": "⭐️⭐️⭐️ 常見體質差異，證據溫和",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 395,
       "clinvar_summary_chinese": "COMT Val158Met 為常見代謝效率多型性，並非單一高外顯率致病變異",
       "opentargets_score": 0.3,
       "key_pmids": [
@@ -12295,7 +12295,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.5,
       "plain_rating": "⭐️⭐️⭐️ 常見代謝體質，證據溫和",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 77,
       "clinvar_summary_chinese": "PPARG Pro12Ala 與胰島素敏感度及糖尿病風險背景相關，但效應溫和，並非單一高外顯率致病變異",
       "opentargets_score": 0.35,
       "key_pmids": [
@@ -12380,7 +12380,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.45,
       "plain_rating": "⭐️⭐️⭐️ 常見骨骼營養體質，證據溫和",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 53,
       "clinvar_summary_chinese": "VDR 多型性與骨密度及鈣質吸收差異相關，但並非單一高外顯率致病變異",
       "opentargets_score": 0.3,
       "key_pmids": [
@@ -12466,7 +12466,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.55,
       "plain_rating": "⭐️⭐️⭐️ 常見運動體質，證據溫和",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 12,
       "clinvar_summary_chinese": "ACTN3 R577X 為常見肌肉纖維多型性，並非單一高外顯率致病變異",
       "opentargets_score": 0.3,
       "key_pmids": [
@@ -12557,7 +12557,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.45,
       "plain_rating": "⭐️⭐️⭐️ 常見神經體質，證據溫和",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 23,
       "clinvar_summary_chinese": "BDNF Val66Met 與神經可塑性及情緒相關性狀有溫和關聯，並非單一高外顯率致病變異",
       "opentargets_score": 0.35,
       "key_pmids": [
@@ -12647,7 +12647,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.5,
       "plain_rating": "⭐️⭐️⭐️ 常見皮膚體質，證據溫和",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 44,
       "clinvar_summary_chinese": "MC1R 功能減弱型變異與色素性狀及紫外線敏感度相關，但並非單一高外顯率致病變異",
       "opentargets_score": 0.35,
       "key_pmids": [
@@ -12751,7 +12751,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.85,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 150,
+      "clinvar_pathogenic_count": 793,
       "clinvar_summary_chinese": "ClinVar 收錄多個 ABCD1 致病與可能致病變異，與兒童腦型 ALD 及成年型腎上腺脊髓神經病變相關",
       "opentargets_score": 0.6,
       "key_pmids": [
@@ -12861,7 +12861,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.8,
       "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳代謝疾病證據明確",
-      "clinvar_pathogenic_count": 100,
+      "clinvar_pathogenic_count": 267,
       "clinvar_summary_chinese": "ClinVar 收錄多個 CYP27A1 致病變異，與腦腱性黃瘤症及 cholestanol 累積相關",
       "opentargets_score": 0.55,
       "key_pmids": [
@@ -12972,7 +12972,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.8,
       "plain_rating": "⭐️⭐️⭐️⭐️ 心肌病變遺傳證據明確",
-      "clinvar_pathogenic_count": 10,
+      "clinvar_pathogenic_count": 40,
       "clinvar_summary_chinese": "ClinVar 收錄 PLN p.Arg14del 等致病變異，與擴張型心肌病變、致心律失常性心肌病變及心室頻脈相關",
       "opentargets_score": 0.5,
       "key_pmids": [
@@ -13071,7 +13071,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.9,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 50,
+      "clinvar_pathogenic_count": 99,
       "clinvar_summary_chinese": "ClinVar 收錄多個 APP 致病變異，與體染色體顯性早發性家族型阿茲海默症相關",
       "opentargets_score": 0.7,
       "key_pmids": [
@@ -13169,7 +13169,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.92,
       "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
-      "clinvar_pathogenic_count": 300,
+      "clinvar_pathogenic_count": 162,
       "clinvar_summary_chinese": "ClinVar 收錄大量 PSEN1 致病與可能致病變異，與體染色體顯性早發性家族型阿茲海默症相關",
       "opentargets_score": 0.75,
       "key_pmids": [
@@ -13268,7 +13268,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.55,
       "plain_rating": "⭐️⭐️⭐️ 遺傳易感性證據明確，但外顯率不完全",
-      "clinvar_pathogenic_count": 10,
+      "clinvar_pathogenic_count": 20,
       "clinvar_summary_chinese": "ClinVar 收錄 LRRK2 風險與致病變異，與體染色體顯性但外顯率不完全的帕金森氏症相關",
       "opentargets_score": 0.55,
       "key_pmids": [
@@ -13361,7 +13361,7 @@ window.DEMO_DATA = [
     "evidence": {
       "overall_score": 0.7,
       "plain_rating": "⭐️⭐️⭐️ 易感性證據明確，但外顯率低",
-      "clinvar_pathogenic_count": 0,
+      "clinvar_pathogenic_count": 6,
       "clinvar_summary_chinese": "HLA-DQ2/DQ8 為乳糜瀉易感性基因型，並非單一高外顯率致病變異；診斷仍需血清學與切片",
       "opentargets_score": 0.6,
       "key_pmids": [

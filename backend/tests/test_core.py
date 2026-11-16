@@ -736,4 +736,53 @@ def test_scrub_and_decode_rate_limiting(client: TestClient) -> None:
         main_module.reset_rate_limiter()
 
 
+# ---------------------------------------------------------------------------
+# 9. ClinVar Pathogenic Count Sync Script (Mocked E-utilities)
+# ---------------------------------------------------------------------------
+def test_clinvar_count_pathogenic_variants_and_sync_script(tmp_path: Path) -> None:
+    import asyncio
+    import httpx
+    from pipeline.apis.clinvar import ClinVarClient
+    from scripts.sync_clinvar_counts import fetch_counts_for_genes, update_dataset_counts
+
+    captured_terms: list[str] = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        term = request.url.params.get("term", "")
+        captured_terms.append(term)
+        if '"HLA-B"[gene]' in term:
+            return httpx.Response(200, json={"esearchresult": {"count": "9"}})
+        if '"BRCA1"[gene]' in term:
+            return httpx.Response(200, json={"esearchresult": {"count": "4800"}})
+        return httpx.Response(500, json={"error": "transient"})
+
+    async def _run() -> tuple[dict[str, int], dict[str, str]]:
+        transport = httpx.MockTransport(handler)
+        async with httpx.AsyncClient(transport=transport) as http_client:
+            client_obj = ClinVarClient(client=http_client)
+            return await fetch_counts_for_genes(
+                ["BRCA1", "HLA-B", "TP53"],
+                client=client_obj,
+                delay_seconds=0.0,
+            )
+
+    counts, errors = asyncio.run(_run())
+    assert counts == {"BRCA1": 4800, "HLA-B": 9}
+    assert "TP53" in errors
+    assert any('"HLA-B"[gene]' in term and "clinsig pathogenic" in term for term in captured_terms)
+
+    sample_copy = tmp_path / "demo.json"
+    raw = json.loads(DATASET.read_text(encoding="utf-8"))[:3]
+    sample_copy.write_text(json.dumps(raw, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    preview = update_dataset_counts(sample_copy, counts, apply_changes=False)
+    assert preview == [{"symbol": "BRCA1", "old": raw[0]["evidence"]["clinvar_pathogenic_count"], "new": 4800}]
+    assert json.loads(sample_copy.read_text(encoding="utf-8"))[0]["evidence"]["clinvar_pathogenic_count"] == raw[0]["evidence"]["clinvar_pathogenic_count"]
+
+    applied = update_dataset_counts(sample_copy, counts, apply_changes=True)
+    assert applied == preview
+    assert json.loads(sample_copy.read_text(encoding="utf-8"))[0]["evidence"]["clinvar_pathogenic_count"] == 4800
+
+
+
 

@@ -64,12 +64,14 @@ class ClinVarClient:
         timeout: float = 30.0,
         tool: str = "decodegene",
         email: Optional[str] = None,
+        api_key: Optional[str] = None,
         client: Optional[httpx.AsyncClient] = None,
     ) -> None:
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
         self.tool = tool
         self.email = email
+        self.api_key = api_key
         self._client = client
         self._owns_client = client is None
 
@@ -94,6 +96,8 @@ class ClinVarClient:
         params = {"tool": self.tool, "retmode": "json"}
         if self.email:
             params["email"] = self.email
+        if self.api_key:
+            params["api_key"] = self.api_key
         return params
 
     async def search(self, query: str, retmax: int = 10) -> List[str]:
@@ -110,6 +114,30 @@ class ClinVarClient:
         except Exception as exc:  # pragma: no cover - network dependent
             raise ClinVarError(f"ClinVar esearch failed: {exc}") from exc
         return list(payload.get("esearchresult", {}).get("idlist", []))
+
+    async def count_pathogenic_variants(self, gene_symbol: str) -> int:
+        """Return ClinVar count of pathogenic / likely pathogenic variants for a gene symbol."""
+        clean_symbol = str(gene_symbol or "").strip().upper()
+        if not clean_symbol:
+            raise ClinVarError("Gene symbol must be non-empty")
+        query = (
+            f'"{clean_symbol}"[gene] AND '
+            '("clinsig pathogenic"[Properties] OR "clinsig likely pathogenic"[Properties])'
+        )
+        params = {
+            **self._common_params(),
+            "db": "clinvar",
+            "term": query,
+            "rettype": "count",
+        }
+        try:
+            response = await self._http().get(f"{self.base_url}/esearch.fcgi", params=params)
+            response.raise_for_status()
+            payload = response.json()
+            raw_count = payload.get("esearchresult", {}).get("count")
+            return int(raw_count)
+        except Exception as exc:  # pragma: no cover - network dependent
+            raise ClinVarError(f"ClinVar count failed for {clean_symbol}: {exc}") from exc
 
     async def summary(self, variation_ids: List[str]) -> List[ClinVarVariant]:
         if not variation_ids:
