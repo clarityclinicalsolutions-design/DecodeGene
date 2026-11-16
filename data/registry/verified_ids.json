@@ -651,5 +651,278 @@
       "disease": "https://meshb.nlm.nih.gov/record/ui?ui=D064420"
     },
     "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "STK11",
+    "ensembl_id": "ENSG00000118046",
+    "entrez_id": "6794",
+    "disease_id": "MONDO:0008280",
+    "disease_label": "Peutz-Jeghers syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000118046",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6794",
+      "disease": "https://monarchinitiative.org/MONDO:0008280"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "BMPR1A",
+    "ensembl_id": "ENSG00000107779",
+    "entrez_id": "657",
+    "disease_id": "MONDO:0017380",
+    "disease_label": "Juvenile polyposis syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000107779",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/657",
+      "disease": "https://monarchinitiative.org/MONDO:0017380"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "SMAD4",
+    "ensembl_id": "ENSG00000141646",
+    "entrez_id": "4089",
+    "disease_id": "MONDO:0017380",
+    "disease_label": "Juvenile polyposis syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000141646",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4089",
+      "disease": "https://monarchinitiative.org/MONDO:0017380"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "MUTYH",
+    "ensembl_id": "ENSG00000132781",
+    "entrez_id": "4595",
+    "disease_id": "MONDO:0012041",
+    "disease_label": "MUTYH-associated polyposis",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000132781",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4595",
+      "disease": "https://monarchinitiative.org/MONDO:0012041"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "MEN1",
+    "ensembl_id": "ENSG00000133895",
+    "entrez_id": "4221",
+    "disease_id": "MONDO:0007540",
+    "disease_label": "Multiple endocrine neoplasia type 1",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000133895",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4221",
+      "disease": "https://monarchinitiative.org/MONDO:0007540"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "RB1",
+    "ensembl_id": "ENSG00000139687",
+    "entrez_id": "5925",
+    "disease_id": "MONDO:0008380",
+    "disease_label": "Retinoblastoma",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000139687",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/5925",
+      "disease": "https://monarchinitiative.org/MONDO:0008380"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "NF2",
+    "ensembl_id": "ENSG00000186575",
+    "entrez_id": "4771",
+    "disease_id": "MONDO:0007039",
+    "disease_label": "Neurofibromatosis type 2",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000186575",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4771",
+      "disease": "https://monarchinitiative.org/MONDO:0007039"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "WT1",
+    "ensembl_id": "ENSG00000184937",
+    "entrez_id": "7490",
+    "disease_id": "MONDO:0006058",
+    "disease_label": "Wilms tumor",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000184937",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7490",
+      "disease": "https://monarchinitiative.org/MONDO:0006058"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "TSC1",
+    "ensembl_id": "ENSG00000165699",
+    "entrez_id": "7248",
+    "disease_id": "MONDO:0001734",
+    "disease_label": "Tuberous sclerosis complex",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000165699",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7248",
+      "disease": "https://monarchinitiative.org/MONDO:0001734"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "TSC2",
+    "ensembl_id": "ENSG00000103197",
+    "entrez_id": "7249",
+    "disease_id": "MONDO:0001734",
+    "disease_label": "Tuberous sclerosis complex",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000103197",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7249",
+      "disease": "https://monarchinitiative.org/MONDO:0001734"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "SDHB",
+    "ensembl_id": "ENSG00000117118",
+    "entrez_id": "6390",
+    "disease_id": "MONDO:0017366",
+    "disease_label": "Hereditary paraganglioma-pheochromocytoma syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000117118",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6390",
+      "disease": "https://monarchinitiative.org/MONDO:0017366"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "SDHD",
+    "ensembl_id": "ENSG00000204370",
+    "entrez_id": "6392",
+    "disease_id": "MONDO:0017366",
+    "disease_label": "Hereditary paraganglioma-pheochromocytoma syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000204370",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6392",
+      "disease": "https://monarchinitiative.org/MONDO:0017366"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "FLCN",
+    "ensembl_id": "ENSG00000154803",
+    "entrez_id": "201163",
+    "disease_id": "MONDO:0007607",
+    "disease_label": "Birt-Hogg-Dubé syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000154803",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/201163",
+      "disease": "https://monarchinitiative.org/MONDO:0007607"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "MAX",
+    "ensembl_id": "ENSG00000125952",
+    "entrez_id": "4149",
+    "disease_id": "MONDO:0017366",
+    "disease_label": "Hereditary paraganglioma-pheochromocytoma syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000125952",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4149",
+      "disease": "https://monarchinitiative.org/MONDO:0017366"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "COL3A1",
+    "ensembl_id": "ENSG00000168542",
+    "entrez_id": "1281",
+    "disease_id": "MONDO:0007537",
+    "disease_label": "Vascular Ehlers-Danlos syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000168542",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1281",
+      "disease": "https://monarchinitiative.org/MONDO:0007537"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "TGFBR1",
+    "ensembl_id": "ENSG00000106799",
+    "entrez_id": "7046",
+    "disease_id": "MONDO:0019502",
+    "disease_label": "Loeys-Dietz syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000106799",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7046",
+      "disease": "https://monarchinitiative.org/MONDO:0019502"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "TGFBR2",
+    "ensembl_id": "ENSG00000163513",
+    "entrez_id": "7048",
+    "disease_id": "MONDO:0019502",
+    "disease_label": "Loeys-Dietz syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000163513",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7048",
+      "disease": "https://monarchinitiative.org/MONDO:0019502"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "SMAD3",
+    "ensembl_id": "ENSG00000166949",
+    "entrez_id": "4088",
+    "disease_id": "MONDO:0019502",
+    "disease_label": "Loeys-Dietz syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000166949",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4088",
+      "disease": "https://monarchinitiative.org/MONDO:0019502"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "ACTA2",
+    "ensembl_id": "ENSG00000107796",
+    "entrez_id": "59",
+    "disease_id": "MONDO:0019625",
+    "disease_label": "Familial thoracic aortic aneurysm and aortic dissection",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000107796",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/59",
+      "disease": "https://monarchinitiative.org/MONDO:0019625"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "MYH11",
+    "ensembl_id": "ENSG00000133392",
+    "entrez_id": "4629",
+    "disease_id": "MONDO:0019625",
+    "disease_label": "Familial thoracic aortic aneurysm and aortic dissection",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000133392",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4629",
+      "disease": "https://monarchinitiative.org/MONDO:0019625"
+    },
+    "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "APOB",
+    "ensembl_id": "ENSG00000084674",
+    "entrez_id": "338",
+    "disease_id": "MONDO:0007750",
+    "disease_label": "Familial hypercholesterolemia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000084674",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/338",
+      "disease": "https://monarchinitiative.org/MONDO:0007750"
+    },
+    "verified_on": "2026-11-04"
   }
 ]

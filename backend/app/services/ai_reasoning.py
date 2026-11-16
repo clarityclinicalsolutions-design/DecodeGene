@@ -34,6 +34,12 @@ DISCLAIMER = (
     "前往正规医院相关专科就诊。"
 )
 
+PRIVACY_NOTICE = (
+    "隐私说明：本地脱敏器已在设备端移除姓名、身份证、手机号、病历号与医院名称，"
+    "且仅提取结构化基因符号、HGVS 位点、rsID 与合子状态（自由文本绝不外发）。"
+    "请注意：去识别化不等于基因数据绝对匿名化，罕见遗传变异本身仍具生物可识别性。"
+)
+
 _SYSTEM_PROMPT = """你是 DecodeGene 的医疗科普解释助手。你必须严格遵守以下铁律：
 
 1. 你只能使用用户消息中提供的「权威 JSON 事实」作答。禁止编造突变致病性、
@@ -63,6 +69,7 @@ class DeepSeekPublicAgent:
 
     CIRCUIT_BREAKER_MESSAGE = CIRCUIT_BREAKER_MESSAGE
     DISCLAIMER = DISCLAIMER
+    PRIVACY_NOTICE = PRIVACY_NOTICE
     KNOWN_GENES = KNOWN_GENES
 
     def __init__(
@@ -170,12 +177,25 @@ class DeepSeekPublicAgent:
                 pass
         return self._local_interpretation(report, record), "local_fallback"
 
+    def _structured_llm_payload(
+        self, report: ScrubReport, record: GeneDiseaseAssociation
+    ) -> Dict[str, Any]:
+        """Build a strict structured whitelist payload (zero free-text leaves local)."""
+        return {
+            "gene_symbol": record.gene.symbol,
+            "detected_genes": list(report.genes),
+            "detected_variants": list(report.variants),
+            "detected_rsids": list(report.rsids),
+            "zygosity": report.zygosity,
+        }
+
     async def _call_deepseek(
         self, report: ScrubReport, record: GeneDiseaseAssociation
     ) -> Dict[str, Any]:
         import httpx
 
         facts = self._facts(record, report)
+        structured_entities = self._structured_llm_payload(report, record)
         payload = {
             "model": self.settings.deepseek_model,
             "temperature": 0.2,
@@ -184,11 +204,11 @@ class DeepSeekPublicAgent:
                 {
                     "role": "user",
                     "content": (
-                        "请仅依据以下权威 JSON 事实，为这位用户生成结构化科普解读。\n"
+                        "请仅依据以下权威 JSON 事实与结构化位点白名单，为这位用户生成结构化科普解读。\n"
                         "【权威 JSON 事实】\n"
                         + json.dumps(facts, ensure_ascii=False)
-                        + "\n【已脱敏报告文本】\n"
-                        + report.scrubbed_text
+                        + "\n【结构化提取位点（零自由文本）】\n"
+                        + json.dumps(structured_entities, ensure_ascii=False)
                     ),
                 },
             ],
@@ -316,6 +336,7 @@ class DeepSeekPublicAgent:
             "explanation": interpretation,
             "verification": verification,
             "disclaimer": self.DISCLAIMER,
+            "privacy_notice": self.PRIVACY_NOTICE,
         }
 
     def _variant_grounding(

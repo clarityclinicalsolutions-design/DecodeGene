@@ -7,10 +7,12 @@ speculative interpretation.
 """
 from __future__ import annotations
 
+import time
+from collections import defaultdict, deque
 from pathlib import Path
-from typing import Dict, List
+from typing import Deque, Dict, List
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -40,20 +42,47 @@ app = FastAPI(
     title="DecodeGene API",
     description="Open-Source Dual-Mode Gene-Disease & Pharmacogenomics (PGx) Knowledge API",
     version="1.0.0",
+    docs_url="/docs" if settings.enable_docs else None,
+    redoc_url="/redoc" if settings.enable_docs else None,
+    openapi_url="/openapi.json" if settings.enable_docs else None,
 )
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=list(settings.cors_origins),
     allow_credentials=False,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Accept"],
 )
 
 checklist_service = ChecklistService()
 inheritance_calculator = InheritanceCalculator()
 search_service = SearchService()
 ai_agent = DeepSeekPublicAgent(settings=settings)
+
+_RATE_LIMIT_WINDOW_SECONDS = 60.0
+_rate_limit_buckets: Dict[str, Deque[float]] = defaultdict(deque)
+
+
+def reset_rate_limiter() -> None:
+    """Clear in-memory rate limit buckets (used by unit tests)."""
+    _rate_limit_buckets.clear()
+
+
+def _enforce_rate_limit(request: Request) -> None:
+    limit = max(1, ai_agent.settings.rate_limit_per_minute)
+    client_ip = request.client.host if request.client else "unknown"
+    now = time.monotonic()
+    bucket = _rate_limit_buckets[client_ip]
+    cutoff = now - _RATE_LIMIT_WINDOW_SECONDS
+    while bucket and bucket[0] <= cutoff:
+        bucket.popleft()
+    if len(bucket) >= limit:
+        raise HTTPException(
+            status_code=429,
+            detail="请求过于频繁，请稍后再试 (Rate limit exceeded).",
+        )
+    bucket.append(now)
 
 
 def load_validated_records() -> List[GeneDiseaseAssociation]:
@@ -66,7 +95,7 @@ def root() -> dict:
     return {
         "name": "DecodeGene API",
         "version": app.version,
-        "docs": "/docs",
+        "docs": "/docs" if settings.enable_docs else None,
         "health": "/health",
         "ui": "/app" if FRONTEND_DIST.is_dir() else None,
     }
@@ -154,7 +183,10 @@ def get_myths() -> List[dict]:
 
 
 @app.post("/api/v1/report/scrub-and-decode")
-async def scrub_and_decode(query: GeneticReportQuery) -> Dict[str, object]:
+async def scrub_and_decode(
+    query: GeneticReportQuery, request: Request
+) -> Dict[str, object]:
+    _enforce_rate_limit(request)
     try:
         return await ai_agent.decode_report(query.raw_text)
     except UnknownGeneError:

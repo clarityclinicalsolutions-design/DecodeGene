@@ -10,9 +10,17 @@ import os
 from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Tuple
 
 ROOT_DIR = Path(__file__).resolve().parents[3]
+
+DEFAULT_CORS_ORIGINS: Tuple[str, ...] = (
+    "https://decodegene.pages.dev",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+)
 
 
 def _load_dotenv_files() -> None:
@@ -32,6 +40,13 @@ def _as_bool(value: Optional[str], default: bool = True) -> bool:
     return value.strip().lower() in {"1", "true", "yes", "y", "on"}
 
 
+def _parse_cors_origins(value: Optional[str]) -> Tuple[str, ...]:
+    if value is None or not value.strip():
+        return DEFAULT_CORS_ORIGINS
+    items = tuple(origin.strip() for origin in value.split(",") if origin.strip())
+    return items or DEFAULT_CORS_ORIGINS
+
+
 @dataclass(frozen=True)
 class Settings:
     """Immutable runtime settings."""
@@ -45,6 +60,9 @@ class Settings:
     log_level: str
     app_host: str
     app_port: int
+    cors_origins: Tuple[str, ...] = DEFAULT_CORS_ORIGINS
+    enable_docs: bool = False
+    rate_limit_per_minute: int = 30
 
     @property
     def ai_enabled(self) -> bool:
@@ -103,6 +121,11 @@ def get_settings() -> Settings:
     except ValueError:
         app_port = 8000
 
+    try:
+        rate_limit = max(1, int(os.getenv("RATE_LIMIT_PER_MINUTE", "30")))
+    except ValueError:
+        rate_limit = 30
+
     return Settings(
         deepseek_api_key=os.getenv("DEEPSEEK_API_KEY"),
         deepseek_base_url=os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1").rstrip("/"),
@@ -110,9 +133,12 @@ def get_settings() -> Settings:
         data_dir=data_dir,
         sample_data_path=sample_path,
         zero_retention_mode=_as_bool(os.getenv("ZERO_RETENTION_MODE"), default=True),
-        log_level=os.getenv("LOG_LEVEL", os.getenv("LOG_LEVEL", "INFO")).upper(),
+        log_level=os.getenv("LOG_LEVEL", "INFO").upper(),
         app_host=os.getenv("APP_HOST", "0.0.0.0"),
         app_port=app_port,
+        cors_origins=_parse_cors_origins(os.getenv("CORS_ORIGINS")),
+        enable_docs=_as_bool(os.getenv("ENABLE_DOCS"), default=False),
+        rate_limit_per_minute=rate_limit,
     )
 
 

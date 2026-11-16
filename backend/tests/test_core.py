@@ -634,3 +634,106 @@ def test_scrub_and_decode_works_for_cyp2c19_and_hla_b_samples(
     assert "HLA-B*15:02" in body_5["detected"]["variants"]
 
 
+# ---------------------------------------------------------------------------
+# 8. Security & Privacy Hardening (structured LLM payload, CORS, rate limit)
+# ---------------------------------------------------------------------------
+def test_deepseek_payload_only_sends_structured_whitelist_never_free_text(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    captured_payloads: list[dict] = []
+
+    class DummyResponse:
+        def raise_for_status(self) -> None:
+            return None
+
+        def json(self) -> dict:
+            return {
+                "choices": [
+                    {
+                        "message": {
+                            "content": json.dumps(
+                                {
+                                    "headline": "BRCA1 解读",
+                                    "what_is_it": "BRCA1 说明",
+                                    "impact": "BRCA1 影响",
+                                    "pgx": [],
+                                    "action": ["定期筛查"],
+                                    "doctor_specialty": "遗传咨询科",
+                                    "doctor_questions": ["问题1", "问题2", "问题3"],
+                                    "variant_note": "已收录",
+                                },
+                                ensure_ascii=False,
+                            )
+                        }
+                    }
+                ]
+            }
+
+    class DummyAsyncClient:
+        def __init__(self, *args: object, **kwargs: object) -> None:
+            pass
+
+        async def __aenter__(self) -> "DummyAsyncClient":
+            return self
+
+        async def __aexit__(self, *args: object) -> None:
+            return None
+
+        async def post(self, url: str, headers: dict, json: dict) -> DummyResponse:
+            captured_payloads.append(json)
+            return DummyResponse()
+
+    import httpx
+
+    monkeypatch.setattr(httpx, "AsyncClient", DummyAsyncClient)
+
+    enabled_settings = replace(get_settings(), deepseek_api_key="sk-real-test-key-12345")
+    agent = DeepSeekPublicAgent(settings=enabled_settings)
+
+    # Free-text notes that regex does not match (e.g. home address / notes)
+    raw_report = (
+        "患者姓名：张三 居住地址：上海市静安区南京西路999弄18号202室 "
+        "罕见职业备注：深海饱和潜水员 BRCA1 c.5266dupC 杂合"
+    )
+    result = agent.decode_report_sync(raw_report)
+    assert result["ai_source"] == "deepseek"
+    assert "privacy_notice" in result
+    assert len(captured_payloads) == 1
+
+    sent_text = json.dumps(captured_payloads[0], ensure_ascii=False)
+    # Free-text notes must NEVER be sent to DeepSeek
+    assert "南京西路999弄" not in sent_text
+    assert "深海饱和潜水员" not in sent_text
+    assert "[姓名已脱敏]" not in sent_text
+    # Only structured whitelist fields are present
+    assert "BRCA1" in sent_text
+    assert "c.5266dupC" in sent_text
+
+
+def test_cors_and_docs_hardening_defaults(client: TestClient) -> None:
+    settings = get_settings()
+    assert "*" not in settings.cors_origins
+    assert "https://decodegene.pages.dev" in settings.cors_origins
+    assert settings.enable_docs is False
+    docs_resp = client.get("/docs")
+    assert docs_resp.status_code == 404
+
+
+def test_scrub_and_decode_rate_limiting(client: TestClient) -> None:
+    main_module.reset_rate_limiter()
+    original_settings = main_module.ai_agent.settings
+    try:
+        main_module.ai_agent.settings = replace(original_settings, rate_limit_per_minute=2)
+        payload = {"raw_text": "BRCA1 c.5266dupC 杂合"}
+        r1 = client.post("/api/v1/report/scrub-and-decode", json=payload)
+        r2 = client.post("/api/v1/report/scrub-and-decode", json=payload)
+        r3 = client.post("/api/v1/report/scrub-and-decode", json=payload)
+        assert r1.status_code == 200
+        assert r2.status_code == 200
+        assert r3.status_code == 429
+    finally:
+        main_module.ai_agent.settings = original_settings
+        main_module.reset_rate_limiter()
+
+
+

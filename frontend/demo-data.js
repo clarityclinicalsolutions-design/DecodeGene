@@ -5392,6 +5392,2063 @@ window.DEMO_DATA = [
       "myth": "「器官移植後只要按時吃他克莫司就好，基因檢測與抽血濃度監測只是多花錢？」",
       "truth": "錯！他克莫司治療窗很窄，CYP3A5 基因型會明顯影響代謝速度。沒有濃度監測與基因型參考，可能因劑量不足導致排斥，或因劑量過高造成腎毒性與神經毒性。基因檢測搭配定期 TDM，才能安全有效地保護移植器官。"
     }
+  },
+  {
+    "association_id": "GDA_ASSOC_051",
+    "gene": {
+      "symbol": "STK11",
+      "name": "Serine/threonine kinase 11",
+      "chinese_name": "STK11 絲胺酸/蘇胺酸激酶 11 (黑斑息肉症基因)",
+      "ensembl_id": "ENSG00000118046",
+      "entrez_id": "6794",
+      "biotype": "protein_coding",
+      "chromosome": "19p13.3 (19 號染色體)",
+      "metaphor": {
+        "title": "🔋 細胞裡的【能量與生長總開關（故障時胃腸道長出缺陷瘤息肉，嘴唇與手指也出現黑斑）】",
+        "story": "細胞需要能量，也要知道何時該停止生長。STK11（LKB1）就像細胞的能量與生長總開關，會啟動 AMPK 訊號、抑制 mTOR 生長路徑，讓細胞在能量不足時放慢增生。當 STK11 天生故障時，這個煞車失靈，胃腸道黏膜會長出一顆顆缺陷瘤性息肉，嘴唇、口腔黏膜、手指與腳趾也常出現黑色素斑。雖然息肉多為良性，但長期仍有腸胃道、乳房與胰臟腫瘤風險，因此需要定期內視鏡與跨科篩檢。"
+      },
+      "plain_summary": "STK11 缺陷造成佩茨-傑格斯症候群（黑斑息肉症），屬於體染色體顯性遺傳。患者常在嘴唇、口腔黏膜與手腳出現黑色素斑，並在胃、小腸與大腸長出缺陷瘤性息肉，可能引起腹痛、腸套疊或出血。透過定期胃腸鏡、影像與乳房、胰臟篩檢，可以早期發現並處理息肉與腫瘤。",
+      "academic_summary": "STK11 編碼 LKB1 絲胺酸/蘇胺酸激酶，與 STRAD 及 MO25 形成複合體後活化 AMPK，抑制 mTORC1 與細胞增生，並參與細胞極性與代謝調控。生殖細胞致病變異導致 Peutz-Jeghers 症候群（PJS），表現為胃腸道缺陷瘤性息肉與黏膜皮膚色素沉著。PJS 患者終身癌症風險增加，包括大腸癌、胃癌、小腸癌、胰臟癌與乳癌，需依國際指引進行多器官監測。"
+    },
+    "disease": {
+      "id": "MONDO:0008280",
+      "name": "Peutz-Jeghers syndrome",
+      "chinese_name": "佩茨-傑格斯症候群（黑斑息肉症）",
+      "categories": [
+        "體染色體顯性遺傳癌症症候群",
+        "胃腸道息肉症",
+        "遺傳性腫瘤風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性息肉症候群（定期內視鏡與跨科篩檢可早期發現）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0200042",
+        "name": "Hamartomatous polyposis",
+        "chinese_name": "胃腸道缺陷瘤性息肉"
+      },
+      {
+        "hpo_id": "HP:0001000",
+        "name": "Abnormality of skin pigmentation",
+        "chinese_name": "皮膚與黏膜色素沉著異常"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Endoscopic polypectomy and surveillance",
+        "chinese_name": "內視鏡息肉切除與定期監測",
+        "mechanism": "清除胃腸道缺陷瘤性息肉、解除腸套疊風險並監測早期惡性變化",
+        "approval_status": "國際遺傳性胃腸道癌症指引標準照護"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "STK11 生殖細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "估計發生率約 1/50,000–1/200,000，實際可能被低估",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，並維持健康體重與規律運動以降低整體癌症風險",
+        "減少加工肉品與高脂飲食，增加蔬菜、水果與全穀類攝取",
+        "若出現腹痛、嘔吐、血便或不明原因體重下降，應盡速就醫評估息肉併發症"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性胃腸道癌症診療指引",
+      "clinvar_pathogenic_count": 500,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 STK11 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.92,
+      "key_pmids": [
+        "PMID:9425897",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "確診或帶有 STK11 致病變異者，建議依遺傳性胃腸道癌症指引定期接受胃鏡、大腸鏡與小腸影像檢查，並依年齡與家族史安排乳房、胰臟與其他相關篩檢；一等親應接受遺傳諮詢與基因檢測。",
+      "lifestyle_tips": [
+        "建立個人化的息肉監測時程，將胃鏡、大腸鏡與小腸影像檢查列入長期追蹤清單",
+        "出現慢性腹痛、噁心嘔吐、血便或排便習慣改變時，立即就醫排除腸套疊或息肉出血",
+        "戒菸、限制酒精並維持健康體重，以降低多種腫瘤的整體風險"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 遺傳諮詢 / 腫瘤內科",
+      "questions": [
+        "醫師，我的嘴唇與手腳有黑斑，胃腸道也長過息肉，是否需要安排 STK11 基因檢測確認黑斑息肉症？",
+        "我應該從幾歲開始、多久一次接受胃鏡、大腸鏡與小腸影像檢查？乳房與胰臟也需要篩檢嗎？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「嘴唇和手腳的黑斑只是曬太陽或色素沉澱，跟胃腸息肉與癌症沒有關係？」",
+      "truth": "錯！佩茨-傑格斯症候群的黏膜皮膚黑斑常是重要線索，背後可能有 STK11 致病變異與胃腸道缺陷瘤性息肉。若合併反覆腹痛、息肉或家族史，應接受遺傳諮詢與基因檢測，並安排長期胃腸道監測。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_052",
+    "gene": {
+      "symbol": "BMPR1A",
+      "name": "Bone morphogenetic protein receptor type 1A",
+      "chinese_name": "BMPR1A 骨形態發生蛋白受體 1A (幼年型息肉症基因)",
+      "ensembl_id": "ENSG00000107779",
+      "entrez_id": "657",
+      "biotype": "protein_coding",
+      "chromosome": "10q23.2 (10 號染色體)",
+      "metaphor": {
+        "title": "🛑 腸道細胞生長的【BMP 煞車系統（故障時幼年型息肉一顆顆長出並可能出血）】",
+        "story": "腸道黏膜細胞需要不斷更新，但更新過程必須有清楚的停止訊號。BMPR1A 是 BMP 訊息路徑上的受體，就像腸道細胞生長的煞車系統，能把過度增生的訊號踩住。當 BMPR1A 天生故障時，煞車失靈，大腸與胃腸道會長出許多幼年型缺陷瘤息肉，容易造成腹痛、腹瀉、出血與貧血。雖然多數息肉是良性，但長期仍有大腸癌與其他胃腸道腫瘤風險，需要定期內視鏡監測。"
+      },
+      "plain_summary": "BMPR1A 缺陷造成幼年型息肉症候群，屬於體染色體顯性遺傳。患者可能在兒童或青少年時期出現多發性胃腸道幼年型息肉，常以腹痛、腹瀉、血便或貧血表現。定期內視鏡息肉切除與追蹤可減少出血與腸套疊風險，並早期發現惡性變化。",
+      "academic_summary": "BMPR1A 編碼 BMP 第一型受體，透過 SMAD1/5/8 訊息傳遞抑制腸道上皮過度增生並促進分化。生殖細胞致病變異導致 Juvenile polyposis syndrome（JPS），約 15%–20% 的 JPS 個案可找到 BMPR1A 變異。息肉病理為幼年型缺陷瘤，患者的大腸癌與胃癌風險增加，臨床處置以定期內視鏡監測、息肉切除與必要時手術為主。"
+    },
+    "disease": {
+      "id": "MONDO:0017380",
+      "name": "Juvenile polyposis syndrome",
+      "chinese_name": "幼年型息肉症候群",
+      "categories": [
+        "體染色體顯性遺傳癌症症候群",
+        "胃腸道息肉症",
+        "遺傳性出血風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性息肉症候群（內視鏡監測與貧血控制為核心）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0200042",
+        "name": "Hamartomatous polyposis",
+        "chinese_name": "胃腸道缺陷瘤性息肉"
+      },
+      {
+        "hpo_id": "HP:0002239",
+        "name": "Gastrointestinal hemorrhage",
+        "chinese_name": "胃腸道出血"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Endoscopic polypectomy and surveillance",
+        "chinese_name": "內視鏡息肉切除與定期監測",
+        "mechanism": "移除出血或阻塞風險較高的息肉，並持續監測新生息肉與早期惡性變化",
+        "approval_status": "國際遺傳性胃腸道癌症指引標準照護"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "BMPR1A 生殖細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "幼年型息肉症候群估計發生率約 1/100,000–1/160,000",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，並維持健康體重與規律運動",
+        "減少加工肉品與高脂食物，增加蔬菜、水果與全穀類攝取",
+        "若出現血便、黑便、頭暈或心悸等貧血徵象，應盡速就醫評估胃腸道出血"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.94,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際幼年型息肉症診療與遺傳指引",
+      "clinvar_pathogenic_count": 400,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 BMPR1A 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.91,
+      "key_pmids": [
+        "PMID:11381269",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有幼年型息肉、不明原因胃腸道出血或家族史者，建議接受遺傳諮詢與 BMPR1A／SMAD4 基因檢測；確診者依指引定期接受胃鏡與大腸鏡檢查，必要時安排小腸影像。",
+      "lifestyle_tips": [
+        "記錄腹痛、腹瀉、血便與頭暈等症狀，提供醫師評估息肉出血或貧血的可能性",
+        "依醫囑補充鐵劑或接受貧血治療，並定期追蹤血紅素與鐵蛋白",
+        "維持健康飲食與體重，戒菸並限制酒精，以降低整體腫瘤風險"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 小兒胃腸科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我（或孩子）有多發性幼年型息肉與血便，是否需要 BMPR1A 或 SMAD4 基因檢測？",
+        "我應該多久接受一次胃鏡與大腸鏡？是否需要小腸影像或手術評估？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「幼年型息肉只是小孩子長息肉，長大後就會自然消失，不需要長期追蹤？」",
+      "truth": "錯！幼年型息肉症候群是遺傳性疾病，息肉可能反覆新生並造成出血、貧血或腸套疊，成年後大腸癌與胃癌風險也會增加。確診者需要長期內視鏡監測與息肉切除，不能因年齡增長而停止追蹤。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_053",
+    "gene": {
+      "symbol": "SMAD4",
+      "name": "SMAD family member 4",
+      "chinese_name": "SMAD4 訊息傳導蛋白 4 (幼年型息肉症與遺傳性出血性血管擴張症基因)",
+      "ensembl_id": "ENSG00000141646",
+      "entrez_id": "4089",
+      "biotype": "protein_coding",
+      "chromosome": "18q21.2 (18 號染色體)",
+      "metaphor": {
+        "title": "🚦 TGF-β／BMP 訊號的【中央轉運站（故障時腸道息肉與血管異常同時出現）】",
+        "story": "TGF-β 與 BMP 是兩套重要的生長調控訊號，SMAD4 則是它們共用的中央轉運站，負責把抑制生長的命令送進細胞核。當 SMAD4 天生故障時，生長抑制訊號傳不出去，腸道容易長出幼年型息肉；同時血管發育也可能出現異常，形成遺傳性出血性血管擴張症（HHT）般的毛細血管擴張，造成反覆流鼻血或胃腸道出血。這是一個同時影響息肉與血管的遺傳症候群，需要胃腸科與血液腫瘤科共同追蹤。"
+      },
+      "plain_summary": "SMAD4 缺陷可造成幼年型息肉症候群，並可能合併遺傳性出血性血管擴張症。患者會有多發性胃腸道息肉、反覆流鼻血、胃腸道出血與貧血，長期也有大腸癌、胃癌與胰臟癌風險。定期內視鏡、血液檢查與跨科監測，是早期處理息肉與出血的關鍵。",
+      "academic_summary": "SMAD4 編碼 TGF-β／BMP 訊號共同媒介蛋白，與受體活化型 SMAD 形成複合體後進入細胞核調控轉錄，抑制上皮增生並維持血管穩定。生殖細胞致病變異導致 Juvenile polyposis syndrome（JPS），部分個案合併 hereditary hemorrhagic telangiectasia（HHT）表現。SMAD4 變異者的胃腸道癌症與胰臟癌風險增加，臨床需整合內視鏡、血管異常評估與家族篩檢。"
+    },
+    "disease": {
+      "id": "MONDO:0017380",
+      "name": "Juvenile polyposis syndrome",
+      "chinese_name": "幼年型息肉症合併遺傳性出血性血管擴張症",
+      "categories": [
+        "體染色體顯性遺傳癌症症候群",
+        "胃腸道息肉症",
+        "血管發育異常"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性息肉症合併血管異常（需同時監測出血與腫瘤風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0200042",
+        "name": "Hamartomatous polyposis",
+        "chinese_name": "胃腸道缺陷瘤性息肉"
+      },
+      {
+        "hpo_id": "HP:0000421",
+        "name": "Epistaxis",
+        "chinese_name": "反覆流鼻血"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Endoscopic polypectomy and surveillance",
+        "chinese_name": "內視鏡息肉切除與定期監測",
+        "mechanism": "移除出血或阻塞風險較高的息肉，並持續監測新生息肉與早期惡性變化",
+        "approval_status": "國際遺傳性胃腸道癌症指引標準照護"
+      },
+      {
+        "drug_name": "Iron supplementation",
+        "chinese_name": "鐵劑補充",
+        "mechanism": "改善慢性胃腸道或鼻出血造成的缺鐵性貧血",
+        "approval_status": "依醫囑使用（貧血治療標準照護）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SMAD4 生殖細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "幼年型息肉症候群估計發生率約 1/100,000–1/160,000；SMAD4 相關個案約占 15%–20%",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，並維持健康體重與規律運動",
+        "減少加工肉品與高脂食物，增加蔬菜、水果與全穀類攝取",
+        "若出現反覆流鼻血、黑便、頭暈或心悸，應盡速就醫評估出血與貧血"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際幼年型息肉症與遺傳性出血性血管擴張症指引",
+      "clinvar_pathogenic_count": 600,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 SMAD4 致病與可能致病變異，基因檢測可協助區分息肉症與血管異常風險",
+      "opentargets_score": 0.93,
+      "key_pmids": [
+        "PMID:9585595",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有幼年型息肉、反覆流鼻血、胃腸道出血或家族史者，建議接受遺傳諮詢與 SMAD4 基因檢測；確診者依指引定期接受胃鏡、大腸鏡、血液檢查與必要的血管異常評估。",
+      "lifestyle_tips": [
+        "記錄流鼻血與血便的頻率與量，提供醫師評估出血來源與貧血程度",
+        "依醫囑補充鐵劑並定期追蹤血紅素，避免自行停藥或忽略慢性貧血",
+        "戒菸、限制酒精並維持健康體重，以降低胃腸道與胰臟腫瘤風險"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 血液腫瘤科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有多發性幼年型息肉又常流鼻血，是否需要 SMAD4 基因檢測與血管異常評估？",
+        "我應該多久接受一次胃鏡、大腸鏡與血液檢查？是否需要評估遺傳性出血性血管擴張症？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「流鼻血只是天氣乾燥或火氣大，和腸道息肉與遺傳疾病沒有關係？」",
+      "truth": "錯！反覆流鼻血若合併多發性幼年型息肉或家族史，可能與 SMAD4 相關的遺傳性出血性血管擴張症有關。這類患者需要同時監測胃腸道息肉、血管異常與貧血，不能只當作單純的鼻黏膜問題。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_054",
+    "gene": {
+      "symbol": "MUTYH",
+      "name": "MutY DNA glycosylase",
+      "chinese_name": "MUTYH 腺嘌呤 DNA 糖苷酶 (MUTYH 相關大腸息肉症基因)",
+      "ensembl_id": "ENSG00000132781",
+      "entrez_id": "4595",
+      "biotype": "protein_coding",
+      "chromosome": "1p34.1 (1 號染色體)",
+      "metaphor": {
+        "title": "🧬 DNA 校對系統裡的【氧化錯誤清除員（兩套都故障時大腸腺瘤與癌變風險上升）】",
+        "story": "DNA 在代謝過程中會產生氧化損傷，其中一種錯誤是 8-oxoG 被誤配到腺嘌呤（A）上。MUTYH 就像 DNA 校對系統裡的清除員，專門把這個錯誤的腺嘌呤移除，讓鹼基切除修復系統接手修補。當 MUTYH 兩套基因都故障時，氧化導致的 DNA 錯誤會不斷累積，大腸黏膜逐漸長出多發性腺瘤性息肉，成年後大腸癌風險明顯上升。這是一種體染色體隱性遺傳的息肉症，定期大腸鏡與息肉切除是防癌核心。"
+      },
+      "plain_summary": "MUTYH 缺陷造成 MUTYH 相關大腸息肉症（MAP），屬於體染色體隱性遺傳。患者可能在大腸長出多發性腺瘤性息肉，並有較高的大腸癌風險，部分人還可能合併十二指腸或其他腫瘤。定期大腸鏡、息肉切除與家族遺傳諮詢，可有效降低癌症風險。",
+      "academic_summary": "MUTYH 編碼 adenine DNA glycosylase，參與鹼基切除修復（BER），可移除與 8-oxoguanine 配對的腺嘌呤，避免 G:C 到 T:A 的突變。雙等位基因致病變異導致 MUTYH-associated polyposis（MAP），表現為多發性大腸腺瘤與早發性大腸癌；單一等位基因帶因者的風險較低但仍需依家族史評估。MAP 患者亦需注意十二指腸腺瘤與其他腸道外腫瘤風險。"
+    },
+    "disease": {
+      "id": "MONDO:0012041",
+      "name": "MUTYH-associated polyposis",
+      "chinese_name": "MUTYH 相關大腸息肉症",
+      "categories": [
+        "體染色體隱性遺傳癌症症候群",
+        "大腸腺瘤性息肉症",
+        "遺傳性大腸癌風險"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟡 遺傳性大腸癌風險（定期大腸鏡與息肉切除可有效降低風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0200063",
+        "name": "Colonic adenomatous polyposis",
+        "chinese_name": "大腸多發性腺瘤性息肉"
+      },
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "結腸癌風險增加"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Endoscopic polypectomy and surveillance",
+        "chinese_name": "內視鏡息肉切除與定期監測",
+        "mechanism": "移除腺瘤性息肉並監測新生息肉與早期癌變，降低大腸癌發生率",
+        "approval_status": "國際遺傳性大腸癌指引標準照護"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MUTYH 雙等位基因致病變異（常見如 p.Tyr179Cys、p.Gly396Asp）",
+      "population_frequency": "雙等位基因 MAP 估計發生率約 1/20,000–1/40,000；帶因率在部分族群可達 1/100 以上",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，並維持健康體重與規律運動",
+        "減少加工肉品與紅肉攝取，增加蔬菜、水果與全穀類纖維",
+        "若出現血便、排便習慣改變或不明原因貧血，應盡速就醫評估"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 MUTYH 相關息肉症診療與遺傳指引",
+      "clinvar_pathogenic_count": 350,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 MUTYH 致病與可能致病變異，雙等位基因檢測可協助確診 MAP",
+      "opentargets_score": 0.91,
+      "key_pmids": [
+        "PMID:11818965",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有多發性大腸腺瘤、早發性大腸癌或家族史者，建議接受遺傳諮詢與 MUTYH 基因檢測；確診 MAP 者應依指引定期接受大腸鏡與必要的小腸、十二指腸監測，一等親也應評估帶因狀態。",
+      "lifestyle_tips": [
+        "依醫師安排定期接受大腸鏡檢查與息肉切除，不要因無症狀而延後追蹤",
+        "維持高纖維飲食、規律運動與健康體重，並戒菸、限制酒精",
+        "出現血便、腹痛、體重下降或排便習慣改變時，應盡速就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 遺傳諮詢 / 腫瘤內科",
+      "questions": [
+        "醫師，我有多發性大腸腺瘤或早發性大腸癌，是否需要 MUTYH 基因檢測確認 MAP？",
+        "我應該從幾歲開始、多久一次接受大腸鏡檢查？是否需要十二指腸或小腸監測？",
+        "我的兄弟姊妹與孩子是否應該接受 MUTYH 帶因篩檢與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「大腸息肉只要切除就沒事了，基因檢測與定期追蹤是多此一舉？」",
+      "truth": "錯！MUTYH 相關息肉症會持續長出新的腺瘤，單次息肉切除無法消除未來癌變風險。確診者需要長期定期大腸鏡監測，並讓家族成員接受遺傳諮詢與帶因檢測，才能有效防癌。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_055",
+    "gene": {
+      "symbol": "MEN1",
+      "name": "Menin 1",
+      "chinese_name": "MEN1 曼寧蛋白 (第一型多發性內分泌腫瘤症候群基因)",
+      "ensembl_id": "ENSG00000133895",
+      "entrez_id": "4221",
+      "biotype": "protein_coding",
+      "chromosome": "11q13.1 (11 號染色體)",
+      "metaphor": {
+        "title": "🎛️ 內分泌腺體的【腫瘤抑制總管（故障時副甲狀腺、腦下垂體與胰臟神經內分泌腫瘤接連出現）】",
+        "story": "人體內分泌系統由副甲狀腺、腦下垂體、胰臟與腎上腺等腺體組成，MEN1 編碼的 menin 蛋白就像這些腺體的腫瘤抑制總管，協助調控細胞增生與荷爾蒙分泌。當 MEN1 天生故障時，總管失去功能，多個內分泌腺體可能陸續長出腫瘤：最常見的是副甲狀腺功能亢進，還可能有腦下垂體腺瘤與胰臟神經內分泌腫瘤。透過定期荷爾蒙檢查與影像監測，可以及早發現並處理。"
+      },
+      "plain_summary": "MEN1 缺陷造成第一型多發性內分泌腫瘤症候群，屬於體染色體顯性遺傳。患者可能在副甲狀腺、腦下垂體與胰臟等腺體長出腫瘤，造成高血鈣、荷爾蒙異常或神經內分泌腫瘤症狀。定期抽血檢查荷爾蒙與影像追蹤，並由內分泌科與相關專科共同照護，可及早處理腫瘤與併發症。",
+      "academic_summary": "MEN1 編碼 menin，為參與轉錄調控、染色質修飾與細胞增生抑制的支架蛋白。生殖細胞致病變異導致 Multiple endocrine neoplasia type 1（MEN1），外顯率極高，最常見表現為原發性副甲狀腺功能亢進，其次為胰臟神經內分泌腫瘤與腦下垂體腺瘤。腫瘤可能分泌胃泌素、胰島素、升糖素或其他荷爾蒙，需以生化檢查與影像監測早期發現。"
+    },
+    "disease": {
+      "id": "MONDO:0007540",
+      "name": "Multiple endocrine neoplasia type 1",
+      "chinese_name": "第一型多發性內分泌腫瘤症候群",
+      "categories": [
+        "體染色體顯性遺傳癌症症候群",
+        "神經內分泌腫瘤",
+        "多重內分泌腺體疾病"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性神經內分泌腫瘤症候群（定期荷爾蒙與影像監測可早期處理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000843",
+        "name": "Hyperparathyroidism",
+        "chinese_name": "副甲狀腺功能亢進"
+      },
+      {
+        "hpo_id": "HP:0100634",
+        "name": "Neuroendocrine neoplasm",
+        "chinese_name": "神經內分泌腫瘤"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Octreotide / Lanreotide (somatostatin analogues)",
+        "chinese_name": "奧曲肽 / 蘭瑞肽（體抑素類似物）",
+        "mechanism": "抑制神經內分泌腫瘤荷爾蒙分泌與腫瘤生長訊號，控制症狀",
+        "approval_status": "FDA / TFDA / NMPA 核准（依腫瘤類型與醫囑使用）"
+      },
+      {
+        "drug_name": "Everolimus",
+        "chinese_name": "依維莫司（mTOR 抑制劑）",
+        "mechanism": "抑制 mTOR 生長路徑，用於部分進展性胰臟神經內分泌腫瘤",
+        "approval_status": "FDA / TFDA / NMPA 核准（特定適應症）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MEN1 生殖細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "估計發生率約 1/30,000，外顯率隨年齡增加可達 90% 以上",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "若有高血鈣或副甲狀腺功能亢進，應避免自行大量補充鈣片與維生素 D，並依醫囑調整",
+        "避免吸菸與過量飲酒，維持健康體重與規律運動",
+        "出現反覆腹痛、低血糖、腹瀉、胃潰瘍或腎結石等症狀時，應盡速就醫評估神經內分泌腫瘤或高血鈣"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 MEN1 診療與遺傳監測指引",
+      "clinvar_pathogenic_count": 700,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 MEN1 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.94,
+      "key_pmids": [
+        "PMID:9103196",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有副甲狀腺功能亢進、胰臟神經內分泌腫瘤、腦下垂體腺瘤或家族史者，建議接受遺傳諮詢與 MEN1 基因檢測；確診者依指引定期監測血鈣、相關荷爾蒙與影像，一等親應接受基因檢測。",
+      "lifestyle_tips": [
+        "建立長期追蹤清單，定期檢查血鈣、胃泌素、胰島素相關指標與腦下垂體荷爾蒙",
+        "避免自行補充高劑量鈣片或維生素 D，任何保健品都應先與內分泌科討論",
+        "出現反覆腹痛、低血糖、腹瀉、腎結石或視野異常時，應盡速就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "內分泌科 / 胃腸肝膽科 / 神經外科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有副甲狀腺功能亢進與胰臟神經內分泌腫瘤，是否需要 MEN1 基因檢測？",
+        "我應該多久監測一次血鈣、荷爾蒙與腦下垂體影像？腫瘤何時需要藥物或手術治療？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「副甲狀腺亢進只是單一腺體的問題，開刀處理後就不必再擔心其他腫瘤？」",
+      "truth": "錯！若合併胰臟神經內分泌腫瘤、腦下垂體腺瘤或家族史，可能是 MEN1 症候群。MEN1 患者的多個內分泌腺體都可能陸續長腫瘤，需要長期荷爾蒙與影像監測，不能只處理單一腺體。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_056",
+    "gene": {
+      "symbol": "RB1",
+      "name": "RB transcriptional corepressor 1",
+      "chinese_name": "RB1 視網膜母細胞瘤抑癌基因",
+      "ensembl_id": "ENSG00000139687",
+      "entrez_id": "5925",
+      "biotype": "protein_coding",
+      "chromosome": "13q14.2 (13 號染色體)",
+      "metaphor": {
+        "title": "🛞 細胞週期的【G1/S 煞車（故障時視網膜細胞失控增生，幼童瞳孔出現白光）】",
+        "story": "細胞分裂前必須通過 G1/S 檢查點，RB1 編碼的 pRb 蛋白就是這個檢查點的煞車，會抓住 E2F 轉錄因子，讓細胞停在該停的地方。當 RB1 兩套基因都失去功能時，煞車完全失靈，視網膜細胞不斷增生，形成視網膜母細胞瘤。幼童可能出現白瞳症（瞳孔像貓眼一樣反白光）、斜視或視力異常。早期發現並接受眼科腫瘤團隊治療，可以保留視力與生命；帶有生殖細胞變異者日後也需注意骨肉瘤等第二原發癌。"
+      },
+      "plain_summary": "RB1 缺陷造成視網膜母細胞瘤，帶有生殖細胞致病變異者屬於體染色體顯性遺傳。腫瘤常在嬰幼兒時期出現，表現為白瞳症、斜視或視力異常；可能單側或雙側。透過新生兒與嬰幼兒眼部篩檢、眼科腫瘤團隊治療與長期追蹤，可提高治癒率並降低第二原發癌風險。",
+      "academic_summary": "RB1 編碼 retinoblastoma 蛋白（pRb），為細胞週期 G1/S 檢查點的關鍵抑癌蛋白，透過抑制 E2F 轉錄因子阻止細胞過度增生。生殖細胞致病變異遵循 Knudson 兩次打擊模型，視網膜細胞第二次體細胞突變後形成腫瘤，常表現為雙側或多發性視網膜母細胞瘤。生殖細胞變異者終身第二原發癌風險增加，特別是骨肉瘤與軟組織肉瘤。"
+    },
+    "disease": {
+      "id": "MONDO:0008380",
+      "name": "Retinoblastoma",
+      "chinese_name": "視網膜母細胞瘤",
+      "categories": [
+        "體染色體顯性遺傳癌症症候群",
+        "兒童視網膜腫瘤",
+        "遺傳性腫瘤風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 兒童眼部惡性腫瘤（早期發現可保留視力與生命）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0009919",
+        "name": "Retinoblastoma",
+        "chinese_name": "視網膜母細胞瘤"
+      },
+      {
+        "hpo_id": "HP:0000555",
+        "name": "Leukocoria",
+        "chinese_name": "白瞳症"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Carboplatin / Etoposide (systemic chemotherapy)",
+        "chinese_name": "卡鉑 / 依托泊苷（全身化療）",
+        "mechanism": "縮小眼內腫瘤，常與局部治療、眼動脈化療或眼球摘除合併使用",
+        "approval_status": "FDA / TFDA / NMPA 核准（依分期與醫療團隊評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "RB1 生殖細胞致病變異（無義、錯義、剪接、大片段缺失與啟動子變異）",
+      "population_frequency": "估計每 15,000–20,000 名新生兒中約 1 例；約 40% 為遺傳性生殖細胞變異",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "治療期間依醫療團隊建議維持均衡營養與足夠熱量，避免自行使用高劑量抗氧化補充劑",
+        "避免吸菸與二手菸暴露，並依醫囑接種疫苗",
+        "若發現幼童瞳孔反白、斜視、眼睛紅痛或視力異常，應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.97,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際視網膜母細胞瘤診療與遺傳指引",
+      "clinvar_pathogenic_count": 800,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 RB1 致病與可能致病變異，基因檢測可協助區分遺傳性與非遺傳性腫瘤",
+      "opentargets_score": 0.95,
+      "key_pmids": [
+        "PMID:3462598",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有視網膜母細胞瘤家族史者，建議懷孕期間與出生後接受遺傳諮詢與眼科篩檢；確診生殖細胞 RB1 變異者，需長期追蹤眼部、骨骼與軟組織，以早期發現第二原發癌。",
+      "lifestyle_tips": [
+        "照顧者應熟悉白瞳症的表現，拍照時若發現單眼反白或斜視應立即就醫",
+        "確診兒童應由眼科腫瘤團隊定期追蹤，並依醫囑完成治療與視力復健",
+        "成年帶因者應避免延誤不明原因骨痛或腫塊的評估，並定期接受遺傳諮詢"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "眼科 / 小兒血液腫瘤科 / 遺傳諮詢",
+      "questions": [
+        "醫師，孩子被發現白瞳症或斜視，是否需要立即安排視網膜母細胞瘤檢查與 RB1 基因檢測？",
+        "若是生殖細胞 RB1 變異，孩子未來發生骨肉瘤或其他第二原發癌的風險有多高？需要如何追蹤？",
+        "我的其他孩子與家族成員是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「小朋友瞳孔反白只是拍照閃光造成的反光，長大就會自然好？」",
+      "truth": "錯！白瞳症可能是視網膜母細胞瘤的警訊，若延誤診斷可能影響視力甚至危及生命。發現幼童瞳孔反白、斜視或視力異常時，應立即由眼科醫師檢查，不可等待自行改善。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_057",
+    "gene": {
+      "symbol": "NF2",
+      "name": "NF2, moesin-ezrin-radixin like (MERLIN) tumor suppressor",
+      "chinese_name": "NF2 梅林蛋白 (第二型神經纖維瘤病基因)",
+      "ensembl_id": "ENSG00000186575",
+      "entrez_id": "4771",
+      "biotype": "protein_coding",
+      "chromosome": "22q12.2 (22 號染色體)",
+      "metaphor": {
+        "title": "🎧 神經細胞間的【穩定支架（故障時雙側聽神經瘤與腦膜瘤陸續出現）】",
+        "story": "神經細胞與周邊組織之間需要穩定的連結，NF2 編碼的 merlin 蛋白就像細胞膜下的穩定支架，協助維持細胞接觸抑制與正常訊號。當 NF2 天生故障時，支架失去功能，前庭神經與聽神經周圍可能長出雙側神經鞘瘤，造成耳鳴、聽力下降與平衡感變差；也可能出現腦膜瘤、室管膜瘤或眼部病變。定期腦部與內耳 MRI、聽力檢查與跨科追蹤，可以及早處理腫瘤與保留聽力。"
+      },
+      "plain_summary": "NF2 缺陷造成第二型神經纖維瘤病，屬於體染色體顯性遺傳。最具代表性的表現是雙側前庭神經鞘瘤（聽神經瘤），常造成聽力受損、耳鳴與平衡問題，也可能合併腦膜瘤、室管膜瘤或白內障。定期 MRI 與聽力監測、必要時藥物或手術治療，是長期照護的核心。",
+      "academic_summary": "NF2 編碼 merlin（moesin-ezrin-radixin-like protein），為 Hippo 訊息路徑與細胞接觸抑制的重要調控蛋白。生殖細胞致病變異導致 Neurofibromatosis type 2（NF2），典型表現為雙側前庭神經鞘瘤，並常合併腦膜瘤、脊髓神經鞘瘤、室管膜瘤與早發性白內障。腫瘤生長速度與變異型別相關，治療需整合神經外科、耳鼻喉科與腫瘤科。"
+    },
+    "disease": {
+      "id": "MONDO:0007039",
+      "name": "Neurofibromatosis type 2",
+      "chinese_name": "第二型神經纖維瘤病（雙側聽神經瘤）",
+      "categories": [
+        "體染色體顯性遺傳癌症症候群",
+        "神經腫瘤症候群",
+        "聽力與平衡障礙"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性神經腫瘤症候群（定期 MRI 與聽力監測可及早處理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0009589",
+        "name": "Bilateral vestibular schwannoma",
+        "chinese_name": "雙側前庭神經鞘瘤"
+      },
+      {
+        "hpo_id": "HP:0000365",
+        "name": "Hearing impairment",
+        "chinese_name": "聽力受損"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Bevacizumab",
+        "chinese_name": "貝伐珠單抗（VEGF 抑制劑）",
+        "mechanism": "抑制腫瘤血管新生，用於部分進展性前庭神經鞘瘤以控制腫瘤生長與保留聽力",
+        "approval_status": "FDA 標示外使用 / NCCN 指引討論（依醫療團隊評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "NF2 生殖細胞致病變異（無義、錯義、剪接、大片段缺失與鑲嵌型變異）",
+      "population_frequency": "估計發生率約 1/25,000–1/33,000",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，並維持健康體重與規律運動",
+        "若有聽力下降或平衡問題，應注意居家防跌並避免高風險活動",
+        "出現突發聽力喪失、劇烈頭痛、視力變化或肢體無力時，應盡速就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際第二型神經纖維瘤病診療與遺傳指引",
+      "clinvar_pathogenic_count": 650,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 NF2 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.93,
+      "key_pmids": [
+        "PMID:8456229",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有雙側聽神經瘤、年輕型腦膜瘤、不明原因聽力下降或家族史者，建議接受遺傳諮詢與 NF2 基因檢測；確診者依指引定期接受腦部與內耳 MRI、聽力檢查與眼科評估，一等親應接受篩檢。",
+      "lifestyle_tips": [
+        "建立聽力與平衡復健計畫，必要時使用助聽器或輔助溝通工具",
+        "定期追蹤 MRI 與聽力檢查，出現腫瘤生長或聽力惡化時與醫療團隊討論治療時機",
+        "注意居家防跌、避免頭部外傷，並在出現突發神經症狀時立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經外科 / 耳鼻喉科 / 神經內科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有雙側聽神經瘤或年輕型腦膜瘤，是否需要 NF2 基因檢測確認診斷？",
+        "我應該多久接受一次腦部與內耳 MRI、聽力檢查與眼科評估？腫瘤何時需要藥物或手術治療？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「聽力變差只是老化或耳機用太多，與腦部腫瘤和遺傳疾病無關？」",
+      "truth": "錯！年輕型聽力下降若合併耳鳴、平衡問題或雙側聽神經瘤，可能是第二型神經纖維瘤病。這是一種遺傳性疾病，需要 MRI、聽力檢查與基因檢測確認，不能只當作一般聽力老化處理。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_058",
+    "gene": {
+      "symbol": "WT1",
+      "name": "WT1 transcription factor",
+      "chinese_name": "WT1 威爾姆斯瘤抑制基因 (腎母細胞瘤基因)",
+      "ensembl_id": "ENSG00000184937",
+      "entrez_id": "7490",
+      "biotype": "protein_coding",
+      "chromosome": "11p13 (11 號染色體)",
+      "metaphor": {
+        "title": "🫘 腎臟發育的【施工藍圖校對員（故障時幼童腎臟長出腎母細胞瘤）】",
+        "story": "胎兒腎臟發育就像一場精密的建筑工程，WT1 是負責校對施工藍圖的關鍵轉錄因子，告訴腎臟前驅細胞何時該增生、何時該分化成成熟的腎元。當 WT1 天生故障時，施工藍圖失去校對，未成熟的腎母細胞持續增生，形成威爾姆斯瘤（腎母細胞瘤）。幼童可能出現腹部腫塊、血尿或蛋白尿，部分症候群還可能合併泌尿生殖系統異常。透過腹部影像、病理與基因檢測早期診斷，並接受小兒腫瘤團隊的整合治療，多數病童有不錯的治療成果。"
+      },
+      "plain_summary": "WT1 缺陷與威爾姆斯瘤（腎母細胞瘤）相關症候群有關，部分個案屬於體染色體顯性遺傳。幼童可能出現腹部無痛腫塊、血尿、蛋白尿或高血壓，也可能合併泌尿生殖系統發育異常。腹部超音波、電腦斷層與病理檢查可協助診斷；手術、化療與必要時的放射治療是小兒腫瘤團隊的標準照護。",
+      "academic_summary": "WT1 編碼含鋅指結構的轉錄因子，調控腎臟與性腺發育、細胞增生與凋亡。生殖細胞或體細胞致病變異可導致 Wilms tumor（腎母細胞瘤），並與 WAGR 症候群、Denys-Drash 症候群及 Frasier 症候群相關。WT1 變異類型與臨床表現具基因型—表現型相關性，部分患者合併泌尿道異常、腎病變或性腺發育異常，需整合小兒腎臟科、泌尿科與腫瘤科長期追蹤。"
+    },
+    "disease": {
+      "id": "MONDO:0006058",
+      "name": "Wilms tumor",
+      "chinese_name": "威爾姆斯瘤（腎母細胞瘤）相關症候群",
+      "categories": [
+        "體染色體顯性遺傳癌症症候群",
+        "兒童腎臟腫瘤",
+        "泌尿生殖系統發育異常"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 兒童腎臟腫瘤（早期診斷與整合治療可提升治癒率）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002667",
+        "name": "Nephroblastoma",
+        "chinese_name": "腎母細胞瘤"
+      },
+      {
+        "hpo_id": "HP:0000093",
+        "name": "Proteinuria",
+        "chinese_name": "蛋白尿"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Dactinomycin / Vincristine / Doxorubicin (combination chemotherapy)",
+        "chinese_name": "放線菌素 D / 長春新鹼 / 阿黴素（組合化療）",
+        "mechanism": "以組合化療毒殺腎母細胞瘤細胞，常與手術及必要時的放射治療合併使用",
+        "approval_status": "FDA / TFDA / NMPA 核准（依分期與小兒腫瘤團隊評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "WT1 生殖細胞或體細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "威爾姆斯瘤約占兒童癌症 5%–6%，估計每 10,000 名兒童約 1 例",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "治療期間依小兒腫瘤團隊與營養師建議維持均衡營養與足夠熱量",
+        "避免自行使用高劑量抗氧化補充劑或來路不明草藥，以免影響治療與腎功能",
+        "若發現幼童腹部腫塊、血尿、蛋白尿或血壓偏高，應盡速就醫評估"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際威爾姆斯瘤診療與遺傳指引",
+      "clinvar_pathogenic_count": 600,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 WT1 致病與可能致病變異，基因檢測可協助區分遺傳性與偶發性腫瘤",
+      "opentargets_score": 0.94,
+      "key_pmids": [
+        "PMID:2155109",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有威爾姆斯瘤家族史、雙側腫瘤、泌尿生殖系統異常或已知 WT1 變異者，建議接受遺傳諮詢與定期腹部超音波篩檢；確診病童應由小兒腫瘤團隊長期追蹤腎功能、血壓與第二原發腫瘤風險。",
+      "lifestyle_tips": [
+        "依醫師安排定期接受腹部超音波與腎功能檢查，不要因治療結束而停止追蹤",
+        "記錄血壓、尿量與尿液泡沫變化，出現異常時盡速回診",
+        "治療後注意生長發育、腎功能與心血管健康，並依醫囑接種疫苗"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "小兒血液腫瘤科 / 小兒腎臟科 / 小兒泌尿科 / 遺傳諮詢",
+      "questions": [
+        "醫師，孩子發現腹部腫塊或血尿，是否需要立即安排腎臟超音波與 WT1 基因檢測？",
+        "若確診威爾姆斯瘤，腫瘤分期與治療計畫為何？治療後腎功能與血壓需要如何長期追蹤？",
+        "我的其他孩子與家族成員是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「小朋友肚子摸到硬塊可能只是便秘或脹氣，不需要馬上檢查？」",
+      "truth": "錯！兒童腹部無痛腫塊是威爾姆斯瘤的重要警訊，若合併血尿、蛋白尿或高血壓更應盡速就醫。早期影像檢查與小兒腫瘤團隊治療可大幅提升治癒率，不可當作一般腸胃問題拖延。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_059",
+    "gene": {
+      "symbol": "TSC1",
+      "name": "TSC complex subunit 1",
+      "chinese_name": "TSC1 結節性硬化症第一型基因 (錯構瘤抑制基因)",
+      "ensembl_id": "ENSG00000165699",
+      "entrez_id": "7248",
+      "biotype": "protein_coding",
+      "chromosome": "9q34.13 (9 號染色體)",
+      "metaphor": {
+        "title": "🧠 細胞生長的【mTOR 總煞車（故障時腦、腎、皮膚長出結節與血管肌肉脂肪瘤）】",
+        "story": "細胞生長需要嚴格的煞車系統，TSC1 與 TSC2 組成的複合體就是 mTOR 生長路徑上的總煞車。當 TSC1 天生故障時，煞車鬆脫，mTOR 訊號過度活化，細胞在腦部、腎臟、皮膚與心臟等器官異常增生，形成結節性硬化症。患者可能出現癲癇、發展遲緩、皮膚白斑、腎血管肌肉脂肪瘤與肺部淋巴管肌瘤病。定期腦部影像、腎臟超音波與癲癇控制，是多專科照護的核心。"
+      },
+      "plain_summary": "TSC1 缺陷造成結節性硬化症第一型，屬於體染色體顯性遺傳。患者可能在腦部、腎臟、皮膚、心臟與肺部出現良性腫瘤或結節，常見癲癇、發展遲緩、皮膚白斑與腎血管肌肉脂肪瘤。定期影像追蹤、癲癇控制與必要時的 mTOR 抑制劑治療，可減少併發症。",
+      "academic_summary": "TSC1 編碼 hamartin，與 TSC2 編碼的 tuberin 形成 TSC 複合體，作為 mTORC1 的負調控因子。生殖細胞致病變異導致 tuberous sclerosis complex（TSC），因 mTOR 路徑過度活化而在多器官形成錯構瘤，包括皮質結節、室管膜下巨細胞星形細胞瘤、腎血管肌肉脂肪瘤、心臟橫紋肌瘤與肺淋巴管肌瘤病。臨床表現具高度變異性，需神經科、腎臟科、皮膚科與胸腔科共同追蹤。"
+    },
+    "disease": {
+      "id": "MONDO:0001734",
+      "name": "Tuberous sclerosis complex",
+      "chinese_name": "結節性硬化症第一型",
+      "categories": [
+        "體染色體顯性遺傳腫瘤症候群",
+        "神經皮膚症候群",
+        "多重器官錯構瘤"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 神經皮膚症候群（癲癇控制與器官監測可改善長期預後）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0009720",
+        "name": "Renal angiomyolipoma",
+        "chinese_name": "腎血管肌肉脂肪瘤"
+      },
+      {
+        "hpo_id": "HP:0001250",
+        "name": "Seizure",
+        "chinese_name": "癲癇發作"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Everolimus (mTOR inhibitor)",
+        "chinese_name": "依維莫司（mTOR 抑制劑）",
+        "mechanism": "抑制過度活化的 mTOR 路徑，用於特定腎血管肌肉脂肪瘤、室管膜下巨細胞星形細胞瘤或癲癇控制輔助治療",
+        "approval_status": "FDA / TFDA / NMPA 核准（依適應症與醫囑使用）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TSC1 生殖細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "估計發生率約 1/6,000–1/10,000，TSC1 與 TSC2 變異各占部分個案",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，並維持健康體重與規律運動",
+        "若有癲癇，應依醫囑規律服藥並避免已知誘發因素，如睡眠不足與過度飲酒",
+        "若出現劇烈頭痛、嘔吐、視力變化、血尿或腰痛，應盡速就醫評估腫瘤併發症"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際結節性硬化症診療與監測指引",
+      "clinvar_pathogenic_count": 800,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 TSC1 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.95,
+      "key_pmids": [
+        "PMID:9242607",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有癲癇、發展遲緩、皮膚白斑、腎血管肌肉脂肪瘤或家族史者，建議接受遺傳諮詢與 TSC1／TSC2 基因檢測；確診者依指引定期接受腦部 MRI、腎臟影像、心臟與肺部評估。",
+      "lifestyle_tips": [
+        "建立癲癇發作紀錄與用藥提醒，並與神經科討論最適合的控制策略",
+        "定期追蹤腎臟腫瘤大小與腎功能，避免劇烈碰撞性運動造成腫瘤出血",
+        "注意皮膚、牙齒與眼部變化，並依醫囑安排眼科與牙科檢查"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經內科 / 小兒神經科 / 腎臟科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有癲癇、皮膚白斑與腎血管肌肉脂肪瘤，是否需要 TSC1／TSC2 基因檢測確認結節性硬化症？",
+        "我應該多久接受一次腦部 MRI、腎臟超音波與其他器官評估？何時需要考慮 mTOR 抑制劑？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「癲癇只要吃藥控制就好，皮膚白斑與腎臟腫瘤和遺傳疾病沒有關係？」",
+      "truth": "錯！癲癇合併皮膚白斑、腎血管肌肉脂肪瘤或發展遲緩，可能是結節性硬化症。這是一種影響多重器官的遺傳性疾病，需要腦部、腎臟、皮膚與肺部長期監測，不能只處理單一症狀。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_060",
+    "gene": {
+      "symbol": "TSC2",
+      "name": "TSC complex subunit 2",
+      "chinese_name": "TSC2 結節性硬化症第二型基因 (錯構瘤抑制基因)",
+      "ensembl_id": "ENSG00000103197",
+      "entrez_id": "7249",
+      "biotype": "protein_coding",
+      "chromosome": "16p13.3 (16 號染色體)",
+      "metaphor": {
+        "title": "🧠 細胞生長的【mTOR 總煞車（故障時腦、腎、皮膚長出結節與血管肌肉脂肪瘤）】",
+        "story": "TSC2 與 TSC1 組成的複合體是 mTOR 生長路徑上的總煞車。當 TSC2 天生故障時，煞車鬆脫，mTOR 訊號過度活化，細胞在腦部、腎臟、皮膚與心臟等器官異常增生，形成結節性硬化症。患者可能出現癲癇、發展遲緩、皮膚白斑、腎血管肌肉脂肪瘤與肺部淋巴管肌瘤病。TSC2 變異者有時病程較明顯，定期腦部影像、腎臟超音波與癲癇控制仍是多專科照護的核心。"
+      },
+      "plain_summary": "TSC2 缺陷造成結節性硬化症第二型，屬於體染色體顯性遺傳。患者可能在腦部、腎臟、皮膚、心臟與肺部出現良性腫瘤或結節，常見癲癇、發展遲緩、皮膚白斑與腎血管肌肉脂肪瘤。定期影像追蹤、癲癇控制與必要時的 mTOR 抑制劑治療，可減少併發症。",
+      "academic_summary": "TSC2 編碼 tuberin，與 TSC1 編碼的 hamartin 形成 TSC 複合體，作為 mTORC1 的負調控因子。生殖細胞致病變異導致 tuberous sclerosis complex（TSC），因 mTOR 路徑過度活化而在多器官形成錯構瘤，包括皮質結節、室管膜下巨細胞星形細胞瘤、腎血管肌肉脂肪瘤、心臟橫紋肌瘤與肺淋巴管肌瘤病。TSC2 變異通常與較嚴重的神經與腎臟表現相關，需多專科長期追蹤。"
+    },
+    "disease": {
+      "id": "MONDO:0001734",
+      "name": "Tuberous sclerosis complex",
+      "chinese_name": "結節性硬化症第二型",
+      "categories": [
+        "體染色體顯性遺傳腫瘤症候群",
+        "神經皮膚症候群",
+        "多重器官錯構瘤"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 神經皮膚症候群（癲癇控制與器官監測可改善長期預後）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0009720",
+        "name": "Renal angiomyolipoma",
+        "chinese_name": "腎血管肌肉脂肪瘤"
+      },
+      {
+        "hpo_id": "HP:0001250",
+        "name": "Seizure",
+        "chinese_name": "癲癇發作"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Everolimus (mTOR inhibitor)",
+        "chinese_name": "依維莫司（mTOR 抑制劑）",
+        "mechanism": "抑制過度活化的 mTOR 路徑，用於特定腎血管肌肉脂肪瘤、室管膜下巨細胞星形細胞瘤或癲癇控制輔助治療",
+        "approval_status": "FDA / TFDA / NMPA 核准（依適應症與醫囑使用）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TSC2 生殖細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "估計發生率約 1/6,000–1/10,000，TSC2 變異占相當比例",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，並維持健康體重與規律運動",
+        "若有癲癇，應依醫囑規律服藥並避免已知誘發因素，如睡眠不足與過度飲酒",
+        "若出現劇烈頭痛、嘔吐、視力變化、血尿或腰痛，應盡速就醫評估腫瘤併發症"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際結節性硬化症診療與監測指引",
+      "clinvar_pathogenic_count": 1800,
+      "clinvar_summary_chinese": "ClinVar 已收錄大量 TSC2 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.96,
+      "key_pmids": [
+        "PMID:8261515",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有癲癇、發展遲緩、皮膚白斑、腎血管肌肉脂肪瘤或家族史者，建議接受遺傳諮詢與 TSC1／TSC2 基因檢測；確診者依指引定期接受腦部 MRI、腎臟影像、心臟與肺部評估。",
+      "lifestyle_tips": [
+        "建立癲癇發作紀錄與用藥提醒，並與神經科討論最適合的控制策略",
+        "定期追蹤腎臟腫瘤大小與腎功能，避免劇烈碰撞性運動造成腫瘤出血",
+        "注意皮膚、牙齒與眼部變化，並依醫囑安排眼科與牙科檢查"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經內科 / 小兒神經科 / 腎臟科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有癲癇、皮膚白斑與腎血管肌肉脂肪瘤，是否需要 TSC1／TSC2 基因檢測確認結節性硬化症？",
+        "我應該多久接受一次腦部 MRI、腎臟超音波與其他器官評估？何時需要考慮 mTOR 抑制劑？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「癲癇只要吃藥控制就好，皮膚白斑與腎臟腫瘤和遺傳疾病沒有關係？」",
+      "truth": "錯！癲癇合併皮膚白斑、腎血管肌肉脂肪瘤或發展遲緩，可能是結節性硬化症。這是一種影響多重器官的遺傳性疾病，需要腦部、腎臟、皮膚與肺部長期監測，不能只處理單一症狀。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_061",
+    "gene": {
+      "symbol": "SDHB",
+      "name": "Succinate dehydrogenase complex iron sulfur subunit B",
+      "chinese_name": "SDHB 琥珀酸脫氫酶複合體鐵硫次單元 B (副神經節瘤基因)",
+      "ensembl_id": "ENSG00000117118",
+      "entrez_id": "6390",
+      "biotype": "protein_coding",
+      "chromosome": "1p36.13 (1 號染色體)",
+      "metaphor": {
+        "title": "⚡ 粒線體的【能量工廠工人（故障時腎上腺與副神經節長出嗜鉻細胞瘤）】",
+        "story": "細胞的粒線體像一座能量工廠，SDHB 是呼吸鏈複合體 II 的重要工人，負責把琥珀酸轉換成延胡索酸並產生能量。當 SDHB 天生故障時，能量工廠運作異常，琥珀酸堆積並啟動缺氧與生長訊號，腎上腺髓質或副神經節可能長出嗜鉻細胞瘤或副神經節瘤。患者可能出現陣發性高血壓、心悸、盜汗與頭痛，部分腫瘤具有較高的惡性與轉移風險，需要長期影像與荷爾蒙監測。"
+      },
+      "plain_summary": "SDHB 缺陷造成遺傳性副神經節瘤與嗜鉻細胞瘤症候群（SDHB 型），屬於體染色體顯性遺傳。患者可能在腎上腺、腹部或頭頸部長出嗜鉻細胞瘤或副神經節瘤，造成陣發性高血壓、心悸、盜汗與頭痛。SDHB 相關腫瘤的惡性與轉移風險較高，需要定期荷爾蒙檢查、影像追蹤與多專科治療。",
+      "academic_summary": "SDHB 編碼 succinate dehydrogenase complex iron sulfur subunit B，為粒線體呼吸鏈複合體 II 的催化次單元。生殖細胞致病變異導致 hereditary paraganglioma-pheochromocytoma syndrome（SDHB 型），因琥珀酸堆積抑制脯胺酸羥化酶並穩定 HIF，啟動偽缺氧訊號與腫瘤生成。SDHB 變異相關的副神經節瘤與嗜鉻細胞瘤具有較高的惡性與轉移風險，需終身監測。"
+    },
+    "disease": {
+      "id": "MONDO:0017366",
+      "name": "Hereditary paraganglioma-pheochromocytoma syndrome",
+      "chinese_name": "遺傳性副神經節瘤與嗜鉻細胞瘤症候群（SDHB 型）",
+      "categories": [
+        "體染色體顯性遺傳腫瘤症候群",
+        "神經內分泌腫瘤",
+        "腎上腺與副神經節疾病"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性神經內分泌腫瘤（定期荷爾蒙與影像監測可早期處理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002668",
+        "name": "Paraganglioma",
+        "chinese_name": "副神經節瘤"
+      },
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "嗜鉻細胞瘤"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "手術切除與定期監測",
+        "mechanism": "切除分泌荷爾蒙的腫瘤並持續監測復發、轉移與新發腫瘤",
+        "approval_status": "國際副神經節瘤與嗜鉻細胞瘤指引標準照護"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SDHB 生殖細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "遺傳性副神經節瘤與嗜鉻細胞瘤中 SDHB 變異占相當比例，整體發生率估計約 1/300,000",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，並維持健康體重與規律運動",
+        "若血壓陣發性升高，應避免劇烈情緒、過度勞累與含酪胺酸較高的食物，並依醫囑監測血壓",
+        "出現陣發性頭痛、心悸、盜汗、胸痛或血壓飆高時，應盡速就醫評估嗜鉻細胞瘤"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性副神經節瘤與嗜鉻細胞瘤指引",
+      "clinvar_pathogenic_count": 400,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 SDHB 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.93,
+      "key_pmids": [
+        "PMID:11479592",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有嗜鉻細胞瘤、副神經節瘤、年輕型高血壓或家族史者，建議接受遺傳諮詢與 SDHB 基因檢測；確診者依指引定期監測血中與尿中兒茶酚胺代謝物，並接受頭頸、胸部與腹部影像追蹤。",
+      "lifestyle_tips": [
+        "定期測量血壓並記錄陣發性症狀，提供醫師評估腫瘤活性",
+        "避免吸菸、過量飲酒與劇烈情緒刺激，以減少血壓波動",
+        "手術前主動告知醫療團隊腫瘤病史，避免未經評估的麻醉與藥物誘發血壓危象"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "內分泌科 / 腎臟科 / 耳鼻喉科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有陣發性高血壓、心悸與盜汗，是否需要檢查嗜鉻細胞瘤或副神經節瘤並做 SDHB 基因檢測？",
+        "我應該多久監測一次兒茶酚胺代謝物與影像？腫瘤何時需要手術或其他治療？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「陣發性高血壓只是壓力大或自律神經失調，不可能是腫瘤造成的？」",
+      "truth": "錯！陣發性高血壓合併心悸、盜汗與頭痛，可能是嗜鉻細胞瘤或副神經節瘤分泌兒茶酚胺所致。若年輕發病或有家族史，應接受荷爾蒙檢查、影像與 SDHB 等基因檢測，不能只當作壓力或自律神經問題。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_062",
+    "gene": {
+      "symbol": "SDHD",
+      "name": "Succinate dehydrogenase complex subunit D",
+      "chinese_name": "SDHD 琥珀酸脫氫酶複合體次單元 D (副神經節瘤基因)",
+      "ensembl_id": "ENSG00000204370",
+      "entrez_id": "6392",
+      "biotype": "protein_coding",
+      "chromosome": "11q23.1 (11 號染色體)",
+      "metaphor": {
+        "title": "⚡ 粒線體的【能量工廠調節員（故障時頭頸部與腎上腺長出副神經節瘤）】",
+        "story": "SDHD 是粒線體呼吸鏈複合體 II 的調節次單元，協助 SDHB 等次單元穩定運作，把琥珀酸轉換成延胡索酸。當 SDHD 天生故障時，能量工廠訊號異常，琥珀酸堆積並啟動缺氧與生長路徑，頭頸部、腎上腺或腹部可能長出副神經節瘤或嗜鉻細胞瘤。患者可能出現陣發性高血壓、心悸、耳鳴或頸部腫塊。SDHD 相關腫瘤常與父系遺傳有關，需要長期荷爾蒙與影像監測。"
+      },
+      "plain_summary": "SDHD 缺陷造成遺傳性副神經節瘤與嗜鉻細胞瘤症候群（SDHD 型），屬於體染色體顯性遺傳，常與父系遺傳相關。患者可能在頭頸部、腎上腺或腹部長出副神經節瘤或嗜鉻細胞瘤，造成陣發性高血壓、心悸、耳鳴或頸部腫塊。定期荷爾蒙檢查、影像追蹤與多專科治療是長期照護核心。",
+      "academic_summary": "SDHD 編碼 succinate dehydrogenase complex subunit D，為粒線體呼吸鏈複合體 II 的膜錨定次單元。生殖細胞致病變異導致 hereditary paraganglioma-pheochromocytoma syndrome（SDHD 型），因琥珀酸堆積抑制脯胺酸羥化酶並穩定 HIF，啟動偽缺氧訊號與腫瘤生成。SDHD 相關腫瘤常表現父系遺傳與印記效應，頭頸部副神經節瘤發生率較高，需終身監測。"
+    },
+    "disease": {
+      "id": "MONDO:0017366",
+      "name": "Hereditary paraganglioma-pheochromocytoma syndrome",
+      "chinese_name": "遺傳性副神經節瘤與嗜鉻細胞瘤症候群（SDHD 型）",
+      "categories": [
+        "體染色體顯性遺傳腫瘤症候群",
+        "神經內分泌腫瘤",
+        "頭頸部與腎上腺腫瘤"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性神經內分泌腫瘤（定期荷爾蒙與影像監測可早期處理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002668",
+        "name": "Paraganglioma",
+        "chinese_name": "副神經節瘤"
+      },
+      {
+        "hpo_id": "HP:0000822",
+        "name": "Hypertension",
+        "chinese_name": "陣發性高血壓"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "手術切除與定期監測",
+        "mechanism": "切除分泌荷爾蒙的腫瘤並持續監測復發、轉移與新發腫瘤",
+        "approval_status": "國際副神經節瘤與嗜鉻細胞瘤指引標準照護"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SDHD 生殖細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "遺傳性副神經節瘤與嗜鉻細胞瘤中 SDHD 變異占相當比例，整體發生率估計約 1/300,000",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，並維持健康體重與規律運動",
+        "若血壓陣發性升高，應避免劇烈情緒、過度勞累與含酪胺酸較高的食物，並依醫囑監測血壓",
+        "出現陣發性頭痛、心悸、盜汗、耳鳴或頸部腫塊時，應盡速就醫評估"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性副神經節瘤與嗜鉻細胞瘤指引",
+      "clinvar_pathogenic_count": 350,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 SDHD 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.92,
+      "key_pmids": [
+        "PMID:10657297",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有頭頸部副神經節瘤、嗜鉻細胞瘤、年輕型高血壓或家族史者，建議接受遺傳諮詢與 SDHD 基因檢測；確診者依指引定期監測兒茶酚胺代謝物，並接受頭頸、胸部與腹部影像追蹤。",
+      "lifestyle_tips": [
+        "定期測量血壓並記錄陣發性症狀，提供醫師評估腫瘤活性",
+        "避免吸菸、過量飲酒與劇烈情緒刺激，以減少血壓波動",
+        "手術前主動告知醫療團隊腫瘤病史，避免未經評估的麻醉與藥物誘發血壓危象"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "內分泌科 / 耳鼻喉科 / 神經外科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有頸部腫塊、耳鳴與陣發性高血壓，是否需要檢查副神經節瘤並做 SDHD 基因檢測？",
+        "我應該多久監測一次兒茶酚胺代謝物與影像？腫瘤何時需要手術或其他治療？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「頸部腫塊只是淋巴結腫大，耳鳴與高血壓只是壓力大，不會是遺傳性腫瘤？」",
+      "truth": "錯！頸部腫塊合併耳鳴、陣發性高血壓、心悸或盜汗，可能是副神經節瘤或嗜鉻細胞瘤。若年輕發病或有家族史，應接受荷爾蒙檢查、影像與 SDHD 等基因檢測，不能只當作淋巴結或壓力問題。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_063",
+    "gene": {
+      "symbol": "FLCN",
+      "name": "Folliculin",
+      "chinese_name": "FLCN 濾泡素 (Birt-Hogg-Dubé 症候群基因)",
+      "ensembl_id": "ENSG00000154803",
+      "entrez_id": "201163",
+      "biotype": "protein_coding",
+      "chromosome": "17p11.2 (17 號染色體)",
+      "metaphor": {
+        "title": "🫁 皮膚與肺腎的【結構穩定員（故障時長出皮膚纖維毛囊瘤、自發性氣胸與腎細胞癌）】",
+        "story": "FLCN 編碼的濾泡素（folliculin）參與細胞代謝、細胞黏附與組織結構穩定，就像皮膚、肺部與腎臟的結構穩定員。當 FLCN 天生故障時，皮膚可能長出多發性纖維毛囊瘤，肺部囊泡容易破裂造成自發性氣胸，腎臟則可能長出多種組織型態的腎細胞癌。患者可能以反覆氣胸、皮膚小丘疹或腎臟腫瘤表現。定期胸部與腎臟影像、皮膚檢查與遺傳諮詢，是早期發現與處理的關鍵。"
+      },
+      "plain_summary": "FLCN 缺陷造成畢-霍-杜二氏症候群（Birt-Hogg-Dubé 症候群），屬於體染色體顯性遺傳。患者可能在皮膚長出纖維毛囊瘤、肺部出現囊泡並反覆自發性氣胸，腎臟也有較高的腎細胞癌風險。定期胸部與腎臟影像、皮膚檢查與遺傳諮詢，可協助早期發現與處理。",
+      "academic_summary": "FLCN 編碼 folliculin，與 FLCNIP1 等蛋白交互作用，參與 mTOR、AMPK 與細胞黏附訊號調控。生殖細胞致病變異導致 Birt-Hogg-Dubé（BHD）症候群，表現為多發性纖維毛囊瘤、肺囊泡與自發性氣胸，以及多種組織型態的腎細胞癌（特別是嫌色細胞癌與嗜酸性細胞瘤混合型）。BHD 患者需終身監測肺部與腎臟腫瘤。"
+    },
+    "disease": {
+      "id": "MONDO:0007607",
+      "name": "Birt-Hogg-Dubé syndrome",
+      "chinese_name": "畢-霍-杜二氏症候群（Birt-Hogg-Dubé 症候群）",
+      "categories": [
+        "體染色體顯性遺傳腫瘤症候群",
+        "皮膚與肺部囊性疾病",
+        "遺傳性腎細胞癌風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性腎細胞癌與氣胸風險（定期影像與皮膚監測可早期處理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002107",
+        "name": "Pneumothorax",
+        "chinese_name": "自發性氣胸"
+      },
+      {
+        "hpo_id": "HP:0005584",
+        "name": "Renal cell carcinoma",
+        "chinese_name": "腎細胞癌風險增加"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "手術切除與定期監測",
+        "mechanism": "切除腎臟腫瘤或處理反覆氣胸，並持續監測新發腫瘤與肺部囊泡併發症",
+        "approval_status": "國際 Birt-Hogg-Dubé 症候群指引標準照護"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "FLCN 生殖細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "估計發生率約 1/200,000，實際可能被低估",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸，因為吸菸會增加肺部囊泡破裂與氣胸風險，也不利於腎臟與心血管健康",
+        "避免過量飲酒，並維持健康體重與規律運動",
+        "若突然出現單側胸痛、呼吸困難或咳血，應立即就醫排除氣胸"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 Birt-Hogg-Dubé 症候群診療與監測指引",
+      "clinvar_pathogenic_count": 500,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 FLCN 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.93,
+      "key_pmids": [
+        "PMID:12228710",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有反覆自發性氣胸、多發性皮膚纖維毛囊瘤、腎細胞癌或家族史者，建議接受遺傳諮詢與 FLCN 基因檢測；確診者依指引定期接受胸部與腎臟影像、皮膚檢查與血壓監測。",
+      "lifestyle_tips": [
+        "戒菸並避免二手菸暴露，以降低氣胸與腎臟腫瘤風險",
+        "避免高壓環境或劇烈氣壓變化活動，若有氣胸病史應先與胸腔科討論",
+        "定期追蹤腎臟影像與腎功能，出現血尿、腰痛或腹部腫塊時盡速就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胸腔內科 / 腎臟科 / 皮膚科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我反覆發生自發性氣胸，皮膚也有多發性小丘疹，是否需要 FLCN 基因檢測確認 Birt-Hogg-Dubé 症候群？",
+        "我應該多久接受一次胸部與腎臟影像檢查？腎臟腫瘤何時需要手術？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「自發性氣胸只是身材瘦高或抽菸造成的，與遺傳性腎臟腫瘤沒有關係？」",
+      "truth": "錯！反覆自發性氣胸合併多發性皮膚纖維毛囊瘤或家族史，可能是 Birt-Hogg-Dubé 症候群，患者有較高的腎細胞癌風險。需要基因檢測、胸部與腎臟長期影像監測，不能只處理單次氣胸。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_064",
+    "gene": {
+      "symbol": "MAX",
+      "name": "MYC associated factor X",
+      "chinese_name": "MAX MYC 相關因子 X (遺傳性嗜鉻細胞瘤基因)",
+      "ensembl_id": "ENSG00000125952",
+      "entrez_id": "4149",
+      "biotype": "protein_coding",
+      "chromosome": "14q23.3 (14 號染色體)",
+      "metaphor": {
+        "title": "⚡ 腎上腺的【荷爾蒙開關調節員（故障時嗜鉻細胞瘤與陣發性高血壓出現）】",
+        "story": "MAX 編碼的蛋白是 MYC 轉錄網絡的重要夥伴，參與細胞生長、代謝與神經內分泌細胞的調控，就像腎上腺髓質的荷爾蒙開關調節員。當 MAX 天生故障時，調控失衡，腎上腺可能長出嗜鉻細胞瘤，分泌過多兒茶酚胺，造成陣發性高血壓、心悸、盜汗與頭痛。MAX 相關腫瘤常與父系遺傳有關，且可能雙側或多發。定期血壓與荷爾蒙監測、影像追蹤與多專科治療，是控制腫瘤與心血管風險的關鍵。"
+      },
+      "plain_summary": "MAX 缺陷造成遺傳性嗜鉻細胞瘤症候群（MAX 型），屬於體染色體顯性遺傳，常與父系遺傳相關。患者可能在腎上腺長出嗜鉻細胞瘤，造成陣發性高血壓、心悸、盜汗與頭痛，部分人可能雙側或多發。定期血壓與兒茶酚胺監測、影像追蹤與必要時手術，可降低心血管併發症。",
+      "academic_summary": "MAX 編碼 MYC associated factor X，為 bHLH-LZ 轉錄因子，與 MYC 家族蛋白形成複合體調控細胞生長與代謝。生殖細胞致病變異導致 hereditary pheochromocytoma（MAX 型），常以父系遺傳與雙側腎上腺嗜鉻細胞瘤表現。MAX 相關腫瘤可能較年輕發病，需長期監測血壓、兒茶酚胺代謝物與影像，以早期發現復發或新發腫瘤。"
+    },
+    "disease": {
+      "id": "MONDO:0017366",
+      "name": "Hereditary paraganglioma-pheochromocytoma syndrome",
+      "chinese_name": "遺傳性嗜鉻細胞瘤症候群（MAX 型）",
+      "categories": [
+        "體染色體顯性遺傳腫瘤症候群",
+        "腎上腺神經內分泌腫瘤",
+        "陣發性高血壓"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性嗜鉻細胞瘤（血壓與荷爾蒙監測可降低心血管風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "嗜鉻細胞瘤"
+      },
+      {
+        "hpo_id": "HP:0000822",
+        "name": "Hypertension",
+        "chinese_name": "陣發性高血壓"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "手術切除與定期監測",
+        "mechanism": "切除分泌兒茶酚胺的腫瘤並持續監測復發、對側腎上腺與新發腫瘤",
+        "approval_status": "國際嗜鉻細胞瘤與副神經節瘤指引標準照護"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MAX 生殖細胞致病變異（錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "MAX 相關遺傳性嗜鉻細胞瘤較少見，整體嗜鉻細胞瘤發生率估計約 1/300,000",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，並維持健康體重與規律運動",
+        "若血壓陣發性升高，應避免劇烈情緒、過度勞累與含酪胺酸較高的食物，並依醫囑監測血壓",
+        "出現陣發性頭痛、心悸、盜汗、胸痛或血壓飆高時，應盡速就醫評估嗜鉻細胞瘤"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.94,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性嗜鉻細胞瘤與副神經節瘤指引",
+      "clinvar_pathogenic_count": 150,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 MAX 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.91,
+      "key_pmids": [
+        "PMID:21685915",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有年輕型嗜鉻細胞瘤、雙側腎上腺腫瘤、陣發性高血壓或家族史者，建議接受遺傳諮詢與 MAX 基因檢測；確診者依指引定期監測血壓、兒茶酚胺代謝物與腎上腺影像。",
+      "lifestyle_tips": [
+        "定期測量血壓並記錄陣發性症狀，提供醫師評估腫瘤活性",
+        "避免吸菸、過量飲酒與劇烈情緒刺激，以減少血壓波動",
+        "手術前主動告知醫療團隊腫瘤病史，避免未經評估的麻醉與藥物誘發血壓危象"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "內分泌科 / 腎臟科 / 泌尿科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有年輕型嗜鉻細胞瘤或雙側腎上腺腫瘤，是否需要 MAX 基因檢測？",
+        "我應該多久監測一次血壓、兒茶酚胺代謝物與腎上腺影像？腫瘤何時需要手術？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「陣發性高血壓與心悸只是壓力大或咖啡喝太多，不可能是腎上腺腫瘤？」",
+      "truth": "錯！陣發性高血壓合併心悸、盜汗與頭痛，可能是嗜鉻細胞瘤分泌兒茶酚胺所致。若年輕發病、雙側腫瘤或有家族史，應接受荷爾蒙檢查、影像與 MAX 等基因檢測，不能只當作壓力或咖啡因問題。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_065",
+    "gene": {
+      "symbol": "COL3A1",
+      "name": "Collagen type III alpha 1 chain",
+      "chinese_name": "COL3A1 第三型膠原蛋白 α1 鏈 (血管型艾勒斯-當洛氏症候群基因)",
+      "ensembl_id": "ENSG00000168542",
+      "entrez_id": "1281",
+      "biotype": "protein_coding",
+      "chromosome": "2q32.2 (2 號染色體)",
+      "metaphor": {
+        "title": "🧵 血管與皮膚裡的【第三型膠原蛋白鋼筋（故障時血管壁變脆、容易破裂）】",
+        "story": "結締組織就像建築裡的鋼筋與彈簧，第三型膠原蛋白是血管壁、皮膚與內臟支架的重要鋼筋。COL3A1 負責製造這條鋼筋的 α1 鏈，當基因天生故障時，鋼筋品質不良，血管壁變得又薄又脆，腸道與子宮也容易破裂。患者可能出現容易瘀青、皮膚薄而透出血管、關節過度柔軟，最危險的是年輕時發生主動脈或動脈剝離。避免碰撞性運動、控制血壓並與心臟科密切合作，是降低致命併發症的關鍵。"
+      },
+      "plain_summary": "COL3A1 缺陷造成血管型艾勒斯-當洛二氏症候群（vEDS），屬於體染色體顯性遺傳。患者皮膚薄、容易瘀青、關節柔軟，血管壁較脆弱，可能在年輕時發生主動脈或動脈瘤、剝離或破裂，腸道與子宮也有較高破裂風險。定期心血管影像、控制血壓、避免高衝擊運動與跨科警覺，可降低嚴重併發症。",
+      "academic_summary": "COL3A1 編碼第三型膠原蛋白 α1 鏈，構成血管壁、皮膚、腸道與子宮等組織的細胞外基質。生殖細胞致病變異導致 vascular Ehlers-Danlos syndrome（vEDS），因第三型膠原蛋白合成或分泌異常而使血管與中空器官壁脆弱，臨床表現包括皮膚薄、容易瘀青、關節過度活動、動脈瘤與動脈剝離，以及腸道或子宮破裂。vEDS 的血管併發症可能早發且致命，需終身心血管監測與謹慎的侵入性處置。"
+    },
+    "disease": {
+      "id": "MONDO:0007537",
+      "name": "Vascular Ehlers-Danlos syndrome",
+      "chinese_name": "血管型艾勒斯-當洛二氏症候群（vEDS）",
+      "categories": [
+        "體染色體顯性遺傳結締組織疾病",
+        "遺傳性主動脈與血管疾病",
+        "多重器官脆弱症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 高風險血管脆弱症（定期心血管監測與避免碰撞可降低致命併發症）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "主動脈瘤"
+      },
+      {
+        "hpo_id": "HP:0000978",
+        "name": "Bruising susceptibility",
+        "chinese_name": "皮膚容易瘀青"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Celiprolol / Beta-blockers",
+        "chinese_name": "塞利洛爾 / 乙型阻斷劑",
+        "mechanism": "降低血壓與血管壁剪切壓力，減少動脈瘤擴張與剝離風險",
+        "approval_status": "依心臟科評估使用（vEDS 血壓控制標準照護）"
+      },
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "洛沙坦 / 血管張力素受體阻斷劑",
+        "mechanism": "控制血壓並降低血管壁張力，作為血壓管理選項之一",
+        "approval_status": "依心臟科評估使用"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "COL3A1 生殖細胞致病變異（錯義、剪接、無義與大片段缺失）",
+      "population_frequency": "估計發生率約 1/50,000–1/200,000",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "practical_guidance": "有遺傳性胸主動脈疾病者，應與心臟科討論血壓控制目標，並主動告知醫師避免使用 fluoroquinolone 類抗生素（如 ciprofloxacin、levofloxacin），以降低主動脈併發症風險。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免高衝擊運動、重量訓練與未經評估的競技運動，以降低血管與器官破裂風險",
+        "維持健康體重、戒菸並控制血壓，依心臟科安排定期接受主動脈影像追蹤",
+        "出現突發胸痛、背痛、腹痛或劇烈頭痛時，應立即就醫並主動告知 vEDS 病史"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際血管型 Ehlers-Danlos 症候群診療指引",
+      "clinvar_pathogenic_count": 700,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 COL3A1 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.94,
+      "key_pmids": [
+        "PMID:10706896",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有年輕型動脈瘤或剝離、容易瘀青、皮膚薄或家族史者，建議接受遺傳諮詢與 COL3A1 基因檢測；確診者應由心臟科、血管外科與遺傳科共同追蹤主動脈與其他血管。",
+      "lifestyle_tips": [
+        "避免碰撞性運動、重量訓練與雲霄飛車等會造成血壓劇烈變化的活動",
+        "定期監測血壓與主動脈影像，任何侵入性檢查或手術前主動告知醫療團隊 vEDS 診斷",
+        "隨身攜帶醫療警示資訊，出現突發胸背痛、腹痛或神經症狀時立即送急診"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 血管外科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我年輕就發生動脈瘤或剝離，且容易瘀青，是否需要 COL3A1 基因檢測確認血管型 EDS？",
+        "我的血壓目標應該是多少？需要使用 beta-blocker 或 ARB 嗎？多久追蹤一次主動脈影像？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「容易瘀青只是皮膚薄或缺乏維生素，和主動脈破裂沒有關係？」",
+      "truth": "錯！容易瘀青合併皮膚薄、關節柔軟或年輕型動脈瘤，可能是血管型 Ehlers-Danlos 症候群。這類患者血管壁脆弱，主動脈或腸道可能突然破裂，需要基因檢測與長期心血管監測，不能只當作皮膚問題。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_066",
+    "gene": {
+      "symbol": "TGFBR1",
+      "name": "Transforming growth factor beta receptor 1",
+      "chinese_name": "TGFBR1 轉化生長因子 β 受體第一型 (洛伊-迪茨症候群基因)",
+      "ensembl_id": "ENSG00000106799",
+      "entrez_id": "7046",
+      "biotype": "protein_coding",
+      "chromosome": "9q22.33 (9 號染色體)",
+      "metaphor": {
+        "title": "🧵 結締組織的【TGF-β 訊號閘門（故障時主動脈瘤、動脈扭曲與骨骼異常一起出現）】",
+        "story": "TGF-β 訊號負責調控結締組織的生長與修復，TGFBR1 是這條訊號路徑上的重要受體閘門。當 TGFBR1 天生故障時，訊號失衡，血管壁結締組織變弱，主動脈容易擴張成瘤，動脈也可能變得彎曲扭曲。患者可能有高身材、關節過度柔軟、顎裂或眼睛異常，最危險的是年輕時發生主動脈剝離。定期心血管影像、控制血壓與避免碰撞性運動，是降低併發症的關鍵。"
+      },
+      "plain_summary": "TGFBR1 缺陷造成洛伊-迪茨症候群第一型，屬於體染色體顯性遺傳。患者可能出現主動脈瘤、動脈扭曲、關節過度柔軟、骨骼或顱顏異常，並有年輕型主動脈剝離風險。定期心血管影像、控制血壓、避免高衝擊運動與跨科追蹤，可降低嚴重併發症。",
+      "academic_summary": "TGFBR1 編碼 TGF-β 第一型受體，參與 SMAD2/3 訊息傳遞與結締組織恆定。生殖細胞致病變異導致 Loeys-Dietz syndrome（LDS），表現為主動脈瘤與剝離、動脈扭曲、關節過度活動、顱顏異常與皮膚特徵。LDS 的血管併發症可能比 Marfan 症候群更早且更廣泛，需積極血壓控制、影像監測與家族篩檢。"
+    },
+    "disease": {
+      "id": "MONDO:0019502",
+      "name": "Loeys-Dietz syndrome",
+      "chinese_name": "洛伊-迪茨症候群第一型（Loeys-Dietz 症候群）",
+      "categories": [
+        "體染色體顯性遺傳結締組織疾病",
+        "遺傳性主動脈與血管疾病",
+        "顱顏與骨骼異常"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 高風險主動脈疾病（早期監測與血壓控制可降低剝離風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "主動脈瘤"
+      },
+      {
+        "hpo_id": "HP:0005116",
+        "name": "Arterial tortuosity",
+        "chinese_name": "動脈扭曲"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "洛沙坦 / 血管張力素受體阻斷劑",
+        "mechanism": "控制血壓並降低主動脈壁張力，減緩動脈瘤擴張",
+        "approval_status": "依心臟科評估使用（LDS 血壓控制標準照護）"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低心跳與血壓，減少主動脈壁剪切壓力",
+        "approval_status": "依心臟科評估使用"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TGFBR1 生殖細胞致病變異（錯義、剪接、無義與大片段缺失）",
+      "population_frequency": "Loeys-Dietz 症候群估計發生率約 1/50,000–1/100,000",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "practical_guidance": "有遺傳性胸主動脈疾病者，應與心臟科討論血壓控制目標，並主動告知醫師避免使用 fluoroquinolone 類抗生素（如 ciprofloxacin、levofloxacin），以降低主動脈併發症風險。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免高衝擊運動、重量訓練與未經評估的競技運動，以降低主動脈剝離風險",
+        "維持健康體重、戒菸並控制血壓，依心臟科安排定期接受主動脈影像追蹤",
+        "出現突發胸痛、背痛或劇烈腹痛時，應立即就醫並主動告知 Loeys-Dietz 病史"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 Loeys-Dietz 症候群診療指引",
+      "clinvar_pathogenic_count": 500,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 TGFBR1 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.94,
+      "key_pmids": [
+        "PMID:15731757",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有年輕型主動脈瘤或剝離、動脈扭曲、關節過度柔軟、顱顏異常或家族史者，建議接受遺傳諮詢與 TGFBR1／TGFBR2 基因檢測；確診者需長期心血管影像監測。",
+      "lifestyle_tips": [
+        "避免碰撞性運動與重量訓練，選擇低衝擊的有氧活動並先與心臟科討論",
+        "定期監測血壓與主動脈影像，任何手術或侵入性檢查前主動告知診斷",
+        "出現突發胸背痛、呼吸困難或神經症狀時立即送急診"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 血管外科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我年輕就發現主動脈瘤或動脈扭曲，是否需要 TGFBR1／TGFBR2 基因檢測確認 Loeys-Dietz 症候群？",
+        "我的血壓目標與用藥選擇為何？多久需要追蹤一次主動脈影像？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「主動脈瘤只有老年人才會發生，年輕人的動脈瘤一定是偶發的？」",
+      "truth": "錯！年輕型主動脈瘤或剝離合併動脈扭曲、關節柔軟或家族史，可能是 Loeys-Dietz 症候群等遺傳性結締組織疾病。需要基因檢測與長期心血管監測，不能只當作偶發問題。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_067",
+    "gene": {
+      "symbol": "TGFBR2",
+      "name": "Transforming growth factor beta receptor 2",
+      "chinese_name": "TGFBR2 轉化生長因子 β 受體第二型 (洛伊-迪茨症候群基因)",
+      "ensembl_id": "ENSG00000163513",
+      "entrez_id": "7048",
+      "biotype": "protein_coding",
+      "chromosome": "3p24.1 (3 號染色體)",
+      "metaphor": {
+        "title": "🧵 結締組織的【TGF-β 訊號閘門（故障時主動脈瘤與剝離風險升高）】",
+        "story": "TGF-β 訊號負責調控結締組織的生長與修復，TGFBR2 是這條訊號路徑上的重要受體閘門。當 TGFBR2 天生故障時，訊號失衡，血管壁結締組織變弱，主動脈容易擴張成瘤甚至剝離。患者可能有高身材、關節過度柔軟、皮膚特徵或顱顏異常，最危險的是年輕時發生主動脈剝離。定期心血管影像、控制血壓與避免碰撞性運動，是降低併發症的關鍵。"
+      },
+      "plain_summary": "TGFBR2 缺陷造成洛伊-迪茨症候群第二型，屬於體染色體顯性遺傳。患者可能出現主動脈瘤、主動脈剝離、關節過度柔軟、骨骼或顱顏異常，並有年輕型血管併發症風險。定期心血管影像、控制血壓、避免高衝擊運動與跨科追蹤，可降低嚴重併發症。",
+      "academic_summary": "TGFBR2 編碼 TGF-β 第二型受體，與第一型受體共同啟動 SMAD2/3 訊息傳遞並調控結締組織恆定。生殖細胞致病變異導致 Loeys-Dietz syndrome（LDS），表現為主動脈瘤與剝離、動脈扭曲、關節過度活動、顱顏異常與皮膚特徵。LDS 的血管併發症可能早發且廣泛，需積極血壓控制、影像監測與家族篩檢。"
+    },
+    "disease": {
+      "id": "MONDO:0019502",
+      "name": "Loeys-Dietz syndrome",
+      "chinese_name": "洛伊-迪茨症候群第二型（Loeys-Dietz 症候群）",
+      "categories": [
+        "體染色體顯性遺傳結締組織疾病",
+        "遺傳性主動脈與血管疾病",
+        "顱顏與骨骼異常"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 高風險主動脈疾病（早期監測與血壓控制可降低剝離風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "主動脈瘤"
+      },
+      {
+        "hpo_id": "HP:0002647",
+        "name": "Aortic dissection",
+        "chinese_name": "主動脈剝離"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "洛沙坦 / 血管張力素受體阻斷劑",
+        "mechanism": "控制血壓並降低主動脈壁張力，減緩動脈瘤擴張",
+        "approval_status": "依心臟科評估使用（LDS 血壓控制標準照護）"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低心跳與血壓，減少主動脈壁剪切壓力",
+        "approval_status": "依心臟科評估使用"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TGFBR2 生殖細胞致病變異（錯義、剪接、無義與大片段缺失）",
+      "population_frequency": "Loeys-Dietz 症候群估計發生率約 1/50,000–1/100,000",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "practical_guidance": "有遺傳性胸主動脈疾病者，應與心臟科討論血壓控制目標，並主動告知醫師避免使用 fluoroquinolone 類抗生素（如 ciprofloxacin、levofloxacin），以降低主動脈併發症風險。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免高衝擊運動、重量訓練與未經評估的競技運動，以降低主動脈剝離風險",
+        "維持健康體重、戒菸並控制血壓，依心臟科安排定期接受主動脈影像追蹤",
+        "出現突發胸痛、背痛或劇烈腹痛時，應立即就醫並主動告知 Loeys-Dietz 病史"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 Loeys-Dietz 症候群診療指引",
+      "clinvar_pathogenic_count": 600,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 TGFBR2 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.94,
+      "key_pmids": [
+        "PMID:15731757",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有年輕型主動脈瘤或剝離、動脈扭曲、關節過度柔軟、顱顏異常或家族史者，建議接受遺傳諮詢與 TGFBR1／TGFBR2 基因檢測；確診者需長期心血管影像監測。",
+      "lifestyle_tips": [
+        "避免碰撞性運動與重量訓練，選擇低衝擊的有氧活動並先與心臟科討論",
+        "定期監測血壓與主動脈影像，任何手術或侵入性檢查前主動告知診斷",
+        "出現突發胸背痛、呼吸困難或神經症狀時立即送急診"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 血管外科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我年輕就發生主動脈瘤或剝離，是否需要 TGFBR1／TGFBR2 基因檢測確認 Loeys-Dietz 症候群？",
+        "我的血壓目標與用藥選擇為何？多久需要追蹤一次主動脈影像？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「主動脈剝離只有高血壓老人才會發生，年輕人不需要做基因檢測？」",
+      "truth": "錯！年輕型主動脈剝離若合併關節柔軟、顱顏異常或家族史，可能是 Loeys-Dietz 症候群等遺傳性結締組織疾病。基因檢測與長期心血管監測可以及早發現風險，不能只當作偶發事件。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_068",
+    "gene": {
+      "symbol": "SMAD3",
+      "name": "SMAD family member 3",
+      "chinese_name": "SMAD3 訊息傳導蛋白 3 (洛伊-迪茨症候群第三型基因)",
+      "ensembl_id": "ENSG00000166949",
+      "entrez_id": "4088",
+      "biotype": "protein_coding",
+      "chromosome": "15q22.33 (15 號染色體)",
+      "metaphor": {
+        "title": "🧵 TGF-β 訊號的【轉錄調控員（故障時主動脈瘤與早發性骨關節炎一起出現）】",
+        "story": "TGF-β 訊號進入細胞後，需要 SMAD3 把命令送進細胞核，調控結締組織與關節軟骨的修復。當 SMAD3 天生故障時，訊號傳遞失衡，血管壁結締組織變弱，主動脈容易擴張成瘤；關節軟骨也較早退化，出現早發性骨關節炎。患者可能在年輕時就有主動脈瘤、關節疼痛或骨骼異常。定期心血管影像、控制血壓與關節照護，是降低併發症的關鍵。"
+      },
+      "plain_summary": "SMAD3 缺陷造成洛伊-迪茨症候群第三型（動脈瘤-骨關節炎症候群），屬於體染色體顯性遺傳。患者可能出現主動脈瘤、主動脈剝離與早發性骨關節炎，也可能有骨骼或關節異常。定期心血管影像、控制血壓、避免高衝擊運動與關節照護，可降低嚴重併發症。",
+      "academic_summary": "SMAD3 編碼 TGF-β／BMP 訊號的受體調控型 SMAD，與 SMAD4 形成複合體進入細胞核調控轉錄，維持血管壁與關節軟骨恆定。生殖細胞致病變異導致 Loeys-Dietz syndrome type 3（aneurysm-osteoarthritis syndrome），表現為主動脈瘤與剝離、早發性骨關節炎、關節過度活動與骨骼異常。需長期心血管監測與血壓控制。"
+    },
+    "disease": {
+      "id": "MONDO:0019502",
+      "name": "Loeys-Dietz syndrome",
+      "chinese_name": "洛伊-迪茨症候群第三型（動脈瘤-骨關節炎症候群）",
+      "categories": [
+        "體染色體顯性遺傳結締組織疾病",
+        "遺傳性主動脈與血管疾病",
+        "早發性骨關節炎"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 高風險主動脈疾病（早期監測與血壓控制可降低剝離風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "主動脈瘤"
+      },
+      {
+        "hpo_id": "HP:0002758",
+        "name": "Osteoarthritis",
+        "chinese_name": "早發性骨關節炎"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "洛沙坦 / 血管張力素受體阻斷劑",
+        "mechanism": "控制血壓並降低主動脈壁張力，減緩動脈瘤擴張",
+        "approval_status": "依心臟科評估使用（LDS 血壓控制標準照護）"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低心跳與血壓，減少主動脈壁剪切壓力",
+        "approval_status": "依心臟科評估使用"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SMAD3 生殖細胞致病變異（錯義、剪接、無義與大片段缺失）",
+      "population_frequency": "Loeys-Dietz 症候群估計發生率約 1/50,000–1/100,000，SMAD3 相關個案占部分比例",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "practical_guidance": "有遺傳性胸主動脈疾病者，應與心臟科討論血壓控制目標，並主動告知醫師避免使用 fluoroquinolone 類抗生素（如 ciprofloxacin、levofloxacin），以降低主動脈併發症風險。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免高衝擊運動、重量訓練與未經評估的競技運動，以降低主動脈剝離風險",
+        "維持健康體重、戒菸並控制血壓，依心臟科安排定期接受主動脈影像追蹤",
+        "有關節疼痛或活動受限時，應與復健科討論低衝擊運動與關節保護"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 Loeys-Dietz 症候群與主動脈疾病指引",
+      "clinvar_pathogenic_count": 450,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 SMAD3 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.93,
+      "key_pmids": [
+        "PMID:21217753",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有年輕型主動脈瘤、早發性骨關節炎、關節過度柔軟或家族史者，建議接受遺傳諮詢與 SMAD3 基因檢測；確診者需長期心血管影像監測與關節評估。",
+      "lifestyle_tips": [
+        "避免碰撞性運動與重量訓練，選擇低衝擊活動並先與心臟科及復健科討論",
+        "定期監測血壓與主動脈影像，任何手術或侵入性檢查前主動告知診斷",
+        "出現突發胸背痛、呼吸困難或劇烈關節腫痛時，應盡速就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 風濕免疫科 / 復健科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我年輕就發現主動脈瘤並有早發性關節炎，是否需要 SMAD3 基因檢測？",
+        "我的血壓目標與用藥選擇為何？多久需要追蹤一次主動脈影像與關節狀況？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「年輕人關節痛只是運動傷害，主動脈瘤與關節炎不會同時出現在遺傳疾病中？」",
+      "truth": "錯！早發性骨關節炎合併主動脈瘤或剝離，可能是 SMAD3 相關的 Loeys-Dietz 症候群第三型。這類患者需要基因檢測、心血管監測與關節照護，不能只當作運動傷害。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_069",
+    "gene": {
+      "symbol": "ACTA2",
+      "name": "Actin alpha 2, smooth muscle",
+      "chinese_name": "ACTA2 平滑肌 α 肌動蛋白 2 (家族性胸主動脈瘤基因)",
+      "ensembl_id": "ENSG00000107796",
+      "entrez_id": "59",
+      "biotype": "protein_coding",
+      "chromosome": "10q23.31 (10 號染色體)",
+      "metaphor": {
+        "title": "💪 血管平滑肌的【收縮馬達（故障時主動脈壁變弱、容易擴張與剝離）】",
+        "story": "血管壁的中層由平滑肌細胞組成，ACTA2 製造的 α 肌動蛋白是平滑肌收縮的馬達。當 ACTA2 天生故障時，血管平滑肌收縮力與細胞功能異常，主動脈壁逐漸變弱，可能在年輕或中年時擴張成瘤甚至剝離。患者可能沒有明顯外觀特徵，卻可能在例行檢查或突發胸背痛時才被發現。定期心血管影像、控制血壓與避免高衝擊運動，是降低致命併發症的關鍵。"
+      },
+      "plain_summary": "ACTA2 缺陷造成家族性胸主動脈瘤與剝離（ACTA2 型），屬於體染色體顯性遺傳。患者可能沒有明顯外觀特徵，卻在年輕或中年時出現主動脈瘤或剝離，部分人合併開放性動脈導管、腦動脈瘤或早發性冠狀動脈疾病。定期心血管影像、控制血壓與家族篩檢可降低風險。",
+      "academic_summary": "ACTA2 編碼平滑肌 α 肌動蛋白，為血管平滑肌收縮裝置的核心蛋白。生殖細胞致病變異導致 familial thoracic aortic aneurysm and aortic dissection（FTAAD），因平滑肌細胞功能與細胞外基質恆定異常而使主動脈壁脆弱。ACTA2 變異者可能缺乏明顯結締組織特徵，但仍有主動脈瘤、剝離、腦動脈瘤與早發性冠狀動脈疾病風險，需終身影像監測。"
+    },
+    "disease": {
+      "id": "MONDO:0019625",
+      "name": "Familial thoracic aortic aneurysm and aortic dissection",
+      "chinese_name": "家族性胸主動脈瘤與剝離（ACTA2 型）",
+      "categories": [
+        "體染色體顯性遺傳血管疾病",
+        "遺傳性主動脈瘤與剝離",
+        "心血管高風險症候群"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 高風險主動脈疾病（定期影像與血壓控制可降低剝離風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002647",
+        "name": "Aortic dissection",
+        "chinese_name": "主動脈剝離"
+      },
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "主動脈瘤"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低心跳與血壓，減少主動脈壁剪切壓力與擴張速度",
+        "approval_status": "依心臟科評估使用（主動脈疾病標準照護）"
+      },
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "洛沙坦 / 血管張力素受體阻斷劑",
+        "mechanism": "控制血壓並降低主動脈壁張力，作為血壓管理選項之一",
+        "approval_status": "依心臟科評估使用"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ACTA2 生殖細胞致病變異（錯義、剪接、無義與大片段缺失）",
+      "population_frequency": "家族性胸主動脈瘤與剝離中 ACTA2 變異占相當比例，整體發生率估計約 1/10,000–1/50,000",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "practical_guidance": "有遺傳性胸主動脈疾病者，應與心臟科討論血壓控制目標，並主動告知醫師避免使用 fluoroquinolone 類抗生素（如 ciprofloxacin、levofloxacin），以降低主動脈併發症風險。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免高衝擊運動、重量訓練與未經評估的競技運動，以降低主動脈剝離風險",
+        "維持健康體重、戒菸並控制血壓，依心臟科安排定期接受主動脈影像追蹤",
+        "出現突發胸痛、背痛或劇烈腹痛時，應立即就醫並主動告知家族性主動脈疾病史"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.96,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際家族性胸主動脈瘤與剝離指引",
+      "clinvar_pathogenic_count": 550,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 ACTA2 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.94,
+      "key_pmids": [
+        "PMID:17994018",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有年輕型主動脈瘤或剝離、家族性主動脈疾病、腦動脈瘤或早發性冠狀動脈疾病者，建議接受遺傳諮詢與 ACTA2 基因檢測；一等親應接受主動脈影像篩檢。",
+      "lifestyle_tips": [
+        "避免碰撞性運動與重量訓練，選擇低衝擊有氧活動並先與心臟科討論",
+        "定期監測血壓與主動脈影像，任何手術或侵入性檢查前主動告知家族史",
+        "戒菸、控制血脂與血糖，並出現突發胸背痛時立即送急診"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 血管外科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我或家人年輕就發生主動脈瘤或剝離，是否需要 ACTA2 基因檢測？",
+        "我的血壓目標與用藥選擇為何？多久需要追蹤一次主動脈影像？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「沒有明顯外觀異常就不會有遺傳性主動脈瘤，也不需要家族篩檢？」",
+      "truth": "錯！ACTA2 相關的家族性胸主動脈瘤與剝離常缺乏明顯外觀特徵，卻可能在年輕或中年時突然發生剝離。有家族史者應接受基因檢測與主動脈影像篩檢，不能只依外觀判斷。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_070",
+    "gene": {
+      "symbol": "MYH11",
+      "name": "Myosin heavy chain 11",
+      "chinese_name": "MYH11 平滑肌肌凝蛋白重鏈 11 (家族性胸主動脈瘤基因)",
+      "ensembl_id": "ENSG00000133392",
+      "entrez_id": "4629",
+      "biotype": "protein_coding",
+      "chromosome": "16p13.11 (16 號染色體)",
+      "metaphor": {
+        "title": "💪 血管平滑肌的【收縮馬達（故障時主動脈壁變弱，可能合併開放性動脈導管）】",
+        "story": "血管壁的中層由平滑肌細胞組成，MYH11 製造的肌凝蛋白重鏈是平滑肌收縮馬達的重要零件。當 MYH11 天生故障時，血管平滑肌收縮功能異常，主動脈壁逐漸變弱，可能在年輕或中年時擴張成瘤甚至剝離。部分患者出生時合併開放性動脈導管（PDA），也可能沒有明顯外觀特徵。定期心血管影像、控制血壓與家族篩檢，是降低致命併發症的關鍵。"
+      },
+      "plain_summary": "MYH11 缺陷造成家族性胸主動脈瘤與剝離（MYH11 型），屬於體染色體顯性遺傳。患者可能在年輕或中年時出現主動脈瘤或剝離，部分人合併開放性動脈導管。定期心血管影像、控制血壓、避免高衝擊運動與家族篩檢，可降低嚴重併發症。",
+      "academic_summary": "MYH11 編碼平滑肌肌凝蛋白重鏈 11，為血管平滑肌收縮裝置的核心蛋白。生殖細胞致病變異導致 familial thoracic aortic aneurysm and aortic dissection（FTAAD），因平滑肌收縮功能與細胞外基質恆定異常而使主動脈壁脆弱。MYH11 變異者可能合併開放性動脈導管，並有主動脈瘤與剝離風險，需終身影像監測。"
+    },
+    "disease": {
+      "id": "MONDO:0019625",
+      "name": "Familial thoracic aortic aneurysm and aortic dissection",
+      "chinese_name": "家族性胸主動脈瘤與剝離（MYH11 型）",
+      "categories": [
+        "體染色體顯性遺傳血管疾病",
+        "遺傳性主動脈瘤與剝離",
+        "先天性心臟異常"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 高風險主動脈疾病（定期影像與血壓控制可降低剝離風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002647",
+        "name": "Aortic dissection",
+        "chinese_name": "主動脈剝離"
+      },
+      {
+        "hpo_id": "HP:0001643",
+        "name": "Patent ductus arteriosus",
+        "chinese_name": "開放性動脈導管"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低心跳與血壓，減少主動脈壁剪切壓力與擴張速度",
+        "approval_status": "依心臟科評估使用（主動脈疾病標準照護）"
+      },
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "洛沙坦 / 血管張力素受體阻斷劑",
+        "mechanism": "控制血壓並降低主動脈壁張力，作為血壓管理選項之一",
+        "approval_status": "依心臟科評估使用"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MYH11 生殖細胞致病變異（錯義、剪接、無義與大片段缺失）",
+      "population_frequency": "家族性胸主動脈瘤與剝離中 MYH11 變異占部分比例，整體發生率估計約 1/10,000–1/50,000",
+      "summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "traffic_light_summary": "藥物基因組學提醒：此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。",
+      "practical_guidance": "有遺傳性胸主動脈疾病者，應與心臟科討論血壓控制目標，並主動告知醫師避免使用 fluoroquinolone 類抗生素（如 ciprofloxacin、levofloxacin），以降低主動脈併發症風險。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免高衝擊運動、重量訓練與未經評估的競技運動，以降低主動脈剝離風險",
+        "維持健康體重、戒菸並控制血壓，依心臟科安排定期接受主動脈影像追蹤",
+        "若曾有開放性動脈導管或先天性心臟病，應定期接受心臟超音波追蹤"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際家族性胸主動脈瘤與剝離指引",
+      "clinvar_pathogenic_count": 300,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 MYH11 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.92,
+      "key_pmids": [
+        "PMID:16444274",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有年輕型主動脈瘤或剝離、開放性動脈導管、家族性主動脈疾病或不明原因猝死家族史者，建議接受遺傳諮詢與 MYH11 基因檢測；一等親應接受主動脈影像篩檢。",
+      "lifestyle_tips": [
+        "避免碰撞性運動與重量訓練，選擇低衝擊有氧活動並先與心臟科討論",
+        "定期監測血壓與主動脈影像，任何手術或侵入性檢查前主動告知家族史",
+        "戒菸、控制血脂與血糖，並出現突發胸背痛時立即送急診"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 血管外科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我或家人年輕就發生主動脈瘤或剝離，且有人有開放性動脈導管，是否需要 MYH11 基因檢測？",
+        "我的血壓目標與用藥選擇為何？多久需要追蹤一次主動脈影像？",
+        "我的兄弟姊妹與孩子是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「開放性動脈導管治療後就沒事了，不需要擔心成年後的主動脈瘤？」",
+      "truth": "錯！開放性動脈導管若合併家族性主動脈瘤或剝離病史，可能與 MYH11 等遺傳性血管疾病有關。即使兒童期完成治療，成年後仍需定期心血管影像追蹤與基因評估。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_071",
+    "gene": {
+      "symbol": "APOB",
+      "name": "Apolipoprotein B",
+      "chinese_name": "APOB 載脂蛋白 B (家族性高膽固醇血症基因)",
+      "ensembl_id": "ENSG00000084674",
+      "entrez_id": "338",
+      "biotype": "protein_coding",
+      "chromosome": "2p24.1 (2 號染色體)",
+      "metaphor": {
+        "title": "🚚 血液裡的【壞膽固醇運輸車（故障時 LDL 無法被肝臟清除，膽固醇越積越高）】",
+        "story": "LDL 膽固醇就像血液中的貨物，APOB 是貨車上的識別標籤，讓肝臟的 LDL 受體能辨認並把壞膽固醇回收清除。當 APOB 基因天生故障時，貨車標籤錯誤，肝臟無法有效清除 LDL，血液中的壞膽固醇從年輕就偏高，膽固醇沉積在冠狀動脈與主動脈，增加早發性心肌梗塞與主動脈瓣疾病風險。透過基因檢測、statin／ezetimibe 與必要時的 PCSK9 抑制劑，可以把 LDL 控制下來。"
+      },
+      "plain_summary": "APOB 缺陷造成家族性載脂蛋白 B-100 缺陷高膽固醇血症，屬於體染色體顯性遺傳。患者從年輕就可能出現 LDL 膽固醇偏高，膽固醇沉積在血管與肌腱，增加早發性冠狀動脈心臟病、主動脈瓣疾病與心肌梗塞風險。透過基因檢測、statin／ezetimibe、PCSK9 抑制劑與生活型態調整，可有效降低 LDL 與心血管風險。",
+      "academic_summary": "APOB 編碼載脂蛋白 B-100，為 LDL、VLDL 與 IDL 顆粒的主要結構蛋白，也是 LDL 受體辨識的配體。生殖細胞致病變異（如 p.Arg3500Gln）導致 familial hypercholesterolemia（FH），因 LDL 受體清除效率下降而使 LDL 膽固醇從年輕即升高。APOB 相關 FH 與早發性冠狀動脈疾病、主動脈瓣鈣化與心肌梗塞風險增加有關，需長期血脂管理與家族篩檢。"
+    },
+    "disease": {
+      "id": "MONDO:0007750",
+      "name": "Familial hypercholesterolemia",
+      "chinese_name": "家族性載脂蛋白 B-100 缺陷高膽固醇血症",
+      "categories": [
+        "體染色體顯性遺傳脂質疾病",
+        "家族性高膽固醇血症",
+        "早發性心血管疾病風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性高膽固醇血症（長期降脂治療可大幅降低心血管風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003124",
+        "name": "Hypercholesterolemia",
+        "chinese_name": "高膽固醇血症"
+      },
+      {
+        "hpo_id": "HP:0001635",
+        "name": "Congestive heart failure",
+        "chinese_name": "早發性冠狀動脈心臟病風險"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Statins & Ezetimibe",
+        "chinese_name": "斯他汀類與依折麥布降血脂藥",
+        "mechanism": "抑制膽固醇合成並減少腸道膽固醇吸收，增加肝臟 LDL 受體清除壞膽固醇",
+        "approval_status": "FDA / TFDA / NMPA 核准（FH 首選降脂治療）"
+      },
+      {
+        "drug_name": "PCSK9 inhibitors (Evolocumab / Alirocumab)",
+        "chinese_name": "PCSK9 抑制劑（依洛尤單抗 / 阿利西尤單抗）",
+        "mechanism": "抑制 PCSK9 對 LDL 受體的降解，增加肝臟清除 LDL 的能力",
+        "approval_status": "FDA / TFDA / NMPA 核准（頑固型高膽固醇輔助標靶治療）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "APOB 致病變異（如 p.Arg3500Gln、p.Arg3500Trp 等 LDL 受體結合缺陷）",
+      "population_frequency": "家族性高膽固醇血症約 1/250；APOB 相關個案約占 FH 的 5%–10%",
+      "summary": "APOB 相關家族性高膽固醇血症以 statin 與 ezetimibe 為首選，必要時合併 PCSK9 抑制劑；治療選擇與 LDL 目標需依心血管風險與醫囑個人化調整。",
+      "traffic_light_summary": "🟢 首選 statin 合併 ezetimibe 降脂；若 LDL 仍未達標或屬頑固型高膽固醇，可依醫囑加上 PCSK9 抑制劑。🟡 部分高劑量類固醇或特定免疫抑制劑可能升高血脂，使用時需密集監測血脂變化。",
+      "practical_guidance": "家族性高膽固醇血症患者應與心臟科或新陳代謝科討論 LDL 目標與用藥選擇，定期監測血脂與肝功能；不可自行停藥，並主動告知醫師正在使用的所有藥物與保健食品。",
+      "drugs_guide": [
+        {
+          "drug_name": "Statins & Ezetimibe",
+          "chinese_name": "斯他汀類與依折麥布降血脂藥",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "FH 首選高強度降膽固醇治療；statin 抑制膽固醇合成，ezetimibe 減少腸道吸收，兩者合併可進一步降低 LDL。",
+          "cpic_level": "國際 FH 診療指引（Statin/Ezetimibe 首選）"
+        },
+        {
+          "drug_name": "PCSK9 inhibitors (Evolocumab / Alirocumab)",
+          "chinese_name": "PCSK9 抑制劑（依洛尤單抗 / 阿利西尤單抗）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "頑固型高膽固醇或 statin 無法達標時的輔助標靶治療，可顯著降低 LDL；使用前後需依醫囑監測血脂。",
+          "cpic_level": "國際 FH 診療指引（PCSK9 抑制劑輔助治療）"
+        },
+        {
+          "drug_name": "Cholesterol-raising medications (selected high-dose steroids or immunosuppressants)",
+          "chinese_name": "升膽固醇副作用藥物（如部分高劑量類固醇或特定免疫抑制劑）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "可能使血脂上升；FH 患者若必須使用，需密集監測血脂變化並與心臟科或新陳代謝科討論降脂調整。",
+          "cpic_level": "臨床血脂監測建議"
+        }
+      ],
+      "dietary_contraindications": [
+        "減少飽和脂肪與反式脂肪攝取，增加蔬菜、全穀類與水溶性纖維",
+        "規律運動、控制體重並戒菸，以降低心血管風險",
+        "定期監測血脂與肝功能，不可自行停用降脂藥物"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.97,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際家族性高膽固醇血症診療與基因指引",
+      "clinvar_pathogenic_count": 400,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 APOB 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.95,
+      "key_pmids": [
+        "PMID:2569116",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有早發性心肌梗塞、LDL 膽固醇明顯偏高、肌腱黃色瘤或家族史者，建議接受血脂檢查與遺傳諮詢；一等親應接受血脂篩檢，必要時進行 APOB、LDLR 等基因檢測。",
+      "lifestyle_tips": [
+        "採用地中海型飲食、減少飽和脂肪與加工食品，並增加水溶性纖維",
+        "規律有氧運動、控制體重與戒菸，並依醫囑持續降脂治療",
+        "定期追蹤血脂、肝功能與心血管風險，出現胸痛或呼吸困難時立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 新陳代謝科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 LDL 膽固醇從年輕就偏高，是否需要 APOB 基因檢測確認家族性高膽固醇血症？",
+        "我的 LDL 目標是多少？statin、ezetimibe 或 PCSK9 抑制劑該如何選擇與監測？",
+        "我的兄弟姊妹與孩子是否應該接受血脂篩檢與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「膽固醇高只是吃太油，只要少吃油就會恢復正常，不需要吃藥？」",
+      "truth": "錯！家族性高膽固醇血症常由 APOB、LDLR 等基因變異造成，單靠飲食通常不足以達標。患者需要長期降脂藥物與定期血脂監測，才能有效降低早發性心肌梗塞與主動脈瓣疾病風險。"
+    }
   }
 ];
 window.EN_RECORDS = {
@@ -10142,6 +12199,1812 @@ window.EN_RECORDS = {
     "myth_buster": {
       "myth": "“After a transplant, I just need to take tacrolimus on time; genetic testing and blood level monitoring are unnecessary expenses?”",
       "truth": "Wrong! Tacrolimus has a narrow therapeutic window, and CYP3A5 genotype significantly affects metabolism. Without genotype information and level monitoring, underdosing can cause rejection, while overdosing can cause kidney and nerve toxicity. Genetic testing combined with regular TDM is the safe way to protect the transplanted organ."
+    }
+  },
+  "STK11": {
+    "gene": {
+      "chinese_name": "STK11 Serine/Threonine Kinase 11 (Peutz-Jeghers Syndrome Gene)",
+      "chromosome": "19p13.3 (Chromosome 19)",
+      "metaphor": {
+        "title": "🔋 The Cell’s 【Master Energy and Growth Switch】(When broken, hamartomatous polyps grow in the gut and dark spots appear on the lips and fingers)",
+        "story": "Cells need energy and must know when to stop growing. STK11 (LKB1) is the cell’s master energy and growth switch: it activates AMPK signaling and restrains the mTOR growth pathway so cells slow down when energy is low. When STK11 is defective from birth, this brake fails. The gastrointestinal lining develops hamartomatous polyps, and dark pigment spots often appear on the lips, oral mucosa, fingers, and toes. Most polyps are benign, but long-term risks include gastrointestinal, breast, and pancreatic tumors, so regular endoscopy and multidisciplinary surveillance are essential."
+      },
+      "plain_summary": "STK11 deficiency causes Peutz-Jeghers syndrome, an autosomal dominant condition. Affected people often have dark pigment spots on the lips, oral mucosa, hands, and feet, plus hamartomatous polyps in the stomach, small intestine, and colon that can cause abdominal pain, intussusception, or bleeding. Regular gastrointestinal endoscopy, imaging, and breast and pancreatic surveillance help detect and manage polyps and tumors early.",
+      "academic_summary": "STK11 encodes the LKB1 serine/threonine kinase, which forms a complex with STRAD and MO25 to activate AMPK, inhibit mTORC1 and cell proliferation, and regulate cell polarity and metabolism. Germline pathogenic variants cause Peutz-Jeghers syndrome (PJS), characterized by gastrointestinal hamartomatous polyps and mucocutaneous pigmentation. PJS carriers have increased lifetime risk of colorectal, gastric, small-bowel, pancreatic, and breast cancers and require guideline-based multisystem surveillance."
+    },
+    "disease": {
+      "chinese_name": "Peutz-Jeghers Syndrome (Hamartomatous Polyposis)",
+      "categories": [
+        "Autosomal Dominant Hereditary Cancer Syndrome",
+        "Gastrointestinal Polyposis",
+        "Inherited Tumor Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Polyposis Syndrome (Regular Endoscopy and Multidisciplinary Screening Enable Early Detection)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0200042",
+        "name": "Hamartomatous polyposis",
+        "chinese_name": "Hamartomatous polyps in the gastrointestinal tract"
+      },
+      {
+        "hpo_id": "HP:0001000",
+        "name": "Abnormality of skin pigmentation",
+        "chinese_name": "Abnormal pigmentation of skin and mucosa"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Endoscopic polypectomy and surveillance",
+        "chinese_name": "Endoscopic polypectomy and surveillance",
+        "mechanism": "Removes gastrointestinal hamartomatous polyps, reduces intussusception risk, and monitors for early malignant change",
+        "approval_status": "International hereditary gastrointestinal cancer guideline standard of care"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline STK11 pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "Estimated incidence about 1 in 50,000 to 1 in 200,000; likely underdiagnosed",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise to reduce overall cancer risk",
+        "Reduce processed meats and high-fat foods, and increase vegetables, fruit, and whole grains",
+        "Seek prompt care for abdominal pain, vomiting, blood in the stool, or unexplained weight loss to evaluate polyp complications"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Hereditary Gastrointestinal Cancer Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic STK11 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:9425897",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with a confirmed STK11 pathogenic variant should follow hereditary gastrointestinal cancer guidelines for regular gastroscopy, colonoscopy, and small-bowel imaging, with breast, pancreatic, and other screening by age and family history; first-degree relatives should receive genetic counseling and testing.",
+      "lifestyle_tips": [
+        "Build a personalized polyp surveillance schedule and keep gastroscopy, colonoscopy, and small-bowel imaging on a long-term follow-up list",
+        "Seek care promptly for chronic abdominal pain, nausea, vomiting, blood in the stool, or changed bowel habits to rule out intussusception or polyp bleeding",
+        "Stop smoking, limit alcohol, and maintain a healthy weight to reduce overall tumor risk"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Genetic Counseling / Medical Oncology",
+      "questions": [
+        "Doctor, I have dark spots on my lips and hands and have had gastrointestinal polyps—should I have STK11 genetic testing for Peutz-Jeghers syndrome?",
+        "At what age and how often should I have gastroscopy, colonoscopy, and small-bowel imaging? Do I also need breast and pancreatic screening?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Dark spots on the lips and hands are just sun exposure or pigmentation and have nothing to do with gastrointestinal polyps or cancer?”",
+      "truth": "Wrong! Mucocutaneous dark spots in Peutz-Jeghers syndrome are often an important clue to an underlying STK11 pathogenic variant and gastrointestinal hamartomatous polyps. Recurrent abdominal pain, polyps, or a family history should prompt genetic counseling, genetic testing, and long-term gastrointestinal surveillance."
+    }
+  },
+  "BMPR1A": {
+    "gene": {
+      "chinese_name": "BMPR1A Bone Morphogenetic Protein Receptor Type 1A (Juvenile Polyposis Gene)",
+      "chromosome": "10q23.2 (Chromosome 10)",
+      "metaphor": {
+        "title": "🛑 The Intestinal Cell Growth 【BMP Brake System】(When broken, juvenile polyps grow and may bleed)",
+        "story": "Intestinal lining cells must renew constantly, but renewal needs a clear stop signal. BMPR1A is a receptor in the BMP signaling pathway—the brake system for intestinal cell growth that holds back excessive proliferation. When BMPR1A is defective from birth, the brake fails, and many juvenile hamartomatous polyps grow in the colon and gastrointestinal tract, causing abdominal pain, diarrhea, bleeding, and anemia. Most polyps are benign, but long-term colorectal and other gastrointestinal cancer risks remain, so regular endoscopic surveillance is needed."
+      },
+      "plain_summary": "BMPR1A deficiency causes juvenile polyposis syndrome, an autosomal dominant condition. Children or adolescents may develop multiple gastrointestinal juvenile polyps, often presenting with abdominal pain, diarrhea, blood in the stool, or anemia. Regular endoscopic polypectomy and follow-up reduce bleeding and intussusception risk and help detect malignant change early.",
+      "academic_summary": "BMPR1A encodes a BMP type I receptor that signals through SMAD1/5/8 to suppress intestinal epithelial overproliferation and promote differentiation. Germline pathogenic variants cause juvenile polyposis syndrome (JPS), found in about 15% to 20% of JPS cases. Polyps show juvenile hamartomatous histology, and carriers have increased colorectal and gastric cancer risk. Management centers on regular endoscopic surveillance, polypectomy, and surgery when needed."
+    },
+    "disease": {
+      "chinese_name": "Juvenile Polyposis Syndrome",
+      "categories": [
+        "Autosomal Dominant Hereditary Cancer Syndrome",
+        "Gastrointestinal Polyposis",
+        "Inherited Bleeding Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Polyposis Syndrome (Endoscopic Surveillance and Anemia Control Are Central)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0200042",
+        "name": "Hamartomatous polyposis",
+        "chinese_name": "Hamartomatous polyps in the gastrointestinal tract"
+      },
+      {
+        "hpo_id": "HP:0002239",
+        "name": "Gastrointestinal hemorrhage",
+        "chinese_name": "Bleeding from the gastrointestinal tract"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Endoscopic polypectomy and surveillance",
+        "chinese_name": "Endoscopic polypectomy and surveillance",
+        "mechanism": "Removes polyps with high bleeding or obstruction risk and monitors for new polyps and early malignant change",
+        "approval_status": "International hereditary gastrointestinal cancer guideline standard of care"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline BMPR1A pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "Juvenile polyposis syndrome incidence is estimated at about 1 in 100,000 to 1 in 160,000",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "Reduce processed meats and high-fat foods, and increase vegetables, fruit, and whole grains",
+        "Seek prompt care for blood in the stool, black stools, dizziness, or palpitations suggesting anemia from gastrointestinal bleeding"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Juvenile Polyposis Diagnosis and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic BMPR1A variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:11381269",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with juvenile polyps, unexplained gastrointestinal bleeding, or a family history should receive genetic counseling and BMPR1A/SMAD4 testing; confirmed cases should have regular gastroscopy and colonoscopy per guidelines, with small-bowel imaging when indicated.",
+      "lifestyle_tips": [
+        "Record abdominal pain, diarrhea, blood in the stool, and dizziness to help the doctor assess polyp bleeding or anemia",
+        "Take iron supplementation or anemia treatment as prescribed, and monitor hemoglobin and ferritin regularly",
+        "Maintain healthy eating and weight, stop smoking, and limit alcohol to reduce overall tumor risk"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Pediatric Gastroenterology / Genetic Counseling",
+      "questions": [
+        "Doctor, I (or my child) have multiple juvenile polyps and blood in the stool—should we have BMPR1A or SMAD4 genetic testing?",
+        "How often should I have gastroscopy and colonoscopy? Do I need small-bowel imaging or surgical evaluation?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Juvenile polyps are just polyps in childhood; they will disappear with age and do not need long-term follow-up?”",
+      "truth": "Wrong! Juvenile polyposis syndrome is hereditary; polyps can recur and cause bleeding, anemia, or intussusception, and colorectal and gastric cancer risk increases in adulthood. Confirmed cases need long-term endoscopic surveillance and polypectomy—follow-up must not stop with age."
+    }
+  },
+  "SMAD4": {
+    "gene": {
+      "chinese_name": "SMAD4 Signaling Protein 4 (Juvenile Polyposis and Hereditary Hemorrhagic Telangiectasia Gene)",
+      "chromosome": "18q21.2 (Chromosome 18)",
+      "metaphor": {
+        "title": "🚦 The 【Central Hub】 of TGF-β/BMP Signaling (When broken, intestinal polyps and vascular abnormalities appear together)",
+        "story": "TGF-β and BMP are two key growth-control signals, and SMAD4 is their shared central hub, carrying growth-inhibitory commands into the cell nucleus. When SMAD4 is defective from birth, the growth-inhibitory signal cannot get through, so the intestine tends to develop juvenile polyps. Blood vessel development may also be abnormal, producing telangiectasias similar to hereditary hemorrhagic telangiectasia (HHT) and causing recurrent nosebleeds or gastrointestinal bleeding. This is an inherited syndrome affecting both polyps and blood vessels, requiring joint gastroenterology and hematology-oncology follow-up."
+      },
+      "plain_summary": "SMAD4 deficiency can cause juvenile polyposis syndrome and may be accompanied by hereditary hemorrhagic telangiectasia. Patients may have multiple gastrointestinal polyps, recurrent nosebleeds, gastrointestinal bleeding, and anemia, with long-term colorectal, gastric, and pancreatic cancer risks. Regular endoscopy, blood tests, and multidisciplinary monitoring are key to managing polyps and bleeding early.",
+      "academic_summary": "SMAD4 encodes the common mediator of TGF-β/BMP signaling, which forms a complex with receptor-regulated SMADs and enters the nucleus to regulate transcription, suppressing epithelial proliferation and maintaining vascular stability. Germline pathogenic variants cause juvenile polyposis syndrome (JPS), with some cases showing hereditary hemorrhagic telangiectasia (HHT) features. SMAD4 carriers have increased gastrointestinal and pancreatic cancer risk, requiring integrated endoscopic, vascular, and family screening."
+    },
+    "disease": {
+      "chinese_name": "Juvenile Polyposis Syndrome with Hereditary Hemorrhagic Telangiectasia",
+      "categories": [
+        "Autosomal Dominant Hereditary Cancer Syndrome",
+        "Gastrointestinal Polyposis",
+        "Vascular Developmental Abnormality"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Polyposis with Vascular Abnormalities (Monitor Both Bleeding and Tumor Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0200042",
+        "name": "Hamartomatous polyposis",
+        "chinese_name": "Hamartomatous polyps in the gastrointestinal tract"
+      },
+      {
+        "hpo_id": "HP:0000421",
+        "name": "Epistaxis",
+        "chinese_name": "Recurrent nosebleeds"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Endoscopic polypectomy and surveillance",
+        "chinese_name": "Endoscopic polypectomy and surveillance",
+        "mechanism": "Removes polyps with high bleeding or obstruction risk and monitors for new polyps and early malignant change",
+        "approval_status": "International hereditary gastrointestinal cancer guideline standard of care"
+      },
+      {
+        "drug_name": "Iron supplementation",
+        "chinese_name": "Iron supplementation",
+        "mechanism": "Improves iron-deficiency anemia caused by chronic gastrointestinal or nasal bleeding",
+        "approval_status": "Physician-directed (standard anemia care)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline SMAD4 pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "Juvenile polyposis syndrome incidence is estimated at about 1 in 100,000 to 1 in 160,000; SMAD4-related cases account for about 15% to 20%",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "Reduce processed meats and high-fat foods, and increase vegetables, fruit, and whole grains",
+        "Seek prompt care for recurrent nosebleeds, black stools, dizziness, or palpitations to evaluate bleeding and anemia"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Juvenile Polyposis and Hereditary Hemorrhagic Telangiectasia Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic SMAD4 variants; genetic testing helps distinguish polyposis and vascular risk",
+      "key_pmids": [
+        "PMID:9585595",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with juvenile polyps, recurrent nosebleeds, gastrointestinal bleeding, or a family history should receive genetic counseling and SMAD4 testing; confirmed cases should have regular gastroscopy, colonoscopy, blood tests, and vascular evaluation when indicated.",
+      "lifestyle_tips": [
+        "Track the frequency and amount of nosebleeds and blood in the stool to help assess bleeding sources and anemia",
+        "Take iron as prescribed and monitor hemoglobin regularly; do not stop treatment or ignore chronic anemia",
+        "Stop smoking, limit alcohol, and maintain a healthy weight to reduce gastrointestinal and pancreatic tumor risk"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Hematology-Oncology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have multiple juvenile polyps and frequent nosebleeds—should I have SMAD4 genetic testing and vascular evaluation?",
+        "How often should I have gastroscopy, colonoscopy, and blood tests? Should hereditary hemorrhagic telangiectasia be evaluated?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Nosebleeds are just dry weather or heatiness and have nothing to do with intestinal polyps or hereditary disease?”",
+      "truth": "Wrong! Recurrent nosebleeds together with multiple juvenile polyps or a family history may indicate SMAD4-related hereditary hemorrhagic telangiectasia. These patients need monitoring for gastrointestinal polyps, vascular abnormalities, and anemia—not just treatment of the nasal mucosa."
+    }
+  },
+  "MUTYH": {
+    "gene": {
+      "chinese_name": "MUTYH Adenine DNA Glycosylase (MUTYH-Associated Polyposis Gene)",
+      "chromosome": "1p34.1 (Chromosome 1)",
+      "metaphor": {
+        "title": "🧬 The DNA Proofreading System’s 【Oxidative Error Remover】(When both copies fail, colonic adenomas and cancer risk rise)",
+        "story": "DNA suffers oxidative damage during metabolism, and one type of error is 8-oxoG mispaired with adenine (A). MUTYH is the DNA proofreading system’s error remover, specifically excising the wrong adenine so the base excision repair system can patch the damage. When both copies of MUTYH fail, oxidative DNA errors accumulate, and the colon lining gradually develops multiple adenomatous polyps, markedly raising colorectal cancer risk in adulthood. This is an autosomal recessive polyposis syndrome; regular colonoscopy and polypectomy are the core of cancer prevention."
+      },
+      "plain_summary": "MUTYH deficiency causes MUTYH-associated polyposis (MAP), an autosomal recessive condition. Patients may develop multiple adenomatous polyps in the colon and have a higher colorectal cancer risk, and some may also develop duodenal or other tumors. Regular colonoscopy, polypectomy, and family genetic counseling can effectively reduce cancer risk.",
+      "academic_summary": "MUTYH encodes adenine DNA glycosylase, part of base excision repair (BER), which removes adenine mispaired with 8-oxoguanine to prevent G:C to T:A mutations. Biallelic pathogenic variants cause MUTYH-associated polyposis (MAP), characterized by multiple colonic adenomas and early-onset colorectal cancer; monoallelic carriers have lower risk but still require family-history-based assessment. MAP patients also need attention to duodenal adenomas and other extracolonic tumor risks."
+    },
+    "disease": {
+      "chinese_name": "MUTYH-Associated Polyposis",
+      "categories": [
+        "Autosomal Recessive Hereditary Cancer Syndrome",
+        "Colonic Adenomatous Polyposis",
+        "Inherited Colorectal Cancer Risk"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟡 Inherited Colorectal Cancer Risk (Regular Colonoscopy and Polypectomy Effectively Reduce Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0200063",
+        "name": "Colonic adenomatous polyposis",
+        "chinese_name": "Multiple adenomatous polyps in the colon"
+      },
+      {
+        "hpo_id": "HP:0003003",
+        "name": "Colon cancer",
+        "chinese_name": "Increased colon cancer risk"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Endoscopic polypectomy and surveillance",
+        "chinese_name": "Endoscopic polypectomy and surveillance",
+        "mechanism": "Removes adenomatous polyps and monitors new polyps and early malignant change to reduce colorectal cancer incidence",
+        "approval_status": "International hereditary colorectal cancer guideline standard of care"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Biallelic MUTYH pathogenic variants (common variants include p.Tyr179Cys and p.Gly396Asp)",
+      "population_frequency": "Biallelic MAP incidence is estimated at about 1 in 20,000 to 1 in 40,000; carrier frequency may exceed 1 in 100 in some populations",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "Reduce processed meats and red meat, and increase vegetables, fruit, and whole-grain fiber",
+        "Seek prompt care for blood in the stool, changed bowel habits, or unexplained anemia"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International MUTYH-Associated Polyposis Diagnosis and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic MUTYH variants; biallelic testing supports MAP diagnosis",
+      "key_pmids": [
+        "PMID:11818965",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with multiple colonic adenomas, early-onset colorectal cancer, or a family history should receive genetic counseling and MUTYH testing; confirmed MAP patients should follow guidelines for regular colonoscopy and small-bowel/duodenal surveillance, and first-degree relatives should be assessed for carrier status.",
+      "lifestyle_tips": [
+        "Attend scheduled colonoscopy and polypectomy; do not delay follow-up because you feel well",
+        "Maintain a high-fiber diet, regular exercise, and healthy weight, and stop smoking and limit alcohol",
+        "Seek prompt care for blood in the stool, abdominal pain, weight loss, or changed bowel habits"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Genetic Counseling / Medical Oncology",
+      "questions": [
+        "Doctor, I have multiple colonic adenomas or early-onset colorectal cancer—should I have MUTYH genetic testing to confirm MAP?",
+        "At what age and how often should I have colonoscopy? Do I need duodenal or small-bowel surveillance?",
+        "Should my siblings and children have MUTYH carrier screening and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Once colon polyps are removed, the problem is solved, and genetic testing and regular follow-up are unnecessary?”",
+      "truth": "Wrong! MUTYH-associated polyposis keeps producing new adenomas, and a single polypectomy cannot eliminate future cancer risk. Confirmed patients need long-term regular colonoscopy, and family members should receive genetic counseling and carrier testing for effective cancer prevention."
+    }
+  },
+  "MEN1": {
+    "gene": {
+      "chinese_name": "MEN1 Menin (Multiple Endocrine Neoplasia Type 1 Gene)",
+      "chromosome": "11q13.1 (Chromosome 11)",
+      "metaphor": {
+        "title": "🎛️ The Endocrine Glands’ 【Tumor-Suppressor Supervisor】(When broken, parathyroid, pituitary, and pancreatic neuroendocrine tumors appear)",
+        "story": "The endocrine system includes the parathyroid, pituitary, pancreas, and adrenal glands. MEN1 encodes the menin protein, a tumor-suppressor supervisor that helps regulate cell growth and hormone secretion in these glands. When MEN1 is defective from birth, the supervisor loses function, and multiple endocrine glands may develop tumors over time: primary hyperparathyroidism is most common, followed by pituitary adenomas and pancreatic neuroendocrine tumors. Regular hormone testing and imaging allow early detection and management."
+      },
+      "plain_summary": "MEN1 deficiency causes multiple endocrine neoplasia type 1, an autosomal dominant condition. Tumors may develop in the parathyroid, pituitary, and pancreas, causing high blood calcium, hormone abnormalities, or neuroendocrine tumor symptoms. Regular blood tests for hormones and imaging follow-up, with coordinated endocrinology and specialty care, enable early tumor and complication management.",
+      "academic_summary": "MEN1 encodes menin, a scaffold protein involved in transcriptional regulation, chromatin modification, and suppression of cell proliferation. Germline pathogenic variants cause multiple endocrine neoplasia type 1 (MEN1), with high penetrance. Primary hyperparathyroidism is the most common manifestation, followed by pancreatic neuroendocrine tumors and pituitary adenomas. Tumors may secrete gastrin, insulin, glucagon, or other hormones and require biochemical and imaging surveillance for early detection."
+    },
+    "disease": {
+      "chinese_name": "Multiple Endocrine Neoplasia Type 1",
+      "categories": [
+        "Autosomal Dominant Hereditary Cancer Syndrome",
+        "Neuroendocrine Tumors",
+        "Multiple Endocrine Gland Disease"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Neuroendocrine Tumor Syndrome (Regular Hormone and Imaging Surveillance Enable Early Management)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000843",
+        "name": "Hyperparathyroidism",
+        "chinese_name": "Overactive parathyroid glands"
+      },
+      {
+        "hpo_id": "HP:0100634",
+        "name": "Neuroendocrine neoplasm",
+        "chinese_name": "Neuroendocrine tumor"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Octreotide / Lanreotide (somatostatin analogues)",
+        "chinese_name": "Octreotide / Lanreotide (somatostatin analogues)",
+        "mechanism": "Suppresses hormone secretion and tumor growth signaling in neuroendocrine tumors to control symptoms",
+        "approval_status": "FDA / TFDA / NMPA approved (per tumor type and physician direction)"
+      },
+      {
+        "drug_name": "Everolimus",
+        "chinese_name": "Everolimus (mTOR inhibitor)",
+        "mechanism": "Inhibits the mTOR growth pathway and is used for some progressive pancreatic neuroendocrine tumors",
+        "approval_status": "FDA / TFDA / NMPA approved (specific indications)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline MEN1 pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "Estimated incidence about 1 in 30,000; penetrance can exceed 90% with age",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "If hypercalcemia or hyperparathyroidism is present, avoid self-prescribed high-dose calcium and vitamin D and follow physician guidance",
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "Seek prompt care for recurrent abdominal pain, low blood sugar, diarrhea, peptic ulcers, or kidney stones to evaluate neuroendocrine tumors or hypercalcemia"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International MEN1 Diagnosis and Genetic Surveillance Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic MEN1 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:9103196",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with hyperparathyroidism, pancreatic neuroendocrine tumors, pituitary adenomas, or a family history should receive genetic counseling and MEN1 testing; confirmed cases should have regular calcium, hormone, and imaging surveillance, and first-degree relatives should be tested.",
+      "lifestyle_tips": [
+        "Keep a long-term surveillance checklist for calcium, gastrin, insulin-related markers, and pituitary hormones",
+        "Avoid self-prescribed high-dose calcium or vitamin D; discuss any supplement with endocrinology first",
+        "Seek prompt care for recurrent abdominal pain, low blood sugar, diarrhea, kidney stones, or visual field changes"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Endocrinology / Gastroenterology / Neurosurgery / Genetic Counseling",
+      "questions": [
+        "Doctor, I have hyperparathyroidism and a pancreatic neuroendocrine tumor—should I have MEN1 genetic testing?",
+        "How often should my calcium, hormones, and pituitary imaging be monitored? When do tumors need medication or surgery?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Hyperparathyroidism is just a single-gland problem; after surgery I do not need to worry about other tumors?”",
+      "truth": "Wrong! If hyperparathyroidism occurs with pancreatic neuroendocrine tumors, pituitary adenomas, or a family history, it may be MEN1 syndrome. Multiple endocrine glands can develop tumors over time, requiring long-term hormone and imaging surveillance—not just treatment of one gland."
+    }
+  },
+  "RB1": {
+    "gene": {
+      "chinese_name": "RB1 Retinoblastoma Transcriptional Corepressor 1",
+      "chromosome": "13q14.2 (Chromosome 13)",
+      "metaphor": {
+        "title": "🛞 The Cell Cycle’s 【G1/S Brake】(When broken, retinal cells proliferate and a white pupil reflex appears in young children)",
+        "story": "Before a cell divides, it must pass the G1/S checkpoint. RB1 encodes the pRb protein, the brake at this checkpoint, which holds E2F transcription factors so cells stop where they should. When both copies of RB1 lose function, the brake fails completely, and retinal cells proliferate continuously, forming retinoblastoma. Young children may show leukocoria (a white pupil reflex like a cat’s eye), strabismus, or vision abnormalities. Early detection and treatment by an ocular oncology team can preserve vision and life; carriers of germline variants also need attention to second primary cancers such as osteosarcoma."
+      },
+      "plain_summary": "RB1 deficiency causes retinoblastoma; germline pathogenic variants are inherited in an autosomal dominant pattern. Tumors usually appear in infants and young children as leukocoria, strabismus, or vision abnormalities and may be unilateral or bilateral. Newborn and infant eye screening, ocular oncology team treatment, and long-term follow-up improve cure rates and reduce second primary cancer risk.",
+      "academic_summary": "RB1 encodes the retinoblastoma protein (pRb), a key tumor suppressor at the G1/S cell cycle checkpoint that inhibits E2F transcription factors to prevent excessive proliferation. Germline pathogenic variants follow the Knudson two-hit model; a second somatic mutation in retinal cells leads to tumor formation, often bilateral or multifocal retinoblastoma. Germline variant carriers have increased lifelong risk of second primary cancers, especially osteosarcoma and soft-tissue sarcoma."
+    },
+    "disease": {
+      "chinese_name": "Retinoblastoma",
+      "categories": [
+        "Autosomal Dominant Hereditary Cancer Syndrome",
+        "Childhood Retinal Tumor",
+        "Inherited Tumor Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 Childhood Intraocular Malignancy (Early Detection Can Preserve Vision and Life)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0009919",
+        "name": "Retinoblastoma",
+        "chinese_name": "Retinoblastoma"
+      },
+      {
+        "hpo_id": "HP:0000555",
+        "name": "Leukocoria",
+        "chinese_name": "White pupil reflex"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Carboplatin / Etoposide (systemic chemotherapy)",
+        "chinese_name": "Carboplatin / Etoposide (systemic chemotherapy)",
+        "mechanism": "Shrinks intraocular tumors and is often combined with local therapy, intra-arterial chemotherapy, or enucleation",
+        "approval_status": "FDA / TFDA / NMPA approved (per stage and medical team assessment)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline RB1 pathogenic variants (nonsense, missense, splice-site, large deletions, and promoter variants)",
+      "population_frequency": "About 1 in 15,000 to 1 in 20,000 newborns; about 40% have hereditary germline variants",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "During treatment, maintain balanced nutrition and adequate calories per the medical team; avoid self-prescribed high-dose antioxidant supplements",
+        "Avoid smoking and secondhand smoke, and receive vaccinations as advised",
+        "Seek immediate care if a young child shows a white pupil reflex, strabismus, red or painful eyes, or vision abnormalities"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Retinoblastoma Diagnosis and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic RB1 variants; genetic testing helps distinguish hereditary from non-hereditary tumors",
+      "key_pmids": [
+        "PMID:3462598",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Families with a history of retinoblastoma should receive genetic counseling and ophthalmic screening during pregnancy and after birth; confirmed germline RB1 variant carriers need long-term eye, bone, and soft-tissue follow-up to detect second primary cancers early.",
+      "lifestyle_tips": [
+        "Caregivers should recognize leukocoria; if a photo shows a white reflex in one eye or strabismus, seek medical care immediately",
+        "Children with retinoblastoma should have regular follow-up with the ocular oncology team and complete treatment and vision rehabilitation as advised",
+        "Adult carriers should not delay evaluation of unexplained bone pain or masses and should receive regular genetic counseling"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Ophthalmology / Pediatric Hematology-Oncology / Genetic Counseling",
+      "questions": [
+        "Doctor, my child has leukocoria or strabismus—should we arrange immediate retinoblastoma evaluation and RB1 genetic testing?",
+        "If my child has a germline RB1 variant, how high is the risk of osteosarcoma or other second primary cancers, and how should follow-up be arranged?",
+        "Should my other children and family members receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“A white pupil reflex in a child is just camera flash reflection and will resolve with age?”",
+      "truth": "Wrong! Leukocoria can be a warning sign of retinoblastoma, and delayed diagnosis may threaten vision and even life. Any white pupil reflex, strabismus, or vision abnormality in a young child requires immediate ophthalmic evaluation—do not wait for it to resolve on its own."
+    }
+  },
+  "NF2": {
+    "gene": {
+      "chinese_name": "NF2 Merlin Tumor Suppressor (Neurofibromatosis Type 2 Gene)",
+      "chromosome": "22q12.2 (Chromosome 22)",
+      "metaphor": {
+        "title": "🎧 The 【Stabilizing Scaffold】 Between Nerve Cells (When broken, bilateral vestibular schwannomas and meningiomas appear)",
+        "story": "Nerve cells need stable connections with surrounding tissue. NF2 encodes the merlin protein, a stabilizing scaffold beneath the cell membrane that helps maintain contact inhibition and normal signaling. When NF2 is defective from birth, the scaffold loses function, and bilateral schwannomas may grow around the vestibular and auditory nerves, causing tinnitus, hearing loss, and balance problems; meningiomas, ependymomas, and eye lesions may also occur. Regular brain and inner-ear MRI, hearing tests, and multidisciplinary follow-up allow early tumor management and hearing preservation."
+      },
+      "plain_summary": "NF2 deficiency causes neurofibromatosis type 2, an autosomal dominant condition. Its hallmark is bilateral vestibular schwannomas (acoustic neuromas), which often cause hearing loss, tinnitus, and balance problems, and may be accompanied by meningiomas, ependymomas, or cataracts. Regular MRI and hearing monitoring, with medication or surgery when needed, are central to long-term care.",
+      "academic_summary": "NF2 encodes merlin (moesin-ezrin-radixin-like protein), a key regulator of the Hippo signaling pathway and contact inhibition. Germline pathogenic variants cause neurofibromatosis type 2 (NF2), typically presenting with bilateral vestibular schwannomas and often accompanied by meningiomas, spinal schwannomas, ependymomas, and early-onset cataracts. Tumor growth rate varies with variant type, and treatment requires coordination among neurosurgery, otolaryngology, and oncology."
+    },
+    "disease": {
+      "chinese_name": "Neurofibromatosis Type 2 (Bilateral Acoustic Neuromas)",
+      "categories": [
+        "Autosomal Dominant Hereditary Cancer Syndrome",
+        "Nervous System Tumor Syndrome",
+        "Hearing and Balance Disorder"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Nervous System Tumor Syndrome (Regular MRI and Hearing Monitoring Enable Early Management)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0009589",
+        "name": "Bilateral vestibular schwannoma",
+        "chinese_name": "Bilateral vestibular nerve sheath tumors"
+      },
+      {
+        "hpo_id": "HP:0000365",
+        "name": "Hearing impairment",
+        "chinese_name": "Hearing loss"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Bevacizumab",
+        "chinese_name": "Bevacizumab (VEGF inhibitor)",
+        "mechanism": "Inhibits tumor angiogenesis and is used for some progressive vestibular schwannomas to control growth and preserve hearing",
+        "approval_status": "FDA off-label / NCCN guideline-discussed (per medical team assessment)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline NF2 pathogenic variants (nonsense, missense, splice-site, large deletions, and mosaic variants)",
+      "population_frequency": "Estimated incidence about 1 in 25,000 to 1 in 33,000",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "If hearing loss or balance problems are present, take precautions against falls and avoid high-risk activities",
+        "Seek prompt care for sudden hearing loss, severe headache, vision changes, or limb weakness"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Neurofibromatosis Type 2 Diagnosis and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic NF2 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:8456229",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with bilateral vestibular schwannomas, young-onset meningiomas, unexplained hearing loss, or a family history should receive genetic counseling and NF2 testing; confirmed cases should have regular brain and inner-ear MRI, hearing tests, and eye evaluations, and first-degree relatives should be screened.",
+      "lifestyle_tips": [
+        "Develop a hearing and balance rehabilitation plan and use hearing aids or communication aids when needed",
+        "Attend regular MRI and hearing follow-up, and discuss treatment timing with the medical team if tumors grow or hearing worsens",
+        "Prevent falls, avoid head injury, and seek immediate care for sudden neurologic symptoms"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Neurosurgery / Otolaryngology / Neurology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have bilateral vestibular schwannomas or a young-onset meningioma—should I have NF2 genetic testing to confirm the diagnosis?",
+        "How often should I have brain and inner-ear MRI, hearing tests, and eye evaluations? When do tumors need medication or surgery?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Hearing loss is just aging or too much headphone use and has nothing to do with brain tumors or hereditary disease?”",
+      "truth": "Wrong! Young-onset hearing loss with tinnitus, balance problems, or bilateral vestibular schwannomas may indicate neurofibromatosis type 2. This is a hereditary condition requiring MRI, hearing tests, and genetic testing—it should not be dismissed as ordinary age-related hearing loss."
+    }
+  },
+  "WT1": {
+    "gene": {
+      "chinese_name": "WT1 Wilms Tumor Suppressor (Nephroblastoma Gene)",
+      "chromosome": "11p13 (Chromosome 11)",
+      "metaphor": {
+        "title": "🫘 The Kidney Development 【Blueprint Proofreader】(When broken, young children develop nephroblastoma)",
+        "story": "Fetal kidney development is like a precise construction project, and WT1 is the key transcription factor that proofreads the blueprint, telling kidney precursor cells when to proliferate and when to differentiate into mature nephrons. When WT1 is defective from birth, the blueprint loses its proofreader, immature nephroblasts keep proliferating, and Wilms tumor (nephroblastoma) forms. Young children may present with an abdominal mass, blood in the urine, or proteinuria, and some syndromes also include genitourinary abnormalities. Early diagnosis with abdominal imaging, pathology, and genetic testing, followed by integrated pediatric oncology care, gives most children good outcomes."
+      },
+      "plain_summary": "WT1 deficiency is associated with Wilms tumor (nephroblastoma) predisposition, and some cases are inherited in an autosomal dominant pattern. Young children may present with a painless abdominal mass, blood in the urine, proteinuria, or high blood pressure, and some have genitourinary developmental abnormalities. Abdominal ultrasound, CT, and pathology support diagnosis; surgery, chemotherapy, and radiation when needed are standard pediatric oncology care.",
+      "academic_summary": "WT1 encodes a zinc-finger transcription factor that regulates kidney and gonadal development, cell proliferation, and apoptosis. Germline or somatic pathogenic variants can cause Wilms tumor and are associated with WAGR syndrome, Denys-Drash syndrome, and Frasier syndrome. WT1 variant type correlates with phenotype, and some patients have urinary tract abnormalities, nephropathy, or gonadal developmental differences, requiring coordinated pediatric nephrology, urology, and oncology follow-up."
+    },
+    "disease": {
+      "chinese_name": "Wilms Tumor (Nephroblastoma) Predisposition Syndrome",
+      "categories": [
+        "Autosomal Dominant Hereditary Cancer Syndrome",
+        "Childhood Kidney Tumor",
+        "Genitourinary Developmental Abnormality"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Childhood Kidney Tumor (Early Diagnosis and Integrated Treatment Improve Cure Rates)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002667",
+        "name": "Nephroblastoma",
+        "chinese_name": "Wilms tumor / nephroblastoma"
+      },
+      {
+        "hpo_id": "HP:0000093",
+        "name": "Proteinuria",
+        "chinese_name": "Protein in the urine"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Dactinomycin / Vincristine / Doxorubicin (combination chemotherapy)",
+        "chinese_name": "Dactinomycin / Vincristine / Doxorubicin (combination chemotherapy)",
+        "mechanism": "Combination chemotherapy kills Wilms tumor cells and is often combined with surgery and radiation when indicated",
+        "approval_status": "FDA / TFDA / NMPA approved (per stage and pediatric oncology team assessment)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline or somatic WT1 pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "Wilms tumor accounts for about 5% to 6% of childhood cancers, estimated at about 1 in 10,000 children",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "During treatment, maintain balanced nutrition and adequate calories as advised by the pediatric oncology team and dietitian",
+        "Avoid self-prescribed high-dose antioxidant supplements or unregulated herbal products that may affect treatment and kidney function",
+        "Seek prompt care if a young child develops an abdominal mass, blood in the urine, proteinuria, or high blood pressure"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Wilms Tumor Diagnosis and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic WT1 variants; genetic testing helps distinguish hereditary from sporadic tumors",
+      "key_pmids": [
+        "PMID:2155109",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with a family history of Wilms tumor, bilateral tumors, genitourinary abnormalities, or a known WT1 variant should receive genetic counseling and regular abdominal ultrasound screening; affected children need long-term follow-up of kidney function, blood pressure, and second primary tumor risk.",
+      "lifestyle_tips": [
+        "Attend scheduled abdominal ultrasound and kidney function checks; do not stop follow-up just because treatment has ended",
+        "Track blood pressure, urine output, and urine foam; seek care promptly if abnormalities appear",
+        "After treatment, monitor growth, kidney function, and cardiovascular health, and receive vaccinations as advised"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Pediatric Hematology-Oncology / Pediatric Nephrology / Pediatric Urology / Genetic Counseling",
+      "questions": [
+        "Doctor, my child has an abdominal mass or blood in the urine—should we arrange urgent kidney ultrasound and WT1 genetic testing?",
+        "If Wilms tumor is confirmed, what are the stage and treatment plan? How should kidney function and blood pressure be monitored long term after treatment?",
+        "Should my other children and family members receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“A hard lump in a child’s abdomen is probably just constipation or gas; there is no need for immediate evaluation?”",
+      "truth": "Wrong! A painless abdominal mass in a child is an important warning sign of Wilms tumor, and blood in the urine, proteinuria, or high blood pressure make urgent evaluation even more important. Early imaging and pediatric oncology care greatly improve cure rates—do not dismiss it as an ordinary stomach problem."
+    }
+  },
+  "TSC1": {
+    "gene": {
+      "chinese_name": "TSC1 Tuberous Sclerosis Complex 1 (Hamartoma Suppressor Gene)",
+      "chromosome": "9q34.13 (Chromosome 9)",
+      "metaphor": {
+        "title": "🧠 The Cell Growth 【mTOR Master Brake】(When broken, tubers and angiomyolipomas grow in the brain, kidneys, and skin)",
+        "story": "Cell growth needs a strict braking system. The complex formed by TSC1 and TSC2 is the master brake on the mTOR growth pathway. When TSC1 is defective from birth, the brake loosens, mTOR signaling becomes overactive, and cells proliferate abnormally in the brain, kidneys, skin, and heart, causing tuberous sclerosis complex. Patients may develop seizures, developmental delay, skin patches, renal angiomyolipomas, and pulmonary lymphangioleiomyomatosis. Regular brain imaging, kidney ultrasound, and seizure control are central to multidisciplinary care."
+      },
+      "plain_summary": "TSC1 deficiency causes tuberous sclerosis complex type 1, an autosomal dominant condition. Patients may develop benign tumors or nodules in the brain, kidneys, skin, heart, and lungs, with common features including seizures, developmental delay, skin patches, and renal angiomyolipomas. Regular imaging, seizure control, and mTOR inhibitor therapy when appropriate reduce complications.",
+      "academic_summary": "TSC1 encodes hamartin, which forms the TSC complex with TSC2-encoded tuberin and negatively regulates mTORC1. Germline pathogenic variants cause tuberous sclerosis complex (TSC), in which mTOR pathway overactivation produces hamartomas across multiple organs, including cortical tubers, subependymal giant cell astrocytomas, renal angiomyolipomas, cardiac rhabdomyomas, and pulmonary lymphangioleiomyomatosis. Clinical expression is highly variable and requires coordinated neurology, nephrology, dermatology, and pulmonology follow-up."
+    },
+    "disease": {
+      "chinese_name": "Tuberous Sclerosis Complex Type 1",
+      "categories": [
+        "Autosomal Dominant Hereditary Tumor Syndrome",
+        "Neurocutaneous Syndrome",
+        "Multiorgan Hamartomas"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Neurocutaneous Syndrome (Seizure Control and Organ Monitoring Improve Long-Term Outcomes)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0009720",
+        "name": "Renal angiomyolipoma",
+        "chinese_name": "Benign kidney tumor with blood vessels, muscle, and fat"
+      },
+      {
+        "hpo_id": "HP:0001250",
+        "name": "Seizure",
+        "chinese_name": "Epileptic seizure"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Everolimus (mTOR inhibitor)",
+        "chinese_name": "Everolimus (mTOR inhibitor)",
+        "mechanism": "Inhibits overactive mTOR signaling and is used for selected renal angiomyolipomas, subependymal giant cell astrocytomas, or as an adjunct for seizure control",
+        "approval_status": "FDA / TFDA / NMPA approved (per indication and physician direction)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline TSC1 pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "Estimated incidence about 1 in 6,000 to 1 in 10,000; TSC1 and TSC2 variants each account for a portion of cases",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "If seizures are present, take medication consistently as prescribed and avoid known triggers such as sleep deprivation and excessive alcohol",
+        "Seek prompt care for severe headache, vomiting, vision changes, blood in the urine, or flank pain to evaluate tumor complications"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Tuberous Sclerosis Complex Diagnosis and Surveillance Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic TSC1 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:9242607",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with seizures, developmental delay, skin patches, renal angiomyolipomas, or a family history should receive genetic counseling and TSC1/TSC2 testing; confirmed cases should have regular brain MRI, kidney imaging, and cardiac and pulmonary evaluation per guidelines.",
+      "lifestyle_tips": [
+        "Keep a seizure diary and medication reminders, and discuss the best seizure control strategy with neurology",
+        "Monitor kidney tumor size and kidney function, and avoid high-impact contact sports that could cause tumor bleeding",
+        "Watch for skin, dental, and eye changes, and attend ophthalmology and dental visits as advised"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Neurology / Pediatric Neurology / Nephrology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have seizures, skin patches, and renal angiomyolipomas—should I have TSC1/TSC2 genetic testing to confirm tuberous sclerosis complex?",
+        "How often should I have brain MRI, kidney ultrasound, and other organ assessments? When should mTOR inhibitor therapy be considered?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Seizures only need medication control; skin patches and kidney tumors have nothing to do with hereditary disease?”",
+      "truth": "Wrong! Seizures with skin patches, renal angiomyolipomas, or developmental delay may indicate tuberous sclerosis complex. This hereditary disease affects multiple organs and requires long-term brain, kidney, skin, and lung monitoring—not just treatment of a single symptom."
+    }
+  },
+  "TSC2": {
+    "gene": {
+      "chinese_name": "TSC2 Tuberous Sclerosis Complex 2 (Hamartoma Suppressor Gene)",
+      "chromosome": "16p13.3 (Chromosome 16)",
+      "metaphor": {
+        "title": "🧠 The Cell Growth 【mTOR Master Brake】(When broken, tubers and angiomyolipomas grow in the brain, kidneys, and skin)",
+        "story": "TSC2 and TSC1 form the master brake on the mTOR growth pathway. When TSC2 is defective from birth, the brake loosens, mTOR signaling becomes overactive, and cells proliferate abnormally in the brain, kidneys, skin, and heart, causing tuberous sclerosis complex. Patients may develop seizures, developmental delay, skin patches, renal angiomyolipomas, and pulmonary lymphangioleiomyomatosis. TSC2 variants can be associated with more pronounced disease, and regular brain imaging, kidney ultrasound, and seizure control remain central to multidisciplinary care."
+      },
+      "plain_summary": "TSC2 deficiency causes tuberous sclerosis complex type 2, an autosomal dominant condition. Patients may develop benign tumors or nodules in the brain, kidneys, skin, heart, and lungs, with common features including seizures, developmental delay, skin patches, and renal angiomyolipomas. Regular imaging, seizure control, and mTOR inhibitor therapy when appropriate reduce complications.",
+      "academic_summary": "TSC2 encodes tuberin, which forms the TSC complex with TSC1-encoded hamartin and negatively regulates mTORC1. Germline pathogenic variants cause tuberous sclerosis complex (TSC), in which mTOR pathway overactivation produces hamartomas across multiple organs, including cortical tubers, subependymal giant cell astrocytomas, renal angiomyolipomas, cardiac rhabdomyomas, and pulmonary lymphangioleiomyomatosis. TSC2 variants are generally associated with more severe neurologic and renal manifestations and require long-term multidisciplinary follow-up."
+    },
+    "disease": {
+      "chinese_name": "Tuberous Sclerosis Complex Type 2",
+      "categories": [
+        "Autosomal Dominant Hereditary Tumor Syndrome",
+        "Neurocutaneous Syndrome",
+        "Multiorgan Hamartomas"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Neurocutaneous Syndrome (Seizure Control and Organ Monitoring Improve Long-Term Outcomes)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0009720",
+        "name": "Renal angiomyolipoma",
+        "chinese_name": "Benign kidney tumor with blood vessels, muscle, and fat"
+      },
+      {
+        "hpo_id": "HP:0001250",
+        "name": "Seizure",
+        "chinese_name": "Epileptic seizure"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Everolimus (mTOR inhibitor)",
+        "chinese_name": "Everolimus (mTOR inhibitor)",
+        "mechanism": "Inhibits overactive mTOR signaling and is used for selected renal angiomyolipomas, subependymal giant cell astrocytomas, or as an adjunct for seizure control",
+        "approval_status": "FDA / TFDA / NMPA approved (per indication and physician direction)"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline TSC2 pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "Estimated incidence about 1 in 6,000 to 1 in 10,000; TSC2 variants account for a substantial proportion of cases",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "If seizures are present, take medication consistently as prescribed and avoid known triggers such as sleep deprivation and excessive alcohol",
+        "Seek prompt care for severe headache, vomiting, vision changes, blood in the urine, or flank pain to evaluate tumor complications"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Tuberous Sclerosis Complex Diagnosis and Surveillance Guideline",
+      "clinvar_summary_chinese": "ClinVar lists many pathogenic and likely pathogenic TSC2 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:8261515",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with seizures, developmental delay, skin patches, renal angiomyolipomas, or a family history should receive genetic counseling and TSC1/TSC2 testing; confirmed cases should have regular brain MRI, kidney imaging, and cardiac and pulmonary evaluation per guidelines.",
+      "lifestyle_tips": [
+        "Keep a seizure diary and medication reminders, and discuss the best seizure control strategy with neurology",
+        "Monitor kidney tumor size and kidney function, and avoid high-impact contact sports that could cause tumor bleeding",
+        "Watch for skin, dental, and eye changes, and attend ophthalmology and dental visits as advised"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Neurology / Pediatric Neurology / Nephrology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have seizures, skin patches, and renal angiomyolipomas—should I have TSC1/TSC2 genetic testing to confirm tuberous sclerosis complex?",
+        "How often should I have brain MRI, kidney ultrasound, and other organ assessments? When should mTOR inhibitor therapy be considered?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Seizures only need medication control; skin patches and kidney tumors have nothing to do with hereditary disease?”",
+      "truth": "Wrong! Seizures with skin patches, renal angiomyolipomas, or developmental delay may indicate tuberous sclerosis complex. This hereditary disease affects multiple organs and requires long-term brain, kidney, skin, and lung monitoring—not just treatment of a single symptom."
+    }
+  },
+  "SDHB": {
+    "gene": {
+      "chinese_name": "SDHB Succinate Dehydrogenase Complex Iron Sulfur Subunit B (Paraganglioma Gene)",
+      "chromosome": "1p36.13 (Chromosome 1)",
+      "metaphor": {
+        "title": "⚡ The Mitochondrial 【Energy Plant Worker】(When broken, pheochromocytomas and paragangliomas grow)",
+        "story": "Mitochondria are the cell’s energy plants, and SDHB is an important worker in respiratory chain complex II, converting succinate to fumarate and producing energy. When SDHB is defective from birth, the energy plant malfunctions, succinate accumulates, and hypoxia and growth signals are activated. Tumors may grow in the adrenal medulla or paraganglia, causing paroxysmal high blood pressure, palpitations, sweating, and headache. Some SDHB-related tumors have a higher risk of malignancy and metastasis, requiring long-term imaging and hormone surveillance."
+      },
+      "plain_summary": "SDHB deficiency causes hereditary paraganglioma-pheochromocytoma syndrome (SDHB type), an autosomal dominant condition. Patients may develop pheochromocytomas or paragangliomas in the adrenal glands, abdomen, or head and neck, causing paroxysmal high blood pressure, palpitations, sweating, and headache. SDHB-related tumors have a higher malignancy and metastasis risk, requiring regular hormone testing, imaging, and multidisciplinary treatment.",
+      "academic_summary": "SDHB encodes succinate dehydrogenase complex iron sulfur subunit B, the catalytic subunit of mitochondrial respiratory chain complex II. Germline pathogenic variants cause hereditary paraganglioma-pheochromocytoma syndrome (SDHB type); succinate accumulation inhibits prolyl hydroxylases and stabilizes HIF, activating pseudohypoxic signaling and tumorigenesis. SDHB-related paragangliomas and pheochromocytomas have a higher risk of malignancy and metastasis and require lifelong surveillance."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Paraganglioma-Pheochromocytoma Syndrome (SDHB Type)",
+      "categories": [
+        "Autosomal Dominant Hereditary Tumor Syndrome",
+        "Neuroendocrine Tumors",
+        "Adrenal and Paraganglial Disease"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Neuroendocrine Tumors (Regular Hormone and Imaging Surveillance Enable Early Management)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002668",
+        "name": "Paraganglioma",
+        "chinese_name": "Paraganglioma"
+      },
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "Pheochromocytoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "Surgical resection and surveillance",
+        "mechanism": "Removes hormone-secreting tumors and monitors for recurrence, metastasis, and new tumors",
+        "approval_status": "International paraganglioma and pheochromocytoma guideline standard of care"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline SDHB pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "SDHB variants account for a substantial proportion of hereditary paraganglioma-pheochromocytoma cases; overall incidence is estimated at about 1 in 300,000",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "If blood pressure rises in paroxysms, avoid intense emotional stress, overexertion, and foods high in tyramine, and monitor blood pressure as advised",
+        "Seek prompt care for paroxysmal headache, palpitations, sweating, chest pain, or marked blood pressure elevation to evaluate pheochromocytoma"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Hereditary Paraganglioma and Pheochromocytoma Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic SDHB variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:11479592",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with pheochromocytoma, paraganglioma, young-onset hypertension, or a family history should receive genetic counseling and SDHB testing; confirmed cases should have regular plasma and urine catecholamine metabolite testing and head-neck, chest, and abdominal imaging.",
+      "lifestyle_tips": [
+        "Measure blood pressure regularly and record paroxysmal symptoms to help assess tumor activity",
+        "Avoid smoking, excessive alcohol, and intense emotional stress to reduce blood pressure swings",
+        "Tell the medical team about the tumor history before surgery to avoid unassessed anesthesia or drugs triggering a hypertensive crisis"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Endocrinology / Nephrology / Otolaryngology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have paroxysmal high blood pressure, palpitations, and sweating—should I be evaluated for pheochromocytoma or paraganglioma and have SDHB genetic testing?",
+        "How often should my catecholamine metabolites and imaging be monitored? When do tumors need surgery or other treatment?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Paroxysmal high blood pressure is just stress or autonomic imbalance and cannot be caused by a tumor?”",
+      "truth": "Wrong! Paroxysmal high blood pressure with palpitations, sweating, and headache may be caused by catecholamine-secreting pheochromocytoma or paraganglioma. Young-onset disease or a family history should prompt hormone testing, imaging, and SDHB and other genetic testing—not just a stress or autonomic diagnosis."
+    }
+  },
+  "SDHD": {
+    "gene": {
+      "chinese_name": "SDHD Succinate Dehydrogenase Complex Subunit D (Paraganglioma Gene)",
+      "chromosome": "11q23.1 (Chromosome 11)",
+      "metaphor": {
+        "title": "⚡ The Mitochondrial 【Energy Plant Regulator】(When broken, head and neck or adrenal paragangliomas grow)",
+        "story": "SDHD is a regulatory subunit of mitochondrial respiratory chain complex II, helping SDHB and other subunits function stably to convert succinate to fumarate. When SDHD is defective from birth, energy plant signaling becomes abnormal, succinate accumulates, and hypoxia and growth pathways are activated. Paragangliomas or pheochromocytomas may grow in the head and neck, adrenal glands, or abdomen, causing paroxysmal high blood pressure, palpitations, tinnitus, or a neck mass. SDHD-related tumors are often associated with paternal inheritance and require long-term hormone and imaging surveillance."
+      },
+      "plain_summary": "SDHD deficiency causes hereditary paraganglioma-pheochromocytoma syndrome (SDHD type), an autosomal dominant condition often associated with paternal inheritance. Patients may develop paragangliomas or pheochromocytomas in the head and neck, adrenal glands, or abdomen, causing paroxysmal high blood pressure, palpitations, tinnitus, or a neck mass. Regular hormone testing, imaging, and multidisciplinary treatment are central to long-term care.",
+      "academic_summary": "SDHD encodes succinate dehydrogenase complex subunit D, the membrane-anchoring subunit of mitochondrial respiratory chain complex II. Germline pathogenic variants cause hereditary paraganglioma-pheochromocytoma syndrome (SDHD type); succinate accumulation inhibits prolyl hydroxylases and stabilizes HIF, activating pseudohypoxic signaling and tumorigenesis. SDHD-related tumors often show paternal inheritance and imprinting effects, with a higher incidence of head and neck paragangliomas, requiring lifelong surveillance."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Paraganglioma-Pheochromocytoma Syndrome (SDHD Type)",
+      "categories": [
+        "Autosomal Dominant Hereditary Tumor Syndrome",
+        "Neuroendocrine Tumors",
+        "Head and Neck and Adrenal Tumors"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Neuroendocrine Tumors (Regular Hormone and Imaging Surveillance Enable Early Management)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002668",
+        "name": "Paraganglioma",
+        "chinese_name": "Paraganglioma"
+      },
+      {
+        "hpo_id": "HP:0000822",
+        "name": "Hypertension",
+        "chinese_name": "Paroxysmal high blood pressure"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "Surgical resection and surveillance",
+        "mechanism": "Removes hormone-secreting tumors and monitors for recurrence, metastasis, and new tumors",
+        "approval_status": "International paraganglioma and pheochromocytoma guideline standard of care"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline SDHD pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "SDHD variants account for a substantial proportion of hereditary paraganglioma-pheochromocytoma cases; overall incidence is estimated at about 1 in 300,000",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "If blood pressure rises in paroxysms, avoid intense emotional stress, overexertion, and foods high in tyramine, and monitor blood pressure as advised",
+        "Seek prompt care for paroxysmal headache, palpitations, sweating, tinnitus, or a neck mass"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Hereditary Paraganglioma and Pheochromocytoma Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic SDHD variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:10657297",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with head and neck paraganglioma, pheochromocytoma, young-onset hypertension, or a family history should receive genetic counseling and SDHD testing; confirmed cases should have regular catecholamine metabolite testing and head-neck, chest, and abdominal imaging.",
+      "lifestyle_tips": [
+        "Measure blood pressure regularly and record paroxysmal symptoms to help assess tumor activity",
+        "Avoid smoking, excessive alcohol, and intense emotional stress to reduce blood pressure swings",
+        "Tell the medical team about the tumor history before surgery to avoid unassessed anesthesia or drugs triggering a hypertensive crisis"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Endocrinology / Otolaryngology / Neurosurgery / Genetic Counseling",
+      "questions": [
+        "Doctor, I have a neck mass, tinnitus, and paroxysmal high blood pressure—should I be evaluated for paraganglioma and have SDHD genetic testing?",
+        "How often should my catecholamine metabolites and imaging be monitored? When do tumors need surgery or other treatment?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“A neck lump is just an enlarged lymph node, and tinnitus and high blood pressure are just stress—not a hereditary tumor?”",
+      "truth": "Wrong! A neck mass with tinnitus, paroxysmal high blood pressure, palpitations, or sweating may be a paraganglioma or pheochromocytoma. Young-onset disease or a family history should prompt hormone testing, imaging, and SDHD and other genetic testing—not just a lymph node or stress explanation."
+    }
+  },
+  "FLCN": {
+    "gene": {
+      "chinese_name": "FLCN Folliculin (Birt-Hogg-Dubé Syndrome Gene)",
+      "chromosome": "17p11.2 (Chromosome 17)",
+      "metaphor": {
+        "title": "🫁 The Skin, Lung, and Kidney 【Structural Stabilizer】(When broken, skin fibrofolliculomas, spontaneous pneumothorax, and renal cell carcinoma appear)",
+        "story": "FLCN encodes folliculin, which participates in cell metabolism, cell adhesion, and tissue structural stability—like a structural stabilizer for the skin, lungs, and kidneys. When FLCN is defective from birth, multiple fibrofolliculomas may appear on the skin, lung cysts may rupture and cause spontaneous pneumothorax, and the kidneys may develop several histologic types of renal cell carcinoma. Patients may present with recurrent pneumothorax, small skin bumps, or kidney tumors. Regular chest and kidney imaging, skin checks, and genetic counseling are key to early detection and management."
+      },
+      "plain_summary": "FLCN deficiency causes Birt-Hogg-Dubé syndrome, an autosomal dominant condition. Patients may develop fibrofolliculomas on the skin, lung cysts with recurrent spontaneous pneumothorax, and a higher risk of renal cell carcinoma. Regular chest and kidney imaging, skin checks, and genetic counseling help detect and manage complications early.",
+      "academic_summary": "FLCN encodes folliculin, which interacts with proteins such as FLCNIP1 and participates in mTOR, AMPK, and cell adhesion signaling. Germline pathogenic variants cause Birt-Hogg-Dubé (BHD) syndrome, characterized by multiple fibrofolliculomas, lung cysts and spontaneous pneumothorax, and several histologic types of renal cell carcinoma (especially chromophobe and oncocytic hybrid tumors). BHD patients require lifelong lung and kidney tumor surveillance."
+    },
+    "disease": {
+      "chinese_name": "Birt-Hogg-Dubé Syndrome",
+      "categories": [
+        "Autosomal Dominant Hereditary Tumor Syndrome",
+        "Skin and Lung Cystic Disease",
+        "Inherited Renal Cell Carcinoma Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Inherited Renal Cell Carcinoma and Pneumothorax Risk (Regular Imaging and Skin Monitoring Enable Early Management)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002107",
+        "name": "Pneumothorax",
+        "chinese_name": "Spontaneous collapsed lung"
+      },
+      {
+        "hpo_id": "HP:0005584",
+        "name": "Renal cell carcinoma",
+        "chinese_name": "Increased kidney cancer risk"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "Surgical resection and surveillance",
+        "mechanism": "Removes kidney tumors or manages recurrent pneumothorax and monitors for new tumors and lung cyst complications",
+        "approval_status": "International Birt-Hogg-Dubé syndrome guideline standard of care"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline FLCN pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "Estimated incidence about 1 in 200,000; likely underdiagnosed",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking, which increases the risk of lung cyst rupture and pneumothorax and harms kidney and cardiovascular health",
+        "Avoid excessive alcohol, and maintain a healthy weight and regular exercise",
+        "Seek immediate care for sudden one-sided chest pain, shortness of breath, or coughing blood to rule out pneumothorax"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Birt-Hogg-Dubé Syndrome Diagnosis and Surveillance Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic FLCN variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:12228710",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with recurrent spontaneous pneumothorax, multiple skin fibrofolliculomas, renal cell carcinoma, or a family history should receive genetic counseling and FLCN testing; confirmed cases should have regular chest and kidney imaging, skin checks, and blood pressure monitoring.",
+      "lifestyle_tips": [
+        "Stop smoking and avoid secondhand smoke to reduce pneumothorax and kidney tumor risk",
+        "Avoid high-pressure environments or extreme pressure changes; discuss any pneumothorax history with pulmonology first",
+        "Monitor kidney imaging and function regularly, and seek prompt care for blood in the urine, flank pain, or an abdominal mass"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Pulmonology / Nephrology / Dermatology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have recurrent spontaneous pneumothorax and multiple small skin bumps—should I have FLCN genetic testing for Birt-Hogg-Dubé syndrome?",
+        "How often should I have chest and kidney imaging? When do kidney tumors need surgery?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Spontaneous pneumothorax is just caused by being tall and thin or smoking and has nothing to do with hereditary kidney tumors?”",
+      "truth": "Wrong! Recurrent spontaneous pneumothorax with multiple skin fibrofolliculomas or a family history may indicate Birt-Hogg-Dubé syndrome, which carries a higher renal cell carcinoma risk. It requires genetic testing and long-term chest and kidney imaging—not just treatment of a single pneumothorax."
+    }
+  },
+  "MAX": {
+    "gene": {
+      "chinese_name": "MAX MYC-Associated Factor X (Hereditary Pheochromocytoma Gene)",
+      "chromosome": "14q23.3 (Chromosome 14)",
+      "metaphor": {
+        "title": "⚡ The Adrenal 【Hormone Switch Regulator】(When broken, pheochromocytoma and paroxysmal high blood pressure appear)",
+        "story": "The MAX protein is an important partner in the MYC transcriptional network, regulating cell growth, metabolism, and neuroendocrine cells—like a hormone switch regulator in the adrenal medulla. When MAX is defective from birth, regulation becomes unbalanced, and a pheochromocytoma may grow in the adrenal gland, secreting excess catecholamines and causing paroxysmal high blood pressure, palpitations, sweating, and headache. MAX-related tumors are often associated with paternal inheritance and may be bilateral or multifocal. Regular blood pressure and hormone monitoring, imaging, and multidisciplinary treatment are key to controlling tumors and cardiovascular risk."
+      },
+      "plain_summary": "MAX deficiency causes hereditary pheochromocytoma (MAX type), an autosomal dominant condition often associated with paternal inheritance. Patients may develop pheochromocytoma in the adrenal gland, causing paroxysmal high blood pressure, palpitations, sweating, and headache, and some have bilateral or multifocal tumors. Regular blood pressure and catecholamine monitoring, imaging, and surgery when needed reduce cardiovascular complications.",
+      "academic_summary": "MAX encodes MYC-associated factor X, a bHLH-LZ transcription factor that forms complexes with MYC family proteins to regulate cell growth and metabolism. Germline pathogenic variants cause hereditary pheochromocytoma (MAX type), often presenting with paternal inheritance and bilateral adrenal pheochromocytoma. MAX-related tumors may occur at a younger age and require long-term monitoring of blood pressure, catecholamine metabolites, and imaging to detect recurrence or new tumors early."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Pheochromocytoma Syndrome (MAX Type)",
+      "categories": [
+        "Autosomal Dominant Hereditary Tumor Syndrome",
+        "Adrenal Neuroendocrine Tumor",
+        "Paroxysmal Hypertension"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Pheochromocytoma (Blood Pressure and Hormone Monitoring Reduce Cardiovascular Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "Pheochromocytoma"
+      },
+      {
+        "hpo_id": "HP:0000822",
+        "name": "Hypertension",
+        "chinese_name": "Paroxysmal high blood pressure"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "Surgical resection and surveillance",
+        "mechanism": "Removes catecholamine-secreting tumors and monitors for recurrence, contralateral adrenal involvement, and new tumors",
+        "approval_status": "International pheochromocytoma and paraganglioma guideline standard of care"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline MAX pathogenic variants (missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "MAX-related hereditary pheochromocytoma is uncommon; overall pheochromocytoma incidence is estimated at about 1 in 300,000",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "If blood pressure rises in paroxysms, avoid intense emotional stress, overexertion, and foods high in tyramine, and monitor blood pressure as advised",
+        "Seek prompt care for paroxysmal headache, palpitations, sweating, chest pain, or marked blood pressure elevation to evaluate pheochromocytoma"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Hereditary Pheochromocytoma and Paraganglioma Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic MAX variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:21685915",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with young-onset pheochromocytoma, bilateral adrenal tumors, paroxysmal hypertension, or a family history should receive genetic counseling and MAX testing; confirmed cases should have regular blood pressure, catecholamine metabolite, and adrenal imaging surveillance.",
+      "lifestyle_tips": [
+        "Measure blood pressure regularly and record paroxysmal symptoms to help assess tumor activity",
+        "Avoid smoking, excessive alcohol, and intense emotional stress to reduce blood pressure swings",
+        "Tell the medical team about the tumor history before surgery to avoid unassessed anesthesia or drugs triggering a hypertensive crisis"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Endocrinology / Nephrology / Urology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have young-onset pheochromocytoma or bilateral adrenal tumors—should I have MAX genetic testing?",
+        "How often should my blood pressure, catecholamine metabolites, and adrenal imaging be monitored? When do tumors need surgery?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Paroxysmal high blood pressure and palpitations are just stress or too much coffee—not an adrenal tumor?”",
+      "truth": "Wrong! Paroxysmal high blood pressure with palpitations, sweating, and headache may be caused by a catecholamine-secreting pheochromocytoma. Young-onset disease, bilateral tumors, or a family history should prompt hormone testing, imaging, and MAX and other genetic testing—not just a stress or caffeine explanation."
+    }
+  },
+  "COL3A1": {
+    "gene": {
+      "chinese_name": "COL3A1 Collagen Type III Alpha 1 Chain (Vascular Ehlers-Danlos Syndrome Gene)",
+      "chromosome": "2q32.2 (Chromosome 2)",
+      "metaphor": {
+        "title": "🧵 The 【Type III Collagen Rebar】 in Blood Vessels and Skin (When broken, vessel walls become fragile and prone to rupture)",
+        "story": "Connective tissue is like the steel and springs inside a building, and type III collagen is the rebar that supports blood vessel walls, skin, and internal organs. COL3A1 makes the alpha-1 chain of this rebar. When the gene is defective from birth, the rebar is poor quality: vessel walls become thin and fragile, and the bowel and uterus are also prone to rupture. Patients may bruise easily, have thin translucent skin showing veins, and overly flexible joints; the greatest danger is aortic or arterial dissection at a young age. Avoiding contact sports, controlling blood pressure, and working closely with cardiology are key to reducing life-threatening complications."
+      },
+      "plain_summary": "COL3A1 deficiency causes vascular Ehlers-Danlos syndrome (vEDS), an autosomal dominant condition. Patients have thin skin, easy bruising, and flexible joints, and their blood vessel walls are fragile, so aortic or arterial aneurysms, dissection, or rupture may occur at a young age; the bowel and uterus also have a higher rupture risk. Regular cardiovascular imaging, blood pressure control, avoidance of high-impact sports, and multidisciplinary vigilance reduce serious complications.",
+      "academic_summary": "COL3A1 encodes the alpha-1 chain of type III collagen, a major extracellular matrix component of blood vessel walls, skin, bowel, and uterus. Germline pathogenic variants cause vascular Ehlers-Danlos syndrome (vEDS), in which abnormal type III collagen synthesis or secretion makes blood vessels and hollow organs fragile. Clinical features include thin skin, easy bruising, joint hypermobility, arterial aneurysm and dissection, and bowel or uterine rupture. Vascular complications in vEDS can be early and life-threatening, requiring lifelong cardiovascular surveillance and cautious invasive procedures."
+    },
+    "disease": {
+      "chinese_name": "Vascular Ehlers-Danlos Syndrome (vEDS)",
+      "categories": [
+        "Autosomal Dominant Connective Tissue Disease",
+        "Inherited Aortic and Vascular Disease",
+        "Multiorgan Fragility Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 High-Risk Vascular Fragility Syndrome (Regular Cardiovascular Surveillance and Avoiding Impact Reduce Life-Threatening Complications)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "Aortic aneurysm"
+      },
+      {
+        "hpo_id": "HP:0000978",
+        "name": "Bruising susceptibility",
+        "chinese_name": "Easy bruising"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Celiprolol / Beta-blockers",
+        "chinese_name": "Celiprolol / Beta-blockers",
+        "mechanism": "Lowers blood pressure and vessel wall shear stress, reducing aneurysm expansion and dissection risk",
+        "approval_status": "Cardiology-directed (standard blood pressure care in vEDS)"
+      },
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "Losartan / Angiotensin receptor blockers",
+        "mechanism": "Controls blood pressure and reduces vessel wall tension as a blood pressure management option",
+        "approval_status": "Cardiology-directed"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline COL3A1 pathogenic variants (missense, splice-site, nonsense, and large deletions)",
+      "population_frequency": "Estimated incidence about 1 in 50,000 to 1 in 200,000",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "practical_guidance": "People with hereditary thoracic aortic conditions should discuss blood pressure management with their cardiologist and inform the care team to avoid fluoroquinolone antibiotics (such as ciprofloxacin or levofloxacin) to reduce the risk of aortic complications.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid high-impact sports, weight training, and unassessed competitive sports to reduce the risk of vascular or organ rupture",
+        "Maintain a healthy weight, stop smoking, and control blood pressure; attend scheduled aortic imaging as advised by cardiology",
+        "Seek immediate care for sudden chest, back, or abdominal pain or severe headache, and tell the team about the vEDS diagnosis"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Vascular Ehlers-Danlos Syndrome Care Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic COL3A1 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:10706896",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with young-onset aneurysm or dissection, easy bruising, thin skin, or a family history should receive genetic counseling and COL3A1 testing; confirmed cases need coordinated cardiology, vascular surgery, and genetics follow-up of the aorta and other vessels.",
+      "lifestyle_tips": [
+        "Avoid contact sports, weight training, roller coasters, and activities that cause sudden blood pressure changes",
+        "Monitor blood pressure and aortic imaging regularly, and inform the medical team of the vEDS diagnosis before any invasive procedure or surgery",
+        "Carry medical alert information and seek emergency care immediately for sudden chest, back, or abdominal pain or neurologic symptoms"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Vascular Surgery / Genetic Counseling",
+      "questions": [
+        "Doctor, I had an aneurysm or dissection at a young age and bruise easily—should I have COL3A1 genetic testing for vascular EDS?",
+        "What should my blood pressure target be? Do I need a beta-blocker or ARB, and how often should aortic imaging be repeated?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Easy bruising is just thin skin or a vitamin deficiency and has nothing to do with aortic rupture?”",
+      "truth": "Wrong! Easy bruising with thin skin, flexible joints, or young-onset aneurysm may indicate vascular Ehlers-Danlos syndrome. These patients have fragile vessel walls, and the aorta or bowel can rupture suddenly; they need genetic testing and long-term cardiovascular surveillance—not just a skin explanation."
+    }
+  },
+  "TGFBR1": {
+    "gene": {
+      "chinese_name": "TGFBR1 Transforming Growth Factor Beta Receptor 1 (Loeys-Dietz Syndrome Gene)",
+      "chromosome": "9q22.33 (Chromosome 9)",
+      "metaphor": {
+        "title": "🧵 The Connective Tissue 【TGF-β Signaling Gate】(When broken, aortic aneurysm, arterial tortuosity, and skeletal abnormalities appear together)",
+        "story": "TGF-β signaling regulates connective tissue growth and repair, and TGFBR1 is an important receptor gate in this pathway. When TGFBR1 is defective from birth, signaling becomes unbalanced, vessel wall connective tissue weakens, the aorta tends to dilate into an aneurysm, and arteries may become tortuous. Patients may be tall, have overly flexible joints, cleft palate, or eye abnormalities; the greatest danger is aortic dissection at a young age. Regular cardiovascular imaging, blood pressure control, and avoiding contact sports are key to reducing complications."
+      },
+      "plain_summary": "TGFBR1 deficiency causes Loeys-Dietz syndrome type 1, an autosomal dominant condition. Patients may have aortic aneurysm, arterial tortuosity, joint hypermobility, skeletal or craniofacial abnormalities, and a risk of young-onset aortic dissection. Regular cardiovascular imaging, blood pressure control, avoidance of high-impact sports, and multidisciplinary follow-up reduce serious complications.",
+      "academic_summary": "TGFBR1 encodes the TGF-β type I receptor, which signals through SMAD2/3 and regulates connective tissue homeostasis. Germline pathogenic variants cause Loeys-Dietz syndrome (LDS), characterized by aortic aneurysm and dissection, arterial tortuosity, joint hypermobility, craniofacial abnormalities, and skin features. Vascular complications in LDS can occur earlier and more extensively than in Marfan syndrome, requiring aggressive blood pressure control, imaging surveillance, and family screening."
+    },
+    "disease": {
+      "chinese_name": "Loeys-Dietz Syndrome Type 1",
+      "categories": [
+        "Autosomal Dominant Connective Tissue Disease",
+        "Inherited Aortic and Vascular Disease",
+        "Craniofacial and Skeletal Abnormalities"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 High-Risk Aortic Disease (Early Surveillance and Blood Pressure Control Reduce Dissection Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "Aortic aneurysm"
+      },
+      {
+        "hpo_id": "HP:0005116",
+        "name": "Arterial tortuosity",
+        "chinese_name": "Twisted, tortuous arteries"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "Losartan / Angiotensin receptor blockers",
+        "mechanism": "Controls blood pressure and reduces aortic wall tension, slowing aneurysm expansion",
+        "approval_status": "Cardiology-directed (standard blood pressure care in LDS)"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-blockers",
+        "mechanism": "Lowers heart rate and blood pressure, reducing aortic wall shear stress",
+        "approval_status": "Cardiology-directed"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline TGFBR1 pathogenic variants (missense, splice-site, nonsense, and large deletions)",
+      "population_frequency": "Loeys-Dietz syndrome incidence is estimated at about 1 in 50,000 to 1 in 100,000",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "practical_guidance": "People with hereditary thoracic aortic conditions should discuss blood pressure management with their cardiologist and inform the care team to avoid fluoroquinolone antibiotics (such as ciprofloxacin or levofloxacin) to reduce the risk of aortic complications.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid high-impact sports, weight training, and unassessed competitive sports to reduce aortic dissection risk",
+        "Maintain a healthy weight, stop smoking, and control blood pressure; attend scheduled aortic imaging as advised by cardiology",
+        "Seek immediate care for sudden chest or back pain or severe abdominal pain, and tell the team about the Loeys-Dietz diagnosis"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Loeys-Dietz Syndrome Care Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic TGFBR1 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:15731757",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with young-onset aortic aneurysm or dissection, arterial tortuosity, joint hypermobility, craniofacial abnormalities, or a family history should receive genetic counseling and TGFBR1/TGFBR2 testing; confirmed cases need long-term cardiovascular imaging surveillance.",
+      "lifestyle_tips": [
+        "Avoid contact sports and weight training; choose low-impact aerobic activity after discussing it with cardiology",
+        "Monitor blood pressure and aortic imaging regularly, and inform the team of the diagnosis before any surgery or invasive procedure",
+        "Seek emergency care immediately for sudden chest or back pain, breathlessness, or neurologic symptoms"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Vascular Surgery / Genetic Counseling",
+      "questions": [
+        "Doctor, I developed an aortic aneurysm or arterial tortuosity at a young age—should I have TGFBR1/TGFBR2 genetic testing for Loeys-Dietz syndrome?",
+        "What is my blood pressure target and medication plan? How often should aortic imaging be repeated?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Aortic aneurysm only happens in older people, so a young person’s aneurysm must be sporadic?”",
+      "truth": "Wrong! Young-onset aortic aneurysm or dissection with arterial tortuosity, joint laxity, or a family history may indicate Loeys-Dietz syndrome or another inherited connective tissue disease. It requires genetic testing and long-term cardiovascular surveillance—not just a sporadic explanation."
+    }
+  },
+  "TGFBR2": {
+    "gene": {
+      "chinese_name": "TGFBR2 Transforming Growth Factor Beta Receptor 2 (Loeys-Dietz Syndrome Gene)",
+      "chromosome": "3p24.1 (Chromosome 3)",
+      "metaphor": {
+        "title": "🧵 The Connective Tissue 【TGF-β Signaling Gate】(When broken, aortic aneurysm and dissection risk rise)",
+        "story": "TGF-β signaling regulates connective tissue growth and repair, and TGFBR2 is an important receptor gate in this pathway. When TGFBR2 is defective from birth, signaling becomes unbalanced, vessel wall connective tissue weakens, and the aorta tends to dilate into an aneurysm or even dissect. Patients may be tall, have overly flexible joints, skin features, or craniofacial abnormalities; the greatest danger is aortic dissection at a young age. Regular cardiovascular imaging, blood pressure control, and avoiding contact sports are key to reducing complications."
+      },
+      "plain_summary": "TGFBR2 deficiency causes Loeys-Dietz syndrome type 2, an autosomal dominant condition. Patients may have aortic aneurysm, aortic dissection, joint hypermobility, skeletal or craniofacial abnormalities, and a risk of young-onset vascular complications. Regular cardiovascular imaging, blood pressure control, avoidance of high-impact sports, and multidisciplinary follow-up reduce serious complications.",
+      "academic_summary": "TGFBR2 encodes the TGF-β type II receptor, which partners with type I receptors to initiate SMAD2/3 signaling and regulate connective tissue homeostasis. Germline pathogenic variants cause Loeys-Dietz syndrome (LDS), characterized by aortic aneurysm and dissection, arterial tortuosity, joint hypermobility, craniofacial abnormalities, and skin features. Vascular complications in LDS can be early and extensive, requiring aggressive blood pressure control, imaging surveillance, and family screening."
+    },
+    "disease": {
+      "chinese_name": "Loeys-Dietz Syndrome Type 2",
+      "categories": [
+        "Autosomal Dominant Connective Tissue Disease",
+        "Inherited Aortic and Vascular Disease",
+        "Craniofacial and Skeletal Abnormalities"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 High-Risk Aortic Disease (Early Surveillance and Blood Pressure Control Reduce Dissection Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "Aortic aneurysm"
+      },
+      {
+        "hpo_id": "HP:0002647",
+        "name": "Aortic dissection",
+        "chinese_name": "Tear in the aortic wall"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "Losartan / Angiotensin receptor blockers",
+        "mechanism": "Controls blood pressure and reduces aortic wall tension, slowing aneurysm expansion",
+        "approval_status": "Cardiology-directed (standard blood pressure care in LDS)"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-blockers",
+        "mechanism": "Lowers heart rate and blood pressure, reducing aortic wall shear stress",
+        "approval_status": "Cardiology-directed"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline TGFBR2 pathogenic variants (missense, splice-site, nonsense, and large deletions)",
+      "population_frequency": "Loeys-Dietz syndrome incidence is estimated at about 1 in 50,000 to 1 in 100,000",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "practical_guidance": "People with hereditary thoracic aortic conditions should discuss blood pressure management with their cardiologist and inform the care team to avoid fluoroquinolone antibiotics (such as ciprofloxacin or levofloxacin) to reduce the risk of aortic complications.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid high-impact sports, weight training, and unassessed competitive sports to reduce aortic dissection risk",
+        "Maintain a healthy weight, stop smoking, and control blood pressure; attend scheduled aortic imaging as advised by cardiology",
+        "Seek immediate care for sudden chest or back pain or severe abdominal pain, and tell the team about the Loeys-Dietz diagnosis"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Loeys-Dietz Syndrome Care Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic TGFBR2 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:15731757",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with young-onset aortic aneurysm or dissection, arterial tortuosity, joint hypermobility, craniofacial abnormalities, or a family history should receive genetic counseling and TGFBR1/TGFBR2 testing; confirmed cases need long-term cardiovascular imaging surveillance.",
+      "lifestyle_tips": [
+        "Avoid contact sports and weight training; choose low-impact aerobic activity after discussing it with cardiology",
+        "Monitor blood pressure and aortic imaging regularly, and inform the team of the diagnosis before any surgery or invasive procedure",
+        "Seek emergency care immediately for sudden chest or back pain, breathlessness, or neurologic symptoms"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Vascular Surgery / Genetic Counseling",
+      "questions": [
+        "Doctor, I had an aortic aneurysm or dissection at a young age—should I have TGFBR1/TGFBR2 genetic testing for Loeys-Dietz syndrome?",
+        "What is my blood pressure target and medication plan? How often should aortic imaging be repeated?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Aortic dissection only happens in older people with high blood pressure, so young people do not need genetic testing?”",
+      "truth": "Wrong! Young-onset aortic dissection with joint laxity, craniofacial features, or a family history may indicate Loeys-Dietz syndrome or another inherited connective tissue disease. Genetic testing and long-term cardiovascular surveillance can identify risk early—do not dismiss it as a sporadic event."
+    }
+  },
+  "SMAD3": {
+    "gene": {
+      "chinese_name": "SMAD3 Signaling Protein 3 (Loeys-Dietz Syndrome Type 3 Gene)",
+      "chromosome": "15q22.33 (Chromosome 15)",
+      "metaphor": {
+        "title": "🧵 The TGF-β Signaling 【Transcription Regulator】(When broken, aortic aneurysm and early osteoarthritis appear together)",
+        "story": "After TGF-β signaling enters the cell, SMAD3 carries the command into the nucleus to regulate connective tissue and joint cartilage repair. When SMAD3 is defective from birth, signaling becomes unbalanced, vessel wall connective tissue weakens, and the aorta tends to dilate into an aneurysm; joint cartilage also degenerates earlier, causing premature osteoarthritis. Patients may develop aortic aneurysm, joint pain, or skeletal abnormalities at a young age. Regular cardiovascular imaging, blood pressure control, and joint care are key to reducing complications."
+      },
+      "plain_summary": "SMAD3 deficiency causes Loeys-Dietz syndrome type 3 (aneurysm-osteoarthritis syndrome), an autosomal dominant condition. Patients may have aortic aneurysm, aortic dissection, and premature osteoarthritis, as well as skeletal or joint abnormalities. Regular cardiovascular imaging, blood pressure control, avoidance of high-impact sports, and joint care reduce serious complications.",
+      "academic_summary": "SMAD3 encodes a receptor-regulated SMAD in TGF-β/BMP signaling that forms a complex with SMAD4 and enters the nucleus to regulate transcription, maintaining vascular wall and articular cartilage homeostasis. Germline pathogenic variants cause Loeys-Dietz syndrome type 3 (aneurysm-osteoarthritis syndrome), characterized by aortic aneurysm and dissection, premature osteoarthritis, joint hypermobility, and skeletal abnormalities. Long-term cardiovascular surveillance and blood pressure control are required."
+    },
+    "disease": {
+      "chinese_name": "Loeys-Dietz Syndrome Type 3 (Aneurysm-Osteoarthritis Syndrome)",
+      "categories": [
+        "Autosomal Dominant Connective Tissue Disease",
+        "Inherited Aortic and Vascular Disease",
+        "Premature Osteoarthritis"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 High-Risk Aortic Disease (Early Surveillance and Blood Pressure Control Reduce Dissection Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "Aortic aneurysm"
+      },
+      {
+        "hpo_id": "HP:0002758",
+        "name": "Osteoarthritis",
+        "chinese_name": "Premature osteoarthritis"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "Losartan / Angiotensin receptor blockers",
+        "mechanism": "Controls blood pressure and reduces aortic wall tension, slowing aneurysm expansion",
+        "approval_status": "Cardiology-directed (standard blood pressure care in LDS)"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-blockers",
+        "mechanism": "Lowers heart rate and blood pressure, reducing aortic wall shear stress",
+        "approval_status": "Cardiology-directed"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline SMAD3 pathogenic variants (missense, splice-site, nonsense, and large deletions)",
+      "population_frequency": "Loeys-Dietz syndrome incidence is estimated at about 1 in 50,000 to 1 in 100,000; SMAD3-related cases account for a portion",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "practical_guidance": "People with hereditary thoracic aortic conditions should discuss blood pressure management with their cardiologist and inform the care team to avoid fluoroquinolone antibiotics (such as ciprofloxacin or levofloxacin) to reduce the risk of aortic complications.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid high-impact sports, weight training, and unassessed competitive sports to reduce aortic dissection risk",
+        "Maintain a healthy weight, stop smoking, and control blood pressure; attend scheduled aortic imaging as advised by cardiology",
+        "For joint pain or limited mobility, discuss low-impact exercise and joint protection with rehabilitation medicine"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Loeys-Dietz Syndrome and Aortic Disease Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic SMAD3 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:21217753",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with young-onset aortic aneurysm, premature osteoarthritis, joint hypermobility, or a family history should receive genetic counseling and SMAD3 testing; confirmed cases need long-term cardiovascular imaging and joint assessment.",
+      "lifestyle_tips": [
+        "Avoid contact sports and weight training; choose low-impact activity after discussing it with cardiology and rehabilitation medicine",
+        "Monitor blood pressure and aortic imaging regularly, and inform the team of the diagnosis before any surgery or invasive procedure",
+        "Seek prompt care for sudden chest or back pain, breathlessness, or severe joint swelling and pain"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Rheumatology / Rehabilitation Medicine / Genetic Counseling",
+      "questions": [
+        "Doctor, I developed an aortic aneurysm at a young age and have premature arthritis—should I have SMAD3 genetic testing?",
+        "What is my blood pressure target and medication plan? How often should aortic imaging and joint assessments be repeated?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Joint pain in young people is just a sports injury, and aortic aneurysm and arthritis do not occur together in hereditary disease?”",
+      "truth": "Wrong! Premature osteoarthritis with aortic aneurysm or dissection may indicate SMAD3-related Loeys-Dietz syndrome type 3. These patients need genetic testing, cardiovascular surveillance, and joint care—not just a sports injury explanation."
+    }
+  },
+  "ACTA2": {
+    "gene": {
+      "chinese_name": "ACTA2 Smooth Muscle Alpha Actin 2 (Familial Thoracic Aortic Aneurysm Gene)",
+      "chromosome": "10q23.31 (Chromosome 10)",
+      "metaphor": {
+        "title": "💪 The 【Contraction Motor】 of Vascular Smooth Muscle (When broken, the aortic wall weakens and tends to dilate and dissect)",
+        "story": "The middle layer of the blood vessel wall is made of smooth muscle cells, and the alpha actin produced by ACTA2 is the motor for smooth muscle contraction. When ACTA2 is defective from birth, vascular smooth muscle contraction and cell function become abnormal, the aortic wall gradually weakens, and an aneurysm or dissection may occur in youth or midlife. Patients may have no obvious physical features and may only be found on routine imaging or after sudden chest or back pain. Regular cardiovascular imaging, blood pressure control, and avoiding high-impact sports are key to reducing life-threatening complications."
+      },
+      "plain_summary": "ACTA2 deficiency causes familial thoracic aortic aneurysm and aortic dissection (ACTA2 type), an autosomal dominant condition. Patients may have no obvious physical features yet develop aortic aneurysm or dissection in youth or midlife; some also have patent ductus arteriosus, brain aneurysms, or premature coronary artery disease. Regular cardiovascular imaging, blood pressure control, and family screening reduce risk.",
+      "academic_summary": "ACTA2 encodes smooth muscle alpha actin, a core protein of the vascular smooth muscle contractile apparatus. Germline pathogenic variants cause familial thoracic aortic aneurysm and aortic dissection (FTAAD) by disrupting smooth muscle cell function and extracellular matrix homeostasis, making the aortic wall fragile. ACTA2 variant carriers may lack obvious connective tissue features but still have aortic aneurysm, dissection, brain aneurysm, and premature coronary artery disease risk, requiring lifelong imaging surveillance."
+    },
+    "disease": {
+      "chinese_name": "Familial Thoracic Aortic Aneurysm and Aortic Dissection (ACTA2 Type)",
+      "categories": [
+        "Autosomal Dominant Vascular Disease",
+        "Inherited Aortic Aneurysm and Dissection",
+        "High-Risk Cardiovascular Syndrome"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 High-Risk Aortic Disease (Regular Imaging and Blood Pressure Control Reduce Dissection Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002647",
+        "name": "Aortic dissection",
+        "chinese_name": "Tear in the aortic wall"
+      },
+      {
+        "hpo_id": "HP:0004942",
+        "name": "Aortic aneurysm",
+        "chinese_name": "Aortic aneurysm"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-blockers",
+        "mechanism": "Lowers heart rate and blood pressure, reducing aortic wall shear stress and expansion rate",
+        "approval_status": "Cardiology-directed (standard aortic disease care)"
+      },
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "Losartan / Angiotensin receptor blockers",
+        "mechanism": "Controls blood pressure and reduces aortic wall tension as a blood pressure management option",
+        "approval_status": "Cardiology-directed"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline ACTA2 pathogenic variants (missense, splice-site, nonsense, and large deletions)",
+      "population_frequency": "ACTA2 variants account for a substantial proportion of familial thoracic aortic aneurysm and dissection; overall incidence is estimated at about 1 in 10,000 to 1 in 50,000",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "practical_guidance": "People with hereditary thoracic aortic conditions should discuss blood pressure management with their cardiologist and inform the care team to avoid fluoroquinolone antibiotics (such as ciprofloxacin or levofloxacin) to reduce the risk of aortic complications.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid high-impact sports, weight training, and unassessed competitive sports to reduce aortic dissection risk",
+        "Maintain a healthy weight, stop smoking, and control blood pressure; attend scheduled aortic imaging as advised by cardiology",
+        "Seek immediate care for sudden chest, back, or abdominal pain, and tell the team about the family history of aortic disease"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Familial Thoracic Aortic Aneurysm and Dissection Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic ACTA2 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:17994018",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with young-onset aortic aneurysm or dissection, familial aortic disease, brain aneurysm, or premature coronary artery disease should receive genetic counseling and ACTA2 testing; first-degree relatives should have aortic imaging screening.",
+      "lifestyle_tips": [
+        "Avoid contact sports and weight training; choose low-impact aerobic activity after discussing it with cardiology",
+        "Monitor blood pressure and aortic imaging regularly, and inform the team of the family history before any surgery or invasive procedure",
+        "Stop smoking, control lipids and glucose, and seek emergency care immediately for sudden chest or back pain"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Vascular Surgery / Genetic Counseling",
+      "questions": [
+        "Doctor, my family members and I developed aortic aneurysm or dissection at a young age—should we have ACTA2 genetic testing?",
+        "What is my blood pressure target and medication plan? How often should aortic imaging be repeated?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Without obvious physical abnormalities, there is no hereditary aortic aneurysm and no need for family screening?”",
+      "truth": "Wrong! ACTA2-related familial thoracic aortic aneurysm and dissection often lacks obvious physical features yet can cause sudden dissection in youth or midlife. People with a family history should have genetic testing and aortic imaging screening—do not rely on appearance alone."
+    }
+  },
+  "MYH11": {
+    "gene": {
+      "chinese_name": "MYH11 Smooth Muscle Myosin Heavy Chain 11 (Familial Thoracic Aortic Aneurysm Gene)",
+      "chromosome": "16p13.11 (Chromosome 16)",
+      "metaphor": {
+        "title": "💪 The 【Contraction Motor】 of Vascular Smooth Muscle (When broken, the aortic wall weakens and may coexist with patent ductus arteriosus)",
+        "story": "The middle layer of the blood vessel wall is made of smooth muscle cells, and the myosin heavy chain produced by MYH11 is an important part of the smooth muscle contraction motor. When MYH11 is defective from birth, vascular smooth muscle contraction becomes abnormal, the aortic wall gradually weakens, and an aneurysm or dissection may occur in youth or midlife. Some patients are born with patent ductus arteriosus (PDA) and may have no obvious physical features. Regular cardiovascular imaging, blood pressure control, and family screening are key to reducing life-threatening complications."
+      },
+      "plain_summary": "MYH11 deficiency causes familial thoracic aortic aneurysm and aortic dissection (MYH11 type), an autosomal dominant condition. Patients may develop aortic aneurysm or dissection in youth or midlife, and some have patent ductus arteriosus. Regular cardiovascular imaging, blood pressure control, avoidance of high-impact sports, and family screening reduce serious complications.",
+      "academic_summary": "MYH11 encodes smooth muscle myosin heavy chain 11, a core protein of the vascular smooth muscle contractile apparatus. Germline pathogenic variants cause familial thoracic aortic aneurysm and aortic dissection (FTAAD) by disrupting smooth muscle contraction and extracellular matrix homeostasis, making the aortic wall fragile. MYH11 variant carriers may have patent ductus arteriosus and are at risk of aortic aneurysm and dissection, requiring lifelong imaging surveillance."
+    },
+    "disease": {
+      "chinese_name": "Familial Thoracic Aortic Aneurysm and Aortic Dissection (MYH11 Type)",
+      "categories": [
+        "Autosomal Dominant Vascular Disease",
+        "Inherited Aortic Aneurysm and Dissection",
+        "Congenital Heart Abnormality"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 High-Risk Aortic Disease (Regular Imaging and Blood Pressure Control Reduce Dissection Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002647",
+        "name": "Aortic dissection",
+        "chinese_name": "Tear in the aortic wall"
+      },
+      {
+        "hpo_id": "HP:0001643",
+        "name": "Patent ductus arteriosus",
+        "chinese_name": "Persistent fetal vessel connecting the aorta and pulmonary artery"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-blockers",
+        "mechanism": "Lowers heart rate and blood pressure, reducing aortic wall shear stress and expansion rate",
+        "approval_status": "Cardiology-directed (standard aortic disease care)"
+      },
+      {
+        "drug_name": "Losartan / Angiotensin receptor blockers",
+        "chinese_name": "Losartan / Angiotensin receptor blockers",
+        "mechanism": "Controls blood pressure and reduces aortic wall tension as a blood pressure management option",
+        "approval_status": "Cardiology-directed"
+      }
+    ],
+    "pharmacogenomics": {
+      "key_variant": "Germline MYH11 pathogenic variants (missense, splice-site, nonsense, and large deletions)",
+      "population_frequency": "MYH11 variants account for a portion of familial thoracic aortic aneurysm and dissection; overall incidence is estimated at about 1 in 10,000 to 1 in 50,000",
+      "summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "traffic_light_summary": "Pharmacogenomic note: this gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments.",
+      "practical_guidance": "People with hereditary thoracic aortic conditions should discuss blood pressure management with their cardiologist and inform the care team to avoid fluoroquinolone antibiotics (such as ciprofloxacin or levofloxacin) to reduce the risk of aortic complications.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid high-impact sports, weight training, and unassessed competitive sports to reduce aortic dissection risk",
+        "Maintain a healthy weight, stop smoking, and control blood pressure; attend scheduled aortic imaging as advised by cardiology",
+        "If there is a history of patent ductus arteriosus or congenital heart disease, continue regular echocardiography follow-up"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Familial Thoracic Aortic Aneurysm and Dissection Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic MYH11 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:16444274",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with young-onset aortic aneurysm or dissection, patent ductus arteriosus, familial aortic disease, or a family history of unexplained sudden death should receive genetic counseling and MYH11 testing; first-degree relatives should have aortic imaging screening.",
+      "lifestyle_tips": [
+        "Avoid contact sports and weight training; choose low-impact aerobic activity after discussing it with cardiology",
+        "Monitor blood pressure and aortic imaging regularly, and inform the team of the family history before any surgery or invasive procedure",
+        "Stop smoking, control lipids and glucose, and seek emergency care immediately for sudden chest or back pain"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Vascular Surgery / Genetic Counseling",
+      "questions": [
+        "Doctor, my family members and I developed aortic aneurysm or dissection at a young age, and someone had patent ductus arteriosus—should we have MYH11 genetic testing?",
+        "What is my blood pressure target and medication plan? How often should aortic imaging be repeated?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Once patent ductus arteriosus is treated, there is no need to worry about adult aortic aneurysm?”",
+      "truth": "Wrong! Patent ductus arteriosus with a family history of aortic aneurysm or dissection may be linked to MYH11 and other inherited vascular diseases. Even after childhood treatment, long-term cardiovascular imaging and genetic evaluation are still needed in adulthood."
+    }
+  },
+  "APOB": {
+    "gene": {
+      "chinese_name": "APOB Apolipoprotein B (Familial Hypercholesterolemia Gene)",
+      "chromosome": "2p24.1 (Chromosome 2)",
+      "metaphor": {
+        "title": "🚚 The 【Bad Cholesterol Delivery Truck】 in the Bloodstream (When broken, the liver cannot clear LDL and cholesterol keeps rising)",
+        "story": "LDL cholesterol is like cargo in the bloodstream, and APOB is the identification tag on the truck that lets hepatic LDL receptors recognize and clear bad cholesterol. When APOB is defective from birth, the tag is wrong, the liver cannot clear LDL effectively, and bad cholesterol is high from a young age. Cholesterol deposits in the coronary arteries and aorta, increasing the risk of premature myocardial infarction and aortic valve disease. Genetic testing, statins and ezetimibe, and PCSK9 inhibitors when needed can bring LDL under control."
+      },
+      "plain_summary": "APOB deficiency causes familial apolipoprotein B-100 defect hypercholesterolemia, an autosomal dominant condition. Patients may have high LDL cholesterol from a young age, with cholesterol deposits in blood vessels and tendons, increasing the risk of premature coronary artery disease, aortic valve disease, and myocardial infarction. Genetic testing, statins and ezetimibe, PCSK9 inhibitors, and lifestyle changes effectively lower LDL and cardiovascular risk.",
+      "academic_summary": "APOB encodes apolipoprotein B-100, the main structural protein of LDL, VLDL, and IDL particles and the ligand recognized by the LDL receptor. Germline pathogenic variants (such as p.Arg3500Gln) cause familial hypercholesterolemia (FH) by reducing LDL receptor-mediated clearance and raising LDL cholesterol from a young age. APOB-related FH is associated with premature coronary artery disease, aortic valve calcification, and myocardial infarction, requiring long-term lipid management and family screening."
+    },
+    "disease": {
+      "chinese_name": "Familial Apolipoprotein B-100 Defect Hypercholesterolemia",
+      "categories": [
+        "Autosomal Dominant Lipid Disorder",
+        "Familial Hypercholesterolemia",
+        "Premature Cardiovascular Disease Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Inherited Hypercholesterolemia (Long-Term Lipid-Lowering Therapy Greatly Reduces Cardiovascular Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0003124",
+        "name": "Hypercholesterolemia",
+        "chinese_name": "High blood cholesterol"
+      },
+      {
+        "hpo_id": "HP:0001635",
+        "name": "Congestive heart failure",
+        "chinese_name": "Premature coronary artery disease risk"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Statins & Ezetimibe",
+        "chinese_name": "Statins and ezetimibe lipid-lowering therapy",
+        "mechanism": "Reduces cholesterol synthesis and intestinal cholesterol absorption, increasing hepatic LDL receptor clearance of bad cholesterol",
+        "approval_status": "FDA / TFDA / NMPA approved (first-line lipid-lowering therapy for FH)"
+      },
+      {
+        "drug_name": "PCSK9 inhibitors (Evolocumab / Alirocumab)",
+        "chinese_name": "PCSK9 inhibitors (evolocumab / alirocumab)",
+        "mechanism": "Prevents PCSK9-mediated degradation of LDL receptors, increasing hepatic LDL clearance",
+        "approval_status": "FDA / TFDA / NMPA approved (adjunct targeted therapy for refractory hypercholesterolemia)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "APOB pathogenic variants (such as p.Arg3500Gln and p.Arg3500Trp causing defective LDL receptor binding)",
+      "population_frequency": "Familial hypercholesterolemia affects about 1 in 250 people; APOB-related cases account for about 5% to 10% of FH",
+      "summary": "APOB-related familial hypercholesterolemia is treated first with statins and ezetimibe, adding PCSK9 inhibitors when needed; treatment choice and LDL targets should be individualized by cardiovascular risk and physician guidance.",
+      "traffic_light_summary": "🟢 First-line therapy is a statin plus ezetimibe; if LDL remains above target or hypercholesterolemia is refractory, a PCSK9 inhibitor may be added as directed. 🟡 Some high-dose steroids or specific immunosuppressants can raise cholesterol, so frequent lipid monitoring is needed when they are used.",
+      "practical_guidance": "People with familial hypercholesterolemia should discuss LDL targets and medication choices with cardiology or metabolism specialists, and have regular lipid and liver function monitoring. Do not stop lipid-lowering medication on your own, and tell the doctor about all medications and supplements you use.",
+      "drugs_guide": [
+        {
+          "drug_name": "Statins & Ezetimibe",
+          "chinese_name": "Statins and ezetimibe lipid-lowering therapy",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "First-line intensive lipid-lowering therapy for FH; statins inhibit cholesterol synthesis and ezetimibe reduces intestinal absorption, and combining them lowers LDL further.",
+          "cpic_level": "International FH Management Guideline (Statins/Ezetimibe First-Line)"
+        },
+        {
+          "drug_name": "PCSK9 inhibitors (Evolocumab / Alirocumab)",
+          "chinese_name": "PCSK9 inhibitors (evolocumab / alirocumab)",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "Adjunct targeted therapy for refractory hypercholesterolemia or when statins do not reach target; it significantly lowers LDL, and lipids should be monitored before and during use as directed.",
+          "cpic_level": "International FH Management Guideline (PCSK9 Inhibitor Adjunct Therapy)"
+        },
+        {
+          "drug_name": "Cholesterol-raising medications (selected high-dose steroids or immunosuppressants)",
+          "chinese_name": "Cholesterol-raising medications (some high-dose steroids or specific immunosuppressants)",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "These may raise lipid levels; if they are necessary in FH, monitor lipids frequently and discuss lipid-lowering adjustments with cardiology or metabolism specialists.",
+          "cpic_level": "Clinical Lipid Monitoring Recommendation"
+        }
+      ],
+      "dietary_contraindications": [
+        "Reduce saturated and trans fat intake, and increase vegetables, whole grains, and soluble fiber",
+        "Exercise regularly, control weight, and stop smoking to reduce cardiovascular risk",
+        "Monitor lipids and liver function regularly, and do not stop lipid-lowering medication on your own"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Familial Hypercholesterolemia Care and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic APOB variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:2569116",
+        "PMID:34040190"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with premature myocardial infarction, markedly elevated LDL cholesterol, tendon xanthomas, or a family history should have lipid testing and genetic counseling; first-degree relatives should have lipid screening and, when indicated, APOB and LDLR genetic testing.",
+      "lifestyle_tips": [
+        "Follow a Mediterranean-style diet, reduce saturated fat and processed foods, and increase soluble fiber",
+        "Exercise regularly, control weight, and stop smoking while continuing lipid-lowering therapy as prescribed",
+        "Monitor lipids, liver function, and cardiovascular risk regularly, and seek care promptly for chest pain or breathlessness"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Metabolism / Genetic Counseling",
+      "questions": [
+        "Doctor, my LDL cholesterol has been high since a young age—should I have APOB genetic testing for familial hypercholesterolemia?",
+        "What is my LDL target? How should statins, ezetimibe, or PCSK9 inhibitors be selected and monitored?",
+        "Should my siblings and children have lipid screening and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“High cholesterol is just from eating too much fat, and cutting fat will bring it back to normal without medication?”",
+      "truth": "Wrong! Familial hypercholesterolemia is often caused by APOB, LDLR, and other gene variants, and diet alone is usually not enough to reach target. Patients need long-term lipid-lowering medication and regular lipid monitoring to reduce premature myocardial infarction and aortic valve disease risk."
     }
   }
 };
