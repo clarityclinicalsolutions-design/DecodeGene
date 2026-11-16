@@ -924,5 +924,473 @@
       "disease": "https://monarchinitiative.org/MONDO:0007750"
     },
     "verified_on": "2026-11-04"
+  },
+  {
+    "symbol": "TTR",
+    "ensembl_id": "ENSG00000118271",
+    "entrez_id": "7276",
+    "disease_id": "MONDO:0007100",
+    "disease_label": "Hereditary transthyretin amyloidosis",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000118271",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7276",
+      "disease": "https://monarchinitiative.org/MONDO:0007100"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "HFE",
+    "ensembl_id": "ENSG00000010704",
+    "entrez_id": "3077",
+    "disease_id": "MONDO:0006507",
+    "disease_label": "Hereditary hemochromatosis",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000010704",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/3077",
+      "disease": "https://monarchinitiative.org/MONDO:0006507"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "HNF1A",
+    "ensembl_id": "ENSG00000135100",
+    "entrez_id": "6927",
+    "disease_id": "MONDO:0018911",
+    "disease_label": "Maturity-onset diabetes of the young type 3",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000135100",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6927",
+      "disease": "https://monarchinitiative.org/MONDO:0018911"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "CACNA1S",
+    "ensembl_id": "ENSG00000081248",
+    "entrez_id": "779",
+    "disease_id": "MONDO:0011163",
+    "disease_label": "Malignant hyperthermia susceptibility",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000081248",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/779",
+      "disease": "https://monarchinitiative.org/MONDO:0011163"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "BTD",
+    "ensembl_id": "ENSG00000169814",
+    "entrez_id": "686",
+    "disease_id": "MONDO:0009665",
+    "disease_label": "Biotinidase deficiency",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000169814",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/686",
+      "disease": "https://monarchinitiative.org/MONDO:0009665"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "OTC",
+    "ensembl_id": "ENSG00000036473",
+    "entrez_id": "5009",
+    "disease_id": "MONDO:0010703",
+    "disease_label": "Ornithine transcarbamylase deficiency",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000036473",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/5009",
+      "disease": "https://monarchinitiative.org/MONDO:0010703"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "RPE65",
+    "ensembl_id": "ENSG00000116745",
+    "entrez_id": "6121",
+    "disease_id": "MONDO:0008765",
+    "disease_label": "Leber congenital amaurosis 2",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000116745",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6121",
+      "disease": "https://monarchinitiative.org/MONDO:0008765"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "ENG",
+    "ensembl_id": "ENSG00000106991",
+    "entrez_id": "2022",
+    "disease_id": "MONDO:0019180",
+    "disease_label": "Hereditary hemorrhagic telangiectasia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000106991",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/2022",
+      "disease": "https://monarchinitiative.org/MONDO:0019180"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "ACVRL1",
+    "ensembl_id": "ENSG00000139567",
+    "entrez_id": "94",
+    "disease_id": "MONDO:0019180",
+    "disease_label": "Hereditary hemorrhagic telangiectasia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000139567",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/94",
+      "disease": "https://monarchinitiative.org/MONDO:0019180"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "SDHC",
+    "ensembl_id": "ENSG00000143252",
+    "entrez_id": "6391",
+    "disease_id": "MONDO:0017366",
+    "disease_label": "Hereditary paraganglioma-pheochromocytoma syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000143252",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6391",
+      "disease": "https://monarchinitiative.org/MONDO:0017366"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "SDHAF2",
+    "ensembl_id": "ENSG00000167985",
+    "entrez_id": "54949",
+    "disease_id": "MONDO:0017366",
+    "disease_label": "Hereditary paraganglioma-pheochromocytoma syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000167985",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/54949",
+      "disease": "https://monarchinitiative.org/MONDO:0017366"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "TMEM127",
+    "ensembl_id": "ENSG00000135956",
+    "entrez_id": "55654",
+    "disease_id": "MONDO:0017366",
+    "disease_label": "Hereditary paraganglioma-pheochromocytoma syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000135956",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/55654",
+      "disease": "https://monarchinitiative.org/MONDO:0017366"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "TTN",
+    "ensembl_id": "ENSG00000155657",
+    "entrez_id": "7273",
+    "disease_id": "MONDO:0005016",
+    "disease_label": "Dilated cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000155657",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7273",
+      "disease": "https://monarchinitiative.org/MONDO:0005016"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "BAG3",
+    "ensembl_id": "ENSG00000151929",
+    "entrez_id": "9531",
+    "disease_id": "MONDO:0005016",
+    "disease_label": "Dilated cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000151929",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/9531",
+      "disease": "https://monarchinitiative.org/MONDO:0005016"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "TNNT2",
+    "ensembl_id": "ENSG00000118194",
+    "entrez_id": "7139",
+    "disease_id": "MONDO:0005045",
+    "disease_label": "Hypertrophic cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000118194",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7139",
+      "disease": "https://monarchinitiative.org/MONDO:0005045"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "TNNI3",
+    "ensembl_id": "ENSG00000129991",
+    "entrez_id": "7137",
+    "disease_id": "MONDO:0005045",
+    "disease_label": "Hypertrophic cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000129991",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7137",
+      "disease": "https://monarchinitiative.org/MONDO:0005045"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "TPM1",
+    "ensembl_id": "ENSG00000140416",
+    "entrez_id": "7168",
+    "disease_id": "MONDO:0005045",
+    "disease_label": "Hypertrophic cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000140416",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7168",
+      "disease": "https://monarchinitiative.org/MONDO:0005045"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "MYL2",
+    "ensembl_id": "ENSG00000111245",
+    "entrez_id": "4633",
+    "disease_id": "MONDO:0005045",
+    "disease_label": "Hypertrophic cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000111245",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4633",
+      "disease": "https://monarchinitiative.org/MONDO:0005045"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "MYL3",
+    "ensembl_id": "ENSG00000160808",
+    "entrez_id": "4634",
+    "disease_id": "MONDO:0005045",
+    "disease_label": "Hypertrophic cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000160808",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4634",
+      "disease": "https://monarchinitiative.org/MONDO:0005045"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "ACTC1",
+    "ensembl_id": "ENSG00000159251",
+    "entrez_id": "70",
+    "disease_id": "MONDO:0005045",
+    "disease_label": "Hypertrophic cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000159251",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/70",
+      "disease": "https://monarchinitiative.org/MONDO:0005045"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "PRKAG2",
+    "ensembl_id": "ENSG00000106617",
+    "entrez_id": "51422",
+    "disease_id": "MONDO:0005045",
+    "disease_label": "Hypertrophic cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000106617",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/51422",
+      "disease": "https://monarchinitiative.org/MONDO:0005045"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "TNNC1",
+    "ensembl_id": "ENSG00000114854",
+    "entrez_id": "7134",
+    "disease_id": "MONDO:0005045",
+    "disease_label": "Hypertrophic cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000114854",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7134",
+      "disease": "https://monarchinitiative.org/MONDO:0005045"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "DES",
+    "ensembl_id": "ENSG00000175084",
+    "entrez_id": "1674",
+    "disease_id": "MONDO:0005016",
+    "disease_label": "Dilated cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000175084",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1674",
+      "disease": "https://monarchinitiative.org/MONDO:0005016"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "FLNC",
+    "ensembl_id": "ENSG00000128591",
+    "entrez_id": "2318",
+    "disease_id": "MONDO:0005016",
+    "disease_label": "Dilated cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000128591",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/2318",
+      "disease": "https://monarchinitiative.org/MONDO:0005016"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "RBM20",
+    "ensembl_id": "ENSG00000203867",
+    "entrez_id": "282996",
+    "disease_id": "MONDO:0005016",
+    "disease_label": "Dilated cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000203867",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/282996",
+      "disease": "https://monarchinitiative.org/MONDO:0005016"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "PKP2",
+    "ensembl_id": "ENSG00000057294",
+    "entrez_id": "53183",
+    "disease_id": "MONDO:0016587",
+    "disease_label": "Arrhythmogenic right ventricular cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000057294",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/53183",
+      "disease": "https://monarchinitiative.org/MONDO:0016587"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "DSP",
+    "ensembl_id": "ENSG00000096696",
+    "entrez_id": "1832",
+    "disease_id": "MONDO:0016587",
+    "disease_label": "Arrhythmogenic right ventricular cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000096696",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1832",
+      "disease": "https://monarchinitiative.org/MONDO:0016587"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "DSC2",
+    "ensembl_id": "ENSG00000134755",
+    "entrez_id": "1824",
+    "disease_id": "MONDO:0016587",
+    "disease_label": "Arrhythmogenic right ventricular cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000134755",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1824",
+      "disease": "https://monarchinitiative.org/MONDO:0016587"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "DSG2",
+    "ensembl_id": "ENSG00000046604",
+    "entrez_id": "1829",
+    "disease_id": "MONDO:0016587",
+    "disease_label": "Arrhythmogenic right ventricular cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000046604",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1829",
+      "disease": "https://monarchinitiative.org/MONDO:0016587"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "TMEM43",
+    "ensembl_id": "ENSG00000170876",
+    "entrez_id": "79188",
+    "disease_id": "MONDO:0016587",
+    "disease_label": "Arrhythmogenic right ventricular cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000170876",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/79188",
+      "disease": "https://monarchinitiative.org/MONDO:0016587"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "RYR2",
+    "ensembl_id": "ENSG00000198626",
+    "entrez_id": "6262",
+    "disease_id": "MONDO:0017990",
+    "disease_label": "Catecholaminergic polymorphic ventricular tachycardia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000198626",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6262",
+      "disease": "https://monarchinitiative.org/MONDO:0017990"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "CASQ2",
+    "ensembl_id": "ENSG00000118729",
+    "entrez_id": "845",
+    "disease_id": "MONDO:0017990",
+    "disease_label": "Catecholaminergic polymorphic ventricular tachycardia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000118729",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/845",
+      "disease": "https://monarchinitiative.org/MONDO:0017990"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "TRDN",
+    "ensembl_id": "ENSG00000186439",
+    "entrez_id": "10341",
+    "disease_id": "MONDO:0017990",
+    "disease_label": "Catecholaminergic polymorphic ventricular tachycardia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000186439",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/10341",
+      "disease": "https://monarchinitiative.org/MONDO:0017990"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "CALM1",
+    "ensembl_id": "ENSG00000198668",
+    "entrez_id": "801",
+    "disease_id": "MONDO:0017990",
+    "disease_label": "Catecholaminergic polymorphic ventricular tachycardia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000198668",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/801",
+      "disease": "https://monarchinitiative.org/MONDO:0017990"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "CALM2",
+    "ensembl_id": "ENSG00000143933",
+    "entrez_id": "805",
+    "disease_id": "MONDO:0017990",
+    "disease_label": "Catecholaminergic polymorphic ventricular tachycardia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000143933",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/805",
+      "disease": "https://monarchinitiative.org/MONDO:0017990"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "CALM3",
+    "ensembl_id": "ENSG00000160014",
+    "entrez_id": "808",
+    "disease_id": "MONDO:0017990",
+    "disease_label": "Catecholaminergic polymorphic ventricular tachycardia",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000160014",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/808",
+      "disease": "https://monarchinitiative.org/MONDO:0017990"
+    },
+    "verified_on": "2026-11-16"
   }
 ]

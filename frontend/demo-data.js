@@ -7449,6 +7449,3773 @@ window.DEMO_DATA = [
       "myth": "「膽固醇高只是吃太油，只要少吃油就會恢復正常，不需要吃藥？」",
       "truth": "錯！家族性高膽固醇血症常由 APOB、LDLR 等基因變異造成，單靠飲食通常不足以達標。患者需要長期降脂藥物與定期血脂監測，才能有效降低早發性心肌梗塞與主動脈瓣疾病風險。"
     }
+  },
+  {
+    "association_id": "GDA_ASSOC_072",
+    "gene": {
+      "symbol": "TTR",
+      "name": "Transthyretin",
+      "chinese_name": "TTR 甲狀腺素轉運蛋白（遺傳性類澱粉沉著症基因）",
+      "ensembl_id": "ENSG00000118271",
+      "entrez_id": "7276",
+      "biotype": "protein_coding",
+      "chromosome": "18q12.1（18 號染色體）",
+      "metaphor": {
+        "title": "🚚 血液裡的【甲狀腺素與維生素 A 運輸車（折疊錯誤後堆積成類澱粉）】",
+        "story": "TTR 就像血液中的多功能運輸車，負責載送甲狀腺素與維生素 A，平常以穩定的四聚體形式在血中行駛。當 TTR 基因天生變異時，運輸車容易解體並折疊錯誤，錯誤摺疊的蛋白質會像壞掉的零件一樣，一點一滴堆積在周邊神經、心臟與其他器官，形成類澱粉沉著。神經被佔據後出現手腳麻木與無力，心臟被浸潤後變得肥厚僵硬。透過基因檢測、TTR 穩定劑與 RNA 標靶治療，可以延緩類澱粉持續堆積。"
+      },
+      "plain_summary": "TTR 致病變異造成遺傳性甲狀腺素轉運蛋白類澱粉沉著症（hATTR），屬於體染色體顯性遺傳。錯誤折疊的 TTR 蛋白會沉積在周邊神經與心臟，造成周邊神經病變、自主神經功能異常與肥厚性心肌病變。透過基因檢測、TTR 穩定劑、RNA 標靶治療與心臟神經科追蹤，可延緩疾病進展並改善生活品質。",
+      "academic_summary": "TTR 編碼甲狀腺素轉運蛋白，主要於肝臟合成並以同源四聚體分泌，負責運送甲狀腺素與視黃醇結合蛋白。致病性生殖細胞變異（如 p.Val30Met）使四聚體穩定性下降，解離出的單體易形成類澱粉纖維並沉積於周邊神經、心肌與胃腸道。hATTR 可表現為多發性神經病變、自主神經病變與浸潤性心肌病變；TTR 穩定劑、siRNA 與反義寡核苷酸治療可降低致病蛋白負荷。"
+    },
+    "disease": {
+      "id": "MONDO:0007100",
+      "name": "Hereditary transthyretin amyloidosis",
+      "chinese_name": "遺傳性甲狀腺素轉運蛋白類澱粉沉著症（hATTR）",
+      "categories": [
+        "體染色體顯性遺傳類澱粉沉著症",
+        "遺傳性周邊神經病變",
+        "浸潤性心肌病變"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 進展性系統性類澱粉沉著症（早期診斷與標靶治療可延緩病程）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001271",
+        "name": "Polyneuropathy",
+        "chinese_name": "周邊神經病變"
+      },
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Tafamidis",
+        "chinese_name": "塔法米迪斯（TTR 四聚體穩定劑）",
+        "mechanism": "與 TTR 四聚體結合並穩定其結構，減少解離與類澱粉纖維形成，延緩神經與心肌病變進展",
+        "approval_status": "FDA / TFDA / NMPA 核准（hATTR 多發性神經病變與心肌病變標靶治療）"
+      },
+      {
+        "drug_name": "Patisiran",
+        "chinese_name": "帕替西蘭（RNAi 標靶治療）",
+        "mechanism": "透過脂質奈米顆粒遞送小干擾 RNA，抑制肝臟 TTR 訊息 RNA 表現，降低血中致病 TTR 蛋白",
+        "approval_status": "FDA / TFDA / NMPA 核准（hATTR 多發性神經病變標靶治療）"
+      },
+      {
+        "drug_name": "Vutrisiran",
+        "chinese_name": "武替西蘭（RNAi 標靶治療）",
+        "mechanism": "以 GalNAc 標靶肝臟的小干擾 RNA 抑制 TTR 表現，降低致病蛋白濃度並延緩神經與心臟病程",
+        "approval_status": "FDA / TFDA / NMPA 核准（hATTR 多發性神經病變標靶治療）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TTR 致病變異（如 p.Val30Met 等類澱粉沉著相關變異）",
+      "population_frequency": "帶因率依地區而異；葡萄牙、日本與瑞典部分地區的特定變異盛行率較高",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "無特定飲食禁忌，但應避免過度飲酒並維持均衡營養，以減少心臟與神經負擔",
+        "若合併心臟衰竭或腎功能影響，需依醫師與營養師建議調整水分與鈉鹽攝取",
+        "使用標靶治療期間應定期追蹤肝功能、心臟功能與神經學評估，不可自行停藥"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際類澱粉沉著症診療與基因指引",
+      "clinvar_pathogenic_count": 300,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 TTR 致病與可能致病變異，基因檢測可協助確診 hATTR 並進行家族篩檢",
+      "opentargets_score": 0.92,
+      "key_pmids": [
+        "PMID:20301373",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有不明原因周邊神經病變、自主神經症狀、肥厚性心肌病變或家族史者，建議接受心臟與神經學評估並考慮 TTR 基因檢測；一等親應接受遺傳諮詢與必要篩檢。",
+      "lifestyle_tips": [
+        "維持規律作息與適度活動，避免脫水、過度飲酒與極端氣溫，以降低心臟與神經負擔",
+        "依醫囑定期追蹤心臟超音波、心律、神經功能與肝腎功能",
+        "出現胸悶、呼吸困難、體重快速變化或手腳麻木惡化時，應立即回診評估"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 神經內科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的周邊神經病變或心肌肥厚是否可能與 TTR 類澱粉沉著症有關，需要做基因檢測嗎？",
+        "若確診 hATTR，我適合 TTR 穩定劑或 RNA 標靶治療嗎？治療前後需要追蹤哪些心臟與神經指標？",
+        "我的兄弟姊妹與子女是否應該接受遺傳諮詢與 TTR 基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「手腳麻木只是血液循環不好，跟遺傳或類澱粉沉著沒有關係？」",
+      "truth": "錯！遺傳性 TTR 類澱粉沉著症常以進展性周邊神經病變與自主神經症狀表現，若延誤診斷，類澱粉會持續沉積於心臟與神經。及早基因檢測並接受標靶治療，能延緩病程並降低心臟併發症風險。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_073",
+    "gene": {
+      "symbol": "HFE",
+      "name": "Homeostatic iron regulator",
+      "chinese_name": "HFE 血鐵恆定調節蛋白（遺傳性血色素沉著症基因）",
+      "ensembl_id": "ENSG00000010704",
+      "entrez_id": "3077",
+      "biotype": "protein_coding",
+      "chromosome": "6p22.2（6 號染色體）",
+      "metaphor": {
+        "title": "🧲 腸道鐵質吸收的【剎車系統（剎車失靈時鐵越積越多）】",
+        "story": "人體每天從食物吸收少量鐵質，HFE 就像腸道吸收鐵質的剎車系統，會感應身體鐵存量並通知肝臟調整鐵調素，避免鐵吸收過量。當 HFE 基因發生致病變異時，剎車訊號失靈，腸道誤以為身體缺鐵而持續大量吸收，多餘的鐵便沉積在肝臟、心臟、胰臟與皮膚。肝臟長期超載可能纖維化甚至肝硬化，胰臟受損造成血糖異常，心臟也可能出現心律不整與心肌病變。透過放血治療或鐵螯合劑移除多餘鐵質，可以保護器官。"
+      },
+      "plain_summary": "HFE 致病變異造成遺傳性血色素沉著症，屬於體染色體隱性遺傳。患者腸道鐵吸收調節失衡，鐵質逐年沉積於肝臟、心臟、胰臟與皮膚，可能導致肝硬化、糖尿病、心肌病變與關節病變。透過鐵蛋白與基因檢測、治療性放血或鐵螯合治療，可有效移除多餘鐵質並預防器官損傷。",
+      "academic_summary": "HFE 編碼與 β2-微球蛋白結合的膜蛋白，參與肝臟鐵調素（hepcidin）表現的上游調控。常見致病變異 p.Cys282Tyr 的同合子狀態會削弱 HFE 功能，使鐵調素表現不足，腸道鐵吸收與巨噬細胞鐵釋放增加，造成進行性鐵過載。臨床表現包括肝纖維化與肝硬化、糖尿病、心肌病變、性腺功能低下與皮膚色素沉著；治療以治療性放血與鐵螯合劑為主。"
+    },
+    "disease": {
+      "id": "MONDO:0006507",
+      "name": "Hereditary hemochromatosis",
+      "chinese_name": "遺傳性血色素沉著症（鐵質過度沉積）",
+      "categories": [
+        "體染色體隱性遺傳鐵代謝疾病",
+        "鐵質過度沉積",
+        "肝功能與心臟代謝併發症風險"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟡 進行性鐵過載（早期發現並移除多餘鐵質可預防器官損傷）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011031",
+        "name": "Abnormality of iron homeostasis",
+        "chinese_name": "鐵質代謝恆定異常"
+      },
+      {
+        "hpo_id": "HP:0001394",
+        "name": "Cirrhosis",
+        "chinese_name": "肝硬化風險"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Therapeutic phlebotomy",
+        "chinese_name": "治療性放血（靜脈放血治療）",
+        "mechanism": "定期移除含鐵紅血球，迫使身體動用沉積鐵質製造新血，逐步降低鐵蛋白與器官鐵負荷",
+        "approval_status": "國際血色素沉著症診療指引（第一線鐵移除治療）"
+      },
+      {
+        "drug_name": "Deferasirox",
+        "chinese_name": "地拉羅司（口服鐵螯合劑）",
+        "mechanism": "與體內游離鐵及沉積鐵螯合，形成可排出複合物，適用於無法耐受放血或需藥物治療者",
+        "approval_status": "FDA / TFDA / NMPA 核准（鐵過載螯合治療）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "HFE 致病變異（如 p.Cys282Tyr、p.His63Asp 等鐵代謝相關變異）",
+      "population_frequency": "p.Cys282Tyr 同合子在北歐族群較常見，帶因率依族群而異",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免長期過量攝取富含鐵質的補充劑與強化食品，並避免與維生素 C 同時大量補充鐵劑",
+        "減少生食貝類與酒精攝取，以降低感染與肝臟負擔風險",
+        "定期監測鐵蛋白與肝功能，出現疲倦、關節痛、皮膚變深或血糖異常時應回診評估"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際血色素沉著症診療與基因指引",
+      "clinvar_pathogenic_count": 200,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 HFE 致病與可能致病變異，基因檢測可協助確診並指導家族鐵質篩檢",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:20301613",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有不明原因鐵蛋白升高、肝功能異常、皮膚色素沉著、糖尿病合併肝病或家族史者，建議檢測鐵蛋白與轉鐵蛋白飽和度，並考慮 HFE 基因檢測；一等親應接受鐵質篩檢。",
+      "lifestyle_tips": [
+        "維持均衡飲食，避免不必要的鐵劑補充，並減少酒精與生食貝類攝取",
+        "依醫囑接受治療性放血或鐵螯合治療，定期追蹤鐵蛋白、肝功能與血糖",
+        "出現關節疼痛、疲倦、心律不整或皮膚變深時，應主動告知醫師並安排評估"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "肝膽胃腸科 / 血液科 / 新陳代謝科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的鐵蛋白與轉鐵蛋白飽和度偏高，是否需要做 HFE 基因檢測確認遺傳性血色素沉著症？",
+        "我的鐵蛋白目標是多少？我適合治療性放血還是鐵螯合劑？需要多久追蹤一次？",
+        "我的兄弟姊妹與子女是否應該接受鐵質篩檢與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「鐵質越多越健康，補鐵保健品吃越多越好，不需要擔心鐵過量？」",
+      "truth": "錯！遺傳性血色素沉著症患者因鐵吸收調節失衡，額外補鐵可能加速鐵質沉積，增加肝硬化、糖尿病與心肌病變風險。這類患者應避免不必要的鐵劑，並依醫囑透過放血或螯合治療移除多餘鐵質。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_074",
+    "gene": {
+      "symbol": "HNF1A",
+      "name": "HNF1 homeobox A",
+      "chinese_name": "HNF1A 肝細胞核因子 1α（MODY3 基因）",
+      "ensembl_id": "ENSG00000135100",
+      "entrez_id": "6927",
+      "biotype": "protein_coding",
+      "chromosome": "12q24.31（12 號染色體）",
+      "metaphor": {
+        "title": "🌡️ 胰島素分泌的【智慧型恆溫器（設定錯誤時血糖調節失準）】",
+        "story": "胰臟 β 細胞需要精準感知血糖並釋放胰島素，HNF1A 就像 β 細胞裡的智慧型恆溫器，負責啟動多個與胰島素分泌有關的基因。當 HNF1A 基因變異使恆溫器設定失準，β 細胞對血糖上升的反應變鈍，患者往往在青少年或成年早期就出現血糖偏高。這類 MODY3 糖尿病對磺脲類藥物特別敏感，透過基因檢測確認型別後，可以選擇更合適的治療，避免長期血糖控制不佳造成併發症。"
+      },
+      "plain_summary": "HNF1A 致病變異造成第三型青少年發病型成年糖尿病（MODY3），屬於體染色體顯性遺傳。患者常在青少年或成年早期出現糖尿病，因胰島素分泌功能受損而血糖上升。MODY3 對磺脲類藥物往往反應良好；透過基因檢測確認型別、個別化用藥與定期監測，可有效控制血糖並降低併發症風險。",
+      "academic_summary": "HNF1A 編碼肝細胞核因子 1α，為調控胰臟 β 細胞發育、葡萄糖感測與胰島素分泌相關基因的重要轉錄因子。功能缺失變異導致 MODY3，其特徵為青少年至成年早期發病、胰島素分泌缺陷、對磺脲類藥物高度敏感，且腎閾值下降可能造成糖尿。正確的分子診斷可區分 MODY3 與第 1 型或第 2 型糖尿病，並指導家族篩檢與治療選擇。"
+    },
+    "disease": {
+      "id": "MONDO:0018911",
+      "name": "Maturity-onset diabetes of the young type 3",
+      "chinese_name": "第三型青少年發病型成年糖尿病（MODY3）",
+      "categories": [
+        "體染色體顯性遺傳單基因糖尿病",
+        "青少年發病型成年糖尿病",
+        "胰島素分泌缺陷"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 單基因糖尿病（磺脲類藥物常具良好療效，需長期血糖監測）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004904",
+        "name": "Maturity-onset diabetes of the young",
+        "chinese_name": "青少年發病型成年糖尿病"
+      },
+      {
+        "hpo_id": "HP:0001394",
+        "name": "Cirrhosis",
+        "chinese_name": "肝臟腺瘤與代謝監測風險"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Sulfonylureas (Gliclazide / Glimepiride)",
+        "chinese_name": "磺脲類降血糖藥（格列齊特 / 格列美脲）",
+        "mechanism": "促進胰臟 β 細胞釋放胰島素，對 HNF1A-MODY 的胰島素分泌缺陷往往具有高度療效",
+        "approval_status": "FDA / TFDA / NMPA 核准（MODY3 常用降血糖治療）"
+      },
+      {
+        "drug_name": "Metformin / Insulin",
+        "chinese_name": "雙胍類與胰島素",
+        "mechanism": "Metformin 改善胰島素阻抗與肝醣輸出，胰島素直接補充不足；療效需依個體血糖反應調整",
+        "approval_status": "FDA / TFDA / NMPA 核准（依個別血糖控制需求使用）"
+      },
+      {
+        "drug_name": "Standard antihypertensives / statins",
+        "chinese_name": "標準降血壓藥與斯他汀類降血脂藥",
+        "mechanism": "控制血壓與血脂以降低心血管風險，一般心血管保護用藥可依常規指引使用",
+        "approval_status": "FDA / TFDA / NMPA 核准（糖尿病心血管保護常規用藥）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "HNF1A 功能缺失變異（MODY3 相關）",
+      "population_frequency": "MODY 約占年輕發病糖尿病的少數比例，HNF1A-MODY 為最常見的 MODY 型別之一",
+      "summary": "HNF1A-MODY 患者對磺脲類藥物往往比雙胍類更具療效，治療選擇需依血糖反應、低血糖風險與醫囑個別化調整。",
+      "traffic_light_summary": "🟢 磺脲類藥物（如 Gliclazide / Glimepiride）對 HNF1A-MODY 往往具有高度療效。🟡 Metformin 或胰島素可能需依個體血糖反應調整，並非單基因首選。🟢 標準降血壓藥與斯他汀類等心血管保護用藥一般可正常使用。",
+      "practical_guidance": "確診 MODY3 後應與內分泌科討論最合適的降血糖策略，定期監測血糖、糖化血色素與低血糖症狀；不可自行停藥或更改劑量，並主動告知醫師家族糖尿病史與基因檢測結果。",
+      "drugs_guide": [
+        {
+          "drug_name": "Sulfonylureas (Gliclazide / Glimepiride)",
+          "chinese_name": "磺脲類降血糖藥（格列齊特 / 格列美脲）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "HNF1A-MODY 對磺脲類藥物往往比雙胍類具高度療效，可作為優先考慮的降血糖選項；仍需監測低血糖風險與血糖變化。",
+          "cpic_level": "國際 MODY 診療指引（HNF1A-MODY 磺脲類首選考量）"
+        },
+        {
+          "drug_name": "Metformin / Insulin",
+          "chinese_name": "雙胍類與胰島素",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "可能需依個體血糖反應調整，並非單基因首選；若磺脲類不足或特定情況下使用胰島素，需由內分泌科評估。",
+          "cpic_level": "國際 MODY 診療指引（個別化血糖控制）"
+        },
+        {
+          "drug_name": "Standard antihypertensives / statins",
+          "chinese_name": "標準降血壓藥與斯他汀類降血脂藥",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "一般心血管保護用藥可依常規指引正常使用，並持續監測血壓、血脂與腎功能。",
+          "cpic_level": "糖尿病心血管保護常規指引"
+        }
+      ],
+      "dietary_contraindications": [
+        "採行均衡飲食並控制精緻糖與含糖飲料攝取，配合規律運動以穩定血糖",
+        "使用磺脲類藥物時應規律進食並留意低血糖症狀，避免空腹劇烈運動或過量飲酒",
+        "定期監測血糖、糖化血色素、肝腎功能與血脂，不可自行停藥或調整劑量"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.94,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際單基因糖尿病診療與藥物基因指引",
+      "clinvar_pathogenic_count": 250,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 HNF1A 致病與可能致病變異，基因檢測可協助區分 MODY3 與其他糖尿病型別",
+      "opentargets_score": 0.91,
+      "key_pmids": [
+        "PMID:29792621",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有年輕發病糖尿病、明顯家族史、非肥胖型糖尿病或對磺脲類藥物反應特別好者，建議考慮 HNF1A 基因檢測；一等親應接受血糖篩檢與遺傳諮詢。",
+      "lifestyle_tips": [
+        "維持規律運動與均衡飲食，控制體重並減少精緻糖攝取",
+        "依醫囑規律監測血糖與糖化血色素，留意低血糖症狀並隨身攜帶糖類備用",
+        "定期追蹤眼睛、腎臟、神經與心血管併發症，並主動告知家族糖尿病史"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "內分泌暨新陳代謝科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我或家人年輕就發病糖尿病，且家族多人罹病，是否可能是 HNF1A-MODY，需要做基因檢測？",
+        "若確診 MODY3，磺脲類藥物是否比 Metformin 更適合我？需要如何監測低血糖與血糖變化？",
+        "我的子女是否應該接受血糖篩檢與遺傳諮詢？何時開始追蹤較合適？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「年輕得糖尿病一定是第一型糖尿病，只能終身打胰島素，不可能用口服藥？」",
+      "truth": "錯！HNF1A-MODY 是一種體染色體顯性單基因糖尿病，患者胰島素分泌功能受損但未必完全缺乏，對磺脲類口服藥往往反應良好。透過基因檢測確認型別，有機會調整治療方式，但仍須由內分泌科嚴密監測與個別化決定。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_075",
+    "gene": {
+      "symbol": "CACNA1S",
+      "name": "Calcium voltage-gated channel subunit alpha1 S",
+      "chinese_name": "CACNA1S 骨骼肌鈣離子通道 α1S 次單元（惡性高熱基因）",
+      "ensembl_id": "ENSG00000081248",
+      "entrez_id": "779",
+      "biotype": "protein_coding",
+      "chromosome": "1q32.1（1 號染色體）",
+      "metaphor": {
+        "title": "⚡ 骨骼肌的【鈣離子閘門（特定麻醉藥會讓閘門失控全開）】",
+        "story": "肌肉收縮需要鈣離子，CACNA1S 是骨骼肌細胞膜上的鈣離子通道閘門，負責把電訊號轉換成鈣離子流入。正常情況下閘門精準開關，讓肌肉依指令收縮與放鬆。當 CACNA1S 帶有致病變異時，遇到揮發性吸入性麻醉藥或琥珀膽鹼，閘門可能被卡住而大量開放，鈣離子瞬間湧入細胞，肌肉持續收縮、體溫急速上升，並出現酸中毒、橫紋肌溶解與高血鉀。這是麻醉急症，必須立即停用誘發藥物並給予丹曲洛林。"
+      },
+      "plain_summary": "CACNA1S 致病變異可造成惡性高熱易感性，屬於體染色體顯性遺傳，也可能與低鉀週期性麻痺相關。患者接觸揮發性吸入性麻醉藥（如 Sevoflurane、Desflurane、Isoflurane）或琥珀膽鹼時，可能發生致命性高體溫、肌肉僵硬、橫紋肌溶解與高血鉀。術前告知麻醉團隊家族史與基因結果、避免誘發藥物並預備丹曲洛林，是手術安全的關鍵。",
+      "academic_summary": "CACNA1S 編碼骨骼肌 L 型電壓敏感性鈣離子通道的 α1S 次單元（Cav1.1），位於 T 小管並與 ryanodine receptor 1 功能耦合。致病變異可使通道在揮發性麻醉藥或去極化肌肉鬆弛劑作用下異常活化，造成肌漿網鈣離子大量釋放、持續肌肉收縮、產熱與代謝風暴。CACNA1S 與 RYR1 同為惡性高熱易感性的主要致病基因，部分變異亦與低鉀週期性麻痺相關。"
+    },
+    "disease": {
+      "id": "MONDO:0011163",
+      "name": "Malignant hyperthermia susceptibility",
+      "chinese_name": "惡性高熱易感性與低鉀週期性麻痺",
+      "categories": [
+        "藥物基因組學（PGx）",
+        "麻醉安全",
+        "骨骼肌離子通道疾病"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 麻醉安全紅燈（嚴禁揮發性吸入性麻醉藥與琥珀膽鹼）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002047",
+        "name": "Malignant hyperthermia",
+        "chinese_name": "惡性高熱"
+      },
+      {
+        "hpo_id": "HP:0001324",
+        "name": "Muscle weakness",
+        "chinese_name": "肌肉無力"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Non-triggering anesthetics (Propofol / Remifentanil / Rocuronium)",
+        "chinese_name": "非誘發性麻醉藥（Propofol / Remifentanil / Rocuronium）",
+        "mechanism": "不活化骨骼肌鈣離子通道的麻醉與肌肉鬆弛方案，可作為惡性高熱易感者的安全替代",
+        "approval_status": "FDA / TFDA / NMPA 核准（麻醉安全替代方案）"
+      },
+      {
+        "drug_name": "Dantrolene",
+        "chinese_name": "丹曲洛林（惡性高熱急救解毒劑）",
+        "mechanism": "抑制骨骼肌肌漿網 ryanodine receptor 的鈣離子釋放，中止持續肌肉收縮與代謝風暴",
+        "approval_status": "FDA / TFDA / NMPA 核准（惡性高熱第一線急救藥物）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CACNA1S 致病變異（惡性高熱易感性與低鉀週期性麻痺相關）",
+      "population_frequency": "惡性高熱易感性整體帶因率估計約數千分之一，實際依族群與變異而異",
+      "summary": "CACNA1S 易感者必須避免揮發性吸入性麻醉藥與琥珀膽鹼，手術應採非誘發性麻醉方案並預備丹曲洛林。",
+      "traffic_light_summary": "🔴 揮發性吸入性麻醉藥（Sevoflurane / Desflurane / Isoflurane）與琥珀膽鹼嚴禁使用，以防惡性高熱。🟢 非誘發性麻醉藥（Propofol / Remifentanil / Rocuronium）為安全替代麻醉方案，術前仍須由麻醉團隊評估。",
+      "practical_guidance": "每次手術、牙科處置或鎮靜檢查前，主動告知麻醉團隊家族史與基因檢測結果，確認採用非誘發性麻醉並備妥丹曲洛林與急救流程；術中持續監測體溫、電解質與酸鹼狀態。",
+      "drugs_guide": [
+        {
+          "drug_name": "Volatile inhalation anesthetics (Sevoflurane / Desflurane / Isoflurane)",
+          "chinese_name": "揮發性吸入性麻醉藥（Sevoflurane / Desflurane / Isoflurane）",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "嚴禁使用，可能誘發致命性惡性高熱；CACNA1S 易感者應改用非誘發性麻醉方案。",
+          "cpic_level": "CPIC 惡性高熱與吸入性麻醉藥指引（高風險）"
+        },
+        {
+          "drug_name": "Succinylcholine",
+          "chinese_name": "琥珀膽鹼（去極化神經肌肉阻斷劑）",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "嚴禁使用，可能誘發惡性高熱與嚴重重鉀；應由麻醉團隊選擇非去極化肌肉鬆弛劑替代。",
+          "cpic_level": "CPIC 惡性高熱與吸入性麻醉藥指引（高風險）"
+        },
+        {
+          "drug_name": "Non-triggering anesthetics (Propofol / Remifentanil / Rocuronium)",
+          "chinese_name": "非誘發性麻醉藥（Propofol / Remifentanil / Rocuronium）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "為安全替代麻醉方案，不會活化致病鈣離子通道；麻醉團隊仍須全程監測體溫、電解質與生命徵象。",
+          "cpic_level": "CPIC 惡性高熱與吸入性麻醉藥指引（安全替代）"
+        }
+      ],
+      "dietary_contraindications": [
+        "無特定飲食禁忌，但應避免在高溫環境下劇烈運動、脫水與過量興奮劑，以降低肌肉代謝負擔",
+        "手術、牙科處置或鎮靜檢查前，應出示惡性高熱麻醉安全卡並確認丹曲洛林可用",
+        "若出現不明原因高體溫、肌肉僵硬或深色尿液，應立即就醫並告知麻醉與基因病史"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.95,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 CPIC 麻醉藥物基因指引",
+      "clinvar_pathogenic_count": 180,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 CACNA1S 惡性高熱與低鉀週期性麻痺相關變異，基因檢測可協助術前風險評估",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:20301479",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有惡性高熱家族史、麻醉期間不明原因高體溫或肌肉僵硬，或反覆肌肉無力發作者，建議接受 CACNA1S 與 RYR1 基因檢測及麻醉評估；一等親應接受遺傳諮詢。",
+      "lifestyle_tips": [
+        "隨身攜帶惡性高熱易感性醫療警示卡，每次麻醉前主動告知麻醉團隊",
+        "避免高溫環境下劇烈運動、脫水與過量咖啡因或興奮劑，出現肌肉疼痛或深色尿液應及早就醫",
+        "與麻醉團隊預先規劃非誘發性麻醉方案，並確認院內具備丹曲洛林與急救流程"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "麻醉科 / 遺傳諮詢 / 神經肌肉門診",
+      "questions": [
+        "醫師，我有惡性高熱家族史或 CACNA1S 變異，這次手術能完全避免揮發性吸入性麻醉藥與琥珀膽鹼嗎？",
+        "醫院是否備有丹曲洛林與惡性高熱急救流程？麻醉期間會如何監測體溫、鉀離子與酸鹼狀態？",
+        "我的兄弟姊妹與子女是否也應該接受 CACNA1S 與 RYR1 基因檢測及術前麻醉評估？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「惡性高熱只是麻醉時體溫高一點，吃退燒藥或冰敷就會好？」",
+      "truth": "非常危險！惡性高熱是致命的麻醉急症，會出現體溫急速上升、肌肉僵硬、酸中毒、橫紋肌溶解與高血鉀。必須立即停用誘發藥物、給予丹曲洛林、積極降溫並矯正電解質，不能當成一般發燒處理。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_076",
+    "gene": {
+      "symbol": "BTD",
+      "name": "Biotinidase",
+      "chinese_name": "BTD 生物素酶（生物素酶缺乏症基因）",
+      "ensembl_id": "ENSG00000169814",
+      "entrez_id": "686",
+      "biotype": "protein_coding",
+      "chromosome": "3p25.1（3 號染色體）",
+      "metaphor": {
+        "title": "🔑 回收【生物素鑰匙】的回收機（回收失效時細胞開不了代謝之門）",
+        "story": "生物素就像一把鑰匙，能啟動多個與醣類、脂肪與胺基酸代謝有關的酵素。身體使用過的生物素需要 BTD 生物素酶負責回收再利用，就像一台把舊鑰匙重新打磨的回收機。當 BTD 基因故障時，回收機停擺，生物素無法循環使用，細胞內多條代謝路徑受阻，可能出現肌肉張力低下、癲癇、皮膚疹、掉髮與聽力相關問題。新生兒篩檢能早期發現，及時補充生物素通常可大幅改善症狀。"
+      },
+      "plain_summary": "BTD 致病變異造成生物素酶缺乏症，屬於體染色體隱性遺傳。患者無法有效回收生物素，導致多種代謝酵素功能受損，可能出現肌肉張力低下、癲癇、皮膚炎、掉髮與發展遲緩。新生兒篩檢可早期發現，透過口服生物素補充治療通常能顯著改善神經與皮膚症狀。",
+      "academic_summary": "BTD 編碼生物素酶，負責將生物胞素水解為游離生物素，完成生物素在體內的循環再利用。致病變異導致生物素酶活性下降，使依賴生物素的羧化酶（如 pyruvate carboxylase、propionyl-CoA carboxylase、3-methylcrotonyl-CoA carboxylase 與 acetyl-CoA carboxylase）功能受損，造成乳酸中毒、有機酸尿與神經症狀。新生兒篩檢與及早生物素補充可預防不可逆神經損傷。"
+    },
+    "disease": {
+      "id": "MONDO:0009665",
+      "name": "Biotinidase deficiency",
+      "chinese_name": "生物素酶缺乏症",
+      "categories": [
+        "體染色體隱性遺傳代謝疾病",
+        "生物素代謝障礙",
+        "新生兒篩檢疾病"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟡 可治療的代謝疾病（早期補充生物素可預防神經損傷）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001252",
+        "name": "Hypotonia",
+        "chinese_name": "肌肉張力低下"
+      },
+      {
+        "hpo_id": "HP:0001250",
+        "name": "Seizure",
+        "chinese_name": "癲癇發作"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "High-dose oral biotin supplementation",
+        "chinese_name": "高劑量口服生物素補充治療",
+        "mechanism": "直接補充游離生物素，恢復依賴生物素之羧化酶活性，改善神經、皮膚與代謝症狀",
+        "approval_status": "國際代謝疾病診療指引（生物素酶缺乏症標準治療）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "BTD 致病變異（生物素酶活性缺失相關）",
+      "population_frequency": "生物素酶缺乏症發生率依族群而異，部分地區新生兒篩檢發生率約數萬分之一",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "不可自行停止生物素補充，否則可能導致神經與皮膚症狀復發",
+        "維持均衡飲食；若需使用生蛋白或特殊飲食，應先與代謝科醫師討論",
+        "定期追蹤生長發展、神經學表現與代謝指標，出現癲癇或張力異常時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際新生兒篩檢與代謝疾病診療指引",
+      "clinvar_pathogenic_count": 150,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 BTD 致病與可能致病變異，基因檢測可協助確診與家族遺傳諮詢",
+      "opentargets_score": 0.88,
+      "key_pmids": [
+        "PMID:20301497",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "新生兒篩檢發現生物素酶活性偏低，或有癲癇、肌肉張力低下、皮膚炎、掉髮與發展遲緩者，建議接受 BTD 基因檢測與代謝科評估；手足也應接受篩檢。",
+      "lifestyle_tips": [
+        "依醫囑持續口服生物素補充，不可自行停藥或減量",
+        "定期追蹤生長、發展、神經學與聽力視力評估，及早發現異常",
+        "接種疫苗與一般兒童照護不受影響，但就醫時應主動告知生物素酶缺乏症病史"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "小兒遺傳代謝科 / 神經科 / 遺傳諮詢",
+      "questions": [
+        "醫師，新生兒篩檢或症狀檢查懷疑生物素酶缺乏症，是否需要做 BTD 基因檢測確認？",
+        "我的孩子需要長期生物素補充嗎？劑量與追蹤頻率應如何安排？",
+        "兄弟姊妹是否也應該接受生物素酶活性或基因篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「生物素只是保健食品，生物素酶缺乏症只要多吃一般營養品就會好？」",
+      "truth": "錯！生物素酶缺乏症是體染色體隱性代謝疾病，需要醫師評估並規律使用高劑量口服生物素治療。自行停藥或僅靠一般保健品可能導致癲癇、張力異常與發展遲緩復發，應由代謝科團隊長期追蹤。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_077",
+    "gene": {
+      "symbol": "OTC",
+      "name": "Ornithine transcarbamylase",
+      "chinese_name": "OTC 鳥胺酸氨甲醯基轉移酶（尿素循環障礙基因）",
+      "ensembl_id": "ENSG00000036473",
+      "entrez_id": "5009",
+      "biotype": "protein_coding",
+      "chromosome": "Xp11.4（X 染色體）",
+      "metaphor": {
+        "title": "🏭 肝臟【氨氣清除工廠】的關鍵輸送帶（故障時氨在血液中暴衝）",
+        "story": "蛋白質分解後會產生有毒的氨，肝臟的尿素循環就像一座氨氣清除工廠，把氨轉換成較安全的尿素再由腎臟排出。OTC 是這條生產線上的關鍵輸送帶，負責把鳥胺酸與氨甲醯基結合。當 OTC 基因故障時，輸送帶停擺，氨無法順利進入尿素循環，血氨快速升高，可能造成嘔吐、嗜睡、意識混亂、癲癇甚至腦水腫。特定藥物如丙戊酸會進一步加重高血氨，必須嚴格避免。"
+      },
+      "plain_summary": "OTC 致病變異造成鳥胺酸氨甲醯基轉移酶缺乏症，屬於 X 連鎖隱性遺傳的尿素循環障礙。患者在高蛋白飲食、感染、手術或使用特定藥物時可能出現高血氨，導致嘔吐、嗜睡、癲癇與神經系統急症。透過基因檢測、飲食蛋白質管理、降血氨藥物與避免誘發藥物，可降低急性危機風險。",
+      "academic_summary": "OTC 編碼粒線體鳥胺酸氨甲醯基轉移酶，催化尿素循環中氨甲醯磷酸與鳥胺酸結合成瓜胺酸的步驟。功能缺失變異造成 X 連鎖尿素循環障礙，男性半合子常在新生兒期出現嚴重高血氨，女性帶因者可能因 X 染色體去活化偏斜而出現晚發型症狀。急性高血氨屬神經急症，需立即停止蛋白質攝取、給予降血氨藥物並評估透析。"
+    },
+    "disease": {
+      "id": "MONDO:0010703",
+      "name": "Ornithine transcarbamylase deficiency",
+      "chinese_name": "鳥胺酸氨甲醯基轉移酶缺乏症（OTC 缺乏症）",
+      "categories": [
+        "X 連鎖隱性遺傳尿素循環障礙",
+        "高血氨症",
+        "神經系統急症風險"
+      ],
+      "inheritance_mode": "X 連鎖隱性遺傳 (X-Linked Recessive, XR)",
+      "severity_badge": "🔴 高血氨神經急症風險（需嚴格避免誘發藥物與早期處理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001987",
+        "name": "Hyperammonemia",
+        "chinese_name": "高血氨症"
+      },
+      {
+        "hpo_id": "HP:0001250",
+        "name": "Seizure",
+        "chinese_name": "神經系統急症與癲癇"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Sodium phenylbutyrate / Glycerol phenylbutyrate",
+        "chinese_name": "苯丁酸鈉 / 甘油苯丁酸酯（氮清除劑）",
+        "mechanism": "提供替代氮排泄路徑，與氨結合形成可排出代謝物，降低血氨濃度",
+        "approval_status": "FDA / TFDA / NMPA 核准（尿素循環障礙標準降血氨治療）"
+      },
+      {
+        "drug_name": "L-Arginine / L-Citrulline supplementation",
+        "chinese_name": "L-精胺酸 / L-瓜胺酸補充治療",
+        "mechanism": "補充尿素循環中間產物，維持循環通量並促進氮排泄，常用於急性與長期管理",
+        "approval_status": "國際尿素循環障礙診療指引（代謝輔助治療）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "OTC 致病變異（尿素循環功能缺失相關）",
+      "population_frequency": "OTC 缺乏症是最常見的尿素循環障礙之一，發生率依族群與新生兒篩檢策略而異",
+      "summary": "OTC 缺乏症患者嚴禁使用丙戊酸，使用皮質類固醇等可能增加蛋白質分解的藥物時需嚴密監測血氨，降血氨藥物為標準治療。",
+      "traffic_light_summary": "🔴 丙戊酸 / 丙戊酸鈉嚴禁使用，極易誘發致死性高血氨腦病變。🟡 全身性高劑量皮質類固醇可能加速蛋白質分解而升高血氨，需嚴密監測。🟢 氮清除劑（苯丁酸鈉 / 甘油苯丁酸酯）為標準降血氨治療。",
+      "practical_guidance": "OTC 缺乏症患者應由代謝科團隊長期管理，急性生病、脫水、手術或進食減少時需提高警覺並及早處理；就醫時務必主動告知尿素循環障礙病史與禁忌藥物。",
+      "drugs_guide": [
+        {
+          "drug_name": "Valproic acid / Sodium valproate",
+          "chinese_name": "丙戊酸 / 丙戊酸鈉",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "丙戊酸嚴禁使用，極易誘發致死性高血氨腦病變；癲癇或情緒相關治療應由專科醫師選擇替代藥物。",
+          "cpic_level": "尿素循環障礙用藥安全指引（禁忌）"
+        },
+        {
+          "drug_name": "Systemic high-dose corticosteroids",
+          "chinese_name": "全身性高劑量皮質類固醇",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "可能加速蛋白質分解而升高血氨，使用時需嚴密監測血氨、意識狀態與代謝指標，並由代謝科共同評估。",
+          "cpic_level": "尿素循環障礙用藥安全指引（需監測）"
+        },
+        {
+          "drug_name": "Nitrogen-scavenging agents (Sodium phenylbutyrate / Glycerol phenylbutyrate)",
+          "chinese_name": "氮清除劑（苯丁酸鈉 / 甘油苯丁酸酯）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "為標準降血氨治療，可提供替代氮排泄路徑；使用期間仍須依醫囑監測血氨與電解質。",
+          "cpic_level": "國際尿素循環障礙診療指引（標準治療）"
+        }
+      ],
+      "dietary_contraindications": [
+        "依代謝科與營養師規劃適度限制蛋白質攝取，避免一次性大量高蛋白飲食",
+        "急性生病、嘔吐、腹瀉或進食明顯減少時，應及早聯絡代謝科團隊並依醫囑調整飲食與藥物",
+        "避免空腹過久與脫水，並定期監測血氨、肝功能與生長發展"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.94,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際尿素循環障礙診療與用藥安全指引",
+      "clinvar_pathogenic_count": 220,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 OTC 致病與可能致病變異，基因檢測可協助確診並指導家族篩檢",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:24006547",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有新生兒高血氨、反覆嘔吐嗜睡、不明原因癲癇、高蛋白飲食後意識改變或家族史者，建議接受血氨與代謝檢查並考慮 OTC 基因檢測；女性帶因者也可能出現症狀，應接受遺傳諮詢。",
+      "lifestyle_tips": [
+        "依代謝科團隊規劃蛋白質攝取與降血氨藥物，不可自行更改飲食或停藥",
+        "生病、發燒、脫水或食慾下降時應及早回診，避免高血氨危機",
+        "隨身攜帶尿素循環障礙醫療警示資訊，就醫時主動告知禁忌藥物與病史"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "小兒遺傳代謝科 / 肝膽胃腸科 / 神經科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有反覆高血氨或家族尿素循環障礙病史，是否需要做 OTC 基因檢測確認？",
+        "我應該避免哪些藥物？若必須使用類固醇或其他可能升高血氨的藥物，該如何監測？",
+        "我的兄弟姊妹與子女是否應該接受帶因者篩檢與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「血氨高只是短暫不舒服，吃清淡一點就會自己好，不需要特別用藥？」",
+      "truth": "錯！OTC 缺乏症造成的高血氨可能迅速進展為嘔吐、嗜睡、癲癇、腦水腫甚至死亡，屬於神經急症。必須立即由醫療團隊處理，包括停止蛋白質攝取、使用降血氨藥物並密切監測，不能只靠飲食清淡自行緩解。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_078",
+    "gene": {
+      "symbol": "RPE65",
+      "name": "Retinal pigment epithelium-specific 65 kDa protein",
+      "chinese_name": "RPE65 視網膜色素上皮特異性蛋白（視網膜失養症基因）",
+      "ensembl_id": "ENSG00000116745",
+      "entrez_id": "6121",
+      "biotype": "protein_coding",
+      "chromosome": "1p31.2（1 號染色體）",
+      "metaphor": {
+        "title": "👁️ 視覺循環的【維生素 A 回收工廠（停擺時視網膜感光細胞逐漸退化）】",
+        "story": "視網膜感光細胞需要視黃醛來感光，而視黃醛在使用後必須回到色素上皮層，由 RPE65 負責轉換與回收，才能再次參與視覺循環。RPE65 就像視覺循環裡的維生素 A 回收工廠，讓感光細胞持續獲得必要的視覺色素。當 RPE65 基因故障時，回收工廠停擺，視覺循環受阻，感光細胞逐漸退化，患者從嬰幼兒期就可能出現夜盲、眼球震顫與視力嚴重受損。基因治療可為部分符合條件的患者帶來改善。"
+      },
+      "plain_summary": "RPE65 致病變異造成 RPE65 相關視網膜失養症與雷柏氏先天性黑矇第二型，屬於體染色體隱性遺傳。患者因視覺循環受阻，常在嬰幼兒期出現夜盲、眼球震顫、瞳孔反應遲鈍與進行性視力喪失。透過基因檢測確認型別、視網膜功能評估與合適者的基因治療，可爭取視覺功能改善或延緩退化。",
+      "academic_summary": "RPE65 編碼視網膜色素上皮的視黃醛異構水解酶，負責將全反式視黃醇轉化為 11-順式視黃醛，是視覺循環的關鍵步驟。雙等位基因致病變異導致 RPE65 相關視網膜失養症，包括雷柏氏先天性黑矇第二型與嚴重早發性視網膜色素病變。AAV 載體基因治療 voretigene neparvovec 適用於具備存活視網膜細胞的特定患者，需經視網膜專科完整評估。"
+    },
+    "disease": {
+      "id": "MONDO:0008765",
+      "name": "Leber congenital amaurosis 2",
+      "chinese_name": "RPE65 相關視網膜失養症與雷柏氏先天性黑矇",
+      "categories": [
+        "體染色體隱性遺傳視網膜失養症",
+        "雷柏氏先天性黑矇",
+        "早發性嚴重視覺障礙"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🟡 進行性視網膜退化（早期診斷與基因治療評估可爭取視覺功能）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000546",
+        "name": "Retinal degeneration",
+        "chinese_name": "視網膜退化"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Voretigene neparvovec",
+        "chinese_name": "沃雷替基因治療（AAV 視網膜下注射基因治療）",
+        "mechanism": "以腺相關病毒載體將功能性 RPE65 基因送入視網膜色素上皮細胞，恢復視覺循環並改善部分患者視覺功能",
+        "approval_status": "FDA / TFDA / NMPA 核准（RPE65 相關視網膜失養症基因治療）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "RPE65 雙等位基因致病變異（雷柏氏先天性黑矇與視網膜失養症相關）",
+      "population_frequency": "RPE65 相關視網膜失養症屬罕見疾病，發生率依族群與近親通婚情形而異",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "無特定飲食禁忌，維持均衡營養並注意維生素 A 攝取不宜自行過量補充",
+        "避免自行服用高劑量維生素 A 或視覺保健品，應先與視網膜專科醫師討論",
+        "定期接受視力、視野與視網膜功能評估，出現視力快速惡化時應立即回診"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際視網膜失養症基因治療與診療指引",
+      "clinvar_pathogenic_count": 260,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 RPE65 致病與可能致病變異，基因檢測可協助確診並評估基因治療適用性",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:31725251",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "嬰幼兒出現夜盲、眼球震顫、瞳孔反應遲鈍、追視不佳或家族有先天性黑矇者，應盡早接受眼科與視網膜功能評估並考慮 RPE65 基因檢測；手足也應接受篩檢。",
+      "lifestyle_tips": [
+        "依視網膜專科建議定期追蹤視力、視野與視網膜影像，及早評估基因治療或其他支持性治療",
+        "居家與外出環境可加強照明與安全防護，降低低光環境跌倒風險",
+        "避免自行補充高劑量維生素 A 或未經證實的視覺療法，並主動告知醫師家族史"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "視網膜眼科 / 小兒眼科 / 遺傳諮詢",
+      "questions": [
+        "醫師，孩子從小夜盲或視力嚴重受損，是否可能是 RPE65 相關視網膜失養症，需要做基因檢測？",
+        "若確診 RPE65 變異，我的孩子是否符合基因治療條件？治療前需要哪些視網膜功能評估？",
+        "兄弟姊妹是否也應該接受眼科檢查與基因篩檢？日常生活中需要注意哪些安全事項？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「先天性夜盲只是眼睛還沒發育好，長大就會自然改善，不需要基因檢查？」",
+      "truth": "錯！RPE65 相關視網膜失養症會造成進行性視網膜退化，若延誤診斷可能錯過基因治療評估時機。早期基因檢測與視網膜專科追蹤，有助於確認病因、爭取合適治療並提供家族遺傳諮詢。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_079",
+    "gene": {
+      "symbol": "ENG",
+      "name": "Endoglin",
+      "chinese_name": "ENG 內皮糖蛋白（遺傳性出血性血管擴張症第一型基因）",
+      "ensembl_id": "ENSG00000106991",
+      "entrez_id": "2022",
+      "biotype": "protein_coding",
+      "chromosome": "9q34.11（9 號染色體）",
+      "metaphor": {
+        "title": "🩸 血管修補隊的【訊號接收器（接收不良時血管壁脆弱、容易出血）】",
+        "story": "血管內皮細胞需要接收 TGF-β 家族的訊號，才能維持血管壁的完整與修復能力，ENG 內皮糖蛋白就是內皮細胞表面重要的訊號接收器。當 ENG 基因故障時，訊號接收不良，微血管壁變得脆弱，皮膚、口腔與鼻腔黏膜出現毛細血管擴張，稍微碰撞就反覆流鼻血。肺、肝與腦部也可能形成動靜脈畸形，造成缺氧、出血或神經併發症。透過基因檢測、定期影像追蹤與必要的栓塞或標靶治療，可以降低出血與併發症風險。"
+      },
+      "plain_summary": "ENG 致病變異造成遺傳性出血性血管擴張症第一型（HHT1），屬於體染色體顯性遺傳。患者常出現反覆自發性流鼻血與皮膚黏膜毛細血管擴張，並可能在肺、肝、腦形成動靜脈畸形，導致缺氧、出血或神經系統併發症。透過基因檢測、家族篩檢、影像監測與必要的介入治療，可降低出血與器官併發症風險。",
+      "academic_summary": "ENG 編碼內皮糖蛋白（endoglin），為 TGF-β 超級家族共同受體，主要表現於血管內皮細胞，調控血管生成、內皮修復與平滑肌訊號。生殖細胞致病變異導致 HHT1，因單倍劑量不足使內皮訊號失衡，形成皮膚黏膜毛細血管擴張與內臟動靜脈畸形。HHT1 與肺動靜脈畸形及腦血管併發症的關聯較強，需長期影像與多專科追蹤。"
+    },
+    "disease": {
+      "id": "MONDO:0019180",
+      "name": "Hereditary hemorrhagic telangiectasia",
+      "chinese_name": "遺傳性出血性血管擴張症第一型（HHT1）",
+      "categories": [
+        "體染色體顯性遺傳血管發育疾病",
+        "遺傳性出血性血管擴張症",
+        "動靜脈畸形與出血風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性血管發育疾病（定期影像與出血監測可降低併發症）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000421",
+        "name": "Epistaxis",
+        "chinese_name": "反覆自發性流鼻血"
+      },
+      {
+        "hpo_id": "HP:0001009",
+        "name": "Telangiectasia",
+        "chinese_name": "皮膚黏膜毛細血管擴張"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Tranexamic acid",
+        "chinese_name": "傳明酸（抗纖維蛋白溶解劑）",
+        "mechanism": "抑制纖維蛋白溶解以減少鼻出血與黏膜出血，常用於 HHT 相關反覆鼻出血的輔助治療",
+        "approval_status": "國際 HHT 診療指引（出血輔助治療）"
+      },
+      {
+        "drug_name": "Bevacizumab",
+        "chinese_name": "貝伐珠單抗（抗血管新生治療）",
+        "mechanism": "抑制血管內皮生長因子訊號，減少異常血管生成與 HHT 相關出血，用於特定難治性個案",
+        "approval_status": "國際 HHT 診療指引（特定難治性出血之標靶治療）"
+      },
+      {
+        "drug_name": "Iron supplementation",
+        "chinese_name": "鐵劑補充治療",
+        "mechanism": "補充慢性出血造成的鐵缺乏，改善缺鐵性貧血與疲倦症狀",
+        "approval_status": "國際 HHT 診療指引（貧血支持治療）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ENG 致病變異（HHT1 相關，含錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "HHT 整體發生率估計約數千分之一至一萬分之一，ENG 相關 HHT1 約占其中一部分",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免自行服用影響凝血或增加出血風險的保健品，使用前應先與醫師討論",
+        "維持均衡飲食並注意鐵質攝取，若出現貧血或疲倦應接受評估",
+        "避免用力擤鼻與摳挖鼻腔，保持鼻腔濕潤以減少反覆出血"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 HHT 診療與基因指引",
+      "clinvar_pathogenic_count": 280,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 ENG 致病與可能致病變異，基因檢測可協助確診 HHT1 並進行家族篩檢",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:20301519",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有反覆自發性流鼻血、皮膚黏膜毛細血管擴張、內臟動靜脈畸形或 HHT 家族史者，建議接受基因檢測與遺傳諮詢；一等親應接受臨床篩檢與必要影像檢查。",
+      "lifestyle_tips": [
+        "保持鼻腔濕潤、避免用力擤鼻與摳挖，以減少鼻出血頻率",
+        "定期追蹤血紅素與鐵質，並依醫囑評估肺、肝、腦動靜脈畸形",
+        "出現突發頭痛、呼吸困難、咳血或神經學症狀時，應立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "耳鼻喉科 / 胸腔內科 / 神經內科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我長期反覆流鼻血並有皮膚毛細血管擴張，是否需要做 ENG 基因檢測確認 HHT？",
+        "我需要接受哪些影像檢查來評估肺、肝或腦部的動靜脈畸形？多久追蹤一次？",
+        "我的兄弟姊妹與子女是否也應該接受臨床篩檢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「常流鼻血只是火氣大或鼻黏膜脆弱，跟遺傳性血管疾病沒有關係？」",
+      "truth": "錯！遺傳性出血性血管擴張症常以反覆自發性流鼻血與皮膚黏膜毛細血管擴張表現，且可能合併肺、肝、腦動靜脈畸形。若延誤診斷，可能發生嚴重出血或神經併發症，應及早接受基因檢測與多專科追蹤。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_080",
+    "gene": {
+      "symbol": "ACVRL1",
+      "name": "Activin A receptor like type 1",
+      "chinese_name": "ACVRL1 活化素 A 受體樣第一型（遺傳性出血性血管擴張症第二型基因）",
+      "ensembl_id": "ENSG00000139567",
+      "entrez_id": "94",
+      "biotype": "protein_coding",
+      "chromosome": "12q13.13（12 號染色體）",
+      "metaphor": {
+        "title": "🩸 血管內皮的【ALK1 訊號開關（失靈時微血管擴張並形成動靜脈畸形）】",
+        "story": "血管內皮需要 ALK1 這個訊號開關來平衡血管生成與成熟，ACVRL1 就是製造 ALK1 的基因。當 ACVRL1 故障時，內皮訊號失衡，微血管變得擴張脆弱，皮膚與黏膜出現毛細血管擴張，鼻腔容易反覆出血。肺、肝與胃腸道也可能形成動靜脈畸形；部分患者會合併肺動脈高壓。透過基因檢測、影像監測與必要的介入或標靶治療，可以降低出血與心肺併發症。"
+      },
+      "plain_summary": "ACVRL1 致病變異造成遺傳性出血性血管擴張症第二型（HHT2），屬於體染色體顯性遺傳。患者常出現反覆流鼻血與皮膚黏膜毛細血管擴張，並可能有肺、肝或胃腸道動靜脈畸形，部分個案合併肺動脈高壓。透過基因檢測、家族篩檢、影像監測與必要介入治療，可降低出血與心肺併發症風險。",
+      "academic_summary": "ACVRL1 編碼活化素受體樣激酶 1（ALK1），為內皮細胞 TGF-β 家族第一型受體，與 ENG 共同調控血管生成與成熟。致病變異導致 HHT2，臨床表現與 HHT1 相似，但 HHT2 與肺動脈高壓及肝動靜脈畸形的關聯較明顯。分子診斷有助於區分 HHT 亞型、指導器官篩檢與家族遺傳諮詢。"
+    },
+    "disease": {
+      "id": "MONDO:0019180",
+      "name": "Hereditary hemorrhagic telangiectasia",
+      "chinese_name": "遺傳性出血性血管擴張症第二型（HHT2）",
+      "categories": [
+        "體染色體顯性遺傳血管發育疾病",
+        "遺傳性出血性血管擴張症",
+        "肺動脈高壓與動靜脈畸形風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性血管發育疾病（留意肺動脈高壓與內臟動靜脈畸形）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000421",
+        "name": "Epistaxis",
+        "chinese_name": "反覆流鼻血"
+      },
+      {
+        "hpo_id": "HP:0001009",
+        "name": "Telangiectasia",
+        "chinese_name": "皮膚黏膜毛細血管擴張"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Tranexamic acid",
+        "chinese_name": "傳明酸（抗纖維蛋白溶解劑）",
+        "mechanism": "抑制纖維蛋白溶解以減少鼻出血與黏膜出血，常用於 HHT 相關反覆鼻出血的輔助治療",
+        "approval_status": "國際 HHT 診療指引（出血輔助治療）"
+      },
+      {
+        "drug_name": "Bevacizumab",
+        "chinese_name": "貝伐珠單抗（抗血管新生治療）",
+        "mechanism": "抑制血管內皮生長因子訊號，減少異常血管生成與 HHT 相關出血，用於特定難治性個案",
+        "approval_status": "國際 HHT 診療指引（特定難治性出血之標靶治療）"
+      },
+      {
+        "drug_name": "Pulmonary arterial hypertension therapies (Bosentan / Sildenafil)",
+        "chinese_name": "肺動脈高壓標靶治療（波生坦 / 西地那非）",
+        "mechanism": "擴張肺血管並降低肺血管阻力，用於 HHT2 合併肺動脈高壓患者的專科治療",
+        "approval_status": "FDA / TFDA / NMPA 核准（肺動脈高壓標靶治療）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ACVRL1 致病變異（HHT2 相關，含錯義、無義、剪接與大片段缺失）",
+      "population_frequency": "HHT 整體發生率估計約數千分之一至一萬分之一，ACVRL1 相關 HHT2 約占其中一部分",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免自行服用影響凝血或增加出血風險的保健品，使用前應先與醫師討論",
+        "維持均衡飲食並注意鐵質攝取，若出現貧血、活動喘或水腫應接受評估",
+        "避免用力擤鼻與摳挖鼻腔，保持鼻腔濕潤以減少反覆出血"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 HHT 診療與基因指引",
+      "clinvar_pathogenic_count": 260,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 ACVRL1 致病與可能致病變異，基因檢測可協助確診 HHT2 並進行家族篩檢",
+      "opentargets_score": 0.89,
+      "key_pmids": [
+        "PMID:20301519",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有反覆流鼻血、皮膚黏膜毛細血管擴張、肺動脈高壓、內臟動靜脈畸形或 HHT 家族史者，建議接受基因檢測與遺傳諮詢；一等親應接受臨床篩檢與必要影像檢查。",
+      "lifestyle_tips": [
+        "保持鼻腔濕潤、避免用力擤鼻與摳挖，以減少鼻出血頻率",
+        "定期追蹤血紅素、鐵質與心肺功能，並依醫囑評估肺、肝、胃腸道動靜脈畸形",
+        "出現活動喘、咳血、突發頭痛或神經學症狀時，應立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胸腔內科 / 心臟內科 / 耳鼻喉科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我反覆流鼻血並有皮膚毛細血管擴張，是否需要做 ACVRL1 基因檢測確認 HHT2？",
+        "我是否需要篩檢肺動脈高壓與肺、肝、胃腸道動靜脈畸形？多久追蹤一次？",
+        "我的兄弟姊妹與子女是否也應該接受臨床篩檢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「流鼻血只是鼻黏膜問題，不會影響肺部和心臟，也不需要基因檢查？」",
+      "truth": "錯！HHT2 除了反覆鼻出血與皮膚毛細血管擴張，還可能合併肺動脈高壓與內臟動靜脈畸形。這些併發症可能造成缺氧、出血或心肺衰竭，及早基因檢測與器官篩檢才能及時處理。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_081",
+    "gene": {
+      "symbol": "SDHC",
+      "name": "Succinate dehydrogenase complex subunit C",
+      "chinese_name": "SDHC 琥珀酸脫氫酶複合體 C 次單元（副神經節瘤基因）",
+      "ensembl_id": "ENSG00000143252",
+      "entrez_id": "6391",
+      "biotype": "protein_coding",
+      "chromosome": "1q23.3（1 號染色體）",
+      "metaphor": {
+        "title": "⚡ 粒線體【能源工廠】的穩定支架（故障時副神經節瘤與嗜鉻細胞瘤生長）",
+        "story": "粒線體是細胞的能源工廠，SDHC 是呼吸鏈複合體 II 的重要支架次單元，協助把琥珀酸轉換為延胡索酸並產生能量。當 SDHC 故障時，能源工廠運作異常，琥珀酸堆積並活化缺氧與生長訊號，可能在副神經節或腎上腺髓質長出腫瘤。腫瘤可能分泌兒茶酚胺，造成陣發性高血壓、心悸、出汗與頭痛。透過基因檢測、荷爾蒙與影像監測，以及必要的手術治療，可以及早發現與處理。"
+      },
+      "plain_summary": "SDHC 致病變異造成遺傳性副神經節瘤與嗜鉻細胞瘤症候群（SDHC 型），屬於體染色體顯性遺傳。患者可能在副神經節或腎上腺髓質長出腫瘤，造成陣發性高血壓、心悸、出汗與頭痛。透過基因檢測、定期荷爾蒙與影像監測、術前血壓控制與手術治療，可降低心血管危機與腫瘤併發症風險。",
+      "academic_summary": "SDHC 編碼琥珀酸脫氫酶複合體 C 次單元，為粒線體呼吸鏈複合體 II 的膜錨定次單元。生殖細胞致病變異造成遺傳性副神經節瘤與嗜鉻細胞瘤症候群（SDHC 型），琥珀酸累積抑制脯胺酸羥化酶並穩定 HIF，活化假性缺氧訊號與腫瘤生成。SDHC 相關腫瘤多為副交感型頭頸部副神經節瘤，仍需長期荷爾蒙與影像監測。"
+    },
+    "disease": {
+      "id": "MONDO:0017366",
+      "name": "Hereditary paraganglioma-pheochromocytoma syndrome",
+      "chinese_name": "遺傳性副神經節瘤與嗜鉻細胞瘤症候群（SDHC 型）",
+      "categories": [
+        "體染色體顯性遺傳腫瘤症候群",
+        "神經內分泌腫瘤",
+        "副神經節與腎上腺疾病"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性神經內分泌腫瘤（定期荷爾蒙與影像監測可及早處理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002668",
+        "name": "Paraganglioma",
+        "chinese_name": "副神經節瘤"
+      },
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "嗜鉻細胞瘤"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "手術切除與長期監測",
+        "mechanism": "移除分泌荷爾蒙的腫瘤並持續監測復發、轉移與新腫瘤，為主要治療策略",
+        "approval_status": "國際副神經節瘤與嗜鉻細胞瘤診療指引（標準治療）"
+      },
+      {
+        "drug_name": "Preoperative alpha-adrenergic blockade (Phenoxybenzamine / Doxazosin)",
+        "chinese_name": "術前甲型腎上腺素阻斷劑（酚苄明 / 多沙唑嗪）",
+        "mechanism": "阻斷兒茶酚胺作用以穩定血壓與心率，降低術中高血壓危機風險",
+        "approval_status": "國際副神經節瘤與嗜鉻細胞瘤診療指引（術前準備）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SDHC 致病變異（副神經節瘤與嗜鉻細胞瘤相關）",
+      "population_frequency": "SDHx 相關遺傳性副神經節瘤與嗜鉻細胞瘤占所有個案的一部分，實際發生率依族群與檢測策略而異",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，維持健康體重與規律運動",
+        "若血壓陣發性上升，應避免強烈情緒壓力、過度勞累與高酪胺食物，並依醫囑監測血壓",
+        "出現陣發性頭痛、心悸、出汗、胸痛或血壓明顯升高時，應盡速就醫評估"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性副神經節瘤與嗜鉻細胞瘤指引",
+      "clinvar_pathogenic_count": 180,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 SDHC 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.88,
+      "key_pmids": [
+        "PMID:20301715",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有副神經節瘤、嗜鉻細胞瘤、年輕型高血壓或家族史者，建議接受遺傳諮詢與 SDHx 基因檢測；確診者應定期檢測血漿與尿液兒茶酚胺代謝物，並接受頭頸、胸腹影像追蹤。",
+      "lifestyle_tips": [
+        "定期量測血壓並記錄陣發性症狀，協助評估腫瘤活性",
+        "避免吸菸、過量飲酒與強烈情緒壓力，以減少血壓波動",
+        "手術前主動告知醫療團隊腫瘤病史，避免未評估的麻醉或用藥誘發高血壓危機"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "內分泌暨新陳代謝科 / 心臟內科 / 耳鼻喉科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有陣發性高血壓、心悸與出汗，是否需要評估副神經節瘤或嗜鉻細胞瘤並做 SDHC 基因檢測？",
+        "我的兒茶酚胺代謝物與影像應該多久追蹤一次？腫瘤何時需要手術或其他治療？",
+        "我的兄弟姊妹與子女是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「陣發性高血壓只是壓力大或自律神經失調，不可能與腫瘤有關？」",
+      "truth": "錯！陣發性高血壓合併心悸、出汗與頭痛，可能是分泌兒茶酚胺的嗜鉻細胞瘤或副神經節瘤所致。年輕發病或有家族史者應接受荷爾蒙檢查、影像評估與 SDHC 等基因檢測，不能只當作壓力或自律神經問題。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_082",
+    "gene": {
+      "symbol": "SDHAF2",
+      "name": "Succinate dehydrogenase complex assembly factor 2",
+      "chinese_name": "SDHAF2 琥珀酸脫氫酶複合體組裝因子 2（頭頸部副神經節瘤基因）",
+      "ensembl_id": "ENSG00000167985",
+      "entrez_id": "54949",
+      "biotype": "protein_coding",
+      "chromosome": "11q12.2（11 號染色體）",
+      "metaphor": {
+        "title": "🧩 粒線體【能源工廠】的組裝技師（失職時呼吸鏈鬆脫、頭頸部腫瘤生成）",
+        "story": "呼吸鏈複合體 II 需要多個零件精準組裝才能運作，SDHAF2 就像負責安裝與穩定 SDH 複合體的組裝技師，確保琥珀酸脫氫酶正常折疊與作用。當 SDHAF2 故障時，複合體組裝不良，琥珀酸堆積並活化缺氧與生長訊號，特別容易在頭頸部副神經節長出腫瘤。這類腫瘤可能造成聲音沙啞、吞嚥困難或局部壓迫症狀。透過基因檢測、影像監測與必要的手術治療，可以及早發現與處理。"
+      },
+      "plain_summary": "SDHAF2 致病變異造成遺傳性副神經節瘤症候群第二型（SDHAF2 型），屬於體染色體顯性遺傳，且具有父系來源遺傳的特徵。患者特別容易在頭頸部副神經節長出腫瘤，可能造成聲音沙啞、吞嚥困難或局部壓迫。透過基因檢測、定期影像監測與必要的手術治療，可及早發現與處理腫瘤。",
+      "academic_summary": "SDHAF2 編碼琥珀酸脫氫酶複合體組裝因子 2，協助 SDH 複合體黃素化與穩定組裝。生殖細胞致病變異造成遺傳性副神經節瘤症候群第二型，外顯率與父系遺傳（parent-of-origin）效應相關，腫瘤多見於頭頸部副交感神經副神經節。患者需長期影像監測，並注意家族遺傳諮詢。"
+    },
+    "disease": {
+      "id": "MONDO:0017366",
+      "name": "Hereditary paraganglioma-pheochromocytoma syndrome",
+      "chinese_name": "遺傳性副神經節瘤症候群第二型（SDHAF2 型）",
+      "categories": [
+        "體染色體顯性遺傳腫瘤症候群",
+        "頭頸部副神經節瘤",
+        "神經內分泌腫瘤"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性頭頸部副神經節瘤（定期影像監測可及早處理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002668",
+        "name": "Paraganglioma",
+        "chinese_name": "頭頸部副神經節瘤"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "手術切除與長期監測",
+        "mechanism": "移除頭頸部副神經節瘤並持續監測復發、轉移與新腫瘤，為主要治療策略",
+        "approval_status": "國際副神經節瘤與嗜鉻細胞瘤診療指引（標準治療）"
+      },
+      {
+        "drug_name": "Preoperative alpha-adrenergic blockade (Phenoxybenzamine / Doxazosin)",
+        "chinese_name": "術前甲型腎上腺素阻斷劑（酚苄明 / 多沙唑嗪）",
+        "mechanism": "針對具分泌功能的腫瘤阻斷兒茶酚胺作用，穩定血壓與心率並降低術中危機風險",
+        "approval_status": "國際副神經節瘤與嗜鉻細胞瘤診療指引（術前準備）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SDHAF2 致病變異（頭頸部副神經節瘤相關）",
+      "population_frequency": "SDHAF2 相關副神經節瘤屬罕見，帶因率依族群與檢測策略而異",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，維持健康體重與規律運動",
+        "若腫瘤具分泌功能，應避免強烈情緒壓力與過度勞累，並依醫囑監測血壓",
+        "出現聲音沙啞、吞嚥困難、耳鳴或頸部腫塊時，應盡速就醫評估"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性副神經節瘤診療指引",
+      "clinvar_pathogenic_count": 60,
+      "clinvar_summary_chinese": "ClinVar 已收錄 SDHAF2 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.85,
+      "key_pmids": [
+        "PMID:20301715",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有頭頸部副神經節瘤或家族史者，建議接受遺傳諮詢與 SDHAF2 基因檢測；帶因者應定期接受頭頸部影像追蹤，並注意父系遺傳的家族風險。",
+      "lifestyle_tips": [
+        "依醫囑定期接受頭頸部與相關部位影像監測，及早發現新腫瘤",
+        "避免吸菸與過量飲酒，並留意聲音變化、吞嚥困難或頸部腫塊",
+        "手術前主動告知醫療團隊腫瘤病史，避免未評估的麻醉或用藥"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "耳鼻喉科 / 內分泌暨新陳代謝科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有頭頸部副神經節瘤或家族史，是否需要做 SDHAF2 基因檢測？",
+        "我應該多久接受一次頭頸部影像追蹤？腫瘤何時需要手術或其他治療？",
+        "我的子女與其他家族成員是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「頭頸部腫塊或聲音沙啞只是老化或發炎，不需要進一步檢查？」",
+      "truth": "錯！SDHAF2 相關副神經節瘤常發生於頭頸部，可能造成聲音沙啞、吞嚥困難或局部壓迫。若有家族史或年輕發病，應接受影像與基因檢測，以免延誤診斷與治療。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_083",
+    "gene": {
+      "symbol": "TMEM127",
+      "name": "Transmembrane protein 127",
+      "chinese_name": "TMEM127 跨膜蛋白 127（嗜鉻細胞瘤基因）",
+      "ensembl_id": "ENSG00000135956",
+      "entrez_id": "55654",
+      "biotype": "protein_coding",
+      "chromosome": "2q11.2（2 號染色體）",
+      "metaphor": {
+        "title": "📡 細胞內的【mTOR 訊號調節器（失調時腎上腺髓質腫瘤生長）】",
+        "story": "細胞需要精準調控生長與代謝訊號，TMEM127 是細胞內重要的調節蛋白，會抑制 mTOR 訊號路徑，避免細胞過度生長。當 TMEM127 基因故障時，mTOR 訊號失去煞車，腎上腺髓質或副神經節的嗜鉻細胞可能異常增生，形成會分泌兒茶酚胺的腫瘤，造成陣發性高血壓、心悸、出汗與頭痛。透過基因檢測、荷爾蒙與影像監測，以及術前血壓控制與手術治療，可以降低心血管危機。"
+      },
+      "plain_summary": "TMEM127 致病變異造成遺傳性嗜鉻細胞瘤症候群（TMEM127 型），屬於體染色體顯性遺傳。患者可能在腎上腺髓質或副神經節長出嗜鉻細胞瘤或副神經節瘤，造成陣發性高血壓、心悸、出汗與頭痛。透過基因檢測、定期荷爾蒙與影像監測、術前血壓控制與手術治療，可降低心血管危機與腫瘤併發症風險。",
+      "academic_summary": "TMEM127 編碼跨膜蛋白 127，為 mTOR 訊號路徑的負向調節因子，參與細胞生長、代謝與囊泡運輸。生殖細胞致病變異造成遺傳性嗜鉻細胞瘤與副神經節瘤症候群（TMEM127 型），腫瘤多為腎上腺嗜鉻細胞瘤，部分為副神經節瘤。患者需長期荷爾蒙與影像監測，並接受家族遺傳諮詢。"
+    },
+    "disease": {
+      "id": "MONDO:0017366",
+      "name": "Hereditary paraganglioma-pheochromocytoma syndrome",
+      "chinese_name": "遺傳性嗜鉻細胞瘤症候群（TMEM127 型）",
+      "categories": [
+        "體染色體顯性遺傳腫瘤症候群",
+        "嗜鉻細胞瘤",
+        "神經內分泌腫瘤"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟡 遺傳性嗜鉻細胞瘤（定期荷爾蒙與影像監測可及早處理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "嗜鉻細胞瘤"
+      },
+      {
+        "hpo_id": "HP:0002668",
+        "name": "Paraganglioma",
+        "chinese_name": "副神經節瘤"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "手術切除與長期監測",
+        "mechanism": "移除分泌荷爾蒙的腫瘤並持續監測復發、轉移與新腫瘤，為主要治療策略",
+        "approval_status": "國際副神經節瘤與嗜鉻細胞瘤診療指引（標準治療）"
+      },
+      {
+        "drug_name": "Preoperative alpha-adrenergic blockade (Phenoxybenzamine / Doxazosin)",
+        "chinese_name": "術前甲型腎上腺素阻斷劑（酚苄明 / 多沙唑嗪）",
+        "mechanism": "阻斷兒茶酚胺作用以穩定血壓與心率，降低術中高血壓危機風險",
+        "approval_status": "國際副神經節瘤與嗜鉻細胞瘤診療指引（術前準備）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TMEM127 致病變異（嗜鉻細胞瘤與副神經節瘤相關）",
+      "population_frequency": "TMEM127 相關腫瘤占遺傳性嗜鉻細胞瘤與副神經節瘤的一部分，發生率依族群而異",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免吸菸與過量飲酒，維持健康體重與規律運動",
+        "若血壓陣發性上升，應避免強烈情緒壓力、過度勞累與高酪胺食物，並依醫囑監測血壓",
+        "出現陣發性頭痛、心悸、出汗、胸痛或血壓明顯升高時，應盡速就醫評估"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際遺傳性嗜鉻細胞瘤與副神經節瘤指引",
+      "clinvar_pathogenic_count": 90,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 TMEM127 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.86,
+      "key_pmids": [
+        "PMID:20301715",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有嗜鉻細胞瘤、副神經節瘤、年輕型高血壓或家族史者，建議接受遺傳諮詢與 TMEM127 等基因檢測；確診者應定期檢測血漿與尿液兒茶酚胺代謝物，並接受影像追蹤。",
+      "lifestyle_tips": [
+        "定期量測血壓並記錄陣發性症狀，協助評估腫瘤活性",
+        "避免吸菸、過量飲酒與強烈情緒壓力，以減少血壓波動",
+        "手術前主動告知醫療團隊腫瘤病史，避免未評估的麻醉或用藥誘發高血壓危機"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "內分泌暨新陳代謝科 / 心臟內科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有陣發性高血壓、心悸與出汗，是否需要評估嗜鉻細胞瘤並做 TMEM127 基因檢測？",
+        "我的兒茶酚胺代謝物與影像應該多久追蹤一次？腫瘤何時需要手術？",
+        "我的兄弟姊妹與子女是否應該接受遺傳諮詢與基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「血壓忽高忽低只是緊張，吃降壓藥就好，不需要找腫瘤？」",
+      "truth": "錯！陣發性高血壓合併心悸、出汗與頭痛，可能是分泌兒茶酚胺的嗜鉻細胞瘤或副神經節瘤。若只當作緊張或原發性高血壓處理，可能延誤診斷並增加心血管危機風險，應接受荷爾蒙、影像與基因評估。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_084",
+    "gene": {
+      "symbol": "TTN",
+      "name": "Titin",
+      "chinese_name": "TTN 肌聯蛋白（家族性擴張型心肌病變基因）",
+      "ensembl_id": "ENSG00000155657",
+      "entrez_id": "7273",
+      "biotype": "protein_coding",
+      "chromosome": "2q31.2（2 號染色體）",
+      "metaphor": {
+        "title": "🪢 心肌細胞裡的【彈簧支架（截斷變異使支架變短、心臟逐漸擴大無力）】",
+        "story": "心肌細胞需要一個有彈性的分子彈簧來維持收縮與舒張的張力，TTN 肌聯蛋白就是心臟裡最大的彈簧支架。當 TTN 發生截斷型致病變異時，彈簧支架變短或功能不足，心肌細胞的機械張力失衡，心臟逐漸擴大、收縮力下降，形成擴張型心肌病變，並可能出現心律不整與心室心搏過速。透過基因檢測、心臟超音波與心律監測，以及標準心衰竭藥物與必要時的節律器或去顫器評估，可以延緩病程並降低猝死風險。"
+      },
+      "plain_summary": "TTN 截斷型致病變異是家族性擴張型心肌病變最常見的原因之一，屬於體染色體顯性遺傳。患者心臟逐漸擴大、收縮功能下降，可能出現心衰竭、心律不整與心室心搏過速。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及標準心衰竭治療與必要時的裝置治療，可延緩病程並降低猝死風險。",
+      "academic_summary": "TTN 編碼肌聯蛋白（titin），為橫紋肌肌節中最大的蛋白，維持肌節彈性、張力與訊號傳遞。心臟專一表現的截斷型變異（多見於 A 帶附近外顯子）導致家族性擴張型心肌病變，外顯率與年齡相關。患者可能合併傳導異常與心室性心律不整，需長期心臟功能與節律監測，並評估植入式去顫器適應症。"
+    },
+    "disease": {
+      "id": "MONDO:0005016",
+      "name": "Dilated cardiomyopathy",
+      "chinese_name": "家族性擴張型心肌病變（TTN 截斷變異）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "擴張型心肌病變",
+        "心衰竭與心律不整風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心臟功能與心律追蹤（標準心衰竭治療與裝置評估可降低風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "擴張型心肌病變"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低心肌耗氧與交感神經刺激，改善心衰竭預後並減少心律不整",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "血管張力素轉化酶抑制劑 / 受體阻斷劑 / ARNI",
+        "mechanism": "降低心臟負荷並減緩心室重塑，改善心衰竭症狀與預後",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "Mineralocorticoid receptor antagonists",
+        "chinese_name": "礦物皮質素受體拮抗劑",
+        "mechanism": "減少心衰竭住院與死亡率，並降低心室纖維化",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "SGLT2 inhibitors",
+        "chinese_name": "SGLT2 抑制劑",
+        "mechanism": "改善心衰竭預後與心臟功能，降低心血管事件風險",
+        "approval_status": "標準心衰竭處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TTN 截斷型致病變異（心臟專一表現，擴張型心肌病變相關）",
+      "population_frequency": "TTN 截斷型變異是家族性擴張型心肌病變最常見的遺傳原因之一，外顯率隨年齡增加",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "採低鹽飲食並依醫囑管理水分，避免心衰竭惡化",
+        "避免過量酒精與未經評估的劇烈運動，規律監測體重與水腫",
+        "定期追蹤心臟功能與心律，出現胸悶、暈厥或心悸時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
+      "clinvar_pathogenic_count": 520,
+      "clinvar_summary_chinese": "ClinVar 已收錄大量 TTN 截斷型致病與可能致病變異，基因檢測可協助確診家族性擴張型心肌病變",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有擴張型心肌病變、心衰竭、心室心律不整、年輕猝死或家族史者，建議接受心臟超音波、心電圖與遺傳諮詢，並考慮 TTN 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "採低鹽飲食、管理水分並每日監測體重與水腫",
+        "依醫囑運動並避免過量酒精與未經評估的劇烈活動",
+        "定期追蹤心臟功能與心律，出現胸悶、暈厥或心悸時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心衰竭門診 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有擴張型心肌病變或家族史，是否需要做 TTN 基因檢測確認遺傳原因？",
+        "我的心臟功能與心律應該多久追蹤一次？是否需要評估植入式去顫器？",
+        "我的父母、兄弟姊妹與子女是否應該接受心臟篩檢與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「心臟擴大但還沒有明顯不舒服，就不需要定期追蹤或考慮基因檢測？」",
+      "truth": "錯！TTN 相關擴張型心肌病變可能逐漸進展，並合併心室心律不整與猝死風險。即使症狀輕微，也應定期追蹤心臟功能與心律，並由心臟科評估藥物與裝置治療，不能等到嚴重症狀才處理。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_085",
+    "gene": {
+      "symbol": "BAG3",
+      "name": "BCL2 associated athanogene 3",
+      "chinese_name": "BAG3 BCL2 相關永生基因 3（擴張型心肌病變基因）",
+      "ensembl_id": "ENSG00000151929",
+      "entrez_id": "9531",
+      "biotype": "protein_coding",
+      "chromosome": "10q26.11（10 號染色體）",
+      "metaphor": {
+        "title": "🧱 心肌細胞的【蛋白質品質管理員（失職時肌節蛋白堆積、心臟擴大無力）】",
+        "story": "心肌細胞每天都要製造與替換大量收縮蛋白，BAG3 就像細胞裡的蛋白質品質管理員，協助正確折疊、運送與清除受損蛋白，維持肌節結構。當 BAG3 基因故障時，品質管理系統失衡，受損蛋白堆積，心肌細胞的收縮支架逐漸崩解，心臟擴大且收縮力下降，形成擴張型心肌病變，並可能出現心室心搏過速。透過基因檢測、心臟功能與心律監測，以及標準心衰竭治療與裝置評估，可以延緩病程並降低風險。"
+      },
+      "plain_summary": "BAG3 致病變異造成 BAG3 相關擴張型心肌病變，屬於體染色體顯性遺傳。患者心肌細胞的蛋白質品質管理失衡，心臟逐漸擴大、收縮功能下降，可能出現心衰竭、心律不整與心室心搏過速。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及標準心衰竭治療與必要時的裝置治療，可延緩病程並降低猝死風險。",
+      "academic_summary": "BAG3 編碼 BCL2 相關永生基因 3，為分子伴護蛋白共伴護因子，參與自噬、蛋白質折疊與肌節完整性維持。生殖細胞致病變異造成 BAG3 相關擴張型心肌病變，部分患者合併肌原纖維肌病。疾病可呈體染色體顯性遺傳，外顯率與年齡相關，需長期心臟功能與節律監測並評估裝置治療。"
+    },
+    "disease": {
+      "id": "MONDO:0005016",
+      "name": "Dilated cardiomyopathy",
+      "chinese_name": "BAG3 相關擴張型心肌病變",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "擴張型心肌病變",
+        "心衰竭與心律不整風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心臟功能與心律追蹤（標準心衰竭治療與裝置評估可降低風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "擴張型心肌病變"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低心肌耗氧與交感神經刺激，改善心衰竭預後並減少心律不整",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "血管張力素轉化酶抑制劑 / 受體阻斷劑 / ARNI",
+        "mechanism": "降低心臟負荷並減緩心室重塑，改善心衰竭症狀與預後",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "Mineralocorticoid receptor antagonists",
+        "chinese_name": "礦物皮質素受體拮抗劑",
+        "mechanism": "減少心衰竭住院與死亡率，並降低心室纖維化",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "SGLT2 inhibitors",
+        "chinese_name": "SGLT2 抑制劑",
+        "mechanism": "改善心衰竭預後與心臟功能，降低心血管事件風險",
+        "approval_status": "標準心衰竭處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "BAG3 致病變異（擴張型心肌病變相關）",
+      "population_frequency": "BAG3 相關擴張型心肌病變占家族性擴張型心肌病變的一部分，發生率依族群而異",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，無直接藥物代謝調整指南，一般用藥無需因該基因型調整劑量。本基因目前無藥物基因組（PGx）專屬給藥指引。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "採低鹽飲食並依醫囑管理水分，避免心衰竭惡化",
+        "避免過量酒精與未經評估的劇烈運動，規律監測體重與水腫",
+        "定期追蹤心臟功能與心律，出現胸悶、暈厥或心悸時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.91,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
+      "clinvar_pathogenic_count": 120,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 BAG3 致病與可能致病變異，基因檢測可協助確診與家族篩檢",
+      "opentargets_score": 0.87,
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有擴張型心肌病變、心衰竭、心室心律不整、年輕猝死或家族史者，建議接受心臟超音波、心電圖與遺傳諮詢，並考慮 BAG3 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "採低鹽飲食、管理水分並每日監測體重與水腫",
+        "依醫囑運動並避免過量酒精與未經評估的劇烈活動",
+        "定期追蹤心臟功能與心律，出現胸悶、暈厥或心悸時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心衰竭門診 / 遺傳諮詢",
+      "questions": [
+        "醫師，我有擴張型心肌病變或家族史，是否需要做 BAG3 基因檢測確認遺傳原因？",
+        "我的心臟功能與心律應該多久追蹤一次？是否需要評估植入式去顫器？",
+        "我的父母、兄弟姊妹與子女是否應該接受心臟篩檢與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「心臟擴大只是體質或老化，沒有症狀就不需要基因檢測或家族篩檢？」",
+      "truth": "錯！BAG3 相關擴張型心肌病變可能逐漸進展，並合併心室心律不整與猝死風險。即使症狀輕微，也應定期追蹤心臟功能與心律，並由心臟科評估藥物與裝置治療，同時讓一等親接受篩檢。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_086",
+    "gene": {
+      "symbol": "TNNT2",
+      "name": "cardiac muscle troponin T",
+      "chinese_name": "心肌肌鈣蛋白 T 基因（TNNT2）",
+      "ensembl_id": "ENSG00000118194",
+      "entrez_id": "7139",
+      "biotype": "protein_coding",
+      "chromosome": "1q32.1（1 號染色體）",
+      "metaphor": {
+        "title": "❤️ 心肌收縮開關的【鈣離子感應連桿（長度異常時心肌過度敏感）】",
+        "story": "心肌收縮需要鈣離子打開開關，TNNT2 製造的肌鈣蛋白 T 就像開關上的連桿，負責把鈣離子訊號傳給收縮蛋白。當連桿長度或結構異常時，心肌對鈣離子過度敏感，收縮過強且放鬆不完全，心肌逐漸增厚，形成肥厚型心肌病變，並可能伴隨心律不整與猝死風險。"
+      },
+      "plain_summary": "TNNT2 致病變異造成 TNNT2 相關肥厚型心肌病變，屬於體染色體顯性遺傳。患者心肌收縮調節異常，可能出現心肌肥厚、胸悶、運動性呼吸困難、暈厥或心律不整。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及藥物與生活型態調整，多數人可以良好管理。",
+      "academic_summary": "TNNT2 位於 1q32.1，編碼心肌肌鈣蛋白 T，為心肌細肌絲收縮調節複合體的重要成員。致病變異造成家族性肥厚型心肌病變，呈體染色體顯性遺傳，外顯率與年齡相關；部分變異與心因性猝死風險增加有關，需長期心臟功能與節律監測。"
+    },
+    "disease": {
+      "id": "MONDO:0005045",
+      "name": "Hypertrophic cardiomyopathy",
+      "chinese_name": "家族性肥厚型心肌病變（TNNT2 型）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "肥厚型心肌病變",
+        "心因性猝死風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心臟評估與心律監測（藥物與生活調整可管理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "心因性猝死風險"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "瑪伐凱騰 (Mavacamten)",
+        "mechanism": "心肌肌凝蛋白抑制劑，降低心肌過度收縮，適用於阻塞性肥厚型心肌病變的專科評估",
+        "approval_status": "FDA 核准處方藥（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心率與心肌收縮力，改善症狀與舒張填充",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TNNT2 致病變異（肥厚型心肌病變與猝死風險相關）",
+      "population_frequency": "肥厚型心肌病變約每 500 人中有 1 人，TNNT2 為家族性肥厚型心肌病變的致病基因之一 (PMID:20301725)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。肥厚型心肌病變的治療選項包括乙型交感神經阻斷劑、心肌肌凝蛋白抑制劑（如 mavacamten）與定期心臟監測；是否用藥與選擇應由心臟內科醫師依症狀、流出道阻塞與心律風險評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免脫水、過量酒精與未經評估的劇烈競技運動，以免加重症狀",
+        "維持均衡飲食與適當水分，運動前後注意補充水分",
+        "依醫囑定期接受心臟超音波與心律監測，出現胸悶、暈厥或心悸時應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
+      "clinvar_pathogenic_count": 210,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 TNNT2 致病與可能致病變異，與肥厚型心肌病變及心因性猝死風險相關",
+      "opentargets_score": 0.88,
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有肥厚型心肌病變、運動性暈厥、心雜音、年輕猝死或家族史者，建議接受心臟超音波、心電圖與遺傳諮詢，並考慮 TNNT2 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "保持適當水分，避免脫水、過量酒精與未評估的劇烈競技運動",
+        "依醫師建議選擇運動強度，並避免在高溫環境下長時間劇烈運動",
+        "定期追蹤心臟功能與心律，出現胸痛、暈厥或心悸時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 TNNT2 基因檢測顯示有致病變異，我需要多久追蹤一次心臟超音波與心律？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心臟評估或 TNNT2 基因檢測？",
+        "我適合使用乙型阻斷劑或 mavacamten 嗎？運動與日常生活有哪些限制？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「心肌肥厚只是運動員心臟，沒有症狀就不必在意基因變異？」",
+      "truth": "錯！TNNT2 相關肥厚型心肌病變可能在任何年齡出現，且部分患者以暈厥或猝死為首次表現。即使沒有明顯症狀，也應定期接受心臟評估，並讓一等親接受篩檢。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_087",
+    "gene": {
+      "symbol": "TNNI3",
+      "name": "cardiac muscle troponin I",
+      "chinese_name": "心肌肌鈣蛋白 I 基因（TNNI3）",
+      "ensembl_id": "ENSG00000129991",
+      "entrez_id": "7137",
+      "biotype": "protein_coding",
+      "chromosome": "19q13.42（19 號染色體）",
+      "metaphor": {
+        "title": "❤️ 心肌收縮開關的【抑制閘門（解除抑制時心肌過度收縮）】",
+        "story": "心肌在放鬆時需要一道抑制閘門避免過度收縮，TNNI3 製造的肌鈣蛋白 I 就是這道閘門。當閘門結構異常，抑制訊號無法正常傳遞，心肌收縮調節失衡，逐漸出現肥厚、舒張功能異常與心律不整，形成肥厚型心肌病變。"
+      },
+      "plain_summary": "TNNI3 致病變異造成 TNNI3 相關肥厚型心肌病變，屬於體染色體顯性遺傳。患者可能出現心肌肥厚、運動性呼吸困難、胸悶、暈厥或心律不整。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及藥物與生活型態調整，可降低症狀與併發症風險。",
+      "academic_summary": "TNNI3 位於 19q13.42，編碼心肌肌鈣蛋白 I，為心肌細肌絲收縮調節複合體的抑制性次單元。致病變異造成家族性肥厚型心肌病變，呈體染色體顯性遺傳；可影響鈣離子敏感性與收縮鬆弛，需長期評估心肌肥厚程度、流出道阻塞與心律風險。"
+    },
+    "disease": {
+      "id": "MONDO:0005045",
+      "name": "Hypertrophic cardiomyopathy",
+      "chinese_name": "家族性肥厚型心肌病變（TNNI3 型）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "肥厚型心肌病變",
+        "暈厥與心律不整風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心臟評估與暈厥風險監測（藥物與生活調整可管理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "暈厥"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "瑪伐凱騰 (Mavacamten)",
+        "mechanism": "心肌肌凝蛋白抑制劑，降低心肌過度收縮，適用於阻塞性肥厚型心肌病變的專科評估",
+        "approval_status": "FDA 核准處方藥（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心率與心肌收縮力，改善症狀與舒張填充",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TNNI3 致病變異（肥厚型心肌病變相關）",
+      "population_frequency": "肥厚型心肌病變約每 500 人中有 1 人，TNNI3 為家族性肥厚型心肌病變的致病基因之一 (PMID:20301725)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。肥厚型心肌病變的治療選項包括乙型交感神經阻斷劑、心肌肌凝蛋白抑制劑（如 mavacamten）與定期心臟監測；是否用藥與選擇應由心臟內科醫師依症狀、流出道阻塞與暈厥風險評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免脫水、過量酒精與未經評估的劇烈競技運動，以免誘發暈厥或心律不整",
+        "維持均衡飲食與適當水分，避免一次性大量飲酒",
+        "依醫囑定期接受心臟超音波與心律監測，出現暈厥前兆或心悸時應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
+      "clinvar_pathogenic_count": 180,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 TNNI3 致病與可能致病變異，與肥厚型心肌病變及暈厥風險相關",
+      "opentargets_score": 0.86,
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有肥厚型心肌病變、反覆暈厥、心雜音、年輕猝死或家族史者，建議接受心臟超音波、心電圖與遺傳諮詢，並考慮 TNNI3 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "保持適當水分，避免脫水、過量酒精與未評估的劇烈競技運動",
+        "若出現頭暈、眼前發黑或快要昏倒的感覺，應立即停止活動並就醫",
+        "定期追蹤心臟功能與心律，依醫師建議調整個別化運動計畫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 TNNI3 基因檢測顯示有致病變異，我需要多久追蹤一次心臟超音波與心律？",
+        "我曾經暈厥或差點暈倒，這和心肌病變有關嗎？是否需要進一步心律檢查？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心臟評估或 TNNI3 基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「暈厥只是太累或血壓低，跟心臟基因無關？」",
+      "truth": "不一定。TNNI3 相關肥厚型心肌病變可能造成運動性或突發性暈厥，並與心律不整風險有關。反覆暈厥應接受心臟評估，不應只歸因於疲勞或體質。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_088",
+    "gene": {
+      "symbol": "TPM1",
+      "name": "tropomyosin alpha-1 chain",
+      "chinese_name": "心肌原肌凝蛋白 1 基因（TPM1）",
+      "ensembl_id": "ENSG00000140416",
+      "entrez_id": "7168",
+      "biotype": "protein_coding",
+      "chromosome": "15q22.2（15 號染色體）",
+      "metaphor": {
+        "title": "❤️ 心肌收縮軌道的【穩定鋼索（張力異常時收縮調節失衡）】",
+        "story": "心肌收縮時，肌動蛋白與肌凝蛋白需要沿著軌道滑動，TPM1 製造的原肌凝蛋白就像軌道旁的穩定鋼索，控制收縮開關的開與關。當鋼索張力異常，收縮與放鬆的節奏被打亂，心肌逐漸增厚，形成肥厚型心肌病變，並可能出現心房顫動。"
+      },
+      "plain_summary": "TPM1 致病變異造成 TPM1 相關肥厚型心肌病變，屬於體染色體顯性遺傳。患者可能出現心肌肥厚、運動性呼吸困難、胸悶、心律不整或心房顫動。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及藥物與生活型態調整，可降低症狀與併發症風險。",
+      "academic_summary": "TPM1 位於 15q22.2，編碼心肌原肌凝蛋白 α-1 鏈，調控細肌絲上肌凝蛋白結合位點的曝露。致病變異造成家族性肥厚型心肌病變，呈體染色體顯性遺傳；可影響心肌收縮與鬆弛，並增加心房顫動與心律不整風險。"
+    },
+    "disease": {
+      "id": "MONDO:0005045",
+      "name": "Hypertrophic cardiomyopathy",
+      "chinese_name": "家族性肥厚型心肌病變（TPM1 型）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "肥厚型心肌病變",
+        "心房顫動風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心臟評估與心房顫動監測（藥物與生活調整可管理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      },
+      {
+        "hpo_id": "HP:0005110",
+        "name": "Atrial fibrillation",
+        "chinese_name": "心房顫動"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "瑪伐凱騰 (Mavacamten)",
+        "mechanism": "心肌肌凝蛋白抑制劑，降低心肌過度收縮，適用於阻塞性肥厚型心肌病變的專科評估",
+        "approval_status": "FDA 核准處方藥（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心率與心肌收縮力，改善症狀、舒張填充與心房顫動時的心室率控制",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TPM1 致病變異（肥厚型心肌病變與心房顫動相關）",
+      "population_frequency": "肥厚型心肌病變約每 500 人中有 1 人，TPM1 為家族性肥厚型心肌病變的致病基因之一 (PMID:20301725)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。肥厚型心肌病變的治療選項包括乙型交感神經阻斷劑、心肌肌凝蛋白抑制劑（如 mavacamten）與定期心臟監測；合併心房顫動時的抗凝血決策應由心臟內科醫師依整體風險評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免脫水、過量酒精與未經評估的劇烈競技運動，以免加重症狀或誘發心律不整",
+        "維持均衡飲食與適當水分，並控制血壓與代謝風險因子",
+        "依醫囑定期接受心臟超音波與心律監測，出現心悸、胸悶或暈厥時應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.91,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
+      "clinvar_pathogenic_count": 130,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 TPM1 致病與可能致病變異，與肥厚型心肌病變及心房顫動相關",
+      "opentargets_score": 0.84,
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有肥厚型心肌病變、心房顫動、心雜音、運動性暈厥或家族史者，建議接受心臟超音波、心電圖與遺傳諮詢，並考慮 TPM1 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "保持適當水分，避免脫水、過量酒精與未評估的劇烈競技運動",
+        "控制血壓、體重與睡眠呼吸中止等心房顫動危險因子",
+        "定期追蹤心臟功能與心律，出現心悸、胸悶或暈厥時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 TPM1 基因檢測顯示有致病變異，我需要多久追蹤一次心臟超音波與心律？",
+        "我曾經出現心悸或心房顫動，是否需要評估抗凝血治療與心律控制策略？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心臟評估或 TPM1 基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「心房顫動只是年紀大的問題，和年輕人的心肌肥厚基因無關？」",
+      "truth": "不一定。TPM1 相關肥厚型心肌病變可能增加心房顫動風險，且心房顫動會進一步影響心臟功能與中風風險。即使年輕，也應定期接受心律監測與專業評估。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_089",
+    "gene": {
+      "symbol": "MYL2",
+      "name": "myosin regulatory light chain 2, ventricular/cardiac muscle isoform",
+      "chinese_name": "心室肌球蛋白調節輕鏈 2 基因（MYL2）",
+      "ensembl_id": "ENSG00000111245",
+      "entrez_id": "4633",
+      "biotype": "protein_coding",
+      "chromosome": "12q24.11（12 號染色體）",
+      "metaphor": {
+        "title": "❤️ 心肌馬達的【調速旋鈕（調節失衡時收縮過強）】",
+        "story": "心肌的肌凝蛋白馬達需要調節輕鏈來微調收縮力量，MYL2 製造的調節輕鏈就像馬達上的調速旋鈕。當旋鈕設定異常，心肌收縮過強、放鬆不足，心肌逐漸肥厚，形成肥厚型心肌病變，並可能出現暈厥或心律不整。"
+      },
+      "plain_summary": "MYL2 致病變異造成 MYL2 相關肥厚型心肌病變，屬於體染色體顯性遺傳。患者可能出現心肌肥厚、運動性呼吸困難、胸悶、暈厥或心律不整。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及藥物與生活型態調整，可降低症狀與併發症風險。",
+      "academic_summary": "MYL2 位於 12q24.11，編碼心室心肌肌凝蛋白調節輕鏈，參與心肌收縮力與橫橋循環的調控。致病變異造成家族性肥厚型心肌病變，呈體染色體顯性遺傳；可影響心肌舒張與流出道功能，需長期監測心肌肥厚、症狀與心律風險。"
+    },
+    "disease": {
+      "id": "MONDO:0005045",
+      "name": "Hypertrophic cardiomyopathy",
+      "chinese_name": "家族性肥厚型心肌病變（MYL2 型）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "肥厚型心肌病變",
+        "暈厥與心律不整風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心臟評估與暈厥風險監測（藥物與生活調整可管理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "暈厥"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "瑪伐凱騰 (Mavacamten)",
+        "mechanism": "心肌肌凝蛋白抑制劑，降低心肌過度收縮，適用於阻塞性肥厚型心肌病變的專科評估",
+        "approval_status": "FDA 核准處方藥（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心率與心肌收縮力，改善症狀與舒張填充",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MYL2 致病變異（肥厚型心肌病變相關）",
+      "population_frequency": "肥厚型心肌病變約每 500 人中有 1 人，MYL2 為家族性肥厚型心肌病變的致病基因之一 (PMID:20301725)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。肥厚型心肌病變的治療選項包括乙型交感神經阻斷劑、心肌肌凝蛋白抑制劑（如 mavacamten）與定期心臟監測；是否用藥與選擇應由心臟內科醫師依症狀、流出道阻塞與暈厥風險評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免脫水、過量酒精與未經評估的劇烈競技運動，以免誘發暈厥或心律不整",
+        "維持均衡飲食與適當水分，運動前後注意補充水分",
+        "依醫囑定期接受心臟超音波與心律監測，出現頭暈、暈厥或心悸時應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 90,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 MYL2 致病與可能致病變異，與肥厚型心肌病變相關",
+      "opentargets_score": 0.82,
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有肥厚型心肌病變、運動性暈厥、心雜音、年輕猝死或家族史者，建議接受心臟超音波、心電圖與遺傳諮詢，並考慮 MYL2 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "保持適當水分，避免脫水、過量酒精與未評估的劇烈競技運動",
+        "依醫師建議選擇運動強度，避免在極端環境下長時間運動",
+        "定期追蹤心臟功能與心律，出現暈厥前兆、胸悶或心悸時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 MYL2 基因檢測顯示有致病變異，我需要多久追蹤一次心臟超音波與心律？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心臟評估或 MYL2 基因檢測？",
+        "我適合使用乙型阻斷劑或 mavacamten 嗎？運動與日常生活有哪些限制？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「心肌肥厚只要少運動就會自己改善，不必接受基因檢測？」",
+      "truth": "錯！MYL2 相關肥厚型心肌病變是遺傳性心肌結構疾病，不會單靠減少運動自行痊癒。應由心臟科評估心肌肥厚程度、流出道阻塞與心律風險，並讓一等親接受篩檢。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_090",
+    "gene": {
+      "symbol": "MYL3",
+      "name": "myosin essential light chain, ventricular/cardiac muscle isoform",
+      "chinese_name": "心室肌球蛋白必需輕鏈 3 基因（MYL3）",
+      "ensembl_id": "ENSG00000160808",
+      "entrez_id": "4634",
+      "biotype": "protein_coding",
+      "chromosome": "3p21.31（3 號染色體）",
+      "metaphor": {
+        "title": "❤️ 心肌馬達的【固定支架（鬆動時收縮效率失衡）】",
+        "story": "心肌的肌凝蛋白馬達需要必需輕鏈提供結構支撐，MYL3 製造的必需輕鏈就像馬達上的固定支架。當支架鬆動或結構異常，馬達運轉不穩，心肌收縮與放鬆失衡，逐漸出現心肌肥厚，形成肥厚型心肌病變，並可能伴隨暈厥或心律不整。"
+      },
+      "plain_summary": "MYL3 致病變異造成 MYL3 相關肥厚型心肌病變，屬於體染色體顯性遺傳。患者可能出現心肌肥厚、運動性呼吸困難、胸悶、暈厥或心律不整。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及藥物與生活型態調整，可降低症狀與併發症風險。",
+      "academic_summary": "MYL3 位於 3p21.31，編碼心室心肌肌凝蛋白必需輕鏈，維持肌凝蛋白頭部結構與收縮效率。致病變異造成家族性肥厚型心肌病變，呈體染色體顯性遺傳；可影響心肌收縮與舒張，需長期監測心肌肥厚、流出道阻塞與心律風險。"
+    },
+    "disease": {
+      "id": "MONDO:0005045",
+      "name": "Hypertrophic cardiomyopathy",
+      "chinese_name": "家族性肥厚型心肌病變（MYL3 型）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "肥厚型心肌病變",
+        "暈厥與心律不整風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心臟評估與暈厥風險監測（藥物與生活調整可管理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "暈厥"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "瑪伐凱騰 (Mavacamten)",
+        "mechanism": "心肌肌凝蛋白抑制劑，降低心肌過度收縮，適用於阻塞性肥厚型心肌病變的專科評估",
+        "approval_status": "FDA 核准處方藥（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心率與心肌收縮力，改善症狀與舒張填充",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MYL3 致病變異（肥厚型心肌病變相關）",
+      "population_frequency": "肥厚型心肌病變約每 500 人中有 1 人，MYL3 為家族性肥厚型心肌病變的致病基因之一 (PMID:20301725)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。肥厚型心肌病變的治療選項包括乙型交感神經阻斷劑、心肌肌凝蛋白抑制劑（如 mavacamten）與定期心臟監測；是否用藥與選擇應由心臟內科醫師依症狀、流出道阻塞與暈厥風險評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免脫水、過量酒精與未經評估的劇烈競技運動，以免誘發暈厥或心律不整",
+        "維持均衡飲食與適當水分，運動前後注意補充水分",
+        "依醫囑定期接受心臟超音波與心律監測，出現頭暈、暈厥或心悸時應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.89,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 80,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 MYL3 致病與可能致病變異，與肥厚型心肌病變相關",
+      "opentargets_score": 0.81,
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有肥厚型心肌病變、運動性暈厥、心雜音、年輕猝死或家族史者，建議接受心臟超音波、心電圖與遺傳諮詢，並考慮 MYL3 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "保持適當水分，避免脫水、過量酒精與未評估的劇烈競技運動",
+        "依醫師建議選擇運動強度，避免在極端環境下長時間運動",
+        "定期追蹤心臟功能與心律，出現暈厥前兆、胸悶或心悸時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 MYL3 基因檢測顯示有致病變異，我需要多久追蹤一次心臟超音波與心律？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心臟評估或 MYL3 基因檢測？",
+        "我適合使用乙型阻斷劑或 mavacamten 嗎？運動與日常生活有哪些限制？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「心肌肥厚沒有症狀就代表心臟沒事，不需要定期追蹤？」",
+      "truth": "錯！MYL3 相關肥厚型心肌病變可能逐步進展，並以暈厥或心律不整表現。即使沒有症狀，也應定期接受心臟超音波與心律評估，並讓一等親接受篩檢。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_091",
+    "gene": {
+      "symbol": "ACTC1",
+      "name": "actin, alpha cardiac muscle 1",
+      "chinese_name": "心肌 α 肌動蛋白基因（ACTC1）",
+      "ensembl_id": "ENSG00000159251",
+      "entrez_id": "70",
+      "biotype": "protein_coding",
+      "chromosome": "15q14（15 號染色體）",
+      "metaphor": {
+        "title": "❤️ 心肌收縮軌道的【主鋼索（結構異常時收縮力量失控）】",
+        "story": "心肌收縮時，肌凝蛋白需要沿著肌動蛋白構成的軌道滑動，ACTC1 製造的心肌 α 肌動蛋白就是軌道的主鋼索。當鋼索結構異常，收縮力量與放鬆節奏失控，心肌逐漸增厚，形成肥厚型心肌病變，並可能合併心房顫動。"
+      },
+      "plain_summary": "ACTC1 致病變異造成 ACTC1 相關肥厚型心肌病變，屬於體染色體顯性遺傳。患者可能出現心肌肥厚、運動性呼吸困難、胸悶、心律不整或心房顫動。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及藥物與生活型態調整，可降低症狀與併發症風險。",
+      "academic_summary": "ACTC1 位於 15q14，編碼心肌 α 肌動蛋白，為心肌細肌絲的主要結構蛋白與收縮力量來源。致病變異造成家族性肥厚型心肌病變，呈體染色體顯性遺傳；可影響心肌收縮與鬆弛，並增加心房顫動與心律不整風險。"
+    },
+    "disease": {
+      "id": "MONDO:0005045",
+      "name": "Hypertrophic cardiomyopathy",
+      "chinese_name": "家族性心肌肌動蛋白相關肥厚型心肌病變",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "肥厚型心肌病變",
+        "心房顫動風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心臟評估與心房顫動監測（藥物與生活調整可管理）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      },
+      {
+        "hpo_id": "HP:0005110",
+        "name": "Atrial fibrillation",
+        "chinese_name": "心房顫動"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "瑪伐凱騰 (Mavacamten)",
+        "mechanism": "心肌肌凝蛋白抑制劑，降低心肌過度收縮，適用於阻塞性肥厚型心肌病變的專科評估",
+        "approval_status": "FDA 核准處方藥（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心率與心肌收縮力，改善症狀、舒張填充與心房顫動時的心室率控制",
+        "approval_status": "標準處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ACTC1 致病變異（肥厚型心肌病變與心房顫動相關）",
+      "population_frequency": "肥厚型心肌病變約每 500 人中有 1 人，ACTC1 為家族性肥厚型心肌病變的致病基因之一 (PMID:20301725)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。肥厚型心肌病變的治療選項包括乙型交感神經阻斷劑、心肌肌凝蛋白抑制劑（如 mavacamten）與定期心臟監測；合併心房顫動時的抗凝血決策應由心臟內科醫師依整體風險評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免脫水、過量酒精與未經評估的劇烈競技運動，以免加重症狀或誘發心律不整",
+        "維持均衡飲食與適當水分，並控制血壓與代謝風險因子",
+        "依醫囑定期接受心臟超音波與心律監測，出現心悸、胸悶或暈厥時應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.91,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
+      "clinvar_pathogenic_count": 120,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 ACTC1 致病與可能致病變異，與肥厚型心肌病變及心房顫動相關",
+      "opentargets_score": 0.85,
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有肥厚型心肌病變、心房顫動、心雜音、運動性暈厥或家族史者，建議接受心臟超音波、心電圖與遺傳諮詢，並考慮 ACTC1 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "保持適當水分，避免脫水、過量酒精與未評估的劇烈競技運動",
+        "控制血壓、體重與睡眠呼吸中止等心房顫動危險因子",
+        "定期追蹤心臟功能與心律，出現心悸、胸悶或暈厥時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 ACTC1 基因檢測顯示有致病變異，我需要多久追蹤一次心臟超音波與心律？",
+        "我曾經出現心悸或心房顫動，是否需要評估抗凝血治療與心律控制策略？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心臟評估或 ACTC1 基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「心房顫動只要吃藥控制心跳就好，不必檢查心肌肥厚基因？」",
+      "truth": "不一定。ACTC1 相關肥厚型心肌病變可能以心房顫動或心律不整表現，心肌結構異常會影響治療與中風風險評估。應由心臟科同時評估心肌結構、心律與遺傳原因。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_092",
+    "gene": {
+      "symbol": "PRKAG2",
+      "name": "5'-AMP-activated protein kinase subunit gamma-2",
+      "chinese_name": "AMPK γ2 次單元基因（PRKAG2）",
+      "ensembl_id": "ENSG00000106617",
+      "entrez_id": "51422",
+      "biotype": "protein_coding",
+      "chromosome": "7q36.1（7 號染色體）",
+      "metaphor": {
+        "title": "🔋 心臟能量感測的【電池管理員（能量失衡並伴隨預激路徑）】",
+        "story": "心臟持續跳動需要穩定能量，PRKAG2 製造的 AMPK γ2 次單元就像心臟的電池管理員，負責感測能量狀態並調整代謝。當管理員故障，心肌細胞能量失衡、儲積物增加，心肌逐漸肥厚，還可能出現多餘的電氣傳導路徑，造成預激症候群（WPW）與心律不整。"
+      },
+      "plain_summary": "PRKAG2 致病變異造成 PRKAG2 相關心肌病變與預激症候群，屬於體染色體顯性遺傳。患者可能出現心肌肥厚、心悸、暈厥、心律不整或心電圖上的 WPW 預激表現。透過基因檢測、家族篩檢、定期心電圖與心臟超音波，以及藥物與必要時的電生理評估，可降低症狀與併發症風險。",
+      "academic_summary": "PRKAG2 位於 7q36.1，編碼 AMP 活化蛋白激酶 γ2 次單元，調控心肌能量代謝。致病變異造成 PRKAG2 相關肥厚型心肌病變，常合併心室預激（WPW 型態）、心律不整與傳導異常，呈體染色體顯性遺傳；需長期心電圖、心律與心臟結構監測。"
+    },
+    "disease": {
+      "id": "MONDO:0005045",
+      "name": "Hypertrophic cardiomyopathy",
+      "chinese_name": "PRKAG2 心肌病變與預激症候群（WPW）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "肥厚型心肌病變",
+        "預激症候群與心律不整"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心臟結構與心律監測（預激路徑與心律不整需專科評估）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      },
+      {
+        "hpo_id": "HP:0005110",
+        "name": "Atrial fibrillation",
+        "chinese_name": "心律不整與心房顫動"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心率與心肌收縮力，改善症狀並協助控制預激相關心律不整",
+        "approval_status": "標準處方治療"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy (WPW / pre-excitation)",
+        "chinese_name": "抗心律不整藥物治療（WPW 預激路徑評估）",
+        "mechanism": "控制心室率與預激相關心律不整，需由心臟電生理專科評估用藥與消融選項",
+        "approval_status": "標準心律治療（依電生理評估）"
+      },
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "瑪伐凱騰 (Mavacamten)",
+        "mechanism": "心肌肌凝蛋白抑制劑，降低心肌過度收縮，部分阻塞性肥厚型心肌病變患者可經專科評估使用",
+        "approval_status": "FDA 核准處方藥（需心臟專科評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PRKAG2 致病變異（肥厚型心肌病變、預激症候群與心律不整相關）",
+      "population_frequency": "PRKAG2 相關心肌病變屬罕見遺傳性心肌病變，發生率依族群而異 (PMID:20301725)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。PRKAG2 心肌病變常合併預激症候群與心律不整，治療選項包括乙型交感神經阻斷劑、抗心律不整藥物、必要時的電生理檢查與射頻消融，以及阻塞性肥厚型心肌病變患者經專科評估後使用心肌肌凝蛋白抑制劑（如 mavacamten）。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免脫水、過量酒精與未經評估的劇烈競技運動，以免誘發心律不整",
+        "維持均衡飲食與適當水分，避免高糖與過量精製碳水化合物",
+        "依醫囑定期接受心電圖、心臟超音波與心律監測，出現心悸、暈厥或胸悶時應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學與心律指引證據明確",
+      "clinvar_pathogenic_count": 70,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 PRKAG2 致病與可能致病變異，與肥厚型心肌病變、預激症候群及心律不整相關",
+      "opentargets_score": 0.83,
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有肥厚型心肌病變、WPW 預激症候群、反覆心悸或暈厥、年輕猝死或家族史者，建議接受心電圖、心臟超音波與遺傳諮詢，並考慮 PRKAG2 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "保持適當水分，避免脫水、過量酒精與未評估的劇烈競技運動",
+        "出現突發心悸、頭暈或暈厥時應立即停止活動並就醫，勿自行調整心律藥物",
+        "定期追蹤心電圖與心臟功能，並與心臟電生理專科討論預激路徑處理"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 PRKAG2 基因檢測顯示有致病變異，我的心電圖是否需要評估 WPW 預激路徑？",
+        "我適合使用乙型阻斷劑、抗心律不整藥物或接受電生理檢查與消融治療嗎？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心電圖、心臟評估或 PRKAG2 基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「心電圖有 WPW 只是天生波形不同，沒有症狀就不需要處理？」",
+      "truth": "不一定。PRKAG2 相關預激症候群可能合併心律不整與暈厥風險，且心肌病變可能逐漸進展。應由心臟電生理專科評估風險，必要時討論消融治療，並讓一等親接受篩檢。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_093",
+    "gene": {
+      "symbol": "TNNC1",
+      "name": "troponin C, slow skeletal and cardiac muscles",
+      "chinese_name": "心肌肌鈣蛋白 C 基因（TNNC1）",
+      "ensembl_id": "ENSG00000114854",
+      "entrez_id": "7134",
+      "biotype": "protein_coding",
+      "chromosome": "3p21.1（3 號染色體）",
+      "metaphor": {
+        "title": "🔑 心肌收縮開關的【鈣離子啟動鑰匙（感應異常時收縮調節失衡）】",
+        "story": "心肌收縮需要鈣離子插入開關才能啟動，TNNC1 製造的肌鈣蛋白 C 就是接收鈣離子的啟動鑰匙。當鑰匙的感應部位異常，鈣離子訊號無法正確轉換，心肌收縮與放鬆失衡，可能造成心肌肥厚，也可能以擴張型心肌病變表現。"
+      },
+      "plain_summary": "TNNC1 致病變異與肌鈣蛋白 C 相關心肌病變有關，可表現為肥厚型或擴張型心肌病變，呈體染色體顯性遺傳。患者可能出現心肌肥厚、心臟擴大、運動性呼吸困難、胸悶或心律不整。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及個別化藥物與生活型態調整，可降低症狀與併發症風險。",
+      "academic_summary": "TNNC1 位於 3p21.1，編碼心肌與慢速骨骼肌肌鈣蛋白 C，為鈣離子感應的收縮調節蛋白。致病變異可造成家族性肥厚型心肌病變，部分變異亦與擴張型心肌病變相關，呈體染色體顯性遺傳；需長期評估心肌結構、收縮功能與心律風險。"
+    },
+    "disease": {
+      "id": "MONDO:0005045",
+      "name": "Hypertrophic cardiomyopathy",
+      "chinese_name": "肌鈣蛋白 C 相關心肌病變",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "肥厚型心肌病變",
+        "擴張型心肌病變表現"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心臟結構與功能評估（依表現型調整治療）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "肥厚性心肌病變"
+      },
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "擴張型心肌病變表現"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "瑪伐凱騰 (Mavacamten)",
+        "mechanism": "心肌肌凝蛋白抑制劑，降低心肌過度收縮，適用於阻塞性肥厚型心肌病變的專科評估",
+        "approval_status": "FDA 核准處方藥（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心率與心肌收縮力，改善症狀與舒張填充",
+        "approval_status": "標準處方治療"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "標準心衰竭藥物治療（依心臟功能評估）",
+        "mechanism": "以標準心衰竭藥物降低心臟負荷並減緩心室重塑，適用於擴張型表現患者",
+        "approval_status": "標準處方治療（依心臟功能評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TNNC1 致病變異（肥厚型與擴張型心肌病變相關）",
+      "population_frequency": "TNNC1 相關心肌病變屬罕見遺傳性心肌病變，發生率依族群而異 (PMID:20301725)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。治療選項依心肌病變表現型而異：肥厚型患者可評估乙型交感神經阻斷劑與心肌肌凝蛋白抑制劑（如 mavacamten）；擴張型或心衰竭表現患者則依標準心衰竭藥物治療，皆需由心臟內科醫師個別化評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免脫水、過量酒精與未經評估的劇烈競技運動，以免加重症狀",
+        "採均衡飲食並維持適當水分；若合併心衰竭，依醫囑調整鹽分與水分攝取",
+        "依醫囑定期接受心臟超音波與心律監測，出現胸悶、暈厥、心悸或水腫時應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.89,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 45,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 TNNC1 致病與可能致病變異，與肥厚型及擴張型心肌病變相關",
+      "opentargets_score": 0.8,
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有肥厚型或擴張型心肌病變、心衰竭、心雜音、運動性暈厥或家族史者，建議接受心臟超音波、心電圖與遺傳諮詢，並考慮 TNNC1 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "保持適當水分，避免脫水、過量酒精與未評估的劇烈競技運動",
+        "依醫師建議選擇運動強度，若合併心衰竭則依醫囑調整活動量與鹽分攝取",
+        "定期追蹤心臟結構與功能，出現胸悶、暈厥、心悸或水腫時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心衰竭門診 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 TNNC1 基因檢測顯示有致病變異，我的心肌病變屬於肥厚型還是擴張型表現？",
+        "我需要多久追蹤一次心臟超音波與心律？目前的藥物治療需要依表現型調整嗎？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心臟評估或 TNNC1 基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「同一種心肌病變基因只會造成一種心臟病，治療方式都一樣？」",
+      "truth": "不一定。TNNC1 相關心肌病變可表現為肥厚型或擴張型，兩者的藥物與追蹤重點不同。應由心臟科依心臟結構、功能與症狀個別化評估，不能只用同一套治療。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_094",
+    "gene": {
+      "symbol": "DES",
+      "name": "desmin",
+      "chinese_name": "結蛋白基因（DES）",
+      "ensembl_id": "ENSG00000175084",
+      "entrez_id": "1674",
+      "biotype": "protein_coding",
+      "chromosome": "2q35（2 號染色體）",
+      "metaphor": {
+        "title": "🧱 心肌與骨骼肌細胞的【鋼筋網路（結蛋白斷裂時細胞支架鬆散）】",
+        "story": "心肌與骨骼肌細胞需要結蛋白構成的中間絲網路，把收縮蛋白與細胞膜牢牢連結，就像建築裡的鋼筋網路。當 DES 基因故障，鋼筋網路變得鬆散脆弱，心肌細胞在反覆收縮中受損，心臟逐漸擴大無力，骨骼肌也可能出現無力與肌肉病變。"
+      },
+      "plain_summary": "DES 致病變異造成結蛋白相關心肌病變與肌原纖維肌病，常以擴張型心肌病變表現，屬於體染色體顯性遺傳。患者可能出現心臟擴大、心衰竭、心律不整，以及骨骼肌無力或肌肉病變。透過基因檢測、家族篩檢、定期心臟與神經肌肉評估，以及標準心衰竭治療與必要時的裝置評估，可延緩病程並降低風險。",
+      "academic_summary": "DES 位於 2q35，編碼結蛋白，為心肌與骨骼肌中間絲的主要成分，維持細胞骨架、肌節與細胞接合的機械整合。致病變異造成結蛋白相關心肌病變與肌原纖維肌病，可呈體染色體顯性遺傳，表現為擴張型心肌病變、傳導異常與骨骼肌無力，需長期心臟功能、心律與神經肌肉監測。"
+    },
+    "disease": {
+      "id": "MONDO:0005016",
+      "name": "Dilated cardiomyopathy",
+      "chinese_name": "結蛋白相關心肌病變與肌原纖維肌病",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "擴張型心肌病變",
+        "骨骼肌病變與心律不整風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心臟功能、心律與神經肌肉追蹤（標準心衰竭治療可延緩病程）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "擴張型心肌病變"
+      },
+      {
+        "hpo_id": "HP:0003198",
+        "name": "Myopathy",
+        "chinese_name": "肌肉病變"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低心肌耗氧與交感神經刺激，改善心衰竭預後並減少心律不整",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "血管張力素轉化酶抑制劑 / 受體阻斷劑 / ARNI",
+        "mechanism": "降低心臟負荷並減緩心室重塑，改善心衰竭症狀與預後",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "Mineralocorticoid receptor antagonists",
+        "chinese_name": "礦物皮質素受體拮抗劑",
+        "mechanism": "減少心衰竭住院與死亡率，並降低心室纖維化",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "SGLT2 inhibitors",
+        "chinese_name": "SGLT2 抑制劑",
+        "mechanism": "改善心衰竭預後與心臟功能，降低心血管事件風險",
+        "approval_status": "標準心衰竭處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "DES 致病變異（擴張型心肌病變與肌原纖維肌病相關）",
+      "population_frequency": "DES 相關心肌病變與肌原纖維肌病屬罕見遺傳疾病，發生率依族群而異 (PMID:20301486)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。DES 相關擴張型心肌病變的治療以標準心衰竭藥物、心律監測與必要時的裝置評估為主；是否用藥與選擇應由心臟內科醫師依心臟功能、心律與骨骼肌表現個別化評估。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "採低鹽飲食並依醫囑管理水分，避免心衰竭惡化",
+        "避免過量酒精與未經評估的劇烈運動，規律監測體重與水腫",
+        "定期追蹤心臟功能、心律與肌肉力量，出現胸悶、暈厥、心悸或肌無力時應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.91,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變與神經肌肉疾病指引",
+      "clinvar_pathogenic_count": 110,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 DES 致病與可能致病變異，與擴張型心肌病變及肌原纖維肌病相關",
+      "opentargets_score": 0.86,
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有擴張型心肌病變、心衰竭、骨骼肌無力、心律不整、年輕猝死或家族史者，建議接受心臟超音波、心電圖、神經肌肉評估與遺傳諮詢，並考慮 DES 基因檢測；一等親應接受心臟與肌肉篩檢。",
+      "lifestyle_tips": [
+        "採低鹽飲食、管理水分並每日監測體重與水腫",
+        "依醫囑運動並避免過量酒精與未經評估的劇烈活動；若有骨骼肌無力，應與復健科討論安全運動方式",
+        "定期追蹤心臟功能、心律與肌肉力量，出現胸悶、暈厥、心悸或肌無力時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 神經肌肉科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 DES 基因檢測顯示有致病變異，我的心臟與骨骼肌需要如何一起追蹤？",
+        "我的心臟功能與心律應該多久追蹤一次？是否需要評估植入式去顫器？",
+        "我的父母、兄弟姊妹與子女是否應該接受心臟、肌肉檢查與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「心肌病變只會影響心臟，肌肉無力是另一回事，不需要一起檢查？」",
+      "truth": "錯！DES 編碼的結蛋白同時存在於心肌與骨骼肌，致病變異可能造成心肌病變合併肌原纖維肌病。心臟與神經肌肉應一起評估，才能完整掌握病情並安排家族篩檢。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_095",
+    "gene": {
+      "symbol": "FLNC",
+      "name": "filamin C",
+      "chinese_name": "細絲蛋白 C 基因（FLNC）",
+      "ensembl_id": "ENSG00000128591",
+      "entrez_id": "2318",
+      "biotype": "protein_coding",
+      "chromosome": "7q32.1（7 號染色體）",
+      "metaphor": {
+        "title": "🪢 心肌細胞的【彈性支架與錨點（支架斷裂時心肌擴張並出現心律不整）】",
+        "story": "心肌細胞在每次收縮時都要承受機械張力，FLNC 製造的細絲蛋白 C 就像細胞裡的彈性支架與錨點，把肌節固定在細胞膜與細胞接合處。當支架出現致病變異，心肌在反覆拉扯下受損，心臟逐漸擴大無力，並可能出現心室心搏過速與猝死風險。"
+      },
+      "plain_summary": "FLNC 致病變異造成細絲蛋白 C 相關擴張型心肌病變，常合併致心律失常性表現，屬於體染色體顯性遺傳。患者可能出現心臟擴大、心衰竭、心室心搏過速或暈厥。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及標準心衰竭治療、避免高強度耐力運動與必要時的裝置評估，可降低心律不整與猝死風險。",
+      "academic_summary": "FLNC 位於 7q32.1，編碼細絲蛋白 C，為心肌與骨骼肌肌節 Z 線的重要結構蛋白，參與機械張力傳遞與細胞接合。截短型致病變異造成細絲蛋白 C 相關擴張型心肌病變，常合併心室心律不整與猝死風險，呈體染色體顯性遺傳，需長期心臟結構、功能與心律監測。"
+    },
+    "disease": {
+      "id": "MONDO:0005016",
+      "name": "Dilated cardiomyopathy",
+      "chinese_name": "細絲蛋白 C 相關致心律失常性／擴張型心肌病變",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "擴張型心肌病變",
+        "心室心律不整與猝死風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心臟功能與心律追蹤（避免高強度耐力運動並評估裝置治療）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "擴張型心肌病變"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低心肌耗氧與交感神經刺激，改善心衰竭預後並減少心律不整",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "血管張力素轉化酶抑制劑 / 受體阻斷劑 / ARNI",
+        "mechanism": "降低心臟負荷並減緩心室重塑，改善心衰竭症狀與預後",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "抗心律不整藥物治療",
+        "mechanism": "控制心室心律不整並降低症狀，需由心臟專科依心律風險評估",
+        "approval_status": "標準心律治療（依專科評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "FLNC 截短型致病變異（擴張型心肌病變與心室心律不整相關）",
+      "population_frequency": "FLNC 相關心肌病變占家族性擴張型心肌病變的一部分，發生率依族群而異 (PMID:20301486)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。FLNC 相關心肌病變的治療包括標準心衰竭藥物、抗心律不整藥物、避免高強度耐力運動與必要時的植入式去顫器評估；是否用藥與裝置治療應由心臟內科醫師依心臟功能與心律風險個別化決定。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "採低鹽飲食並依醫囑管理水分，避免心衰竭惡化",
+        "嚴格避免高強度耐力運動與競技運動，並避免過量酒精",
+        "定期追蹤心臟功能與心律，出現胸悶、暈厥、心悸或水腫時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變與心律基因指引",
+      "clinvar_pathogenic_count": 160,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 FLNC 致病與可能致病變異，與擴張型心肌病變及心室心律不整相關",
+      "opentargets_score": 0.88,
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有擴張型心肌病變、心室心律不整、運動性暈厥、年輕猝死或家族史者，建議接受心臟超音波、心電圖、心律監測與遺傳諮詢，並考慮 FLNC 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "FLNC 帶因者應避免高強度耐力運動與競技運動（例如長跑、鐵人三項、籃球、足球），以降低心室心律不整與猝死風險",
+        "採低鹽飲食、管理水分並每日監測體重與水腫",
+        "定期追蹤心臟功能與心律，出現胸悶、暈厥、心悸或水腫時應立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心衰竭門診 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 FLNC 基因檢測顯示有致病變異，我的運動種類與強度需要如何調整？",
+        "我的心臟功能與心律應該多久追蹤一次？是否需要評估植入式去顫器？",
+        "我的父母、兄弟姊妹與子女是否應該接受心臟篩檢與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「規則運動有益心臟，所以即使帶有心肌病變基因也應該繼續高強度耐力訓練？」",
+      "truth": "錯！FLNC 相關心肌病變與心室心律不整風險有關，高強度耐力與競技運動可能加速病程並增加猝死風險。帶因者應由心臟科評估後選擇安全運動方式，不能沿用一般運動員的訓練強度。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_096",
+    "gene": {
+      "symbol": "RBM20",
+      "name": "RNA binding motif protein 20",
+      "chinese_name": "RNA 結合基序蛋白 20 基因（RBM20）",
+      "ensembl_id": "ENSG00000203867",
+      "entrez_id": "282996",
+      "biotype": "protein_coding",
+      "chromosome": "10q25.2（10 號染色體）",
+      "metaphor": {
+        "title": "✂️ 心肌基因剪接的【品質管制員（剪接錯誤時心肌提早衰弱）】",
+        "story": "心肌細胞要把基因訊息正確剪接，才能製造功能完整的收縮蛋白，RBM20 就像剪接過程的品質管制員。當 RBM20 這個管制員失職，關鍵心肌蛋白的剪接比例失衡，心肌細胞提早失去彈性與收縮力，心臟逐漸擴大，形成早發性擴張型心肌病變，並可能出現心室心搏過速。"
+      },
+      "plain_summary": "RBM20 致病變異造成 RBM20 相關早發性擴張型心肌病變，屬於體染色體顯性遺傳。患者可能在較年輕時出現心臟擴大、心衰竭、心律不整或心室心搏過速。透過基因檢測、家族篩檢、定期心臟超音波與心律監測，以及標準心衰竭治療與必要時的裝置評估，可延緩病程並降低風險。",
+      "academic_summary": "RBM20 位於 10q25.2，編碼 RNA 結合基序蛋白 20，調控心肌關鍵基因的選擇性剪接，包括 TTN。致病變異造成早發性擴張型心肌病變，呈體染色體顯性遺傳，外顯率與年齡相關；可合併心室心律不整與猝死風險，需長期心臟功能與心律監測。"
+    },
+    "disease": {
+      "id": "MONDO:0005016",
+      "name": "Dilated cardiomyopathy",
+      "chinese_name": "RBM20 相關早發性擴張型心肌病變",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "早發性擴張型心肌病變",
+        "心室心律不整與猝死風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需及早心臟功能與心律追蹤（標準心衰竭治療與裝置評估可降低風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "擴張型心肌病變"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低心肌耗氧與交感神經刺激，改善心衰竭預後並減少心律不整",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "血管張力素轉化酶抑制劑 / 受體阻斷劑 / ARNI",
+        "mechanism": "降低心臟負荷並減緩心室重塑，改善心衰竭症狀與預後",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "抗心律不整藥物治療",
+        "mechanism": "控制心室心律不整並降低症狀，需由心臟專科依心律風險評估",
+        "approval_status": "標準心律治療（依專科評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "RBM20 致病變異（早發性擴張型心肌病變與心室心律不整相關）",
+      "population_frequency": "RBM20 相關心肌病變占家族性擴張型心肌病變的一部分，發病年齡可能較早 (PMID:20301486)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。RBM20 相關心肌病變的治療包括標準心衰竭藥物、抗心律不整藥物與必要時的植入式去顫器評估；是否用藥與裝置治療應由心臟內科醫師依心臟功能與心律風險個別化決定。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "採低鹽飲食並依醫囑管理水分，避免心衰竭惡化",
+        "避免過量酒精與未經評估的劇烈運動，規律監測體重與水腫",
+        "定期追蹤心臟功能與心律，出現胸悶、暈厥、心悸或水腫時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.91,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際心肌病變診療與基因指引",
+      "clinvar_pathogenic_count": 70,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 RBM20 致病與可能致病變異，與早發性擴張型心肌病變及心室心律不整相關",
+      "opentargets_score": 0.85,
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有年輕發病之擴張型心肌病變、心衰竭、心室心律不整、運動性暈厥或家族史者，建議及早接受心臟超音波、心電圖、心律監測與遺傳諮詢，並考慮 RBM20 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "採低鹽飲食、管理水分並每日監測體重與水腫",
+        "依醫囑運動並避免過量酒精與未經評估的劇烈活動",
+        "定期追蹤心臟功能與心律，出現胸悶、暈厥、心悸或水腫時應立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心衰竭門診 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 RBM20 基因檢測顯示有致病變異，我是否屬於早發性擴張型心肌病變的高風險族群？",
+        "我的心臟功能與心律應該多久追蹤一次？是否需要評估植入式去顫器？",
+        "我的父母、兄弟姊妹與子女是否應該接受心臟篩檢與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「擴張型心肌病變通常是中老年才發病，年輕人不需要基因檢測或家族篩檢？」",
+      "truth": "錯！RBM20 相關擴張型心肌病變可能較早發病，並合併心室心律不整與猝死風險。年輕發病或有家族史者應及早接受心臟評估與基因檢測，一等親也應篩檢。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_097",
+    "gene": {
+      "symbol": "PKP2",
+      "name": "plakophilin 2",
+      "chinese_name": "斑菲素蛋白 2 基因（PKP2）",
+      "ensembl_id": "ENSG00000057294",
+      "entrez_id": "53183",
+      "biotype": "protein_coding",
+      "chromosome": "12p11.21（12 號染色體）",
+      "metaphor": {
+        "title": "🔩 心肌細胞接合的【鉚釘與密封膠（鬆脫時右心室被脂肪纖維組織取代）】",
+        "story": "心肌細胞必須緊密扣在一起，才能在收縮時承受強大張力，PKP2 製造的斑菲素蛋白 2 就像細胞接合處的鉚釘與密封膠。當鉚釘鬆脫，右心室心肌在反覆機械壓力下逐漸被脂肪與纖維組織取代，心臟電氣傳導混亂，形成致心律失常性右心室心肌病變，並可能出現心室心搏過速與猝死。"
+      },
+      "plain_summary": "PKP2 致病變異是致心律失常性右心室心肌病變（ARVC）最常見的原因，屬於體染色體顯性遺傳。患者可能出現右心室結構異常、心悸、運動誘發暈厥、心室心搏過速或猝死。透過基因檢測、家族篩檢、定期心電圖與心臟影像，以及避免高強度耐力運動、藥物與必要時的裝置治療，可降低心律不整與猝死風險。",
+      "academic_summary": "PKP2 位於 12p11.21，編碼斑菲素蛋白 2，為心肌橋粒的重要成分，維持細胞間機械連結與電氣耦合。致病變異造成致心律失常性右心室心肌病變，呈體染色體顯性遺傳，外顯率與運動暴露相關；可導致右心室纖維脂肪取代、心室心律不整與猝死，需長期心臟結構與心律監測。"
+    },
+    "disease": {
+      "id": "MONDO:0016587",
+      "name": "Arrhythmogenic right ventricular cardiomyopathy",
+      "chinese_name": "致心律失常性右心室心肌病變（PKP2 型 / ARVC）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "致心律失常性右心室心肌病變",
+        "心室心律不整與猝死風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心臟結構與心律追蹤（避免高強度耐力運動並評估裝置治療）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011663",
+        "name": "Right ventricular cardiomyopathy",
+        "chinese_name": "右心室心肌病變"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低交感神經刺激與運動時的心率，減少心室心律不整發作",
+        "approval_status": "標準心律處方治療"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "抗心律不整藥物治療",
+        "mechanism": "控制心室心律不整並降低症狀，需由心臟專科依心律風險評估",
+        "approval_status": "標準心律治療（依專科評估）"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "標準心衰竭藥物治療（依心臟功能評估）",
+        "mechanism": "若合併心室功能下降，以標準心衰竭藥物降低心臟負荷並減緩心室重塑",
+        "approval_status": "標準處方治療（依心臟功能評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PKP2 致病變異（致心律失常性右心室心肌病變相關）",
+      "population_frequency": "致心律失常性右心室心肌病變約每 2,000 至 5,000 人中有 1 人，PKP2 為最常見的致病基因 (PMID:20301310)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。ARVC 的治療包括乙型交感神經阻斷劑、抗心律不整藥物、避免高強度耐力運動與必要時的植入式去顫器或消融評估；是否用藥與裝置治療應由心臟內科醫師依心律風險個別化決定。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "嚴格避免高強度耐力運動與競技運動，以降低右心室負荷與心律不整風險",
+        "避免脫水、過量酒精與電解質不平衡，以免誘發心律不整",
+        "定期追蹤心電圖、心臟影像與心律，出現心悸、暈厥或胸悶時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 ARVC 診療與基因指引",
+      "clinvar_pathogenic_count": 300,
+      "clinvar_summary_chinese": "ClinVar 已收錄大量 PKP2 致病與可能致病變異，與致心律失常性右心室心肌病變及心室心律不整相關",
+      "opentargets_score": 0.9,
+      "key_pmids": [
+        "PMID:20301310",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有 ARVC、右心室心律不整、運動誘發暈厥、年輕猝死或家族史者，建議接受心電圖、心臟超音波或心臟磁振造影、心律監測與遺傳諮詢，並考慮 PKP2 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "PKP2 帶因者應避免高強度耐力運動與競技運動（例如長跑、鐵人三項、籃球、足球），以降低心室心律不整與猝死風險",
+        "避免脫水、過量酒精與電解質不平衡，運動前後注意補充水分",
+        "定期追蹤心電圖、心臟影像與心律，出現心悸、暈厥或胸悶時應立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 PKP2 基因檢測顯示有致病變異，我的運動種類與強度需要如何調整？",
+        "我的心臟結構與心律應該多久追蹤一次？是否需要評估植入式去顫器或消融治療？",
+        "我的父母、兄弟姊妹與子女是否應該接受心電圖、心臟影像與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「運動員心悸只是訓練造成的，帶有 ARVC 基因也可以繼續高強度耐力訓練？」",
+      "truth": "錯！PKP2 相關 ARVC 與高強度耐力運動有明顯關聯，持續訓練可能加速右心室結構惡化並增加猝死風險。帶因者應由心臟科評估後停止高強度耐力與競技運動。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_098",
+    "gene": {
+      "symbol": "DSP",
+      "name": "desmoplakin",
+      "chinese_name": "橋粒斑蛋白基因（DSP）",
+      "ensembl_id": "ENSG00000096696",
+      "entrez_id": "1832",
+      "biotype": "protein_coding",
+      "chromosome": "6p24.3（6 號染色體）",
+      "metaphor": {
+        "title": "🧷 心肌細胞接合的【主錨定板（脫落時細胞間連結瓦解）】",
+        "story": "心肌細胞之間的橋粒需要一層主錨定板，把細胞骨架牢牢固定在細胞膜上，DSP 製造的橋粒斑蛋白就是這層錨定板。當錨定板失效，細胞間連結在收縮張力下瓦解，心肌逐漸被纖維脂肪組織取代，形成致心律失常性心肌病變，並可能出現心室心搏過速與心衰竭。"
+      },
+      "plain_summary": "DSP 致病變異造成橋粒斑蛋白相關致心律失常性心肌病變，屬於體染色體顯性遺傳，可表現為右心室、左心室或雙心室受累。患者可能出現心悸、運動誘發暈厥、心室心搏過速、心衰竭或猝死。透過基因檢測、家族篩檢、定期心電圖與心臟影像，以及避免高強度耐力運動、藥物與必要時的裝置治療，可降低風險。",
+      "academic_summary": "DSP 位於 6p24.3，編碼橋粒斑蛋白，為橋粒的核心蛋白，負責連接細胞內中間絲與細胞膜。致病變異造成致心律失常性右心室心肌病變及相關心肌病變，呈體染色體顯性遺傳；可導致纖維脂肪取代、心室心律不整、心衰竭與猝死，需長期心臟結構與心律監測。"
+    },
+    "disease": {
+      "id": "MONDO:0016587",
+      "name": "Arrhythmogenic right ventricular cardiomyopathy",
+      "chinese_name": "橋粒斑蛋白相關致心律失常性心肌病變（DSP 型）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "致心律失常性右心室心肌病變",
+        "心室心律不整與猝死風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心臟結構與心律追蹤（避免高強度耐力運動並評估裝置治療）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011663",
+        "name": "Right ventricular cardiomyopathy",
+        "chinese_name": "致心律失常性右心室心肌病變"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低交感神經刺激與運動時的心率，減少心室心律不整發作",
+        "approval_status": "標準心律處方治療"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "抗心律不整藥物治療",
+        "mechanism": "控制心室心律不整並降低症狀，需由心臟專科依心律風險評估",
+        "approval_status": "標準心律治療（依專科評估）"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "標準心衰竭藥物治療（依心臟功能評估）",
+        "mechanism": "若合併心室功能下降，以標準心衰竭藥物降低心臟負荷並減緩心室重塑",
+        "approval_status": "標準處方治療（依心臟功能評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "DSP 致病變異（致心律失常性心肌病變相關）",
+      "population_frequency": "DSP 相關致心律失常性心肌病變占 ARVC 與家族性心肌病變的一部分，發生率依族群而異 (PMID:20301310)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。DSP 相關心肌病變的治療包括乙型交感神經阻斷劑、抗心律不整藥物、標準心衰竭藥物、避免高強度耐力運動與必要時的植入式去顫器或消融評估；是否用藥與裝置治療應由心臟內科醫師依心律風險個別化決定。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "嚴格避免高強度耐力運動與競技運動，以降低心室負荷與心律不整風險",
+        "避免脫水、過量酒精與電解質不平衡，以免誘發心律不整",
+        "定期追蹤心電圖、心臟影像與心律，出現心悸、暈厥、胸悶或水腫時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 ARVC 診療與基因指引",
+      "clinvar_pathogenic_count": 220,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 DSP 致病與可能致病變異，與致心律失常性心肌病變及心室心律不整相關",
+      "opentargets_score": 0.88,
+      "key_pmids": [
+        "PMID:20301310",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有 ARVC、左心室或雙心室心肌病變、心室心律不整、運動誘發暈厥、年輕猝死或家族史者，建議接受心電圖、心臟超音波或心臟磁振造影、心律監測與遺傳諮詢，並考慮 DSP 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "DSP 帶因者應避免高強度耐力運動與競技運動（例如長跑、鐵人三項、籃球、足球），以降低心室心律不整與猝死風險",
+        "避免脫水、過量酒精與電解質不平衡，運動前後注意補充水分",
+        "定期追蹤心電圖、心臟影像與心律，出現心悸、暈厥、胸悶或水腫時應立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 DSP 基因檢測顯示有致病變異，我的左心室與右心室是否需要一起評估？",
+        "我的心臟結構與心律應該多久追蹤一次？是否需要評估植入式去顫器或消融治療？",
+        "我的父母、兄弟姊妹與子女是否應該接受心電圖、心臟影像與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「ARVC 只影響右心室，左心室不會有問題，所以不需要完整心臟影像檢查？」",
+      "truth": "錯！DSP 相關心肌病變可能同時影響右心室、左心室或呈現雙心室受累，並伴隨心室心律不整與心衰竭風險。完整心臟影像與心律評估不可省略。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_099",
+    "gene": {
+      "symbol": "DSC2",
+      "name": "desmocollin 2",
+      "chinese_name": "橋粒膠蛋白-2 基因（DSC2）",
+      "ensembl_id": "ENSG00000134755",
+      "entrez_id": "1824",
+      "biotype": "protein_coding",
+      "chromosome": "18q12.1（18 號染色體）",
+      "metaphor": {
+        "title": "🧩 心肌細胞接合的【雙面膠扣（黏合力不足時細胞被拉扯分離）】",
+        "story": "心肌細胞之間的橋粒像一組雙面膠扣，DSC2 製造的橋粒膠蛋白-2 是其中的黏合面，負責把相鄰細胞牢牢扣住。當膠扣黏合力不足，心肌在每次收縮的拉扯下逐漸分離與受損，右心室被纖維脂肪組織取代，形成致心律失常性右心室心肌病變，運動時可能出現暈厥或心室心搏過速。"
+      },
+      "plain_summary": "DSC2 致病變異造成橋粒膠蛋白-2 相關致心律失常性右心室心肌病變，屬於體染色體顯性遺傳。患者可能出現右心室結構異常、心悸、運動誘發暈厥或心室心搏過速。透過基因檢測、家族篩檢、定期心電圖與心臟影像，以及避免高強度耐力運動、藥物與必要時的裝置治療，可降低心律不整與猝死風險。",
+      "academic_summary": "DSC2 位於 18q12.1，編碼橋粒膠蛋白-2，為心肌橋粒的跨膜黏附蛋白，維持細胞間機械連結。致病變異造成致心律失常性右心室心肌病變，呈體染色體顯性遺傳，亦可呈隱性遺傳；可導致右心室纖維脂肪取代、運動誘發心律不整與暈厥，需長期心臟結構與心律監測。"
+    },
+    "disease": {
+      "id": "MONDO:0016587",
+      "name": "Arrhythmogenic right ventricular cardiomyopathy",
+      "chinese_name": "橋粒膠蛋白-2 相關致心律失常性心肌病變（DSC2 型）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "致心律失常性右心室心肌病變",
+        "運動誘發暈厥與心律不整"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心臟結構與心律追蹤（避免高強度耐力運動並評估裝置治療）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011663",
+        "name": "Right ventricular cardiomyopathy",
+        "chinese_name": "致心律失常性右心室心肌病變"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "運動誘發暈厥"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低交感神經刺激與運動時的心率，減少心室心律不整發作",
+        "approval_status": "標準心律處方治療"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "抗心律不整藥物治療",
+        "mechanism": "控制心室心律不整並降低症狀，需由心臟專科依心律風險評估",
+        "approval_status": "標準心律治療（依專科評估）"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "標準心衰竭藥物治療（依心臟功能評估）",
+        "mechanism": "若合併心室功能下降，以標準心衰竭藥物降低心臟負荷並減緩心室重塑",
+        "approval_status": "標準處方治療（依心臟功能評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "DSC2 致病變異（致心律失常性右心室心肌病變相關）",
+      "population_frequency": "DSC2 相關 ARVC 占致心律失常性右心室心肌病變的一部分，發生率依族群而異 (PMID:20301310)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。ARVC 的治療包括乙型交感神經阻斷劑、抗心律不整藥物、避免高強度耐力運動與必要時的植入式去顫器或消融評估；是否用藥與裝置治療應由心臟內科醫師依心律風險個別化決定。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "嚴格避免高強度耐力運動與競技運動，以降低右心室負荷與運動誘發暈厥風險",
+        "避免脫水、過量酒精與電解質不平衡，以免誘發心律不整",
+        "定期追蹤心電圖、心臟影像與心律，出現心悸、暈厥或胸悶時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 國際 ARVC 診療與基因指引",
+      "clinvar_pathogenic_count": 90,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 DSC2 致病與可能致病變異，與致心律失常性右心室心肌病變相關",
+      "opentargets_score": 0.84,
+      "key_pmids": [
+        "PMID:20301310",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有 ARVC、運動誘發暈厥、心室心律不整、年輕猝死或家族史者，建議接受心電圖、心臟超音波或心臟磁振造影、心律監測與遺傳諮詢，並考慮 DSC2 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "DSC2 帶因者應避免高強度耐力運動與競技運動（例如長跑、鐵人三項、籃球、足球），以降低運動誘發暈厥與心室心律不整風險",
+        "避免脫水、過量酒精與電解質不平衡，運動前後注意補充水分",
+        "定期追蹤心電圖、心臟影像與心律，出現心悸、暈厥或胸悶時應立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 DSC2 基因檢測顯示有致病變異，我的運動種類與強度需要如何調整？",
+        "我曾經運動時暈厥，這和 ARVC 有關嗎？是否需要評估植入式去顫器或消融治療？",
+        "我的父母、兄弟姊妹與子女是否應該接受心電圖、心臟影像與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「運動時暈厥只是體力不足或脫水，帶有 ARVC 基因也不必停止耐力運動？」",
+      "truth": "錯！DSC2 相關 ARVC 可能在運動時引發心室心律不整與暈厥，持續高強度耐力運動會增加猝死風險。帶因者應由心臟科評估並避免高強度耐力與競技運動。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_100",
+    "gene": {
+      "symbol": "DSG2",
+      "name": "desmoglein 2",
+      "chinese_name": "橋粒芯蛋白-2 基因（DSG2）",
+      "ensembl_id": "ENSG00000046604",
+      "entrez_id": "1829",
+      "biotype": "protein_coding",
+      "chromosome": "18q12.1（18 號染色體）",
+      "metaphor": {
+        "title": "🧷 心肌細胞接合的【雙面膠芯（芯層剝離時細胞連結崩解）】",
+        "story": "心肌細胞之間的橋粒像多層黏合結構，DSG2 製造的橋粒芯蛋白-2 是其中的核心黏合層，負責承受收縮時的拉力。當芯層剝離，細胞連結在反覆拉扯下崩解，右心室心肌逐漸被纖維脂肪組織取代，形成致心律失常性右心室心肌病變，並可能以心室心搏過速或猝死表現。"
+      },
+      "plain_summary": "DSG2 致病變異造成橋粒芯蛋白-2 相關致心律失常性右心室心肌病變，屬於體染色體顯性遺傳。患者可能出現右心室結構異常、心悸、運動誘發暈厥、心室心搏過速或猝死。透過基因檢測、家族篩檢、定期心電圖與心臟影像，以及避免高強度耐力運動、藥物與必要時的裝置治療，可降低心律不整與猝死風險。",
+      "academic_summary": "DSG2 位於 18q12.1，編碼橋粒芯蛋白-2，為心肌橋粒的跨膜黏附蛋白，維持細胞間機械連結與電氣耦合。致病變異造成致心律失常性右心室心肌病變，呈體染色體顯性遺傳，亦可呈隱性遺傳；可導致右心室纖維脂肪取代、心室心律不整與猝死，需長期心臟結構與心律監測。"
+    },
+    "disease": {
+      "id": "MONDO:0016587",
+      "name": "Arrhythmogenic right ventricular cardiomyopathy",
+      "chinese_name": "橋粒芯蛋白-2 相關致心律失常性心肌病變（DSG2 型）",
+      "categories": [
+        "體染色體顯性遺傳心肌病變",
+        "致心律失常性右心室心肌病變",
+        "心室心律不整與猝死風險"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需心臟結構與心律追蹤（避免高強度耐力運動並評估裝置治療）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011663",
+        "name": "Right ventricular cardiomyopathy",
+        "chinese_name": "致心律失常性右心室心肌病變"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "心因性猝死風險"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型阻斷劑",
+        "mechanism": "降低交感神經刺激與運動時的心率，減少心室心律不整發作",
+        "approval_status": "標準心律處方治療"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "抗心律不整藥物治療",
+        "mechanism": "控制心室心律不整並降低症狀，需由心臟專科依心律風險評估",
+        "approval_status": "標準心律治療（依專科評估）"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "標準心衰竭藥物治療（依心臟功能評估）",
+        "mechanism": "若合併心室功能下降，以標準心衰竭藥物降低心臟負荷並減緩心室重塑",
+        "approval_status": "標準處方治療（依心臟功能評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "DSG2 致病變異（致心律失常性右心室心肌病變相關）",
+      "population_frequency": "DSG2 相關 ARVC 占致心律失常性右心室心肌病變的一部分，發生率依族群而異 (PMID:20301310)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。ARVC 的治療包括乙型交感神經阻斷劑、抗心律不整藥物、避免高強度耐力運動與必要時的植入式去顫器或消融評估；是否用藥與裝置治療應由心臟內科醫師依心律風險個別化決定。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "嚴格避免高強度耐力運動與競技運動，以降低右心室負荷與心室心律不整風險",
+        "避免脫水、過量酒精與電解質不平衡，以免誘發心律不整",
+        "定期追蹤心電圖、心臟影像與心律，出現心悸、暈厥或胸悶時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.91,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 國際 ARVC 診療與基因指引",
+      "clinvar_pathogenic_count": 180,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 DSG2 致病與可能致病變異，與致心律失常性右心室心肌病變及心室心律不整相關",
+      "opentargets_score": 0.87,
+      "key_pmids": [
+        "PMID:20301310",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有 ARVC、心室心律不整、運動誘發暈厥、年輕猝死或家族史者，建議接受心電圖、心臟超音波或心臟磁振造影、心律監測與遺傳諮詢，並考慮 DSG2 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "DSG2 帶因者應避免高強度耐力運動與競技運動（例如長跑、鐵人三項、籃球、足球），以降低心室心律不整與猝死風險",
+        "避免脫水、過量酒精與電解質不平衡，運動前後注意補充水分",
+        "定期追蹤心電圖、心臟影像與心律，出現心悸、暈厥或胸悶時應立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 DSG2 基因檢測顯示有致病變異，我的運動種類與強度需要如何調整？",
+        "我的心臟結構與心律應該多久追蹤一次？是否需要評估植入式去顫器或消融治療？",
+        "我的父母、兄弟姊妹與子女是否應該接受心電圖、心臟影像與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「沒有症狀就代表 ARVC 不會猝死，可以照常參加高強度競技運動？」",
+      "truth": "錯！DSG2 相關 ARVC 可能以心室心搏過速或猝死為首次表現，高強度耐力與競技運動會明顯增加風險。即使沒有症狀，也應由心臟科評估並避免相關運動，一等親也應接受篩檢。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_101",
+    "gene": {
+      "symbol": "TMEM43",
+      "name": "transmembrane protein 43",
+      "chinese_name": "穿膜蛋白 43 基因（TMEM43）",
+      "ensembl_id": "ENSG00000170876",
+      "entrez_id": "79188",
+      "biotype": "protein_coding",
+      "chromosome": "3p25.1（3 號染色體）",
+      "metaphor": {
+        "title": "🧱 心肌細胞的【結構鋼筋（支撐失效時心肌被脂肪與纖維取代）】",
+        "story": "TMEM43 製造的穿膜蛋白像心肌細胞內的結構鋼筋，維持細胞膜與核膜的穩定與訊號傳遞。當鋼筋出現缺陷，心肌細胞在機械壓力下容易被脂肪與纖維組織取代，右心室逐漸擴大、收縮力下降，並可能引發心室頻脈。"
+      },
+      "plain_summary": "TMEM43 致病變異與致心律失常性右心室心肌病變（ARVD5）有關，呈體染色體顯性遺傳，一等親可能帶有相同變異。患者可能出現右心室擴大、心室頻脈、心悸或暈厥，劇烈運動可能增加猝死風險。透過基因檢測、家族篩檢、心臟影像與心律監測，以及專科評估是否需要植入式去顫器，可降低風險。",
+      "academic_summary": "TMEM43 位於 3p25.1，編碼穿膜蛋白 43，與心肌細胞核膜及細胞連結結構相關。特定創始者變異可造成高度外顯的致心律失常性右心室心肌病變第五型（ARVD5），表現為右心室纖維脂肪取代、心室頻脈與猝死風險，呈體染色體顯性遺傳。"
+    },
+    "disease": {
+      "id": "MONDO:0016587",
+      "name": "Arrhythmogenic right ventricular cardiomyopathy",
+      "chinese_name": "TMEM43 相關致心律失常性右心室心肌病變（ARVD5）",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心律不整",
+        "致心律失常性右心室心肌病變"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🟠 需定期心臟影像與心律監測（高強度運動需專科評估）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011663",
+        "name": "Right ventricular cardiomyopathy",
+        "chinese_name": "致心律失常性右心室心肌病變"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低交感神經刺激與心室頻脈發作風險，為心律不整相關心肌病變的常用基礎治療",
+        "approval_status": "標準處方治療（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "植入式心律去顫器（ICD）評估",
+        "mechanism": "針對曾發生致命性心室頻脈或高猝死風險患者，由心臟電生理專科評估是否植入去顫器",
+        "approval_status": "專科評估之裝置治療"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "標準心衰竭藥物治療",
+        "mechanism": "以標準心衰竭藥物降低心臟負荷並減緩心室重塑，適用於右心室功能受損患者",
+        "approval_status": "標準處方治療（依心臟功能評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TMEM43 致病變異（致心律失常性右心室心肌病變相關）",
+      "population_frequency": "TMEM43 相關 ARVD5 屬罕見遺傳性心肌病變，於部分創始者族群中盛行率較高 (PMID:20301310)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。臨床重點在於避免劇烈競技運動與脫水等誘發因素，並由心臟電生理專科評估乙型交感神經阻斷劑、抗心律不整藥物與植入式去顫器的個別化治療。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免高強度競技運動與突然的劇烈用力，尤其是出現心悸、胸悶或暈厥前兆時",
+        "避免脫水、過量酒精與大量含咖啡因飲料，以免加重心律不整",
+        "依醫囑定期接受心臟超音波、心臟磁振造影與心律監測，出現暈厥或持續心悸應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.87,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 60,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 TMEM43 致病與可能致病變異，與致心律失常性右心室心肌病變相關",
+      "opentargets_score": 0.66,
+      "key_pmids": [
+        "PMID:20301310",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有致心律失常性右心室心肌病變、運動誘發心悸或暈厥、心臟猝死家族史者，建議接受心電圖、心臟超音波或心臟磁振造影與遺傳諮詢，並考慮 TMEM43 基因檢測；一等親應接受心臟篩檢。",
+      "lifestyle_tips": [
+        "與心臟科討論適合的運動強度，避免高強度競技運動與突然的劇烈用力",
+        "保持適當水分，避免脫水、過量酒精與大量含咖啡因飲料",
+        "定期追蹤心臟結構與心律，出現暈厥、持續心悸或胸悶時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 TMEM43 基因檢測顯示有致病變異，我的右心室結構與功能目前如何？",
+        "我適合使用乙型交感神經阻斷劑或抗心律不整藥物嗎？需要評估植入式去顫器嗎？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心臟影像、心電圖或 TMEM43 基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「只有出現暈厥或心律不整時，TMEM43 帶因者才需要追蹤？」",
+      "truth": "不對。帶因者在尚未出現症狀時就可能已有右心室結構變化，劇烈運動或脫水也可能成為誘發因素。應依醫囑定期接受心臟影像與心律監測，並與專科討論運動與治療計畫。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_102",
+    "gene": {
+      "symbol": "RYR2",
+      "name": "ryanodine receptor 2",
+      "chinese_name": "蘭尼鹼受體 2 基因（RYR2）",
+      "ensembl_id": "ENSG00000198626",
+      "entrez_id": "6262",
+      "biotype": "protein_coding",
+      "chromosome": "1q43（1 號染色體）",
+      "metaphor": {
+        "title": "⚡ 心肌鈣離子倉庫的【閘門（情緒或運動刺激下閘門失控）】",
+        "story": "心肌收縮需要鈣離子從細胞內倉庫釋放，RYR2 製造的蘭尼鹼受體就是倉庫閘門。當閘門在交感神經刺激下關不緊，鈣離子大量外洩，心肌細胞電位變得不穩定，便可能在運動或情緒激動時引發多形性心室頻脈。"
+      },
+      "plain_summary": "RYR2 致病變異與兒茶酚胺敏感性多形性室性心搏過速第一型（CPVT1）有關，呈體染色體顯性遺傳，一等親可能帶有相同變異。患者常在運動或情緒激動時出現心悸、暈厥，甚至猝死。透過避免腎上腺素刺激、競爭性劇烈運動、定期心律監測與專科藥物或裝置治療，可顯著降低風險。",
+      "academic_summary": "RYR2 位於 1q43，編碼心肌蘭尼鹼受體第二型，負責肌漿網鈣離子釋放。致病變異使受體在交感神經刺激下異常開放，造成舒張期鈣外洩與延遲後去極化，引發兒茶酚胺敏感性多形性室性心搏過速（CPVT1），呈體染色體顯性遺傳。"
+    },
+    "disease": {
+      "id": "MONDO:0017990",
+      "name": "Catecholaminergic polymorphic ventricular tachycardia",
+      "chinese_name": "兒茶酚胺敏感性多形性室性心搏過速第一型（CPVT1）",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心律不整",
+        "兒茶酚胺敏感性多形性室性心搏過速"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 需嚴格避免腎上腺素刺激與競爭性運動（需專科長期追蹤）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "運動或情緒誘發暈厥"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低交感神經對蘭尼鹼受體的刺激，減少運動或情緒誘發的鈣外洩與心室頻脈",
+        "approval_status": "標準處方治療（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "氟卡尼（Flecainide）",
+        "mechanism": "作為乙型交感神經阻斷劑的輔助治療，降低心律不整發作風險",
+        "approval_status": "專科評估後使用之處方藥"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "植入式心律去顫器（ICD）評估",
+        "mechanism": "針對藥物治療下仍發生暈厥或高風險患者，由心臟電生理專科評估裝置治療",
+        "approval_status": "專科評估之裝置治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "RYR2 致病變異（兒茶酚胺敏感性多形性室性心搏過速相關）",
+      "population_frequency": "RYR2 相關 CPVT 是最常見的 CPVT 型別，估計盛行率約為萬分之一至萬分之十 (PMID:20301466)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。臨床重點是避免腎上腺素刺激與競爭性劇烈運動，並由心臟電生理專科評估乙型交感神經阻斷劑、氟卡尼與植入式去顫器的個別化治療。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免競爭性劇烈運動與突然的爆發性用力，運動種類與強度須先與心臟科討論",
+        "避免大量含咖啡因或提神飲料、過量酒精與脫水，以降低交感神經刺激",
+        "發燒、脫水或情緒劇烈起伏時應主動告知醫療人員，出現心悸或暈厥前兆應立即停止活動並就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.93,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 750,
+      "clinvar_summary_chinese": "ClinVar 已收錄大量 RYR2 致病與可能致病變異，與兒茶酚胺敏感性多形性室性心搏過速密切相關",
+      "opentargets_score": 0.81,
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有運動或情緒誘發暈厥、心悸、多形性心室頻脈或年輕猝死家族史者，建議接受心電圖、運動心電圖與遺傳諮詢，並考慮 RYR2 基因檢測；一等親應接受心臟評估。",
+      "lifestyle_tips": [
+        "避免競爭性與高強度運動，選擇運動種類前先與心臟科討論",
+        "避免大量咖啡因、提神飲料、過量酒精與脫水，減少交感神經刺激",
+        "定期接受心電圖與心律追蹤，出現暈厥、心悸或胸悶時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 RYR2 基因檢測顯示有致病變異，我目前適合哪些運動？需要做運動心電圖嗎？",
+        "我需要使用乙型交感神經阻斷劑或氟卡尼嗎？有沒有評估植入式去顫器的需要？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心電圖、運動測試或 RYR2 基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「只要心電圖正常，RYR2 帶因者就可以像一般人一樣從事激烈運動？」",
+      "truth": "不行。RYR2 相關 CPVT 常在休息心電圖正常，卻在運動或情緒激動時發作。帶因者應避免競爭性劇烈運動，並由心臟電生理專科評估運動限制與治療。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_103",
+    "gene": {
+      "symbol": "CASQ2",
+      "name": "calsequestrin 2",
+      "chinese_name": "鈣結合蛋白 2 基因（CASQ2）",
+      "ensembl_id": "ENSG00000118729",
+      "entrez_id": "845",
+      "biotype": "protein_coding",
+      "chromosome": "1p13.1（1 號染色體）",
+      "metaphor": {
+        "title": "🪣 鈣離子倉庫的【緩衝海綿（緩衝失效時鈣離子波動失控）】",
+        "story": "CASQ2 製造的鈣結合蛋白像倉庫裡的海綿，負責暫時吸附並緩衝鈣離子。當海綿的緩衝能力不足，鈣離子濃度在心跳之間劇烈波動，蘭尼鹼受體便容易異常釋放鈣離子，在運動或情緒刺激下引發心室頻脈。"
+      },
+      "plain_summary": "CASQ2 致病變異與兒茶酚胺敏感性多形性室性心搏過速第二型（CPVT2）有關，主要呈體染色體隱性遺傳，少數情況可見顯性遺傳。患者常在運動或情緒激動時出現心悸、暈厥，甚至猝死。避免腎上腺素刺激與競爭性劇烈運動、定期心律監測，並由專科評估藥物或裝置治療，是降低風險的關鍵。",
+      "academic_summary": "CASQ2 位於 1p13.1，編碼心肌肌漿網鈣結合蛋白第二型，負責鈣離子緩衝與蘭尼鹼受體調控。致病變異造成舒張期鈣外洩與延遲後去極化，引發兒茶酚胺敏感性多形性室性心搏過速（CPVT2），多數呈體染色體隱性遺傳。"
+    },
+    "disease": {
+      "id": "MONDO:0017990",
+      "name": "Catecholaminergic polymorphic ventricular tachycardia",
+      "chinese_name": "兒茶酚胺敏感性多形性室性心搏過速第二型（CPVT2）",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心律不整",
+        "兒茶酚胺敏感性多形性室性心搏過速"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🔴 需嚴格避免腎上腺素刺激與競爭性運動（需專科長期追蹤）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "暈厥"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低交感神經刺激，減少運動或情緒誘發的鈣離子波動與心室頻脈",
+        "approval_status": "標準處方治療（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "氟卡尼（Flecainide）",
+        "mechanism": "作為乙型交感神經阻斷劑的輔助治療，降低心律不整發作風險",
+        "approval_status": "專科評估後使用之處方藥"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "植入式心律去顫器（ICD）評估",
+        "mechanism": "針對藥物治療下仍發生暈厥或高風險患者，由心臟電生理專科評估裝置治療",
+        "approval_status": "專科評估之裝置治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CASQ2 致病變異（兒茶酚胺敏感性多形性室性心搏過速相關）",
+      "population_frequency": "CASQ2 相關 CPVT2 約占 CPVT 病例的一小部分，屬罕見遺傳性心律不整 (PMID:20301466)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。臨床重點是避免腎上腺素刺激與競爭性劇烈運動，並由心臟電生理專科評估乙型交感神經阻斷劑、氟卡尼與植入式去顫器的個別化治療。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免競爭性劇烈運動與突然的爆發性用力，運動種類與強度須先與心臟科討論",
+        "避免大量含咖啡因或提神飲料、過量酒精與脫水，以降低交感神經刺激",
+        "發燒、脫水或情緒劇烈起伏時應主動告知醫療人員，出現心悸或暈厥前兆應立即停止活動並就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.89,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 120,
+      "clinvar_summary_chinese": "ClinVar 已收錄多個 CASQ2 致病與可能致病變異，與兒茶酚胺敏感性多形性室性心搏過速相關",
+      "opentargets_score": 0.72,
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有運動或情緒誘發暈厥、多形性心室頻脈或年輕猝死家族史者，建議接受心電圖、運動心電圖與遺傳諮詢，並考慮 CASQ2 基因檢測；一等親應接受心臟評估。",
+      "lifestyle_tips": [
+        "避免競爭性與高強度運動，選擇運動種類前先與心臟科討論",
+        "避免大量咖啡因、提神飲料、過量酒精與脫水，減少交感神經刺激",
+        "定期接受心電圖與心律追蹤，出現暈厥、心悸或胸悶時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 CASQ2 基因檢測顯示有致病變異，我目前適合哪些運動？需要做運動心電圖嗎？",
+        "我需要使用乙型交感神經阻斷劑或氟卡尼嗎？有沒有評估植入式去顫器的需要？",
+        "我的父母、兄弟姊妹或子女是否也應該接受心電圖、運動測試或 CASQ2 基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「CASQ2 是隱性遺傳，所以帶因者完全不會有心律不整風險？」",
+      "truth": "多數帶因者風險較低，但少數變異仍可能以顯性方式表現，且帶因者可能將變異傳給下一代。家族成員仍應接受遺傳諮詢與心臟評估，不應自行假設完全沒有風險。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_104",
+    "gene": {
+      "symbol": "TRDN",
+      "name": "triadin",
+      "chinese_name": "三聯蛋白基因（TRDN）",
+      "ensembl_id": "ENSG00000186439",
+      "entrez_id": "10341",
+      "biotype": "protein_coding",
+      "chromosome": "6q22.31（6 號染色體）",
+      "metaphor": {
+        "title": "🔗 鈣離子通道的【固定扣環（扣環鬆脫時鈣釋放失序）】",
+        "story": "TRDN 製造的三聯蛋白像固定鈣離子通道的扣環，把蘭尼鹼受體與鈣結合蛋白連在一起。當扣環缺失，鈣離子釋放失去協調，心肌細胞在交感神經刺激下容易出現電位不穩，導致嚴重的心室頻脈與 QT 間期變化。"
+      },
+      "plain_summary": "TRDN 致病變異與三聯蛋白缺乏相關的嚴重遺傳性心律失常（Triadin 症候群）有關，多呈體染色體隱性遺傳。患者可能在幼童期即出現運動誘發的心室頻脈、暈厥或心臟驟停，也可能伴隨 QT 間期延長。避免 QT 延長藥物與腎上腺素刺激、定期心律監測，並由心臟電生理專科評估乙型交感神經阻斷劑、氟卡尼或植入式去顫器，是降低風險的關鍵。",
+      "academic_summary": "TRDN 位於 6q22.31，編碼心肌肌漿網三聯蛋白，負責連結蘭尼鹼受體與鈣結合蛋白並協調鈣離子釋放。致病變異可造成三聯蛋白缺乏相關的兒茶酚胺敏感性多形性室性心搏過速，部分患者合併 QT 間期延長，多呈體染色體隱性遺傳。"
+    },
+    "disease": {
+      "id": "MONDO:0017990",
+      "name": "Catecholaminergic polymorphic ventricular tachycardia",
+      "chinese_name": "三聯蛋白缺乏相關嚴重遺傳性心律失常（Triadin 症候群）",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心律不整",
+        "兒茶酚胺敏感性多形性室性心搏過速"
+      ],
+      "inheritance_mode": "體染色體隱性遺傳 (Autosomal Recessive, AR)",
+      "severity_badge": "🔴 需避免 QT 延長藥物與腎上腺素刺激（需專科長期追蹤）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "多形性心室心搏過速"
+      },
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "QT 間期延長"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低交感神經刺激，減少運動或情緒誘發的心室頻脈",
+        "approval_status": "標準處方治療（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "氟卡尼（Flecainide）",
+        "mechanism": "作為乙型交感神經阻斷劑的輔助治療，降低心律不整發作風險",
+        "approval_status": "專科評估後使用之處方藥"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "植入式心律去顫器（ICD）評估",
+        "mechanism": "針對高風險或曾發生心臟驟停患者，由心臟電生理專科評估裝置治療",
+        "approval_status": "專科評估之裝置治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TRDN 致病變異（三聯蛋白缺乏相關嚴重遺傳性心律失常）",
+      "population_frequency": "TRDN 相關 Triadin 症候群屬罕見遺傳性心律不整，多在幼童期發病 (PMID:20301466)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。臨床重點是避免已知會延長 QT 間期的藥物與腎上腺素刺激，並由心臟電生理專科討論乙型交感神經阻斷劑、氟卡尼與植入式去顫器的個別化治療。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免已知會延長 QT 間期的藥物，包含部分抗生素、抗心律不整藥、抗精神病藥與止吐藥，使用前應主動告知病史並請醫師或藥師查核",
+        "避免競爭性劇烈運動、脫水與大量含咖啡因飲料，以降低交感神經刺激",
+        "維持電解質平衡，腹瀉、嘔吐或發燒時應及早就醫，出現暈厥或心悸前兆應立即停止活動"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.86,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 45,
+      "clinvar_summary_chinese": "ClinVar 與文獻已收錄多個 TRDN 致病變異，與三聯蛋白缺乏相關的嚴重遺傳性心律不整有關",
+      "opentargets_score": 0.68,
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有幼童期運動誘發暈厥、心室頻脈、QT 間期延長或年輕猝死家族史者，建議接受心電圖、運動心電圖與遺傳諮詢，並考慮 TRDN 基因檢測；兄弟姊妹應接受心臟評估。",
+      "lifestyle_tips": [
+        "避免競爭性與高強度運動，選擇運動種類前先與心臟電生理專科討論",
+        "使用任何新藥前主動告知 TRDN 相關心律不整病史，請醫師或藥師確認是否延長 QT 間期",
+        "定期接受心電圖與心律追蹤，腹瀉、嘔吐、發燒或出現暈厥前兆時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 兒童心臟科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 TRDN 基因檢測顯示有致病變異，我的 QT 間期與心律目前如何？",
+        "我需要使用乙型交感神經阻斷劑或氟卡尼嗎？有沒有評估植入式去顫器的需要？",
+        "哪些常見藥物會延長 QT 間期需要避免？我的兄弟姊妹是否也應該接受心臟評估或基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「只有運動時才會發作，所以平常不需要擔心藥物或發燒的影響？」",
+      "truth": "不對。TRDN 相關心律不整也可能因 QT 延長藥物、電解質不平衡、發燒或脫水而惡化。除避免競爭性運動外，也應主動告知病史並請醫療人員查核所有新用藥物。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_105",
+    "gene": {
+      "symbol": "CALM1",
+      "name": "calmodulin 1",
+      "chinese_name": "鈣調蛋白 1 基因（CALM1）",
+      "ensembl_id": "ENSG00000198668",
+      "entrez_id": "801",
+      "biotype": "protein_coding",
+      "chromosome": "14q32.11（14 號染色體）",
+      "metaphor": {
+        "title": "🎛️ 心臟電訊號的【萬用調節器（調節失準時離子通道失控）】",
+        "story": "CALM1 製造的鈣調蛋白是細胞內的萬用調節器，會與多種離子通道結合並調整其開關。當調節器本身的結構改變，它對鈉、鉀與鈣通道的控制失準，心肌電位便容易不穩，可能在嬰幼兒期就出現 QT 間期延長或運動誘發的心室頻脈。"
+      },
+      "plain_summary": "CALM1 致病變異與鈣調蛋白-1 相關的早發性長 QT 症候群及兒茶酚胺敏感性多形性室性心搏過速有關，呈體染色體顯性遺傳。患者可能在嬰幼兒期出現 QT 間期延長、暈厥或心室頻脈。避免 QT 延長藥物與腎上腺素刺激、定期心律監測，並由心臟電生理專科評估乙型交感神經阻斷劑、氟卡尼或植入式去顫器，可降低風險。",
+      "academic_summary": "CALM1 位於 14q32.11，編碼鈣調蛋白第一型，為調控鈉、鉀、鈣通道與蘭尼鹼受體的關鍵鈣感應蛋白。致病變異可造成早發性長 QT 症候群與兒茶酚胺敏感性多形性室性心搏過速，呈體染色體顯性遺傳，外顯率與表現型具變異性。"
+    },
+    "disease": {
+      "id": "MONDO:0017990",
+      "name": "Catecholaminergic polymorphic ventricular tachycardia",
+      "chinese_name": "鈣調蛋白-1 相關早發性長 QT 與 CPVT 心律失常",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心律不整",
+        "長 QT 症候群",
+        "兒茶酚胺敏感性多形性室性心搏過速"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 需避免 QT 延長藥物與腎上腺素刺激（需專科長期追蹤）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "QT 間期延長"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低交感神經刺激，減少運動或情緒誘發的心室頻脈",
+        "approval_status": "標準處方治療（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "氟卡尼（Flecainide）",
+        "mechanism": "作為乙型交感神經阻斷劑的輔助治療，降低心律不整發作風險",
+        "approval_status": "專科評估後使用之處方藥"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "植入式心律去顫器（ICD）評估",
+        "mechanism": "針對高風險或曾發生心臟驟停患者，由心臟電生理專科評估裝置治療",
+        "approval_status": "專科評估之裝置治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CALM1 致病變異（早發性長 QT 症候群與兒茶酚胺敏感性多形性室性心搏過速相關）",
+      "population_frequency": "CALM1 相關早發性心律不整屬罕見遺傳疾病，多在嬰幼兒或兒童期發病 (PMID:20301466)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。臨床重點是避免已知會延長 QT 間期的藥物與腎上腺素刺激，並由心臟電生理專科討論乙型交感神經阻斷劑、氟卡尼與植入式去顫器的個別化治療。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免已知會延長 QT 間期的藥物，包含部分抗生素、抗心律不整藥、抗精神病藥與止吐藥，使用前應主動告知病史並請醫師或藥師查核",
+        "避免競爭性劇烈運動、脫水與大量含咖啡因飲料，以降低交感神經刺激",
+        "維持電解質平衡，腹瀉、嘔吐或發燒時應及早就醫，出現暈厥或心悸前兆應立即停止活動"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.84,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 30,
+      "clinvar_summary_chinese": "ClinVar 與文獻已收錄多個 CALM1 致病變異，與早發性長 QT 症候群及兒茶酚胺敏感性多形性室性心搏過速相關",
+      "opentargets_score": 0.64,
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有嬰幼兒期 QT 間期延長、運動誘發暈厥、心室頻脈或年輕猝死家族史者，建議接受心電圖、運動心電圖與遺傳諮詢，並考慮 CALM1 基因檢測；一等親應接受心臟評估。",
+      "lifestyle_tips": [
+        "避免競爭性與高強度運動，選擇運動種類前先與心臟電生理專科討論",
+        "使用任何新藥前主動告知心律不整病史，請醫師或藥師確認是否延長 QT 間期",
+        "定期接受心電圖與心律追蹤，腹瀉、嘔吐、發燒或出現暈厥前兆時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 兒童心臟科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 CALM1 基因檢測顯示有致病變異，我的 QT 間期與心律目前如何？",
+        "我需要使用乙型交感神經阻斷劑或氟卡尼嗎？有沒有評估植入式去顫器的需要？",
+        "哪些常見藥物會延長 QT 間期需要避免？我的父母、兄弟姊妹或子女是否也應該接受心臟評估或基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「鈣調蛋白是身體普遍存在的蛋白，發生變異應該不會造成嚴重心律不整？」",
+      "truth": "不對。CALM1 變異雖罕見，卻可能顯著改變離子通道調控，造成早發性長 QT 或 CPVT，甚至在嬰幼兒期引發心臟驟停。帶因者需由心臟電生理專科長期追蹤。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_106",
+    "gene": {
+      "symbol": "CALM2",
+      "name": "calmodulin 2",
+      "chinese_name": "鈣調蛋白 2 基因（CALM2）",
+      "ensembl_id": "ENSG00000143933",
+      "entrez_id": "805",
+      "biotype": "protein_coding",
+      "chromosome": "2p21（2 號染色體）",
+      "metaphor": {
+        "title": "🎚️ 心臟電訊號的【靈敏調節旋鈕（旋鈕偏移時 QT 與鈣釋放失調）】",
+        "story": "CALM2 製造的鈣調蛋白像心臟電訊號的靈敏調節旋鈕，會隨鈣離子濃度調整離子通道的開關。當旋鈕的設定偏移，鈉與鈣通道的關閉變慢，心肌動作電位延長，可能在情緒或運動刺激下引發心室頻脈與暈厥。"
+      },
+      "plain_summary": "CALM2 致病變異與鈣調蛋白-2 相關的早發性長 QT 症候群及兒茶酚胺敏感性多形性室性心搏過速有關，呈體染色體顯性遺傳。患者可能在嬰幼兒期出現 QT 間期延長、暈厥或心室頻脈。避免 QT 延長藥物與腎上腺素刺激、定期心律監測，並由心臟電生理專科評估乙型交感神經阻斷劑、氟卡尼或植入式去顫器，可降低風險。",
+      "academic_summary": "CALM2 位於 2p21，編碼鈣調蛋白第二型，為調控鈉、鉀、鈣通道與蘭尼鹼受體的關鍵鈣感應蛋白。致病變異可造成早發性長 QT 症候群與兒茶酚胺敏感性多形性室性心搏過速，呈體染色體顯性遺傳，表現型具年齡與外顯率變異。"
+    },
+    "disease": {
+      "id": "MONDO:0017990",
+      "name": "Catecholaminergic polymorphic ventricular tachycardia",
+      "chinese_name": "鈣調蛋白-2 相關早發性長 QT 與 CPVT 心律失常",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心律不整",
+        "長 QT 症候群",
+        "兒茶酚胺敏感性多形性室性心搏過速"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 需避免 QT 延長藥物與腎上腺素刺激（需專科長期追蹤）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "QT 間期延長"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "暈厥"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低交感神經刺激，減少運動或情緒誘發的心室頻脈",
+        "approval_status": "標準處方治療（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "氟卡尼（Flecainide）",
+        "mechanism": "作為乙型交感神經阻斷劑的輔助治療，降低心律不整發作風險",
+        "approval_status": "專科評估後使用之處方藥"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "植入式心律去顫器（ICD）評估",
+        "mechanism": "針對高風險或曾發生心臟驟停患者，由心臟電生理專科評估裝置治療",
+        "approval_status": "專科評估之裝置治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CALM2 致病變異（早發性長 QT 症候群與兒茶酚胺敏感性多形性室性心搏過速相關）",
+      "population_frequency": "CALM2 相關早發性心律不整屬罕見遺傳疾病，多在嬰幼兒或兒童期發病 (PMID:20301466)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。臨床重點是避免已知會延長 QT 間期的藥物與腎上腺素刺激，並由心臟電生理專科討論乙型交感神經阻斷劑、氟卡尼與植入式去顫器的個別化治療。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免已知會延長 QT 間期的藥物，包含部分抗生素、抗心律不整藥、抗精神病藥與止吐藥，使用前應主動告知病史並請醫師或藥師查核",
+        "避免競爭性劇烈運動、脫水與大量含咖啡因飲料，以降低交感神經刺激",
+        "維持電解質平衡，腹瀉、嘔吐或發燒時應及早就醫，出現暈厥或心悸前兆應立即停止活動"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.84,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 25,
+      "clinvar_summary_chinese": "ClinVar 與文獻已收錄多個 CALM2 致病變異，與早發性長 QT 症候群及兒茶酚胺敏感性多形性室性心搏過速相關",
+      "opentargets_score": 0.63,
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有嬰幼兒期 QT 間期延長、運動誘發暈厥、心室頻脈或年輕猝死家族史者，建議接受心電圖、運動心電圖與遺傳諮詢，並考慮 CALM2 基因檢測；一等親應接受心臟評估。",
+      "lifestyle_tips": [
+        "避免競爭性與高強度運動，選擇運動種類前先與心臟電生理專科討論",
+        "使用任何新藥前主動告知心律不整病史，請醫師或藥師確認是否延長 QT 間期",
+        "定期接受心電圖與心律追蹤，腹瀉、嘔吐、發燒或出現暈厥前兆時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 兒童心臟科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 CALM2 基因檢測顯示有致病變異，我的 QT 間期與心律目前如何？",
+        "我需要使用乙型交感神經阻斷劑或氟卡尼嗎？有沒有評估植入式去顫器的需要？",
+        "哪些常見藥物會延長 QT 間期需要避免？我的父母、兄弟姊妹或子女是否也應該接受心臟評估或基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「孩子沒有暈倒過，CALM2 帶因就不需要限制運動或追蹤？」",
+      "truth": "不對。CALM2 相關心律不整可能在首次發作時即表現為心臟驟停，且症狀可能隨年齡才出現。應由心臟電生理專科評估運動限制、藥物與長期心律監測。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_107",
+    "gene": {
+      "symbol": "CALM3",
+      "name": "calmodulin 3",
+      "chinese_name": "鈣調蛋白 3 基因（CALM3）",
+      "ensembl_id": "ENSG00000160014",
+      "entrez_id": "808",
+      "biotype": "protein_coding",
+      "chromosome": "19q13.32（19 號染色體）",
+      "metaphor": {
+        "title": "🛰️ 心臟電訊號的【精密校準器（校準錯誤時心律訊號失序）】",
+        "story": "CALM3 製造的鈣調蛋白像精密校準器，讓心臟離子通道在正確的鈣離子濃度下開關。當校準器出現偏差，通道關閉延遲、鈣離子釋放失序，可能在嬰幼兒期造成 QT 間期延長，或在運動與情緒刺激下引發致命性心室頻脈與心因性猝死。"
+      },
+      "plain_summary": "CALM3 致病變異與鈣調蛋白-3 相關的早發性長 QT 症候群及兒茶酚胺敏感性多形性室性心搏過速有關，呈體染色體顯性遺傳。患者可能在嬰幼兒期出現 QT 間期延長、暈厥、心室頻脈或心因性猝死風險。避免 QT 延長藥物與腎上腺素刺激、定期心律監測，並由心臟電生理專科評估乙型交感神經阻斷劑、氟卡尼或植入式去顫器，可降低風險。",
+      "academic_summary": "CALM3 位於 19q13.32，編碼鈣調蛋白第三型，為調控鈉、鉀、鈣通道與蘭尼鹼受體的關鍵鈣感應蛋白。致病變異可造成早發性長 QT 症候群與兒茶酚胺敏感性多形性室性心搏過速，呈體染色體顯性遺傳，具心因性猝死風險。"
+    },
+    "disease": {
+      "id": "MONDO:0017990",
+      "name": "Catecholaminergic polymorphic ventricular tachycardia",
+      "chinese_name": "鈣調蛋白-3 相關早發性長 QT 與 CPVT 心律失常",
+      "categories": [
+        "心血管疾病",
+        "遺傳性心律不整",
+        "長 QT 症候群",
+        "兒茶酚胺敏感性多形性室性心搏過速"
+      ],
+      "inheritance_mode": "體染色體顯性遺傳 (Autosomal Dominant, AD)",
+      "severity_badge": "🔴 需避免 QT 延長藥物與腎上腺素刺激（具心因性猝死風險）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "QT 間期延長"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "心因性猝死風險"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低交感神經刺激，減少運動或情緒誘發的心室頻脈",
+        "approval_status": "標準處方治療（需心臟專科評估）"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "氟卡尼（Flecainide）",
+        "mechanism": "作為乙型交感神經阻斷劑的輔助治療，降低心律不整發作風險",
+        "approval_status": "專科評估後使用之處方藥"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "植入式心律去顫器（ICD）評估",
+        "mechanism": "針對高風險或曾發生心臟驟停患者，由心臟電生理專科評估裝置治療",
+        "approval_status": "專科評估之裝置治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CALM3 致病變異（早發性長 QT 症候群與兒茶酚胺敏感性多形性室性心搏過速相關）",
+      "population_frequency": "CALM3 相關早發性心律不整屬罕見遺傳疾病，多在嬰幼兒或兒童期發病 (PMID:20301466)",
+      "traffic_light_summary": "此基因為疾病風險與遺傳篩檢基因，目前無 CPIC 藥物基因（PGx）專屬給藥指引，一般用藥無需因該基因型調整劑量。臨床重點是避免已知會延長 QT 間期的藥物與腎上腺素刺激，並由心臟電生理專科討論乙型交感神經阻斷劑、氟卡尼與植入式去顫器的個別化治療。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免已知會延長 QT 間期的藥物，包含部分抗生素、抗心律不整藥、抗精神病藥與止吐藥，使用前應主動告知病史並請醫師或藥師查核",
+        "避免競爭性劇烈運動、脫水與大量含咖啡因飲料，以降低交感神經刺激",
+        "維持電解質平衡，腹瀉、嘔吐或發燒時應及早就醫，出現暈厥或心悸前兆應立即停止活動"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.84,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 20,
+      "clinvar_summary_chinese": "ClinVar 與文獻已收錄多個 CALM3 致病變異，與早發性長 QT 症候群、兒茶酚胺敏感性多形性室性心搏過速及心因性猝死風險相關",
+      "opentargets_score": 0.62,
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有嬰幼兒期 QT 間期延長、運動誘發暈厥、心室頻脈或年輕猝死家族史者，建議接受心電圖、運動心電圖與遺傳諮詢，並考慮 CALM3 基因檢測；一等親應接受心臟評估。",
+      "lifestyle_tips": [
+        "避免競爭性與高強度運動，選擇運動種類前先與心臟電生理專科討論",
+        "使用任何新藥前主動告知心律不整病史，請醫師或藥師確認是否延長 QT 間期",
+        "定期接受心電圖與心律追蹤，腹瀉、嘔吐、發燒或出現暈厥前兆時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟電生理 / 兒童心臟科 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 CALM3 基因檢測顯示有致病變異，我的 QT 間期與心律目前如何？",
+        "我需要使用乙型交感神經阻斷劑或氟卡尼嗎？有沒有評估植入式去顫器的需要？",
+        "哪些常見藥物會延長 QT 間期需要避免？我的父母、兄弟姊妹或子女是否也應該接受心臟評估或基因檢測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「CALM3 帶因者只要沒有症狀，就不會發生心因性猝死？」",
+      "truth": "不對。CALM3 相關心律不整可能以首次嚴重心律不整事件表現，且症狀可能在嬰幼兒期才逐漸出現。帶因者需由心臟電生理專科長期追蹤，並避免 QT 延長藥物與腎上腺素刺激。"
+    }
   }
 ];
 window.EN_RECORDS = {
@@ -14005,6 +17772,3399 @@ window.EN_RECORDS = {
     "myth_buster": {
       "myth": "“High cholesterol is just from eating too much fat, and cutting fat will bring it back to normal without medication?”",
       "truth": "Wrong! Familial hypercholesterolemia is often caused by APOB, LDLR, and other gene variants, and diet alone is usually not enough to reach target. Patients need long-term lipid-lowering medication and regular lipid monitoring to reduce premature myocardial infarction and aortic valve disease risk."
+    }
+  },
+  "TTR": {
+    "gene": {
+      "chinese_name": "TTR Transthyretin (Hereditary Amyloidosis Gene)",
+      "chromosome": "18q12.1 (Chromosome 18)",
+      "metaphor": {
+        "title": "🚚 The Bloodstream's 【Thyroid Hormone and Vitamin A Delivery Truck】(When it misfolds, it piles up as amyloid)",
+        "story": "TTR is a multi-purpose delivery truck in the blood, carrying thyroid hormone and vitamin A as a stable tetramer. When TTR is defective from birth, the truck easily falls apart and misfolds. Misfolded protein deposits like broken parts in peripheral nerves, the heart, and other organs, forming amyloid. Nerves become crowded and cause numbness and weakness, while the heart becomes thick and stiff from infiltration. Genetic testing, TTR stabilizers, and RNA-targeted therapy can slow further amyloid deposition."
+      },
+      "plain_summary": "TTR pathogenic variants cause hereditary transthyretin amyloidosis (hATTR), an autosomal dominant condition. Misfolded TTR protein deposits in peripheral nerves and the heart, causing polyneuropathy, autonomic dysfunction, and hypertrophic cardiomyopathy. Genetic testing, TTR stabilizers, RNA-targeted therapy, and cardiology/neurology follow-up can slow progression and improve quality of life.",
+      "academic_summary": "TTR encodes transthyretin, mainly synthesized in the liver and secreted as a homotetramer that transports thyroxine and retinol-binding protein. Pathogenic germline variants (such as p.Val30Met) reduce tetramer stability, and dissociated monomers readily form amyloid fibrils that deposit in peripheral nerves, myocardium, and the gastrointestinal tract. hATTR can present with polyneuropathy, autonomic neuropathy, and infiltrative cardiomyopathy; TTR stabilizers, siRNA, and antisense oligonucleotide therapies reduce the pathogenic protein burden."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Transthyretin Amyloidosis (hATTR)",
+      "categories": [
+        "Autosomal Dominant Amyloidosis",
+        "Hereditary Peripheral Neuropathy",
+        "Infiltrative Cardiomyopathy"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Progressive Systemic Amyloidosis (Early Diagnosis and Targeted Therapy Slow Progression)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001271",
+        "name": "Polyneuropathy",
+        "chinese_name": "Peripheral nerve damage"
+      },
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Thickened heart muscle"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Tafamidis",
+        "chinese_name": "Tafamidis (TTR tetramer stabilizer)",
+        "mechanism": "Binds and stabilizes the TTR tetramer, reducing dissociation and amyloid fibril formation and slowing nerve and heart disease progression",
+        "approval_status": "FDA / TFDA / NMPA approved (targeted therapy for hATTR polyneuropathy and cardiomyopathy)"
+      },
+      {
+        "drug_name": "Patisiran",
+        "chinese_name": "Patisiran (RNAi targeted therapy)",
+        "mechanism": "Lipid nanoparticle-delivered small interfering RNA suppresses hepatic TTR messenger RNA, lowering pathogenic TTR protein in the blood",
+        "approval_status": "FDA / TFDA / NMPA approved (targeted therapy for hATTR polyneuropathy)"
+      },
+      {
+        "drug_name": "Vutrisiran",
+        "chinese_name": "Vutrisiran (RNAi targeted therapy)",
+        "mechanism": "GalNAc-conjugated small interfering RNA targets the liver to suppress TTR expression, lowering pathogenic protein and slowing nerve and heart progression",
+        "approval_status": "FDA / TFDA / NMPA approved (targeted therapy for hATTR polyneuropathy)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TTR pathogenic variants (such as p.Val30Met and other amyloidosis-related variants)",
+      "population_frequency": "Carrier frequency varies by region; specific variants are more common in parts of Portugal, Japan, and Sweden",
+      "summary": "TTR is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "People with hATTR should be managed by cardiology, neurology, and genetics teams, with regular heart, nerve, liver, and kidney monitoring. Do not stop targeted therapy on your own, and tell the care team about all medications and supplements you use.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "No specific dietary restriction, but avoid excessive alcohol and maintain balanced nutrition to reduce heart and nerve strain",
+        "If heart failure or kidney involvement is present, adjust fluid and sodium intake as advised by the physician and dietitian",
+        "During targeted therapy, monitor liver function, heart function, and neurologic status regularly, and do not stop treatment on your own"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Amyloidosis Care and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic TTR variants; genetic testing supports hATTR diagnosis and family screening",
+      "key_pmids": [
+        "PMID:20301373",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with unexplained polyneuropathy, autonomic symptoms, hypertrophic cardiomyopathy, or a family history should have cardiac and neurologic evaluation and consider TTR genetic testing; first-degree relatives should receive genetic counseling and screening when indicated.",
+      "lifestyle_tips": [
+        "Keep a regular routine and moderate activity, and avoid dehydration, excessive alcohol, and extreme temperatures to reduce heart and nerve strain",
+        "Follow up regularly with cardiac ultrasound, rhythm assessment, neurologic function, and liver and kidney tests as directed",
+        "Seek prompt care for chest tightness, breathlessness, rapid weight change, or worsening limb numbness"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Neurology / Genetic Counseling",
+      "questions": [
+        "Doctor, could my peripheral neuropathy or thickened heart muscle be related to TTR amyloidosis—should I have genetic testing?",
+        "If hATTR is confirmed, am I a candidate for a TTR stabilizer or RNA-targeted therapy? Which heart and nerve markers should be monitored before and during treatment?",
+        "Should my siblings and children receive genetic counseling and TTR genetic screening?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Numb hands and feet are just poor circulation and have nothing to do with heredity or amyloidosis?”",
+      "truth": "Wrong! Hereditary TTR amyloidosis often presents with progressive polyneuropathy and autonomic symptoms, and delayed diagnosis allows amyloid to keep depositing in the heart and nerves. Early genetic testing and targeted therapy can slow progression and reduce cardiac complications."
+    }
+  },
+  "HFE": {
+    "gene": {
+      "chinese_name": "HFE Homeostatic Iron Regulator (Hereditary Hemochromatosis Gene)",
+      "chromosome": "6p22.2 (Chromosome 6)",
+      "metaphor": {
+        "title": "🧲 The Gut's 【Iron Absorption Brake System】(When the brake fails, iron keeps accumulating)",
+        "story": "The body absorbs a small amount of iron from food each day, and HFE acts like the brake system for intestinal iron absorption. It senses iron stores and signals the liver to adjust hepcidin so iron absorption does not go out of control. When HFE is defective, the brake signal fails, the gut mistakenly believes the body is iron-deficient and keeps absorbing too much, and excess iron deposits in the liver, heart, pancreas, and skin. Years of overload can cause liver fibrosis or cirrhosis, pancreatic damage with abnormal blood sugar, and cardiac arrhythmia or cardiomyopathy. Therapeutic phlebotomy or iron chelation removes excess iron and protects organs."
+      },
+      "plain_summary": "HFE pathogenic variants cause hereditary hemochromatosis, an autosomal recessive condition. Intestinal iron absorption becomes dysregulated, and iron gradually deposits in the liver, heart, pancreas, and skin, potentially causing cirrhosis, diabetes, cardiomyopathy, and joint disease. Ferritin and genetic testing, therapeutic phlebotomy, or iron chelation can effectively remove excess iron and prevent organ damage.",
+      "academic_summary": "HFE encodes a membrane protein that associates with β2-microglobulin and participates in upstream regulation of hepatic hepcidin expression. The common p.Cys282Tyr variant in the homozygous state impairs HFE function, reduces hepcidin expression, and increases intestinal iron absorption and macrophage iron release, causing progressive iron overload. Clinical manifestations include liver fibrosis and cirrhosis, diabetes, cardiomyopathy, hypogonadism, and skin pigmentation; treatment relies on therapeutic phlebotomy and iron chelators."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Hemochromatosis (Iron Overload)",
+      "categories": [
+        "Autosomal Recessive Iron Metabolism Disorder",
+        "Iron Overload",
+        "Liver and Cardiac Metabolic Complication Risk"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟡 Progressive Iron Overload (Early Detection and Iron Removal Prevent Organ Damage)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011031",
+        "name": "Abnormality of iron homeostasis",
+        "chinese_name": "Abnormal iron balance"
+      },
+      {
+        "hpo_id": "HP:0001394",
+        "name": "Cirrhosis",
+        "chinese_name": "Cirrhosis risk"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Therapeutic phlebotomy",
+        "chinese_name": "Therapeutic phlebotomy (blood removal therapy)",
+        "mechanism": "Regularly removes iron-containing red blood cells, forcing the body to use stored iron to make new blood and gradually lowering ferritin and organ iron burden",
+        "approval_status": "International Hemochromatosis Management Guideline (first-line iron removal therapy)"
+      },
+      {
+        "drug_name": "Deferasirox",
+        "chinese_name": "Deferasirox (oral iron chelator)",
+        "mechanism": "Chelates free and deposited iron into excretable complexes, for people who cannot tolerate phlebotomy or require medication",
+        "approval_status": "FDA / TFDA / NMPA approved (iron overload chelation therapy)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "HFE pathogenic variants (such as p.Cys282Tyr and p.His63Asp)",
+      "population_frequency": "p.Cys282Tyr homozygosity is more common in Northern European populations; carrier frequency varies by ancestry",
+      "summary": "HFE is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "People with hereditary hemochromatosis should have iron studies, liver function, and blood sugar monitored regularly and follow the prescribed phlebotomy or chelation plan. Avoid unnecessary iron supplements, and tell the care team about all medications and supplements.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid long-term excessive intake of iron-rich supplements and fortified products, and avoid taking large iron doses together with vitamin C",
+        "Reduce raw shellfish and alcohol intake to lower infection and liver burden risk",
+        "Monitor ferritin and liver function regularly, and seek care for fatigue, joint pain, darkening skin, or abnormal blood sugar"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Hemochromatosis Care and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic HFE variants; genetic testing supports diagnosis and family iron screening",
+      "key_pmids": [
+        "PMID:20301613",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with unexplained elevated ferritin, abnormal liver tests, skin pigmentation, diabetes with liver disease, or a family history should have ferritin and transferrin saturation tested and consider HFE genetic testing; first-degree relatives should have iron screening.",
+      "lifestyle_tips": [
+        "Maintain a balanced diet, avoid unnecessary iron supplementation, and reduce alcohol and raw shellfish intake",
+        "Follow the prescribed therapeutic phlebotomy or iron chelation plan, and monitor ferritin, liver function, and blood sugar regularly",
+        "Tell the doctor about joint pain, fatigue, arrhythmia, or darkening skin so that evaluation can be arranged"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology / Hematology / Metabolism / Genetic Counseling",
+      "questions": [
+        "Doctor, my ferritin and transferrin saturation are high—should I have HFE genetic testing for hereditary hemochromatosis?",
+        "What is my ferritin target? Am I better suited to therapeutic phlebotomy or an iron chelator, and how often should I be monitored?",
+        "Should my siblings and children have iron screening and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“More iron is always healthier, so the more iron supplements I take the better—there is no need to worry about iron overload?”",
+      "truth": "Wrong! In hereditary hemochromatosis, iron absorption is dysregulated, and extra iron can accelerate deposition and increase the risk of cirrhosis, diabetes, and cardiomyopathy. These patients should avoid unnecessary iron supplements and remove excess iron through phlebotomy or chelation as prescribed."
+    }
+  },
+  "HNF1A": {
+    "gene": {
+      "chinese_name": "HNF1A Hepatocyte Nuclear Factor 1α (MODY3 Gene)",
+      "chromosome": "12q24.31 (Chromosome 12)",
+      "metaphor": {
+        "title": "🌡️ The Pancreas's 【Smart Insulin Thermostat】(When mis-set, blood sugar control drifts)",
+        "story": "Pancreatic beta cells must sense blood sugar precisely and release insulin, and HNF1A works like a smart thermostat inside beta cells that switches on many genes involved in insulin secretion. When HNF1A is defective, the thermostat is mis-set, beta cells respond sluggishly to rising glucose, and blood sugar tends to rise in adolescence or early adulthood. This MODY3 diabetes is often especially sensitive to sulfonylureas, so confirming the type by genetic testing allows a more appropriate treatment choice and helps prevent complications from long-term poor glycemic control."
+      },
+      "plain_summary": "HNF1A pathogenic variants cause maturity-onset diabetes of the young type 3 (MODY3), an autosomal dominant condition. Patients often develop diabetes in adolescence or early adulthood because of impaired insulin secretion. MODY3 frequently responds well to sulfonylureas; genetic testing to confirm the type, individualized medication, and regular monitoring can control blood sugar and reduce complication risk.",
+      "academic_summary": "HNF1A encodes hepatocyte nuclear factor 1α, a key transcription factor regulating pancreatic beta-cell development, glucose sensing, and insulin secretion genes. Loss-of-function variants cause MODY3, characterized by adolescent-to-early-adult onset, insulin secretion defects, high sensitivity to sulfonylureas, and a lowered renal threshold that may cause glycosuria. Molecular diagnosis distinguishes MODY3 from type 1 or type 2 diabetes and guides family screening and treatment selection."
+    },
+    "disease": {
+      "chinese_name": "Maturity-Onset Diabetes of the Young Type 3 (MODY3)",
+      "categories": [
+        "Autosomal Dominant Monogenic Diabetes",
+        "Maturity-Onset Diabetes of the Young",
+        "Insulin Secretion Defect"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Monogenic Diabetes (Sulfonylureas Often Work Well; Long-Term Glucose Monitoring Needed)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004904",
+        "name": "Maturity-onset diabetes of the young",
+        "chinese_name": "Young-onset adulthood-type diabetes"
+      },
+      {
+        "hpo_id": "HP:0001394",
+        "name": "Cirrhosis",
+        "chinese_name": "Liver adenoma and metabolic monitoring risk"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Sulfonylureas (Gliclazide / Glimepiride)",
+        "chinese_name": "Sulfonylureas (gliclazide / glimepiride)",
+        "mechanism": "Stimulates insulin release from pancreatic beta cells, often highly effective for the insulin secretion defect in HNF1A-MODY",
+        "approval_status": "FDA / TFDA / NMPA approved (common glucose-lowering therapy for MODY3)"
+      },
+      {
+        "drug_name": "Metformin / Insulin",
+        "chinese_name": "Metformin and insulin",
+        "mechanism": "Metformin improves insulin resistance and hepatic glucose output, while insulin directly replaces deficiency; effectiveness should be individualized to the glycemic response",
+        "approval_status": "FDA / TFDA / NMPA approved (used according to individual glucose control needs)"
+      },
+      {
+        "drug_name": "Standard antihypertensives / statins",
+        "chinese_name": "Standard antihypertensives and statins",
+        "mechanism": "Controls blood pressure and lipids to reduce cardiovascular risk; standard cardiovascular protective medications can be used per routine guidance",
+        "approval_status": "FDA / TFDA / NMPA approved (routine cardiovascular protection in diabetes)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "HNF1A loss-of-function variants (MODY3 related)",
+      "population_frequency": "MODY accounts for a small proportion of young-onset diabetes, and HNF1A-MODY is one of the most common MODY types",
+      "summary": "Patients with HNF1A-MODY often respond better to sulfonylureas than to metformin; treatment should be individualized to glycemic response, hypoglycemia risk, and physician guidance.",
+      "traffic_light_summary": "🟢 Sulfonylureas (such as gliclazide / glimepiride) are often highly effective for HNF1A-MODY. 🟡 Metformin or insulin may need adjustment according to individual glycemic response and are not the single-gene first choice. 🟢 Standard antihypertensives and statins for cardiovascular protection can generally be used normally.",
+      "practical_guidance": "After MODY3 is confirmed, discuss the most appropriate glucose-lowering strategy with endocrinology, and monitor blood glucose, HbA1c, and hypoglycemia symptoms regularly. Do not stop or change medication on your own, and tell the doctor about family diabetes history and genetic test results.",
+      "drugs_guide": [
+        {
+          "drug_name": "Sulfonylureas (Gliclazide / Glimepiride)",
+          "chinese_name": "Sulfonylureas (gliclazide / glimepiride)",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "HNF1A-MODY often responds better to sulfonylureas than to metformin, making them a priority glucose-lowering consideration; hypoglycemia risk and glucose changes still require monitoring.",
+          "cpic_level": "International MODY Management Guideline (Sulfonylurea First-Line Consideration for HNF1A-MODY)"
+        },
+        {
+          "drug_name": "Metformin / Insulin",
+          "chinese_name": "Metformin and insulin",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "May need adjustment according to individual glycemic response and is not the single-gene first choice; insulin use or sulfonylurea insufficiency should be evaluated by endocrinology.",
+          "cpic_level": "International MODY Management Guideline (Individualized Glucose Control)"
+        },
+        {
+          "drug_name": "Standard antihypertensives / statins",
+          "chinese_name": "Standard antihypertensives and statins",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "Standard cardiovascular protective medications can be used per routine guidance, with continued monitoring of blood pressure, lipids, and kidney function.",
+          "cpic_level": "Routine Cardiovascular Protection Guidance in Diabetes"
+        }
+      ],
+      "dietary_contraindications": [
+        "Follow a balanced diet, limit refined sugar and sugary drinks, and exercise regularly to stabilize blood sugar",
+        "When using sulfonylureas, eat regularly and watch for hypoglycemia; avoid strenuous exercise on an empty stomach or excessive alcohol",
+        "Monitor blood glucose, HbA1c, liver and kidney function, and lipids regularly, and do not stop or adjust medication on your own"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Monogenic Diabetes Care and Pharmacogenomics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic HNF1A variants; genetic testing helps distinguish MODY3 from other diabetes types",
+      "key_pmids": [
+        "PMID:29792621",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with young-onset diabetes, a strong family history, non-obese diabetes, or an especially good response to sulfonylureas should consider HNF1A genetic testing; first-degree relatives should have glucose screening and genetic counseling.",
+      "lifestyle_tips": [
+        "Exercise regularly, eat a balanced diet, control weight, and reduce refined sugar intake",
+        "Monitor blood glucose and HbA1c as directed, watch for hypoglycemia, and carry a fast sugar source",
+        "Have regular eye, kidney, nerve, and cardiovascular complication screening, and share family diabetes history"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Endocrinology and Metabolism / Genetic Counseling",
+      "questions": [
+        "Doctor, I or my family members developed diabetes young and several relatives are affected—could this be HNF1A-MODY, and should we have genetic testing?",
+        "If MODY3 is confirmed, are sulfonylureas more suitable for me than metformin? How should hypoglycemia and glucose changes be monitored?",
+        "Should my children have glucose screening and genetic counseling, and when should follow-up begin?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Diabetes at a young age must be type 1, requiring lifelong insulin injections—oral medication can never work?”",
+      "truth": "Wrong! HNF1A-MODY is an autosomal dominant monogenic diabetes in which insulin secretion is impaired but not necessarily absent, and sulfonylurea tablets often work well. Genetic testing to confirm the type may allow treatment adjustment, but endocrinology must still monitor closely and individualize care."
+    }
+  },
+  "CACNA1S": {
+    "gene": {
+      "chinese_name": "CACNA1S Skeletal Muscle Calcium Channel α1S Subunit (Malignant Hyperthermia Gene)",
+      "chromosome": "1q32.1 (Chromosome 1)",
+      "metaphor": {
+        "title": "⚡ The Skeletal Muscle 【Calcium Gate】(Certain Anesthetics Jam It Wide Open)",
+        "story": "Muscle contraction requires calcium, and CACNA1S is the calcium channel gate on the skeletal muscle cell membrane that converts electrical signals into calcium influx. Normally the gate opens and closes precisely so muscles contract and relax on command. In people with pathogenic variants, exposure to volatile inhaled anesthetics or succinylcholine can jam the gate open, flooding cells with calcium. Muscles contract continuously, body temperature rises rapidly, and acidosis, rhabdomyolysis, and hyperkalemia follow. This is an anesthetic emergency: trigger drugs must be stopped immediately and dantrolene given."
+      },
+      "plain_summary": "CACNA1S pathogenic variants can cause malignant hyperthermia susceptibility, an autosomal dominant condition, and may also be associated with hypokalemic periodic paralysis. When exposed to volatile inhaled anesthetics (such as sevoflurane, desflurane, or isoflurane) or succinylcholine, patients may develop life-threatening hyperthermia, muscle rigidity, rhabdomyolysis, and hyperkalemia. Telling the anesthesia team about family history and genetic results, avoiding trigger drugs, and having dantrolene available are essential for surgical safety.",
+      "academic_summary": "CACNA1S encodes the α1S subunit (Cav1.1) of the skeletal muscle L-type voltage-sensitive calcium channel, located in T-tubules and functionally coupled to ryanodine receptor 1. Pathogenic variants can abnormally activate the channel under volatile anesthetics or depolarizing muscle relaxants, causing massive sarcoplasmic reticulum calcium release, sustained muscle contraction, heat production, and a metabolic storm. CACNA1S and RYR1 are the major malignant hyperthermia susceptibility genes, and some variants are also linked to hypokalemic periodic paralysis."
+    },
+    "disease": {
+      "chinese_name": "Malignant Hyperthermia Susceptibility and Hypokalemic Periodic Paralysis",
+      "categories": [
+        "Pharmacogenomics (PGx)",
+        "Anesthesia Safety",
+        "Skeletal Muscle Channelopathy"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 Anesthesia Safety Red Light (Avoid Volatile Inhaled Anesthetics and Succinylcholine)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002047",
+        "name": "Malignant hyperthermia",
+        "chinese_name": "Dangerously high body temperature during anesthesia"
+      },
+      {
+        "hpo_id": "HP:0001324",
+        "name": "Muscle weakness",
+        "chinese_name": "Muscle weakness"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Non-triggering anesthetics (Propofol / Remifentanil / Rocuronium)",
+        "chinese_name": "Non-triggering anesthetics (propofol / remifentanil / rocuronium)",
+        "mechanism": "Anesthetic and muscle relaxation approach that does not activate the skeletal muscle calcium channel, providing a safe alternative for susceptible patients",
+        "approval_status": "FDA / TFDA / NMPA approved (safe anesthesia alternative)"
+      },
+      {
+        "drug_name": "Dantrolene",
+        "chinese_name": "Dantrolene (malignant hyperthermia antidote)",
+        "mechanism": "Inhibits calcium release from the skeletal muscle sarcoplasmic reticulum ryanodine receptor, stopping sustained contraction and the metabolic storm",
+        "approval_status": "FDA / TFDA / NMPA approved (first-line emergency treatment for malignant hyperthermia)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CACNA1S pathogenic variants (malignant hyperthermia susceptibility and hypokalemic periodic paralysis related)",
+      "population_frequency": "Overall carrier frequency of malignant hyperthermia susceptibility is estimated at roughly one in several thousand and varies by ancestry and variant",
+      "summary": "CACNA1S-susceptible patients must avoid volatile inhaled anesthetics and succinylcholine; surgery should use a non-triggering anesthetic plan with dantrolene available.",
+      "traffic_light_summary": "🔴 Volatile inhaled anesthetics (sevoflurane / desflurane / isoflurane) and succinylcholine must be strictly avoided to prevent malignant hyperthermia. 🟢 Non-triggering anesthetics (propofol / remifentanil / rocuronium) are a safe alternative anesthesia plan, still subject to anesthesia team assessment.",
+      "practical_guidance": "Before every surgery, dental procedure, or sedated examination, tell the anesthesia team about family history and genetic test results, confirm a non-triggering anesthetic plan, and ensure dantrolene and an emergency protocol are available. Monitor temperature, electrolytes, and acid-base status throughout.",
+      "drugs_guide": [
+        {
+          "drug_name": "Volatile inhalation anesthetics (Sevoflurane / Desflurane / Isoflurane)",
+          "chinese_name": "Volatile inhaled anesthetics (sevoflurane / desflurane / isoflurane)",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "Must be strictly avoided; they can trigger life-threatening malignant hyperthermia, and CACNA1S-susceptible patients should use a non-triggering anesthetic plan.",
+          "cpic_level": "CPIC Malignant Hyperthermia and Inhaled Anesthetics Guideline (High Risk)"
+        },
+        {
+          "drug_name": "Succinylcholine",
+          "chinese_name": "Succinylcholine (depolarizing neuromuscular blocker)",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "Must be strictly avoided; it can trigger malignant hyperthermia and severe hyperkalemia, and the anesthesia team should choose a nondepolarizing muscle relaxant instead.",
+          "cpic_level": "CPIC Malignant Hyperthermia and Inhaled Anesthetics Guideline (High Risk)"
+        },
+        {
+          "drug_name": "Non-triggering anesthetics (Propofol / Remifentanil / Rocuronium)",
+          "chinese_name": "Non-triggering anesthetics (propofol / remifentanil / rocuronium)",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "A safe alternative anesthesia plan that does not activate the pathogenic calcium channel; the anesthesia team must still monitor temperature, electrolytes, and vital signs throughout.",
+          "cpic_level": "CPIC Malignant Hyperthermia and Inhaled Anesthetics Guideline (Safe Alternative)"
+        }
+      ],
+      "dietary_contraindications": [
+        "No specific dietary restriction, but avoid strenuous exercise in hot environments, dehydration, and excessive stimulants to reduce muscle metabolic strain",
+        "Before surgery, dental treatment, or sedated procedures, show the malignant hyperthermia anesthesia safety card and confirm dantrolene availability",
+        "Seek urgent care for unexplained high body temperature, muscle rigidity, or dark urine, and report anesthesia and genetic history"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International CPIC Anesthesia Pharmacogenomics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple CACNA1S variants related to malignant hyperthermia and hypokalemic periodic paralysis; genetic testing supports pre-anesthesia risk assessment",
+      "key_pmids": [
+        "PMID:20301479",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with a family history of malignant hyperthermia, unexplained high temperature or muscle rigidity during anesthesia, or recurrent muscle weakness should have CACNA1S and RYR1 genetic testing and anesthesia evaluation; first-degree relatives should receive genetic counseling.",
+      "lifestyle_tips": [
+        "Carry a malignant hyperthermia susceptibility medical alert card, and tell the anesthesia team before every anesthetic",
+        "Avoid strenuous exercise in hot environments, dehydration, and excessive caffeine or stimulants; seek early care for muscle pain or dark urine",
+        "Plan a non-triggering anesthetic approach with the anesthesia team in advance, and confirm that dantrolene and an emergency protocol are available"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Anesthesiology / Genetic Counseling / Neuromuscular Clinic",
+      "questions": [
+        "Doctor, I have a family history of malignant hyperthermia or a CACNA1S variant—can this surgery completely avoid volatile inhaled anesthetics and succinylcholine?",
+        "Does the hospital have dantrolene and a malignant hyperthermia emergency protocol? How will temperature, potassium, and acid-base status be monitored during anesthesia?",
+        "Should my siblings and children also have CACNA1S and RYR1 genetic testing and pre-anesthesia evaluation?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Malignant hyperthermia is just a little high temperature during anesthesia; a fever pill or ice pack will fix it?”",
+      "truth": "That is extremely dangerous! Malignant hyperthermia is a life-threatening anesthetic emergency with rapidly rising temperature, muscle rigidity, acidosis, rhabdomyolysis, and hyperkalemia. It requires immediate discontinuation of trigger drugs, dantrolene, aggressive cooling, and electrolyte correction—not ordinary fever treatment."
+    }
+  },
+  "BTD": {
+    "gene": {
+      "chinese_name": "BTD Biotinidase (Biotinidase Deficiency Gene)",
+      "chromosome": "3p25.1 (Chromosome 3)",
+      "metaphor": {
+        "title": "🔑 The 【Biotin Key】 Recycling Machine (When recycling fails, cells cannot open metabolic doors)",
+        "story": "Biotin works like a key that switches on several enzymes involved in carbohydrate, fat, and amino acid metabolism. Biotin that the body has already used must be recycled by BTD biotinidase, like a machine that polishes old keys so they can be used again. When BTD is defective, the recycling machine stops, biotin cannot be reused, multiple metabolic pathways are blocked, and hypotonia, seizures, skin rash, hair loss, and hearing problems may appear. Newborn screening enables early detection, and timely biotin supplementation usually brings major improvement."
+      },
+      "plain_summary": "BTD pathogenic variants cause biotinidase deficiency, an autosomal recessive condition. Patients cannot efficiently recycle biotin, impairing multiple metabolic enzymes and potentially causing hypotonia, seizures, dermatitis, hair loss, and developmental delay. Newborn screening enables early detection, and oral biotin supplementation usually significantly improves neurologic and skin symptoms.",
+      "academic_summary": "BTD encodes biotinidase, which hydrolyzes biocytin into free biotin to complete biotin recycling. Pathogenic variants reduce biotinidase activity and impair biotin-dependent carboxylases (such as pyruvate carboxylase, propionyl-CoA carboxylase, 3-methylcrotonyl-CoA carboxylase, and acetyl-CoA carboxylase), causing lactic acidosis, organic aciduria, and neurologic symptoms. Newborn screening and early biotin supplementation prevent irreversible neurologic injury."
+    },
+    "disease": {
+      "chinese_name": "Biotinidase Deficiency",
+      "categories": [
+        "Autosomal Recessive Metabolic Disorder",
+        "Biotin Metabolism Disorder",
+        "Newborn Screening Disease"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟡 Treatable Metabolic Disease (Early Biotin Supplementation Prevents Neurologic Injury)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001252",
+        "name": "Hypotonia",
+        "chinese_name": "Low muscle tone"
+      },
+      {
+        "hpo_id": "HP:0001250",
+        "name": "Seizure",
+        "chinese_name": "Seizures"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "High-dose oral biotin supplementation",
+        "chinese_name": "High-dose oral biotin supplementation therapy",
+        "mechanism": "Directly supplies free biotin, restoring biotin-dependent carboxylase activity and improving neurologic, skin, and metabolic symptoms",
+        "approval_status": "International Metabolic Disease Management Guideline (standard therapy for biotinidase deficiency)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "BTD pathogenic variants (associated with loss of biotinidase activity)",
+      "population_frequency": "Incidence varies by population; newborn screening in some regions reports roughly one in tens of thousands",
+      "summary": "BTD is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "People with biotinidase deficiency need lifelong biotin supplementation and regular metabolic, developmental, hearing, and vision follow-up. Do not stop biotin on your own, and tell the care team about the diagnosis before any new medication or procedure.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Do not stop biotin supplementation on your own, as neurologic and skin symptoms may recur",
+        "Maintain a balanced diet; discuss raw egg white intake or special diets with the metabolic physician first",
+        "Monitor growth, development, neurologic findings, and metabolic markers regularly, and seek urgent care for seizures or abnormal tone"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Newborn Screening and Metabolic Disease Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic BTD variants; genetic testing supports diagnosis and family genetic counseling",
+      "key_pmids": [
+        "PMID:20301497",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Newborns with low biotinidase activity, or children with seizures, hypotonia, dermatitis, hair loss, or developmental delay, should have BTD genetic testing and metabolic evaluation; siblings should also be screened.",
+      "lifestyle_tips": [
+        "Continue oral biotin supplementation as prescribed, and do not stop or reduce it on your own",
+        "Monitor growth, development, neurologic status, hearing, and vision regularly to detect problems early",
+        "Routine vaccinations and general child care are not affected, but tell clinicians about biotinidase deficiency at every visit"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Pediatric Genetics and Metabolism / Neurology / Genetic Counseling",
+      "questions": [
+        "Doctor, newborn screening or symptoms suggest biotinidase deficiency—should we do BTD genetic testing to confirm it?",
+        "Will my child need long-term biotin supplementation? How should the regimen and follow-up schedule be arranged?",
+        "Should siblings also have biotinidase activity or genetic screening?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Biotin is just a health supplement, so biotinidase deficiency will improve simply by eating more general nutritional products?”",
+      "truth": "Wrong! Biotinidase deficiency is an autosomal recessive metabolic disease that requires physician assessment and regular high-dose oral biotin therapy. Stopping treatment or relying only on general supplements can cause seizures, abnormal tone, and developmental delay to recur, so long-term metabolic team follow-up is essential."
+    }
+  },
+  "OTC": {
+    "gene": {
+      "chinese_name": "OTC Ornithine Transcarbamylase (Urea Cycle Disorder Gene)",
+      "chromosome": "Xp11.4 (X Chromosome)",
+      "metaphor": {
+        "title": "🏭 The Liver's 【Ammonia-Clearing Factory】 Conveyor Belt (When it fails, ammonia surges in the blood)",
+        "story": "Protein breakdown produces toxic ammonia, and the liver's urea cycle is like an ammonia-clearing factory that converts ammonia into safer urea for the kidneys to excrete. OTC is a key conveyor belt on this production line, combining ornithine with carbamoyl phosphate. When OTC is defective, the belt stops, ammonia cannot enter the urea cycle efficiently, and blood ammonia rises rapidly, potentially causing vomiting, lethargy, confusion, seizures, and even brain swelling. Certain drugs such as valproic acid further worsen hyperammonemia and must be strictly avoided."
+      },
+      "plain_summary": "OTC pathogenic variants cause ornithine transcarbamylase deficiency, an X-linked recessive urea cycle disorder. Patients may develop hyperammonemia during high-protein intake, infection, surgery, or use of certain drugs, leading to vomiting, lethargy, seizures, and neurologic emergencies. Genetic testing, dietary protein management, ammonia-lowering medications, and avoidance of trigger drugs reduce acute crisis risk.",
+      "academic_summary": "OTC encodes mitochondrial ornithine transcarbamylase, which catalyzes the condensation of carbamoyl phosphate with ornithine to form citrulline in the urea cycle. Loss-of-function variants cause X-linked urea cycle disorder; hemizygous males often present with severe neonatal hyperammonemia, while female carriers may develop late-onset symptoms due to skewed X-inactivation. Acute hyperammonemia is a neurologic emergency requiring immediate cessation of protein intake, ammonia-lowering therapy, and consideration of dialysis."
+    },
+    "disease": {
+      "chinese_name": "Ornithine Transcarbamylase Deficiency (OTC Deficiency)",
+      "categories": [
+        "X-Linked Recessive Urea Cycle Disorder",
+        "Hyperammonemia",
+        "Neurologic Emergency Risk"
+      ],
+      "inheritance_mode": "X-Linked Recessive (XR)",
+      "severity_badge": "🔴 Hyperammonemic Neurologic Emergency Risk (Strictly Avoid Trigger Drugs and Treat Early)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001987",
+        "name": "Hyperammonemia",
+        "chinese_name": "High blood ammonia"
+      },
+      {
+        "hpo_id": "HP:0001250",
+        "name": "Seizure",
+        "chinese_name": "Neurologic emergencies and seizures"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Sodium phenylbutyrate / Glycerol phenylbutyrate",
+        "chinese_name": "Sodium phenylbutyrate / glycerol phenylbutyrate (nitrogen scavengers)",
+        "mechanism": "Provides an alternative nitrogen excretion pathway, conjugating with ammonia to form excretable metabolites and lowering blood ammonia",
+        "approval_status": "FDA / TFDA / NMPA approved (standard ammonia-lowering therapy for urea cycle disorders)"
+      },
+      {
+        "drug_name": "L-Arginine / L-Citrulline supplementation",
+        "chinese_name": "L-arginine / L-citrulline supplementation",
+        "mechanism": "Replenishes urea cycle intermediates, maintaining cycle flux and promoting nitrogen excretion in acute and long-term management",
+        "approval_status": "International Urea Cycle Disorder Management Guideline (metabolic supportive therapy)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "OTC pathogenic variants (urea cycle loss of function related)",
+      "population_frequency": "OTC deficiency is one of the most common urea cycle disorders; incidence varies by population and newborn screening strategy",
+      "summary": "Patients with OTC deficiency must strictly avoid valproic acid; when corticosteroids or other protein-catabolic drugs are needed, ammonia must be monitored closely, and ammonia-lowering agents are standard therapy.",
+      "traffic_light_summary": "🔴 Valproic acid / sodium valproate must be strictly avoided because it can readily trigger fatal hyperammonemic encephalopathy. 🟡 Systemic high-dose corticosteroids may accelerate protein breakdown and raise ammonia, requiring close monitoring. 🟢 Nitrogen scavengers (sodium phenylbutyrate / glycerol phenylbutyrate) are standard ammonia-lowering therapy.",
+      "practical_guidance": "Patients with OTC deficiency should be managed long term by a metabolic team, with heightened vigilance during acute illness, dehydration, surgery, or poor oral intake. At every medical visit, report the urea cycle disorder history and contraindicated drugs.",
+      "drugs_guide": [
+        {
+          "drug_name": "Valproic acid / Sodium valproate",
+          "chinese_name": "Valproic acid / sodium valproate",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "Valproic acid must be strictly avoided because it can readily trigger fatal hyperammonemic encephalopathy; specialists should select alternative drugs for seizures or mood-related treatment.",
+          "cpic_level": "Urea Cycle Disorder Medication Safety Guidance (Contraindicated)"
+        },
+        {
+          "drug_name": "Systemic high-dose corticosteroids",
+          "chinese_name": "Systemic high-dose corticosteroids",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "May accelerate protein breakdown and raise ammonia; use requires close monitoring of ammonia, mental status, and metabolic markers, with metabolic team co-management.",
+          "cpic_level": "Urea Cycle Disorder Medication Safety Guidance (Requires Monitoring)"
+        },
+        {
+          "drug_name": "Nitrogen-scavenging agents (Sodium phenylbutyrate / Glycerol phenylbutyrate)",
+          "chinese_name": "Nitrogen scavengers (sodium phenylbutyrate / glycerol phenylbutyrate)",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "Standard ammonia-lowering therapy that provides an alternative nitrogen excretion pathway; ammonia and electrolytes should still be monitored as directed during use.",
+          "cpic_level": "International Urea Cycle Disorder Management Guideline (Standard Therapy)"
+        }
+      ],
+      "dietary_contraindications": [
+        "Follow the metabolic team's and dietitian's planned moderate protein restriction, and avoid large single high-protein meals",
+        "During acute illness, vomiting, diarrhea, or markedly reduced intake, contact the metabolic team early and adjust diet and medication as advised",
+        "Avoid prolonged fasting and dehydration, and monitor ammonia, liver function, and growth regularly"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Urea Cycle Disorder Care and Medication Safety Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic OTC variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:24006547",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with neonatal hyperammonemia, recurrent vomiting and lethargy, unexplained seizures, altered consciousness after high-protein intake, or a family history should have ammonia and metabolic testing and consider OTC genetic testing; female carriers may also be symptomatic and should receive genetic counseling.",
+      "lifestyle_tips": [
+        "Follow the metabolic team's protein intake plan and ammonia-lowering medications, and do not change diet or stop medication on your own",
+        "Seek early review during illness, fever, dehydration, or poor appetite to avoid hyperammonemic crisis",
+        "Carry a urea cycle disorder medical alert record, and report contraindicated drugs and history at every medical visit"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Pediatric Genetics and Metabolism / Gastroenterology / Neurology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have recurrent hyperammonemia or a family history of urea cycle disorder—should I have OTC genetic testing?",
+        "Which drugs should I avoid? If corticosteroids or other ammonia-raising drugs are necessary, how should ammonia be monitored?",
+        "Should my siblings and children have carrier screening and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“High ammonia just causes temporary discomfort, and eating lightly will resolve it without special medication?”",
+      "truth": "Wrong! Hyperammonemia in OTC deficiency can rapidly progress to vomiting, lethargy, seizures, brain swelling, and even death, and it is a neurologic emergency. The medical team must act immediately with protein cessation, ammonia-lowering therapy, and close monitoring—it cannot be managed by diet alone."
+    }
+  },
+  "RPE65": {
+    "gene": {
+      "chinese_name": "RPE65 Retinal Pigment Epithelium-Specific Protein (Retinal Dystrophy Gene)",
+      "chromosome": "1p31.2 (Chromosome 1)",
+      "metaphor": {
+        "title": "👁️ The Visual Cycle's 【Vitamin A Recycling Factory】(When it stops, photoreceptors gradually degenerate)",
+        "story": "Retinal photoreceptors need retinaldehyde to sense light, and after use it must return to the pigment epithelium, where RPE65 converts and recycles it for the visual cycle. RPE65 is like the vitamin A recycling factory of the visual cycle, keeping photoreceptors supplied with the visual pigment they need. When RPE65 is defective, the factory stops, the visual cycle is blocked, photoreceptors gradually degenerate, and affected children may have night blindness, nystagmus, and severe visual impairment from infancy. Gene therapy can bring improvement for some eligible patients."
+      },
+      "plain_summary": "RPE65 pathogenic variants cause RPE65-related retinal dystrophy and Leber congenital amaurosis type 2, an autosomal recessive condition. Because the visual cycle is blocked, affected infants and children often have night blindness, nystagmus, sluggish pupil responses, and progressive vision loss. Genetic testing to confirm the type, retinal function assessment, and gene therapy for eligible patients can help improve or preserve visual function.",
+      "academic_summary": "RPE65 encodes the retinal pigment epithelium retinoid isomerohydrolase that converts all-trans retinol to 11-cis retinal, a key step in the visual cycle. Biallelic pathogenic variants cause RPE65-related retinal dystrophy, including Leber congenital amaurosis type 2 and severe early-onset retinitis pigmentosa. The AAV vector gene therapy voretigene neparvovec is indicated for selected patients with viable retinal cells and requires comprehensive retinal specialist evaluation."
+    },
+    "disease": {
+      "chinese_name": "RPE65-Related Retinal Dystrophy and Leber Congenital Amaurosis",
+      "categories": [
+        "Autosomal Recessive Retinal Dystrophy",
+        "Leber Congenital Amaurosis",
+        "Early-Onset Severe Visual Impairment"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟡 Progressive Retinal Degeneration (Early Diagnosis and Gene Therapy Evaluation Preserve Visual Function)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000546",
+        "name": "Retinal degeneration",
+        "chinese_name": "Retinal degeneration"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Voretigene neparvovec",
+        "chinese_name": "Voretigene neparvovec (AAV subretinal gene therapy)",
+        "mechanism": "Delivers a functional RPE65 gene to retinal pigment epithelium cells via an adeno-associated viral vector, restoring the visual cycle and improving visual function in some patients",
+        "approval_status": "FDA / TFDA / NMPA approved (gene therapy for RPE65-related retinal dystrophy)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "Biallelic RPE65 pathogenic variants (Leber congenital amaurosis and retinal dystrophy related)",
+      "population_frequency": "RPE65-related retinal dystrophy is a rare disease; incidence varies by population and consanguinity",
+      "summary": "RPE65 is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "Children with RPE65-related retinal dystrophy should be followed by a retinal specialist with regular vision, visual field, and retinal imaging assessments to evaluate gene therapy or other supportive options. Do not use high-dose vitamin A or unproven visual supplements without specialist advice.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "No specific dietary restriction; maintain balanced nutrition and avoid self-prescribed high-dose vitamin A supplementation",
+        "Do not take high-dose vitamin A or visual health supplements without discussing them with a retinal specialist",
+        "Have regular vision, visual field, and retinal function assessments, and seek prompt review for rapidly worsening vision"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Retinal Dystrophy Gene Therapy and Care Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic RPE65 variants; genetic testing supports diagnosis and gene therapy eligibility assessment",
+      "key_pmids": [
+        "PMID:31725251",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Infants and children with night blindness, nystagmus, sluggish pupil responses, poor visual tracking, or a family history of congenital amaurosis should have early ophthalmic and retinal function evaluation and consider RPE65 genetic testing; siblings should also be screened.",
+      "lifestyle_tips": [
+        "Follow the retinal specialist's schedule for vision, visual field, and retinal imaging, and evaluate gene therapy or other supportive options early",
+        "Improve lighting and safety at home and outdoors to reduce fall risk in low-light environments",
+        "Avoid self-prescribed high-dose vitamin A or unproven visual therapies, and tell the doctor about family history"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Retina / Pediatric Ophthalmology / Genetic Counseling",
+      "questions": [
+        "Doctor, my child has had night blindness or severe visual impairment since infancy—could this be RPE65-related retinal dystrophy, and should we do genetic testing?",
+        "If an RPE65 variant is confirmed, is my child eligible for gene therapy? What retinal function assessments are needed first?",
+        "Should siblings also have eye examinations and genetic screening? What safety precautions are needed in daily life?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Congenital night blindness just means the eyes have not developed yet and will improve with age, so genetic testing is unnecessary?”",
+      "truth": "Wrong! RPE65-related retinal dystrophy causes progressive retinal degeneration, and delayed diagnosis may miss the window for gene therapy evaluation. Early genetic testing and retinal specialist follow-up help confirm the cause, preserve access to appropriate treatment, and provide family genetic counseling."
+    }
+  },
+  "ENG": {
+    "gene": {
+      "chinese_name": "ENG Endoglin (Hereditary Hemorrhagic Telangiectasia Type 1 Gene)",
+      "chromosome": "9q34.11 (Chromosome 9)",
+      "metaphor": {
+        "title": "🩸 The Vascular Repair Crew's 【Signal Receiver】(When reception fails, vessel walls are fragile and bleed easily)",
+        "story": "Endothelial cells must receive TGF-β family signals to maintain vessel wall integrity and repair capacity, and ENG endoglin is an important signal receiver on the endothelial surface. When ENG is defective, signal reception is poor, capillary walls become fragile, telangiectasias appear on the skin and oral and nasal mucosa, and minor trauma causes recurrent nosebleeds. Arteriovenous malformations may also form in the lungs, liver, and brain, causing hypoxia, bleeding, or neurologic complications. Genetic testing, regular imaging surveillance, and embolization or targeted therapy when needed can reduce bleeding and complication risk."
+      },
+      "plain_summary": "ENG pathogenic variants cause hereditary hemorrhagic telangiectasia type 1 (HHT1), an autosomal dominant condition. Patients often have recurrent spontaneous nosebleeds and mucocutaneous telangiectasias, and may develop arteriovenous malformations in the lungs, liver, and brain that cause hypoxia, bleeding, or neurologic complications. Genetic testing, family screening, imaging surveillance, and intervention when needed reduce bleeding and organ complication risk.",
+      "academic_summary": "ENG encodes endoglin, a TGF-β superfamily co-receptor expressed mainly on vascular endothelial cells that regulates angiogenesis, endothelial repair, and smooth muscle signaling. Germline pathogenic variants cause HHT1; haploinsufficiency disrupts endothelial signaling balance and produces mucocutaneous telangiectasias and visceral arteriovenous malformations. HHT1 is more strongly associated with pulmonary arteriovenous malformations and cerebrovascular complications and requires long-term imaging and multidisciplinary follow-up."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Hemorrhagic Telangiectasia Type 1 (HHT1)",
+      "categories": [
+        "Autosomal Dominant Vascular Developmental Disorder",
+        "Hereditary Hemorrhagic Telangiectasia",
+        "Arteriovenous Malformation and Bleeding Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Vascular Developmental Disorder (Regular Imaging and Bleeding Surveillance Reduce Complications)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000421",
+        "name": "Epistaxis",
+        "chinese_name": "Recurrent spontaneous nosebleeds"
+      },
+      {
+        "hpo_id": "HP:0001009",
+        "name": "Telangiectasia",
+        "chinese_name": "Mucocutaneous telangiectasia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Tranexamic acid",
+        "chinese_name": "Tranexamic acid (antifibrinolytic)",
+        "mechanism": "Inhibits fibrinolysis to reduce nosebleeds and mucosal bleeding, used as supportive therapy for recurrent HHT-related epistaxis",
+        "approval_status": "International HHT Management Guideline (supportive bleeding therapy)"
+      },
+      {
+        "drug_name": "Bevacizumab",
+        "chinese_name": "Bevacizumab (anti-angiogenic therapy)",
+        "mechanism": "Inhibits vascular endothelial growth factor signaling, reducing abnormal angiogenesis and HHT-related bleeding in selected refractory cases",
+        "approval_status": "International HHT Management Guideline (targeted therapy for selected refractory bleeding)"
+      },
+      {
+        "drug_name": "Iron supplementation",
+        "chinese_name": "Iron supplementation therapy",
+        "mechanism": "Replenishes iron lost from chronic bleeding, improving iron-deficiency anemia and fatigue",
+        "approval_status": "International HHT Management Guideline (supportive anemia therapy)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ENG pathogenic variants (HHT1 related, including missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "HHT overall incidence is estimated at roughly one in several thousand to one in ten thousand, and ENG-related HHT1 accounts for a subset",
+      "summary": "ENG is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "People with HHT1 should be managed by a multidisciplinary team with regular hemoglobin, iron, and organ imaging surveillance. Discuss any bleeding-related supplements or medications with the care team, and seek urgent care for severe bleeding or neurologic symptoms.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid self-prescribed supplements that affect clotting or increase bleeding risk, and discuss them with the physician first",
+        "Maintain a balanced diet with adequate iron intake, and seek evaluation for anemia or fatigue",
+        "Avoid forceful nose blowing and nose picking, and keep the nasal mucosa moist to reduce recurrent bleeding"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International HHT Care and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic ENG variants; genetic testing supports HHT1 diagnosis and family screening",
+      "key_pmids": [
+        "PMID:20301519",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with recurrent spontaneous nosebleeds, mucocutaneous telangiectasias, visceral arteriovenous malformations, or a family history of HHT should have genetic testing and counseling; first-degree relatives should have clinical screening and imaging when indicated.",
+      "lifestyle_tips": [
+        "Keep the nasal mucosa moist and avoid forceful nose blowing and nose picking to reduce epistaxis",
+        "Monitor hemoglobin and iron regularly, and have pulmonary, hepatic, and cerebral arteriovenous malformations assessed as directed",
+        "Seek urgent care for sudden headache, breathlessness, hemoptysis, or neurologic symptoms"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Otolaryngology / Pulmonology / Neurology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have long-standing recurrent nosebleeds and skin telangiectasias—should I have ENG genetic testing to confirm HHT?",
+        "Which imaging tests should I have to evaluate arteriovenous malformations in the lungs, liver, or brain, and how often?",
+        "Should my siblings and children also have clinical screening and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Frequent nosebleeds are just from internal heat or fragile nasal lining and have nothing to do with a hereditary vascular disease?”",
+      "truth": "Wrong! Hereditary hemorrhagic telangiectasia often presents with recurrent spontaneous nosebleeds and mucocutaneous telangiectasias, and may involve pulmonary, hepatic, or cerebral arteriovenous malformations. Delayed diagnosis can lead to severe bleeding or neurologic complications, so early genetic testing and multidisciplinary follow-up are important."
+    }
+  },
+  "ACVRL1": {
+    "gene": {
+      "chinese_name": "ACVRL1 Activin A Receptor Like Type 1 (Hereditary Hemorrhagic Telangiectasia Type 2 Gene)",
+      "chromosome": "12q13.13 (Chromosome 12)",
+      "metaphor": {
+        "title": "🩸 The Endothelial 【ALK1 Signal Switch】(When it fails, capillaries dilate and arteriovenous malformations form)",
+        "story": "Blood vessel endothelium needs the ALK1 signal switch to balance angiogenesis and maturation, and ACVRL1 is the gene that makes ALK1. When ACVRL1 is defective, endothelial signaling is unbalanced, capillaries become dilated and fragile, telangiectasias appear on the skin and mucosa, and the nose bleeds repeatedly. Arteriovenous malformations may also form in the lungs, liver, and gastrointestinal tract, and some patients develop pulmonary arterial hypertension. Genetic testing, imaging surveillance, and intervention or targeted therapy when needed reduce bleeding and cardiopulmonary complications."
+      },
+      "plain_summary": "ACVRL1 pathogenic variants cause hereditary hemorrhagic telangiectasia type 2 (HHT2), an autosomal dominant condition. Patients often have recurrent nosebleeds and mucocutaneous telangiectasias, and may have pulmonary, hepatic, or gastrointestinal arteriovenous malformations; some individuals develop pulmonary arterial hypertension. Genetic testing, family screening, imaging surveillance, and intervention when needed reduce bleeding and cardiopulmonary complication risk.",
+      "academic_summary": "ACVRL1 encodes activin receptor-like kinase 1 (ALK1), an endothelial TGF-β family type I receptor that together with ENG regulates angiogenesis and maturation. Pathogenic variants cause HHT2, which resembles HHT1 clinically but has a more prominent association with pulmonary arterial hypertension and hepatic arteriovenous malformations. Molecular diagnosis helps distinguish HHT subtypes and guide organ screening and family genetic counseling."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Hemorrhagic Telangiectasia Type 2 (HHT2)",
+      "categories": [
+        "Autosomal Dominant Vascular Developmental Disorder",
+        "Hereditary Hemorrhagic Telangiectasia",
+        "Pulmonary Hypertension and Arteriovenous Malformation Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Vascular Developmental Disorder (Watch for Pulmonary Hypertension and Visceral Arteriovenous Malformations)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000421",
+        "name": "Epistaxis",
+        "chinese_name": "Recurrent nosebleeds"
+      },
+      {
+        "hpo_id": "HP:0001009",
+        "name": "Telangiectasia",
+        "chinese_name": "Mucocutaneous telangiectasia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Tranexamic acid",
+        "chinese_name": "Tranexamic acid (antifibrinolytic)",
+        "mechanism": "Inhibits fibrinolysis to reduce nosebleeds and mucosal bleeding, used as supportive therapy for recurrent HHT-related epistaxis",
+        "approval_status": "International HHT Management Guideline (supportive bleeding therapy)"
+      },
+      {
+        "drug_name": "Bevacizumab",
+        "chinese_name": "Bevacizumab (anti-angiogenic therapy)",
+        "mechanism": "Inhibits vascular endothelial growth factor signaling, reducing abnormal angiogenesis and HHT-related bleeding in selected refractory cases",
+        "approval_status": "International HHT Management Guideline (targeted therapy for selected refractory bleeding)"
+      },
+      {
+        "drug_name": "Pulmonary arterial hypertension therapies (Bosentan / Sildenafil)",
+        "chinese_name": "Pulmonary arterial hypertension therapies (bosentan / sildenafil)",
+        "mechanism": "Dilates pulmonary vessels and lowers pulmonary vascular resistance for specialist treatment of HHT2 with pulmonary arterial hypertension",
+        "approval_status": "FDA / TFDA / NMPA approved (pulmonary arterial hypertension targeted therapy)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ACVRL1 pathogenic variants (HHT2 related, including missense, nonsense, splice-site, and large deletions)",
+      "population_frequency": "HHT overall incidence is estimated at roughly one in several thousand to one in ten thousand, and ACVRL1-related HHT2 accounts for a subset",
+      "summary": "ACVRL1 is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "People with HHT2 should be managed by a multidisciplinary team with regular hemoglobin, iron, cardiopulmonary, and organ imaging surveillance. Discuss bleeding-related supplements with the care team, and seek urgent care for breathlessness, hemoptysis, or neurologic symptoms.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid self-prescribed supplements that affect clotting or increase bleeding risk, and discuss them with the physician first",
+        "Maintain a balanced diet with adequate iron intake, and seek evaluation for anemia, exertional breathlessness, or edema",
+        "Avoid forceful nose blowing and nose picking, and keep the nasal mucosa moist to reduce recurrent bleeding"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International HHT Care and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic ACVRL1 variants; genetic testing supports HHT2 diagnosis and family screening",
+      "key_pmids": [
+        "PMID:20301519",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with recurrent nosebleeds, mucocutaneous telangiectasias, pulmonary arterial hypertension, visceral arteriovenous malformations, or a family history of HHT should have genetic testing and counseling; first-degree relatives should have clinical screening and imaging when indicated.",
+      "lifestyle_tips": [
+        "Keep the nasal mucosa moist and avoid forceful nose blowing and nose picking to reduce epistaxis",
+        "Monitor hemoglobin, iron, and cardiopulmonary function regularly, and have pulmonary, hepatic, and gastrointestinal arteriovenous malformations assessed as directed",
+        "Seek urgent care for exertional breathlessness, hemoptysis, sudden headache, or neurologic symptoms"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Pulmonology / Cardiology / Otolaryngology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have recurrent nosebleeds and skin telangiectasias—should I have ACVRL1 genetic testing to confirm HHT2?",
+        "Should I be screened for pulmonary arterial hypertension and arteriovenous malformations in the lungs, liver, and gastrointestinal tract, and how often?",
+        "Should my siblings and children also have clinical screening and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Nosebleeds are just a nasal lining problem and will not affect the lungs or heart, so genetic testing is unnecessary?”",
+      "truth": "Wrong! HHT2 can involve not only recurrent nosebleeds and mucocutaneous telangiectasias but also pulmonary arterial hypertension and visceral arteriovenous malformations. These complications can cause hypoxia, bleeding, or cardiopulmonary failure, so early genetic testing and organ screening are needed."
+    }
+  },
+  "SDHC": {
+    "gene": {
+      "chinese_name": "SDHC Succinate Dehydrogenase Complex Subunit C (Paraganglioma Gene)",
+      "chromosome": "1q23.3 (Chromosome 1)",
+      "metaphor": {
+        "title": "⚡ The Mitochondrial 【Energy Plant】 Stabilizing Scaffold (When broken, paragangliomas and pheochromocytomas grow)",
+        "story": "Mitochondria are the cell's energy plants, and SDHC is an important scaffold subunit of respiratory chain complex II that helps convert succinate to fumarate and produce energy. When SDHC is defective, the energy plant malfunctions, succinate accumulates, and hypoxia and growth signals are activated. Tumors may grow in paraganglia or the adrenal medulla, and catecholamine-secreting tumors can cause paroxysmal high blood pressure, palpitations, sweating, and headache. Genetic testing, hormone and imaging surveillance, and surgery when needed enable early detection and management."
+      },
+      "plain_summary": "SDHC pathogenic variants cause hereditary paraganglioma-pheochromocytoma syndrome (SDHC type), an autosomal dominant condition. Patients may develop tumors in paraganglia or the adrenal medulla, causing paroxysmal high blood pressure, palpitations, sweating, and headache. Genetic testing, regular hormone and imaging surveillance, preoperative blood pressure control, and surgery reduce cardiovascular crisis and tumor complication risk.",
+      "academic_summary": "SDHC encodes succinate dehydrogenase complex subunit C, a membrane-anchoring subunit of mitochondrial respiratory chain complex II. Germline pathogenic variants cause hereditary paraganglioma-pheochromocytoma syndrome (SDHC type); succinate accumulation inhibits prolyl hydroxylases and stabilizes HIF, activating pseudohypoxic signaling and tumorigenesis. SDHC-related tumors are often parasympathetic head and neck paragangliomas, and long-term hormone and imaging surveillance remains necessary."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Paraganglioma-Pheochromocytoma Syndrome (SDHC Type)",
+      "categories": [
+        "Autosomal Dominant Hereditary Tumor Syndrome",
+        "Neuroendocrine Tumors",
+        "Adrenal and Paraganglial Disease"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Neuroendocrine Tumors (Regular Hormone and Imaging Surveillance Enable Early Management)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002668",
+        "name": "Paraganglioma",
+        "chinese_name": "Paraganglioma"
+      },
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "Pheochromocytoma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "Surgical resection and long-term surveillance",
+        "mechanism": "Removes hormone-secreting tumors and monitors for recurrence, metastasis, and new tumors as the main treatment strategy",
+        "approval_status": "International paraganglioma and pheochromocytoma guideline standard of care"
+      },
+      {
+        "drug_name": "Preoperative alpha-adrenergic blockade (Phenoxybenzamine / Doxazosin)",
+        "chinese_name": "Preoperative alpha-adrenergic blockade (phenoxybenzamine / doxazosin)",
+        "mechanism": "Blocks catecholamine effects to stabilize blood pressure and heart rate and reduce intraoperative hypertensive crisis risk",
+        "approval_status": "International paraganglioma and pheochromocytoma guideline (preoperative preparation)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SDHC pathogenic variants (paraganglioma and pheochromocytoma related)",
+      "population_frequency": "SDHx-related hereditary paraganglioma-pheochromocytoma accounts for a subset of all cases, and actual incidence varies by population and testing strategy",
+      "summary": "SDHC is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "People with SDHC-related tumors should be managed by a multidisciplinary team with regular catecholamine metabolite testing and imaging. Preoperative alpha blockade and anesthesia planning are essential, and family members should receive genetic counseling.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "If blood pressure rises in paroxysms, avoid intense emotional stress, overexertion, and foods high in tyramine, and monitor blood pressure as advised",
+        "Seek prompt care for paroxysmal headache, palpitations, sweating, chest pain, or marked blood pressure elevation"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Hereditary Paraganglioma and Pheochromocytoma Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic SDHC variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:20301715",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with paraganglioma, pheochromocytoma, young-onset hypertension, or a family history should receive genetic counseling and SDHx testing; confirmed cases should have regular plasma and urine catecholamine metabolite testing and head-neck, chest, and abdominal imaging.",
+      "lifestyle_tips": [
+        "Measure blood pressure regularly and record paroxysmal symptoms to help assess tumor activity",
+        "Avoid smoking, excessive alcohol, and intense emotional stress to reduce blood pressure swings",
+        "Tell the medical team about the tumor history before surgery to avoid unassessed anesthesia or drugs triggering a hypertensive crisis"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Endocrinology and Metabolism / Cardiology / Otolaryngology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have paroxysmal high blood pressure, palpitations, and sweating—should I be evaluated for paraganglioma or pheochromocytoma and have SDHC genetic testing?",
+        "How often should my catecholamine metabolites and imaging be monitored? When do tumors need surgery or other treatment?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Paroxysmal high blood pressure is just stress or autonomic imbalance and cannot be caused by a tumor?”",
+      "truth": "Wrong! Paroxysmal high blood pressure with palpitations, sweating, and headache may be caused by catecholamine-secreting pheochromocytoma or paraganglioma. Young-onset disease or a family history should prompt hormone testing, imaging, and SDHC and other genetic testing—not just a stress or autonomic diagnosis."
+    }
+  },
+  "SDHAF2": {
+    "gene": {
+      "chinese_name": "SDHAF2 Succinate Dehydrogenase Complex Assembly Factor 2 (Head and Neck Paraganglioma Gene)",
+      "chromosome": "11q12.2 (Chromosome 11)",
+      "metaphor": {
+        "title": "🧩 The Mitochondrial 【Energy Plant】 Assembly Technician (When it fails, the respiratory chain loosens and head/neck tumors grow)",
+        "story": "Respiratory chain complex II requires precise assembly of multiple parts to function, and SDHAF2 works like the assembly technician that installs and stabilizes the SDH complex so succinate dehydrogenase folds and functions correctly. When SDHAF2 is defective, complex assembly is impaired, succinate accumulates, and hypoxia and growth signals are activated, particularly favoring tumors in head and neck paraganglia. These tumors may cause hoarseness, dysphagia, or local compression. Genetic testing, imaging surveillance, and surgery when needed enable early detection and management."
+      },
+      "plain_summary": "SDHAF2 pathogenic variants cause hereditary paraganglioma syndrome type 2 (SDHAF2 type), an autosomal dominant condition with a parent-of-origin inheritance pattern. Patients are particularly prone to tumors in head and neck paraganglia, which may cause hoarseness, dysphagia, or local compression. Genetic testing, regular imaging surveillance, and surgery when needed enable early detection and management.",
+      "academic_summary": "SDHAF2 encodes succinate dehydrogenase complex assembly factor 2, which supports flavination and stable assembly of the SDH complex. Germline pathogenic variants cause hereditary paraganglioma syndrome type 2; penetrance is associated with a parent-of-origin effect, and tumors most often arise in head and neck parasympathetic paraganglia. Patients require long-term imaging surveillance and family genetic counseling."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Paraganglioma Syndrome Type 2 (SDHAF2 Type)",
+      "categories": [
+        "Autosomal Dominant Hereditary Tumor Syndrome",
+        "Head and Neck Paraganglioma",
+        "Neuroendocrine Tumors"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Head and Neck Paraganglioma (Regular Imaging Surveillance Enables Early Management)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002668",
+        "name": "Paraganglioma",
+        "chinese_name": "Head and neck paraganglioma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "Surgical resection and long-term surveillance",
+        "mechanism": "Removes head and neck paragangliomas and monitors for recurrence, metastasis, and new tumors as the main treatment strategy",
+        "approval_status": "International paraganglioma and pheochromocytoma guideline standard of care"
+      },
+      {
+        "drug_name": "Preoperative alpha-adrenergic blockade (Phenoxybenzamine / Doxazosin)",
+        "chinese_name": "Preoperative alpha-adrenergic blockade (phenoxybenzamine / doxazosin)",
+        "mechanism": "Blocks catecholamine effects in functional tumors, stabilizing blood pressure and heart rate and reducing intraoperative crisis risk",
+        "approval_status": "International paraganglioma and pheochromocytoma guideline (preoperative preparation)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SDHAF2 pathogenic variants (head and neck paraganglioma related)",
+      "population_frequency": "SDHAF2-related paraganglioma is rare, and carrier frequency varies by population and testing strategy",
+      "summary": "SDHAF2 is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "People with SDHAF2-related paraganglioma should have regular head and neck imaging and multidisciplinary follow-up. Discuss surgery and preoperative planning with the care team, and offer genetic counseling to family members.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "If the tumor is functional, avoid intense emotional stress and overexertion, and monitor blood pressure as advised",
+        "Seek prompt care for hoarseness, dysphagia, tinnitus, or a neck mass"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Hereditary Paraganglioma Guideline",
+      "clinvar_summary_chinese": "ClinVar lists SDHAF2 pathogenic and likely pathogenic variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:20301715",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with head and neck paraganglioma or a family history should receive genetic counseling and SDHAF2 genetic testing; carriers should have regular head and neck imaging surveillance and be aware of paternal inheritance family risk.",
+      "lifestyle_tips": [
+        "Have regular head and neck and related imaging surveillance as directed to detect new tumors early",
+        "Avoid smoking and excessive alcohol, and watch for voice changes, dysphagia, or a neck mass",
+        "Tell the medical team about the tumor history before surgery to avoid unassessed anesthesia or drugs"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Otolaryngology / Endocrinology and Metabolism / Genetic Counseling",
+      "questions": [
+        "Doctor, I have a head and neck paraganglioma or a family history—should I have SDHAF2 genetic testing?",
+        "How often should I have head and neck imaging, and when do tumors need surgery or other treatment?",
+        "Should my children and other family members receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“A neck mass or hoarseness is just aging or inflammation and does not need further evaluation?”",
+      "truth": "Wrong! SDHAF2-related paragangliomas often arise in the head and neck and may cause hoarseness, dysphagia, or local compression. A family history or young onset should prompt imaging and genetic testing so that diagnosis and treatment are not delayed."
+    }
+  },
+  "TMEM127": {
+    "gene": {
+      "chinese_name": "TMEM127 Transmembrane Protein 127 (Pheochromocytoma Gene)",
+      "chromosome": "2q11.2 (Chromosome 2)",
+      "metaphor": {
+        "title": "📡 The Cell's 【mTOR Signal Regulator】(When dysregulated, adrenal medullary tumors grow)",
+        "story": "Cells must precisely regulate growth and metabolic signals, and TMEM127 is an important intracellular regulator that restrains the mTOR signaling pathway to prevent excessive growth. When TMEM127 is defective, the mTOR brake is lost, chromaffin cells in the adrenal medulla or paraganglia may proliferate abnormally, and catecholamine-secreting tumors can cause paroxysmal high blood pressure, palpitations, sweating, and headache. Genetic testing, hormone and imaging surveillance, preoperative blood pressure control, and surgery reduce cardiovascular crisis risk."
+      },
+      "plain_summary": "TMEM127 pathogenic variants cause hereditary pheochromocytoma syndrome (TMEM127 type), an autosomal dominant condition. Patients may develop pheochromocytomas or paragangliomas in the adrenal medulla or paraganglia, causing paroxysmal high blood pressure, palpitations, sweating, and headache. Genetic testing, regular hormone and imaging surveillance, preoperative blood pressure control, and surgery reduce cardiovascular crisis and tumor complication risk.",
+      "academic_summary": "TMEM127 encodes transmembrane protein 127, a negative regulator of the mTOR signaling pathway involved in cell growth, metabolism, and vesicular transport. Germline pathogenic variants cause hereditary pheochromocytoma-paraganglioma syndrome (TMEM127 type), with tumors most often adrenal pheochromocytomas and some paragangliomas. Patients require long-term hormone and imaging surveillance and family genetic counseling."
+    },
+    "disease": {
+      "chinese_name": "Hereditary Pheochromocytoma Syndrome (TMEM127 Type)",
+      "categories": [
+        "Autosomal Dominant Hereditary Tumor Syndrome",
+        "Pheochromocytoma",
+        "Neuroendocrine Tumors"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟡 Hereditary Pheochromocytoma (Regular Hormone and Imaging Surveillance Enable Early Management)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002666",
+        "name": "Pheochromocytoma",
+        "chinese_name": "Pheochromocytoma"
+      },
+      {
+        "hpo_id": "HP:0002668",
+        "name": "Paraganglioma",
+        "chinese_name": "Paraganglioma"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Surgical resection and surveillance",
+        "chinese_name": "Surgical resection and long-term surveillance",
+        "mechanism": "Removes hormone-secreting tumors and monitors for recurrence, metastasis, and new tumors as the main treatment strategy",
+        "approval_status": "International paraganglioma and pheochromocytoma guideline standard of care"
+      },
+      {
+        "drug_name": "Preoperative alpha-adrenergic blockade (Phenoxybenzamine / Doxazosin)",
+        "chinese_name": "Preoperative alpha-adrenergic blockade (phenoxybenzamine / doxazosin)",
+        "mechanism": "Blocks catecholamine effects to stabilize blood pressure and heart rate and reduce intraoperative hypertensive crisis risk",
+        "approval_status": "International paraganglioma and pheochromocytoma guideline (preoperative preparation)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TMEM127 pathogenic variants (pheochromocytoma and paraganglioma related)",
+      "population_frequency": "TMEM127-related tumors account for a subset of hereditary pheochromocytoma and paraganglioma, and incidence varies by population",
+      "summary": "TMEM127 is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "People with TMEM127-related tumors should be managed by a multidisciplinary team with regular catecholamine metabolite testing and imaging. Preoperative alpha blockade and anesthesia planning are essential, and family members should receive genetic counseling.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid smoking and excessive alcohol, and maintain a healthy weight and regular exercise",
+        "If blood pressure rises in paroxysms, avoid intense emotional stress, overexertion, and foods high in tyramine, and monitor blood pressure as advised",
+        "Seek prompt care for paroxysmal headache, palpitations, sweating, chest pain, or marked blood pressure elevation"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Hereditary Pheochromocytoma and Paraganglioma Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple pathogenic and likely pathogenic TMEM127 variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:20301715",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with pheochromocytoma, paraganglioma, young-onset hypertension, or a family history should receive genetic counseling and TMEM127 and other genetic testing; confirmed cases should have regular plasma and urine catecholamine metabolite testing and imaging.",
+      "lifestyle_tips": [
+        "Measure blood pressure regularly and record paroxysmal symptoms to help assess tumor activity",
+        "Avoid smoking, excessive alcohol, and intense emotional stress to reduce blood pressure swings",
+        "Tell the medical team about the tumor history before surgery to avoid unassessed anesthesia or drugs triggering a hypertensive crisis"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Endocrinology and Metabolism / Cardiology / Genetic Counseling",
+      "questions": [
+        "Doctor, I have paroxysmal high blood pressure, palpitations, and sweating—should I be evaluated for pheochromocytoma and have TMEM127 genetic testing?",
+        "How often should my catecholamine metabolites and imaging be monitored? When do tumors need surgery?",
+        "Should my siblings and children receive genetic counseling and genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Blood pressure that goes up and down is just nervousness, and taking blood pressure medication is enough—there is no need to look for a tumor?”",
+      "truth": "Wrong! Paroxysmal high blood pressure with palpitations, sweating, and headache may be caused by catecholamine-secreting pheochromocytoma or paraganglioma. Treating it only as nervousness or primary hypertension can delay diagnosis and increase cardiovascular crisis risk, so hormone, imaging, and genetic evaluation are needed."
+    }
+  },
+  "TTN": {
+    "gene": {
+      "chinese_name": "TTN Titin (Familial Dilated Cardiomyopathy Gene)",
+      "chromosome": "2q31.2 (Chromosome 2)",
+      "metaphor": {
+        "title": "🪢 The 【Spring Scaffold】 Inside Heart Muscle Cells (Truncating variants shorten the scaffold and the heart gradually dilates and weakens)",
+        "story": "Heart muscle cells need an elastic molecular spring to maintain tension during contraction and relaxation, and TTN titin is the largest spring scaffold in the heart. When TTN has a truncating pathogenic variant, the spring scaffold is shortened or insufficient, mechanical tension in heart muscle cells becomes unbalanced, and the heart gradually dilates with reduced pumping strength, producing dilated cardiomyopathy and potentially arrhythmia and ventricular tachycardia. Genetic testing, echocardiography, and rhythm monitoring, together with standard heart-failure medication and device assessment when needed, can slow progression and reduce sudden death risk."
+      },
+      "plain_summary": "TTN truncating pathogenic variants are one of the most common causes of familial dilated cardiomyopathy, an autosomal dominant condition. The heart gradually dilates and its pumping function declines, potentially causing heart failure, arrhythmia, and ventricular tachycardia. Genetic testing, family screening, regular echocardiography and rhythm monitoring, standard heart-failure therapy, and device therapy when needed can slow progression and reduce sudden death risk.",
+      "academic_summary": "TTN encodes titin, the largest protein in the striated muscle sarcomere, maintaining sarcomere elasticity, tension, and signaling. Heart-specific truncating variants, mostly in exons near the A band, cause familial dilated cardiomyopathy with age-dependent penetrance. Patients may have conduction abnormalities and ventricular arrhythmia, requiring long-term cardiac function and rhythm surveillance and evaluation for implantable cardioverter-defibrillator indications."
+    },
+    "disease": {
+      "chinese_name": "Familial Dilated Cardiomyopathy (TTN Truncating Variant)",
+      "categories": [
+        "Autosomal Dominant Cardiomyopathy",
+        "Dilated Cardiomyopathy",
+        "Heart Failure and Arrhythmia Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Requires Heart Function and Rhythm Follow-Up (Standard Heart Failure Therapy and Device Assessment Reduce Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "Dilated cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-blockers",
+        "mechanism": "Reduce myocardial oxygen demand and sympathetic stimulation, improving heart-failure outcomes and reducing arrhythmia",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "ACE inhibitors / ARBs / ARNI",
+        "mechanism": "Reduce cardiac workload and slow ventricular remodeling, improving heart-failure symptoms and outcomes",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "Mineralocorticoid receptor antagonists",
+        "chinese_name": "Mineralocorticoid receptor antagonists",
+        "mechanism": "Reduce heart-failure hospitalization and mortality and limit ventricular fibrosis",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "SGLT2 inhibitors",
+        "chinese_name": "SGLT2 inhibitors",
+        "mechanism": "Improve heart-failure outcomes and cardiac function and reduce cardiovascular event risk",
+        "approval_status": "Standard heart-failure prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TTN truncating pathogenic variants (heart-specific, dilated cardiomyopathy related)",
+      "population_frequency": "TTN truncating variants are one of the most common genetic causes of familial dilated cardiomyopathy, with penetrance increasing with age",
+      "summary": "TTN is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "People with TTN-related dilated cardiomyopathy should be followed by cardiology with regular echocardiography, ECG, and rhythm monitoring. Standard heart-failure medications and device therapy should be individualized, and first-degree relatives should be screened.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Follow a low-salt diet and fluid guidance to avoid worsening heart failure",
+        "Avoid excessive alcohol and unassessed strenuous exercise, and monitor weight and edema regularly",
+        "Keep regular heart-function and rhythm follow-up, and seek care early for chest tightness, syncope, or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Cardiomyopathy Care and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists many TTN truncating pathogenic and likely pathogenic variants; genetic testing supports diagnosis of familial dilated cardiomyopathy",
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with dilated cardiomyopathy, heart failure, ventricular arrhythmia, young sudden death, or a family history should have echocardiography, ECG, and genetic counseling and consider TTN genetic testing; first-degree relatives should have cardiac screening.",
+      "lifestyle_tips": [
+        "Follow a low-salt diet, manage fluids, and monitor weight and edema daily",
+        "Exercise as advised and avoid excessive alcohol and unassessed strenuous activity",
+        "Keep regular heart-function and rhythm follow-up, and seek care early for chest tightness, syncope, or palpitations"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Heart Failure Clinic / Genetic Counseling",
+      "questions": [
+        "Doctor, I have dilated cardiomyopathy or a family history—should I have TTN genetic testing to confirm a hereditary cause?",
+        "How often should my heart function and rhythm be checked? Do I need an implantable cardioverter-defibrillator assessment?",
+        "Should my parents, siblings, and children have cardiac screening and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“An enlarged heart without obvious symptoms does not need regular follow-up or genetic testing?”",
+      "truth": "Wrong! TTN-related dilated cardiomyopathy can progress and is associated with ventricular arrhythmia and sudden death risk. Even with mild symptoms, heart function and rhythm should be monitored regularly and medication and device therapy assessed by cardiology—not delayed until severe symptoms appear."
+    }
+  },
+  "BAG3": {
+    "gene": {
+      "chinese_name": "BAG3 BCL2-Associated Athanogene 3 (Dilated Cardiomyopathy Gene)",
+      "chromosome": "10q26.11 (Chromosome 10)",
+      "metaphor": {
+        "title": "🧱 The Heart Muscle Cell's 【Protein Quality Manager】(When it fails, sarcomeric proteins accumulate and the heart dilates and weakens)",
+        "story": "Heart muscle cells must make and replace large amounts of contractile protein every day, and BAG3 works like the cell's protein quality manager, helping fold, transport, and clear damaged proteins to maintain sarcomere structure. When BAG3 is defective, the quality-control system is unbalanced, damaged proteins accumulate, the contractile scaffold gradually breaks down, the heart dilates with reduced pumping strength, and dilated cardiomyopathy with ventricular tachycardia may develop. Genetic testing, heart function and rhythm monitoring, standard heart-failure therapy, and device assessment can slow progression and reduce risk."
+      },
+      "plain_summary": "BAG3 pathogenic variants cause BAG3-related dilated cardiomyopathy, an autosomal dominant condition. Protein quality control in heart muscle cells becomes unbalanced, the heart gradually dilates and its pumping function declines, and heart failure, arrhythmia, and ventricular tachycardia may occur. Genetic testing, family screening, regular echocardiography and rhythm monitoring, standard heart-failure therapy, and device therapy when needed can slow progression and reduce sudden death risk.",
+      "academic_summary": "BAG3 encodes BCL2-associated athanogene 3, a molecular chaperone co-chaperone involved in autophagy, protein folding, and maintenance of sarcomere integrity. Germline pathogenic variants cause BAG3-related dilated cardiomyopathy, and some patients also have myofibrillar myopathy. Disease can be inherited in an autosomal dominant pattern with age-dependent penetrance, requiring long-term cardiac function and rhythm surveillance and device therapy assessment."
+    },
+    "disease": {
+      "chinese_name": "BAG3-Related Dilated Cardiomyopathy",
+      "categories": [
+        "Autosomal Dominant Cardiomyopathy",
+        "Dilated Cardiomyopathy",
+        "Heart Failure and Arrhythmia Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Requires Heart Function and Rhythm Follow-Up (Standard Heart Failure Therapy and Device Assessment Reduce Risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "Dilated cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-blockers",
+        "mechanism": "Reduce myocardial oxygen demand and sympathetic stimulation, improving heart-failure outcomes and reducing arrhythmia",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "ACE inhibitors / ARBs / ARNI",
+        "mechanism": "Reduce cardiac workload and slow ventricular remodeling, improving heart-failure symptoms and outcomes",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "Mineralocorticoid receptor antagonists",
+        "chinese_name": "Mineralocorticoid receptor antagonists",
+        "mechanism": "Reduce heart-failure hospitalization and mortality and limit ventricular fibrosis",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "SGLT2 inhibitors",
+        "chinese_name": "SGLT2 inhibitors",
+        "mechanism": "Improve heart-failure outcomes and cardiac function and reduce cardiovascular event risk",
+        "approval_status": "Standard heart-failure prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "BAG3 pathogenic variants (dilated cardiomyopathy related)",
+      "population_frequency": "BAG3-related dilated cardiomyopathy accounts for a subset of familial dilated cardiomyopathy, and incidence varies by population",
+      "summary": "BAG3 is evaluated for hereditary disease risk and family screening rather than for drug-metabolizing genotype-guided dosing.",
+      "traffic_light_summary": "This gene is evaluated primarily for hereditary condition screening and has no direct pharmacogenomic dosing guideline; standard medications generally do not require genotype-based dose adjustments. There is currently no dedicated pharmacogenomic (PGx) prescribing guideline for this gene.",
+      "practical_guidance": "People with BAG3-related dilated cardiomyopathy should be followed by cardiology with regular echocardiography, ECG, and rhythm monitoring. Standard heart-failure medications and device therapy should be individualized, and first-degree relatives should be screened.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Follow a low-salt diet and fluid guidance to avoid worsening heart failure",
+        "Avoid excessive alcohol and unassessed strenuous exercise, and monitor weight and edema regularly",
+        "Keep regular heart-function and rhythm follow-up, and seek care early for chest tightness, syncope, or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International Cardiomyopathy Care and Genetics Guideline",
+      "clinvar_summary_chinese": "ClinVar lists multiple BAG3 pathogenic and likely pathogenic variants; genetic testing supports diagnosis and family screening",
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with dilated cardiomyopathy, heart failure, ventricular arrhythmia, young sudden death, or a family history should have echocardiography, ECG, and genetic counseling and consider BAG3 genetic testing; first-degree relatives should have cardiac screening.",
+      "lifestyle_tips": [
+        "Follow a low-salt diet, manage fluids, and monitor weight and edema daily",
+        "Exercise as advised and avoid excessive alcohol and unassessed strenuous activity",
+        "Keep regular heart-function and rhythm follow-up, and seek care early for chest tightness, syncope, or palpitations"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Heart Failure Clinic / Genetic Counseling",
+      "questions": [
+        "Doctor, I have dilated cardiomyopathy or a family history—should I have BAG3 genetic testing to confirm a hereditary cause?",
+        "How often should my heart function and rhythm be checked? Do I need an implantable cardioverter-defibrillator assessment?",
+        "Should my parents, siblings, and children have cardiac screening and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“An enlarged heart is just body constitution or aging, and without symptoms there is no need for genetic testing or family screening?”",
+      "truth": "Wrong! BAG3-related dilated cardiomyopathy can progress and is associated with ventricular arrhythmia and sudden death risk. Even with mild symptoms, heart function and rhythm should be monitored regularly, medication and device therapy assessed by cardiology, and first-degree relatives screened."
+    }
+  },
+  "TNNT2": {
+    "gene": {
+      "chinese_name": "Cardiac Troponin T (TNNT2)",
+      "chromosome": "1q32.1 (Chromosome 1)",
+      "metaphor": {
+        "title": "❤️ The 【Calcium-Sensing Link】 in the Heart's Contraction Switch",
+        "story": "Heart muscle contraction is triggered when calcium opens the switch, and troponin T made by TNNT2 acts as the link that carries the calcium signal to the contractile proteins. If the link is abnormal in length or structure, the heart muscle becomes overly sensitive to calcium, contracts too strongly and relaxes incompletely, gradually producing hypertrophic cardiomyopathy with a risk of arrhythmia and sudden cardiac death."
+      },
+      "plain_summary": "The TNNT2 gene is involved in calcium-sensitive regulation of heart-muscle contraction. A pathogenic variant can cause TNNT2-related hypertrophic cardiomyopathy, inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Most people can manage it well with regular cardiac evaluation, family screening, medication and lifestyle adjustments.",
+      "academic_summary": "TNNT2 is located at 1q32.1 and encodes cardiac troponin T, a key component of the thin-filament troponin complex. Pathogenic variants cause familial hypertrophic cardiomyopathy in an autosomal dominant pattern with age-related penetrance; some variants are associated with increased sudden cardiac death risk and require long-term cardiac and rhythm surveillance."
+    },
+    "disease": {
+      "chinese_name": "Familial Hypertrophic Cardiomyopathy (TNNT2-related)",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy",
+        "Sudden Cardiac Death Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiac and rhythm evaluation (manageable with medication and monitoring)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "Sudden cardiac death risk"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "Mavacamten",
+        "mechanism": "Cardiac myosin inhibitor that reduces excessive myocardial contraction and may be considered for obstructive hypertrophic cardiomyopathy",
+        "approval_status": "FDA-approved prescription drug (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Lower heart rate and contractility, improving symptoms and diastolic filling",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TNNT2 pathogenic variants (associated with hypertrophic cardiomyopathy and sudden cardiac death risk)",
+      "population_frequency": "Hypertrophic cardiomyopathy affects about 1 in 500 people, and TNNT2 is one of the causative genes for familial hypertrophic cardiomyopathy (PMID:20301725)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Treatment options for hypertrophic cardiomyopathy include beta-blockers, cardiac myosin inhibitors such as mavacamten, and regular cardiac monitoring; whether and which medication to use should be assessed by a cardiologist based on symptoms, outflow tract obstruction and arrhythmia risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports, which can worsen symptoms",
+        "Maintain balanced nutrition and adequate hydration, especially around exercise",
+        "Attend regular echocardiography and rhythm monitoring, and seek care early for chest pain, syncope or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International cardiomyopathy and genetic medicine guidance",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple TNNT2 pathogenic and likely pathogenic variants associated with hypertrophic cardiomyopathy and sudden cardiac death risk",
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have hypertrophic cardiomyopathy, exertional syncope, a heart murmur, premature sudden death in the family or a family history of cardiomyopathy, consider echocardiography, ECG and genetic counseling, including TNNT2 testing; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Stay adequately hydrated and avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports",
+        "Choose exercise intensity with your doctor's advice and avoid prolonged strenuous exercise in extreme heat",
+        "Keep regular cardiac and rhythm follow-up and seek care early for chest pain, syncope or palpitations"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My TNNT2 test shows a pathogenic variant. How often should I have echocardiography and rhythm checks?",
+        "Should my parents, siblings or children also have cardiac evaluation or TNNT2 genetic testing?",
+        "Am I suitable for beta-blockers or mavacamten, and what exercise or lifestyle limits apply to me?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“An enlarged athletic heart is harmless, so a gene variant without symptoms does not matter.”",
+      "truth": "Not true. TNNT2-related hypertrophic cardiomyopathy can appear at any age, and some patients present first with syncope or sudden cardiac death. Regular cardiac evaluation and family screening are important even without obvious symptoms."
+    }
+  },
+  "TNNI3": {
+    "gene": {
+      "chinese_name": "Cardiac Troponin I (TNNI3)",
+      "chromosome": "19q13.42 (Chromosome 19)",
+      "metaphor": {
+        "title": "❤️ The 【Inhibitory Gate】 of the Heart's Contraction Switch",
+        "story": "When the heart relaxes, an inhibitory gate prevents excessive contraction, and troponin I made by TNNI3 is that gate. If the gate is structurally abnormal, inhibitory signaling cannot be transmitted properly, contraction regulation becomes unbalanced, and the heart muscle gradually thickens with diastolic dysfunction and arrhythmia, producing hypertrophic cardiomyopathy."
+      },
+      "plain_summary": "The TNNI3 gene is involved in the inhibitory regulation of heart-muscle contraction. A pathogenic variant can cause TNNI3-related hypertrophic cardiomyopathy, inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Most people can manage it well with regular cardiac evaluation, family screening, medication and lifestyle adjustments.",
+      "academic_summary": "TNNI3 is located at 19q13.42 and encodes cardiac troponin I, the inhibitory subunit of the thin-filament troponin complex. Pathogenic variants cause familial hypertrophic cardiomyopathy in an autosomal dominant pattern and can alter calcium sensitivity and relaxation; long-term assessment of hypertrophy, outflow tract obstruction and arrhythmia risk is required."
+    },
+    "disease": {
+      "chinese_name": "Familial Hypertrophic Cardiomyopathy (TNNI3-related)",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy",
+        "Syncope and Arrhythmia Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiac evaluation and syncope-risk monitoring (manageable with medication and lifestyle adjustment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "Syncope"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "Mavacamten",
+        "mechanism": "Cardiac myosin inhibitor that reduces excessive myocardial contraction and may be considered for obstructive hypertrophic cardiomyopathy",
+        "approval_status": "FDA-approved prescription drug (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Lower heart rate and contractility, improving symptoms and diastolic filling",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TNNI3 pathogenic variants (associated with hypertrophic cardiomyopathy)",
+      "population_frequency": "Hypertrophic cardiomyopathy affects about 1 in 500 people, and TNNI3 is one of the causative genes for familial hypertrophic cardiomyopathy (PMID:20301725)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Treatment options for hypertrophic cardiomyopathy include beta-blockers, cardiac myosin inhibitors such as mavacamten, and regular cardiac monitoring; whether and which medication to use should be assessed by a cardiologist based on symptoms, outflow tract obstruction and syncope risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports, which can trigger syncope or arrhythmia",
+        "Maintain balanced nutrition and adequate hydration, and avoid heavy binge drinking",
+        "Attend regular echocardiography and rhythm monitoring, and seek care early for pre-syncope or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International cardiomyopathy and genetic medicine guidance",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple TNNI3 pathogenic and likely pathogenic variants associated with hypertrophic cardiomyopathy and syncope risk",
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have hypertrophic cardiomyopathy, recurrent syncope, a heart murmur, premature sudden death in the family or a family history of cardiomyopathy, consider echocardiography, ECG and genetic counseling, including TNNI3 testing; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Stay adequately hydrated and avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports",
+        "If you feel dizzy, have visual greying or feel about to faint, stop activity and seek medical care",
+        "Keep regular cardiac and rhythm follow-up and adjust your exercise plan with your doctor"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My TNNI3 test shows a pathogenic variant. How often should I have echocardiography and rhythm checks?",
+        "I have fainted or nearly fainted. Is this related to cardiomyopathy, and do I need further rhythm evaluation?",
+        "Should my parents, siblings or children also have cardiac evaluation or TNNI3 genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Fainting is just tiredness or low blood pressure and has nothing to do with heart genes.”",
+      "truth": "Not necessarily. TNNI3-related hypertrophic cardiomyopathy can cause exertional or sudden syncope and is linked to arrhythmia risk. Recurrent syncope deserves cardiac evaluation rather than being attributed only to fatigue or constitution."
+    }
+  },
+  "TPM1": {
+    "gene": {
+      "chinese_name": "Tropomyosin Alpha-1 Chain (TPM1)",
+      "chromosome": "15q22.2 (Chromosome 15)",
+      "metaphor": {
+        "title": "❤️ The 【Stabilizing Cable】 Along the Heart's Contraction Track",
+        "story": "During contraction, actin and myosin slide along their track, and tropomyosin made by TPM1 acts like a stabilizing cable beside the track that controls the contraction switch. If the cable tension is abnormal, the rhythm of contraction and relaxation is disturbed, the heart muscle gradually thickens, and hypertrophic cardiomyopathy with atrial fibrillation may develop."
+      },
+      "plain_summary": "The TPM1 gene regulates heart-muscle contraction. A pathogenic variant can cause TPM1-related hypertrophic cardiomyopathy, inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Most people can manage it well with regular cardiac evaluation, family screening, medication and lifestyle adjustments.",
+      "academic_summary": "TPM1 is located at 15q22.2 and encodes cardiac tropomyosin alpha-1 chain, which regulates exposure of myosin-binding sites on the thin filament. Pathogenic variants cause familial hypertrophic cardiomyopathy in an autosomal dominant pattern and can impair contraction and relaxation while increasing atrial fibrillation and arrhythmia risk."
+    },
+    "disease": {
+      "chinese_name": "Familial Hypertrophic Cardiomyopathy (TPM1-related)",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy",
+        "Atrial Fibrillation Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiac and atrial fibrillation monitoring (manageable with medication and lifestyle adjustment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0005110",
+        "name": "Atrial fibrillation",
+        "chinese_name": "Atrial fibrillation"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "Mavacamten",
+        "mechanism": "Cardiac myosin inhibitor that reduces excessive myocardial contraction and may be considered for obstructive hypertrophic cardiomyopathy",
+        "approval_status": "FDA-approved prescription drug (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Lower heart rate and contractility, improving symptoms, diastolic filling and ventricular rate control during atrial fibrillation",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TPM1 pathogenic variants (associated with hypertrophic cardiomyopathy and atrial fibrillation)",
+      "population_frequency": "Hypertrophic cardiomyopathy affects about 1 in 500 people, and TPM1 is one of the causative genes for familial hypertrophic cardiomyopathy (PMID:20301725)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Treatment options for hypertrophic cardiomyopathy include beta-blockers, cardiac myosin inhibitors such as mavacamten, and regular cardiac monitoring; when atrial fibrillation is present, anticoagulation decisions should be individualized by the cardiology team based on overall risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports, which can worsen symptoms or trigger arrhythmia",
+        "Maintain balanced nutrition and adequate hydration, and control blood pressure and metabolic risk factors",
+        "Attend regular echocardiography and rhythm monitoring, and seek care early for palpitations, chest tightness or syncope"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International cardiomyopathy and genetic medicine guidance",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple TPM1 pathogenic and likely pathogenic variants associated with hypertrophic cardiomyopathy and atrial fibrillation",
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have hypertrophic cardiomyopathy, atrial fibrillation, a heart murmur, exertional syncope or a family history of cardiomyopathy, consider echocardiography, ECG and genetic counseling, including TPM1 testing; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Stay adequately hydrated and avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports",
+        "Control blood pressure, weight and sleep apnea as atrial fibrillation risk factors",
+        "Keep regular cardiac and rhythm follow-up and seek care early for palpitations, chest tightness or syncope"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My TPM1 test shows a pathogenic variant. How often should I have echocardiography and rhythm checks?",
+        "I have had palpitations or atrial fibrillation. Do I need anticoagulation and a rhythm-control plan?",
+        "Should my parents, siblings or children also have cardiac evaluation or TPM1 genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Atrial fibrillation is only an older-age problem and is unrelated to a young person's cardiomyopathy gene.”",
+      "truth": "Not necessarily. TPM1-related hypertrophic cardiomyopathy can increase atrial fibrillation risk, and atrial fibrillation further affects cardiac function and stroke risk. Regular rhythm monitoring and specialist assessment are important even at a young age."
+    }
+  },
+  "MYL2": {
+    "gene": {
+      "chinese_name": "Ventricular Myosin Regulatory Light Chain 2 (MYL2)",
+      "chromosome": "12q24.11 (Chromosome 12)",
+      "metaphor": {
+        "title": "❤️ The 【Speed Dial】 on the Heart's Myosin Motor",
+        "story": "The myosin motor in heart muscle uses regulatory light chains to fine-tune contraction force, and MYL2 makes the ventricular regulatory light chain that acts like a speed dial. If the dial is set abnormally, the heart contracts too strongly and relaxes incompletely, the muscle gradually thickens, and hypertrophic cardiomyopathy with syncope or arrhythmia may develop."
+      },
+      "plain_summary": "The MYL2 gene helps regulate the force of heart-muscle contraction. A pathogenic variant can cause MYL2-related hypertrophic cardiomyopathy, inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Most people can manage it well with regular cardiac evaluation, family screening, medication and lifestyle adjustments.",
+      "academic_summary": "MYL2 is located at 12q24.11 and encodes the ventricular cardiac myosin regulatory light chain, which modulates contraction force and cross-bridge cycling. Pathogenic variants cause familial hypertrophic cardiomyopathy in an autosomal dominant pattern and can affect diastolic function and outflow tract dynamics, requiring long-term monitoring of hypertrophy, symptoms and rhythm risk."
+    },
+    "disease": {
+      "chinese_name": "Familial Hypertrophic Cardiomyopathy (MYL2-related)",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy",
+        "Syncope and Arrhythmia Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiac evaluation and syncope-risk monitoring (manageable with medication and lifestyle adjustment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "Syncope"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "Mavacamten",
+        "mechanism": "Cardiac myosin inhibitor that reduces excessive myocardial contraction and may be considered for obstructive hypertrophic cardiomyopathy",
+        "approval_status": "FDA-approved prescription drug (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Lower heart rate and contractility, improving symptoms and diastolic filling",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MYL2 pathogenic variants (associated with hypertrophic cardiomyopathy)",
+      "population_frequency": "Hypertrophic cardiomyopathy affects about 1 in 500 people, and MYL2 is one of the causative genes for familial hypertrophic cardiomyopathy (PMID:20301725)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Treatment options for hypertrophic cardiomyopathy include beta-blockers, cardiac myosin inhibitors such as mavacamten, and regular cardiac monitoring; whether and which medication to use should be assessed by a cardiologist based on symptoms, outflow tract obstruction and syncope risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports, which can trigger syncope or arrhythmia",
+        "Maintain balanced nutrition and adequate hydration, especially around exercise",
+        "Attend regular echocardiography and rhythm monitoring, and seek care early for dizziness, syncope or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple MYL2 pathogenic and likely pathogenic variants associated with hypertrophic cardiomyopathy",
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have hypertrophic cardiomyopathy, exertional syncope, a heart murmur, premature sudden death in the family or a family history of cardiomyopathy, consider echocardiography, ECG and genetic counseling, including MYL2 testing; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Stay adequately hydrated and avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports",
+        "Choose exercise intensity with your doctor's advice and avoid prolonged exercise in extreme environments",
+        "Keep regular cardiac and rhythm follow-up and seek care early for pre-syncope, chest tightness or palpitations"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My MYL2 test shows a pathogenic variant. How often should I have echocardiography and rhythm checks?",
+        "Should my parents, siblings or children also have cardiac evaluation or MYL2 genetic testing?",
+        "Am I suitable for beta-blockers or mavacamten, and what exercise or lifestyle limits apply to me?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Thickened heart muscle will improve simply by exercising less, so genetic testing is unnecessary.”",
+      "truth": "Not true. MYL2-related hypertrophic cardiomyopathy is an inherited structural heart disease and does not resolve just by reducing exercise. A cardiologist should assess the degree of hypertrophy, outflow tract obstruction and rhythm risk, and first-degree relatives should be screened."
+    }
+  },
+  "MYL3": {
+    "gene": {
+      "chinese_name": "Ventricular Myosin Essential Light Chain 3 (MYL3)",
+      "chromosome": "3p21.31 (Chromosome 3)",
+      "metaphor": {
+        "title": "❤️ The 【Structural Mount】 of the Heart's Myosin Motor",
+        "story": "The myosin motor in heart muscle relies on essential light chains for structural support, and MYL3 makes the ventricular essential light chain that acts like a mount holding the motor steady. If the mount loosens or changes shape, the motor runs unevenly, contraction and relaxation become unbalanced, and the heart muscle gradually thickens, producing hypertrophic cardiomyopathy with possible syncope or arrhythmia."
+      },
+      "plain_summary": "The MYL3 gene supports the structure and efficiency of heart-muscle contraction. A pathogenic variant can cause MYL3-related hypertrophic cardiomyopathy, inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Most people can manage it well with regular cardiac evaluation, family screening, medication and lifestyle adjustments.",
+      "academic_summary": "MYL3 is located at 3p21.31 and encodes the ventricular cardiac myosin essential light chain, which maintains myosin head structure and contraction efficiency. Pathogenic variants cause familial hypertrophic cardiomyopathy in an autosomal dominant pattern and can impair contraction and relaxation, requiring long-term monitoring of hypertrophy, outflow tract obstruction and rhythm risk."
+    },
+    "disease": {
+      "chinese_name": "Familial Hypertrophic Cardiomyopathy (MYL3-related)",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy",
+        "Syncope and Arrhythmia Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiac evaluation and syncope-risk monitoring (manageable with medication and lifestyle adjustment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "Syncope"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "Mavacamten",
+        "mechanism": "Cardiac myosin inhibitor that reduces excessive myocardial contraction and may be considered for obstructive hypertrophic cardiomyopathy",
+        "approval_status": "FDA-approved prescription drug (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Lower heart rate and contractility, improving symptoms and diastolic filling",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MYL3 pathogenic variants (associated with hypertrophic cardiomyopathy)",
+      "population_frequency": "Hypertrophic cardiomyopathy affects about 1 in 500 people, and MYL3 is one of the causative genes for familial hypertrophic cardiomyopathy (PMID:20301725)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Treatment options for hypertrophic cardiomyopathy include beta-blockers, cardiac myosin inhibitors such as mavacamten, and regular cardiac monitoring; whether and which medication to use should be assessed by a cardiologist based on symptoms, outflow tract obstruction and syncope risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports, which can trigger syncope or arrhythmia",
+        "Maintain balanced nutrition and adequate hydration, especially around exercise",
+        "Attend regular echocardiography and rhythm monitoring, and seek care early for dizziness, syncope or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple MYL3 pathogenic and likely pathogenic variants associated with hypertrophic cardiomyopathy",
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have hypertrophic cardiomyopathy, exertional syncope, a heart murmur, premature sudden death in the family or a family history of cardiomyopathy, consider echocardiography, ECG and genetic counseling, including MYL3 testing; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Stay adequately hydrated and avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports",
+        "Choose exercise intensity with your doctor's advice and avoid prolonged exercise in extreme environments",
+        "Keep regular cardiac and rhythm follow-up and seek care early for pre-syncope, chest tightness or palpitations"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My MYL3 test shows a pathogenic variant. How often should I have echocardiography and rhythm checks?",
+        "Should my parents, siblings or children also have cardiac evaluation or MYL3 genetic testing?",
+        "Am I suitable for beta-blockers or mavacamten, and what exercise or lifestyle limits apply to me?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“No symptoms means the heart is fine, so regular follow-up is unnecessary.”",
+      "truth": "Not true. MYL3-related hypertrophic cardiomyopathy can progress gradually and may present with syncope or arrhythmia. Regular echocardiography and rhythm assessment are important even without symptoms, and first-degree relatives should be screened."
+    }
+  },
+  "ACTC1": {
+    "gene": {
+      "chinese_name": "Cardiac Alpha-Actin 1 (ACTC1)",
+      "chromosome": "15q14 (Chromosome 15)",
+      "metaphor": {
+        "title": "❤️ The 【Main Cable】 of the Heart's Contraction Track",
+        "story": "During contraction, myosin slides along a track built from actin, and the cardiac alpha-actin made by ACTC1 is the main cable of that track. If the cable structure is abnormal, contraction force and relaxation timing go out of balance, the heart muscle gradually thickens, and hypertrophic cardiomyopathy with atrial fibrillation may develop."
+      },
+      "plain_summary": "The ACTC1 gene encodes the main actin protein of heart-muscle contraction. A pathogenic variant can cause ACTC1-related hypertrophic cardiomyopathy, inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Most people can manage it well with regular cardiac evaluation, family screening, medication and lifestyle adjustments.",
+      "academic_summary": "ACTC1 is located at 15q14 and encodes cardiac alpha-actin, the principal structural protein and force-generating component of the thin filament. Pathogenic variants cause familial hypertrophic cardiomyopathy in an autosomal dominant pattern and can impair contraction and relaxation while increasing atrial fibrillation and arrhythmia risk."
+    },
+    "disease": {
+      "chinese_name": "Familial Cardiac Actin-Related Hypertrophic Cardiomyopathy",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy",
+        "Atrial Fibrillation Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiac and atrial fibrillation monitoring (manageable with medication and lifestyle adjustment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0005110",
+        "name": "Atrial fibrillation",
+        "chinese_name": "Atrial fibrillation"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "Mavacamten",
+        "mechanism": "Cardiac myosin inhibitor that reduces excessive myocardial contraction and may be considered for obstructive hypertrophic cardiomyopathy",
+        "approval_status": "FDA-approved prescription drug (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Lower heart rate and contractility, improving symptoms, diastolic filling and ventricular rate control during atrial fibrillation",
+        "approval_status": "Standard prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ACTC1 pathogenic variants (associated with hypertrophic cardiomyopathy and atrial fibrillation)",
+      "population_frequency": "Hypertrophic cardiomyopathy affects about 1 in 500 people, and ACTC1 is one of the causative genes for familial hypertrophic cardiomyopathy (PMID:20301725)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Treatment options for hypertrophic cardiomyopathy include beta-blockers, cardiac myosin inhibitors such as mavacamten, and regular cardiac monitoring; when atrial fibrillation is present, anticoagulation decisions should be individualized by the cardiology team based on overall risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports, which can worsen symptoms or trigger arrhythmia",
+        "Maintain balanced nutrition and adequate hydration, and control blood pressure and metabolic risk factors",
+        "Attend regular echocardiography and rhythm monitoring, and seek care early for palpitations, chest tightness or syncope"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International cardiomyopathy and genetic medicine guidance",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple ACTC1 pathogenic and likely pathogenic variants associated with hypertrophic cardiomyopathy and atrial fibrillation",
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have hypertrophic cardiomyopathy, atrial fibrillation, a heart murmur, exertional syncope or a family history of cardiomyopathy, consider echocardiography, ECG and genetic counseling, including ACTC1 testing; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Stay adequately hydrated and avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports",
+        "Control blood pressure, weight and sleep apnea as atrial fibrillation risk factors",
+        "Keep regular cardiac and rhythm follow-up and seek care early for palpitations, chest tightness or syncope"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Genetic Counseling",
+      "questions": [
+        "My ACTC1 test shows a pathogenic variant. How often should I have echocardiography and rhythm checks?",
+        "I have had palpitations or atrial fibrillation. Do I need anticoagulation and a rhythm-control plan?",
+        "Should my parents, siblings or children also have cardiac evaluation or ACTC1 genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Atrial fibrillation only needs rate control, so testing for a hypertrophic cardiomyopathy gene is unnecessary.”",
+      "truth": "Not necessarily. ACTC1-related hypertrophic cardiomyopathy can present with atrial fibrillation or arrhythmia, and structural heart disease affects treatment and stroke-risk assessment. A cardiologist should evaluate cardiac structure, rhythm and the underlying genetic cause together."
+    }
+  },
+  "PRKAG2": {
+    "gene": {
+      "chinese_name": "AMP-Activated Protein Kinase Gamma-2 Subunit (PRKAG2)",
+      "chromosome": "7q36.1 (Chromosome 7)",
+      "metaphor": {
+        "title": "🔋 The 【Battery Manager】 of Cardiac Energy Sensing (with an Extra Conduction Pathway)",
+        "story": "The heart needs a steady energy supply to keep beating, and the AMPK gamma-2 subunit made by PRKAG2 acts like the heart's battery manager, sensing energy status and adjusting metabolism. When the manager fails, heart-muscle cells become energy-imbalanced and accumulate storage material, the muscle gradually thickens, and an extra electrical conduction pathway may appear, causing pre-excitation (WPW) and arrhythmia."
+      },
+      "plain_summary": "The PRKAG2 gene regulates cardiac energy metabolism. A pathogenic variant can cause PRKAG2-related cardiomyopathy with pre-excitation syndrome, inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Most people can manage it with regular ECG and echocardiographic monitoring, family screening, medication and specialist electrophysiology assessment when needed.",
+      "academic_summary": "PRKAG2 is located at 7q36.1 and encodes the AMP-activated protein kinase gamma-2 subunit, which regulates cardiac energy metabolism. Pathogenic variants cause PRKAG2-related hypertrophic cardiomyopathy, often with ventricular pre-excitation (WPW pattern), arrhythmia and conduction abnormalities, in an autosomal dominant pattern; long-term ECG, rhythm and structural monitoring are required."
+    },
+    "disease": {
+      "chinese_name": "PRKAG2 Cardiomyopathy with Pre-Excitation Syndrome (WPW)",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy",
+        "Pre-Excitation and Arrhythmia"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs cardiac structural and rhythm monitoring (pre-excitation and arrhythmia require specialist assessment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0005110",
+        "name": "Atrial fibrillation",
+        "chinese_name": "Arrhythmia and atrial fibrillation"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Lower heart rate and contractility, improving symptoms and helping control pre-excitation-related arrhythmia",
+        "approval_status": "Standard prescription therapy"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy (WPW / pre-excitation)",
+        "chinese_name": "Antiarrhythmic Therapy (WPW / Pre-Excitation)",
+        "mechanism": "Controls ventricular rate and pre-excitation-related arrhythmia; medication and ablation options require electrophysiology assessment",
+        "approval_status": "Standard rhythm therapy (guided by electrophysiology assessment)"
+      },
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "Mavacamten",
+        "mechanism": "Cardiac myosin inhibitor that reduces excessive myocardial contraction; some patients with obstructive hypertrophic cardiomyopathy may be considered after specialist assessment",
+        "approval_status": "FDA-approved prescription drug (cardiology assessment required)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PRKAG2 pathogenic variants (associated with hypertrophic cardiomyopathy, pre-excitation syndrome and arrhythmia)",
+      "population_frequency": "PRKAG2-related cardiomyopathy is a rare inherited cardiomyopathy, and its frequency varies by population (PMID:20301725)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. PRKAG2 cardiomyopathy often coexists with pre-excitation syndrome and arrhythmia; treatment options include beta-blockers, antiarrhythmic drugs, electrophysiology study and radiofrequency ablation when appropriate, and cardiac myosin inhibitors such as mavacamten for selected patients with obstructive hypertrophic cardiomyopathy after specialist assessment.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports, which can trigger arrhythmia",
+        "Maintain balanced nutrition and adequate hydration, and avoid excessive sugary or highly refined carbohydrate intake",
+        "Attend regular ECG, echocardiography and rhythm monitoring, and seek care early for palpitations, syncope or chest tightness"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine and rhythm guidance",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple PRKAG2 pathogenic and likely pathogenic variants associated with hypertrophic cardiomyopathy, pre-excitation syndrome and arrhythmia",
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have hypertrophic cardiomyopathy, WPW pre-excitation, recurrent palpitations or syncope, premature sudden death in the family or a family history of cardiomyopathy, consider ECG, echocardiography and genetic counseling, including PRKAG2 testing; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Stay adequately hydrated and avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports",
+        "If sudden palpitations, dizziness or syncope occur, stop activity and seek care; do not adjust rhythm medication on your own",
+        "Keep regular ECG and cardiac follow-up, and discuss pre-excitation pathway management with an electrophysiologist"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Genetic Counseling",
+      "questions": [
+        "My PRKAG2 test shows a pathogenic variant. Does my ECG need assessment for a WPW pre-excitation pathway?",
+        "Am I suitable for beta-blockers, antiarrhythmic drugs, or electrophysiology study and ablation?",
+        "Should my parents, siblings or children also have ECG, cardiac evaluation or PRKAG2 genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“A WPW pattern on ECG is just a harmless congenital variant, so no treatment is needed without symptoms.”",
+      "truth": "Not necessarily. PRKAG2-related pre-excitation can coexist with arrhythmia and syncope risk, and the cardiomyopathy may progress. An electrophysiologist should assess the risk, discuss ablation when appropriate, and first-degree relatives should be screened."
+    }
+  },
+  "TNNC1": {
+    "gene": {
+      "chinese_name": "Cardiac Troponin C (TNNC1)",
+      "chromosome": "3p21.1 (Chromosome 3)",
+      "metaphor": {
+        "title": "🔑 The 【Calcium-Activated Key】 of the Heart's Contraction Switch",
+        "story": "Heart muscle contraction starts when calcium enters the switch, and troponin C made by TNNC1 is the key that receives calcium. If the key's sensing region is abnormal, the calcium signal cannot be converted correctly, contraction and relaxation become unbalanced, and the heart may develop hypertrophic cardiomyopathy or present with dilated cardiomyopathy."
+      },
+      "plain_summary": "The TNNC1 gene encodes the calcium-sensing protein of heart-muscle contraction. A pathogenic variant can cause troponin C-related cardiomyopathy, which may present as hypertrophic or dilated cardiomyopathy and is inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Management depends on the cardiac phenotype and includes regular evaluation, family screening, medication and lifestyle adjustments.",
+      "academic_summary": "TNNC1 is located at 3p21.1 and encodes troponin C in cardiac and slow skeletal muscle, the calcium-sensing regulator of contraction. Pathogenic variants can cause familial hypertrophic cardiomyopathy, and some variants have been associated with dilated cardiomyopathy, in an autosomal dominant pattern; long-term assessment of cardiac structure, systolic function and rhythm risk is required."
+    },
+    "disease": {
+      "chinese_name": "Troponin C-Related Cardiomyopathy",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Cardiomyopathy",
+        "Dilated Cardiomyopathy Phenotype"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiac structure and function evaluation (treatment tailored to phenotype)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001639",
+        "name": "Hypertrophic cardiomyopathy",
+        "chinese_name": "Hypertrophic cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "Dilated cardiomyopathy phenotype"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Mavacamten",
+        "chinese_name": "Mavacamten",
+        "mechanism": "Cardiac myosin inhibitor that reduces excessive myocardial contraction and may be considered for obstructive hypertrophic cardiomyopathy",
+        "approval_status": "FDA-approved prescription drug (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Lower heart rate and contractility, improving symptoms and diastolic filling",
+        "approval_status": "Standard prescription therapy"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "Standard Heart Failure Therapy",
+        "mechanism": "Standard heart failure medication reduces cardiac workload and adverse remodeling in patients with a dilated phenotype",
+        "approval_status": "Standard prescription therapy (guided by cardiac function assessment)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TNNC1 pathogenic variants (associated with hypertrophic and dilated cardiomyopathy)",
+      "population_frequency": "TNNC1-related cardiomyopathy is a rare inherited cardiomyopathy, and its frequency varies by population (PMID:20301725)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Treatment depends on the cardiomyopathy phenotype: hypertrophic disease may be managed with beta-blockers and cardiac myosin inhibitors such as mavacamten, while dilated or heart-failure phenotypes follow standard heart failure therapy; all decisions require individualized cardiology assessment.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports, which can worsen symptoms",
+        "Maintain balanced nutrition and adequate hydration; if heart failure is present, adjust salt and fluid intake as advised",
+        "Attend regular echocardiography and rhythm monitoring, and seek care early for chest tightness, syncope, palpitations or edema"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature include multiple TNNC1 pathogenic and likely pathogenic variants associated with hypertrophic and dilated cardiomyopathy",
+      "key_pmids": [
+        "PMID:20301725",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "If you have hypertrophic or dilated cardiomyopathy, heart failure, a heart murmur, exertional syncope or a family history of cardiomyopathy, consider echocardiography, ECG and genetic counseling, including TNNC1 testing; first-degree relatives should also be evaluated.",
+      "lifestyle_tips": [
+        "Stay adequately hydrated and avoid dehydration, excess alcohol and unevaluated high-intensity competitive sports",
+        "Choose exercise intensity with your doctor's advice; if heart failure is present, follow guidance on activity, salt and fluid intake",
+        "Keep regular cardiac structure and function follow-up and seek care early for chest tightness, syncope, palpitations or edema"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Heart Failure Clinic / Genetic Counseling",
+      "questions": [
+        "My TNNC1 test shows a pathogenic variant. Does my cardiomyopathy have a hypertrophic or dilated phenotype?",
+        "How often should I have echocardiography and rhythm checks, and should my current medication change with the phenotype?",
+        "Should my parents, siblings or children also have cardiac evaluation or TNNC1 genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“One cardiomyopathy gene causes only one type of heart disease, so everyone needs the same treatment.”",
+      "truth": "Not necessarily. TNNC1-related cardiomyopathy can present as hypertrophic or dilated disease, and the medication and follow-up priorities differ. A cardiologist should individualize care based on cardiac structure, function and symptoms."
+    }
+  },
+  "DES": {
+    "gene": {
+      "chinese_name": "Desmin (DES) — Desmin-Related Myopathy Gene",
+      "chromosome": "2q35 (Chromosome 2)",
+      "metaphor": {
+        "title": "🧱 The 【Steel Mesh】 Inside Heart and Skeletal Muscle Cells (A broken mesh loosens the cell scaffold)",
+        "story": "Heart and skeletal muscle cells rely on a desmin intermediate-filament network that anchors contractile proteins to the cell membrane, much like the steel mesh in a building. When DES is defective, the mesh becomes loose and fragile, heart-muscle cells are damaged by repeated contraction, the heart gradually dilates and weakens, and skeletal muscle may develop weakness and myopathy."
+      },
+      "plain_summary": "DES pathogenic variants cause desmin-related cardiomyopathy and myofibrillar myopathy, often presenting as dilated cardiomyopathy in an autosomal dominant pattern. Patients may develop an enlarged heart, heart failure, arrhythmia, and skeletal muscle weakness or myopathy. Genetic testing, family screening, regular cardiac and neuromuscular evaluation, standard heart-failure therapy, and device assessment when needed can slow progression and reduce risk.",
+      "academic_summary": "DES is located at 2q35 and encodes desmin, the major intermediate filament of cardiac and skeletal muscle that maintains cytoskeletal, sarcomeric and cell-junction mechanical integration. Pathogenic variants cause desmin-related cardiomyopathy and myofibrillar myopathy, with autosomal dominant inheritance in many families, presenting as dilated cardiomyopathy, conduction abnormalities and skeletal myopathy; long-term cardiac, rhythm and neuromuscular surveillance is required."
+    },
+    "disease": {
+      "chinese_name": "Desmin-Related Cardiomyopathy and Myofibrillar Myopathy",
+      "categories": [
+        "Autosomal Dominant Cardiomyopathy",
+        "Dilated Cardiomyopathy",
+        "Skeletal Myopathy and Arrhythmia Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs cardiac, rhythm and neuromuscular follow-up (standard heart-failure therapy can slow progression)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "Dilated cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0003198",
+        "name": "Myopathy",
+        "chinese_name": "Myopathy"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce myocardial oxygen demand and sympathetic stimulation, improving heart-failure outcomes and reducing arrhythmia",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "ACE inhibitors / ARBs / ARNI",
+        "mechanism": "Reduce cardiac workload and slow ventricular remodeling, improving heart-failure symptoms and outcomes",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "Mineralocorticoid receptor antagonists",
+        "chinese_name": "Mineralocorticoid receptor antagonists",
+        "mechanism": "Reduce heart-failure hospitalization and mortality and limit ventricular fibrosis",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "SGLT2 inhibitors",
+        "chinese_name": "SGLT2 inhibitors",
+        "mechanism": "Improve heart-failure outcomes and cardiac function and reduce cardiovascular event risk",
+        "approval_status": "Standard heart-failure prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "DES pathogenic variants (associated with dilated cardiomyopathy and myofibrillar myopathy)",
+      "population_frequency": "DES-related cardiomyopathy and myofibrillar myopathy are rare inherited conditions, and frequency varies by population (PMID:20301486)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Treatment of DES-related dilated cardiomyopathy centers on standard heart-failure therapy, rhythm monitoring and device assessment when needed; medication and device decisions should be individualized by cardiology based on cardiac function, rhythm and skeletal muscle findings.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Follow a low-salt diet and fluid guidance to avoid worsening heart failure",
+        "Avoid excessive alcohol and unassessed strenuous exercise, and monitor weight and edema regularly",
+        "Keep regular cardiac, rhythm and muscle-strength follow-up, and seek care early for chest tightness, syncope, palpitations or muscle weakness"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International cardiomyopathy and neuromuscular guidance",
+      "clinvar_summary_chinese": "ClinVar lists multiple DES pathogenic and likely pathogenic variants associated with dilated cardiomyopathy and myofibrillar myopathy",
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with dilated cardiomyopathy, heart failure, skeletal muscle weakness, arrhythmia, young sudden death or a family history should have echocardiography, ECG, neuromuscular assessment and genetic counseling, and consider DES genetic testing; first-degree relatives should have cardiac and muscle screening.",
+      "lifestyle_tips": [
+        "Follow a low-salt diet, manage fluids, and monitor weight and edema daily",
+        "Exercise as advised and avoid excessive alcohol and unassessed strenuous activity; if skeletal weakness is present, discuss safe exercise with rehabilitation specialists",
+        "Keep regular cardiac, rhythm and muscle-strength follow-up, and seek care early for chest tightness, syncope, palpitations or muscle weakness"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Neuromuscular Medicine / Genetic Counseling",
+      "questions": [
+        "My DES test shows a pathogenic variant. How should my heart and skeletal muscle be followed together?",
+        "How often should my heart function and rhythm be checked? Do I need an implantable cardioverter-defibrillator assessment?",
+        "Should my parents, siblings and children have cardiac and muscle evaluation and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Cardiomyopathy only affects the heart, so muscle weakness is unrelated and does not need evaluation.”",
+      "truth": "Wrong. Desmin encoded by DES is present in both heart and skeletal muscle, and pathogenic variants can cause cardiomyopathy together with myofibrillar myopathy. Cardiac and neuromuscular evaluation should be coordinated, and family screening should be offered."
+    }
+  },
+  "FLNC": {
+    "gene": {
+      "chinese_name": "Filamin C (FLNC) — Arrhythmogenic Dilated Cardiomyopathy Gene",
+      "chromosome": "7q32.1 (Chromosome 7)",
+      "metaphor": {
+        "title": "🪢 The 【Elastic Scaffold and Anchor】 in Heart Muscle Cells (A broken anchor dilates the heart and triggers arrhythmia)",
+        "story": "Heart-muscle cells bear mechanical tension with every contraction, and filamin C made by FLNC acts as an elastic scaffold and anchor that secures the sarcomere to the cell membrane and cell junctions. When the scaffold is defective, the heart is damaged by repeated stretching, gradually dilates and weakens, and ventricular tachycardia and sudden death risk may appear."
+      },
+      "plain_summary": "FLNC pathogenic variants cause filamin C-related dilated cardiomyopathy with arrhythmogenic features, inherited in an autosomal dominant pattern. Patients may develop an enlarged heart, heart failure, ventricular tachycardia or syncope. Genetic testing, family screening, regular echocardiography and rhythm monitoring, standard heart-failure therapy, avoidance of high-intensity endurance athletics, and device assessment when needed can reduce arrhythmia and sudden death risk.",
+      "academic_summary": "FLNC is located at 7q32.1 and encodes filamin C, a key sarcomeric Z-disc protein in heart and skeletal muscle that transmits mechanical tension and links the cytoskeleton to cell junctions. Truncating pathogenic variants cause filamin C-related dilated cardiomyopathy with ventricular arrhythmia and sudden death risk in an autosomal dominant pattern; long-term structural, functional and rhythm surveillance is required."
+    },
+    "disease": {
+      "chinese_name": "Filamin C-Related Arrhythmogenic / Dilated Cardiomyopathy",
+      "categories": [
+        "Autosomal Dominant Cardiomyopathy",
+        "Dilated Cardiomyopathy",
+        "Ventricular Arrhythmia and Sudden Death Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs heart-function and rhythm follow-up (avoid high-intensity endurance athletics and assess device therapy)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "Dilated cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce myocardial oxygen demand and sympathetic stimulation, improving heart-failure outcomes and reducing arrhythmia",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "ACE inhibitors / ARBs / ARNI",
+        "mechanism": "Reduce cardiac workload and slow ventricular remodeling, improving heart-failure symptoms and outcomes",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "Antiarrhythmic Therapy",
+        "mechanism": "Controls ventricular arrhythmia and reduces symptoms; requires cardiology assessment of rhythm risk",
+        "approval_status": "Standard rhythm therapy (specialist assessment required)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "FLNC truncating pathogenic variants (associated with dilated cardiomyopathy and ventricular arrhythmia)",
+      "population_frequency": "FLNC-related cardiomyopathy accounts for a subset of familial dilated cardiomyopathy, and frequency varies by population (PMID:20301486)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Management of FLNC-related cardiomyopathy includes standard heart-failure therapy, antiarrhythmic medication, avoidance of high-intensity endurance athletics, and implantable cardioverter-defibrillator assessment when indicated; medication and device decisions should be individualized by cardiology based on cardiac function and rhythm risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Follow a low-salt diet and fluid guidance to avoid worsening heart failure",
+        "Strictly avoid high-intensity endurance and competitive athletics, and avoid excessive alcohol",
+        "Keep regular heart-function and rhythm follow-up, and seek care immediately for chest tightness, syncope, palpitations or edema"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International cardiomyopathy and arrhythmia genetics guidance",
+      "clinvar_summary_chinese": "ClinVar lists multiple FLNC pathogenic and likely pathogenic variants associated with dilated cardiomyopathy and ventricular arrhythmia",
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with dilated cardiomyopathy, ventricular arrhythmia, exertional syncope, young sudden death or a family history should have echocardiography, ECG, rhythm monitoring and genetic counseling, and consider FLNC genetic testing; first-degree relatives should have cardiac screening.",
+      "lifestyle_tips": [
+        "FLNC carriers should avoid high-intensity endurance and competitive athletics (for example long-distance running, triathlon, basketball and soccer) to reduce ventricular arrhythmia and sudden death risk",
+        "Follow a low-salt diet, manage fluids, and monitor weight and edema daily",
+        "Keep regular heart-function and rhythm follow-up, and seek care immediately for chest tightness, syncope, palpitations or edema"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Heart Failure Clinic / Genetic Counseling",
+      "questions": [
+        "My FLNC test shows a pathogenic variant. How should I adjust my type and intensity of exercise?",
+        "How often should my heart function and rhythm be checked? Do I need an implantable cardioverter-defibrillator assessment?",
+        "Should my parents, siblings and children have cardiac screening and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Regular exercise is good for the heart, so people with a cardiomyopathy gene should continue high-intensity endurance training.”",
+      "truth": "Wrong. FLNC-related cardiomyopathy is linked to ventricular arrhythmia risk, and high-intensity endurance and competitive athletics may accelerate disease and increase sudden death risk. Carriers should choose safe exercise after cardiology assessment rather than follow an athlete-level training regimen."
+    }
+  },
+  "RBM20": {
+    "gene": {
+      "chinese_name": "RNA Binding Motif Protein 20 (RBM20) — Early-Onset Dilated Cardiomyopathy Gene",
+      "chromosome": "10q25.2 (Chromosome 10)",
+      "metaphor": {
+        "title": "✂️ The 【Quality Controller】 of Heart-Gene Splicing (Mis-splicing makes the heart weaken early)",
+        "story": "Heart-muscle cells must splice gene messages correctly to build fully functional contractile proteins, and RBM20 acts as the quality controller of that splicing process. When RBM20 fails, the splicing balance of key cardiac proteins is disturbed, heart-muscle cells lose elasticity and contractility earlier, the heart gradually dilates, and early-onset dilated cardiomyopathy with ventricular tachycardia may develop."
+      },
+      "plain_summary": "RBM20 pathogenic variants cause RBM20-related early-onset dilated cardiomyopathy, inherited in an autosomal dominant pattern. Patients may develop an enlarged heart, heart failure, arrhythmia or ventricular tachycardia at a younger age. Genetic testing, family screening, regular echocardiography and rhythm monitoring, standard heart-failure therapy, and device assessment when needed can slow progression and reduce risk.",
+      "academic_summary": "RBM20 is located at 10q25.2 and encodes an RNA-binding protein that regulates alternative splicing of key cardiac genes, including TTN. Pathogenic variants cause early-onset dilated cardiomyopathy in an autosomal dominant pattern with age-dependent penetrance and can be associated with ventricular arrhythmia and sudden death risk; long-term cardiac function and rhythm surveillance is required."
+    },
+    "disease": {
+      "chinese_name": "RBM20-Related Early-Onset Dilated Cardiomyopathy",
+      "categories": [
+        "Autosomal Dominant Cardiomyopathy",
+        "Early-Onset Dilated Cardiomyopathy",
+        "Ventricular Arrhythmia and Sudden Death Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs early heart-function and rhythm follow-up (standard heart-failure therapy and device assessment reduce risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "Dilated cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce myocardial oxygen demand and sympathetic stimulation, improving heart-failure outcomes and reducing arrhythmia",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "ACE inhibitors / ARBs / ARNI",
+        "mechanism": "Reduce cardiac workload and slow ventricular remodeling, improving heart-failure symptoms and outcomes",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "Antiarrhythmic Therapy",
+        "mechanism": "Controls ventricular arrhythmia and reduces symptoms; requires cardiology assessment of rhythm risk",
+        "approval_status": "Standard rhythm therapy (specialist assessment required)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "RBM20 pathogenic variants (associated with early-onset dilated cardiomyopathy and ventricular arrhythmia)",
+      "population_frequency": "RBM20-related cardiomyopathy accounts for a subset of familial dilated cardiomyopathy, and onset may occur at a younger age (PMID:20301486)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Management of RBM20-related cardiomyopathy includes standard heart-failure therapy, antiarrhythmic medication and implantable cardioverter-defibrillator assessment when indicated; medication and device decisions should be individualized by cardiology based on cardiac function and rhythm risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Follow a low-salt diet and fluid guidance to avoid worsening heart failure",
+        "Avoid excessive alcohol and unassessed strenuous exercise, and monitor weight and edema regularly",
+        "Keep regular heart-function and rhythm follow-up, and seek care immediately for chest tightness, syncope, palpitations or edema"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International cardiomyopathy care and genetics guidance",
+      "clinvar_summary_chinese": "ClinVar lists multiple RBM20 pathogenic and likely pathogenic variants associated with early-onset dilated cardiomyopathy and ventricular arrhythmia",
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with young-onset dilated cardiomyopathy, heart failure, ventricular arrhythmia, exertional syncope or a family history should have early echocardiography, ECG, rhythm monitoring and genetic counseling, and consider RBM20 genetic testing; first-degree relatives should have cardiac screening.",
+      "lifestyle_tips": [
+        "Follow a low-salt diet, manage fluids, and monitor weight and edema daily",
+        "Exercise as advised and avoid excessive alcohol and unassessed strenuous activity",
+        "Keep regular heart-function and rhythm follow-up, and seek care immediately for chest tightness, syncope, palpitations or edema"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Heart Failure Clinic / Genetic Counseling",
+      "questions": [
+        "My RBM20 test shows a pathogenic variant. Am I at high risk for early-onset dilated cardiomyopathy?",
+        "How often should my heart function and rhythm be checked? Do I need an implantable cardioverter-defibrillator assessment?",
+        "Should my parents, siblings and children have cardiac screening and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Dilated cardiomyopathy usually appears in middle or older age, so young people do not need genetic testing or family screening.”",
+      "truth": "Wrong. RBM20-related dilated cardiomyopathy can present at a younger age and is associated with ventricular arrhythmia and sudden death risk. Young affected individuals and families with a history should have early cardiac evaluation and genetic testing, and first-degree relatives should be screened."
+    }
+  },
+  "PKP2": {
+    "gene": {
+      "chinese_name": "Plakophilin 2 (PKP2) — Arrhythmogenic Right Ventricular Cardiomyopathy Gene",
+      "chromosome": "12p11.21 (Chromosome 12)",
+      "metaphor": {
+        "title": "🔩 The 【Rivets and Sealant】 Between Heart-Muscle Cells (Loosened rivets let fat and fibrosis replace the right ventricle)",
+        "story": "Heart-muscle cells must lock tightly together to withstand the force of contraction, and plakophilin 2 made by PKP2 acts as the rivets and sealant at cell junctions. When the rivets loosen, right-ventricular muscle is gradually replaced by fat and fibrous tissue under repeated mechanical stress, electrical conduction becomes chaotic, and arrhythmogenic right ventricular cardiomyopathy with ventricular tachycardia and sudden death risk develops."
+      },
+      "plain_summary": "PKP2 pathogenic variants are the most common cause of arrhythmogenic right ventricular cardiomyopathy (ARVC), inherited in an autosomal dominant pattern. Patients may develop right-ventricular structural abnormalities, palpitations, exertional syncope, ventricular tachycardia or sudden death. Genetic testing, family screening, regular ECG and cardiac imaging, avoidance of high-intensity endurance athletics, medication and device therapy when needed can reduce arrhythmia and sudden death risk.",
+      "academic_summary": "PKP2 is located at 12p11.21 and encodes plakophilin 2, a key cardiac desmosomal protein that maintains intercellular mechanical coupling and electrical communication. Pathogenic variants cause arrhythmogenic right ventricular cardiomyopathy in an autosomal dominant pattern with exercise-dependent penetrance; they can lead to fibrofatty replacement, ventricular arrhythmia and sudden death, requiring long-term structural and rhythm surveillance."
+    },
+    "disease": {
+      "chinese_name": "Arrhythmogenic Right Ventricular Cardiomyopathy (PKP2-related / ARVC)",
+      "categories": [
+        "Autosomal Dominant Cardiomyopathy",
+        "Arrhythmogenic Right Ventricular Cardiomyopathy",
+        "Ventricular Arrhythmia and Sudden Death Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs cardiac structure and rhythm follow-up (avoid high-intensity endurance athletics and assess device therapy)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011663",
+        "name": "Right ventricular cardiomyopathy",
+        "chinese_name": "Right ventricular cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation and exercise-related heart rate, decreasing ventricular arrhythmia episodes",
+        "approval_status": "Standard rhythm prescription therapy"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "Antiarrhythmic Therapy",
+        "mechanism": "Controls ventricular arrhythmia and reduces symptoms; requires cardiology assessment of rhythm risk",
+        "approval_status": "Standard rhythm therapy (specialist assessment required)"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "Standard Heart Failure Therapy",
+        "mechanism": "When ventricular function declines, standard heart-failure medication reduces cardiac workload and adverse remodeling",
+        "approval_status": "Standard prescription therapy (guided by cardiac function assessment)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PKP2 pathogenic variants (associated with arrhythmogenic right ventricular cardiomyopathy)",
+      "population_frequency": "Arrhythmogenic right ventricular cardiomyopathy affects about 1 in 2,000 to 5,000 people, and PKP2 is the most common causative gene (PMID:20301310)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. ARVC management includes beta-blockers, antiarrhythmic medication, avoidance of high-intensity endurance athletics, and implantable cardioverter-defibrillator or ablation assessment when indicated; medication and device decisions should be individualized by cardiology based on rhythm risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Strictly avoid high-intensity endurance and competitive athletics to reduce right-ventricular load and arrhythmia risk",
+        "Avoid dehydration, excess alcohol and electrolyte imbalance, which can trigger arrhythmia",
+        "Keep regular ECG, cardiac imaging and rhythm follow-up, and seek care immediately for palpitations, syncope or chest tightness"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International ARVC care and genetics guidance",
+      "clinvar_summary_chinese": "ClinVar lists many PKP2 pathogenic and likely pathogenic variants associated with arrhythmogenic right ventricular cardiomyopathy and ventricular arrhythmia",
+      "key_pmids": [
+        "PMID:20301310",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with ARVC, right-ventricular arrhythmia, exertional syncope, young sudden death or a family history should have ECG, echocardiography or cardiac MRI, rhythm monitoring and genetic counseling, and consider PKP2 genetic testing; first-degree relatives should have cardiac screening.",
+      "lifestyle_tips": [
+        "PKP2 carriers should avoid high-intensity endurance and competitive athletics (for example long-distance running, triathlon, basketball and soccer) to reduce ventricular arrhythmia and sudden death risk",
+        "Avoid dehydration, excess alcohol and electrolyte imbalance, and maintain hydration around exercise",
+        "Keep regular ECG, cardiac imaging and rhythm follow-up, and seek care immediately for palpitations, syncope or chest tightness"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Genetic Counseling",
+      "questions": [
+        "My PKP2 test shows a pathogenic variant. How should I adjust my type and intensity of exercise?",
+        "How often should my cardiac structure and rhythm be checked? Do I need an implantable cardioverter-defibrillator or ablation assessment?",
+        "Should my parents, siblings and children have ECG, cardiac imaging and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Athlete palpitations are just from training, and people with an ARVC gene can continue high-intensity endurance training.”",
+      "truth": "Wrong. PKP2-related ARVC is strongly associated with high-intensity endurance exercise, and continued training may accelerate right-ventricular structural deterioration and increase sudden death risk. Carriers should stop high-intensity endurance and competitive athletics after cardiology assessment."
+    }
+  },
+  "DSP": {
+    "gene": {
+      "chinese_name": "Desmoplakin (DSP) — Arrhythmogenic Cardiomyopathy Gene",
+      "chromosome": "6p24.3 (Chromosome 6)",
+      "metaphor": {
+        "title": "🧷 The 【Main Anchor Plate】 of Heart-Muscle Cell Junctions (Detachment dismantles intercellular links)",
+        "story": "Desmosomes between heart-muscle cells need a main anchor plate that fastens the cytoskeleton firmly to the cell membrane, and desmoplakin made by DSP is that plate. When the plate fails, intercellular links break under contractile tension, myocardium is gradually replaced by fibrous and fatty tissue, and arrhythmogenic cardiomyopathy with ventricular tachycardia and heart failure may develop."
+      },
+      "plain_summary": "DSP pathogenic variants cause desmoplakin-related arrhythmogenic cardiomyopathy, inherited in an autosomal dominant pattern and potentially affecting the right ventricle, left ventricle or both. Patients may develop palpitations, exertional syncope, ventricular tachycardia, heart failure or sudden death. Genetic testing, family screening, regular ECG and cardiac imaging, avoidance of high-intensity endurance athletics, medication and device therapy when needed can reduce risk.",
+      "academic_summary": "DSP is located at 6p24.3 and encodes desmoplakin, a core desmosomal protein linking intracellular intermediate filaments to the cell membrane. Pathogenic variants cause arrhythmogenic right ventricular cardiomyopathy and related cardiomyopathies in an autosomal dominant pattern; they can lead to fibrofatty replacement, ventricular arrhythmia, heart failure and sudden death, requiring long-term structural and rhythm surveillance."
+    },
+    "disease": {
+      "chinese_name": "Desmoplakin-Related Arrhythmogenic Cardiomyopathy (DSP-related)",
+      "categories": [
+        "Autosomal Dominant Cardiomyopathy",
+        "Arrhythmogenic Right Ventricular Cardiomyopathy",
+        "Ventricular Arrhythmia and Sudden Death Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs cardiac structure and rhythm follow-up (avoid high-intensity endurance athletics and assess device therapy)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011663",
+        "name": "Right ventricular cardiomyopathy",
+        "chinese_name": "Arrhythmogenic right ventricular cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation and exercise-related heart rate, decreasing ventricular arrhythmia episodes",
+        "approval_status": "Standard rhythm prescription therapy"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "Antiarrhythmic Therapy",
+        "mechanism": "Controls ventricular arrhythmia and reduces symptoms; requires cardiology assessment of rhythm risk",
+        "approval_status": "Standard rhythm therapy (specialist assessment required)"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "Standard Heart Failure Therapy",
+        "mechanism": "When ventricular function declines, standard heart-failure medication reduces cardiac workload and adverse remodeling",
+        "approval_status": "Standard prescription therapy (guided by cardiac function assessment)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "DSP pathogenic variants (associated with arrhythmogenic cardiomyopathy)",
+      "population_frequency": "DSP-related arrhythmogenic cardiomyopathy accounts for a subset of ARVC and familial cardiomyopathy, and frequency varies by population (PMID:20301310)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Management of DSP-related cardiomyopathy includes beta-blockers, antiarrhythmic medication, standard heart-failure therapy, avoidance of high-intensity endurance athletics, and implantable cardioverter-defibrillator or ablation assessment when indicated; medication and device decisions should be individualized by cardiology based on rhythm risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Strictly avoid high-intensity endurance and competitive athletics to reduce ventricular load and arrhythmia risk",
+        "Avoid dehydration, excess alcohol and electrolyte imbalance, which can trigger arrhythmia",
+        "Keep regular ECG, cardiac imaging and rhythm follow-up, and seek care immediately for palpitations, syncope, chest tightness or edema"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International ARVC care and genetics guidance",
+      "clinvar_summary_chinese": "ClinVar lists multiple DSP pathogenic and likely pathogenic variants associated with arrhythmogenic cardiomyopathy and ventricular arrhythmia",
+      "key_pmids": [
+        "PMID:20301310",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with ARVC, left-ventricular or biventricular cardiomyopathy, ventricular arrhythmia, exertional syncope, young sudden death or a family history should have ECG, echocardiography or cardiac MRI, rhythm monitoring and genetic counseling, and consider DSP genetic testing; first-degree relatives should have cardiac screening.",
+      "lifestyle_tips": [
+        "DSP carriers should avoid high-intensity endurance and competitive athletics (for example long-distance running, triathlon, basketball and soccer) to reduce ventricular arrhythmia and sudden death risk",
+        "Avoid dehydration, excess alcohol and electrolyte imbalance, and maintain hydration around exercise",
+        "Keep regular ECG, cardiac imaging and rhythm follow-up, and seek care immediately for palpitations, syncope, chest tightness or edema"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Genetic Counseling",
+      "questions": [
+        "My DSP test shows a pathogenic variant. Do my left and right ventricles both need evaluation?",
+        "How often should my cardiac structure and rhythm be checked? Do I need an implantable cardioverter-defibrillator or ablation assessment?",
+        "Should my parents, siblings and children have ECG, cardiac imaging and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“ARVC only affects the right ventricle, so the left ventricle cannot be involved and complete imaging is unnecessary.”",
+      "truth": "Wrong. DSP-related cardiomyopathy can affect the right ventricle, left ventricle or both, and is associated with ventricular arrhythmia and heart-failure risk. Complete cardiac imaging and rhythm assessment should not be skipped."
+    }
+  },
+  "DSC2": {
+    "gene": {
+      "chinese_name": "Desmocollin 2 (DSC2) — Arrhythmogenic Right Ventricular Cardiomyopathy Gene",
+      "chromosome": "18q12.1 (Chromosome 18)",
+      "metaphor": {
+        "title": "🧩 The 【Double-Sided Adhesive Clasp】 Between Heart-Muscle Cells (Weak adhesion tears cells apart)",
+        "story": "Desmosomes between heart-muscle cells work like a set of double-sided adhesive clasps, and desmocollin 2 made by DSC2 is one of the adhesive surfaces that holds neighboring cells tightly together. When the clasp is too weak, myocardium is gradually pulled apart and damaged with every contraction, the right ventricle is replaced by fibrous and fatty tissue, and arrhythmogenic right ventricular cardiomyopathy with exertional syncope or ventricular tachycardia develops."
+      },
+      "plain_summary": "DSC2 pathogenic variants cause desmocollin-2-related arrhythmogenic right ventricular cardiomyopathy, inherited in an autosomal dominant pattern. Patients may develop right-ventricular structural abnormalities, palpitations, exertional syncope or ventricular tachycardia. Genetic testing, family screening, regular ECG and cardiac imaging, avoidance of high-intensity endurance athletics, medication and device therapy when needed can reduce arrhythmia and sudden death risk.",
+      "academic_summary": "DSC2 is located at 18q12.1 and encodes desmocollin 2, a transmembrane desmosomal adhesion protein that maintains intercellular mechanical coupling in the heart. Pathogenic variants cause arrhythmogenic right ventricular cardiomyopathy in an autosomal dominant pattern, and recessive forms also occur; they can lead to fibrofatty replacement, exercise-induced arrhythmia and syncope, requiring long-term structural and rhythm surveillance."
+    },
+    "disease": {
+      "chinese_name": "Desmocollin-2-Related Arrhythmogenic Cardiomyopathy (DSC2-related)",
+      "categories": [
+        "Autosomal Dominant Cardiomyopathy",
+        "Arrhythmogenic Right Ventricular Cardiomyopathy",
+        "Exercise-Induced Syncope and Arrhythmia"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs cardiac structure and rhythm follow-up (avoid high-intensity endurance athletics and assess device therapy)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011663",
+        "name": "Right ventricular cardiomyopathy",
+        "chinese_name": "Arrhythmogenic right ventricular cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "Exercise-induced syncope"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation and exercise-related heart rate, decreasing ventricular arrhythmia episodes",
+        "approval_status": "Standard rhythm prescription therapy"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "Antiarrhythmic Therapy",
+        "mechanism": "Controls ventricular arrhythmia and reduces symptoms; requires cardiology assessment of rhythm risk",
+        "approval_status": "Standard rhythm therapy (specialist assessment required)"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "Standard Heart Failure Therapy",
+        "mechanism": "When ventricular function declines, standard heart-failure medication reduces cardiac workload and adverse remodeling",
+        "approval_status": "Standard prescription therapy (guided by cardiac function assessment)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "DSC2 pathogenic variants (associated with arrhythmogenic right ventricular cardiomyopathy)",
+      "population_frequency": "DSC2-related ARVC accounts for a subset of arrhythmogenic right ventricular cardiomyopathy, and frequency varies by population (PMID:20301310)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. ARVC management includes beta-blockers, antiarrhythmic medication, avoidance of high-intensity endurance athletics, and implantable cardioverter-defibrillator or ablation assessment when indicated; medication and device decisions should be individualized by cardiology based on rhythm risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Strictly avoid high-intensity endurance and competitive athletics to reduce right-ventricular load and exercise-induced syncope risk",
+        "Avoid dehydration, excess alcohol and electrolyte imbalance, which can trigger arrhythmia",
+        "Keep regular ECG, cardiac imaging and rhythm follow-up, and seek care immediately for palpitations, syncope or chest tightness"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ International ARVC care and genetics guidance",
+      "clinvar_summary_chinese": "ClinVar lists multiple DSC2 pathogenic and likely pathogenic variants associated with arrhythmogenic right ventricular cardiomyopathy",
+      "key_pmids": [
+        "PMID:20301310",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with ARVC, exertional syncope, ventricular arrhythmia, young sudden death or a family history should have ECG, echocardiography or cardiac MRI, rhythm monitoring and genetic counseling, and consider DSC2 genetic testing; first-degree relatives should have cardiac screening.",
+      "lifestyle_tips": [
+        "DSC2 carriers should avoid high-intensity endurance and competitive athletics (for example long-distance running, triathlon, basketball and soccer) to reduce exercise-induced syncope and ventricular arrhythmia risk",
+        "Avoid dehydration, excess alcohol and electrolyte imbalance, and maintain hydration around exercise",
+        "Keep regular ECG, cardiac imaging and rhythm follow-up, and seek care immediately for palpitations, syncope or chest tightness"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Genetic Counseling",
+      "questions": [
+        "My DSC2 test shows a pathogenic variant. How should I adjust my type and intensity of exercise?",
+        "I have fainted during exercise—is this related to ARVC, and do I need an implantable cardioverter-defibrillator or ablation assessment?",
+        "Should my parents, siblings and children have ECG, cardiac imaging and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Fainting during exercise is just poor conditioning or dehydration, and people with an ARVC gene can continue endurance sports.”",
+      "truth": "Wrong. DSC2-related ARVC can trigger ventricular arrhythmia and syncope during exercise, and continued high-intensity endurance athletics increases sudden death risk. Carriers should be assessed by cardiology and avoid high-intensity endurance and competitive sports."
+    }
+  },
+  "DSG2": {
+    "gene": {
+      "chinese_name": "Desmoglein 2 (DSG2) — Arrhythmogenic Right Ventricular Cardiomyopathy Gene",
+      "chromosome": "18q12.1 (Chromosome 18)",
+      "metaphor": {
+        "title": "🧷 The 【Adhesive Core Layer】 Between Heart-Muscle Cells (Peeling apart disintegrates cell links)",
+        "story": "Desmosomes between heart-muscle cells are a multi-layered adhesive structure, and desmoglein 2 made by DSG2 is the core adhesive layer that bears the pull of contraction. When the core peels apart, cell links disintegrate under repeated stretching, right-ventricular myocardium is gradually replaced by fibrous and fatty tissue, and arrhythmogenic right ventricular cardiomyopathy may present with ventricular tachycardia or sudden cardiac death."
+      },
+      "plain_summary": "DSG2 pathogenic variants cause desmoglein-2-related arrhythmogenic right ventricular cardiomyopathy, inherited in an autosomal dominant pattern. Patients may develop right-ventricular structural abnormalities, palpitations, exertional syncope, ventricular tachycardia or sudden death. Genetic testing, family screening, regular ECG and cardiac imaging, avoidance of high-intensity endurance athletics, medication and device therapy when needed can reduce arrhythmia and sudden death risk.",
+      "academic_summary": "DSG2 is located at 18q12.1 and encodes desmoglein 2, a transmembrane desmosomal adhesion protein that maintains intercellular mechanical coupling and electrical communication in the heart. Pathogenic variants cause arrhythmogenic right ventricular cardiomyopathy in an autosomal dominant pattern, and recessive forms also occur; they can lead to fibrofatty replacement, ventricular arrhythmia and sudden death, requiring long-term structural and rhythm surveillance."
+    },
+    "disease": {
+      "chinese_name": "Desmoglein-2-Related Arrhythmogenic Cardiomyopathy (DSG2-related)",
+      "categories": [
+        "Autosomal Dominant Cardiomyopathy",
+        "Arrhythmogenic Right Ventricular Cardiomyopathy",
+        "Ventricular Arrhythmia and Sudden Death Risk"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs cardiac structure and rhythm follow-up (avoid high-intensity endurance athletics and assess device therapy)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011663",
+        "name": "Right ventricular cardiomyopathy",
+        "chinese_name": "Arrhythmogenic right ventricular cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "Sudden cardiac death risk"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation and exercise-related heart rate, decreasing ventricular arrhythmia episodes",
+        "approval_status": "Standard rhythm prescription therapy"
+      },
+      {
+        "drug_name": "Antiarrhythmic therapy",
+        "chinese_name": "Antiarrhythmic Therapy",
+        "mechanism": "Controls ventricular arrhythmia and reduces symptoms; requires cardiology assessment of rhythm risk",
+        "approval_status": "Standard rhythm therapy (specialist assessment required)"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "Standard Heart Failure Therapy",
+        "mechanism": "When ventricular function declines, standard heart-failure medication reduces cardiac workload and adverse remodeling",
+        "approval_status": "Standard prescription therapy (guided by cardiac function assessment)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "DSG2 pathogenic variants (associated with arrhythmogenic right ventricular cardiomyopathy)",
+      "population_frequency": "DSG2-related ARVC accounts for a subset of arrhythmogenic right ventricular cardiomyopathy, and frequency varies by population (PMID:20301310)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. ARVC management includes beta-blockers, antiarrhythmic medication, avoidance of high-intensity endurance athletics, and implantable cardioverter-defibrillator or ablation assessment when indicated; medication and device decisions should be individualized by cardiology based on rhythm risk.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Strictly avoid high-intensity endurance and competitive athletics to reduce right-ventricular load and ventricular arrhythmia risk",
+        "Avoid dehydration, excess alcohol and electrolyte imbalance, which can trigger arrhythmia",
+        "Keep regular ECG, cardiac imaging and rhythm follow-up, and seek care immediately for palpitations, syncope or chest tightness"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ International ARVC care and genetics guidance",
+      "clinvar_summary_chinese": "ClinVar lists multiple DSG2 pathogenic and likely pathogenic variants associated with arrhythmogenic right ventricular cardiomyopathy and ventricular arrhythmia",
+      "key_pmids": [
+        "PMID:20301310",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with ARVC, ventricular arrhythmia, exertional syncope, young sudden death or a family history should have ECG, echocardiography or cardiac MRI, rhythm monitoring and genetic counseling, and consider DSG2 genetic testing; first-degree relatives should have cardiac screening.",
+      "lifestyle_tips": [
+        "DSG2 carriers should avoid high-intensity endurance and competitive athletics (for example long-distance running, triathlon, basketball and soccer) to reduce ventricular arrhythmia and sudden death risk",
+        "Avoid dehydration, excess alcohol and electrolyte imbalance, and maintain hydration around exercise",
+        "Keep regular ECG, cardiac imaging and rhythm follow-up, and seek care immediately for palpitations, syncope or chest tightness"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Genetic Counseling",
+      "questions": [
+        "My DSG2 test shows a pathogenic variant. How should I adjust my type and intensity of exercise?",
+        "How often should my cardiac structure and rhythm be checked? Do I need an implantable cardioverter-defibrillator or ablation assessment?",
+        "Should my parents, siblings and children have ECG, cardiac imaging and genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“No symptoms means ARVC cannot cause sudden death, so high-intensity competitive sports are safe.”",
+      "truth": "Wrong. DSG2-related ARVC may present first with ventricular tachycardia or sudden cardiac death, and high-intensity endurance and competitive athletics substantially increase risk. Even without symptoms, carriers should be assessed by cardiology, avoid such sports, and have first-degree relatives screened."
+    }
+  },
+  "TMEM43": {
+    "gene": {
+      "chinese_name": "Transmembrane Protein 43 (TMEM43)",
+      "chromosome": "3p25.1 (Chromosome 3)",
+      "metaphor": {
+        "title": "🧱 The 【Structural Rebar】 of Heart-Muscle Cells (When support fails, fat and fibrosis replace the right ventricle)",
+        "story": "Transmembrane protein 43 made by TMEM43 acts like structural rebar inside heart-muscle cells, keeping the cell membrane and nuclear envelope stable and supporting signal transmission. When the rebar is defective, heart-muscle cells under mechanical stress are gradually replaced by fat and fibrous tissue, the right ventricle enlarges and weakens, and ventricular tachycardia may occur."
+      },
+      "plain_summary": "TMEM43 pathogenic variants are associated with arrhythmogenic right ventricular cardiomyopathy (ARVD5), inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Patients may develop right-ventricular enlargement, ventricular tachycardia, palpitations or syncope, and strenuous exercise may increase sudden death risk. Genetic testing, family screening, cardiac imaging and rhythm monitoring, plus specialist assessment for an implantable defibrillator when indicated, can reduce risk.",
+      "academic_summary": "TMEM43 is located at 3p25.1 and encodes transmembrane protein 43, which is associated with the nuclear envelope and cell-junction structures of cardiomyocytes. A specific founder variant can cause highly penetrant arrhythmogenic right ventricular cardiomyopathy type 5 (ARVD5), characterized by fibrofatty replacement of the right ventricle, ventricular tachycardia and sudden death risk, in an autosomal dominant pattern."
+    },
+    "disease": {
+      "chinese_name": "TMEM43-Related Arrhythmogenic Right Ventricular Cardiomyopathy (ARVD5)",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Arrhythmia",
+        "Arrhythmogenic Right Ventricular Cardiomyopathy"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Needs regular cardiac imaging and rhythm monitoring (high-intensity exercise requires specialist assessment)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0011663",
+        "name": "Right ventricular cardiomyopathy",
+        "chinese_name": "Right ventricular cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation and ventricular tachycardia episodes, and are a common foundation of arrhythmia-related cardiomyopathy care",
+        "approval_status": "Standard prescription therapy (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "Implantable Cardioverter-Defibrillator (ICD) Evaluation",
+        "mechanism": "For patients with prior life-threatening ventricular tachycardia or high sudden-death risk, an electrophysiology specialist assesses whether a defibrillator is indicated",
+        "approval_status": "Specialist-assessed device therapy"
+      },
+      {
+        "drug_name": "Standard heart failure therapy",
+        "chinese_name": "Standard Heart Failure Therapy",
+        "mechanism": "Standard heart-failure medication reduces cardiac workload and adverse remodeling in patients with right-ventricular dysfunction",
+        "approval_status": "Standard prescription therapy (guided by cardiac function assessment)"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TMEM43 pathogenic variants (associated with arrhythmogenic right ventricular cardiomyopathy)",
+      "population_frequency": "TMEM43-related ARVD5 is a rare inherited cardiomyopathy, with a higher prevalence in some founder populations (PMID:20301310)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Clinical care focuses on avoiding strenuous competitive exercise and dehydration, and on electrophysiology assessment of beta-blockers, antiarrhythmic medication and implantable defibrillator therapy for each patient.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid high-intensity competitive exercise and sudden strenuous exertion, especially when palpitations, chest tightness or presyncope occur",
+        "Avoid dehydration, excess alcohol and large amounts of caffeine-containing drinks, which can worsen arrhythmia",
+        "Attend regular echocardiography, cardiac MRI and rhythm monitoring, and seek care early for syncope or persistent palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar lists multiple TMEM43 pathogenic and likely pathogenic variants associated with arrhythmogenic right ventricular cardiomyopathy",
+      "key_pmids": [
+        "PMID:20301310",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with arrhythmogenic right ventricular cardiomyopathy, exercise-induced palpitations or syncope, or a family history of sudden cardiac death should have ECG, echocardiography or cardiac MRI plus genetic counseling, and consider TMEM43 testing; first-degree relatives should have cardiac screening.",
+      "lifestyle_tips": [
+        "Discuss an appropriate exercise intensity with cardiology, and avoid high-intensity competitive exercise and sudden strenuous exertion",
+        "Stay adequately hydrated and avoid dehydration, excess alcohol and large amounts of caffeine-containing drinks",
+        "Keep regular cardiac structure and rhythm follow-up, and seek care early for syncope, persistent palpitations or chest tightness"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Genetic Counseling",
+      "questions": [
+        "My TMEM43 test shows a pathogenic variant. What are my current right-ventricular structure and function?",
+        "Am I a candidate for beta-blockers or antiarrhythmic medication? Do I need an implantable defibrillator assessment?",
+        "Should my parents, siblings or children also have cardiac imaging, ECG or TMEM43 genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“TMEM43 carriers only need follow-up once they have syncope or arrhythmia.”",
+      "truth": "Not true. Carriers may already have right-ventricular structural changes before symptoms appear, and strenuous exercise or dehydration can act as triggers. Attend regular cardiac imaging and rhythm monitoring as advised, and discuss exercise and treatment plans with a specialist."
+    }
+  },
+  "RYR2": {
+    "gene": {
+      "chinese_name": "Ryanodine Receptor 2 (RYR2)",
+      "chromosome": "1q43 (Chromosome 1)",
+      "metaphor": {
+        "title": "⚡ The 【Calcium-Store Gate】 of Heart-Muscle Cells (The gate fails under emotion or exercise stress)",
+        "story": "Heart-muscle contraction depends on calcium released from an internal store, and the ryanodine receptor made by RYR2 is the gate of that store. When the gate cannot close tightly under sympathetic stimulation, calcium leaks out in large amounts, the electrical potential of heart-muscle cells becomes unstable, and polymorphic ventricular tachycardia can be triggered by exercise or emotional stress."
+      },
+      "plain_summary": "RYR2 pathogenic variants are associated with catecholaminergic polymorphic ventricular tachycardia type 1 (CPVT1), inherited in an autosomal dominant pattern, so first-degree relatives may carry the same variant. Patients often develop palpitations, syncope or even sudden death during exercise or emotional stress. Avoiding adrenergic triggers and competitive strenuous exercise, regular rhythm monitoring, and specialist medication or device therapy can substantially reduce risk.",
+      "academic_summary": "RYR2 is located at 1q43 and encodes the cardiac ryanodine receptor type 2, which mediates sarcoplasmic reticulum calcium release. Pathogenic variants cause abnormal receptor opening under sympathetic stimulation, diastolic calcium leak and delayed afterdepolarizations, leading to catecholaminergic polymorphic ventricular tachycardia (CPVT1) in an autosomal dominant pattern."
+    },
+    "disease": {
+      "chinese_name": "Catecholaminergic Polymorphic Ventricular Tachycardia Type 1 (CPVT1)",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Arrhythmia",
+        "Catecholaminergic Polymorphic Ventricular Tachycardia"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 Requires strict avoidance of adrenergic triggers and competitive exercise (long-term specialist follow-up)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "Exercise- or emotion-induced syncope"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation of the ryanodine receptor, decreasing exercise- or emotion-induced calcium leak and ventricular tachycardia",
+        "approval_status": "Standard prescription therapy (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "Flecainide",
+        "mechanism": "Used as an adjunct to beta-blockers to reduce arrhythmia episodes",
+        "approval_status": "Prescription medication after specialist assessment"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "Implantable Cardioverter-Defibrillator (ICD) Evaluation",
+        "mechanism": "For patients with syncope or high risk despite medication, an electrophysiology specialist assesses device therapy",
+        "approval_status": "Specialist-assessed device therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "RYR2 pathogenic variants (associated with catecholaminergic polymorphic ventricular tachycardia)",
+      "population_frequency": "RYR2-related CPVT is the most common CPVT subtype, with an estimated prevalence of about 1 in 10,000 to 1 in 100,000 (PMID:20301466)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Clinical care focuses on avoiding adrenergic triggers and competitive strenuous exercise, and on electrophysiology assessment of beta-blockers, flecainide and implantable defibrillator therapy for each patient.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid competitive strenuous exercise and sudden explosive exertion; discuss exercise type and intensity with cardiology first",
+        "Avoid large amounts of caffeine or energy drinks, excess alcohol and dehydration to reduce sympathetic stimulation",
+        "Tell clinicians about fever, dehydration or intense emotional stress, and stop activity and seek care immediately for palpitations or presyncope"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar lists many RYR2 pathogenic and likely pathogenic variants closely associated with catecholaminergic polymorphic ventricular tachycardia",
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with exercise- or emotion-induced syncope, palpitations, polymorphic ventricular tachycardia or a family history of young sudden death should have ECG, exercise ECG and genetic counseling, and consider RYR2 testing; first-degree relatives should have cardiac evaluation.",
+      "lifestyle_tips": [
+        "Avoid competitive and high-intensity exercise, and discuss exercise choices with cardiology first",
+        "Avoid large amounts of caffeine, energy drinks, excess alcohol and dehydration to reduce sympathetic stimulation",
+        "Keep regular ECG and rhythm follow-up, and seek care early for syncope, palpitations or chest tightness"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Genetic Counseling",
+      "questions": [
+        "My RYR2 test shows a pathogenic variant. Which sports are safe for me now, and do I need an exercise ECG?",
+        "Do I need beta-blockers or flecainide, and should I be assessed for an implantable defibrillator?",
+        "Should my parents, siblings or children also have ECG, exercise testing or RYR2 genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“If the resting ECG is normal, RYR2 carriers can do intense exercise like anyone else.”",
+      "truth": "No. RYR2-related CPVT often occurs during exercise or emotional stress even when the resting ECG is normal. Carriers should avoid competitive strenuous exercise and have exercise restrictions and treatment assessed by cardiac electrophysiology."
+    }
+  },
+  "CASQ2": {
+    "gene": {
+      "chinese_name": "Calsequestrin 2 (CASQ2)",
+      "chromosome": "1p13.1 (Chromosome 1)",
+      "metaphor": {
+        "title": "🪣 The 【Buffering Sponge】 of the Calcium Store (When buffering fails, calcium swings out of control)",
+        "story": "Calsequestrin 2 made by CASQ2 acts like a sponge inside the calcium store, temporarily binding and buffering calcium. When the sponge's buffering capacity is insufficient, calcium concentration swings widely between heartbeats, the ryanodine receptor tends to release calcium abnormally, and ventricular tachycardia can be triggered by exercise or emotional stress."
+      },
+      "plain_summary": "CASQ2 pathogenic variants are associated with catecholaminergic polymorphic ventricular tachycardia type 2 (CPVT2), mostly inherited in an autosomal recessive pattern, with occasional dominant inheritance. Patients often develop palpitations, syncope or even sudden death during exercise or emotional stress. Avoiding adrenergic triggers and competitive strenuous exercise, regular rhythm monitoring, and specialist assessment for medication or device therapy are key to reducing risk.",
+      "academic_summary": "CASQ2 is located at 1p13.1 and encodes cardiac sarcoplasmic reticulum calsequestrin 2, which buffers calcium and regulates the ryanodine receptor. Pathogenic variants cause diastolic calcium leak and delayed afterdepolarizations, leading to catecholaminergic polymorphic ventricular tachycardia (CPVT2), mostly in an autosomal recessive pattern."
+    },
+    "disease": {
+      "chinese_name": "Catecholaminergic Polymorphic Ventricular Tachycardia Type 2 (CPVT2)",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Arrhythmia",
+        "Catecholaminergic Polymorphic Ventricular Tachycardia"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🔴 Requires strict avoidance of adrenergic triggers and competitive exercise (long-term specialist follow-up)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "Syncope"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation, decreasing exercise- or emotion-induced calcium swings and ventricular tachycardia",
+        "approval_status": "Standard prescription therapy (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "Flecainide",
+        "mechanism": "Used as an adjunct to beta-blockers to reduce arrhythmia episodes",
+        "approval_status": "Prescription medication after specialist assessment"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "Implantable Cardioverter-Defibrillator (ICD) Evaluation",
+        "mechanism": "For patients with syncope or high risk despite medication, an electrophysiology specialist assesses device therapy",
+        "approval_status": "Specialist-assessed device therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CASQ2 pathogenic variants (associated with catecholaminergic polymorphic ventricular tachycardia)",
+      "population_frequency": "CASQ2-related CPVT2 accounts for a small proportion of CPVT cases and is a rare inherited arrhythmia (PMID:20301466)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Clinical care focuses on avoiding adrenergic triggers and competitive strenuous exercise, and on electrophysiology assessment of beta-blockers, flecainide and implantable defibrillator therapy for each patient.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid competitive strenuous exercise and sudden explosive exertion; discuss exercise type and intensity with cardiology first",
+        "Avoid large amounts of caffeine or energy drinks, excess alcohol and dehydration to reduce sympathetic stimulation",
+        "Tell clinicians about fever, dehydration or intense emotional stress, and stop activity and seek care immediately for palpitations or presyncope"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar lists multiple CASQ2 pathogenic and likely pathogenic variants associated with catecholaminergic polymorphic ventricular tachycardia",
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with exercise- or emotion-induced syncope, polymorphic ventricular tachycardia or a family history of young sudden death should have ECG, exercise ECG and genetic counseling, and consider CASQ2 testing; first-degree relatives should have cardiac evaluation.",
+      "lifestyle_tips": [
+        "Avoid competitive and high-intensity exercise, and discuss exercise choices with cardiology first",
+        "Avoid large amounts of caffeine, energy drinks, excess alcohol and dehydration to reduce sympathetic stimulation",
+        "Keep regular ECG and rhythm follow-up, and seek care early for syncope, palpitations or chest tightness"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Genetic Counseling",
+      "questions": [
+        "My CASQ2 test shows a pathogenic variant. Which sports are safe for me now, and do I need an exercise ECG?",
+        "Do I need beta-blockers or flecainide, and should I be assessed for an implantable defibrillator?",
+        "Should my parents, siblings or children also have ECG, exercise testing or CASQ2 genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“CASQ2 is recessive, so carriers have no arrhythmia risk at all.”",
+      "truth": "Most carriers have lower risk, but some variants can still behave dominantly, and carriers can pass the variant to the next generation. Family members should still receive genetic counseling and cardiac evaluation rather than assuming there is no risk."
+    }
+  },
+  "TRDN": {
+    "gene": {
+      "chinese_name": "Triadin (TRDN)",
+      "chromosome": "6q22.31 (Chromosome 6)",
+      "metaphor": {
+        "title": "🔗 The 【Fastening Clasp】 of the Calcium-Release Channel (A loose clasp lets calcium release lose coordination)",
+        "story": "Triadin made by TRDN acts like a clasp that fastens the calcium-release channel, linking the ryanodine receptor to calsequestrin. When the clasp is missing, calcium release loses coordination, heart-muscle cells become electrically unstable under sympathetic stimulation, and severe ventricular tachycardia with QT-interval changes can result."
+      },
+      "plain_summary": "TRDN pathogenic variants are associated with triadin-deficient severe inherited arrhythmia (Triadin syndrome), mostly inherited in an autosomal recessive pattern. Patients may develop exercise-induced ventricular tachycardia, syncope or cardiac arrest in early childhood, and some also have QT-interval prolongation. Avoiding QT-prolonging medications and adrenergic triggers, regular rhythm monitoring, and electrophysiology assessment of beta-blockers, flecainide or an implantable defibrillator are key to reducing risk.",
+      "academic_summary": "TRDN is located at 6q22.31 and encodes cardiac sarcoplasmic reticulum triadin, which links the ryanodine receptor to calsequestrin and coordinates calcium release. Pathogenic variants can cause triadin-deficient catecholaminergic polymorphic ventricular tachycardia, sometimes with QT-interval prolongation, mostly in an autosomal recessive pattern."
+    },
+    "disease": {
+      "chinese_name": "Triadin-Deficient Severe Inherited Arrhythmia (Triadin Syndrome)",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Arrhythmia",
+        "Catecholaminergic Polymorphic Ventricular Tachycardia"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🔴 Requires avoiding QT-prolonging medications and adrenergic triggers (long-term specialist follow-up)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Polymorphic ventricular tachycardia"
+      },
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "Prolonged QT interval"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation, decreasing exercise- or emotion-induced ventricular tachycardia",
+        "approval_status": "Standard prescription therapy (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "Flecainide",
+        "mechanism": "Used as an adjunct to beta-blockers to reduce arrhythmia episodes",
+        "approval_status": "Prescription medication after specialist assessment"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "Implantable Cardioverter-Defibrillator (ICD) Evaluation",
+        "mechanism": "For high-risk patients or those with prior cardiac arrest, an electrophysiology specialist assesses device therapy",
+        "approval_status": "Specialist-assessed device therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "TRDN pathogenic variants (associated with triadin-deficient severe inherited arrhythmia)",
+      "population_frequency": "TRDN-related Triadin syndrome is a rare inherited arrhythmia that often presents in early childhood (PMID:20301466)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Clinical care focuses on avoiding medications known to prolong the QT interval and adrenergic triggers, and on electrophysiology discussion of beta-blockers, flecainide and implantable defibrillator therapy for each patient.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid medications known to prolong the QT interval, including some antibiotics, antiarrhythmics, antipsychotics and antiemetics; disclose the diagnosis and ask a clinician or pharmacist to check every new medicine",
+        "Avoid competitive strenuous exercise, dehydration and large amounts of caffeine-containing drinks to reduce sympathetic stimulation",
+        "Maintain electrolyte balance, seek care early for diarrhea, vomiting or fever, and stop activity immediately for presyncope or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature list multiple TRDN pathogenic variants associated with triadin-deficient severe inherited arrhythmia",
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with exercise-induced syncope in early childhood, ventricular tachycardia, QT prolongation or a family history of young sudden death should have ECG, exercise ECG and genetic counseling, and consider TRDN testing; siblings should have cardiac evaluation.",
+      "lifestyle_tips": [
+        "Avoid competitive and high-intensity exercise, and discuss exercise choices with cardiac electrophysiology first",
+        "Tell every prescriber about the TRDN-related arrhythmia history and ask them to check whether any new medicine prolongs the QT interval",
+        "Keep regular ECG and rhythm follow-up, and seek care early for diarrhea, vomiting, fever or presyncope"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Pediatric Cardiology / Genetic Counseling",
+      "questions": [
+        "My TRDN test shows a pathogenic variant. What are my current QT interval and rhythm status?",
+        "Do I need beta-blockers or flecainide, and should I be assessed for an implantable defibrillator?",
+        "Which common medications prolong the QT interval and should be avoided? Should my siblings also have cardiac evaluation or genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“It only happens during exercise, so I do not need to worry about medications or fever at other times.”",
+      "truth": "Not true. TRDN-related arrhythmia can also worsen with QT-prolonging medications, electrolyte imbalance, fever or dehydration. Besides avoiding competitive exercise, disclose the diagnosis and have every new medicine checked by a clinician."
+    }
+  },
+  "CALM1": {
+    "gene": {
+      "chinese_name": "Calmodulin 1 (CALM1)",
+      "chromosome": "14q32.11 (Chromosome 14)",
+      "metaphor": {
+        "title": "🎛️ The 【Universal Regulator】 of the Heart's Electrical Signals (When regulation misses, ion channels lose control)",
+        "story": "Calmodulin made by CALM1 is a universal intracellular regulator that binds several ion channels and adjusts their switches. When the regulator's own structure changes, its control of sodium, potassium and calcium channels becomes inaccurate, the electrical potential of heart-muscle cells becomes unstable, and QT prolongation or exercise-induced ventricular tachycardia may appear in infancy or early childhood."
+      },
+      "plain_summary": "CALM1 pathogenic variants are associated with calmodulin-1-related early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia, inherited in an autosomal dominant pattern. Patients may develop QT prolongation, syncope or ventricular tachycardia in infancy or early childhood. Avoiding QT-prolonging medications and adrenergic triggers, regular rhythm monitoring, and electrophysiology assessment of beta-blockers, flecainide or an implantable defibrillator can reduce risk.",
+      "academic_summary": "CALM1 is located at 14q32.11 and encodes calmodulin type 1, a key calcium-sensing protein that regulates sodium, potassium and calcium channels and the ryanodine receptor. Pathogenic variants can cause early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia in an autosomal dominant pattern, with variable penetrance and phenotype."
+    },
+    "disease": {
+      "chinese_name": "Calmodulin-1-Related Early-Onset Long QT and CPVT Arrhythmia",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Arrhythmia",
+        "Long QT Syndrome",
+        "Catecholaminergic Polymorphic Ventricular Tachycardia"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 Requires avoiding QT-prolonging medications and adrenergic triggers (long-term specialist follow-up)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "Prolonged QT interval"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation, decreasing exercise- or emotion-induced ventricular tachycardia",
+        "approval_status": "Standard prescription therapy (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "Flecainide",
+        "mechanism": "Used as an adjunct to beta-blockers to reduce arrhythmia episodes",
+        "approval_status": "Prescription medication after specialist assessment"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "Implantable Cardioverter-Defibrillator (ICD) Evaluation",
+        "mechanism": "For high-risk patients or those with prior cardiac arrest, an electrophysiology specialist assesses device therapy",
+        "approval_status": "Specialist-assessed device therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CALM1 pathogenic variants (associated with early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia)",
+      "population_frequency": "CALM1-related early-onset arrhythmia is a rare inherited disease that often presents in infancy or childhood (PMID:20301466)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Clinical care focuses on avoiding medications known to prolong the QT interval and adrenergic triggers, and on electrophysiology discussion of beta-blockers, flecainide and implantable defibrillator therapy for each patient.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid medications known to prolong the QT interval, including some antibiotics, antiarrhythmics, antipsychotics and antiemetics; disclose the diagnosis and ask a clinician or pharmacist to check every new medicine",
+        "Avoid competitive strenuous exercise, dehydration and large amounts of caffeine-containing drinks to reduce sympathetic stimulation",
+        "Maintain electrolyte balance, seek care early for diarrhea, vomiting or fever, and stop activity immediately for presyncope or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature list multiple CALM1 pathogenic variants associated with early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia",
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with QT prolongation in infancy, exercise-induced syncope, ventricular tachycardia or a family history of young sudden death should have ECG, exercise ECG and genetic counseling, and consider CALM1 testing; first-degree relatives should have cardiac evaluation.",
+      "lifestyle_tips": [
+        "Avoid competitive and high-intensity exercise, and discuss exercise choices with cardiac electrophysiology first",
+        "Tell every prescriber about the arrhythmia history and ask them to check whether any new medicine prolongs the QT interval",
+        "Keep regular ECG and rhythm follow-up, and seek care early for diarrhea, vomiting, fever or presyncope"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Pediatric Cardiology / Genetic Counseling",
+      "questions": [
+        "My CALM1 test shows a pathogenic variant. What are my current QT interval and rhythm status?",
+        "Do I need beta-blockers or flecainide, and should I be assessed for an implantable defibrillator?",
+        "Which common medications prolong the QT interval and should be avoided? Should my parents, siblings or children also have cardiac evaluation or genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Calmodulin is a ubiquitous protein, so a variant in it should not cause serious arrhythmia.”",
+      "truth": "Not true. Although CALM1 variants are rare, they can markedly alter ion-channel regulation, causing early-onset long QT or CPVT and even cardiac arrest in infancy. Carriers need long-term follow-up by cardiac electrophysiology."
+    }
+  },
+  "CALM2": {
+    "gene": {
+      "chinese_name": "Calmodulin 2 (CALM2)",
+      "chromosome": "2p21 (Chromosome 2)",
+      "metaphor": {
+        "title": "🎚️ The 【Sensitive Adjustment Dial】 of the Heart's Electrical Signals (A shifted dial disrupts QT and calcium release)",
+        "story": "Calmodulin made by CALM2 acts like a sensitive adjustment dial in the heart's electrical system, tuning ion-channel switches according to calcium concentration. When the dial is set incorrectly, sodium and calcium channels close more slowly, the cardiac action potential lengthens, and emotional or exercise stress may trigger ventricular tachycardia and syncope."
+      },
+      "plain_summary": "CALM2 pathogenic variants are associated with calmodulin-2-related early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia, inherited in an autosomal dominant pattern. Patients may develop QT prolongation, syncope or ventricular tachycardia in infancy or early childhood. Avoiding QT-prolonging medications and adrenergic triggers, regular rhythm monitoring, and electrophysiology assessment of beta-blockers, flecainide or an implantable defibrillator can reduce risk.",
+      "academic_summary": "CALM2 is located at 2p21 and encodes calmodulin type 2, a key calcium-sensing protein that regulates sodium, potassium and calcium channels and the ryanodine receptor. Pathogenic variants can cause early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia in an autosomal dominant pattern, with age-dependent and variable expression."
+    },
+    "disease": {
+      "chinese_name": "Calmodulin-2-Related Early-Onset Long QT and CPVT Arrhythmia",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Arrhythmia",
+        "Long QT Syndrome",
+        "Catecholaminergic Polymorphic Ventricular Tachycardia"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 Requires avoiding QT-prolonging medications and adrenergic triggers (long-term specialist follow-up)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "Prolonged QT interval"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "Syncope"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation, decreasing exercise- or emotion-induced ventricular tachycardia",
+        "approval_status": "Standard prescription therapy (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "Flecainide",
+        "mechanism": "Used as an adjunct to beta-blockers to reduce arrhythmia episodes",
+        "approval_status": "Prescription medication after specialist assessment"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "Implantable Cardioverter-Defibrillator (ICD) Evaluation",
+        "mechanism": "For high-risk patients or those with prior cardiac arrest, an electrophysiology specialist assesses device therapy",
+        "approval_status": "Specialist-assessed device therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CALM2 pathogenic variants (associated with early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia)",
+      "population_frequency": "CALM2-related early-onset arrhythmia is a rare inherited disease that often presents in infancy or childhood (PMID:20301466)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Clinical care focuses on avoiding medications known to prolong the QT interval and adrenergic triggers, and on electrophysiology discussion of beta-blockers, flecainide and implantable defibrillator therapy for each patient.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid medications known to prolong the QT interval, including some antibiotics, antiarrhythmics, antipsychotics and antiemetics; disclose the diagnosis and ask a clinician or pharmacist to check every new medicine",
+        "Avoid competitive strenuous exercise, dehydration and large amounts of caffeine-containing drinks to reduce sympathetic stimulation",
+        "Maintain electrolyte balance, seek care early for diarrhea, vomiting or fever, and stop activity immediately for presyncope or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature list multiple CALM2 pathogenic variants associated with early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia",
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with QT prolongation in infancy, exercise-induced syncope, ventricular tachycardia or a family history of young sudden death should have ECG, exercise ECG and genetic counseling, and consider CALM2 testing; first-degree relatives should have cardiac evaluation.",
+      "lifestyle_tips": [
+        "Avoid competitive and high-intensity exercise, and discuss exercise choices with cardiac electrophysiology first",
+        "Tell every prescriber about the arrhythmia history and ask them to check whether any new medicine prolongs the QT interval",
+        "Keep regular ECG and rhythm follow-up, and seek care early for diarrhea, vomiting, fever or presyncope"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Pediatric Cardiology / Genetic Counseling",
+      "questions": [
+        "My CALM2 test shows a pathogenic variant. What are my current QT interval and rhythm status?",
+        "Do I need beta-blockers or flecainide, and should I be assessed for an implantable defibrillator?",
+        "Which common medications prolong the QT interval and should be avoided? Should my parents, siblings or children also have cardiac evaluation or genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“If my child has never fainted, CALM2 carriers do not need exercise limits or follow-up.”",
+      "truth": "Not true. CALM2-related arrhythmia can present as cardiac arrest on the first event, and symptoms may appear only with age. Exercise limits, medication and long-term rhythm monitoring should be assessed by cardiac electrophysiology."
+    }
+  },
+  "CALM3": {
+    "gene": {
+      "chinese_name": "Calmodulin 3 (CALM3)",
+      "chromosome": "19q13.32 (Chromosome 19)",
+      "metaphor": {
+        "title": "🛰️ The 【Precision Calibrator】 of the Heart's Electrical Signals (Miscalibration scrambles the rhythm signal)",
+        "story": "Calmodulin made by CALM3 acts like a precision calibrator that lets cardiac ion channels open and close at the correct calcium concentration. When the calibrator drifts, channel closure is delayed and calcium release loses order, which may cause QT prolongation in infancy or trigger lethal ventricular tachycardia and sudden cardiac death during exercise or emotional stress."
+      },
+      "plain_summary": "CALM3 pathogenic variants are associated with calmodulin-3-related early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia, inherited in an autosomal dominant pattern. Patients may develop QT prolongation, syncope, ventricular tachycardia or sudden cardiac death risk in infancy or early childhood. Avoiding QT-prolonging medications and adrenergic triggers, regular rhythm monitoring, and electrophysiology assessment of beta-blockers, flecainide or an implantable defibrillator can reduce risk.",
+      "academic_summary": "CALM3 is located at 19q13.32 and encodes calmodulin type 3, a key calcium-sensing protein that regulates sodium, potassium and calcium channels and the ryanodine receptor. Pathogenic variants can cause early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia in an autosomal dominant pattern, with sudden cardiac death risk."
+    },
+    "disease": {
+      "chinese_name": "Calmodulin-3-Related Early-Onset Long QT and CPVT Arrhythmia",
+      "categories": [
+        "Cardiovascular Disease",
+        "Inherited Arrhythmia",
+        "Long QT Syndrome",
+        "Catecholaminergic Polymorphic Ventricular Tachycardia"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🔴 Requires avoiding QT-prolonging medications and adrenergic triggers (carries sudden cardiac death risk)"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001657",
+        "name": "Prolonged QT interval",
+        "chinese_name": "Prolonged QT interval"
+      },
+      {
+        "hpo_id": "HP:0001645",
+        "name": "Sudden cardiac death",
+        "chinese_name": "Sudden cardiac death risk"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce sympathetic stimulation, decreasing exercise- or emotion-induced ventricular tachycardia",
+        "approval_status": "Standard prescription therapy (cardiology assessment required)"
+      },
+      {
+        "drug_name": "Flecainide",
+        "chinese_name": "Flecainide",
+        "mechanism": "Used as an adjunct to beta-blockers to reduce arrhythmia episodes",
+        "approval_status": "Prescription medication after specialist assessment"
+      },
+      {
+        "drug_name": "Implantable cardioverter-defibrillator (ICD) evaluation",
+        "chinese_name": "Implantable Cardioverter-Defibrillator (ICD) Evaluation",
+        "mechanism": "For high-risk patients or those with prior cardiac arrest, an electrophysiology specialist assesses device therapy",
+        "approval_status": "Specialist-assessed device therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CALM3 pathogenic variants (associated with early-onset long QT syndrome and catecholaminergic polymorphic ventricular tachycardia)",
+      "population_frequency": "CALM3-related early-onset arrhythmia is a rare inherited disease that often presents in infancy or childhood (PMID:20301466)",
+      "traffic_light_summary": "This gene currently has no CPIC pharmacogenomic (PGx) dosing guideline, and standard medication does not require genotype-based dose adjustment. Clinical care focuses on avoiding medications known to prolong the QT interval and adrenergic triggers, and on electrophysiology discussion of beta-blockers, flecainide and implantable defibrillator therapy for each patient.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid medications known to prolong the QT interval, including some antibiotics, antiarrhythmics, antipsychotics and antiemetics; disclose the diagnosis and ask a clinician or pharmacist to check every new medicine",
+        "Avoid competitive strenuous exercise, dehydration and large amounts of caffeine-containing drinks to reduce sympathetic stimulation",
+        "Maintain electrolyte balance, seek care early for diarrhea, vomiting or fever, and stop activity immediately for presyncope or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Clear genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar and the literature list multiple CALM3 pathogenic variants associated with early-onset long QT syndrome, catecholaminergic polymorphic ventricular tachycardia and sudden cardiac death risk",
+      "key_pmids": [
+        "PMID:20301466",
+        "PMID:37347242"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with QT prolongation in infancy, exercise-induced syncope, ventricular tachycardia or a family history of young sudden death should have ECG, exercise ECG and genetic counseling, and consider CALM3 testing; first-degree relatives should have cardiac evaluation.",
+      "lifestyle_tips": [
+        "Avoid competitive and high-intensity exercise, and discuss exercise choices with cardiac electrophysiology first",
+        "Tell every prescriber about the arrhythmia history and ask them to check whether any new medicine prolongs the QT interval",
+        "Keep regular ECG and rhythm follow-up, and seek care early for diarrhea, vomiting, fever or presyncope"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Cardiac Electrophysiology / Pediatric Cardiology / Genetic Counseling",
+      "questions": [
+        "My CALM3 test shows a pathogenic variant. What are my current QT interval and rhythm status?",
+        "Do I need beta-blockers or flecainide, and should I be assessed for an implantable defibrillator?",
+        "Which common medications prolong the QT interval and should be avoided? Should my parents, siblings or children also have cardiac evaluation or genetic testing?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“A CALM3 carrier with no symptoms will not have sudden cardiac death.”",
+      "truth": "Not true. CALM3-related arrhythmia can present as a first severe arrhythmic event, and symptoms may only emerge in infancy or early childhood. Carriers need long-term follow-up by cardiac electrophysiology, and should avoid QT-prolonging medications and adrenergic triggers."
     }
   }
 };
