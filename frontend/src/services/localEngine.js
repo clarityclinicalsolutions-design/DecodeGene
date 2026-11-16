@@ -264,18 +264,142 @@ function haystack(record) {
   return parts.join(' ').toLowerCase();
 }
 
+export function findAllMatchedRecords(records, entities) {
+  if (!records || !records.length) return [];
+  const bySymbol = new Map(
+    records.map((record) => [String(record?.gene?.symbol || '').toUpperCase(), record])
+  );
+  const matched = [];
+  const seen = new Set();
+
+  (entities?.genes || []).forEach((gene) => {
+    const key = String(gene || '').toUpperCase();
+    const rec = bySymbol.get(key);
+    if (rec && !seen.has(key)) {
+      seen.add(key);
+      matched.push(rec);
+    }
+  });
+
+  if (matched.length === 0) {
+    const candidates = [...(entities?.rsids || []), ...(entities?.variants || [])];
+    for (const candidate of candidates) {
+      const match = records.find((record) => haystack(record).includes(candidate.toLowerCase()));
+      if (match) {
+        const key = String(match.gene.symbol).toUpperCase();
+        if (!seen.has(key)) {
+          seen.add(key);
+          matched.push(match);
+        }
+      }
+    }
+  }
+  return matched;
+}
+
 export function findRecord(records, entities) {
-  if (!records || !records.length) return null;
-  for (const gene of entities.genes || []) {
-    const match = records.find((record) => record.gene.symbol.toUpperCase() === gene.toUpperCase());
-    if (match) return match;
+  return findAllMatchedRecords(records, entities)[0] || null;
+}
+
+const LIGHT_ORDER = { RED_AVOID: 0, YELLOW_CAUTION: 1, GREEN_NORMAL: 2 };
+
+export function buildPgxPassport(matchedRecords = [], lang = 'zh-TW') {
+  const isEn = lang === 'en';
+  const drugMap = new Map();
+  const pgxGenes = [];
+  const nonPgxGenes = [];
+  const dietSet = new Set();
+
+  matchedRecords.forEach((record) => {
+    const symbol = record?.gene?.symbol;
+    if (!symbol) return;
+    const pgx = record.pharmacogenomics || {};
+    if (!pgx.has_pgx || !(pgx.drugs_guide || []).length) {
+      nonPgxGenes.push(symbol);
+      return;
+    }
+    pgxGenes.push(symbol);
+    (pgx.dietary_contraindications || []).forEach((tip) => {
+      if (tip) dietSet.add(`[${symbol}] ${tip}`);
+    });
+    (pgx.drugs_guide || []).forEach((drug) => {
+      const key = `${drug.traffic_light}::${String(drug.drug_name || '').trim().toLowerCase()}`;
+      if (!drugMap.has(key)) {
+        drugMap.set(key, {
+          ...drug,
+          sourceGenes: [symbol],
+        });
+      } else {
+        const existing = drugMap.get(key);
+        if (!existing.sourceGenes.includes(symbol)) {
+          existing.sourceGenes.push(symbol);
+        }
+        if (drug.clinical_alert && !existing.clinical_alert.includes(drug.clinical_alert)) {
+          existing.clinical_alert = `${existing.clinical_alert} ｜ ${drug.clinical_alert}`;
+        }
+      }
+    });
+  });
+
+  const items = [...drugMap.values()].sort(
+    (a, b) => (LIGHT_ORDER[a.traffic_light] ?? 9) - (LIGHT_ORDER[b.traffic_light] ?? 9)
+  );
+  const redCount = items.filter((item) => item.traffic_light === 'RED_AVOID').length;
+  const yellowCount = items.filter((item) => item.traffic_light === 'YELLOW_CAUTION').length;
+  const greenCount = items.filter((item) => item.traffic_light === 'GREEN_NORMAL').length;
+
+  const lines = [
+    isEn
+      ? `=== DecodeGene Personal Medication Safety Passport ===`
+      : `=== DecodeGene 個人門診用藥安全護照 ===`,
+    isEn
+      ? `Detected Genes (${matchedRecords.length}): ${matchedRecords.map((r) => r.gene.symbol).join(', ')}`
+      : `本次檢出基因（${matchedRecords.length} 個）：${matchedRecords.map((r) => r.gene.symbol).join('、')}`,
+    isEn
+      ? `PGx Traffic Summary: Avoid ${redCount} | Caution ${yellowCount} | Standard ${greenCount}`
+      : `用藥警示統計：紅燈禁用 ${redCount} 項 ｜ 黃燈慎用 ${yellowCount} 項 ｜ 綠燈常規 ${greenCount} 項`,
+    '',
+  ];
+  items.forEach((item) => {
+    const tag =
+      item.traffic_light === 'RED_AVOID'
+        ? isEn
+          ? '[RED - AVOID]'
+          : '[紅燈禁用]'
+        : item.traffic_light === 'YELLOW_CAUTION'
+          ? isEn
+            ? '[YELLOW - CAUTION]'
+            : '[黃燈慎用]'
+          : isEn
+            ? '[GREEN - NORMAL]'
+            : '[綠燈常規]';
+    lines.push(`${tag} ${item.chinese_name} (${item.sourceGenes.join(', ')}): ${item.clinical_alert}`);
+  });
+  if (nonPgxGenes.length) {
+    lines.push('');
+    lines.push(
+      isEn
+        ? `Screening/Trait genes without direct PGx dosing rules: ${nonPgxGenes.join(', ')}`
+        : `非藥物代謝之遺傳篩檢／體質基因（無直接用藥紅綠燈限制）：${nonPgxGenes.join('、')}`
+    );
   }
-  const candidates = [...(entities.rsids || []), ...(entities.variants || [])];
-  for (const candidate of candidates) {
-    const match = records.find((record) => haystack(record).includes(candidate.toLowerCase()));
-    if (match) return match;
+  if (dietSet.size) {
+    lines.push('');
+    lines.push(isEn ? 'Diet & Lifestyle Notes:' : '飲食與生活安全提醒：');
+    dietSet.forEach((tip) => lines.push(`- ${tip}`));
   }
-  return null;
+
+  return {
+    totalGenes: matchedRecords.length,
+    pgxGenes,
+    nonPgxGenes,
+    redCount,
+    yellowCount,
+    greenCount,
+    items,
+    dietNotes: [...dietSet],
+    copyText: lines.join('\n'),
+  };
 }
 
 function variantGrounding(entities, record) {
@@ -295,15 +419,9 @@ function variantGrounding(entities, record) {
   };
 }
 
-export function localDecodeReport(rawText, records = demoData, lang = 'zh-TW') {
+export function buildSingleGeneInterpretation(record, scrub, lang = 'zh-TW') {
   const isEn = lang === 'en';
-  const scrub = scrubReport(rawText, records);
-  const record = findRecord(records, scrub);
-  if (!record) {
-    throw new CircuitBreakerError(isEn ? CIRCUIT_BREAKER_MESSAGE_EN : CIRCUIT_BREAKER_MESSAGE);
-  }
-
-  const grounding = variantGrounding(scrub, record);
+  const grounding = variantGrounding(scrub || {}, record);
   let variantNote = isEn
     ? 'No explicit HGVS variant or rsID was detected; the interpretation below reflects curated gene-level evidence.'
     : '本次文本未檢測到明確的 HGVS 位點或 rsID，以下為該基因的整體權威解讀。';
@@ -330,11 +448,53 @@ export function localDecodeReport(rawText, records = demoData, lang = 'zh-TW') {
         `遺傳方式：${record.disease.inheritance_mode}。`,
         `嚴重程度提示：${record.disease.severity_badge}。`,
       ];
-  if (scrub.zygosity) {
+  if (scrub?.zygosity) {
     impactParts.push(
       isEn ? `Detected Zygosity: ${scrub.zygosity}.` : `本次報告提示的合子狀態為：${scrub.zygosity}。`
     );
   }
+
+  return {
+    symbol: record.gene.symbol,
+    variant_grounding: grounding,
+    headline: isEn
+      ? `${record.gene.symbol} (${record.gene.chinese_name}) Genetic Report Interpretation`
+      : `${record.gene.symbol}（${record.gene.chinese_name}）基因報告解讀`,
+    what_is_it: isEn
+      ? `This report involves the ${record.gene.symbol} gene. In plain terms: ${record.gene.metaphor.title}. ${record.gene.metaphor.story}`
+      : `這份報告涉及 ${record.gene.symbol} 基因。簡單來說：${record.gene.metaphor.title}。${record.gene.metaphor.story}`,
+    impact: impactParts.join(' '),
+    pgx: (record.pharmacogenomics.drugs_guide || []).map((drug) => ({
+      drug_name: drug.drug_name,
+      chinese_name: drug.chinese_name,
+      traffic_light: drug.traffic_light,
+      clinical_alert: drug.clinical_alert,
+      cpic_level: drug.cpic_level,
+    })),
+    action: [
+      record.lifestyle_prevention.screening_advice,
+      ...(record.lifestyle_prevention.lifestyle_tips || []),
+    ],
+    doctor_specialty: record.doctor_checklist.specialty,
+    doctor_questions: record.doctor_checklist.questions,
+    variant_note: variantNote,
+  };
+}
+
+export function localDecodeReport(rawText, records = demoData, lang = 'zh-TW') {
+  const isEn = lang === 'en';
+  const scrub = scrubReport(rawText, records);
+  const matchedRecords = findAllMatchedRecords(records, scrub);
+  const record = matchedRecords[0];
+  if (!record) {
+    throw new CircuitBreakerError(isEn ? CIRCUIT_BREAKER_MESSAGE_EN : CIRCUIT_BREAKER_MESSAGE);
+  }
+
+  const primary = buildSingleGeneInterpretation(record, scrub, lang);
+  const interpretationsByGene = {};
+  matchedRecords.forEach((rec) => {
+    interpretationsByGene[rec.gene.symbol] = buildSingleGeneInterpretation(rec, scrub, lang);
+  });
 
   return {
     status: 'ok',
@@ -358,30 +518,10 @@ export function localDecodeReport(rawText, records = demoData, lang = 'zh-TW') {
     scrubbed_text: scrub.scrubbed_text,
     removed_counts: scrub.removed_counts,
     pii_removed: scrub.pii_removed,
-    variant_grounding: grounding,
-    interpretation: {
-      headline: isEn
-        ? `${record.gene.symbol} (${record.gene.chinese_name}) Genetic Report Interpretation`
-        : `${record.gene.symbol}（${record.gene.chinese_name}）基因報告解讀`,
-      what_is_it: isEn
-        ? `This report involves the ${record.gene.symbol} gene. In plain terms: ${record.gene.metaphor.title}. ${record.gene.metaphor.story}`
-        : `這份報告涉及 ${record.gene.symbol} 基因。簡單來說：${record.gene.metaphor.title}。${record.gene.metaphor.story}`,
-      impact: impactParts.join(' '),
-      pgx: (record.pharmacogenomics.drugs_guide || []).map((drug) => ({
-        drug_name: drug.drug_name,
-        chinese_name: drug.chinese_name,
-        traffic_light: drug.traffic_light,
-        clinical_alert: drug.clinical_alert,
-        cpic_level: drug.cpic_level,
-      })),
-      action: [
-        record.lifestyle_prevention.screening_advice,
-        ...(record.lifestyle_prevention.lifestyle_tips || []),
-      ],
-      doctor_specialty: record.doctor_checklist.specialty,
-      doctor_questions: record.doctor_checklist.questions,
-      variant_note: variantNote,
-    },
+    variant_grounding: primary.variant_grounding,
+    interpretation: primary,
+    matched_interpretations: interpretationsByGene,
+    pgx_passport: buildPgxPassport(matchedRecords, lang),
     verification: { consistent: true, issues: [], gene: record.gene.symbol },
     disclaimer: isEn ? DISCLAIMER_EN : DISCLAIMER,
   };

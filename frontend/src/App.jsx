@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { fetchGenes, DATA_SOURCE } from './services/apiClient';
 import { localizeRecord, t } from './i18n/translations';
+import { loadEnRecords } from './i18n/enRecords';
 import GeneSearch from './components/GeneSearch';
 import MetaphorCard from './components/MetaphorCard';
 import PGxTrafficLightCard from './components/PGxTrafficLightCard';
@@ -70,6 +71,7 @@ export default function App() {
   const [lang, setLang] = useState('zh-TW');
   const [mode, setMode] = useState('simple');
   const [genes, setGenes] = useState([]);
+  const [enRecords, setEnRecords] = useState({});
   const [source, setSource] = useState('loading');
   const [activeSymbol, setActiveSymbol] = useState('BRCA1');
   const [query, setQuery] = useState('');
@@ -90,9 +92,22 @@ export default function App() {
     };
   }, []);
 
+  useEffect(() => {
+    if (lang !== 'en' || Object.keys(enRecords).length > 0) return;
+    let mounted = true;
+    loadEnRecords()
+      .then((loadedEn) => {
+        if (mounted && loadedEn) setEnRecords(loadedEn);
+      })
+      .catch(() => {});
+    return () => {
+      mounted = false;
+    };
+  }, [lang, enRecords]);
+
   const localizedGenes = useMemo(
-    () => genes.map((record) => localizeRecord(record, lang)),
-    [genes, lang]
+    () => genes.map((record) => localizeRecord(record, lang, enRecords)),
+    [genes, lang, enRecords]
   );
 
   const activeRecord = useMemo(

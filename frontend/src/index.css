@@ -1776,4 +1776,221 @@ p {
   .modal-specialty {
     color: #111;
   }
+
+  body.printing-passport .app-main {
+    display: block !important;
+  }
+
+  body.printing-passport .hero,
+  body.printing-passport .search-panel,
+  body.printing-passport .content-grid,
+  body.printing-passport .simulator-card,
+  body.printing-passport .myths-card,
+  body.printing-passport .card-eyebrow,
+  body.printing-passport .decoder-card > h2,
+  body.printing-passport .decoder-card > .section-lead,
+  body.printing-passport .sample-row,
+  body.printing-passport .field-label,
+  body.printing-passport .report-textarea,
+  body.printing-passport .action-row,
+  body.printing-passport .quick-passport-builder .panel-head,
+  body.printing-passport .quick-gene-pills,
+  body.printing-passport .decoder-result,
+  body.printing-passport .passport-actions {
+    display: none !important;
+  }
+
+  body.printing-passport .passport-panel {
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    color: #111;
+  }
+
+  body.printing-passport .passport-item {
+    background: #f8fafc;
+    color: #111;
+  }
+}
+
+/* Category Tabs, Expandable Gene Chips & Multi-Gene PGx Passport */
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.category-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(13, 24, 39, 0.72);
+  color: var(--muted);
+  font-size: 0.76rem;
+  transition: all 0.2s ease;
+}
+
+.category-tab:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.category-tab.active {
+  color: var(--text);
+  border-color: rgba(67, 224, 176, 0.6);
+  background: linear-gradient(135deg, rgba(67, 224, 176, 0.2), rgba(83, 199, 255, 0.1));
+}
+
+.category-count {
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.category-tab.active .category-count {
+  background: rgba(67, 224, 176, 0.22);
+  color: var(--mint);
+}
+
+.chip-expand-btn {
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px dashed var(--border-strong);
+  background: rgba(83, 199, 255, 0.08);
+  color: var(--cyan);
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.chip-expand-btn:hover {
+  background: rgba(83, 199, 255, 0.16);
+}
+
+.sample-button.active {
+  color: var(--text);
+  border-color: rgba(67, 224, 176, 0.6);
+  background: rgba(67, 224, 176, 0.16);
+}
+
+.quick-passport-builder {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.quick-gene-pills,
+.detected-gene-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.passport-panel {
+  margin-top: 18px;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(67, 224, 176, 0.35);
+  background: linear-gradient(160deg, rgba(13, 28, 46, 0.86), rgba(9, 18, 31, 0.92));
+}
+
+.passport-meta {
+  margin-top: 4px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.passport-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.passport-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.passport-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(6, 12, 21, 0.72);
+}
+
+.passport-item.light-red_avoid {
+  border-color: rgba(255, 107, 122, 0.45);
+  background: rgba(255, 107, 122, 0.08);
+}
+
+.passport-item.light-yellow_caution {
+  border-color: rgba(255, 200, 87, 0.4);
+  background: rgba(255, 200, 87, 0.06);
+}
+
+.passport-item.light-green_normal {
+  border-color: rgba(67, 224, 176, 0.3);
+}
+
+.passport-icon {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.passport-body {
+  min-width: 0;
+  flex: 1;
+}
+
+.passport-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.passport-gene-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.passport-gene-tags code {
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: rgba(83, 199, 255, 0.14);
+  color: var(--cyan);
+  font-size: 0.68rem;
+}
+
+.passport-body p {
+  margin-top: 4px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.passport-body small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.68rem;
+  color: var(--muted-2);
+}
+
+.passport-note {
+  margin-top: 12px;
+  font-size: 0.76rem;
+  color: var(--muted);
 }

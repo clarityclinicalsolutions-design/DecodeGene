@@ -9,12 +9,12 @@ export const UI_ZH_TW = {
   heroTitle1: '拿到基因報告，',
   heroTitle2: '先別慌，我們一起讀懂它。',
   heroLead:
-    '十四大高頻核心與日常用藥安全基因（BRCA1、TP53、APOE、EGFR、ALDH2、G6PD、MTHFR、CYP2C19、CYP2C9、VKORC1、SLCO1B1、TPMT、NUDT15、HLA-B）的白話解讀、用藥紅綠燈、隱私脫敏報告翻譯與家族遺傳模擬，一次講清楚。',
+    '涵蓋 121 個核心與臨床黃金基因（含 ACMG SF v3.2 全 81 基因與 CPIC 藥物基因）的白話比喻、用藥紅綠燈、隱私脫敏報告翻譯、個人用藥安全護照與家族遺傳模擬，一次看懂。',
   statGenes: '核心基因',
   statPrivacy: '本地脫敏',
   statLights: 'PGx 紅綠燈',
   statHallucination: '猜測性解讀',
-  loadingText: '正在載入十四大核心基因資料…',
+  loadingText: '正在載入 121 個基因知識庫…',
   footerDisclaimer:
     '⚠️ DecodeGene 僅供科學普及、學術研究與健康常識參考，不能替代專業醫師或臨床遺傳諮詢師的診斷與醫療決策。',
   footerMeta:
@@ -60,7 +60,7 @@ export const UI_ZH_TW = {
   modalPrintBtn: '🖨️ 列印清單',
   modalNote: '提示：把這份清單帶到門診，可以顯著提高與醫師溝通的效率。具體檢查與用藥請以醫師面診意見為準。',
   mythsEyebrow: '❌ 基因健康謠言粉碎機 · Myth Busters',
-  mythsTitle: '七個最常見誤解，一次說清',
+  mythsTitle: '常見基因迷思，用科學證據一次說清',
   mythsLead: '基因不是命運判決書。下面每一條「謠言 vs 真相」都來自本地權威科普記錄。',
   mythLabel: '❌ 謠言',
   truthLabel: '✅ 真相',

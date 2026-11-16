@@ -9,12 +9,12 @@ export const UI_EN = {
   heroTitle1: 'Got a Genetic Report?',
   heroTitle2: 'Don’t Panic—Let’s Decode It Together.',
   heroLead:
-    'Plain-language metaphors, PGx drug traffic lights, local PII-scrubbed report decoding, and Mendelian inheritance simulation for the 14 core actionable & medication-safety genes (BRCA1, TP53, APOE, EGFR, ALDH2, G6PD, MTHFR, CYP2C19, CYP2C9, VKORC1, SLCO1B1, TPMT, NUDT15, HLA-B).',
-  statGenes: 'Core Genes',
+    'Plain-language metaphors, PGx drug traffic lights, local PII-scrubbed report decoding, personal medication safety passports, and Mendelian simulation across 121 curated genes (100% of ACMG SF v3.2 + CPIC PGx).',
+  statGenes: 'Curated Genes',
   statPrivacy: 'Local PII Scrub',
   statLights: 'PGx Traffic Lights',
   statHallucination: 'Speculative Claims',
-  loadingText: 'Loading curated 14-gene knowledge base…',
+  loadingText: 'Loading curated 121-gene knowledge base…',
   footerDisclaimer:
     '⚠️ DecodeGene is for health education and research reference only and does not replace professional medical advice or clinical genetic counseling.',
   footerMeta:
@@ -60,7 +60,7 @@ export const UI_EN = {
   modalPrintBtn: '🖨️ Print Checklist',
   modalNote: 'Tip: Bring this checklist to your clinic appointment to streamline discussion with your physician.',
   mythsEyebrow: '❌ Genetic Myth Busters',
-  mythsTitle: '7 Common Misconceptions—Debunked by Science',
+  mythsTitle: 'Common Misconceptions—Debunked by Science',
   mythsLead: 'Genes are not a predetermined fate. Every Myth vs. Truth card below is grounded in curated clinical evidence.',
   mythLabel: '❌ Myth',
   truthLabel: '✅ Truth',

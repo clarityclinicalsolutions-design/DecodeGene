@@ -1,0 +1,50 @@
+name: DecodeGene CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend-and-data-audit:
+    name: Schema Validation, Repo Audit & Pytest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt pytest
+
+      - name: Validate schema & authoritative IDs (Fail-Closed)
+        run: python -B scripts/validate_schema.py
+
+      - name: Audit frontend sync, EN i18n parity & dosage guardrails
+        run: python -B scripts/audit_repo.py
+
+      - name: Run pytest suite
+        run: python -m pytest -q
+
+  frontend-build:
+    name: Frontend Static Build (Cloudflare Pages)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        run: npm --prefix frontend ci
+
+      - name: Build static bundle
+        run: npm --prefix frontend run build:cf

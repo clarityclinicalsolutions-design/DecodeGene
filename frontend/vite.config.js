@@ -21,5 +21,21 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
+    chunkSizeWarningLimit: 950,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor-react';
+          }
+          if (id.includes('src/data/demo_associations.json')) {
+            return 'genes-data';
+          }
+          if (id.includes('src/i18n/genes/') || id.includes('src/i18n/enRecordsAll.js')) {
+            return 'en-genes';
+          }
+        },
+      },
+    },
   },
 });
