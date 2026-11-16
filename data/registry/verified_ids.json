@@ -1577,5 +1577,96 @@
       "disease": "https://monarchinitiative.org/MONDO:0005105"
     },
     "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "ABCD1",
+    "ensembl_id": "ENSG00000101986",
+    "entrez_id": "215",
+    "disease_id": "MONDO:0018544",
+    "disease_label": "X-linked adrenoleukodystrophy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000101986",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/215",
+      "disease": "https://monarchinitiative.org/MONDO:0018544"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "CYP27A1",
+    "ensembl_id": "ENSG00000135929",
+    "entrez_id": "1593",
+    "disease_id": "MONDO:0008948",
+    "disease_label": "Cerebrotendinous xanthomatosis",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000135929",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1593",
+      "disease": "https://monarchinitiative.org/MONDO:0008948"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "PLN",
+    "ensembl_id": "ENSG00000198523",
+    "entrez_id": "5350",
+    "disease_id": "MONDO:0005021",
+    "disease_label": "Dilated cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000198523",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/5350",
+      "disease": "https://monarchinitiative.org/MONDO:0005021"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "APP",
+    "ensembl_id": "ENSG00000142192",
+    "entrez_id": "351",
+    "disease_id": "MONDO:0004975",
+    "disease_label": "Alzheimer disease",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000142192",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/351",
+      "disease": "https://monarchinitiative.org/MONDO:0004975"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "PSEN1",
+    "ensembl_id": "ENSG00000080815",
+    "entrez_id": "5663",
+    "disease_id": "MONDO:0004975",
+    "disease_label": "Alzheimer disease",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000080815",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/5663",
+      "disease": "https://monarchinitiative.org/MONDO:0004975"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "LRRK2",
+    "ensembl_id": "ENSG00000188906",
+    "entrez_id": "120892",
+    "disease_id": "MONDO:0005180",
+    "disease_label": "Parkinson disease",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000188906",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/120892",
+      "disease": "https://monarchinitiative.org/MONDO:0005180"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "HLA-DQB1",
+    "ensembl_id": "ENSG00000179344",
+    "entrez_id": "3119",
+    "disease_id": "MONDO:0005130",
+    "disease_label": "Celiac disease",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000179344",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/3119",
+      "disease": "https://monarchinitiative.org/MONDO:0005130"
+    },
+    "verified_on": "2026-11-16"
   }
 ]

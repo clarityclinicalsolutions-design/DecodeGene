@@ -3,8 +3,8 @@
 > An Open-Source, Consumer-Friendly Gene-Disease Knowledge Graph & AI Health Intelligence Platform (Traditional Chinese `繁體中文` & `English` Bilingual UI)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Genes Covered](https://img.shields.io/badge/Genes-121%20Verified-emerald.svg)](data/registry/verified_ids.json)
-[![ACMG SF v3.2](https://img.shields.io/badge/ACMG%20SF%20v3.2-100%25%20(81%2F81)-gold.svg)](data/sample/demo_associations.json)
+[![Genes Covered](https://img.shields.io/badge/Genes-128%20Verified-emerald.svg)](data/registry/verified_ids.json)
+[![ACMG SF v3.3](https://img.shields.io/badge/ACMG%20SF%20v3.3-100%25%20(84%2F84)-gold.svg)](data/sample/demo_associations.json)
 [![Bilingual UI](https://img.shields.io/badge/UI-%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%20%7C%20English-indigo.svg)](frontend/src/i18n)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-decodegene.pages.dev-orange.svg)](https://decodegene.pages.dev)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://python.org)
@@ -16,12 +16,12 @@
 
 ## 📊 知識庫覆蓋里程碑 (Knowledge Base Coverage)
 
-DecodeGene 目前已收錄 **121 個雙語基因-疾病、用藥與體質知識條目**，且每一筆資料皆通過 Pydantic v2 + 生物醫學識別碼（Ensembl、Entrez、MONDO／MeSH／PharmGKB、HPO、PubMed PMID）Fail-Closed 確定性驗證：
+DecodeGene 目前已收錄 **128 個雙語基因-疾病、用藥與體質知識條目**，且每一筆資料皆通過 Pydantic v2 + 生物醫學識別碼（Ensembl、Entrez、MONDO／MeSH／PharmGKB、HPO、PubMed PMID）Fail-Closed 確定性驗證：
 
-- **🏆 ACMG SF v3.2 臨床可行動黃金清單 100% 全覆蓋（81 / 81）**：完整涵蓋遺傳性腫瘤症候群 (28)、心血管／主動脈剝離／心肌病變與致命性心律不整 (40)、先天性代謝異常 (6) 及其他臨床可干預遺傳病 (7)。
-- **💊 核心藥物基因組學 (CPIC / PharmGKB PGx)、帶因篩檢與大眾體質基因（40 個）**：
+- **🏆 ACMG SF v3.3 臨床可行動黃金清單 100% 全覆蓋（84 / 84）**：完整涵蓋遺傳性腫瘤症候群 (28)、心血管／主動脈剝離／心肌病變與致命性心律不整 (41，含 v3.3 新增 `PLN`)、先天性代謝異常 (7，含 v3.3 新增 `CYP27A1`) 及其他臨床可干預遺傳病 (8，含 v3.3 新增 `ABCD1`)。
+- **💊 核心藥物基因組學 (CPIC / PharmGKB PGx)、帶因篩檢與大眾體質基因（44 個）**：
   - **CPIC / PharmGKB 核心用藥安全**：涵蓋 `CYP2C19`、`CYP2D6`、`CYP2C9`、`CYP3A5`、`CYP2B6`、`CYP2C8`、`CYP4F2`、`VKORC1`、`SLCO1B1`、`ABCG2`、`TPMT`、`NUDT15`、`DPYD`、`UGT1A1`、`NAT2`、`IFNL3`、`HLA-A`、`HLA-B`、`ALDH2`、`G6PD`。
-  - **高頻帶因篩檢與健康管理**：`APOE`、`EGFR`、`MTHFR`、`HBB`、`HBA1`、`SMN1`、`GJB2`、`CFTR`、`PKD1`、`FLCN`、`LCT`、`CYP1A2`、`FTO`。
+  - **高頻帶因篩檢、神經退化與免疫管理**：`APOE`、`APP`、`PSEN1`、`LRRK2`、`HLA-DQB1`、`EGFR`、`MTHFR`、`HBB`、`HBA1`、`SMN1`、`GJB2`、`CFTR`、`PKD1`、`FLCN`、`LCT`、`CYP1A2`、`FTO`。
   - **大眾營養、抗氧化醫美、抗壓與運動體質**：`SOD2`、`COMT`、`PPARG`、`VDR`、`ACTN3`、`BDNF`、`MC1R`。
 - **🛡️ 臨床安全規則一致把關**：非藥物代謝篩檢基因採 `has_pgx: false` 明確區分，並於前端自動隱藏空藥物清單、呈現遺傳篩檢專用提示；全庫內容嚴禁輸出現實醫療處方劑量數字。
 
@@ -142,7 +142,7 @@ npm install
 npm run dev
 # 開啟 http://127.0.0.1:5173
 ```
-Vite 已設定 `/api` 代理到 `http://127.0.0.1:8000`；若後端未啟動，前端會自動回退到內建 121 基因完整資料集與瀏覽器本地脫敏/遺傳計算引擎。
+Vite 已設定 `/api` 代理到 `http://127.0.0.1:8000`；若後端未啟動，前端會自動回退到內建 128 基因完整資料集與瀏覽器本地脫敏/遺傳計算引擎。
 
 ### 一步啟動（可選，自動拉起前後端）
 ```bash
@@ -150,13 +150,13 @@ python run_dev.py
 ```
 
 ### 步驟 3：零建置離線單頁（無需 npm / 無需後端）
-直接用瀏覽器開啟 `frontend/standalone.html`（雙擊即可）。它透過 `frontend/demo-data.js` 載入 121 基因繁體中文/英文完整資料集與本地 JS 脫敏/遺傳計算邏輯，完全離線可用。
+直接用瀏覽器開啟 `frontend/standalone.html`（雙擊即可）。它透過 `frontend/demo-data.js` 載入 128 基因繁體中文/英文完整資料集與本地 JS 脫敏/遺傳計算邏輯，完全離線可用。
 
 ### 步驟 4：執行自動化測試
 ```bash
 python -m pytest -q
 ```
-測試涵蓋（69 項全數通過）：121 基因 Pydantic 校驗、單一權威基因註冊表防飄移、PII 100% 脫敏、結構化白名單送 AI 防洩漏、CORS／速率限制保護、AD/AR/XD/XR 機率、全部 REST 端點與未知基因熔斷。
+測試涵蓋（69 項全數通過）：128 基因 Pydantic 校驗、單一權威基因註冊表防飄移、PII 100% 脫敏、結構化白名單送 AI 防洩漏、CORS／速率限制保護、AD/AR/XD/XR 機率、全部 REST 端點與未知基因熔斷。
 
 ### 方式 1：🐳 Docker 一鍵啟動全端服務（內建 `Dockerfile` & `docker-compose.yml`）
 在專案根目錄啟動 Docker Desktop 後執行：

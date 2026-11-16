@@ -9,12 +9,12 @@ export const UI_ZH_TW = {
   heroTitle1: '拿到基因報告，',
   heroTitle2: '先別慌，我們一起讀懂它。',
   heroLead:
-    '涵蓋 121 個核心與臨床黃金基因（含 ACMG SF v3.2 全 81 基因與 CPIC 藥物基因）的白話比喻、用藥紅綠燈、隱私脫敏報告翻譯、個人用藥安全護照與家族遺傳模擬，一次看懂。',
+    '涵蓋 128 個核心與臨床黃金基因（含 ACMG SF v3.3 全 84 基因與 CPIC 藥物基因）的白話比喻、用藥紅綠燈、隱私脫敏報告翻譯、個人用藥安全護照與家族遺傳模擬，一次看懂。',
   statGenes: '核心基因',
   statPrivacy: '本地脫敏',
   statLights: 'PGx 紅綠燈',
   statHallucination: '猜測性解讀',
-  loadingText: '正在載入 121 個基因知識庫…',
+  loadingText: '正在載入 128 個基因知識庫…',
   footerDisclaimer:
     '⚠️ DecodeGene 僅供科學普及、學術研究與健康常識參考，不能替代專業醫師或臨床遺傳諮詢師的診斷與醫療決策。',
   footerMeta:

@@ -835,6 +835,13 @@ const SEARCH_SYNONYMS = {
   ACTN3: '爆發力 爆发力 運動基因 运动基因 耐力 快縮肌 快缩肌 肌肉纖維 肌肉纤维 ACTN3 sprint power endurance muscle fiber rs1815739',
   BDNF: '神經滋養 神经滋养 神經可塑性 神经可塑性 記憶 记忆 情緒韌性 情绪韧性 憂鬱 忧郁 BDNF brain derived neurotrophic factor neuroplasticity memory rs6265',
   MC1R: '防曬 防晒 光老化 雀斑 黑色素瘤 皮膚癌 皮肤癌 紫外線 紫外线 MC1R sunscreen photoaging freckles melanoma ultraviolet',
+  ABCD1: '腎上腺腦白質 肾上腺脑白质 腎上腺腦白質失養症 肾上腺脑白质营养不良 極長鏈脂肪酸 极长链脂肪酸 ALD ABCD1 adrenoleukodystrophy VLCFA HSCT elivaldogene',
+  CYP27A1: '腦腱性黃瘤 脑腱性黄瘤 腦腱性黃瘤症 脑腱性黄瘤症 膽固醇 胆固醇 CTX CYP27A1 cerebrotendinous xanthomatosis CDCA chenodeoxycholic acid cholestanol',
+  PLN: '受磷蛋白 PLN phospholamban r14del p.Arg14del 擴張型心肌病變 扩张型心肌病 心室頻脈 心室心动过速 心律不整 心律不齐 cardiomyopathy',
+  APP: '阿茲海默 阿兹海默 阿茲海默症 早發性失智 早发性失智 類澱粉 类淀粉 APP amyloid alzheimer lecanemab donanemab',
+  PSEN1: '阿茲海默 阿兹海默 早發性失智 早发性失智 早老素 PSEN1 presenilin alzheimer lecanemab donanemab',
+  LRRK2: '帕金森 帕金森氏症 動作障礙 动作障碍 LRRK2 parkinson p.Gly2019Ser G2019S p.Gly2385Arg G2385R',
+  'HLA-DQB1': '乳糜瀉 乳糜泻 麩質 麸质 麩質不耐 麸质不耐 自體免疫 自体免疫 celiac gluten hla-dq2 hla-dq8 DQ2 DQ8',
 };
 
 export function searchGenes(records, query) {

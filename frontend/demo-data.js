@@ -12674,6 +12674,720 @@ window.DEMO_DATA = [
       "myth": "「有 MC1R 變異就一定會得黑色素瘤？」",
       "truth": "不對。MC1R 變異只是常見的色素與紫外線敏感度差異，屬正常人類體質變異，不是罕見單基因疾病。黑色素瘤風險主要由日曬行為、防曬習慣、膚色、痣的數量與家族史共同決定；做好廣譜防曬與定期皮膚檢查，就能大幅降低風險。"
     }
+  },
+  {
+    "association_id": "GDA_ASSOC_122",
+    "gene": {
+      "symbol": "ABCD1",
+      "name": "ATP binding cassette subfamily D member 1",
+      "chinese_name": "ABCD1 基因（X 連鎖腎上腺腦白質失養症）",
+      "ensembl_id": "ENSG00000101986",
+      "entrez_id": "215",
+      "biotype": "protein_coding",
+      "chromosome": "Xq28（X 染色體）",
+      "metaphor": {
+        "title": "🧬 細胞的【極長鏈脂肪酸搬運工】",
+        "story": "ABCD1 製造過氧化體上的轉運蛋白，負責把極長鏈脂肪酸送進過氧化體分解。當這個搬運工失靈，脂肪酸會在腦白質與腎上腺皮質累積，可能造成兒童期腦部退化或成年期腎上腺與神經症狀。這是一種 X 連鎖遺傳疾病，但早期腦部 MRI 與腎上腺荷爾蒙監測，能讓男孩及時接受造血幹細胞移植或基因治療，並以皮質醇補充維持安全。"
+      },
+      "plain_summary": "ABCD1 致病變異造成 X 連鎖腎上腺腦白質失養症（ALD），男性患者可能出現腎上腺功能不全、腦白質病變與神經退化，女性帶因者也可能有較輕微的脊髓神經症狀。這不是常見體質差異，而是可透過新生兒或兒童期篩檢提早發現的遺傳疾病；早期腦部 MRI 與腎上腺荷爾蒙監測，能讓男孩在腦部病變早期接受造血幹細胞移植或基因治療，並以皮質醇補充避免腎上腺危象。",
+      "academic_summary": "ABCD1 位於 Xq28，編碼過氧化體膜上的 ATP 結合匣轉運蛋白 ABCD1，負責將極長鏈脂肪酸（VLCFA）送入過氧化體進行 β 氧化。致病變異導致 VLCFA 累積，造成兒童期腦白質發炎性脫髓鞘、腎上腺皮質功能不全，以及成年型腎上腺脊髓神經病變。診斷依血漿 VLCFA 與基因檢測，治療包含皮質醇補充、早期造血幹細胞移植與基因治療 Elivaldogene autotemcel。"
+    },
+    "disease": {
+      "id": "MONDO:0018544",
+      "name": "X-linked adrenoleukodystrophy",
+      "chinese_name": "X 連鎖腎上腺腦白質失養症",
+      "categories": [
+        "X 連鎖遺傳疾病",
+        "神經退化與代謝疾病",
+        "新生兒與兒童篩檢"
+      ],
+      "inheritance_mode": "X 連鎖隱性（X-linked）",
+      "severity_badge": "🟠 可早期偵測與治療的遺傳疾病"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000846",
+        "name": "Adrenal insufficiency",
+        "chinese_name": "腎上腺功能不全"
+      },
+      {
+        "hpo_id": "HP:0002352",
+        "name": "Leukoencephalopathy",
+        "chinese_name": "腦白質病變"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Hydrocortisone replacement",
+        "chinese_name": "皮質醇補充（Hydrocortisone）",
+        "mechanism": "補充腎上腺皮質醇，預防腎上腺危象；非依基因型調整劑量",
+        "approval_status": "內分泌專科處方之標準荷爾蒙補充"
+      },
+      {
+        "drug_name": "Hematopoietic stem cell transplantation (HSCT)",
+        "chinese_name": "造血幹細胞移植（HSCT）",
+        "mechanism": "以健康捐贈者造血幹細胞取代缺陷細胞，延緩早期兒童腦型 ALD 的腦部脫髓鞘",
+        "approval_status": "專科中心評估之標準治療"
+      },
+      {
+        "drug_name": "Elivaldogene autotemcel (Skysona)",
+        "chinese_name": "基因治療 Elivaldogene autotemcel",
+        "mechanism": "體外 lentiviral 基因治療，將功能性 ABCD1 導入自體造血幹細胞",
+        "approval_status": "各國核准狀態不同，需專科評估"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ABCD1 致病變異（X 連鎖）；新生兒篩檢與家族遺傳諮詢可提早發現",
+      "population_frequency": "ABCD1 相關 ALD 屬罕見遺傳疾病，男性發病率約數萬分之一；女性帶因者可能有輕微症狀 (PMID:20301493, PMID:40568962)",
+      "traffic_light_summary": "此基因為遺傳疾病風險與篩檢基因，目前沒有藥物基因（PGx）用藥指引；皮質醇補充與造血幹細胞移植是依臨床與疾病階段決定，不是依基因型調整劑量。早期腦部 MRI 與腎上腺荷爾蒙監測是避免延誤治療的關鍵。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "避免自行使用未經專科評估的偏方或高劑量油脂補充",
+        "腎上腺功能不全時，發燒、嘔吐、腹瀉或手術前應依醫囑調整皮質醇補充並及早就醫",
+        "維持均衡飲食與規律作息，配合神經科與內分泌科追蹤"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.85,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 150,
+      "clinvar_summary_chinese": "ClinVar 收錄多個 ABCD1 致病與可能致病變異，與兒童腦型 ALD 及成年型腎上腺脊髓神經病變相關",
+      "opentargets_score": 0.6,
+      "key_pmids": [
+        "PMID:20301493",
+        "PMID:40568962"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有兒童期行為改變、視聽覺退化、學習退步、走路不穩、皮膚色素沉澱或反覆低血壓者，應盡早接受腦部 MRI、腎上腺荷爾蒙與 ABCD1 基因檢測；新生兒篩檢陽性者應轉介專科。",
+      "lifestyle_tips": [
+        "高風險男孩應定期接受腦部 MRI 與腎上腺荷爾蒙監測，及早評估造血幹細胞移植或基因治療",
+        "出現嘔吐、腹瀉、發燒、虛弱或低血壓時，應警覺腎上腺危象並及早就醫",
+        "家族成員應接受遺傳諮詢與帶因篩檢，女性帶因者也需留意神經症狀"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "小兒神經科 / 神經內科 / 內分泌新陳代謝科 / 遺傳諮詢",
+      "questions": [
+        "我的孩子有 ABCD1 致病變異，應該何時開始腦部 MRI 與腎上腺荷爾蒙監測？",
+        "目前是否適合評估造血幹細胞移植或基因治療？需要轉介哪個專科中心？",
+        "腎上腺危象有哪些警訊？發燒或腸胃炎時皮質醇補充應如何調整？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「ABCD1 帶因者一定在童年發病，而且沒有辦法治療？」",
+      "truth": "不對。X 連鎖 ALD 的表現差異很大：部分男孩在兒童期出現腦型 ALD，部分男性成年後才有腎上腺脊髓神經病變，也有帶因者終身無明顯症狀。早期腦部 MRI 與腎上腺監測可在腦部病變初期安排造血幹細胞移植或基因治療，皮質醇補充也能預防腎上腺危象，因此不應放棄追蹤。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_123",
+    "gene": {
+      "symbol": "CYP27A1",
+      "name": "cytochrome P450 family 27 subfamily A member 1",
+      "chinese_name": "CYP27A1 基因（膽固醇 27-羥化酶）",
+      "ensembl_id": "ENSG00000135929",
+      "entrez_id": "1593",
+      "biotype": "protein_coding",
+      "chromosome": "2q35（2 號染色體）",
+      "metaphor": {
+        "title": "🕯️ 膽汁酸的【回收再生工廠】",
+        "story": "CYP27A1 是膽固醇轉換成膽汁酸的關鍵酵素，像回收工廠把膽固醇變成可排出的膽汁酸。工廠停擺時，膽固醇中間產物 cholestanol 會在肌腱、水晶體與腦部累積，造成肌腱黃瘤、早發性白內障、慢性腹瀉與神經退化。口服 CDCA 能補回膽汁酸訊號，若在神經症狀出現前開始，可望避免惡化。"
+      },
+      "plain_summary": "CYP27A1 致病變異造成腦腱性黃瘤症（CTX），是體染色體隱性遺傳的膽固醇代謝疾病。患者可能在兒童或青年期出現早發性白內障、慢性腹瀉、肌腱黃瘤，之後進展為痙攣性步態與認知退化。CDCA（chenodeoxycholic acid）是安全的口服膽酸補充，越早開始越能預防神經惡化；有典型症狀或家族史者應接受膽固醇代謝與基因檢測。",
+      "academic_summary": "CYP27A1 位於 2q35，編碼粒線體 sterol 27-hydroxylase，是膽固醇進行替代性膽汁酸合成的關鍵酵素。酵素缺陷使膽汁酸合成不足、膽固醇中間產物 cholestanol 累積，造成肌腱與水晶體沉積、慢性腹瀉、青少年白內障及進行性神經退化。血漿 cholestanol 上升與 CYP27A1 雙等位基因致病變異可確診，早期 CDCA 治療可預防神經學惡化。"
+    },
+    "disease": {
+      "id": "MONDO:0008948",
+      "name": "Cerebrotendinous xanthomatosis",
+      "chinese_name": "腦腱性黃瘤症（膽固醇代謝障礙）",
+      "categories": [
+        "代謝與脂質障礙",
+        "神經退化疾病",
+        "可治療遺傳疾病"
+      ],
+      "inheritance_mode": "體染色體隱性（AR）",
+      "severity_badge": "🟠 可治療的遺傳代謝疾病，早期治療是關鍵"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0010874",
+        "name": "Tendon xanthomatosis",
+        "chinese_name": "肌腱黃瘤"
+      },
+      {
+        "hpo_id": "HP:0000518",
+        "name": "Cataract",
+        "chinese_name": "早發性白內障"
+      },
+      {
+        "hpo_id": "HP:0001257",
+        "name": "Spasticity",
+        "chinese_name": "痙攣性步態"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Chenodeoxycholic acid (CDCA)",
+        "chinese_name": "鵝脫氧膽酸（CDCA）",
+        "mechanism": "口服膽酸補充，恢復膽汁酸回饋抑制、降低 cholestanol 生成，早期使用可預防神經退化",
+        "approval_status": "專科醫師處方之口服膽酸治療"
+      },
+      {
+        "drug_name": "Cholic acid",
+        "chinese_name": "膽酸（Cholic acid）",
+        "mechanism": "替代性膽酸補充，用於無法耐受 CDCA 者的個別化治療",
+        "approval_status": "專科評估後使用"
+      },
+      {
+        "drug_name": "HMG-CoA reductase inhibitors (statins)",
+        "chinese_name": "史他汀類降血脂藥",
+        "mechanism": "輔助降低膽固醇合成，非單獨取代 CDCA",
+        "approval_status": "專科評估之輔助治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "CYP27A1 雙等位基因致病變異；血漿 cholestanol 上升可支持診斷",
+      "population_frequency": "CTX 屬罕見體染色體隱性疾病，盛行率因族群而異；近親結婚族群風險較高 (PMID:20301583, PMID:40568962)",
+      "traffic_light_summary": "此基因為遺傳代謝疾病與篩檢基因，目前沒有藥物基因（PGx）用藥指引；CDCA 是依臨床診斷與疾病階段使用的標準膽酸補充，不是依基因型調整劑量。早期治療可預防神經退化。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "配合低膽固醇飲食與專科營養建議，但不要自行停用 CDCA",
+        "規律追蹤血漿 cholestanol、肝功能與神經學表現",
+        "出現腹瀉、黃疸或神經症狀惡化時應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.8,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 遺傳代謝疾病證據明確",
+      "clinvar_pathogenic_count": 100,
+      "clinvar_summary_chinese": "ClinVar 收錄多個 CYP27A1 致病變異，與腦腱性黃瘤症及 cholestanol 累積相關",
+      "opentargets_score": 0.55,
+      "key_pmids": [
+        "PMID:20301583",
+        "PMID:40568962"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有早發性白內障、慢性腹瀉、肌腱黃瘤、痙攣性步態或家族史者，應檢測血漿 cholestanol 並考慮 CYP27A1 基因檢測；確診者的一等親也應接受遺傳諮詢。",
+      "lifestyle_tips": [
+        "確診後依專科指示持續使用 CDCA，不要因症狀改善自行停藥",
+        "定期追蹤血漿 cholestanol、肝功能、白內障與神經學變化",
+        "維持均衡飲食與規律活動，並避免自行使用未經評估的偏方"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經內科 / 小兒神經科 / 胃腸肝膽科 / 遺傳諮詢",
+      "questions": [
+        "我有早發性白內障、慢性腹瀉與肌腱黃瘤，是否需要檢測血漿 cholestanol 或 CYP27A1 基因？",
+        "確診 CTX 後，CDCA 應該何時開始？需要終身使用嗎？",
+        "我的兄弟姊妹與子女是否也應該接受篩檢與遺傳諮詢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「白內障只是老化，肌腱黃瘤只是吃太油，不需要基因檢查？」",
+      "truth": "不對。早發性白內障合併慢性腹瀉、肌腱黃瘤或痙攣性步態，是 CTX 的典型線索。CTX 是可用 CDCA 治療的遺傳代謝疾病，延誤診斷可能造成不可逆神經退化；及早期檢查與治療非常重要。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_124",
+    "gene": {
+      "symbol": "PLN",
+      "name": "phospholamban",
+      "chinese_name": "PLN 基因（受磷蛋白）",
+      "ensembl_id": "ENSG00000198523",
+      "entrez_id": "5350",
+      "biotype": "protein_coding",
+      "chromosome": "6q22.31（6 號染色體）",
+      "metaphor": {
+        "title": "💓 心臟鈣離子幫浦的【煞車與油門】",
+        "story": "PLN 調控心臟肌漿網鈣離子幫浦，像控制放鬆與收縮的煞車。p.Arg14del 等致病變異會讓煞車失靈，心肌細胞鈣離子調節失衡，可能造成擴張型心肌病變與心室頻脈。規律心電圖、霍特與心臟磁振造影追蹤，以及標準心衰竭治療與必要時的植入式去顫器評估，可以降低風險。"
+      },
+      "plain_summary": "PLN 致病變異（典型如 p.Arg14del）是體染色體顯性遺傳的擴張型與致心律失常性心肌病變原因之一，可能造成心臟擴大、收縮功能下降與心室頻脈。帶因者不一定立即有症狀，但需要定期心電圖、霍特監測與心臟磁振造影，並由心臟科評估標準心衰竭藥物與植入式去顫器。家族成員也應接受心臟篩檢與遺傳諮詢。",
+      "academic_summary": "PLN 位於 6q22.31，編碼受磷蛋白，調控 SERCA2a 鈣離子幫浦活性。p.Arg14del 等致病變異造成鈣離子再回收異常與心肌纖維化，與擴張型心肌病變、致心律失常性心肌病變及心室頻脈相關，外顯率隨年齡增加；治療依標準心衰竭藥物、心律監測與植入式去顫器評估。"
+    },
+    "disease": {
+      "id": "MONDO:0005021",
+      "name": "Dilated cardiomyopathy",
+      "chinese_name": "受磷蛋白（PLN）相關擴張型與致心律失常性心肌病變",
+      "categories": [
+        "遺傳性心肌病變",
+        "心律不整風險",
+        "心臟衰竭"
+      ],
+      "inheritance_mode": "體染色體顯性（AD）",
+      "severity_badge": "🟠 需心臟功能與心律長期追蹤"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "擴張型心肌病變"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "心室心搏過速"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "乙型交感神經阻斷劑",
+        "mechanism": "降低心肌耗氧與交感神經刺激，改善心衰竭並降低心律不整",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "ACE 抑制劑／ARB／ARNI",
+        "mechanism": "降低心臟負荷並延緩心室重塑，改善心衰竭症狀與預後",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "Mineralocorticoid receptor antagonists",
+        "chinese_name": "礦物皮質素受體拮抗劑",
+        "mechanism": "降低心衰竭住院與死亡率，減少心室纖維化",
+        "approval_status": "標準心衰竭處方治療"
+      },
+      {
+        "drug_name": "SGLT2 inhibitors",
+        "chinese_name": "SGLT2 抑制劑",
+        "mechanism": "改善心衰竭預後與心臟功能，降低心血管事件風險",
+        "approval_status": "標準心衰竭處方治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PLN p.Arg14del 及其他致病變異；與擴張型心肌病變及心室頻脈相關",
+      "population_frequency": "PLN p.Arg14del 在部分歐洲地區較常見，其他族群頻率較低；外顯率隨年齡增加 (PMID:20301486, PMID:40568962)",
+      "traffic_light_summary": "此基因為遺傳性心肌病變與篩檢基因，目前沒有藥物基因（PGx）用藥指引；心衰竭藥物與植入式去顫器是依心臟功能與心律風險決定，不是依基因型調整劑量。定期心電圖、霍特與心臟磁振造影是關鍵。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "採低鹽飲食並依醫師建議管理水分，避免心衰竭惡化",
+        "避免過量酒精與未經評估的劇烈運動",
+        "每日監測體重與水腫，出現胸悶、暈厥或心悸應及早就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.8,
+      "plain_rating": "⭐️⭐️⭐️⭐️ 心肌病變遺傳證據明確",
+      "clinvar_pathogenic_count": 10,
+      "clinvar_summary_chinese": "ClinVar 收錄 PLN p.Arg14del 等致病變異，與擴張型心肌病變、致心律失常性心肌病變及心室頻脈相關",
+      "opentargets_score": 0.5,
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:40568962"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有擴張型心肌病變、心室頻脈、年輕猝死家族史或 PLN 致病變異家族史者，應接受心電圖、霍特、心臟超音波與心臟磁振造影，並由心臟科與遺傳諮詢評估。",
+      "lifestyle_tips": [
+        "定期接受心電圖、霍特與心臟影像追蹤，依醫師指示調整追蹤頻率",
+        "採低鹽飲食、限制酒精並避免未經評估的劇烈運動",
+        "出現胸悶、暈厥、心悸或體重快速增加時應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 心臟衰竭門診 / 心律不整專科 / 遺傳諮詢",
+      "questions": [
+        "我的 PLN 基因結果帶有 p.Arg14del，心臟功能與心律目前如何？",
+        "我需要定期做心電圖、霍特或心臟磁振造影嗎？多久追蹤一次？",
+        "我是否需要評估植入式去顫器？家人是否也應該接受心臟篩檢？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「沒有症狀就不需要追蹤 PLN 心肌病變？」",
+      "truth": "不對。PLN 相關心肌病變可能在沒有明顯症狀時已有心臟擴大或心室頻脈，甚至增加猝死風險。規律心電圖、霍特與心臟影像追蹤，以及必要時的藥物與去顫器評估，可以及早介入。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_125",
+    "gene": {
+      "symbol": "APP",
+      "name": "amyloid beta precursor protein",
+      "chinese_name": "APP 基因（類澱粉前驅蛋白）",
+      "ensembl_id": "ENSG00000142192",
+      "entrez_id": "351",
+      "biotype": "protein_coding",
+      "chromosome": "21q21.3（21 號染色體）",
+      "metaphor": {
+        "title": "🧠 神經元的【類澱粉原料工廠】",
+        "story": "APP 是神經細胞膜上的正常蛋白，負責細胞生長與修復。當 APP 的罕見致病變異讓它被切割成過多 Aβ42，類澱粉會在大腦累積，造成早發性家族型阿茲海默症。這和一般老化健忘不同；只有少數帶有明確致病變異的家族會遺傳發病，基因檢測前應先接受遺傳諮詢。"
+      },
+      "plain_summary": "APP 的罕見致病變異是早發性家族型阿茲海默症的體染色體顯性原因之一，通常在較年輕時發病。這與常見的老化健忘或晚發型阿茲海默症不同；一般族群帶有 APP 常見變異並不代表會失智。若家族有多位年輕發病患者，應接受神經科與遺傳諮詢，再決定是否做預測性基因檢測。抗類澱粉抗體 Lecanemab 與 Donanemab 適用與否，需依臨床與生物標記評估，不是依 APP 基因型決定。",
+      "academic_summary": "APP 位於 21q21.3，編碼類澱粉前驅蛋白，經 β 與 γ 分泌酶切割產生 Aβ。APP 的罕見致病變異（多集中在 Aβ 序列或切割位點）增加 Aβ42 生成與聚集，造成體染色體顯性早發性阿茲海默症；常見變異則不具決定性。診斷依臨床、生物標記與基因檢測，治療包含抗類澱粉抗體與症狀治療。"
+    },
+    "disease": {
+      "id": "MONDO:0004975",
+      "name": "Alzheimer disease",
+      "chinese_name": "早發性家族型阿茲海默症（類澱粉前驅蛋白 APP）",
+      "categories": [
+        "神經退化疾病",
+        "早發性失智症",
+        "體染色體顯性遺傳"
+      ],
+      "inheritance_mode": "體染色體顯性（罕見致病變異）",
+      "severity_badge": "🟠 罕見高外顯率致病變異，需遺傳諮詢"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002511",
+        "name": "Alzheimer disease",
+        "chinese_name": "阿茲海默症表現"
+      },
+      {
+        "hpo_id": "HP:0000726",
+        "name": "Dementia",
+        "chinese_name": "失智症候群"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Lecanemab",
+        "chinese_name": "Lecanemab（Leqembi）",
+        "mechanism": "人類化單株抗體，標靶可溶性 Aβ 原纖維",
+        "approval_status": "FDA／TFDA／NMPA 核准用於早期阿茲海默症"
+      },
+      {
+        "drug_name": "Donanemab",
+        "chinese_name": "Donanemab（Kisunla）",
+        "mechanism": "單株抗體，標靶 N3pG 修飾的類澱粉斑塊",
+        "approval_status": "FDA 核准用於早期症狀性阿茲海默症"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "APP 罕見致病變異（Aβ 序列或切割位點）；與早發性家族型阿茲海默症相關",
+      "population_frequency": "APP 致病變異造成的早發性家族型阿茲海默症屬罕見，佔所有阿茲海默症少數；常見 APP 變異不具決定性 (PMID:20301340)",
+      "traffic_light_summary": "此基因為罕見遺傳疾病風險與篩檢基因，目前沒有藥物基因（PGx）用藥指引；抗類澱粉抗體是否適用，需依臨床階段、類澱粉生物標記與 MRI 監測決定，不是依 APP 基因型給藥。預測性基因檢測前應接受遺傳諮詢。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "採地中海飲食、規律有氧運動與充足睡眠，支持大腦與心血管健康",
+        "控制血壓、血糖與血脂，避免吸菸與過量飲酒",
+        "若考慮抗類澱粉抗體，應與神經科討論 ARIA 風險與 MRI 監測"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 50,
+      "clinvar_summary_chinese": "ClinVar 收錄多個 APP 致病變異，與體染色體顯性早發性家族型阿茲海默症相關",
+      "opentargets_score": 0.7,
+      "key_pmids": [
+        "PMID:20301340"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "家族中有多位 65 歲前發病的失智者、或已知 APP 致病變異者，應接受神經科、記憶門診與遺傳諮詢；不建議一般健康人未經諮詢自行做預測性基因檢測。",
+      "lifestyle_tips": [
+        "維持地中海飲食、規律有氧運動與充足睡眠，支持認知與心血管健康",
+        "控制血壓、血糖與血脂，避免吸菸與過量飲酒",
+        "持續學習與社交互動，建立認知儲備並留意早期記憶變化"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經內科 / 記憶門診 / 遺傳諮詢 / 老年醫學",
+      "questions": [
+        "我的家族有多位年輕失智者，我應該做 APP 基因檢測嗎？檢測前需要哪些遺傳諮詢？",
+        "如果帶有 APP 致病變異，我一生的發病風險與下一代遺傳機率如何？",
+        "抗類澱粉抗體 Lecanemab 或 Donanemab 適合我嗎？需要哪些生物標記與 MRI 監測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「帶有 APP 基因變異就一定失智，而且一定會遺傳給孩子？」",
+      "truth": "不對。只有 APP 的罕見致病變異才會造成體染色體顯性早發性家族型阿茲海默症；常見變異或意義未明變異不代表會發病。一般老化健忘也與此不同。是否遺傳給下一代及是否做預測性檢測，應由遺傳諮詢與神經科共同評估。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_126",
+    "gene": {
+      "symbol": "PSEN1",
+      "name": "presenilin 1",
+      "chinese_name": "PSEN1 基因（早老素 1）",
+      "ensembl_id": "ENSG00000080815",
+      "entrez_id": "5663",
+      "biotype": "protein_coding",
+      "chromosome": "14q24.2（14 號染色體）",
+      "metaphor": {
+        "title": "✂️ γ 分泌酶的【切割調節器】",
+        "story": "PSEN1 是 γ 分泌酶複合體的核心，負責切割 APP。當罕見致病變異讓切割位置改變，Aβ42 比例上升，類澱粉在大腦累積，造成早發性家族型阿茲海默症。PSEN1 是這類家族型失智最常見的原因，但只有明確致病變異才具高外顯率，基因檢測前需要遺傳諮詢。"
+      },
+      "plain_summary": "PSEN1 的罕見致病變異是早發性家族型阿茲海默症最常見的體染色體顯性原因，可能在 30 至 50 多歲發病。這與一般老化健忘或晚發型阿茲海默症不同；意義未明變異不代表一定會發病。若家族有多位年輕失智者，應接受神經科與遺傳諮詢，再決定是否做預測性檢測。Lecanemab 與 Donanemab 的適用性需依臨床與生物標記評估。",
+      "academic_summary": "PSEN1 位於 14q24.2，編碼 presenilin 1，是 γ 分泌酶複合體的催化核心。致病變異改變 APP 切割位點、增加 Aβ42/Aβ40 比例與類澱粉聚集，造成高外顯率的體染色體顯性早發性阿茲海默症；表型可能包含記憶退化、語言與執行功能障礙、肌陣攣與癲癇。"
+    },
+    "disease": {
+      "id": "MONDO:0004975",
+      "name": "Alzheimer disease",
+      "chinese_name": "早發性家族型阿茲海默症（早老素 PSEN1）",
+      "categories": [
+        "神經退化疾病",
+        "早發性失智症",
+        "體染色體顯性遺傳"
+      ],
+      "inheritance_mode": "體染色體顯性（罕見致病變異）",
+      "severity_badge": "🟠 罕見高外顯率致病變異，需遺傳諮詢"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002511",
+        "name": "Alzheimer disease",
+        "chinese_name": "阿茲海默症表現"
+      },
+      {
+        "hpo_id": "HP:0000726",
+        "name": "Dementia",
+        "chinese_name": "早發性失智症"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Lecanemab",
+        "chinese_name": "Lecanemab（Leqembi）",
+        "mechanism": "人類化單株抗體，標靶可溶性 Aβ 原纖維",
+        "approval_status": "FDA／TFDA／NMPA 核准用於早期阿茲海默症"
+      },
+      {
+        "drug_name": "Donanemab",
+        "chinese_name": "Donanemab（Kisunla）",
+        "mechanism": "單株抗體，標靶 N3pG 修飾的類澱粉斑塊",
+        "approval_status": "FDA 核准用於早期症狀性阿茲海默症"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PSEN1 罕見致病變異；早發性家族型阿茲海默症最常見的致病基因",
+      "population_frequency": "PSEN1 致病變異造成的早發性家族型阿茲海默症屬罕見，但佔家族型早發病例相當比例；外顯率隨年齡增加 (PMID:20301340)",
+      "traffic_light_summary": "此基因為罕見遺傳疾病風險與篩檢基因，目前沒有藥物基因（PGx）用藥指引；抗類澱粉抗體是否適用，需依臨床階段、類澱粉生物標記與 MRI 監測決定，不是依 PSEN1 基因型給藥。預測性基因檢測前應接受遺傳諮詢。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "採地中海飲食、規律有氧運動與充足睡眠，支持大腦與心血管健康",
+        "控制血壓、血糖與血脂，避免吸菸與過量飲酒",
+        "若考慮抗類澱粉抗體，應與神經科討論 ARIA 風險與 MRI 監測"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ 遺傳醫學證據明確",
+      "clinvar_pathogenic_count": 300,
+      "clinvar_summary_chinese": "ClinVar 收錄大量 PSEN1 致病與可能致病變異，與體染色體顯性早發性家族型阿茲海默症相關",
+      "opentargets_score": 0.75,
+      "key_pmids": [
+        "PMID:20301340"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "家族中有多位 65 歲前發病的失智者、或已知 PSEN1 致病變異者，應接受神經科、記憶門診與遺傳諮詢；不建議一般健康人未經諮詢自行做預測性基因檢測。",
+      "lifestyle_tips": [
+        "維持地中海飲食、規律有氧運動與充足睡眠，支持認知與心血管健康",
+        "控制血壓、血糖與血脂，避免吸菸與過量飲酒",
+        "持續學習與社交互動，建立認知儲備並留意早期記憶變化"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經內科 / 記憶門診 / 遺傳諮詢 / 老年醫學",
+      "questions": [
+        "我的家族有多位年輕失智者，我應該做 PSEN1 基因檢測嗎？檢測前需要哪些遺傳諮詢？",
+        "如果帶有 PSEN1 致病變異，我一生的發病風險與下一代遺傳機率如何？",
+        "抗類澱粉抗體 Lecanemab 或 Donanemab 適合我嗎？需要哪些生物標記與 MRI 監測？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「PSEN1 有意義未明變異，就代表一定會早發失智？」",
+      "truth": "不對。只有明確的 PSEN1 致病或可能致病變異才具高外顯率；意義未明變異（VUS）不能當作診斷。家族型早發性失智的評估需要神經科、遺傳諮詢與家族史共同判斷，不應自行解讀或過度焦慮。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_127",
+    "gene": {
+      "symbol": "LRRK2",
+      "name": "leucine rich repeat kinase 2",
+      "chinese_name": "LRRK2 基因（富含白胺酸重複激酶 2）",
+      "ensembl_id": "ENSG00000188906",
+      "entrez_id": "120892",
+      "biotype": "protein_coding",
+      "chromosome": "12q12（12 號染色體）",
+      "metaphor": {
+        "title": "🚦 神經細胞的【交通號誌調節器】",
+        "story": "LRRK2 參與神經細胞的訊息傳遞與細胞廢物清除。p.Gly2019Ser 與東亞常見的 p.Gly2385Arg 會讓號誌調節略微失衡，增加帕金森氏症易感性，但並不是按下發病開關。大多數帶因者終身不會發病，年齡、環境與其他基因共同決定風險。"
+      },
+      "plain_summary": "LRRK2 的 p.Gly2019Ser 與東亞族群常見的 p.Gly2385Arg 是帕金森氏症的遺傳易感因素，屬於不完全外顯的風險變異，不是罕見單基因疾病。帶因者不一定會發病，大多數人終身沒有帕金森氏症；風險由年齡、環境暴露、其他基因與生活型態共同決定。了解帶因狀態有助於注意早期症狀與參與研究，但不需要過度焦慮。",
+      "academic_summary": "LRRK2 位於 12q12，編碼富含白胺酸重複激酶 2，參與膜運輸、自噬與免疫訊息。p.Gly2019Ser 增加激酶活性並與體染色體顯性帕金森氏症相關，但外顯率隨年齡增加且不完全；東亞族群常見的 p.Gly2385Arg 為風險變異，效應較小。診斷依臨床運動症狀與影像輔助，治療為標準多巴胺替代。"
+    },
+    "disease": {
+      "id": "MONDO:0005180",
+      "name": "Parkinson disease",
+      "chinese_name": "LRRK2 相關帕金森氏症遺傳易感性",
+      "categories": [
+        "神經退化疾病",
+        "帕金森氏症",
+        "複雜遺傳易感性"
+      ],
+      "inheritance_mode": "體染色體顯性（不完全外顯）",
+      "severity_badge": "🟡 風險變異，非確定性疾病"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001300",
+        "name": "Parkinsonism",
+        "chinese_name": "帕金森氏症狀"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Levodopa/carbidopa",
+        "chinese_name": "左旋多巴／卡比多巴",
+        "mechanism": "補充多巴胺前驅物，改善運動症狀；非依 LRRK2 基因型給藥",
+        "approval_status": "帕金森氏症標準症狀治療"
+      },
+      {
+        "drug_name": "Dopamine agonists",
+        "chinese_name": "多巴胺促效劑",
+        "mechanism": "直接刺激多巴胺受體，作為症狀治療選項",
+        "approval_status": "標準處方治療（需專科評估）"
+      },
+      {
+        "drug_name": "LRRK2 inhibitors (investigational)",
+        "chinese_name": "LRRK2 抑制劑（研究階段）",
+        "mechanism": "標靶 LRRK2 激酶活性，目前仍在臨床試驗評估",
+        "approval_status": "臨床試驗用藥，尚未常規核准"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "LRRK2 p.Gly2019Ser 與東亞常見 p.Gly2385Arg；不完全外顯的帕金森氏症風險變異",
+      "population_frequency": "p.Gly2019Ser 在部分族群較常見，p.Gly2385Arg 在東亞族群較常見；帶因者多數終身不發病 (PMID:20301387)",
+      "traffic_light_summary": "此基因為神經退化疾病風險與篩檢基因，目前沒有藥物基因（PGx）用藥指引；帕金森氏症藥物是依臨床症狀決定，不是依 LRRK2 基因型調整劑量。帶因不等於發病，應避免過度解讀。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "維持規律運動與均衡飲食，支持神經與心血管健康",
+        "避免農藥、重金屬與其他環境暴露，工作防護應確實",
+        "若出現動作遲緩、顫抖、僵硬或步態改變，應及早就醫評估"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.55,
+      "plain_rating": "⭐️⭐️⭐️ 遺傳易感性證據明確，但外顯率不完全",
+      "clinvar_pathogenic_count": 10,
+      "clinvar_summary_chinese": "ClinVar 收錄 LRRK2 風險與致病變異，與體染色體顯性但外顯率不完全的帕金森氏症相關",
+      "opentargets_score": 0.55,
+      "key_pmids": [
+        "PMID:20301387"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有早發性帕金森氏症、家族史或多位親屬患病者，可與神經科討論 LRRK2 基因檢測與遺傳諮詢；一般無症狀者不建議自行檢測或解讀風險變異。",
+      "lifestyle_tips": [
+        "維持規律有氧運動、肌力訓練與均衡飲食，支持神經與整體健康",
+        "減少農藥、溶劑與重金屬暴露，工作時做好防護",
+        "留意動作遲緩、顫抖、僵硬、嗅覺減退或便秘等早期症狀，必要時就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經內科 / 動作障礙專科 / 遺傳諮詢",
+      "questions": [
+        "我帶有 LRRK2 p.Gly2019Ser 或 p.Gly2385Arg，這代表我一定會得帕金森氏症嗎？",
+        "我需要定期接受神經學檢查或影像追蹤嗎？",
+        "目前有哪些藥物或臨床試驗適合 LRRK2 相關帕金森氏症？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「帶有 LRRK2 p.Gly2019Ser 或 p.Gly2385Arg 就一定會得帕金森氏症？」",
+      "truth": "不對。LRRK2 風險變異是不完全外顯，帶因者大多數終身不會發病。發病與否受年齡、環境、其他基因與生活型態共同影響；基因結果可提醒注意早期症狀，但不能當作疾病判決。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_128",
+    "gene": {
+      "symbol": "HLA-DQB1",
+      "name": "major histocompatibility complex, class II, DQ beta 1",
+      "chinese_name": "HLA-DQB1 基因（HLA-DQ2 / DQ8 乳糜瀉易感性）",
+      "ensembl_id": "ENSG00000179344",
+      "entrez_id": "3119",
+      "biotype": "protein_coding",
+      "chromosome": "6p21.32（6 號染色體）",
+      "metaphor": {
+        "title": "🚪 免疫系統的【麩質辨識門鈴】",
+        "story": "HLA-DQB1 製造免疫細胞表面的辨識分子，像門鈴把麩質片段呈遞給 T 細胞。帶有 HLA-DQ2 或 DQ8 的人，免疫系統較容易把麩質誤認為威脅，增加乳糜瀉易感性；但門鈴響不等於一定發病，約三到四成健康人也帶有這些型別。診斷仍需血清學與小腸切片，治療是無麩質飲食。"
+      },
+      "plain_summary": "HLA-DQB1 的 HLA-DQ2 與 HLA-DQ8 型別是乳糜瀉最強的自體免疫易感因素，但屬常見人類基因型，不是疾病本身。約三到四成健康人帶有 DQ2 或 DQ8，卻沒有乳糜瀉；帶有這些型別有很高的陰性預測價值，若沒有帶因則乳糜瀉可能性很低。診斷需要組織轉麩醯胺酸酶抗體等血清學檢查與小腸切片，確診後以無麩質飲食治療。",
+      "academic_summary": "HLA-DQB1 位於 6p21.32，與 HLA-DQA1 組成 DQ 異二聚體。HLA-DQ2.5（DQA1*05-DQB1*02）、DQ2.2 與 DQ8（DQA1*03-DQB1*0302）可呈遞去醯胺化麩質胜肽給 CD4+ T 細胞，引發小腸黏膜發炎。DQ2/DQ8 對乳糜瀉具高敏感度與高陰性預測值，但外顯率低；診斷依血清學與十二指腸切片。"
+    },
+    "disease": {
+      "id": "MONDO:0005130",
+      "name": "Celiac disease",
+      "chinese_name": "乳糜瀉與麩質不耐自體免疫易感性（HLA-DQ2 / DQ8）",
+      "categories": [
+        "自體免疫疾病",
+        "麩質不耐",
+        "多基因易感性"
+      ],
+      "inheritance_mode": "複雜/多基因易感性（HLA 為主）",
+      "severity_badge": "🟡 常見易感基因型，非疾病診斷"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002608",
+        "name": "Celiac disease",
+        "chinese_name": "乳糜瀉"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Gluten-free diet",
+        "chinese_name": "無麩質飲食",
+        "mechanism": "終身避免小麥、大麥與黑麥麩質，讓小腸黏膜修復；是乳糜瀉標準治療",
+        "approval_status": "標準飲食治療（非藥物）"
+      },
+      {
+        "drug_name": "Nutritional counseling & micronutrient monitoring",
+        "chinese_name": "營養諮詢與微量營養素監測",
+        "mechanism": "評估鐵、葉酸、鈣質與脂溶性維生素，支持無麩質飲食下的營養均衡",
+        "approval_status": "營養師與專科追蹤"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "HLA-DQ2（DQA1*05-DQB1*02）與 HLA-DQ8（DQA1*03-DQB1*0302）；乳糜瀉易感性基因型",
+      "population_frequency": "約三到四成健康人帶有 HLA-DQ2 或 DQ8，但僅少數發展為乳糜瀉；陰性預測價值高 (PMID:20301720)",
+      "traffic_light_summary": "此基因為自體免疫易感性與篩檢基因，目前沒有藥物基因（PGx）用藥指引；無麩質飲食是依血清學與切片確診後開始，不是依基因型直接治療。帶有 DQ2/DQ8 不等於乳糜瀉。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "確診後採終身無麩質飲食，避免小麥、大麥、黑麥與交叉污染",
+        "不要僅因帶有 DQ2/DQ8 就自行開始無麩質飲食，以免影響診斷",
+        "確診者應定期追蹤血清學、營養狀態與小腸黏膜修復"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.7,
+      "plain_rating": "⭐️⭐️⭐️ 易感性證據明確，但外顯率低",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "HLA-DQ2/DQ8 為乳糜瀉易感性基因型，並非單一高外顯率致病變異；診斷仍需血清學與切片",
+      "opentargets_score": 0.6,
+      "key_pmids": [
+        "PMID:20301720"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "有慢性腹瀉、腹脹、體重減輕、缺鐵性貧血、疱疹性皮膚炎或乳糜瀉家族史者，應檢測組織轉麩醯胺酸酶抗體（tTG-IgA）與 total IgA；必要時由胃腸科安排十二指腸切片。",
+      "lifestyle_tips": [
+        "確診後依營養師指導採終身無麩質飲食，並注意交叉污染",
+        "定期追蹤血清學、鐵與葉酸、鈣質及脂溶性維生素狀態",
+        "外食時主動確認食材與烹調方式，必要時選擇標示無麩質產品"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胃腸肝膽科 / 小兒胃腸科 / 營養諮詢 / 遺傳諮詢",
+      "questions": [
+        "我帶有 HLA-DQ2 或 DQ8，這代表我一定有乳糜瀉嗎？",
+        "我需要做組織轉麩醯胺酸酶抗體、total IgA 或小腸切片嗎？",
+        "確診乳糜瀉後，無麩質飲食應該如何開始？需要補充哪些營養素？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「帶有 HLA-DQ2 或 DQ8 就一定有乳糜瀉，應該立刻開始無麩質飲食？」",
+      "truth": "不對。約三到四成健康人帶有 DQ2 或 DQ8，卻沒有乳糜瀉；這些基因型有很高的陰性預測價值，但不是疾病診斷。診斷需要血清學與小腸切片，確診後才開始終身無麩質飲食；自行限制飲食可能造成營養不均衡並影響檢查結果。"
+    }
   }
 ];
 window.EN_RECORDS = {
@@ -23899,6 +24613,643 @@ window.EN_RECORDS = {
     "myth_buster": {
       "myth": "“Having an MC1R variant means I will definitely develop melanoma.”",
       "truth": "Not true. MC1R variants are only common differences in pigmentation and UV sensitivity and a normal human trait variation, not a rare single-gene disease. Melanoma risk is mainly shaped by sun behavior, sun protection, skin color, mole count and family history; broad-spectrum sunscreen and regular skin checks greatly reduce risk."
+    }
+  },
+  "ABCD1": {
+    "gene": {
+      "chinese_name": "ABCD1 Gene (X-Linked Adrenoleukodystrophy)",
+      "chromosome": "Xq28 (X Chromosome)",
+      "metaphor": {
+        "title": "🧬 The Cell's 【Very-Long-Chain Fatty Acid Transporter】",
+        "story": "ABCD1 produces a peroxisomal transporter that carries very-long-chain fatty acids into peroxisomes for breakdown. When this transporter fails, fatty acids accumulate in brain white matter and the adrenal cortex, potentially causing childhood cerebral degeneration or adult adrenal and neurological symptoms. This is an X-linked genetic disease, but early brain MRI and adrenal hormone monitoring allow boys to receive timely hematopoietic stem cell transplantation or gene therapy, with cortisol replacement for safety."
+      },
+      "plain_summary": "ABCD1 pathogenic variants cause X-linked adrenoleukodystrophy (ALD). Affected males may develop adrenal insufficiency, leukoencephalopathy and neurological decline, while female carriers may have milder spinal cord symptoms. This is not a common trait variation but a genetic disease that can be detected early through newborn or childhood screening. Early brain MRI and adrenal hormone monitoring allow boys to receive hematopoietic stem cell transplantation or gene therapy during early brain involvement, and cortisol replacement helps prevent adrenal crisis.",
+      "academic_summary": "ABCD1 is located at Xq28 and encodes the peroxisomal membrane ATP-binding cassette transporter ABCD1, which imports very-long-chain fatty acids (VLCFA) into peroxisomes for beta-oxidation. Pathogenic variants cause VLCFA accumulation, leading to childhood inflammatory cerebral demyelination, adrenal cortical insufficiency and adult adrenomyeloneuropathy. Diagnosis relies on plasma VLCFA and genetic testing; treatment includes cortisol replacement, early hematopoietic stem cell transplantation and the gene therapy elivaldogene autotemcel."
+    },
+    "disease": {
+      "chinese_name": "X-Linked Adrenoleukodystrophy",
+      "categories": [
+        "X-Linked Genetic Disease",
+        "Neurodegenerative & Metabolic Disease",
+        "Newborn and Childhood Screening"
+      ],
+      "inheritance_mode": "X-Linked Recessive",
+      "severity_badge": "🟠 Genetic Disease Detectable and Treatable Early"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000846",
+        "name": "Adrenal insufficiency",
+        "chinese_name": "Adrenal insufficiency"
+      },
+      {
+        "hpo_id": "HP:0002352",
+        "name": "Leukoencephalopathy",
+        "chinese_name": "Leukoencephalopathy"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Hydrocortisone replacement",
+        "chinese_name": "Hydrocortisone Replacement",
+        "mechanism": "Replaces adrenal cortisol to prevent adrenal crisis; not dosed by genotype",
+        "approval_status": "Standard hormone replacement prescribed by endocrinology"
+      },
+      {
+        "drug_name": "Hematopoietic stem cell transplantation (HSCT)",
+        "chinese_name": "Hematopoietic Stem Cell Transplantation (HSCT)",
+        "mechanism": "Replaces defective cells with healthy donor hematopoietic stem cells to slow cerebral demyelination in early childhood cerebral ALD",
+        "approval_status": "Standard therapy evaluated at specialist centers"
+      },
+      {
+        "drug_name": "Elivaldogene autotemcel (Skysona)",
+        "chinese_name": "Elivaldogene Autotemcel Gene Therapy",
+        "mechanism": "Ex vivo lentiviral gene therapy delivering functional ABCD1 to autologous hematopoietic stem cells",
+        "approval_status": "Regulatory approval varies by country; specialist evaluation required"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ABCD1 pathogenic variants (X-linked); newborn screening and family genetic counseling enable earlier detection",
+      "population_frequency": "ABCD1-related ALD is a rare genetic disease, affecting roughly one in tens of thousands of males; female carriers may have mild symptoms (PMID:20301493, PMID:40568962)",
+      "traffic_light_summary": "This is a hereditary disease risk and screening gene with no drug-gene (PGx) prescribing guideline. Cortisol replacement and hematopoietic stem cell transplantation are decided by clinical status and disease stage, not by genotype-based dose adjustment. Early brain MRI and adrenal hormone monitoring are critical to avoid delayed treatment.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Avoid unproven remedies or high-dose oil supplements that have not been evaluated by a specialist",
+        "During fever, vomiting, diarrhea or before surgery with adrenal insufficiency, adjust cortisol replacement as directed and seek care early",
+        "Maintain balanced meals and regular routines, with neurology and endocrinology follow-up"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Strong genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar lists multiple ABCD1 pathogenic and likely pathogenic variants associated with childhood cerebral ALD and adult adrenomyeloneuropathy",
+      "key_pmids": [
+        "PMID:20301493",
+        "PMID:40568962"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Boys with behavioral change, vision or hearing decline, school regression, gait instability, skin hyperpigmentation or recurrent low blood pressure should receive early brain MRI, adrenal hormone testing and ABCD1 genetic testing; positive newborn screening should be referred to specialists.",
+      "lifestyle_tips": [
+        "High-risk boys should have regular brain MRI and adrenal hormone monitoring to evaluate HSCT or gene therapy early",
+        "Seek urgent care for vomiting, diarrhea, fever, weakness or low blood pressure, which may signal adrenal crisis",
+        "Family members should receive genetic counseling and carrier testing; female carriers should also watch for neurological symptoms"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Pediatric Neurology / Neurology / Endocrinology & Metabolism / Genetic Counseling",
+      "questions": [
+        "My child has an ABCD1 pathogenic variant. When should brain MRI and adrenal hormone monitoring begin?",
+        "Is it time to evaluate hematopoietic stem cell transplantation or gene therapy? Which specialist center should we contact?",
+        "What are the warning signs of adrenal crisis, and how should cortisol replacement be adjusted during fever or gastroenteritis?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Carrying ABCD1 means certain childhood disease and no treatment options.”",
+      "truth": "Not true. X-linked ALD varies widely: some boys develop childhood cerebral ALD, some men develop adrenomyeloneuropathy later, and some carriers remain without obvious symptoms. Early brain MRI and adrenal monitoring allow HSCT or gene therapy during early brain involvement, and cortisol replacement prevents adrenal crisis, so follow-up should never be abandoned."
+    }
+  },
+  "CYP27A1": {
+    "gene": {
+      "chinese_name": "CYP27A1 Gene (Sterol 27-Hydroxylase)",
+      "chromosome": "2q35 (Chromosome 2)",
+      "metaphor": {
+        "title": "🕯️ The Bile Acid 【Recycling Factory】",
+        "story": "CYP27A1 is the key enzyme that converts cholesterol into bile acids, like a recycling factory turning cholesterol into excretable bile acids. When the factory stops, the cholesterol intermediate cholestanol accumulates in tendons, the lens and the brain, causing tendon xanthomas, early cataracts, chronic diarrhea and neurological decline. Oral CDCA restores bile acid signaling and, when started before neurological symptoms, can help prevent progression."
+      },
+      "plain_summary": "CYP27A1 pathogenic variants cause cerebrotendinous xanthomatosis (CTX), an autosomal recessive cholesterol metabolism disorder. Patients may develop early cataracts, chronic diarrhea and tendon xanthomas in childhood or young adulthood, followed by spastic gait and cognitive decline. CDCA (chenodeoxycholic acid) is a safe oral bile acid replacement, and earlier treatment better prevents neurological progression. People with typical symptoms or a family history should undergo cholesterol metabolism testing and genetic testing.",
+      "academic_summary": "CYP27A1 is located at 2q35 and encodes mitochondrial sterol 27-hydroxylase, the key enzyme for the alternative bile acid synthesis pathway. Enzyme deficiency reduces bile acid synthesis and causes accumulation of the cholesterol intermediate cholestanol, leading to tendon and lens deposits, chronic diarrhea, juvenile cataracts and progressive neurodegeneration. Elevated plasma cholestanol plus biallelic CYP27A1 pathogenic variants confirm the diagnosis, and early CDCA treatment prevents neurological progression."
+    },
+    "disease": {
+      "chinese_name": "Cerebrotendinous Xanthomatosis (Cholesterol Metabolism Disorder)",
+      "categories": [
+        "Metabolic & Lipid Disorder",
+        "Neurodegenerative Disease",
+        "Treatable Genetic Disease"
+      ],
+      "inheritance_mode": "Autosomal Recessive (AR)",
+      "severity_badge": "🟠 Treatable Genetic Metabolic Disease; Early Treatment Is Critical"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0010874",
+        "name": "Tendon xanthomatosis",
+        "chinese_name": "Tendon xanthomatosis"
+      },
+      {
+        "hpo_id": "HP:0000518",
+        "name": "Cataract",
+        "chinese_name": "Early cataract"
+      },
+      {
+        "hpo_id": "HP:0001257",
+        "name": "Spasticity",
+        "chinese_name": "Spastic gait"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Chenodeoxycholic acid (CDCA)",
+        "chinese_name": "Chenodeoxycholic Acid (CDCA)",
+        "mechanism": "Oral bile acid replacement that restores bile acid feedback, reduces cholestanol synthesis and can prevent neurological progression when started early",
+        "approval_status": "Oral bile acid therapy prescribed by specialists"
+      },
+      {
+        "drug_name": "Cholic acid",
+        "chinese_name": "Cholic Acid",
+        "mechanism": "Alternative bile acid replacement for individualized treatment when CDCA is not tolerated",
+        "approval_status": "Used after specialist evaluation"
+      },
+      {
+        "drug_name": "HMG-CoA reductase inhibitors (statins)",
+        "chinese_name": "HMG-CoA Reductase Inhibitors (Statins)",
+        "mechanism": "Adjunctive reduction of cholesterol synthesis; does not replace CDCA",
+        "approval_status": "Adjunctive therapy after specialist evaluation"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "Biallelic CYP27A1 pathogenic variants; elevated plasma cholestanol supports diagnosis",
+      "population_frequency": "CTX is a rare autosomal recessive disease with variable prevalence across populations; consanguineous families are at higher risk (PMID:20301583, PMID:40568962)",
+      "traffic_light_summary": "This is a hereditary metabolic disease and screening gene with no drug-gene (PGx) prescribing guideline. CDCA is a standard bile acid replacement used according to clinical diagnosis and disease stage, not genotype-based dose adjustment. Early treatment prevents neurological progression.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Follow a low-cholesterol diet and specialist nutrition advice, but do not stop CDCA on your own",
+        "Monitor plasma cholestanol, liver function and neurological status regularly",
+        "Seek early care for diarrhea, jaundice or worsening neurological symptoms"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Strong genetic metabolic disease evidence",
+      "clinvar_summary_chinese": "ClinVar lists multiple CYP27A1 pathogenic variants associated with cerebrotendinous xanthomatosis and cholestanol accumulation",
+      "key_pmids": [
+        "PMID:20301583",
+        "PMID:40568962"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with early cataract, chronic diarrhea, tendon xanthomas, spastic gait or a family history should have plasma cholestanol testing and consider CYP27A1 genetic testing; first-degree relatives should receive genetic counseling.",
+      "lifestyle_tips": [
+        "After diagnosis, continue CDCA as directed by specialists and do not stop it because symptoms improve",
+        "Monitor plasma cholestanol, liver function, cataracts and neurological changes regularly",
+        "Maintain balanced meals and regular activity, and avoid unproven remedies"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Neurology / Pediatric Neurology / Gastroenterology & Hepatology / Genetic Counseling",
+      "questions": [
+        "I have early cataracts, chronic diarrhea and tendon xanthomas. Should I be tested for plasma cholestanol or CYP27A1?",
+        "If CTX is confirmed, when should CDCA start, and is lifelong treatment needed?",
+        "Should my siblings and children also be screened and receive genetic counseling?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Cataracts are just aging, and tendon xanthomas just mean eating too much fat, so no genetic testing is needed.”",
+      "truth": "Not true. Early cataracts combined with chronic diarrhea, tendon xanthomas or spastic gait are classic clues to CTX. CTX is a genetic metabolic disease treatable with CDCA, and delayed diagnosis can cause irreversible neurological decline; early evaluation and treatment are essential."
+    }
+  },
+  "PLN": {
+    "gene": {
+      "chinese_name": "PLN Gene (Phospholamban)",
+      "chromosome": "6q22.31 (Chromosome 6)",
+      "metaphor": {
+        "title": "💓 The Heart's Calcium Pump 【Brake and Accelerator】",
+        "story": "PLN regulates the cardiac sarcoplasmic reticulum calcium pump, acting like a brake that controls relaxation and contraction. Pathogenic variants such as p.Arg14del make the brake fail, disrupting calcium regulation in heart muscle cells and potentially causing dilated cardiomyopathy and ventricular tachycardia. Regular ECG, Holter and cardiac MRI follow-up, together with standard heart-failure therapy and ICD evaluation when needed, can reduce risk."
+      },
+      "plain_summary": "PLN pathogenic variants, classically p.Arg14del, are an autosomal dominant cause of dilated and arrhythmogenic cardiomyopathy, potentially leading to an enlarged heart, reduced pumping function and ventricular tachycardia. Carriers may not have immediate symptoms but need regular ECG, Holter monitoring and cardiac MRI, with cardiology evaluation for standard heart-failure medications and an implantable cardioverter-defibrillator. Family members should also receive cardiac screening and genetic counseling.",
+      "academic_summary": "PLN is located at 6q22.31 and encodes phospholamban, which regulates SERCA2a calcium pump activity. Pathogenic variants such as p.Arg14del cause abnormal calcium reuptake and myocardial fibrosis and are associated with dilated cardiomyopathy, arrhythmogenic cardiomyopathy and ventricular tachycardia, with age-dependent penetrance. Treatment follows standard heart-failure medications, rhythm monitoring and ICD evaluation."
+    },
+    "disease": {
+      "chinese_name": "PLN-Related Dilated and Arrhythmogenic Cardiomyopathy",
+      "categories": [
+        "Hereditary Cardiomyopathy",
+        "Arrhythmia Risk",
+        "Heart Failure"
+      ],
+      "inheritance_mode": "Autosomal Dominant (AD)",
+      "severity_badge": "🟠 Requires Long-Term Heart Function and Rhythm Follow-Up"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "Dilated cardiomyopathy"
+      },
+      {
+        "hpo_id": "HP:0004756",
+        "name": "Ventricular tachycardia",
+        "chinese_name": "Ventricular tachycardia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Beta-blockers",
+        "chinese_name": "Beta-Blockers",
+        "mechanism": "Reduce myocardial oxygen demand and sympathetic stimulation, improving heart-failure outcomes and reducing arrhythmia",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "ACE inhibitors / ARBs / ARNI",
+        "chinese_name": "ACE Inhibitors / ARBs / ARNI",
+        "mechanism": "Reduce cardiac workload and slow ventricular remodeling, improving heart-failure symptoms and outcomes",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "Mineralocorticoid receptor antagonists",
+        "chinese_name": "Mineralocorticoid Receptor Antagonists",
+        "mechanism": "Reduce heart-failure hospitalization and mortality and limit ventricular fibrosis",
+        "approval_status": "Standard heart-failure prescription therapy"
+      },
+      {
+        "drug_name": "SGLT2 inhibitors",
+        "chinese_name": "SGLT2 Inhibitors",
+        "mechanism": "Improve heart-failure outcomes and cardiac function and reduce cardiovascular event risk",
+        "approval_status": "Standard heart-failure prescription therapy"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PLN p.Arg14del and other pathogenic variants; associated with dilated cardiomyopathy and ventricular tachycardia",
+      "population_frequency": "PLN p.Arg14del is more common in some European regions and rarer in other populations; penetrance increases with age (PMID:20301486, PMID:40568962)",
+      "traffic_light_summary": "This is a hereditary cardiomyopathy and screening gene with no drug-gene (PGx) prescribing guideline. Heart-failure medications and ICD decisions are based on cardiac function and arrhythmia risk, not genotype-based dose adjustment. Regular ECG, Holter and cardiac MRI are essential.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Follow a low-salt diet and fluid guidance to avoid worsening heart failure",
+        "Avoid excessive alcohol and unassessed strenuous exercise",
+        "Monitor weight and edema daily and seek early care for chest tightness, syncope or palpitations"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️ Strong cardiomyopathy genetic evidence",
+      "clinvar_summary_chinese": "ClinVar lists PLN p.Arg14del and other pathogenic variants associated with dilated cardiomyopathy, arrhythmogenic cardiomyopathy and ventricular tachycardia",
+      "key_pmids": [
+        "PMID:20301486",
+        "PMID:40568962"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with dilated cardiomyopathy, ventricular tachycardia, young sudden death in the family or a family history of PLN pathogenic variants should have ECG, Holter, echocardiography and cardiac MRI, with cardiology and genetic counseling evaluation.",
+      "lifestyle_tips": [
+        "Keep regular ECG, Holter and cardiac imaging follow-up as directed by the cardiologist",
+        "Follow a low-salt diet, limit alcohol and avoid unassessed strenuous exercise",
+        "Seek early care for chest tightness, syncope, palpitations or rapid weight gain"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Cardiology / Heart Failure Clinic / Arrhythmia Service / Genetic Counseling",
+      "questions": [
+        "My PLN result shows p.Arg14del. How are my heart function and rhythm currently?",
+        "Do I need regular ECG, Holter or cardiac MRI, and how often should I be followed?",
+        "Should I be evaluated for an implantable cardioverter-defibrillator? Should my family also be screened?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Without symptoms, PLN cardiomyopathy does not need follow-up.”",
+      "truth": "Not true. PLN-related cardiomyopathy can cause heart enlargement or ventricular tachycardia before obvious symptoms and may increase sudden death risk. Regular ECG, Holter and cardiac imaging follow-up, with medication and device evaluation when needed, enables earlier intervention."
+    }
+  },
+  "APP": {
+    "gene": {
+      "chinese_name": "APP Gene (Amyloid Beta Precursor Protein)",
+      "chromosome": "21q21.3 (Chromosome 21)",
+      "metaphor": {
+        "title": "🧠 The Neuron's 【Amyloid Raw-Material Factory】",
+        "story": "APP is a normal protein on the nerve cell membrane involved in cell growth and repair. When rare APP pathogenic variants cause it to be cut into too much Aβ42, amyloid accumulates in the brain and causes early-onset familial Alzheimer disease. This differs from ordinary age-related forgetfulness; only a minority of families with clear pathogenic variants inherit the disease, and genetic counseling should come before testing."
+      },
+      "plain_summary": "Rare APP pathogenic variants are an autosomal dominant cause of early-onset familial Alzheimer disease, usually presenting at a younger age. This differs from common age-related forgetfulness or late-onset Alzheimer disease; carrying common APP variants in the general population does not mean a person will develop dementia. Families with multiple young-onset cases should seek neurology and genetic counseling before deciding on predictive testing. Eligibility for the anti-amyloid antibodies lecanemab and donanemab depends on clinical and biomarker assessment, not APP genotype.",
+      "academic_summary": "APP is located at 21q21.3 and encodes amyloid beta precursor protein, which is cleaved by beta- and gamma-secretases to produce Aβ. Rare APP pathogenic variants, mostly in the Aβ sequence or cleavage sites, increase Aβ42 production and aggregation and cause autosomal dominant early-onset Alzheimer disease, whereas common variants are not deterministic. Diagnosis uses clinical assessment, biomarkers and genetic testing; treatment includes anti-amyloid antibodies and symptomatic therapy."
+    },
+    "disease": {
+      "chinese_name": "Early-Onset Familial Alzheimer Disease (Amyloid Precursor Protein APP)",
+      "categories": [
+        "Neurodegenerative Disease",
+        "Early-Onset Dementia",
+        "Autosomal Dominant Inheritance"
+      ],
+      "inheritance_mode": "Autosomal Dominant (Rare Pathogenic Variants)",
+      "severity_badge": "🟠 Rare High-Penetrance Pathogenic Variants; Genetic Counseling Needed"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002511",
+        "name": "Alzheimer disease",
+        "chinese_name": "Alzheimer disease"
+      },
+      {
+        "hpo_id": "HP:0000726",
+        "name": "Dementia",
+        "chinese_name": "Dementia syndrome"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Lecanemab",
+        "chinese_name": "Lecanemab (Leqembi)",
+        "mechanism": "Humanized monoclonal antibody targeting soluble Aβ protofibrils",
+        "approval_status": "FDA / TFDA / NMPA approved for early Alzheimer disease"
+      },
+      {
+        "drug_name": "Donanemab",
+        "chinese_name": "Donanemab (Kisunla)",
+        "mechanism": "Monoclonal antibody targeting N3pG-modified amyloid plaques",
+        "approval_status": "FDA approved for early symptomatic Alzheimer disease"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "Rare APP pathogenic variants in the Aβ sequence or cleavage sites; associated with early-onset familial Alzheimer disease",
+      "population_frequency": "APP pathogenic variants causing early-onset familial Alzheimer disease are rare and account for a minority of all Alzheimer disease; common APP variants are not deterministic (PMID:20301340)",
+      "traffic_light_summary": "This is a rare hereditary disease risk and screening gene with no drug-gene (PGx) prescribing guideline. Eligibility for anti-amyloid antibodies depends on clinical stage, amyloid biomarkers and MRI monitoring, not APP genotype-based prescribing. Genetic counseling is required before predictive testing.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Follow a Mediterranean-style diet, regular aerobic exercise and adequate sleep to support brain and cardiovascular health",
+        "Control blood pressure, glucose and lipids, and avoid smoking and excess alcohol",
+        "If anti-amyloid antibodies are considered, discuss ARIA risk and MRI monitoring with neurology"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Strong genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar lists multiple APP pathogenic variants associated with autosomal dominant early-onset familial Alzheimer disease",
+      "key_pmids": [
+        "PMID:20301340"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Families with multiple members developing dementia before age 65, or with a known APP pathogenic variant, should seek neurology, memory clinic and genetic counseling; general healthy adults should not pursue predictive genetic testing without counseling.",
+      "lifestyle_tips": [
+        "Maintain a Mediterranean-style diet, regular aerobic exercise and adequate sleep to support cognition and cardiovascular health",
+        "Control blood pressure, glucose and lipids, and avoid smoking and excess alcohol",
+        "Stay cognitively and socially engaged, build cognitive reserve and watch for early memory changes"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Neurology / Memory Clinic / Genetic Counseling / Geriatric Medicine",
+      "questions": [
+        "Several relatives developed dementia young. Should I have APP genetic testing, and what genetic counseling is needed first?",
+        "If I carry an APP pathogenic variant, what is my lifetime risk and the chance of passing it to my children?",
+        "Are lecanemab or donanemab appropriate for me, and which biomarkers and MRI monitoring are required?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Carrying an APP variant means certain dementia and certain inheritance by my children.”",
+      "truth": "Not true. Only rare APP pathogenic variants cause autosomal dominant early-onset familial Alzheimer disease; common variants or variants of uncertain significance do not mean a person will develop the disease. Ordinary age-related forgetfulness is different. Inheritance risk and predictive testing decisions should be assessed with genetic counseling and neurology."
+    }
+  },
+  "PSEN1": {
+    "gene": {
+      "chinese_name": "PSEN1 Gene (Presenilin 1)",
+      "chromosome": "14q24.2 (Chromosome 14)",
+      "metaphor": {
+        "title": "✂️ The Gamma-Secretase 【Cleavage Regulator】",
+        "story": "PSEN1 is the core of the gamma-secretase complex that cleaves APP. When rare pathogenic variants shift the cleavage site, the proportion of Aβ42 rises and amyloid accumulates in the brain, causing early-onset familial Alzheimer disease. PSEN1 is the most common cause of this familial dementia, but only clear pathogenic variants carry high penetrance, and genetic counseling is needed before testing."
+      },
+      "plain_summary": "Rare PSEN1 pathogenic variants are the most common autosomal dominant cause of early-onset familial Alzheimer disease, which may present in the 30s to 50s. This differs from common age-related forgetfulness or late-onset Alzheimer disease; variants of uncertain significance do not mean a person will develop the disease. Families with multiple young-onset cases should seek neurology and genetic counseling before predictive testing. Eligibility for lecanemab and donanemab depends on clinical and biomarker assessment.",
+      "academic_summary": "PSEN1 is located at 14q24.2 and encodes presenilin 1, the catalytic core of the gamma-secretase complex. Pathogenic variants alter APP cleavage sites, increase the Aβ42/Aβ40 ratio and amyloid aggregation, and cause highly penetrant autosomal dominant early-onset Alzheimer disease; phenotypes may include memory decline, language and executive dysfunction, myoclonus and seizures."
+    },
+    "disease": {
+      "chinese_name": "Early-Onset Familial Alzheimer Disease (Presenilin PSEN1)",
+      "categories": [
+        "Neurodegenerative Disease",
+        "Early-Onset Dementia",
+        "Autosomal Dominant Inheritance"
+      ],
+      "inheritance_mode": "Autosomal Dominant (Rare Pathogenic Variants)",
+      "severity_badge": "🟠 Rare High-Penetrance Pathogenic Variants; Genetic Counseling Needed"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002511",
+        "name": "Alzheimer disease",
+        "chinese_name": "Alzheimer disease"
+      },
+      {
+        "hpo_id": "HP:0000726",
+        "name": "Dementia",
+        "chinese_name": "Early-onset dementia"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Lecanemab",
+        "chinese_name": "Lecanemab (Leqembi)",
+        "mechanism": "Humanized monoclonal antibody targeting soluble Aβ protofibrils",
+        "approval_status": "FDA / TFDA / NMPA approved for early Alzheimer disease"
+      },
+      {
+        "drug_name": "Donanemab",
+        "chinese_name": "Donanemab (Kisunla)",
+        "mechanism": "Monoclonal antibody targeting N3pG-modified amyloid plaques",
+        "approval_status": "FDA approved for early symptomatic Alzheimer disease"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "Rare PSEN1 pathogenic variants; the most common genetic cause of early-onset familial Alzheimer disease",
+      "population_frequency": "PSEN1 pathogenic variants causing early-onset familial Alzheimer disease are rare but account for a substantial share of familial early-onset cases; penetrance increases with age (PMID:20301340)",
+      "traffic_light_summary": "This is a rare hereditary disease risk and screening gene with no drug-gene (PGx) prescribing guideline. Eligibility for anti-amyloid antibodies depends on clinical stage, amyloid biomarkers and MRI monitoring, not PSEN1 genotype-based prescribing. Genetic counseling is required before predictive testing.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Follow a Mediterranean-style diet, regular aerobic exercise and adequate sleep to support brain and cardiovascular health",
+        "Control blood pressure, glucose and lipids, and avoid smoking and excess alcohol",
+        "If anti-amyloid antibodies are considered, discuss ARIA risk and MRI monitoring with neurology"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ Strong genetic medicine evidence",
+      "clinvar_summary_chinese": "ClinVar lists many PSEN1 pathogenic and likely pathogenic variants associated with autosomal dominant early-onset familial Alzheimer disease",
+      "key_pmids": [
+        "PMID:20301340"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "Families with multiple members developing dementia before age 65, or with a known PSEN1 pathogenic variant, should seek neurology, memory clinic and genetic counseling; general healthy adults should not pursue predictive genetic testing without counseling.",
+      "lifestyle_tips": [
+        "Maintain a Mediterranean-style diet, regular aerobic exercise and adequate sleep to support cognition and cardiovascular health",
+        "Control blood pressure, glucose and lipids, and avoid smoking and excess alcohol",
+        "Stay cognitively and socially engaged, build cognitive reserve and watch for early memory changes"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Neurology / Memory Clinic / Genetic Counseling / Geriatric Medicine",
+      "questions": [
+        "Several relatives developed dementia young. Should I have PSEN1 genetic testing, and what genetic counseling is needed first?",
+        "If I carry a PSEN1 pathogenic variant, what is my lifetime risk and the chance of passing it to my children?",
+        "Are lecanemab or donanemab appropriate for me, and which biomarkers and MRI monitoring are required?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“A PSEN1 variant of uncertain significance means certain early-onset dementia.”",
+      "truth": "Not true. Only clear PSEN1 pathogenic or likely pathogenic variants carry high penetrance; variants of uncertain significance (VUS) are not a diagnosis. Evaluation of familial early-onset dementia requires neurology, genetic counseling and family history review, and results should not be self-interpreted or cause excessive anxiety."
+    }
+  },
+  "LRRK2": {
+    "gene": {
+      "chinese_name": "LRRK2 Gene (Leucine-Rich Repeat Kinase 2)",
+      "chromosome": "12q12 (Chromosome 12)",
+      "metaphor": {
+        "title": "🚦 The Nerve Cell's 【Traffic Signal Regulator】",
+        "story": "LRRK2 participates in nerve cell signaling and clearance of cellular waste. p.Gly2019Ser and the East Asian p.Gly2385Arg variant tilt the signal balance slightly, increasing Parkinson disease susceptibility, but they do not press a disease switch. Most carriers never develop Parkinson disease; age, environment and other genes jointly determine risk."
+      },
+      "plain_summary": "LRRK2 p.Gly2019Ser and the East Asian p.Gly2385Arg variant are genetic susceptibility factors for Parkinson disease. They are incompletely penetrant risk variants, not a rare single-gene disease. Carriers do not necessarily develop Parkinson disease, and most remain unaffected for life; risk is shaped by age, environmental exposure, other genes and lifestyle. Knowing carrier status can help with awareness of early symptoms and research participation, but does not warrant excessive anxiety.",
+      "academic_summary": "LRRK2 is located at 12q12 and encodes leucine-rich repeat kinase 2, which participates in membrane trafficking, autophagy and immune signaling. p.Gly2019Ser increases kinase activity and is associated with autosomal dominant Parkinson disease, but penetrance is incomplete and age-dependent; the East Asian p.Gly2385Arg variant is a lower-effect risk variant. Diagnosis relies on clinical motor symptoms with imaging support, and treatment is standard dopaminergic replacement."
+    },
+    "disease": {
+      "chinese_name": "LRRK2-Related Parkinson Disease Genetic Susceptibility",
+      "categories": [
+        "Neurodegenerative Disease",
+        "Parkinson Disease",
+        "Complex Genetic Susceptibility"
+      ],
+      "inheritance_mode": "Autosomal Dominant (Incomplete Penetrance)",
+      "severity_badge": "🟡 Risk Variant, Not a Deterministic Disease"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001300",
+        "name": "Parkinsonism",
+        "chinese_name": "Parkinsonism"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Levodopa/carbidopa",
+        "chinese_name": "Levodopa/Carbidopa",
+        "mechanism": "Replenishes dopamine precursor to improve motor symptoms; not dosed by LRRK2 genotype",
+        "approval_status": "Standard symptomatic therapy for Parkinson disease"
+      },
+      {
+        "drug_name": "Dopamine agonists",
+        "chinese_name": "Dopamine Agonists",
+        "mechanism": "Directly stimulate dopamine receptors as a symptomatic treatment option",
+        "approval_status": "Standard prescription therapy after specialist evaluation"
+      },
+      {
+        "drug_name": "LRRK2 inhibitors (investigational)",
+        "chinese_name": "LRRK2 Inhibitors (Investigational)",
+        "mechanism": "Target LRRK2 kinase activity and are still being evaluated in clinical trials",
+        "approval_status": "Clinical trial agent; not routinely approved"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "LRRK2 p.Gly2019Ser and the East Asian p.Gly2385Arg variant; incompletely penetrant Parkinson disease risk variants",
+      "population_frequency": "p.Gly2019Ser is more common in some populations and p.Gly2385Arg is more common in East Asians; most carriers never develop Parkinson disease (PMID:20301387)",
+      "traffic_light_summary": "This is a neurodegenerative disease risk and screening gene with no drug-gene (PGx) prescribing guideline. Parkinson disease medications are chosen by clinical symptoms, not LRRK2 genotype-based dose adjustment. Being a carrier is not the same as having the disease and should not be over-interpreted.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "Maintain regular exercise and balanced meals to support neurological and cardiovascular health",
+        "Reduce pesticide, heavy metal and other environmental exposures, and use proper workplace protection",
+        "Seek medical evaluation for slowness, tremor, rigidity or gait changes"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️ Clear susceptibility evidence with incomplete penetrance",
+      "clinvar_summary_chinese": "ClinVar lists LRRK2 risk and pathogenic variants associated with autosomal dominant but incompletely penetrant Parkinson disease",
+      "key_pmids": [
+        "PMID:20301387"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with early-onset Parkinson disease, a family history or multiple affected relatives may discuss LRRK2 genetic testing and counseling with neurology; asymptomatic individuals should not self-test or self-interpret risk variants.",
+      "lifestyle_tips": [
+        "Maintain regular aerobic exercise, strength training and balanced meals to support neurological and general health",
+        "Reduce pesticide, solvent and heavy metal exposure, and use proper protection at work",
+        "Watch for slowness, tremor, rigidity, reduced smell or constipation, and seek care when needed"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Neurology / Movement Disorders / Genetic Counseling",
+      "questions": [
+        "I carry LRRK2 p.Gly2019Ser or p.Gly2385Arg. Does that mean I will definitely develop Parkinson disease?",
+        "Do I need regular neurological examinations or imaging follow-up?",
+        "Which medications or clinical trials are suitable for LRRK2-related Parkinson disease?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Carrying LRRK2 p.Gly2019Ser or p.Gly2385Arg means certain Parkinson disease.”",
+      "truth": "Not true. LRRK2 risk variants are incompletely penetrant, and most carriers never develop Parkinson disease. Whether disease occurs is shaped by age, environment, other genes and lifestyle; the result can raise awareness of early symptoms but is not a disease verdict."
+    }
+  },
+  "HLA-DQB1": {
+    "gene": {
+      "chinese_name": "HLA-DQB1 Gene (HLA-DQ2 / DQ8 Celiac Susceptibility)",
+      "chromosome": "6p21.32 (Chromosome 6)",
+      "metaphor": {
+        "title": "🚪 The Immune System's 【Gluten Recognition Doorbell】",
+        "story": "HLA-DQB1 produces recognition molecules on immune cells, like a doorbell that presents gluten fragments to T cells. People with HLA-DQ2 or DQ8 are more likely to have the immune system mistake gluten for a threat, increasing celiac disease susceptibility; but a ringing doorbell does not mean disease, and roughly 30 to 40 percent of healthy people carry these types. Diagnosis still requires serology and small-bowel biopsy, and treatment is a gluten-free diet."
+      },
+      "plain_summary": "The HLA-DQ2 and HLA-DQ8 types of HLA-DQB1 are the strongest autoimmune susceptibility factors for celiac disease, but they are common human genotypes, not the disease itself. Roughly 30 to 40 percent of healthy people carry DQ2 or DQ8 without having celiac disease; these types have a very high negative predictive value, so celiac disease is unlikely without them. Diagnosis requires serology such as tissue transglutaminase antibodies and a small-bowel biopsy, and confirmed disease is managed with a gluten-free diet.",
+      "academic_summary": "HLA-DQB1 is located at 6p21.32 and pairs with HLA-DQA1 to form DQ heterodimers. HLA-DQ2.5 (DQA1*05-DQB1*02), DQ2.2 and DQ8 (DQA1*03-DQB1*0302) present deamidated gluten peptides to CD4+ T cells and trigger small-bowel mucosal inflammation. DQ2/DQ8 have high sensitivity and high negative predictive value for celiac disease but low penetrance; diagnosis relies on serology and duodenal biopsy."
+    },
+    "disease": {
+      "chinese_name": "Celiac Disease and Gluten Sensitivity Autoimmune Susceptibility (HLA-DQ2 / DQ8)",
+      "categories": [
+        "Autoimmune Disease",
+        "Gluten Sensitivity",
+        "Polygenic Susceptibility"
+      ],
+      "inheritance_mode": "Complex / Polygenic Susceptibility (HLA-Associated)",
+      "severity_badge": "🟡 Common Susceptibility Genotype, Not a Disease Diagnosis"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002608",
+        "name": "Celiac disease",
+        "chinese_name": "Celiac disease"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Gluten-free diet",
+        "chinese_name": "Gluten-Free Diet",
+        "mechanism": "Lifelong avoidance of wheat, barley and rye gluten allows small-bowel mucosal healing; this is standard celiac treatment",
+        "approval_status": "Standard dietary treatment (non-drug)"
+      },
+      {
+        "drug_name": "Nutritional counseling & micronutrient monitoring",
+        "chinese_name": "Nutritional Counseling and Micronutrient Monitoring",
+        "mechanism": "Assesses iron, folate, calcium and fat-soluble vitamins to support nutritional balance on a gluten-free diet",
+        "approval_status": "Dietitian and specialist follow-up"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "HLA-DQ2 (DQA1*05-DQB1*02) and HLA-DQ8 (DQA1*03-DQB1*0302); celiac susceptibility genotypes",
+      "population_frequency": "Roughly 30 to 40 percent of healthy people carry HLA-DQ2 or DQ8, but only a minority develop celiac disease; negative predictive value is high (PMID:20301720)",
+      "traffic_light_summary": "This is an autoimmune susceptibility and screening gene with no drug-gene (PGx) prescribing guideline. A gluten-free diet is started after serology and biopsy confirmation, not directly from genotype. Carrying DQ2/DQ8 is not the same as having celiac disease.",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "After diagnosis, follow a lifelong gluten-free diet and avoid wheat, barley, rye and cross-contamination",
+        "Do not start a gluten-free diet solely because you carry DQ2/DQ8, as this can interfere with diagnosis",
+        "After diagnosis, monitor serology, nutritional status and small-bowel mucosal healing regularly"
+      ]
+    },
+    "evidence": {
+      "plain_rating": "⭐️⭐️⭐️ Clear susceptibility evidence with low penetrance",
+      "clinvar_summary_chinese": "HLA-DQ2/DQ8 are celiac susceptibility genotypes, not single high-penetrance pathogenic variants; diagnosis still requires serology and biopsy",
+      "key_pmids": [
+        "PMID:20301720"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "People with chronic diarrhea, bloating, weight loss, iron-deficiency anemia, dermatitis herpetiformis or a family history of celiac disease should have tissue transglutaminase antibodies (tTG-IgA) and total IgA tested; gastroenterology may arrange duodenal biopsy when needed.",
+      "lifestyle_tips": [
+        "After diagnosis, follow a lifelong gluten-free diet with dietitian guidance and avoid cross-contamination",
+        "Monitor serology, iron and folate, calcium and fat-soluble vitamin status regularly",
+        "When eating out, confirm ingredients and cooking methods, and choose labeled gluten-free products when needed"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "Gastroenterology & Hepatology / Pediatric Gastroenterology / Nutrition Counseling / Genetic Counseling",
+      "questions": [
+        "I carry HLA-DQ2 or DQ8. Does that mean I definitely have celiac disease?",
+        "Do I need tissue transglutaminase antibodies, total IgA or a small-bowel biopsy?",
+        "If celiac disease is confirmed, how should I start a gluten-free diet, and which nutrients should I monitor?"
+      ]
+    },
+    "myth_buster": {
+      "myth": "“Carrying HLA-DQ2 or DQ8 means certain celiac disease, so I should start a gluten-free diet immediately.”",
+      "truth": "Not true. Roughly 30 to 40 percent of healthy people carry DQ2 or DQ8 without celiac disease; these genotypes have high negative predictive value but are not a diagnosis. Diagnosis requires serology and small-bowel biopsy, and lifelong gluten-free eating starts only after confirmation. Self-restricting gluten can cause nutritional imbalance and interfere with testing."
     }
   }
 };

@@ -9,12 +9,12 @@ export const UI_EN = {
   heroTitle1: 'Got a Genetic Report?',
   heroTitle2: 'Don’t Panic—Let’s Decode It Together.',
   heroLead:
-    'Plain-language metaphors, PGx drug traffic lights, local PII-scrubbed report decoding, personal medication safety passports, and Mendelian simulation across 121 curated genes (100% of ACMG SF v3.2 + CPIC PGx).',
+    'Plain-language metaphors, PGx drug traffic lights, local PII-scrubbed report decoding, personal medication safety passports, and Mendelian simulation across 128 curated genes (100% of ACMG SF v3.3 + CPIC PGx).',
   statGenes: 'Curated Genes',
   statPrivacy: 'Local PII Scrub',
   statLights: 'PGx Traffic Lights',
   statHallucination: 'Speculative Claims',
-  loadingText: 'Loading curated 121-gene knowledge base…',
+  loadingText: 'Loading curated 128-gene knowledge base…',
   footerDisclaimer:
     '⚠️ DecodeGene is for health education and research reference only and does not replace professional medical advice or clinical genetic counseling.',
   footerMeta:
