@@ -1,18 +1,18 @@
-import { useMemo, useState } from 'react';
-import { calculateInheritance } from '../services/localEngine';
+import { useEffect, useMemo, useState } from 'react';
+import { calculateInheritance, inferInheritancePattern } from '../services/localEngine';
 
 const PATTERNS_BY_LANG = {
   'zh-TW': [
     { id: 'AD', title: '體染色體顯性 AD', short: '一個致病等位基因即可致病', example: 'BRCA1 · TP53' },
-    { id: 'AR', title: '體染色體隱性 AR', short: '雙份致病等位基因才致病', example: 'MTHFR · 多數代謝病' },
-    { id: 'XD', title: 'X 連鎖顯性 XD', short: 'X 染色體上的顯性致病基因', example: '部分 X 連鎖症候群' },
-    { id: 'XR', title: 'X 連鎖隱性 XR', short: '男性更易發病，女性多為攜帶者', example: 'G6PD 蠶豆症' },
+    { id: 'AR', title: '體染色體隱性 AR', short: '雙份致病等位基因才致病', example: 'MUTYH · GAA · BTD' },
+    { id: 'XD', title: 'X 連鎖顯性 XD', short: 'X 染色體上的顯性／不完全顯性基因', example: 'G6PD（不完全顯性）' },
+    { id: 'XR', title: 'X 連鎖隱性 XR', short: '男性更易發病，女性多為攜帶者', example: 'OTC · ABCD1 · GLA' },
   ],
   en: [
     { id: 'AD', title: 'Autosomal Dominant (AD)', short: 'One pathogenic allele can cause disease', example: 'BRCA1 · TP53' },
-    { id: 'AR', title: 'Autosomal Recessive (AR)', short: 'Two pathogenic alleles required for disease', example: 'MTHFR · Metabolic disorders' },
-    { id: 'XD', title: 'X-Linked Dominant (XD)', short: 'Dominant variant on the X chromosome', example: 'X-linked dominant syndromes' },
-    { id: 'XR', title: 'X-Linked Recessive (XR)', short: 'Males more often affected; females often carriers', example: 'G6PD Favism' },
+    { id: 'AR', title: 'Autosomal Recessive (AR)', short: 'Two pathogenic alleles required for disease', example: 'MUTYH · GAA · BTD' },
+    { id: 'XD', title: 'X-Linked Dominant (XD)', short: 'Dominant / incomplete dominant X-linked gene', example: 'G6PD (Incomplete dominant)' },
+    { id: 'XR', title: 'X-Linked Recessive (XR)', short: 'Males more often affected; females often carriers', example: 'OTC · ABCD1 · GLA' },
   ],
 };
 
@@ -48,10 +48,21 @@ function RiskBar({ label, value, tone }) {
   );
 }
 
-export default function FamilySimulator({ lang = 'zh-TW' }) {
-  const [pattern, setPattern] = useState('AD');
+export default function FamilySimulator({ activeRecord = null, lang = 'zh-TW' }) {
+  const inferredPattern = useMemo(
+    () => inferInheritancePattern(activeRecord?.disease?.inheritance_mode),
+    [activeRecord]
+  );
+
+  const [pattern, setPattern] = useState(inferredPattern || 'AD');
   const [fatherStatus, setFatherStatus] = useState('affected');
   const [motherStatus, setMotherStatus] = useState('unaffected');
+
+  useEffect(() => {
+    if (inferredPattern) {
+      setPattern(inferredPattern);
+    }
+  }, [activeRecord?.gene?.symbol, inferredPattern]);
 
   const result = useMemo(
     () =>
@@ -66,6 +77,7 @@ export default function FamilySimulator({ lang = 'zh-TW' }) {
   const statusOptions = STATUS_OPTIONS_BY_LANG[lang] || STATUS_OPTIONS_BY_LANG['zh-TW'];
   const riskLabels = RISK_LABELS_BY_LANG[lang] || RISK_LABELS_BY_LANG['zh-TW'];
   const isEn = lang === 'en';
+  const activeSymbol = activeRecord?.gene?.symbol;
 
   return (
     <section className="card simulator-card" id="family-simulator">
@@ -80,6 +92,33 @@ export default function FamilySimulator({ lang = 'zh-TW' }) {
           ? 'Select an inheritance pattern and parental statuses to calculate expected child affected, carrier, and unaffected probabilities in real time (X-linked patterns are weighted 50/50 across sexes).'
           : '選擇遺傳模式與父母狀態，即時查看下一代的患病、攜帶與完全不受影響機率。X 連鎖模式已按男女各 50% 出生機率加權。'}
       </p>
+
+      {activeSymbol ? (
+        <div className={`sync-banner${inferredPattern ? ' synced' : ' advisory'}`}>
+          {inferredPattern ? (
+            isEn ? (
+              <>
+                🔗 Auto-synced with current gene <strong>{activeSymbol}</strong> ({activeRecord.disease?.inheritance_mode}) →{' '}
+                <code>{inferredPattern}</code>
+              </>
+            ) : (
+              <>
+                🔗 已連動目前瀏覽基因 <strong>{activeSymbol}</strong>（{activeRecord.disease?.inheritance_mode}）→ 自動切換為{' '}
+                <code>{inferredPattern}</code> 模式
+              </>
+            )
+          ) : isEn ? (
+            <>
+              ℹ️ Current gene <strong>{activeSymbol}</strong> is{' '}
+              <em>{activeRecord.disease?.inheritance_mode}</em>, which does not follow simple single-gene Mendelian ratios. Manual simulator remains active below.
+            </>
+          ) : (
+            <>
+              ℹ️ 目前基因 <strong>{activeSymbol}</strong> 屬於「{activeRecord.disease?.inheritance_mode}」，不適用單基因孟德爾固定機率（以下模擬器保留自由演算）。
+            </>
+          )}
+        </div>
+      ) : null}
 
       <div className="pattern-grid">
         {patterns.map((item) => (

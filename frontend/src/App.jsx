@@ -67,15 +67,32 @@ function SimpleGuide({ lang }) {
 }
 
 
+function readInitialParams() {
+  if (typeof window === 'undefined') {
+    return { gene: 'BRCA1', mode: 'simple', lang: 'zh-TW' };
+  }
+  const params = new URLSearchParams(window.location.search);
+  const rawLang = params.get('lang');
+  const rawMode = params.get('mode');
+  const rawGene = params.get('gene');
+  return {
+    lang: rawLang === 'en' || rawLang === 'zh-TW' ? rawLang : 'zh-TW',
+    mode: rawMode === 'pro' || rawMode === 'simple' ? rawMode : 'simple',
+    gene: rawGene ? rawGene.trim().toUpperCase() : 'BRCA1',
+  };
+}
+
 export default function App() {
-  const [lang, setLang] = useState('zh-TW');
-  const [mode, setMode] = useState('simple');
+  const initial = useMemo(() => readInitialParams(), []);
+  const [lang, setLang] = useState(initial.lang);
+  const [mode, setMode] = useState(initial.mode);
   const [genes, setGenes] = useState([]);
   const [enRecords, setEnRecords] = useState({});
   const [source, setSource] = useState('loading');
-  const [activeSymbol, setActiveSymbol] = useState('BRCA1');
+  const [activeSymbol, setActiveSymbol] = useState(initial.gene);
   const [query, setQuery] = useState('');
   const [checklistOpen, setChecklistOpen] = useState(false);
+  const [linkCopied, setLinkCopied] = useState(false);
 
   useEffect(() => {
     let mounted = true;
@@ -83,14 +100,38 @@ export default function App() {
       if (!mounted) return;
       setGenes(loaded);
       setSource(loadedSource);
-      if (loaded.length && !loaded.some((record) => record.gene.symbol === 'BRCA1')) {
-        setActiveSymbol(loaded[0].gene.symbol);
+      if (loaded.length) {
+        const matched = loaded.find(
+          (record) => record.gene.symbol.toUpperCase() === initial.gene.toUpperCase()
+        );
+        setActiveSymbol(matched ? matched.gene.symbol : loaded[0].gene.symbol);
       }
     });
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [initial.gene]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !activeSymbol) return;
+    const params = new URLSearchParams(window.location.search);
+    params.set('gene', activeSymbol);
+    params.set('mode', mode);
+    params.set('lang', lang);
+    const nextUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
+    window.history.replaceState(null, '', nextUrl);
+  }, [activeSymbol, mode, lang]);
+
+  const handleCopyShareLink = async () => {
+    if (typeof window === 'undefined') return;
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setLinkCopied(true);
+      setTimeout(() => setLinkCopied(false), 2000);
+    } catch {
+      setLinkCopied(false);
+    }
+  };
 
   useEffect(() => {
     if (lang !== 'en' || Object.keys(enRecords).length > 0) return;
@@ -165,6 +206,21 @@ export default function App() {
               English
             </button>
           </div>
+
+          <button
+            type="button"
+            className={`share-button${linkCopied ? ' copied' : ''}`}
+            onClick={handleCopyShareLink}
+            title={lang === 'en' ? 'Copy direct link to current gene' : '複製此基因直達連結'}
+          >
+            {linkCopied
+              ? lang === 'en'
+                ? '✅ Link Copied'
+                : '✅ 已複製連結'
+              : lang === 'en'
+                ? '🔗 Share'
+                : '🔗 分享連結'}
+          </button>
 
           <span className={`source-badge source-${source}`}>
             {source === DATA_SOURCE.BACKEND
@@ -244,7 +300,7 @@ export default function App() {
             </div>
 
             <ReportDecoder genes={localizedGenes} lang={lang} />
-            <FamilySimulator lang={lang} />
+            <FamilySimulator activeRecord={activeRecord} lang={lang} />
             <MythBusterSection
               genes={localizedGenes}
               activeSymbol={activeRecord.gene.symbol}

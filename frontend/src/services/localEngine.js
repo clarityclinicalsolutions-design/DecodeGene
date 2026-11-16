@@ -899,3 +899,55 @@ export function searchGenes(records, query) {
 
   return results.sort((a, b) => b.score - a.score);
 }
+
+export function inferInheritancePattern(inheritanceMode) {
+  const raw = String(inheritanceMode || '').trim();
+  if (!raw) return null;
+  if (/體細胞|somatic|複雜|多基因|complex|共顯性|codominant/i.test(raw)) {
+    return null;
+  }
+  if (/x[\s-]*(?:linked|連鎖).*(?:dominant|顯性|不完全顯性)/i.test(raw)) {
+    return 'XD';
+  }
+  if (/x[\s-]*(?:linked|連鎖)/i.test(raw)) {
+    return 'XR';
+  }
+  if (/體染色體顯性|autosomal\s+dominant|\(ad\)|（ad）/i.test(raw)) {
+    return 'AD';
+  }
+  if (/體染色體隱性|autosomal\s+recessive|\(ar\)|（ar）/i.test(raw)) {
+    return 'AR';
+  }
+  return null;
+}
+
+export function extractRelevantLinesForUpload(rawFileText, records = demoData, maxChars = 8000) {
+  const text = String(rawFileText || '');
+  if (text.length <= maxChars) return text;
+
+  const knownSet = new Set(deriveKnownGenes(records));
+  const curatedRsids = new Set();
+  records.forEach((rec) => {
+    const matches = String(rec?.pharmacogenomics?.key_variant || '').match(/rs\d+/gi) || [];
+    matches.forEach((rs) => curatedRsids.add(rs.toLowerCase()));
+  });
+
+  const geneRe = buildGeneRegex([...knownSet]);
+  const kept = [];
+  let total = 0;
+
+  for (const line of text.split(/\r?\n/)) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const rsidMatch = trimmed.match(/rs\d+/gi);
+    const hasCuratedRsid = rsidMatch && rsidMatch.some((rs) => curatedRsids.has(rs.toLowerCase()));
+    const hasKnownGene = geneRe.test(trimmed);
+    geneRe.lastIndex = 0;
+    if (!hasCuratedRsid && !hasKnownGene) continue;
+    if (total + trimmed.length + 1 > maxChars) break;
+    kept.push(trimmed);
+    total += trimmed.length + 1;
+  }
+
+  return kept.length ? kept.join('\n') : text.slice(0, maxChars);
+}

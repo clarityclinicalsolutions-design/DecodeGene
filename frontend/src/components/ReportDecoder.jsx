@@ -1,9 +1,10 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { decodeReport } from '../services/apiClient';
 import {
   buildPgxPassport,
   buildSingleGeneInterpretation,
   CircuitBreakerError,
+  extractRelevantLinesForUpload,
   findAllMatchedRecords,
 } from '../services/localEngine';
 
@@ -214,8 +215,31 @@ export default function ReportDecoder({ genes, lang = 'zh-TW' }) {
   const [result, setResult] = useState(null);
   const [selectedGeneTab, setSelectedGeneTab] = useState('');
   const [quickSelected, setQuickSelected] = useState([]);
+  const [uploadNote, setUploadNote] = useState('');
+  const [isDragging, setIsDragging] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const fileInputRef = useRef(null);
+
+  const handleReportFile = async (file) => {
+    if (!file) return;
+    setUploadNote('');
+    try {
+      // Only read up to 2 MB locally in-browser so large DNA dumps stay fast and private.
+      const slice = file.size > 2 * 1024 * 1024 ? file.slice(0, 2 * 1024 * 1024) : file;
+      const rawFileText = await slice.text();
+      const extracted = extractRelevantLinesForUpload(rawFileText, genes, 8000);
+      setRawText(extracted);
+      setUploadNote(
+        isEn
+          ? `Loaded locally from "${file.name}" (${extracted.length.toLocaleString()} chars scanned offline—zero server upload).`
+          : `已於本機瀏覽器讀取「${file.name}」（截取相關位點 ${extracted.length.toLocaleString()} 字元，完全未上傳伺服器）。`
+      );
+      await runDecode(extracted);
+    } catch {
+      setError(isEn ? 'Could not read that file as plain text.' : '無法以純文字格式讀取該檔案，請改貼文本內容。');
+    }
+  };
 
   const runDecode = async (text = rawText) => {
     setLoading(true);
@@ -316,6 +340,47 @@ export default function ReportDecoder({ genes, lang = 'zh-TW' }) {
         ))}
       </div>
 
+      <div
+        className={`upload-dropzone${isDragging ? ' dragging' : ''}`}
+        onDragOver={(event) => {
+          event.preventDefault();
+          setIsDragging(true);
+        }}
+        onDragLeave={() => setIsDragging(false)}
+        onDrop={(event) => {
+          event.preventDefault();
+          setIsDragging(false);
+          const dropped = event.dataTransfer?.files?.[0];
+          if (dropped) handleReportFile(dropped);
+        }}
+      >
+        <span>
+          {uploadNote
+            ? uploadNote
+            : isEn
+              ? '📁 Drag & drop or choose a .txt / .csv / .tsv report file (parsed 100% locally in your browser)'
+              : '📁 拖曳或選擇本機 .txt / .csv / .tsv 報告或原始 DNA 文字檔（100% 於瀏覽器端掃描，不上傳伺服器）'}
+        </span>
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept=".txt,.csv,.tsv,.log,text/plain,text/csv"
+          hidden
+          onChange={(event) => {
+            const picked = event.target.files?.[0];
+            if (picked) handleReportFile(picked);
+            event.target.value = '';
+          }}
+        />
+        <button
+          type="button"
+          className="sample-button"
+          onClick={() => fileInputRef.current?.click()}
+        >
+          {isEn ? 'Choose Local File' : '選擇本機檔案'}
+        </button>
+      </div>
+
       <label className="field-label" htmlFor="report-input">
         {isEn ? 'Paste Raw Genetic Report Text (Single or Multi-Gene)' : '貼上原始基因檢測報告文本（支援單基因或多基因報告）'}
       </label>
@@ -352,6 +417,7 @@ export default function ReportDecoder({ genes, lang = 'zh-TW' }) {
           className="ghost-button"
           onClick={() => {
             setRawText('');
+            setUploadNote('');
             setResult(null);
             setError('');
           }}
