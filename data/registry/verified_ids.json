@@ -1392,5 +1392,190 @@
       "disease": "https://monarchinitiative.org/MONDO:0017990"
     },
     "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "ABCG2",
+    "ensembl_id": "ENSG00000118777",
+    "entrez_id": "9429",
+    "disease_id": "MONDO:0005393",
+    "disease_label": "Gout",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000118777",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/9429",
+      "disease": "https://monarchinitiative.org/MONDO:0005393"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "CYP2B6",
+    "ensembl_id": "ENSG00000197408",
+    "entrez_id": "1555",
+    "disease_id": "MESH:D064420",
+    "disease_label": "Drug-Related Side Effects and Adverse Reactions",
+    "mesh_tree_number": "C25.100",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000197408",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1555",
+      "disease": "https://id.nlm.nih.gov/mesh/D064420.json"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "CYP4F2",
+    "ensembl_id": "ENSG00000186115",
+    "entrez_id": "8529",
+    "disease_id": "MESH:D064420",
+    "disease_label": "Drug-Related Side Effects and Adverse Reactions",
+    "mesh_tree_number": "C25.100",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000186115",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/8529",
+      "disease": "https://id.nlm.nih.gov/mesh/D064420.json"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "HLA-A",
+    "ensembl_id": "ENSG00000206503",
+    "entrez_id": "3105",
+    "disease_id": "MONDO:0018229",
+    "disease_label": "Stevens-Johnson syndrome",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000206503",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/3105",
+      "disease": "https://monarchinitiative.org/MONDO:0018229"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "IFNL3",
+    "ensembl_id": "ENSG00000197110",
+    "entrez_id": "282617",
+    "disease_id": "MONDO:0005354",
+    "disease_label": "Chronic hepatitis C virus infection",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000197110",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/282617",
+      "disease": "https://monarchinitiative.org/MONDO:0005354"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "NAT2",
+    "ensembl_id": "ENSG00000156006",
+    "entrez_id": "10",
+    "disease_id": "MONDO:0005359",
+    "disease_label": "Drug-induced liver injury",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000156006",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/10",
+      "disease": "https://monarchinitiative.org/MONDO:0005359"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "CYP2C8",
+    "ensembl_id": "ENSG00000138115",
+    "entrez_id": "1558",
+    "disease_id": "MESH:D064420",
+    "disease_label": "Drug-Related Side Effects and Adverse Reactions",
+    "mesh_tree_number": "C25.100",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000138115",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1558",
+      "disease": "https://id.nlm.nih.gov/mesh/D064420.json"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "SOD2",
+    "ensembl_id": "ENSG00000291237",
+    "entrez_id": "6648",
+    "disease_id": "MONDO:0005021",
+    "disease_label": "Dilated cardiomyopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000291237",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/6648",
+      "disease": "https://monarchinitiative.org/MONDO:0005021"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "COMT",
+    "ensembl_id": "ENSG00000093010",
+    "entrez_id": "1312",
+    "disease_id": "MONDO:0005618",
+    "disease_label": "Anxiety disorder",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000093010",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/1312",
+      "disease": "https://monarchinitiative.org/MONDO:0005618"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "PPARG",
+    "ensembl_id": "ENSG00000132170",
+    "entrez_id": "5468",
+    "disease_id": "MONDO:0005148",
+    "disease_label": "Type 2 diabetes mellitus",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000132170",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/5468",
+      "disease": "https://monarchinitiative.org/MONDO:0005148"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "VDR",
+    "ensembl_id": "ENSG00000111424",
+    "entrez_id": "7421",
+    "disease_id": "MONDO:0005298",
+    "disease_label": "Osteoporosis",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000111424",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/7421",
+      "disease": "https://monarchinitiative.org/MONDO:0005298"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "ACTN3",
+    "ensembl_id": "ENSG00000248746",
+    "entrez_id": "89",
+    "disease_id": "MONDO:0005570",
+    "disease_label": "Myopathy",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000248746",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/89",
+      "disease": "https://monarchinitiative.org/MONDO:0005570"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "BDNF",
+    "ensembl_id": "ENSG00000176697",
+    "entrez_id": "627",
+    "disease_id": "MONDO:0002009",
+    "disease_label": "Major depressive disorder",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000176697",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/627",
+      "disease": "https://monarchinitiative.org/MONDO:0002009"
+    },
+    "verified_on": "2026-11-16"
+  },
+  {
+    "symbol": "MC1R",
+    "ensembl_id": "ENSG00000258839",
+    "entrez_id": "4157",
+    "disease_id": "MONDO:0005105",
+    "disease_label": "Melanoma",
+    "sources": {
+      "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000258839",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/4157",
+      "disease": "https://monarchinitiative.org/MONDO:0005105"
+    },
+    "verified_on": "2026-11-16"
   }
 ]

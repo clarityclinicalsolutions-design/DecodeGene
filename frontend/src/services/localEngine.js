@@ -681,6 +681,20 @@ const SEARCH_SYNONYMS = {
   CALM1: '鈣調蛋白 1 钙调蛋白 1 鈣調蛋白 钙调蛋白 長 QT 症候群 长 QT 综合征 QT 間期延長 QT 间期延长 兒茶酚胺敏感性多形性室性心搏過速 儿茶酚胺敏感性多形性室性心动过速 心室頻脈 心室心动过速 CPVT CALM1 calmodulin 1 calmodulin long QT syndrome catecholaminergic polymorphic ventricular tachycardia flecainide beta blocker',
   CALM2: '鈣調蛋白 2 钙调蛋白 2 鈣調蛋白 钙调蛋白 長 QT 症候群 长 QT 综合征 QT 間期延長 QT 间期延长 暈厥 晕厥 兒茶酚胺敏感性多形性室性心搏過速 儿茶酚胺敏感性多形性室性心动过速 CPVT CALM2 calmodulin 2 calmodulin long QT syndrome catecholaminergic polymorphic ventricular tachycardia flecainide beta blocker',
   CALM3: '鈣調蛋白 3 钙调蛋白 3 鈣調蛋白 钙调蛋白 長 QT 症候群 长 QT 综合征 QT 間期延長 QT 间期延长 心因性猝死 猝死 兒茶酚胺敏感性多形性室性心搏過速 儿茶酚胺敏感性多形性室性心动过速 CPVT CALM3 calmodulin 3 calmodulin long QT syndrome sudden cardiac death catecholaminergic polymorphic ventricular tachycardia flecainide beta blocker',
+  ABCG2: '乳癌抗藥蛋白 乳腺癌耐药蛋白 藥物外排轉運蛋白 药物外排转运蛋白 痛風 痛风 高尿酸血症 瑞舒伐他汀 別嘌醇 别嘌醇 他汀 ABCG2 BCRP rosuvastatin allopurinol gout hyperuricemia statin',
+  CYP2B6: '細胞色素 P450 2B6 细胞色素 P450 2B6 依法韋侖 依法韦仑 依法韦伦 美沙冬 美沙酮 安非他酮 中樞神經毒性 中枢神经毒性 CYP2B6 efavirenz methadone bupropion dolutegravir bictegravir antiretroviral',
+  CYP4F2: '細胞色素 P450 4F2 细胞色素 P450 4F2 維生素 K 维生素 K 華法林 华法林 抗凝血 CYP4F2 CYP4F2*3 warfarin vitamin K apixaban rivaroxaban DOAC',
+  'HLA-A': '人類白血球抗原 A 人类白细胞抗原 A 卡馬西平 卡马西平 奥卡西平 奧卡西平 史蒂芬強生症候群 史蒂文斯-约翰逊综合征 毒性表皮壞死溶解症 藥物過敏 药物过敏 嚴重皮膚不良反應 HLA-A HLA-A*31:01 carbamazepine oxcarbazepine Stevens-Johnson SJS DRESS levetiracetam',
+  IFNL3: '干擾素 λ3 干扰素 λ3 干擾素 干扰素 C 型肝炎 丙型肝炎 C型肝炎 雷巴威林 雷巴韦林 IFNL3 IL28B rs12979860 rs8099917 hepatitis C interferon ribavirin direct-acting antiviral DAA',
+  NAT2: 'N-乙醯轉移酶 2 N-乙酰转移酶 2 乙醯化 乙酰化 慢乙醯化 慢乙酰化 異煙肼 异烟肼 抗結核 抗结核 藥物性肝損傷 药物性肝损伤 NAT2 isoniazid hydralazine sulfasalazine tuberculosis drug-induced liver injury',
+  CYP2C8: '細胞色素 P450 2C8 细胞色素 P450 2C8 布洛芬 吡格列酮 紫杉醇 萘普生 消炎止痛藥 消炎止痛药 CYP2C8 CYP2C8*3 ibuprofen pioglitazone paclitaxel naproxen acetaminophen',
+  SOD2: '抗氧化 氧化壓力 氧化压力 抗氧化基因 粒線體 粒线体 超氧化物歧化酶 SOD2 superoxide dismutase oxidative stress rs4880',
+  COMT: '戰士基因 战士基因 擔憂基因 担忧基因 抗壓 抗压 壓力 压力 焦慮 焦虑 疼痛敏感 兒茶酚胺 儿茶酚胺 COMT catechol-o-methyltransferase warrior worrier rs4680',
+  PPARG: '胰島素阻抗 胰岛素阻抗 胰島素敏感 胰岛素敏感 脂肪代謝 脂肪代谢 糖尿病 第二型糖尿病 PPARG insulin resistance insulin sensitivity type 2 diabetes rs1801282',
+  VDR: '維生素d 维生素d 維他命d 维他命d 骨質疏鬆 骨质疏松 骨密度 鈣質吸收 钙质吸收 VDR vitamin d vitamin d receptor osteoporosis bone density',
+  ACTN3: '爆發力 爆发力 運動基因 运动基因 耐力 快縮肌 快缩肌 肌肉纖維 肌肉纤维 ACTN3 sprint power endurance muscle fiber rs1815739',
+  BDNF: '神經滋養 神经滋养 神經可塑性 神经可塑性 記憶 记忆 情緒韌性 情绪韧性 憂鬱 忧郁 BDNF brain derived neurotrophic factor neuroplasticity memory rs6265',
+  MC1R: '防曬 防晒 光老化 雀斑 黑色素瘤 皮膚癌 皮肤癌 紫外線 紫外线 MC1R sunscreen photoaging freckles melanoma ultraviolet',
 };
 
 export function searchGenes(records, query) {

@@ -11216,5 +11216,1463 @@
       "myth": "「CALM3 帶因者只要沒有症狀，就不會發生心因性猝死？」",
       "truth": "不對。CALM3 相關心律不整可能以首次嚴重心律不整事件表現，且症狀可能在嬰幼兒期才逐漸出現。帶因者需由心臟電生理專科長期追蹤，並避免 QT 延長藥物與腎上腺素刺激。"
     }
+  },
+  {
+    "association_id": "GDA_ASSOC_108",
+    "gene": {
+      "symbol": "ABCG2",
+      "name": "ATP binding cassette subfamily G member 2",
+      "chinese_name": "ATP 結合匣轉運蛋白 G2 基因（ABCG2）",
+      "ensembl_id": "ENSG00000118777",
+      "entrez_id": "9429",
+      "biotype": "protein_coding",
+      "chromosome": "4q22.1（4 號染色體）",
+      "metaphor": {
+        "title": "🚰 細胞的【藥物外排抽水機（抽水效率差時藥物與尿酸一起滯留）】",
+        "story": "ABCG2 製造的轉運蛋白像細胞膜上的抽水機，把瑞舒伐他汀等藥物與尿酸從細胞內往外排。當抽水機因 c.421C>A 變異而效率下降，藥物在血液中停留更久，尿酸也較不容易排出，於是肌肉副作用、肝功能負擔與痛風風險一起上升。"
+      },
+      "plain_summary": "ABCG2 是負責外排多種藥物與尿酸的轉運蛋白。帶有 c.421C>A 低功能變異者，使用瑞舒伐他汀（Rosuvastatin）時血中濃度可能明顯升高，降尿酸藥 allopurinol 的療效也可能較差。透過基因檢測、選擇替代他汀、監測肌痛與尿酸，並由醫師個別化調整用藥，可降低不良反應風險。",
+      "academic_summary": "ABCG2 位於 4q22.1，編碼 ATP 結合匣轉運蛋白 G2，表現於腸道、肝臟與腎臟，負責外排他汀類、尿酸與多種內生性與外源性受質。常見低功能變異 c.421C>A（rs2231142, p.Gln141Lys）降低轉運活性，與瑞舒伐他汀暴露增加、肌肉不良反應及高尿酸血症／痛風易感性相關。"
+    },
+    "disease": {
+      "id": "MONDO:0005393",
+      "name": "Gout",
+      "chinese_name": "高尿酸血症、痛風與 Statin 降血脂藥物轉運敏感性",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "痛風與高尿酸血症",
+        "Statin 與降尿酸用藥安全"
+      ],
+      "inheritance_mode": "體染色體共顯性轉運表型 (Autosomal Codominant Transporter Phenotype)",
+      "severity_badge": "🟡 藥物轉運敏感警示（需監測肌痛與尿酸）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001997",
+        "name": "Gout",
+        "chinese_name": "痛風"
+      },
+      {
+        "hpo_id": "HP:0002149",
+        "name": "Hyperuricemia",
+        "chinese_name": "高尿酸血症"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Rosuvastatin",
+        "chinese_name": "瑞舒伐他汀（Rosuvastatin）",
+        "mechanism": "經 ABCG2 外排的親水性他汀，低功能轉運變異會提高全身藥物暴露",
+        "approval_status": "CPIC 納入藥物基因檢測之品項"
+      },
+      {
+        "drug_name": "Allopurinol",
+        "chinese_name": "別嘌醇（Allopurinol）",
+        "mechanism": "抑制黃嘌呤氧化酶以降低尿酸，ABCG2 低功能變異可能與療效較差及痛風復發相關",
+        "approval_status": "痛風標準降尿酸處方（需醫師評估）"
+      },
+      {
+        "drug_name": "Pravastatin / Pitavastatin",
+        "chinese_name": "普伐他汀／匹伐他汀（Pravastatin / Pitavastatin）",
+        "mechanism": "受 ABCG2 外排影響較小的替代他汀選項",
+        "approval_status": "標準處方治療（依血脂與肝腎功能評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "ABCG2 c.421C>A (rs2231142, p.Gln141Lys) 低功能轉運變異",
+      "population_frequency": "東亞族群 c.421A 等位基因頻率約三成，是瑞舒伐他汀暴露與痛風易感性的重要修飾因子 (PMID:35152405)",
+      "traffic_light_summary": "🟡 慎用與監測：帶有 ABCG2 c.421C>A 低功能變異者，瑞舒伐他汀血中濃度可能顯著升高，肌肉與肝臟不良反應風險增加；降尿酸藥 allopurinol 的療效也可能較差。建議由醫師評估較低起始強度、改用受影響較小的他汀，或加強肌痛、肝功能與尿酸監測。",
+      "drugs_guide": [
+        {
+          "drug_name": "Rosuvastatin",
+          "chinese_name": "瑞舒伐他汀（Rosuvastatin）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "ABCG2 低功能變異 c.421C>A 使瑞舒伐他汀血中濃度顯著升高，肌肉痠痛、無力與肝功能異常風險增加；建議由醫師評估採用較低起始強度、選擇替代他汀，或加強肌痛與肝功能監測。",
+          "cpic_level": "CPIC Guideline for SLCO1B1, ABCG2 and Rosuvastatin"
+        },
+        {
+          "drug_name": "Allopurinol",
+          "chinese_name": "別嘌醇（Allopurinol）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "ABCG2 低功能變異與降尿酸療效較差及痛風復發風險相關；建議監測尿酸與發作頻率，由醫師評估是否改用其他降尿酸藥物。",
+          "cpic_level": "PharmGKB Level 2A / Gout Pharmacogenomics"
+        },
+        {
+          "drug_name": "Pravastatin / Pitavastatin",
+          "chinese_name": "普伐他汀／匹伐他汀（Pravastatin / Pitavastatin）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "此類他汀受 ABCG2 外排影響較小，是需要他汀治療時可與醫師討論的替代選項；仍需依標準監測血脂、肝功能與肌肉症狀。",
+          "cpic_level": "CPIC Guideline for SLCO1B1, ABCG2 and Rosuvastatin (alternative consideration)"
+        }
+      ],
+      "dietary_contraindications": [
+        "痛風或高尿酸血症者應避免高普林內臟、濃肉湯、貝類、含果糖飲料與過量酒精",
+        "使用他汀期間若出現不明原因肌肉痠痛、無力或茶色尿，應立即告知醫師並檢查肌肉酵素",
+        "保持適當水分，避免脫水與急速減重，以免誘發痛風發作"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.91,
+      "plain_rating": "⭐️⭐️⭐️⭐️ CPIC 與 PharmGKB 藥物基因證據明確",
+      "clinvar_pathogenic_count": 80,
+      "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 ABCG2 c.421C>A 等低功能變異，與瑞舒伐他汀暴露及痛風易感性相關",
+      "opentargets_score": 0.72,
+      "key_pmids": [
+        "PMID:35152405"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "預計使用瑞舒伐他汀、曾有他汀相關肌肉症狀，或有反覆痛風與高尿酸血症者，建議與醫師討論 ABCG2 藥物基因檢測，並合併評估腎功能與尿酸。",
+      "lifestyle_tips": [
+        "主動向醫師與藥師出示 ABCG2 基因檢測結果，討論是否需要調整他汀種類或強度",
+        "減少高普林食物、含果糖飲料與酒精，並保持適當水分",
+        "定期追蹤尿酸、肝功能與肌肉症狀，出現茶色尿或明顯肌無力應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 風濕免疫科 / 家庭醫學科 / 臨床藥師",
+      "questions": [
+        "醫師，我的 ABCG2 檢測顯示 c.421C>A 低功能變異，我適合繼續使用瑞舒伐他汀嗎？是否需要改用其他他汀？",
+        "我的痛風反覆發作，allopurinol 的療效是否可能受 ABCG2 基因型影響？有其他降尿酸選擇嗎？",
+        "開始或調整藥物後，我應該多久追蹤一次尿酸、肝功能與肌肉酵素？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「降血脂藥與降尿酸藥只要照標準開，基因體質不會影響效果或副作用？」",
+      "truth": "不一定。ABCG2 c.421C>A 會讓瑞舒伐他汀在體內停留更久，也可能使 allopurinol 的降尿酸效果較差。藥品種類與監測頻率應由醫師依基因型、腎功能與臨床反應個別化調整。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_109",
+    "gene": {
+      "symbol": "CYP2B6",
+      "name": "cytochrome P450 family 2 subfamily B member 6",
+      "chinese_name": "細胞色素 P450 2B6 基因（CYP2B6）",
+      "ensembl_id": "ENSG00000197408",
+      "entrez_id": "1555",
+      "biotype": "protein_coding",
+      "chromosome": "19q13.2（19 號染色體）",
+      "metaphor": {
+        "title": "🧠 肝臟裡的【中樞神經藥物代謝閘門（慢代謝時藥物在腦中停留過久）】",
+        "story": "抗病毒藥 efavirenz、美沙冬與安非他酮等藥物，需要靠 CYP2B6 這道代謝閘門依序放行。若閘門因 *6 或 *18 等變異而開得很慢，藥物在血液與腦中停留過久，便可能帶來頭暈、失眠、異常夢境、情緒改變或呼吸抑制等中樞神經副作用。"
+      },
+      "plain_summary": "CYP2B6 代謝 efavirenz、methadone、bupropion 等中樞神經作用藥物。攜帶 *6、*18 等降低功能等位基因者，藥物清除較慢，中樞神經毒性或藥物暴露風險上升。透過基因檢測、選擇替代抗病毒藥、調整用藥與監測副作用，可降低不良反應。",
+      "academic_summary": "CYP2B6 位於 19q13.2，編碼肝微粒體細胞色素 P450 2B6，主司 efavirenz、methadone、bupropion、cyclophosphamide 等藥物之氧化代謝。CYP2B6*6（rs3745274, c.516G>T）與 *18（rs28399499）等降低功能等位基因減少酵素活性，造成 efavirenz 暴露與中樞神經毒性增加，並影響 methadone 與 bupropion 的血中濃度。"
+    },
+    "disease": {
+      "id": "MESH:D064420",
+      "name": "Drug-Related Side Effects and Adverse Reactions (CYP2B6 efavirenz, methadone, bupropion)",
+      "chinese_name": "CYP2B6 藥物不良反應與中樞神經代謝異常",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "抗反轉錄病毒與中樞神經用藥安全"
+      ],
+      "inheritance_mode": "體染色體共顯性代謝表型 (Autosomal Codominant Metabolic Phenotype)",
+      "severity_badge": "🟡 中樞神經毒性與藥物暴露警示（需依基因型選藥）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000739",
+        "name": "Anxiety",
+        "chinese_name": "焦慮與中樞神經副作用風險"
+      },
+      {
+        "hpo_id": "HP:0001279",
+        "name": "Syncope",
+        "chinese_name": "暈眩與平衡不適"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Efavirenz",
+        "chinese_name": "依法韋侖（Efavirenz）",
+        "mechanism": "非核苷酸反轉錄酶抑制劑，主要由 CYP2B6 代謝；慢代謝者暴露與中樞神經毒性增加",
+        "approval_status": "CPIC Level A 納入藥物基因檢測"
+      },
+      {
+        "drug_name": "Methadone / Bupropion",
+        "chinese_name": "美沙冬／安非他酮（Methadone / Bupropion）",
+        "mechanism": "中樞神經作用藥物，部分經 CYP2B6 代謝，慢代謝者血中濃度可能升高",
+        "approval_status": "依臨床評估與治療藥物監測使用"
+      },
+      {
+        "drug_name": "Dolutegravir / Bictegravir",
+        "chinese_name": "度魯特格拉韋／比克替拉韋（Dolutegravir / Bictegravir）",
+        "mechanism": "整合酶抑制劑，主要不經 CYP2B6 代謝，可作為替代抗病毒選項",
+        "approval_status": "標準抗反轉錄病毒處方（依臨床評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CYP2B6*6 (rs3745274, c.516G>T)、CYP2B6*18 (rs28399499) 等降低功能等位基因",
+      "population_frequency": "CYP2B6*6 在東亞與歐裔族群常見，非洲族群 *18 頻率較高，皆與酵素活性下降相關 (PMID:31006110)",
+      "traffic_light_summary": "🔴 需依基因型選藥與監測：CYP2B6 慢代謝者使用 efavirenz 時，中樞神經毒性與藥物暴露風險大幅升高，宜由醫師評估避開高風險暴露或改採整合酶抑制劑；methadone 與 bupropion 也需監測鎮靜、呼吸抑制、癲癇或情緒副作用。",
+      "drugs_guide": [
+        {
+          "drug_name": "Efavirenz",
+          "chinese_name": "依法韋侖（Efavirenz）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2B6 慢代謝者使用 efavirenz 時血中暴露與中樞神經毒性（頭暈、失眠、異常夢境、情緒改變）風險大幅升高；建議由醫師評估降低暴露、改採整合酶抑制劑等替代抗病毒處方，並加強副作用監測。",
+          "cpic_level": "CPIC Guideline for CYP2B6 and Efavirenz"
+        },
+        {
+          "drug_name": "Methadone / Bupropion",
+          "chinese_name": "美沙冬／安非他酮（Methadone / Bupropion）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2B6 慢代謝者可能出現 methadone 暴露升高或 bupropion 血中濃度增加，需監測鎮靜、呼吸抑制、癲癇或情緒副作用，並由醫師個別化調整。",
+          "cpic_level": "CPIC Guideline for CYP2B6 and Methadone / PharmGKB Bupropion"
+        },
+        {
+          "drug_name": "Dolutegravir / Bictegravir",
+          "chinese_name": "度魯特格拉韋／比克替拉韋（Dolutegravir / Bictegravir）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "此類整合酶抑制劑主要不經 CYP2B6 代謝，對 CYP2B6 基因型較不敏感，可作為醫師評估後的替代抗病毒選項；仍需依標準追蹤病毒量與肝腎功能。",
+          "cpic_level": "DHHS Antiretroviral Guidance / Pharmacogenomics Consideration"
+        }
+      ],
+      "dietary_contraindications": [
+        "服用 efavirenz 期間避免與酒精及鎮靜安眠藥併用，以免加重頭暈、嗜睡與注意力不集中",
+        "出現持續頭暈、嚴重失眠、異常夢境或情緒低落時應主動回診，不要自行停藥或調整用法",
+        "使用 methadone 或 bupropion 期間，若發生呼吸變慢、意識改變或癲癇，應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.9,
+      "plain_rating": "⭐️⭐️⭐️⭐️ CPIC Level A 藥物基因證據明確",
+      "clinvar_pathogenic_count": 40,
+      "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 CYP2B6*6 與 *18 等功能降低變異，與 efavirenz 中樞神經毒性及 methadone、bupropion 暴露相關",
+      "opentargets_score": 0.7,
+      "key_pmids": [
+        "PMID:31006110"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "預計使用 efavirenz、methadone 或 bupropion，或曾有不明原因中樞神經副作用者，建議與醫師討論 CYP2B6 藥物基因檢測，以協助選擇抗病毒處方與監測強度。",
+      "lifestyle_tips": [
+        "主動向醫師與藥師出示 CYP2B6 基因檢測結果，討論是否需要調整抗病毒藥或中樞神經用藥",
+        "服藥期間避免酒精與未經醫師同意的鎮靜安眠藥",
+        "記錄頭暈、失眠、異常夢境、情緒改變或呼吸變慢等症狀，回診時主動告知"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "感染科 / 精神科 / 成癮治療門診 / 臨床藥師",
+      "questions": [
+        "醫師，我的 CYP2B6 檢測顯示慢代謝型，我適合使用 efavirenz 嗎？是否應改用整合酶抑制劑？",
+        "如果我需要使用 methadone 或 bupropion，基因型會如何影響我的用藥與監測頻率？",
+        "服藥後出現頭暈、失眠、異常夢境或情緒改變時，我應該如何處理與回報？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「抗病毒藥與中樞神經藥物的副作用只是個人體質，跟基因檢測無關？」",
+      "truth": "不對。CYP2B6 慢代謝會讓 efavirenz 等藥物在體內停留更久，中樞神經副作用與暴露風險明顯增加。基因檢測可協助醫師選擇替代藥物或調整監測策略。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_110",
+    "gene": {
+      "symbol": "CYP4F2",
+      "name": "cytochrome P450 family 4 subfamily F member 2",
+      "chinese_name": "細胞色素 P450 4F2 基因（CYP4F2）",
+      "ensembl_id": "ENSG00000186115",
+      "entrez_id": "8529",
+      "biotype": "protein_coding",
+      "chromosome": "19p13.12（19 號染色體）",
+      "metaphor": {
+        "title": "🩸 凝血系統裡的【維生素 K 回收微調器（回收變慢時華法林劑量需求改變）】",
+        "story": "華法林阻斷維生素 K 回收，而 CYP4F2 負責把維生素 K 氧化分解，兩者像同一套凝血調節系統的油門與煞車。當 CYP4F2*3 讓分解變慢，體內維生素 K 較多，華法林的效果可能被抵銷一部分，因此抗凝治療需要更細緻的 INR 監測與多基因合併評估。"
+      },
+      "plain_summary": "CYP4F2 參與維生素 K 的代謝，CYP4F2*3 變異會減少維生素 K 分解，可能影響華法林（Warfarin）的抗凝需求。臨床上通常合併 CYP2C9、VKORC1 與 INR 一起評估，而非單獨依 CYP4F2 調整。直接口服抗凝血劑（DOACs）不受 CYP4F2 變異影響，可作為醫師評估後的替代選項。",
+      "academic_summary": "CYP4F2 位於 19p13.12，編碼細胞色素 P450 4F2，負責維生素 K1 與維生素 K2 的 ω-羥化分解。CYP4F2*3（rs2108622, c.1297G>A, p.Val433Met）降低酵素活性，使肝臟維生素 K 濃度上升，與華法林維持劑量需求增加相關；其效應須與 CYP2C9、VKORC1 及 INR 合併解讀。"
+    },
+    "disease": {
+      "id": "MESH:D064420",
+      "name": "Drug-Related Side Effects and Adverse Reactions (CYP4F2 warfarin sensitivity)",
+      "chinese_name": "華法林（Warfarin）抗凝血藥物敏感性調控",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "抗凝血用藥安全"
+      ],
+      "inheritance_mode": "體染色體共顯性代謝表型 (Autosomal Codominant Metabolic Phenotype)",
+      "severity_badge": "🟡 抗凝血監測警示（需合併 CYP2C9 與 VKORC1 評估）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002239",
+        "name": "Gastrointestinal hemorrhage",
+        "chinese_name": "消化道與抗凝血出血風險"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Warfarin",
+        "chinese_name": "華法林（Warfarin）",
+        "mechanism": "維生素 K 拮抗劑，療效受維生素 K 代謝與 CYP2C9、VKORC1、CYP4F2 基因型共同影響",
+        "approval_status": "CPIC Level A 納入多基因評估"
+      },
+      {
+        "drug_name": "Apixaban / Rivaroxaban",
+        "chinese_name": "阿哌沙班／利伐沙班（Apixaban / Rivaroxaban）",
+        "mechanism": "直接口服抗凝血劑，不經 CYP4F2 維生素 K 代謝路徑",
+        "approval_status": "標準抗凝血處方（依腎功能與臨床評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CYP4F2*3 (rs2108622, c.1297G>A, p.Val433Met)",
+      "population_frequency": "CYP4F2*3 在東亞族群頻率約兩成，與維生素 K 分解減少及華法林劑量需求改變相關 (PMID:28198005)",
+      "traffic_light_summary": "🟡 慎用與合併評估：CYP4F2*3 變異會減少維生素 K 分解，可能改變華法林的抗凝需求；臨床須與 CYP2C9、VKORC1 及 INR 合併評估，不可單獨依 CYP4F2 調整。直接口服抗凝血劑不受此變異影響，可由醫師評估是否適合作為替代。",
+      "drugs_guide": [
+        {
+          "drug_name": "Warfarin",
+          "chinese_name": "華法林（Warfarin）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP4F2*3 變異減少維生素 K 氧化分解，可能使華法林需求改變；臨床須與 CYP2C9、VKORC1 及 INR 合併評估，不可單獨依 CYP4F2 調整，並應加密出血監測。",
+          "cpic_level": "CPIC Guideline for CYP2C9, VKORC1, CYP4F2 and Warfarin"
+        },
+        {
+          "drug_name": "Apixaban / Rivaroxaban",
+          "chinese_name": "阿哌沙班／利伐沙班（Apixaban / Rivaroxaban）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "直接口服抗凝血劑不經 CYP4F2 維生素 K 路徑，對 CYP4F2 基因型不敏感，可作為醫師評估後的替代抗凝選項；仍需依腎功能、年齡與出血風險調整。",
+          "cpic_level": "CPIC DOAC Guidance / PharmGKB"
+        }
+      ],
+      "dietary_contraindications": [
+        "服用華法林期間應保持每日深綠色蔬菜與維生素 K 攝取量穩定，勿忽多忽少",
+        "避免酗酒及自行服用丹參、銀杏、當歸或聖約翰草等影響抗凝血的中草藥保健品",
+        "出現牙齦出血、流鼻血不止、大片瘀青或黑便時應立即就醫"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.88,
+      "plain_rating": "⭐️⭐️⭐️⭐️ CPIC 多基因抗凝證據明確",
+      "clinvar_pathogenic_count": 25,
+      "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 CYP4F2*3 (rs2108622) 變異，與華法林維持劑量及抗凝出血風險相關",
+      "opentargets_score": 0.68,
+      "key_pmids": [
+        "PMID:28198005"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "預計開始或正在使用華法林，且有出血事件、INR 波動大或家族抗凝敏感史者，建議與醫師討論 CYP2C9、VKORC1 與 CYP4F2 的合併基因檢測。",
+      "lifestyle_tips": [
+        "主動向醫師與藥師出示 CYP4F2 基因檢測結果，並確認是否已合併 CYP2C9 與 VKORC1 評估",
+        "保持維生素 K 攝取穩定，避免自行大量補充保健品或改變飲食型態",
+        "依醫囑定期監測 INR，出現異常出血或瘀青應立即回診"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "心臟內科 / 血液科 / 抗凝血藥師門診",
+      "questions": [
+        "醫師，我的 CYP4F2 檢測顯示 *3 變異，這會如何影響我的華法林需求與 INR 監測頻率？",
+        "我是否也應該合併檢測 CYP2C9 與 VKORC1，以完整評估抗凝劑量？",
+        "如果我適合改用直接口服抗凝血劑，需要注意哪些腎功能與出血風險？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「華法林劑量只看 INR 就好，基因檢測對抗凝治療沒有幫助？」",
+      "truth": "不完全正確。INR 是治療監測核心，但 CYP2C9、VKORC1 與 CYP4F2 基因型可協助預測起始與維持需求，降低早期出血或血栓風險。基因資訊應與 INR 及臨床狀況一起解讀。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_111",
+    "gene": {
+      "symbol": "HLA-A",
+      "name": "major histocompatibility complex, class I, A",
+      "chinese_name": "人類白血球抗原 A 基因（HLA-A）",
+      "ensembl_id": "ENSG00000206503",
+      "entrez_id": "3105",
+      "biotype": "protein_coding",
+      "chromosome": "6p22.1（6 號染色體）",
+      "metaphor": {
+        "title": "🚨 免疫系統的【藥物過敏警報器（HLA-A*31:01 誤把抗癲癇藥當成敵人）】",
+        "story": "HLA-A 是細胞表面負責向免疫系統展示抗原的警報器。帶有 HLA-A*31:01 的人，免疫警報器會把卡馬西平等抗癲癇藥誤認為嚴重威脅，啟動毒殺性 T 細胞攻擊皮膚與黏膜，造成廣泛皮疹、紅斑、史蒂芬強生症候群或 DRESS 等致命藥物過敏。"
+      },
+      "plain_summary": "HLA-A*31:01 是抗癲癇藥卡馬西平（Carbamazepine）嚴重藥物過敏的重要風險標記。帶因者發生史蒂芬強生症候群（SJS）、毒性表皮壞死溶解症或 DRESS 的風險顯著升高，應避免卡馬西平，並由醫師評估奥卡西平交叉過敏風險與其他低風險替代抗癲癇藥。用藥前基因篩檢與早期辨識皮疹，可預防致命反應。",
+      "academic_summary": "HLA-A 位於 6p22.1，編碼 MHC 第一類重鏈，負責呈現胜肽抗原給 CD8+ T 細胞。HLA-A*31:01 與卡馬西平誘發之史蒂芬強生症候群、毒性表皮壞死溶解症及 DRESS 相關，帶因者風險顯著增加；奥卡西平可能具交叉反應，用藥前篩檢與替代藥物選擇可降低嚴重皮膚不良反應。"
+    },
+    "disease": {
+      "id": "MONDO:0018229",
+      "name": "Stevens-Johnson syndrome",
+      "chinese_name": "抗癲癇藥誘發史蒂芬強生症候群（HLA-A*31:01 嚴重藥物過敏）",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "嚴重藥物過敏",
+        "抗癲癇用藥安全"
+      ],
+      "inheritance_mode": "體染色體共顯性 HLA 等位基因易感性 (Autosomal Codominant HLA Allele Susceptibility)",
+      "severity_badge": "🔴 藥物絕對禁忌紅燈（處方前篩檢可預防嚴重過敏）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000988",
+        "name": "Skin rash",
+        "chinese_name": "廣泛性皮疹"
+      },
+      {
+        "hpo_id": "HP:0010783",
+        "name": "Erythema",
+        "chinese_name": "紅斑性皮膚黏膜反應"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Carbamazepine",
+        "chinese_name": "卡馬西平（Carbamazepine）",
+        "mechanism": "芳香族抗癲癇藥，HLA-A*31:01 帶因者使用後可能引發 SJS/TEN 或 DRESS",
+        "approval_status": "CPIC 與仿單標註之藥物基因禁忌"
+      },
+      {
+        "drug_name": "Oxcarbazepine",
+        "chinese_name": "奥卡西平（Oxcarbazepine）",
+        "mechanism": "與卡馬西平結構相近，可能具交叉過敏風險",
+        "approval_status": "需專科評估後使用"
+      },
+      {
+        "drug_name": "Levetiracetam / Lamotrigine",
+        "chinese_name": "左乙拉西坦／拉莫三嗪（Levetiracetam / Lamotrigine）",
+        "mechanism": "免疫風險較低的替代抗癲癇藥選項，lamotrigine 仍需依標準逐步調整並監測皮疹",
+        "approval_status": "標準抗癲癇處方（依臨床評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "HLA-A*31:01",
+      "population_frequency": "HLA-A*31:01 在東亞與部分歐洲族群可見，帶因者使用卡馬西平之 SJS/DRESS 風險顯著增加 (PMID:29392710)",
+      "traffic_light_summary": "🔴 絕對禁忌與替代：HLA-A*31:01 帶因者應避免卡馬西平，以降低史蒂芬強生症候群、毒性表皮壞死溶解症與 DRESS 風險；奥卡西平可能具交叉過敏，須由醫師評估。可依臨床狀況選用左乙拉西坦等低免疫風險替代抗癲癇藥，lamotrigine 仍需逐步調整並監測皮疹。",
+      "drugs_guide": [
+        {
+          "drug_name": "Carbamazepine",
+          "chinese_name": "卡馬西平（Carbamazepine）",
+          "traffic_light": "RED_AVOID",
+          "clinical_alert": "HLA-A*31:01 攜帶者使用卡馬西平發生史蒂芬強生症候群、毒性表皮壞死溶解症或 DRESS 的風險顯著升高；應避免使用並由醫師選擇非芳香族替代抗癲癇藥。",
+          "cpic_level": "CPIC Guideline for HLA-A and Carbamazepine / FDA Label"
+        },
+        {
+          "drug_name": "Oxcarbazepine",
+          "chinese_name": "奥卡西平（Oxcarbazepine）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "奥卡西平與卡馬西平結構相近，HLA-A*31:01 帶因者可能具交叉過敏風險；需由醫師評估替代方案，若必須使用應加強皮疹與黏膜症狀監測。",
+          "cpic_level": "CPIC Guideline for HLA-A and Carbamazepine (cross-reactivity consideration)"
+        },
+        {
+          "drug_name": "Levetiracetam / Lamotrigine",
+          "chinese_name": "左乙拉西坦／拉莫三嗪（Levetiracetam / Lamotrigine）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "可依臨床醫師評估選用低免疫風險替代抗癲癇藥；lamotrigine 仍須依標準逐步調整並監測皮疹，出現發燒或黏膜潰瘍應立即就醫。",
+          "cpic_level": "Neurology Alternative Antiseizure Guidance"
+        }
+      ],
+      "dietary_contraindications": [
+        "避免自行服用他人剩餘的抗癲癇藥、神經痛藥或來路不明的止痛粉",
+        "開始任何新抗癲癇藥後，若出現發燒、喉嚨痛、眼睛刺痛、口腔潰瘍或廣泛皮疹，應立即停藥並急診就醫",
+        "將 HLA-A*31:01 與禁忌藥物記錄於健保卡過敏欄與隨身警示卡，提醒所有醫療人員"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.92,
+      "plain_rating": "⭐️⭐️⭐️⭐️⭐️ CPIC 與 FDA 嚴重皮膚不良反應基因證據",
+      "clinvar_pathogenic_count": 20,
+      "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 HLA-A*31:01 與卡馬西平誘發 SJS/TEN、DRESS 之藥物基因關聯",
+      "opentargets_score": 0.74,
+      "key_pmids": [
+        "PMID:29392710"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "首次使用卡馬西平或奥卡西平前，尤其有藥物過敏史或家族史者，建議接受 HLA-A*31:01 基因篩檢；一等親也可能帶有相同等位基因。",
+      "lifestyle_tips": [
+        "主動向醫師與藥師出示 HLA-A*31:01 檢測結果，並確認禁忌藥物已記錄",
+        "用藥後密切注意皮疹、發燒、口腔或眼部黏膜潰瘍，出現時立即停藥並就醫",
+        "不自行購買或分享抗癲癇、神經痛藥物，所有新藥都應先經醫師評估"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "神經內科 / 皮膚科 / 臨床藥師 / 遺傳諮詢",
+      "questions": [
+        "醫師，我的 HLA-A*31:01 檢測為陽性，有哪些非芳香族抗癲癇藥可作為安全替代？",
+        "奥卡西平是否也有交叉過敏風險？若必須使用，應該如何監測？",
+        "可以把我的 HLA-A 結果與禁忌藥物永久記錄在病歷與健保過敏紀錄嗎？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「嚴重藥物過敏只能等吃了藥才知道，事前無法預防？」",
+      "truth": "不對。HLA-A*31:01 與卡馬西平誘發的 SJS/TEN、DRESS 有明確關聯，處方前基因篩檢可協助避開高風險藥物。帶因者應使用替代抗癲癇藥並加強早期皮疹監測。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_112",
+    "gene": {
+      "symbol": "IFNL3",
+      "name": "interferon lambda 3",
+      "chinese_name": "干擾素 λ3 基因（IFNL3／IL28B）",
+      "ensembl_id": "ENSG00000197110",
+      "entrez_id": "282617",
+      "biotype": "protein_coding",
+      "chromosome": "19q13.2（19 號染色體）",
+      "metaphor": {
+        "title": "🛡️ 肝臟抗病毒的【免疫反應開關（開關較弱時干擾素療程效果打折）】",
+        "story": "IFNL3 製造的干擾素 λ3 像肝臟先天免疫的開關，協助清除 C 型肝炎病毒。當基因型使這個開關反應較弱，傳統含干擾素的療程較難壓制病毒；相較之下，全口服直接作用抗病毒藥物能繞過這個限制，對多數基因型都能達到高治癒率。"
+      },
+      "plain_summary": "IFNL3（舊稱 IL28B）基因型可預測慢性 C 型肝炎對含干擾素療程的反應。帶有非有利基因型者，干擾素合併 ribavirin 的治癒率較低、副作用負擔較高。目前全口服直接作用抗病毒藥物（DAAs）對各 IFNL3 基因型皆具高治癒率，建議由醫師評估優先使用。",
+      "academic_summary": "IFNL3 位於 19q13.2，編碼第三型干擾素 λ3，參與肝臟抗病毒免疫。IFNL3/IL28B 附近的 rs12979860 與 rs8099917 多態性與 C 型肝炎病毒自發清除及含干擾素療程反應相關；非有利基因型者反應率較低。直接作用抗病毒藥物之療效較不受 IFNL3 基因型影響。"
+    },
+    "disease": {
+      "id": "MONDO:0005354",
+      "name": "Chronic hepatitis C virus infection",
+      "chinese_name": "慢性 C 型肝炎與干擾素抗病毒療效基因預測",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "病毒性肝炎",
+        "抗病毒療效預測"
+      ],
+      "inheritance_mode": "體染色體共顯性免疫反應表型 (Autosomal Codominant Immune Response Phenotype)",
+      "severity_badge": "🟡 療效預測警示（建議優先評估全口服 DAA）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002910",
+        "name": "Elevated circulating hepatic transaminase concentration",
+        "chinese_name": "肝臟轉胺酶升高"
+      },
+      {
+        "hpo_id": "HP:0001392",
+        "name": "Abnormality of the liver",
+        "chinese_name": "肝功能異常"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Peginterferon alfa-2a / alfa-2b + Ribavirin",
+        "chinese_name": "長效干擾素 α-2a／α-2b 合併雷巴威林",
+        "mechanism": "免疫調節與抗病毒療程，療效受 IFNL3 基因型影響",
+        "approval_status": "PharmGKB 納入療效基因檢測"
+      },
+      {
+        "drug_name": "Direct-acting antivirals (DAAs)",
+        "chinese_name": "全口服直接作用抗病毒藥物（DAAs）",
+        "mechanism": "直接抑制 C 型肝炎病毒複製，對各 IFNL3 基因型皆具高治癒率",
+        "approval_status": "慢性 C 型肝炎標準首選治療"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "IFNL3 (IL28B) rs12979860 與 rs8099917",
+      "population_frequency": "rs12979860 C 有利基因型在東亞族群較常見，非有利基因型與含干擾素療程反應較低相關 (PMID:24096968)",
+      "traffic_light_summary": "🟡 療效預測與替代評估：IFNL3 非有利基因型者對含干擾素合併 ribavirin 療程的反應率較低，且副作用負擔較高；建議由醫師評估改採全口服直接作用抗病毒藥物（DAAs），其對各 IFNL3 基因型皆具高治癒率。",
+      "drugs_guide": [
+        {
+          "drug_name": "Peginterferon alfa-2a / alfa-2b + Ribavirin",
+          "chinese_name": "長效干擾素 α-2a／α-2b 合併雷巴威林",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "IFNL3 非有利基因型者對含干擾素療程的反應率較低，且可能承受較多發燒、疲倦、血球下降與情緒副作用；建議由醫師評估是否改採全口服直接作用抗病毒藥物。",
+          "cpic_level": "PharmGKB Level 1A / IFNL3-Interferon Response"
+        },
+        {
+          "drug_name": "Direct-acting antivirals (DAAs)",
+          "chinese_name": "全口服直接作用抗病毒藥物（DAAs）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "全口服直接作用抗病毒藥物對各 IFNL3 基因型皆具高治癒率，為目前慢性 C 型肝炎的首選治療；仍需依病毒基因型、肝纖維化與腎功能選擇合適處方。",
+          "cpic_level": "AASLD/IDSA Hepatitis C Guidance"
+        }
+      ],
+      "dietary_contraindications": [
+        "治療期間避免飲酒，以減少肝臟負擔並降低肝炎惡化風險",
+        "使用干擾素療程期間若出現持續發燒、嚴重疲倦、情緒低落或血球異常，應主動回診",
+        "勿自行服用來路不明的保肝保健品或中草藥，應先與醫師或藥師討論"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.89,
+      "plain_rating": "⭐️⭐️⭐️⭐️ PharmGKB 與臨床試驗證據明確",
+      "clinvar_pathogenic_count": 10,
+      "clinvar_summary_chinese": "PharmGKB 與文獻已確立 IFNL3/IL28B rs12979860、rs8099917 與 C 型肝炎干擾素療程反應之關聯",
+      "opentargets_score": 0.71,
+      "key_pmids": [
+        "PMID:24096968"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "確診慢性 C 型肝炎、考慮含干擾素療程，或曾治療失敗者，建議與醫師討論 IFNL3 基因檢測，並優先評估全口服直接作用抗病毒藥物的可行性。",
+      "lifestyle_tips": [
+        "主動向醫師出示 IFNL3 基因檢測結果，討論是否採用全口服 DAA 療程",
+        "治療期間避免酒精與不明保肝保健品，並依醫囑追蹤病毒量與肝功能",
+        "若出現嚴重疲倦、黃疸、茶色尿或持續發燒，應及早就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "肝膽胃腸科 / 感染科 / 肝炎治療門診",
+      "questions": [
+        "醫師，我的 IFNL3 基因型顯示對干擾素反應較低，我是否適合直接使用全口服 DAA 療程？",
+        "我的病毒基因型、肝纖維化程度與腎功能會如何影響 DAA 的選擇？",
+        "治療期間我需要多久追蹤一次病毒量、肝功能與血球？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「C 型肝炎一定要打干擾素，基因型再差也只能硬撐完整療程？」",
+      "truth": "不必。全口服直接作用抗病毒藥物對各 IFNL3 基因型皆具高治癒率，且副作用通常較少。IFNL3 基因型可協助預測干擾素療效，但現今治療選擇應由醫師依病毒與肝臟狀況整體評估。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_113",
+    "gene": {
+      "symbol": "NAT2",
+      "name": "N-acetyltransferase 2",
+      "chinese_name": "N-乙醯轉移酶 2 基因（NAT2）",
+      "ensembl_id": "ENSG00000156006",
+      "entrez_id": "10",
+      "biotype": "protein_coding",
+      "chromosome": "8p22（8 號染色體）",
+      "metaphor": {
+        "title": "🏭 肝臟解毒線上的【乙醯化輸送帶（輸送帶變慢時藥物中間產物堆積）】",
+        "story": "NAT2 製造的酵素像肝臟解毒線上的乙醯化輸送帶，替異煙肼、hydralazine 與 sulfasalazine 等藥物貼上乙醯標籤以利排出。當輸送帶因慢乙醯化基因型而變慢，藥物與其中間產物在體內停留更久，肝毒性與其他不良反應的風險便會上升。"
+      },
+      "plain_summary": "NAT2 基因型決定個人的乙醯化代謝速度。慢乙醯化者使用異煙肼（Isoniazid）等抗結核藥時，藥物清除較慢，肝毒性與周邊神經病變風險上升；使用 hydralazine 或 sulfasalazine 時不良反應機率也較高。透過基因檢測、肝功能追蹤與個別化選藥，可降低藥物性肝損傷風險。",
+      "academic_summary": "NAT2 位於 8p22，編碼細胞質 N-乙醯轉移酶 2，負責異煙肼、hydralazine、sulfasalazine、procainamide 等藥物之乙醯化代謝。NAT2 慢乙醯化等位基因（如 *5、*6、*7、*14）降低酵素活性，呈體染色體隱性表現，與異煙肼誘發肝毒性及多種藥物不良反應相關。"
+    },
+    "disease": {
+      "id": "MONDO:0005359",
+      "name": "Drug-induced liver injury",
+      "chinese_name": "慢乙醯化體質與抗結核藥物誘發肝損傷",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "抗結核用藥安全",
+        "藥物性肝損傷"
+      ],
+      "inheritance_mode": "體染色體隱性乙醯化代謝表型 (Autosomal Recessive Acetylation Phenotype)",
+      "severity_badge": "🟡 肝毒性監測警示（慢乙醯化者需加密肝功能追蹤）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002910",
+        "name": "Elevated circulating hepatic transaminase concentration",
+        "chinese_name": "藥物性肝轉胺酶升高"
+      },
+      {
+        "hpo_id": "HP:0001392",
+        "name": "Abnormality of the liver",
+        "chinese_name": "藥物性肝損傷風險"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Isoniazid",
+        "chinese_name": "異煙肼（Isoniazid）",
+        "mechanism": "抗結核第一線藥物，主要經 NAT2 乙醯化代謝；慢乙醯化者暴露較高",
+        "approval_status": "CPIC 納入藥物基因檢測"
+      },
+      {
+        "drug_name": "Hydralazine / Sulfasalazine",
+        "chinese_name": "肼屈嗪／柳氮磺吡啶（Hydralazine / Sulfasalazine）",
+        "mechanism": "經 NAT2 乙醯化代謝，慢乙醯化者不良反應風險較高",
+        "approval_status": "依臨床評估與監測使用"
+      },
+      {
+        "drug_name": "Rifampin / Ethambutol",
+        "chinese_name": "利福平／乙胺丁醇（Rifampin / Ethambutol）",
+        "mechanism": "常用結核合併藥物，主要不經 NAT2 乙醯化路徑",
+        "approval_status": "標準抗結核合併處方"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "NAT2 慢乙醯化等位基因（如 *5、*6、*7、*14）",
+      "population_frequency": "東亞族群慢乙醯化型比例約一到兩成，歐裔與部分中東族群比例更高 (PMID:25139891)",
+      "traffic_light_summary": "🟡 慎用與肝功能監測：NAT2 慢乙醯化者清除異煙肼較慢，藥物性肝損傷與周邊神經病變風險上升；使用 hydralazine 或 sulfasalazine 時不良反應機率也較高。抗結核療程中須嚴密追蹤肝指數與症狀，並由醫師評估是否調整用藥。",
+      "drugs_guide": [
+        {
+          "drug_name": "Isoniazid",
+          "chinese_name": "異煙肼（Isoniazid）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "NAT2 慢乙醯化者清除異煙肼較慢，肝毒性與周邊神經病變風險上升；抗結核療程中須嚴密追蹤肝指數與症狀，並由醫師評估是否調整用藥或加強保護措施。",
+          "cpic_level": "CPIC Guideline for NAT2 and Isoniazid"
+        },
+        {
+          "drug_name": "Hydralazine / Sulfasalazine",
+          "chinese_name": "肼屈嗪／柳氮磺吡啶（Hydralazine / Sulfasalazine）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "慢乙醯化者使用 hydralazine 或 sulfasalazine 時，藥物性狼瘡、胃腸不適與血液學副作用機率較高，需加強臨床與實驗室監測。",
+          "cpic_level": "PharmGKB NAT2 Drug Substrate Guidance"
+        },
+        {
+          "drug_name": "Rifampin / Ethambutol",
+          "chinese_name": "利福平／乙胺丁醇（Rifampin / Ethambutol）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "此類藥物主要不經 NAT2 乙醯化路徑，為結核合併治療中較不受 NAT2 表型影響的常用藥物；仍需依標準監測肝功能、視力與藥物交互作用。",
+          "cpic_level": "WHO/CDC Tuberculosis Treatment Guidance"
+        }
+      ],
+      "dietary_contraindications": [
+        "抗結核治療期間避免飲酒，以降低藥物性肝損傷風險",
+        "出現食慾不振、噁心、黃疸、茶色尿或右上腹不適時應立即回診檢查肝功能",
+        "勿自行與其他止痛退燒藥或中草藥併用，應先請醫師或藥師評估肝毒性風險"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.88,
+      "plain_rating": "⭐️⭐️⭐️⭐️ CPIC 抗結核藥物基因證據明確",
+      "clinvar_pathogenic_count": 30,
+      "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 NAT2 慢乙醯化等位基因，與異煙肼誘發肝毒性及多種藥物不良反應相關",
+      "opentargets_score": 0.66,
+      "key_pmids": [
+        "PMID:25139891"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "預計接受異煙肼抗結核治療、曾有藥物性肝損傷，或需長期使用 hydralazine、sulfasalazine 者，建議與醫師討論 NAT2 基因檢測與肝功能監測計畫。",
+      "lifestyle_tips": [
+        "主動向醫師與藥師出示 NAT2 基因檢測結果，確認抗結核療程的監測頻率",
+        "治療期間避免酒精與不明保肝保健品，並依醫囑定期抽血檢查肝功能",
+        "出現黃疸、茶色尿、嚴重疲倦或持續噁心時應立即就醫"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "胸腔內科 / 感染科 / 肝膽胃腸科 / 結核病防治門診",
+      "questions": [
+        "醫師，我的 NAT2 檢測顯示慢乙醯化型，我的抗結核療程需要調整或加密肝功能監測嗎？",
+        "如果治療期間肝指數上升，我應該先停藥還是調整治療組合？",
+        "我使用 hydralazine 或 sulfasalazine 時，需要特別注意哪些不良反應？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「抗結核藥每個人都吃一樣的療程，肝功能異常只是運氣不好？」",
+      "truth": "不完全是。NAT2 慢乙醯化者清除異煙肼較慢，藥物性肝損傷風險較高。基因檢測可協助醫師安排更密集的肝功能追蹤與個別化用藥，而不是等到黃疸出現才處理。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_114",
+    "gene": {
+      "symbol": "CYP2C8",
+      "name": "cytochrome P450 family 2 subfamily C member 8",
+      "chinese_name": "細胞色素 P450 2C8 基因（CYP2C8）",
+      "ensembl_id": "ENSG00000138115",
+      "entrez_id": "1558",
+      "biotype": "protein_coding",
+      "chromosome": "10q23.33（10 號染色體）",
+      "metaphor": {
+        "title": "⚙️ 肝臟代謝工廠的【第二條處理線（處理線變慢時止痛與降血糖藥暴露上升）】",
+        "story": "CYP2C8 是肝臟代謝工廠裡負責處理 ibuprofen、pioglitazone 與 paclitaxel 的第二條處理線。當這條線因 *3、*4 等變異而變慢，藥物與代謝物在體內停留更久，胃腸刺激、水腫、肌肉不適或骨髓抑制等副作用便可能增加；止痛藥的風險還需與 CYP2C9 一起評估。"
+      },
+      "plain_summary": "CYP2C8 代謝多種消炎止痛藥、降血糖藥 pioglitazone 與抗癌藥 paclitaxel。攜帶 *3、*4 等降低功能變異者，藥物清除較慢，胃腸、水腫、肌肉或骨髓副作用風險上升；止痛藥常需合併 CYP2C9 評估。透過基因檢測、選擇替代止痛藥與專科監測，可降低不良反應。",
+      "academic_summary": "CYP2C8 位於 10q23.33，編碼肝微粒體細胞色素 P450 2C8，主司 paclitaxel、pioglitazone、ibuprofen、repaglinide 與 amodiaquine 等藥物之氧化代謝。CYP2C8*3（rs11572080、rs10509681）與 *4（rs1058930）等降低功能等位基因減少酵素活性，與 paclitaxel 暴露、神經與骨髓毒性及 pioglitazone、NSAIDs 副作用相關。"
+    },
+    "disease": {
+      "id": "MESH:D064420",
+      "name": "Drug-Related Side Effects and Adverse Reactions (CYP2C8 analgesics, pioglitazone, paclitaxel)",
+      "chinese_name": "CYP2C8 止痛消炎藥與降血糖藥物代謝變異",
+      "categories": [
+        "藥物基因組學 (PGx)",
+        "止痛與抗發炎用藥安全",
+        "降血糖與抗癌藥物監測"
+      ],
+      "inheritance_mode": "體染色體共顯性代謝表型 (Autosomal Codominant Metabolic Phenotype)",
+      "severity_badge": "🟡 藥物暴露與副作用警示（常需合併 CYP2C9 評估）"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002239",
+        "name": "Gastrointestinal hemorrhage",
+        "chinese_name": "消化道出血與黏膜刺激風險"
+      },
+      {
+        "hpo_id": "HP:0001392",
+        "name": "Abnormality of the liver",
+        "chinese_name": "藥物代謝器官負荷"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Ibuprofen / Pioglitazone / Paclitaxel",
+        "chinese_name": "布洛芬／吡格列酮／紫杉醇（Ibuprofen / Pioglitazone / Paclitaxel）",
+        "mechanism": "主要經 CYP2C8 代謝，慢代謝者藥物暴露與副作用風險升高",
+        "approval_status": "CPIC 與 PharmGKB 納入藥物基因評估"
+      },
+      {
+        "drug_name": "Acetaminophen / Naproxen",
+        "chinese_name": "乙醯胺酚／萘普生（Acetaminophen / Naproxen）",
+        "mechanism": "主要不經 CYP2C8 代謝的止痛替代選項",
+        "approval_status": "標準止痛處方（依肝腎功能評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": true,
+      "key_variant": "CYP2C8*3 (rs11572080, rs10509681)、CYP2C8*4 (rs1058930) 等降低功能等位基因",
+      "population_frequency": "CYP2C8*3 在歐裔族群較常見，東亞族群以其他低功能變異為主，皆與藥物清除下降相關 (PMID:32189324)",
+      "traffic_light_summary": "🟡 慎用與監測：CYP2C8 慢代謝者清除 ibuprofen、pioglitazone 或 paclitaxel 較慢，胃腸、水腫、肌肉或骨髓副作用風險升高；止痛藥常需與 CYP2C9 一起評估，paclitaxel 需由腫瘤科依暴露與毒性監測。可與醫師討論主要不經 CYP2C8 代謝的替代止痛藥。",
+      "drugs_guide": [
+        {
+          "drug_name": "Ibuprofen / Pioglitazone / Paclitaxel",
+          "chinese_name": "布洛芬／吡格列酮／紫杉醇（Ibuprofen / Pioglitazone / Paclitaxel）",
+          "traffic_light": "YELLOW_CAUTION",
+          "clinical_alert": "CYP2C8 慢代謝者清除 ibuprofen、pioglitazone 或 paclitaxel 較慢，胃腸出血、水腫、肌肉不適或骨髓抑制風險升高；止痛藥常需與 CYP2C9 一同評估，paclitaxel 需由腫瘤科監測毒性與暴露。",
+          "cpic_level": "CPIC Guideline for CYP2C8 and Paclitaxel / PharmGKB"
+        },
+        {
+          "drug_name": "Acetaminophen / Naproxen",
+          "chinese_name": "乙醯胺酚／萘普生（Acetaminophen / Naproxen）",
+          "traffic_light": "GREEN_NORMAL",
+          "clinical_alert": "acetaminophen 與 naproxen 主要不經 CYP2C8 代謝，可作為醫師評估後的止痛替代考量；acetaminophen 仍需注意總量與肝功能，naproxen 仍需注意胃腸與腎臟風險。",
+          "cpic_level": "PharmGKB Analgesic Alternative Guidance"
+        }
+      ],
+      "dietary_contraindications": [
+        "避免空腹服用消炎止痛藥，並避免與酒精併用以降低胃腸出血風險",
+        "使用 pioglitazone 期間注意水分滯留、體重變化與心臟負荷，出現明顯水腫或呼吸喘應回診",
+        "接受 paclitaxel 治療期間應依腫瘤科安排監測血球與神經症狀，勿自行服用其他止痛或保健品"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.87,
+      "plain_rating": "⭐️⭐️⭐️⭐️ CPIC 與 PharmGKB 藥物基因證據明確",
+      "clinvar_pathogenic_count": 35,
+      "clinvar_summary_chinese": "ClinVar 與 CPIC 已收錄 CYP2C8*3、*4 等降低功能變異，與 paclitaxel、pioglitazone 及 NSAIDs 暴露與副作用相關",
+      "opentargets_score": 0.68,
+      "key_pmids": [
+        "PMID:32189324"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "需長期使用消炎止痛藥、接受 paclitaxel 化療或使用 pioglitazone 且有不良反應者，建議與醫師討論 CYP2C8（並合併 CYP2C9）藥物基因檢測與監測計畫。",
+      "lifestyle_tips": [
+        "主動向醫師與藥師出示 CYP2C8 基因檢測結果，討論止痛藥與降血糖藥的選擇",
+        "避免自行長期購買消炎止痛藥，出現黑便、腹痛或水腫應及早就醫",
+        "化療期間依醫囑追蹤血球、神經症狀與肝功能，不自行併用其他藥物"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "家庭醫學科 / 風濕免疫科 / 新陳代謝科 / 腫瘤科 / 臨床藥師",
+      "questions": [
+        "醫師，我的 CYP2C8 檢測顯示慢代謝型，我需要調整止痛藥或 pioglitazone 的選擇嗎？",
+        "如果我需要接受 paclitaxel 化療，基因型會如何影響毒性監測與劑量策略？",
+        "有哪些主要不經 CYP2C8 代謝的止痛替代方案，可以與我的 CYP2C9 基因型一起考量？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「止痛藥與降血糖藥的副作用只和劑量有關，跟代謝基因無關？」",
+      "truth": "不完全正確。CYP2C8 慢代謝會讓 ibuprofen、pioglitazone 與 paclitaxel 在體內停留更久，副作用風險上升。藥物選擇與監測應同時考量 CYP2C8、CYP2C9、肝腎功能與臨床狀況。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_115",
+    "gene": {
+      "symbol": "SOD2",
+      "name": "superoxide dismutase 2",
+      "chinese_name": "SOD2 基因（粒線體抗氧化酵素）",
+      "ensembl_id": "ENSG00000291237",
+      "entrez_id": "6648",
+      "biotype": "protein_coding",
+      "chromosome": "6q25.3（6 號染色體）",
+      "metaphor": {
+        "title": "🛡️ 粒線體的【抗氧化守門員】",
+        "story": "SOD2 製造粒線體內的超氧化物歧化酶，像守門員把具攻擊性的超氧自由基轉換成較穩定的分子。Ala16Val 變異讓守門員的反應速度略有不同，但這是常見的人類體質差異，可透過多酚蔬果、均衡飲食與規律運動支持身體的抗氧化系統。"
+      },
+      "plain_summary": "SOD2 rs4880（Ala16Val）是常見的抗氧化效率差異，屬於正常人類體質變異，不是罕見單基因疾病。它可能影響粒線體面對氧化壓力時的效率，但健康結果主要由飲食、運動、睡眠與環境共同決定。把基因結果當成調整生活習慣的提醒即可，不需要過度焦慮或自行大量補充保健品。",
+      "academic_summary": "SOD2 位於 6q25.3，編碼粒線體錳型超氧化物歧化酶，負責將超氧陰離子轉化為過氧化氫。rs4880（Ala16Val）影響前序列進入粒線體的效率，與氧化壓力標記及部分慢性病風險背景相關，但效應溫和且受飲食、活動量與其他抗氧化基因修飾，並非單一決定性致病變異。"
+    },
+    "disease": {
+      "id": "MONDO:0005021",
+      "name": "Dilated cardiomyopathy",
+      "chinese_name": "粒線體抗氧化防禦與氧化壓力脆弱性（SOD2 Ala16Val）",
+      "categories": [
+        "生活型態性狀",
+        "營養與抗氧化"
+      ],
+      "inheritance_mode": "複雜/多基因體質性狀",
+      "severity_badge": "🟡 常見體質差異，非疾病診斷"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001644",
+        "name": "Dilated cardiomyopathy",
+        "chinese_name": "心肌氧化損傷與擴張型風險背景"
+      },
+      {
+        "hpo_id": "HP:0012432",
+        "name": "Chronic fatigue",
+        "chinese_name": "慢性疲勞與氧化壓力表現"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Nutrition & antioxidant counseling",
+        "chinese_name": "營養與抗氧化飲食諮詢",
+        "mechanism": "以多酚蔬果、均衡飲食與規律運動支持氧化壓力平衡",
+        "approval_status": "生活型態建議（非藥物處方）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "SOD2 rs4880（Ala16Val）；影響粒線體抗氧化酵素效率的常見體質變異",
+      "population_frequency": "SOD2 Ala16Val 等位基因頻率因族群而異，屬於常見人類多型性；單一變異對健康的影響溫和 (PMID:12032901)",
+      "traffic_light_summary": "此基因為常見體質與生活型態相關性狀，目前沒有藥物基因（PGx）用藥指引；SOD2 Ala16Val 是正常人類抗氧化效率差異，不是罕見單基因疾病，飲食與生活習慣的影響更大。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "以多酚蔬果、堅果與均衡飲食支持抗氧化防禦，不需依基因型大量補充保健品",
+        "避免吸菸、過量飲酒與長期熬夜等增加氧化壓力的生活型態"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.45,
+      "plain_rating": "⭐️⭐️⭐️ 常見體質差異，證據溫和",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "SOD2 rs4880 為常見抗氧化效率多型性，並非單一高外顯率致病變異",
+      "opentargets_score": 0.3,
+      "key_pmids": [
+        "PMID:12032901"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若出現慢性疲勞、運動耐受度下降或心肌病症狀，應就醫評估；不建議僅憑 SOD2 基因型判斷心臟疾病。",
+      "lifestyle_tips": [
+        "以多酚蔬果、堅果與均衡飲食支持抗氧化防禦",
+        "維持規律中等強度運動與充足睡眠，避免長期熬夜",
+        "戒菸並避免過量飲酒，減少不必要的氧化壓力"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "家醫科 / 心臟內科 / 營養諮詢",
+      "questions": [
+        "我的 SOD2 基因結果顯示抗氧化效率可能有差異，這代表我會得心肌病嗎？",
+        "除了基因，我還應該檢查哪些心臟與代謝指標？",
+        "我需要額外補充抗氧化保健品嗎？還是調整飲食與運動就好？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「帶有 SOD2 變異就代表抗氧化能力差，一定會得心臟病？」",
+      "truth": "不對。SOD2 rs4880 是常見的抗氧化效率差異，屬正常人類體質變異，不是罕見單基因疾病。心臟健康由血壓、血脂、血糖、吸菸、運動與飲食共同決定；基因結果只是提醒你照顧生活型態，不能當作疾病診斷。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_116",
+    "gene": {
+      "symbol": "COMT",
+      "name": "catechol-O-methyltransferase",
+      "chinese_name": "COMT 基因（兒茶酚胺代謝酵素）",
+      "ensembl_id": "ENSG00000093010",
+      "entrez_id": "1312",
+      "biotype": "protein_coding",
+      "chromosome": "22q11.21（22 號染色體）",
+      "metaphor": {
+        "title": "⚖️ 大腦裡的【多巴胺音量旋鈕】",
+        "story": "COMT 像大腦前額葉的多巴胺音量旋鈕，負責把多巴胺與正腎上腺素分解。Val158Met 讓旋鈕轉速略有不同：Met 型清除較慢、思考較細膩但壓力下容易累積；Val 型清除較快、反應直接。這就是常被稱為「戰士與擔憂者」的平衡，兩者都是健康的人類差異。"
+      },
+      "plain_summary": "COMT rs4680（Val158Met）是常見的兒茶酚胺代謝差異，常被形容為「戰士型（Warrior）」與「擔憂型（Worrier）」的平衡，屬於正常人類體質變異，不是罕見單基因疾病。它可能影響壓力下的情緒與疼痛敏感度，但表現深受睡眠、運動、壓力管理與環境影響。了解自己的傾向有助於安排合適的休息與因應策略，不需要標籤自己。",
+      "academic_summary": "COMT 位於 22q11.21，編碼兒茶酚-O-甲基轉移酶，分解多巴胺、正腎上腺素與腎上腺素。rs4680（Val158Met）使酵素活性改變，Met 等位基因降低分解效率，與前額葉多巴胺濃度、壓力反應與疼痛敏感度差異相關；效應具情境依賴性且受環境與其他基因修飾。"
+    },
+    "disease": {
+      "id": "MONDO:0005618",
+      "name": "Anxiety disorder",
+      "chinese_name": "壓力調節、疼痛敏感度與兒茶酚胺代謝體質（Val158Met）",
+      "categories": [
+        "生活型態性狀",
+        "神經與壓力調節"
+      ],
+      "inheritance_mode": "複雜/多基因體質性狀",
+      "severity_badge": "🟡 常見體質差異，非疾病診斷"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000739",
+        "name": "Anxiety",
+        "chinese_name": "壓力焦慮傾向"
+      },
+      {
+        "hpo_id": "HP:0012531",
+        "name": "Pain",
+        "chinese_name": "疼痛敏感度差異"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Stress-management & behavioral counseling",
+        "chinese_name": "壓力管理與行為諮商",
+        "mechanism": "以規律作息、運動與認知行為策略調節壓力反應",
+        "approval_status": "生活型態與心理支持（非藥物處方）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "COMT rs4680（Val158Met）；影響多巴胺與正腎上腺素清除速度的常見體質變異",
+      "population_frequency": "COMT Val158Met 等位基因頻率因族群而異，Val 與 Met 皆為常見型態；這是正常人類多型性 (PMID:10430032)",
+      "traffic_light_summary": "此基因為常見神經體質與生活型態相關性狀，目前沒有藥物基因（PGx）用藥指引；COMT Val158Met 是正常人類兒茶酚胺代謝差異，不是罕見單基因疾病，睡眠、運動與壓力管理的影響更大。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "咖啡因與酒精對壓力反應的影響因人而異，可觀察自身耐受度並避免過量",
+        "以規律運動、充足睡眠與正念練習支持情緒與疼痛調節"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.5,
+      "plain_rating": "⭐️⭐️⭐️ 常見體質差異，證據溫和",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "COMT Val158Met 為常見代謝效率多型性，並非單一高外顯率致病變異",
+      "opentargets_score": 0.3,
+      "key_pmids": [
+        "PMID:10430032"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若壓力、焦慮或疼痛已影響日常生活，建議與身心科或家醫科討論；COMT 基因型不能單獨診斷焦慮症。",
+      "lifestyle_tips": [
+        "建立規律作息與睡前放鬆儀式，減少壓力累積",
+        "安排適合自己的有氧運動、伸展或正念練習",
+        "觀察咖啡因與酒精對情緒與睡眠的影響，必要時減量"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "家醫科 / 身心科 / 疼痛醫學",
+      "questions": [
+        "我的 COMT 基因結果屬於戰士型或擔憂型，這代表我容易焦慮嗎？",
+        "我可以透過哪些非藥物的方式改善壓力與疼痛敏感度？",
+        "如果焦慮或疼痛持續影響生活，什麼時候應該尋求專業協助？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「COMT 是戰士基因或擔憂基因，會決定我一生的性格與抗壓能力？」",
+      "truth": "不對。COMT Val158Met 只是兒茶酚胺清除速度的常見差異，「戰士與擔憂者」是方便理解的比喻，不是疾病分類。性格、抗壓能力與疼痛感受由成長環境、睡眠、運動、壓力管理與多基因共同塑造，不能被單一基因決定。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_117",
+    "gene": {
+      "symbol": "PPARG",
+      "name": "peroxisome proliferator activated receptor gamma",
+      "chinese_name": "PPARG 基因（胰島素敏感度與脂肪代謝調控）",
+      "ensembl_id": "ENSG00000132170",
+      "entrez_id": "5468",
+      "biotype": "protein_coding",
+      "chromosome": "3p25.2（3 號染色體）",
+      "metaphor": {
+        "title": "🔧 細胞的【胰島素靈敏度調節器】",
+        "story": "PPARG 像細胞內的代謝調節器，協助脂肪細胞與肌肉對胰島素做出反應。Pro12Ala 變異讓調節器的靈敏度略有不同，有些人胰島素訊號較順暢。這是常見的代謝體質差異，不是罕見單基因糖尿病；體重、飲食、運動與睡眠才是影響血糖的關鍵。"
+      },
+      "plain_summary": "PPARG rs1801282（Pro12Ala）是常見的胰島素敏感度與脂肪代謝體質差異，屬於正常人類多型性，不是罕見單基因疾病。它可能讓第二型糖尿病風險略有不同，但風險主要由體重、腰圍、飲食、活動量與家族史共同決定。基因結果可作為健康提醒，不能取代血糖檢查與生活型態調整。",
+      "academic_summary": "PPARG 位於 3p25.2，編碼核受體 PPARγ，調控脂肪細胞分化、胰島素敏感度與脂質代謝。rs1801282（Pro12Ala）降低受體活性，與胰島素敏感度及第二型糖尿病風險修飾相關；效應溫和且受肥胖、飲食與其他基因交互作用影響。"
+    },
+    "disease": {
+      "id": "MONDO:0005148",
+      "name": "Type 2 diabetes mellitus",
+      "chinese_name": "胰島素敏感度、脂肪代謝與第二型糖尿病體質（Pro12Ala）",
+      "categories": [
+        "生活型態性狀",
+        "代謝與血糖健康"
+      ],
+      "inheritance_mode": "複雜/多基因體質性狀",
+      "severity_badge": "🟡 常見代謝體質，非疾病診斷"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0005978",
+        "name": "Type II diabetes mellitus",
+        "chinese_name": "第二型糖尿病風險背景"
+      },
+      {
+        "hpo_id": "HP:0000855",
+        "name": "Insulin resistance",
+        "chinese_name": "胰島素阻抗傾向"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Metformin",
+        "chinese_name": "二甲雙胍（Metformin）",
+        "mechanism": "改善胰島素敏感度與血糖控制；非依 PPARG 基因型給藥",
+        "approval_status": "第二型糖尿病核准處方藥（需醫師評估）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "PPARG rs1801282（Pro12Ala）；影響胰島素敏感度的常見代謝體質變異",
+      "population_frequency": "PPARG Pro12Ala 等位基因頻率因族群而異；單一變異對糖尿病風險的效應溫和 (PMID:20237385)",
+      "traffic_light_summary": "此基因為常見代謝體質與生活型態相關性狀，目前沒有藥物基因（PGx）用藥指引；PPARG Pro12Ala 是正常人類胰島素敏感度差異，不是罕見單基因糖尿病，體重與生活習慣的影響更大。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "以地中海飲食、全穀與多酚蔬果支持胰島素敏感度",
+        "減少含糖飲料與高度加工食品，並搭配規律運動與體重管理"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.5,
+      "plain_rating": "⭐️⭐️⭐️ 常見代謝體質，證據溫和",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "PPARG Pro12Ala 與胰島素敏感度及糖尿病風險背景相關，但效應溫和，並非單一高外顯率致病變異",
+      "opentargets_score": 0.35,
+      "key_pmids": [
+        "PMID:20237385"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議以空腹血糖、糖化血色素、腰圍與血脂評估代謝健康；不建議只憑 PPARG 基因型判斷糖尿病風險。",
+      "lifestyle_tips": [
+        "採用地中海飲食與全穀雜糧，增加蔬菜、豆類與健康油脂",
+        "每週結合有氧與阻力運動，幫助胰島素敏感度與體重管理",
+        "維持充足睡眠與壓力管理，避免久坐與含糖飲料"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "家醫科 / 內分泌新陳代謝科 / 營養諮詢",
+      "questions": [
+        "我的 PPARG 基因結果顯示胰島素敏感度可能有差異，這代表我會得糖尿病嗎？",
+        "我應該多久檢查一次血糖、糖化血色素與血脂？",
+        "除了飲食與運動，我需要藥物協助改善胰島素阻抗嗎？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「帶有 PPARG 變異就一定會得第二型糖尿病？」",
+      "truth": "不對。PPARG Pro12Ala 只是常見的胰島素敏感度差異，屬正常體質變異，不是罕見單基因疾病。第二型糖尿病由體重、飲食、活動量、睡眠、家族史與多基因共同決定；基因結果是提醒你定期檢查血糖與調整生活，而不是疾病判決。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_118",
+    "gene": {
+      "symbol": "VDR",
+      "name": "vitamin D receptor",
+      "chinese_name": "VDR 基因（維生素 D 受體）",
+      "ensembl_id": "ENSG00000111424",
+      "entrez_id": "7421",
+      "biotype": "protein_coding",
+      "chromosome": "12q13.11（12 號染色體）",
+      "metaphor": {
+        "title": "🔑 維生素 D 的【細胞門鎖】",
+        "story": "維生素 D 要發揮作用，需要與細胞內的 VDR 受體結合，就像鑰匙插入門鎖。VDR 的常見變異讓不同人的門鎖靈敏度略有差異，可能影響鈣質吸收與骨密度維持。這是常見體質差異，不是罕見單基因疾病；曬太陽、飲食與抽血檢驗才是掌握維生素 D 狀態的關鍵。"
+      },
+      "plain_summary": "VDR 基因的常見變異與維生素 D 訊號、鈣質吸收及骨密度維持有關，屬於正常人類體質差異，不是罕見單基因疾病。骨質疏鬆風險主要由年齡、停經、活動量、鈣質與維生素 D 攝取、吸菸與家族史共同決定。可配合抽血檢驗與骨密度檢查，由醫師評估是否需要適度補充維生素 D 與鈣質，不建議只憑基因型自行大量補充。",
+      "academic_summary": "VDR 位於 12q13.11，編碼維生素 D 受體，調控鈣磷平衡、骨骼代謝與免疫調節。常見 VDR 多型性（如 FokI、BsmI、TaqI）與骨密度及鈣質吸收差異相關，但各研究結果不一致，效應受血中維生素 D 濃度、日曬、飲食與運動修飾。"
+    },
+    "disease": {
+      "id": "MONDO:0005298",
+      "name": "Osteoporosis",
+      "chinese_name": "維生素 D 受體活性、鈣質吸收與骨質疏鬆預防",
+      "categories": [
+        "生活型態性狀",
+        "骨骼與營養健康"
+      ],
+      "inheritance_mode": "複雜/多基因體質性狀",
+      "severity_badge": "🟡 常見骨骼營養體質，非疾病診斷"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000938",
+        "name": "Osteopenia",
+        "chinese_name": "骨質減少／骨密度偏低"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Vitamin D & calcium counseling",
+        "chinese_name": "維生素 D 與鈣質營養諮詢",
+        "mechanism": "依抽血檢驗與飲食評估，支持鈣質吸收與骨骼健康",
+        "approval_status": "營養評估與生活型態建議（非依基因型給藥）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "VDR 常見多型性（如 FokI、BsmI、TaqI）；影響維生素 D 訊號與鈣質吸收的體質差異",
+      "population_frequency": "VDR 多型性在不同族群間頻率差異大，皆屬常見人類變異；對骨密度的效應溫和且受環境修飾 (PMID:8593450, PMID:36838382)",
+      "traffic_light_summary": "此基因為常見骨骼營養體質與生活型態相關性狀，目前沒有藥物基因（PGx）用藥指引；VDR 多型性是正常人類維生素 D 訊號差異，不是罕見單基因疾病，日曬、飲食與抽血檢驗的影響更大。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "配合抽血檢驗適度補充維生素 D 與鈣質，避免自行長期高劑量補充",
+        "攝取乳製品、豆製品、深綠色蔬菜與富含維生素 D 的食物，並維持適度日曬"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.45,
+      "plain_rating": "⭐️⭐️⭐️ 常見骨骼營養體質，證據溫和",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "VDR 多型性與骨密度及鈣質吸收差異相關，但並非單一高外顯率致病變異",
+      "opentargets_score": 0.3,
+      "key_pmids": [
+        "PMID:8593450",
+        "PMID:36838382"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "建議依年齡與風險接受骨密度檢查與維生素 D 抽血檢驗；若已有骨質減少，應由醫師評估飲食、運動與藥物需求。",
+      "lifestyle_tips": [
+        "配合抽血檢驗適度補充維生素 D 與鈣質，避免自行長期高劑量補充",
+        "攝取乳製品、豆製品、深綠色蔬菜與富含維生素 D 的食物，並維持適度日曬",
+        "規律進行負重與阻力運動，支持骨密度與平衡"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "家醫科 / 骨科 / 內分泌新陳代謝科 / 營養諮詢",
+      "questions": [
+        "我的 VDR 基因結果顯示維生素 D 訊號可能有差異，這代表我會骨質疏鬆嗎？",
+        "我需要抽血檢驗維生素 D 或安排骨密度檢查嗎？",
+        "我應該如何從飲食、日曬與運動維持骨骼健康？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「VDR 基因變異就代表我一定會骨質疏鬆，必須大量補充維生素 D？」",
+      "truth": "不對。VDR 多型性只是維生素 D 訊號的常見體質差異，不是罕見單基因疾病或骨質疏鬆的判決。骨密度由年齡、荷爾蒙、活動量、鈣質與維生素 D 狀態共同決定；是否需要補充應配合抽血檢驗與醫師評估，不宜自行大量服用。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_119",
+    "gene": {
+      "symbol": "ACTN3",
+      "name": "actinin alpha 3",
+      "chinese_name": "ACTN3 基因（快縮肌纖維蛋白）",
+      "ensembl_id": "ENSG00000248746",
+      "entrez_id": "89",
+      "biotype": "protein_coding",
+      "chromosome": "11q13.2（11 號染色體）",
+      "metaphor": {
+        "title": "🏃 肌肉裡的【爆發力引擎開關】",
+        "story": "ACTN3 製造快縮肌纖維中的 α-actinin-3 蛋白，像爆發力引擎的小零件。R577X 變異讓部分人完全沒有這個零件（577XX），肌肉會自然偏向耐力型；帶有 R 的人則較偏向爆發力型。兩者都是健康的人類差異，沒有優劣，只是適合的運動型態不同。"
+      },
+      "plain_summary": "ACTN3 rs1815739（R577X）是常見的肌肉纖維型態差異，屬於正常人類體質變異，不是罕見單基因疾病。577XX 的人完全沒有 α-actinin-3，肌肉傾向耐力型，仍然可以健康生活與從事運動；帶有 R 等位基因的人較偏向爆發力型。運動表現由訓練、技術、營養、睡眠與多基因共同決定，基因只是其中一小部分。",
+      "academic_summary": "ACTN3 位於 11q13.2，編碼骨骼肌快縮纖維的 α-actinin-3。rs1815739（R577X）產生提前終止密碼子，577XX 個體缺乏 α-actinin-3，與快縮纖維比例及爆發力表現差異相關；研究顯示對一般健康無害，且優秀耐力選手反而常見 XX 基因型。"
+    },
+    "disease": {
+      "id": "MONDO:0005570",
+      "name": "Myopathy",
+      "chinese_name": "肌肉纖維爆發力與耐力天賦體質（R577X 運動基因）",
+      "categories": [
+        "生活型態性狀",
+        "運動與體適能"
+      ],
+      "inheritance_mode": "複雜/多基因體質性狀",
+      "severity_badge": "🟡 常見運動體質，非疾病診斷"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0001324",
+        "name": "Muscle weakness",
+        "chinese_name": "肌力與爆發耐力型態差異背景"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Exercise training prescription",
+        "chinese_name": "運動訓練處方與體能諮詢",
+        "mechanism": "依肌纖維型態與個人目標安排耐力、爆發力或混合訓練",
+        "approval_status": "運動與生活型態建議（非藥物處方）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "ACTN3 rs1815739（R577X）；影響快縮肌纖維蛋白表現的常見運動體質變異",
+      "population_frequency": "ACTN3 577XX 基因型在部分族群可達相當比例，屬於常見人類多型性；與疾病無關 (PMID:10591289, PMID:12837775)",
+      "traffic_light_summary": "此基因為常見運動體質與生活型態相關性狀，目前沒有藥物基因（PGx）用藥指引；ACTN3 R577X 是正常人類肌肉纖維差異，不是罕見單基因疾病，訓練與營養的影響更大。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "依運動目標安排足夠蛋白質與碳水化合物，支持肌肉修復與能量",
+        "577XX 耐力型可多安排有氧與耐力訓練，R 型可加入爆發力與阻力訓練"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.55,
+      "plain_rating": "⭐️⭐️⭐️ 常見運動體質，證據溫和",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "ACTN3 R577X 為常見肌肉纖維多型性，並非單一高外顯率致病變異",
+      "opentargets_score": 0.3,
+      "key_pmids": [
+        "PMID:10591289",
+        "PMID:12837775"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "運動表現與健康體適能應以實際訓練、體能測驗與身體狀況評估；不建議用 ACTN3 基因型篩選運動員或限制兒童運動。",
+      "lifestyle_tips": [
+        "依個人目標混合有氧、阻力與爆發力訓練，並循序漸進",
+        "運動前後補充足夠水分與均衡飲食，支持肌肉修復",
+        "確保充足睡眠與休息日，避免過度訓練與受傷"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "運動醫學 / 復健科 / 家醫科 / 體能訓練諮詢",
+      "questions": [
+        "我的 ACTN3 基因結果是 577XX，這代表我的肌肉有缺陷嗎？",
+        "我適合耐力訓練還是爆發力訓練？應該如何安排？",
+        "基因結果會影響我受傷風險或運動表現嗎？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「ACTN3 577XX 代表肌肉有缺陷，不能從事運動或一定沒有爆發力？」",
+      "truth": "不對。577XX 只是缺乏 α-actinin-3 的正常人類變異，肌肉會偏向耐力型，仍然完全健康。許多優秀耐力選手就是 XX 型；爆發力與運動表現可透過訓練、技術與營養提升，基因不是限制或保證。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_120",
+    "gene": {
+      "symbol": "BDNF",
+      "name": "brain derived neurotrophic factor",
+      "chinese_name": "BDNF 基因（腦源性神經滋養因子）",
+      "ensembl_id": "ENSG00000176697",
+      "entrez_id": "627",
+      "biotype": "protein_coding",
+      "chromosome": "11p14.1（11 號染色體）",
+      "metaphor": {
+        "title": "🌱 大腦的【神經可塑性肥料】",
+        "story": "BDNF 像大腦的神經可塑性肥料，幫助神經元生長、連結與適應。Val66Met 變異讓部分人分泌與運輸 BDNF 的效率略有不同，可能影響記憶與情緒韌性。這是常見的人類體質差異，不是罕見單基因疾病；運動、睡眠、社交與學習都能自然提升 BDNF。"
+      },
+      "plain_summary": "BDNF rs6265（Val66Met）是常見的神經滋養因子表現差異，屬於正常人類體質變異，不是罕見單基因疾病。它可能與記憶表現、情緒韌性與壓力反應略有關係，但影響遠小於運動、睡眠、社交支持與生活經驗。規律運動與良好作息是支持 BDNF 與大腦健康最實際的方法，不需要因為基因型而焦慮。",
+      "academic_summary": "BDNF 位於 11p14.1，編碼腦源性神經滋養因子，參與神經元存活、突觸可塑性與學習記憶。rs6265（Val66Met）影響 BDNF 的前肽運輸與活動依賴性分泌，與海馬迴功能、記憶及情緒相關性狀有溫和關聯；結果受環境、運動與其他基因修飾。"
+    },
+    "disease": {
+      "id": "MONDO:0002009",
+      "name": "Major depressive disorder",
+      "chinese_name": "神經可塑性、情緒韌性與記憶表現體質（Val66Met）",
+      "categories": [
+        "生活型態性狀",
+        "神經與情緒健康"
+      ],
+      "inheritance_mode": "複雜/多基因體質性狀",
+      "severity_badge": "🟡 常見神經體質，非疾病診斷"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0000716",
+        "name": "Depression",
+        "chinese_name": "情緒低落傾向"
+      },
+      {
+        "hpo_id": "HP:0000739",
+        "name": "Anxiety",
+        "chinese_name": "壓力與焦慮反應"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Exercise & behavioral activation counseling",
+        "chinese_name": "運動與行為活化諮詢",
+        "mechanism": "以規律有氧運動、社交參與與作息調整支持神經可塑性與情緒",
+        "approval_status": "生活型態與心理支持（非藥物處方）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "BDNF rs6265（Val66Met）；影響神經滋養因子分泌與運輸的常見體質變異",
+      "population_frequency": "BDNF Val66Met 等位基因頻率因族群而異，Met 型在東亞族群相對常見；屬正常人類多型性 (PMID:12536199)",
+      "traffic_light_summary": "此基因為常見神經體質與生活型態相關性狀，目前沒有藥物基因（PGx）用藥指引；BDNF Val66Met 是正常人類神經可塑性差異，不是罕見單基因疾病，運動、睡眠與社交支持的影響更大。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "以地中海飲食、富含 omega-3 脂肪酸的食物與多酚蔬果支持神經健康",
+        "規律有氧運動與充足睡眠，有助於自然調節 BDNF 與情緒"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.45,
+      "plain_rating": "⭐️⭐️⭐️ 常見神經體質，證據溫和",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "BDNF Val66Met 與神經可塑性及情緒相關性狀有溫和關聯，並非單一高外顯率致病變異",
+      "opentargets_score": 0.35,
+      "key_pmids": [
+        "PMID:12536199"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若情緒低落、焦慮或記憶困擾持續影響生活，建議尋求身心科或家醫科評估；BDNF 基因型不能單獨診斷憂鬱症。",
+      "lifestyle_tips": [
+        "每週安排規律有氧運動，並搭配充足睡眠與休息",
+        "維持社交連結與學習新事物，增加大腦刺激與正向經驗",
+        "以均衡飲食與壓力管理支持情緒韌性，必要時尋求心理諮商"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "身心科 / 神經內科 / 家醫科 / 心理諮商",
+      "questions": [
+        "我的 BDNF 基因結果顯示 Met 型，這代表我記憶力較差或容易憂鬱嗎？",
+        "除了基因，有哪些方法可以支持神經可塑性與情緒健康？",
+        "如果情緒或記憶問題持續，我應該接受哪些評估？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「帶有 BDNF Met 變異就代表記憶力差、容易憂鬱？」",
+      "truth": "不對。BDNF Val66Met 只是神經滋養因子表現的常見差異，屬正常人類體質變異，不是罕見單基因疾病。記憶與情緒由運動、睡眠、壓力、社交支持與生活經驗共同決定；基因結果可提醒你建立健康習慣，但不能當作診斷。"
+    }
+  },
+  {
+    "association_id": "GDA_ASSOC_121",
+    "gene": {
+      "symbol": "MC1R",
+      "name": "melanocortin 1 receptor",
+      "chinese_name": "MC1R 基因（黑色素受體）",
+      "ensembl_id": "ENSG00000258839",
+      "entrez_id": "4157",
+      "biotype": "protein_coding",
+      "chromosome": "16q24.3（16 號染色體）",
+      "metaphor": {
+        "title": "☀️ 皮膚的【防曬與色素調節器】",
+        "story": "MC1R 像皮膚的色素調節器，決定黑色素細胞製造哪一種色素。帶有特定 MC1R 變異的人，黑色素偏向紅色或黃色、皮膚較白皙、容易長雀斑，曬後也較容易泛紅。這是常見的人類外觀差異，不是疾病；但代表需要更認真做好廣譜防曬與定期皮膚檢查。"
+      },
+      "plain_summary": "MC1R 的常見變異與紅髮、雀斑、皮膚白皙及紫外線敏感度有關，屬於正常人類外觀與體質差異，不是罕見單基因疾病。它會讓曬傷與皮膚癌風險背景略為提高，但真正的風險主要由紫外線暴露、防曬習慣、膚色與家族史共同決定。做好廣譜防曬、避免曬傷與定期檢查皮膚，是最實際的預防方式。",
+      "academic_summary": "MC1R 位於 16q24.3，編碼黑色素皮質素受體，調控黑色素細胞的色素生成。功能減弱型變異與紅髮、雀斑、白皙膚色及紫外線敏感度相關，並與黑色素瘤及基底細胞癌風險背景有溫和關聯；風險受日曬行為、防曬與其他基因修飾。"
+    },
+    "disease": {
+      "id": "MONDO:0005105",
+      "name": "Melanoma",
+      "chinese_name": "皮膚紫外線光老化、雀斑敏感與黑色素瘤預防",
+      "categories": [
+        "生活型態性狀",
+        "皮膚與防曬健康"
+      ],
+      "inheritance_mode": "複雜/多基因體質性狀",
+      "severity_badge": "🟡 常見皮膚體質，非疾病診斷"
+    },
+    "phenotypes": [
+      {
+        "hpo_id": "HP:0002861",
+        "name": "Melanoma",
+        "chinese_name": "黑色素瘤風險背景"
+      },
+      {
+        "hpo_id": "HP:0002671",
+        "name": "Basal cell carcinoma",
+        "chinese_name": "基底細胞皮膚癌風險背景"
+      }
+    ],
+    "drugs_targeted": [
+      {
+        "drug_name": "Broad-spectrum sunscreen & skin surveillance",
+        "chinese_name": "廣譜防曬與皮膚監測",
+        "mechanism": "以廣譜防曬、衣物遮蔽與定期皮膚檢查降低紫外線傷害",
+        "approval_status": "防護與生活型態建議（非藥物處方）"
+      }
+    ],
+    "pharmacogenomics": {
+      "has_pgx": false,
+      "key_variant": "MC1R 常見功能減弱型變異；影響黑色素型態、雀斑與紫外線敏感度的體質差異",
+      "population_frequency": "MC1R 變異在不同族群頻率差異大，紅髮與雀斑性狀在部分族群較常見；皆屬正常人類多型性 (PMID:7581459)",
+      "traffic_light_summary": "此基因為常見皮膚體質與生活型態相關性狀，目前沒有藥物基因（PGx）用藥指引；MC1R 變異是正常人類色素差異，不是罕見單基因疾病，防曬與皮膚監測的影響更大。",
+      "drugs_guide": [],
+      "dietary_contraindications": [
+        "日常使用廣譜防曬並定時補擦，搭配帽子、衣物與陰涼處遮蔽",
+        "避免日曬機與刻意曬黑，曬傷是皮膚癌的重要風險因子"
+      ]
+    },
+    "evidence": {
+      "overall_score": 0.5,
+      "plain_rating": "⭐️⭐️⭐️ 常見皮膚體質，證據溫和",
+      "clinvar_pathogenic_count": 0,
+      "clinvar_summary_chinese": "MC1R 功能減弱型變異與色素性狀及紫外線敏感度相關，但並非單一高外顯率致病變異",
+      "opentargets_score": 0.35,
+      "key_pmids": [
+        "PMID:7581459"
+      ]
+    },
+    "lifestyle_prevention": {
+      "screening_advice": "若皮膚白皙、容易長雀斑或有皮膚癌家族史，建議定期接受皮膚科檢查；痣出現不對稱、邊緣不規則、顏色改變、直徑變大或變化時應及早就醫。",
+      "lifestyle_tips": [
+        "日常使用廣譜防曬並定時補擦，搭配帽子、衣物與陰涼處遮蔽",
+        "避免日曬機與刻意曬黑，減少紫外線累積傷害",
+        "多攝取多酚蔬果與均衡飲食，並定期檢查痣與皮膚變化"
+      ]
+    },
+    "doctor_checklist": {
+      "specialty": "皮膚科 / 家醫科 / 遺傳諮詢",
+      "questions": [
+        "我的 MC1R 基因結果顯示皮膚較敏感，這代表我一定會得黑色素瘤嗎？",
+        "我需要多久做一次皮膚檢查？哪些痣的變化需要特別注意？",
+        "除了防曬，還有哪些方法可以降低紫外線光老化與皮膚癌風險？"
+      ]
+    },
+    "myth_buster": {
+      "myth": "「有 MC1R 變異就一定會得黑色素瘤？」",
+      "truth": "不對。MC1R 變異只是常見的色素與紫外線敏感度差異，屬正常人類體質變異，不是罕見單基因疾病。黑色素瘤風險主要由日曬行為、防曬習慣、膚色、痣的數量與家族史共同決定；做好廣譜防曬與定期皮膚檢查，就能大幅降低風險。"
+    }
   }
 ]
