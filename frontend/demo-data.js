@@ -8730,7 +8730,7 @@ window.DEMO_DATA = [
       "academic_summary": "TTN 編碼肌聯蛋白（titin），為橫紋肌肌節中最大的蛋白，維持肌節彈性、張力與訊號傳遞。心臟專一表現的截斷型變異（多見於 A 帶附近外顯子）導致家族性擴張型心肌病變，外顯率與年齡相關。患者可能合併傳導異常與心室性心律不整，需長期心臟功能與節律監測，並評估植入式去顫器適應症。"
     },
     "disease": {
-      "id": "MONDO:0005016",
+      "id": "MONDO:0005021",
       "name": "Dilated cardiomyopathy",
       "chinese_name": "家族性擴張型心肌病變（TTN 截斷變異）",
       "categories": [
@@ -8841,7 +8841,7 @@ window.DEMO_DATA = [
       "academic_summary": "BAG3 編碼 BCL2 相關永生基因 3，為分子伴護蛋白共伴護因子，參與自噬、蛋白質折疊與肌節完整性維持。生殖細胞致病變異造成 BAG3 相關擴張型心肌病變，部分患者合併肌原纖維肌病。疾病可呈體染色體顯性遺傳，外顯率與年齡相關，需長期心臟功能與節律監測並評估裝置治療。"
     },
     "disease": {
-      "id": "MONDO:0005016",
+      "id": "MONDO:0005021",
       "name": "Dilated cardiomyopathy",
       "chinese_name": "BAG3 相關擴張型心肌病變",
       "categories": [
@@ -9756,7 +9756,7 @@ window.DEMO_DATA = [
       "academic_summary": "DES 位於 2q35，編碼結蛋白，為心肌與骨骼肌中間絲的主要成分，維持細胞骨架、肌節與細胞接合的機械整合。致病變異造成結蛋白相關心肌病變與肌原纖維肌病，可呈體染色體顯性遺傳，表現為擴張型心肌病變、傳導異常與骨骼肌無力，需長期心臟功能、心律與神經肌肉監測。"
     },
     "disease": {
-      "id": "MONDO:0005016",
+      "id": "MONDO:0005021",
       "name": "Dilated cardiomyopathy",
       "chinese_name": "結蛋白相關心肌病變與肌原纖維肌病",
       "categories": [
@@ -9867,7 +9867,7 @@ window.DEMO_DATA = [
       "academic_summary": "FLNC 位於 7q32.1，編碼細絲蛋白 C，為心肌與骨骼肌肌節 Z 線的重要結構蛋白，參與機械張力傳遞與細胞接合。截短型致病變異造成細絲蛋白 C 相關擴張型心肌病變，常合併心室心律不整與猝死風險，呈體染色體顯性遺傳，需長期心臟結構、功能與心律監測。"
     },
     "disease": {
-      "id": "MONDO:0005016",
+      "id": "MONDO:0005021",
       "name": "Dilated cardiomyopathy",
       "chinese_name": "細絲蛋白 C 相關致心律失常性／擴張型心肌病變",
       "categories": [
@@ -9972,7 +9972,7 @@ window.DEMO_DATA = [
       "academic_summary": "RBM20 位於 10q25.2，編碼 RNA 結合基序蛋白 20，調控心肌關鍵基因的選擇性剪接，包括 TTN。致病變異造成早發性擴張型心肌病變，呈體染色體顯性遺傳，外顯率與年齡相關；可合併心室心律不整與猝死風險，需長期心臟功能與心律監測。"
     },
     "disease": {
-      "id": "MONDO:0005016",
+      "id": "MONDO:0005021",
       "name": "Dilated cardiomyopathy",
       "chinese_name": "RBM20 相關早發性擴張型心肌病變",
       "categories": [

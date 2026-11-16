@@ -1085,7 +1085,7 @@
     "symbol": "TTN",
     "ensembl_id": "ENSG00000155657",
     "entrez_id": "7273",
-    "disease_id": "MONDO:0005016",
+    "disease_id": "MONDO:0005021",
     "disease_label": "Dilated cardiomyopathy",
     "sources": {
       "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000155657",
@@ -1098,7 +1098,7 @@
     "symbol": "BAG3",
     "ensembl_id": "ENSG00000151929",
     "entrez_id": "9531",
-    "disease_id": "MONDO:0005016",
+    "disease_id": "MONDO:0005021",
     "disease_label": "Dilated cardiomyopathy",
     "sources": {
       "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000151929",
@@ -1215,7 +1215,7 @@
     "symbol": "DES",
     "ensembl_id": "ENSG00000175084",
     "entrez_id": "1674",
-    "disease_id": "MONDO:0005016",
+    "disease_id": "MONDO:0005021",
     "disease_label": "Dilated cardiomyopathy",
     "sources": {
       "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000175084",
@@ -1228,7 +1228,7 @@
     "symbol": "FLNC",
     "ensembl_id": "ENSG00000128591",
     "entrez_id": "2318",
-    "disease_id": "MONDO:0005016",
+    "disease_id": "MONDO:0005021",
     "disease_label": "Dilated cardiomyopathy",
     "sources": {
       "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000128591",
@@ -1241,7 +1241,7 @@
     "symbol": "RBM20",
     "ensembl_id": "ENSG00000203867",
     "entrez_id": "282996",
-    "disease_id": "MONDO:0005016",
+    "disease_id": "MONDO:0005021",
     "disease_label": "Dilated cardiomyopathy",
     "sources": {
       "ensembl": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000203867",
